@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovación Registro Calificado | Administración de Empresas | CETO</title>
+    <meta name="description" content="Plataforma de sustentación de evidencias para la Renovación del Registro Calificado Único del programa profesional en Administración de Empresas - Corporación Escuela Tecnológica del Oriente.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="styles.css?v=1">
+
+    <!-- Section Data Files -->
+    <script src="sections_c1.js?v=1"></script>
+    <script src="sections_c2.js?v=1"></script>
+    <script src="sections_c3.js?v=1"></script>
+    <script src="sections_c4.js?v=1"></script>
+    <script src="sections_c5.js?v=1"></script>
+    <script src="sections_c6.js?v=1"></script>
+    <script src="sections_c7.js?v=1"></script>
+    <script src="sections_c8.js?v=1"></script>
+    <script src="sections_c9.js?v=1"></script>
+</head>
+<body>
+
+    <!-- ======== LOGIN GATEWAY ======== -->
+    <div id="authGateway" class="auth-gateway">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="auth-logo-ring">
+                    <img src="https://campusvirtual.tecnologicadeloriente.edu.co/pluginfile.php/1/theme_edmo/mobile_logo/1772556380/logo%2Bvertical-1920w.jpg" alt="CETO" class="auth-logo">
+                </div>
+                <div class="auth-brand-lines">
+                    <div class="auth-brand-line"></div>
+                    <div class="auth-brand-line short"></div>
+                </div>
+            </div>
+            <div class="auth-body">
+                <h2 class="auth-title">Acceso Restringido</h2>
+                <p class="auth-subtitle">Renovación de Registro Calificado Único<br>
+                <span class="auth-program-name">Administración de Empresas</span></p>
+                <div class="auth-input-wrapper">
+                    <i class="fas fa-shield-halved auth-input-icon"></i>
+                    <input type="password" id="pwdInput" placeholder="Código de acceso institucional" class="auth-input" onkeypress="if(event.key==='Enter')checkAuth()">
+                </div>
+                <div id="pwdError" class="auth-error hidden"><i class="fas fa-exclamation-triangle"></i> Código incorrecto. Contacte al coordinador del programa.</div>
+                <button onclick="checkAuth()" class="auth-btn">
+                    <i class="fas fa-right-to-bracket"></i> Ingresar a la Plataforma
+                </button>
+            </div>
+            <div class="auth-footer">
+                <p><i class="fas fa-lock"></i> Plataforma confidencial · Decreto 1330 de 2019</p>
+            </div>
+        </div>
+        <div class="auth-watermark">Corporación Escuela Tecnológica del Oriente · Bucaramanga, Colombia</div>
+    </div>
+
+    <!-- ======== MAIN APP ======== -->
+    <div id="mainApp" class="main-app hidden">
+        <!-- Top Header Bar -->
+        <header class="top-header">
+            <div class="header-left">
+                <img src="https://campusvirtual.tecnologicadeloriente.edu.co/pluginfile.php/1/theme_edmo/mobile_logo/1772556380/logo%2Bvertical-1920w.jpg" alt="CETO" class="header-logo">
+                <div class="header-divider"></div>
+                <div class="header-info">
+                    <h1 class="header-title">Administración de Empresas</h1>
+                    <p class="header-meta">Renovación Registro Calificado Único · Presencial &amp; Virtual</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="header-badge"><i class="fas fa-calendar-check"></i> Vigencia 2026</span>
+                <button onclick="logout()" class="header-logout"><i class="fas fa-arrow-right-from-bracket"></i> Salir</button>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <main class="dashboard">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-tag"><i class="fas fa-university"></i> Decreto 1330 de 2019</span>
+                        <h2 class="hero-heading">Sustentación de <span class="hero-accent">Condiciones de Calidad</span></h2>
+                        <p class="hero-description">Plataforma interactiva de evidencias para la renovación del Registro Calificado Único del programa profesional en Administración de Empresas en modalidades <strong>Presencial y Virtual</strong>.</p>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">144</div>
+                            <div class="hero-stat-label">Créditos Académicos</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">8</div>
+                            <div class="hero-stat-label">Semestres</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">48</div>
+                            <div class="hero-stat-label">Asignaturas</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-num">2</div>
+                            <div class="hero-stat-label">Modalidades</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid de Condiciones -->
+            <section class="conditions-section">
+                <h3 class="section-title"><i class="fas fa-th-large"></i> Condiciones de Calidad del Programa</h3>
+                <div class="conditions-grid" id="gridCards"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- ======== PRESENTATION VIEWER (MODAL FULLSCREEN) ======== -->
+    <div id="presentationViewer" class="viewer hidden">
+        <div class="viewer-header">
+            <div class="viewer-header-left">
+                <div class="viewer-logo-container">
+                    <img src="https://campusvirtual.tecnologicadeloriente.edu.co/pluginfile.php/1/theme_edmo/mobile_logo/1772556380/logo%2Bvertical-1920w.jpg" alt="CETO" class="viewer-logo">
+                </div>
+                <h2 id="viewerTitle" class="viewer-title">Sustentación</h2>
+            </div>
+            <div class="viewer-header-right">
+                <span class="viewer-counter"><span id="slideCounter">1</span> / <span id="slideTotalCounter">9</span></span>
+                <button onclick="closePresentation()" class="viewer-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="viewer-body">
+            <div class="viewer-scroll" id="scrollContainer">
+                <div class="viewer-card">
+                    <div class="viewer-card-header">
+                        <div class="viewer-category" id="slideCategory">Categoría</div>
+                        <h3 class="viewer-card-title" id="slideTitle">Título</h3>
+                    </div>
+                    <div class="viewer-card-body" id="slideBody"></div>
+                    <div class="viewer-card-footer">
+                        <button onclick="prevSlide()" class="viewer-nav-btn prev"><i class="fas fa-arrow-left"></i> Anterior</button>
+                        <button onclick="nextSlide()" class="viewer-nav-btn next">Siguiente <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== APP LOGIC ======== -->
+    <script src="app.js?v=1"></script>
+</body>
+</html>
