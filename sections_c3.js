@@ -3836,10 +3836,10 @@ window.selectMatrixSubject = function(id, type) {
         </div>
 
         <div style="margin-bottom:16px;">
-            <div class="c3-modal-section-title"><i class="fas fa-user-graduate"></i> 1. Articulación con Perfil de Egreso y RAP del Programa</div>
+            <div class="c3-modal-section-title"><i class="fas fa-user-graduate"></i> 1. Perfil del Egresado y RAP del Programa</div>
             <div style="background:var(--gray-bg); padding:12px; border-radius:8px; font-size:0.83rem;">
                 <p style="margin-bottom:6px;"><strong>Perfil del Egresado:</strong> ${s.perfil_asociado}</p>
-                <p style="margin:0;"><strong>RAP del Programa:</strong> ${s.rap_asociado}</p>
+                <p style="margin:0;"><strong>Resultado de Aprendizaje del Programa (RAP):</strong> ${s.rap_asociado}</p>
             </div>
         </div>
 
@@ -3918,10 +3918,10 @@ window.openSubjectModal = function(id, type) {
                 </div>
 
                 <div class="c3-modal-section">
-                    <div class="c3-modal-section-title"><i class="fas fa-user-graduate"></i> Articulación con Perfil de Egreso y RAP del Programa</div>
+                    <div class="c3-modal-section-title"><i class="fas fa-user-graduate"></i> Perfil del Egresado y RAP del Programa</div>
                     <div style="background:var(--gray-bg); padding:12px; border-radius:8px; font-size:0.83rem;">
                         <p style="margin-bottom:6px;"><strong>Perfil del Egresado:</strong> ${s.perfil_asociado}</p>
-                        <p style="margin:0;"><strong>RAP del Programa:</strong> ${s.rap_asociado}</p>
+                        <p style="margin:0;"><strong>Resultado de Aprendizaje del Programa (RAP):</strong> ${s.rap_asociado}</p>
                     </div>
                 </div>
 
@@ -3961,10 +3961,10 @@ window.SECTIONS['c3'] = `
 <!-- LEVEL 1 MAIN TABS -->
 <div class="c3-main-tabs" id="c3MainTabsGroup">
     <button class="c3-main-tab-btn active" data-tab="c3-main-propuesto" onclick="switchTab('c3MainTabsGroup','c3-main-propuesto')">
-        <i class="fas fa-rocket"></i> 1. Plan Propuesto (144 cr · Matriz Global)
+        <i class="fas fa-rocket"></i> 1. Plan Propuesto (144 cr)
     </button>
     <button class="c3-main-tab-btn" data-tab="c3-main-vigente" onclick="switchTab('c3MainTabsGroup','c3-main-vigente')">
-        <i class="fas fa-history"></i> 2. Plan Vigente (158 cr · Matriz Global)
+        <i class="fas fa-history"></i> 2. Plan Vigente (158 cr)
     </button>
     <button class="c3-main-tab-btn" data-tab="c3-main-comparacion" onclick="switchTab('c3MainTabsGroup','c3-main-comparacion')">
         <i class="fas fa-balance-scale"></i> 3. Comparación y Justificación
@@ -3972,26 +3972,47 @@ window.SECTIONS['c3'] = `
 </div>
 
 <!-- =========================================================
-     MAIN TAB 1: PLAN DE ESTUDIOS PROPUESTO (144 CRÉDITOS - VISTA GLOBAL MATRIZ)
+     MAIN TAB 1: PLAN DE ESTUDIOS PROPUESTO (144 CRÉDITOS)
      ========================================================= -->
 <div class="tab-panel active" id="c3-main-propuesto" style="display:block;">
-    <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
-        <i class="fas fa-th" style="color:var(--orange); margin-right:8px;"></i> Malla Curricular del Plan Propuesto (Vista Global Matriz)
-    </h3>
-    <p style="color:var(--gray-text); font-size:0.84rem; margin-bottom:16px;">
-        Estructura por semestres académicos (columnas I a VIII) y componentes curriculares (filas). Haga clic en cualquier materia para cargar su trazabilidad detallada (Perfil del Egresado, RAP del Programa, RAs de la Asignatura y Temas/Subtemas) en el panel inferior y modal.
-    </p>
+    <div class="tabs-container" id="c3PropuestoSubTabs">
+        <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="c3-p-malla" onclick="switchTab('c3PropuestoSubTabs','c3-p-malla')">
+                <i class="fas fa-th"></i> Malla Curricular (Matriz Global)
+            </button>
+            <button class="tab-btn" data-tab="c3-p-areas" onclick="switchTab('c3PropuestoSubTabs','c3-p-areas')">
+                <i class="fas fa-layer-group"></i> Áreas de Formación
+            </button>
+            <button class="tab-btn" data-tab="c3-p-perfiles" onclick="switchTab('c3PropuestoSubTabs','c3-p-perfiles')">
+                <i class="fas fa-star"></i> Perfiles y RAPs (Tabla 35)
+            </button>
+            <button class="tab-btn" data-tab="c3-p-flex" onclick="switchTab('c3PropuestoSubTabs','c3-p-flex')">
+                <i class="fas fa-arrows-alt"></i> Flexibilidad en 4 Dimensiones
+            </button>
+            <button class="tab-btn" data-tab="c3-p-eval" onclick="switchTab('c3PropuestoSubTabs','c3-p-eval')">
+                <i class="fas fa-clipboard-check"></i> Evaluación RAPs (Dec. 1330)
+            </button>
+        </div>
 
-    <div class="metric-row">
-        <div class="metric-card"><div class="metric-val">144</div><div class="metric-lbl">Créditos Totales</div></div>
-        <div class="metric-card"><div class="metric-val">8</div><div class="metric-lbl">Semestres</div></div>
-        <div class="metric-card"><div class="metric-val">48</div><div class="metric-lbl">Asignaturas</div></div>
-        <div class="metric-card"><div class="metric-val">2.304h</div><div class="metric-lbl">Horas Directas Presencial</div></div>
-        <div class="metric-card"><div class="metric-val">1.728h</div><div class="metric-lbl">Horas Mediadas Virtual</div></div>
-    </div>
+        <!-- SUB TAB 1.1: MALLA PROPUESTA (MATRIZ GLOBAL) -->
+        <div class="tab-panel active" id="c3-p-malla" style="display:block;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
+                Malla Curricular del Plan Propuesto (Vista Global Matriz por Componentes x Semestres)
+            </h3>
+            <p style="color:var(--gray-text); font-size:0.83rem; margin-bottom:16px;">
+                Estructura por semestres académicos (columnas I a VIII) y componentes curriculares (filas). Haga clic en cualquier materia para cargar su trazabilidad detallada (Perfil del Egresado, RAP del Programa, RAs de la Asignatura y Temas) en el panel inferior y modal.
+            </p>
 
-    <!-- MATRIX GLOBAL VIEW PROPUESTO -->
-    
+            <div class="metric-row">
+                <div class="metric-card"><div class="metric-val">144</div><div class="metric-lbl">Créditos Totales</div></div>
+                <div class="metric-card"><div class="metric-val">8</div><div class="metric-lbl">Semestres</div></div>
+                <div class="metric-card"><div class="metric-val">48</div><div class="metric-lbl">Asignaturas</div></div>
+                <div class="metric-card"><div class="metric-val">2.304h</div><div class="metric-lbl">Horas Directas Presencial</div></div>
+                <div class="metric-card"><div class="metric-val">1.728h</div><div class="metric-lbl">Horas Mediadas Virtual</div></div>
+            </div>
+
+            <!-- MATRIX GLOBAL VIEW PROPUESTO -->
+            
 <div class="malla-matrix-wrapper">
     <div class="malla-matrix-scroll">
         <table class="malla-matrix-table">
@@ -4304,37 +4325,467 @@ window.SECTIONS['c3'] = `
 </div>
 
 
-    <!-- TRACEABILITY DETAIL PANEL PROPUESTO -->
-    <div class="matrix-detail-panel" id="c3-propuesto-matrix-detail-panel">
-        <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
-            <i class="fas fa-hand-pointer" style="font-size:2.5rem; color:var(--orange); margin-bottom:12px;"></i>
-            <h4 style="font-size:1.1rem; color:var(--carbon); font-weight:800; font-family:var(--font-heading);">Seleccione una Asignatura de la Matriz</h4>
-            <p style="font-size:0.85rem; max-width:600px; margin:6px auto 0;">Haga clic en cualquier materia de la malla curricular global para visualizar su Perfil de Egreso, RAP del Programa, Resultados de Aprendizaje específicos, Temas y Horas por modalidad.</p>
+            <!-- TRACEABILITY DETAIL PANEL PROPUESTO -->
+            <div class="matrix-detail-panel" id="c3-propuesto-matrix-detail-panel">
+                <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
+                    <i class="fas fa-hand-pointer" style="font-size:2.5rem; color:var(--orange); margin-bottom:12px;"></i>
+                    <h4 style="font-size:1.1rem; color:var(--carbon); font-weight:800; font-family:var(--font-heading);">Seleccione una Asignatura de la Matriz Propuesta</h4>
+                    <p style="font-size:0.85rem; max-width:600px; margin:6px auto 0;">Haga clic en cualquier materia de la malla curricular global para desplegar inmediatamente su Perfil de Egreso, RAP del Programa, Resultados de Aprendizaje específicos, Temas/Subtemas y Horas por modalidad.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUB TAB 1.2: ÁREAS PROPUESTO -->
+        <div class="tab-panel" id="c3-p-areas" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Distribución de Créditos por Área de Formación (Plan Propuesto)
+            </h3>
+            
+<div class="grid-3" style="margin-bottom:24px;">
+    <div class="card" style="border-top:4px solid #0284C7;">
+        <h4 style="color:#0284C7;"><i class="fas fa-book-reader"></i> 1. Área Transversal (Humanística y Básica)</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>17 Asignaturas · 41 Créditos · 1.968 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla competencias genéricas en matemáticas, cálculo, estadísticas, comunicación, inglés (I a VI), legislación y democracia.</p>
+    </div>
+    <div class="card" style="border-top:4px solid #C2410C;">
+        <h4 style="color:#C2410C;"><i class="fas fa-briefcase"></i> 2. Área Disciplinar / Específica</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>36 Asignaturas · 107 Créditos · 5.136 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla la fundamentación profesional en gestión, contabilidad, economía, finanzas, mercadeo, operaciones y talento humano.</p>
+    </div>
+    <div class="card" style="border-top:4px solid #15803D;">
+        <h4 style="color:#15803D;"><i class="fas fa-cubes"></i> 3. Área Electiva</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>5 Asignaturas · 10 Créditos · 480 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Bolsa de electividad dividida en 3 Electivas de Profundización (6cr) y 2 Electivas Humanísticas (4cr).</p>
+    </div>
+</div>
+
+        </div>
+
+        <!-- SUB TAB 1.3: PERFILES Y RAPS PROPUESTO (TABLA 35) -->
+        <div class="tab-panel" id="c3-p-perfiles" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Tabla 35. Matriz de Resultados de Aprendizaje del Plan Propuesto (10 RAPs)
+            </h3>
+            
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 1</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Estrategia y Gestión Organizacional</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Gestiona estratégica y éticamente las organizaciones, articulando los recursos humanos, financieros y tecnológicos para el logro de los objetivos institucionales.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa estrategias organizacionales que optimizan los recursos y fortalecen la competitividad empresarial.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos de Administración</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Procesos Administrativos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Teoría Organizacional</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Pensamiento Estratégico y Prospectivo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Juego Gerencial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 2</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Análisis Financiero y Sostenibilidad Económica</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Analiza información financiera, económica y contable para la toma de decisiones en contextos locales y globales.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Análisis Financiero</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Administración Financiera</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Costos y Presupuestos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Matemática Financiera</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Legislación Tributaria</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 3</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Liderazgo y Gestión Humana</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Dirige el talento humano con liderazgo participativo, promoviendo la innovación, la cultura organizacional y el bienestar laboral.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña políticas y estrategias de gestión humana que potencian la productividad y el desarrollo del personal.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia del Talento Humano</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Habilidades Gerenciales y Liderazgo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Cátedra de la Paz y Resolución de Conflictos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Comunicación Oral y Escrita</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 4</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Emprendimiento e Innovación Sostenible</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Formula y gestiona proyectos empresariales innovadores, sostenibles y socialmente responsables.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Evalúa y ejecuta proyectos de emprendimiento y sostenibilidad que generen impacto económico y social.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (5 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Modelos de Emprendimiento</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Laboratorio de Innovación y Emprendimiento</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Formulación y Evaluación de Proyectos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Economía Colombiana e Internacional</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 5</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Mercadeo Estratégico y Canales Digitales</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Desarrolla estrategias de marketing y comunicación enfocadas en la satisfacción del cliente, la competitividad y la sostenibilidad.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Marketing</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Ventas y Canales de Distribución</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Marketing Verde (Electiva)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 6</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Analítica de Datos e Inteligencia Artificial</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Aplica herramientas tecnológicas, digitales y analíticas para la optimización de procesos y la toma de decisiones estratégicas.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Integra tecnologías de información, analítica de datos e inteligencia artificial en la gestión administrativa.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Big Data y Analítica de Datos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Inteligencia Artificial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Transformación Digital (Electiva)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 7</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Sostenibilidad y Economía Circular</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Promueve la sostenibilidad y la responsabilidad social como ejes de la gestión empresarial.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Implementa prácticas de sostenibilidad, economía circular y responsabilidad social en la organización.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Desarrollo Sostenible y Economía Circular (Electiva)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de la Calidad</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Ética y Gobernanza Corporativa (Electiva)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Finanzas Sostenibles (Electiva)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 8</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Gestión de Operaciones y Calidad</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Gestiona procesos operativos y de calidad con enfoque de mejora continua y eficiencia organizacional.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa sistemas integrados de gestión orientados a la calidad, productividad y sostenibilidad.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gestión de Operaciones</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Producción</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de la Calidad</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 9</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Investigación Aplicada e Innovación</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Aplica la investigación y el análisis crítico para la solución de problemas organizacionales y el mejoramiento continuo.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa proyectos de investigación aplicada que aporten a la innovación y competitividad empresarial.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (3 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Competencias Investigativas</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Métodos Cualitativos y Cuantitativos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 10</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Ética, Gobernanza y Responsabilidad Social</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Actúa con ética, responsabilidad y compromiso social en el ejercicio profesional.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Toma decisiones con base en principios éticos, legales y de responsabilidad social empresarial.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Cátedra de la Paz y Resolución de Conflictos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Legislación Comercial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Derecho Laboral y Seguridad Social</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Electiva de Diversidad e Inclusión</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+
+        <!-- SUB TAB 1.4: FLEXIBILIDAD PROPUESTA -->
+        <div class="tab-panel" id="c3-p-flex" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Sustentación de la Flexibilidad Curricular en el Plan Propuesto (4 Dimensiones)
+            </h3>
+            <div class="grid-2" style="margin-bottom:20px;">
+                <div class="card" style="border-top:4px solid var(--orange);">
+                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Flexibilidad Curricular y Electividad</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        El programa dispone de un banco de electivas en semestres 5, 6 y 7 (9 créditos de 3cr c/u) estructurado en líneas avanzadas de actualización tecnológica:
+                    </p>
+                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• Transformación Digital & IA (Inteligencia Artificial Aplicada, Analítica Avanzada).</li>
+                        <li>• Sostenibilidad & Economía Circular (Finanzas Sostenibles, Gerencia Ambiental).</li>
+                        <li>• Gobernanza & Ética (Gobernanza Corporativa, Diversidad e Inclusión).</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-top:4px solid var(--carbon);">
+                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--carbon);"></i> 2. Flexibilidad Pedagógica</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        • Aulas virtuales interactivas 24/7 en Canvas/Moodle.<br>
+                        • Acceso asincrónico y sincrónico para estudiantes trabajadores.<br>
+                        • Aprendizaje basado en retos reales del sector productivo.
+                    </p>
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="card" style="border-top:4px solid #0284C7;">
+                    <h4><i class="fas fa-random" style="color:#0284C7;"></i> 3. Flexibilidad Administrativa y Transitabilidad</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        • Transitabilidad de modalidad (Presencial <-> Virtual).<br>
+                        • Movilidad inter-semestral simplificada.<br>
+                        • Homologación directa y reconocimiento de saberes.
+                    </p>
+                </div>
+                <div class="card" style="border-top:4px solid #059669;">
+                    <h4><i class="fas fa-globe-americas" style="color:#059669;"></i> 4. Internacionalización Curricular</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        • Clases espejo con universidades de México, Perú y Chile.<br>
+                        • Plan de bilingüismo integrado (Inglés I, II, III).<br>
+                        • Conferencias magistrales con expertos internacionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUB TAB 1.5: EVALUACIÓN PROPUESTA -->
+        <div class="tab-panel" id="c3-p-eval" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Sistema de Evaluación de Resultados de Aprendizaje (Decreto 1330 de 2019)
+            </h3>
+            <div class="card-accent" style="margin-bottom:20px;">
+                <h4><i class="fas fa-balance-scale"></i> Marco Normativo Decreto 1330 de 2019</h4>
+                <p style="font-size:0.85rem; color:rgba(255,255,255,0.85); margin-top:6px; line-height:1.6;">
+                    Manifestación verificable de lo que el estudiante conoce, comprende y puede ejecutar al culminar su formación profesional.
+                </p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-brain"></i> Plano Cognitivo</h4>
+                    <p style="font-size:0.82rem;">Conocimiento, Comprensión, Aplicación, Análisis, Síntesis y Evaluación.</p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-heart"></i> Plano Subjetivo (Afectivo)</h4>
+                    <p style="font-size:0.82rem;">Disposición, Reacción, Valoración ética, Caracterización del perfil profesional.</p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-hands"></i> Plano Psicomotor</h4>
+                    <p style="font-size:0.82rem;">Manipulación de software LMS, Precisión, Articulación y Habilidades gerenciales.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- =========================================================
-     MAIN TAB 2: PLAN DE ESTUDIOS VIGENTE (158 CRÉDITOS - VISTA GLOBAL MATRIZ)
+     MAIN TAB 2: PLAN DE ESTUDIOS VIGENTE (158 CRÉDITOS)
      ========================================================= -->
 <div class="tab-panel" id="c3-main-vigente" style="display:none;">
-    <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
-        <i class="fas fa-th" style="color:var(--orange); margin-right:8px;"></i> Malla Curricular del Plan Vigente (Vista Global Matriz)
-    </h3>
-    <p style="color:var(--gray-text); font-size:0.84rem; margin-bottom:16px;">
-        Estructura por semestres académicos (columnas I a IX) y componentes curriculares (filas) de la Malla Registrada ante SACES (158 créditos, 58 asignaturas). Haga clic en cualquier materia para ver su trazabilidad completa.
-    </p>
+    <div class="tabs-container" id="c3VigenteSubTabs">
+        <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="c3-v-malla" onclick="switchTab('c3VigenteSubTabs','c3-v-malla')">
+                <i class="fas fa-th"></i> Malla Curricular (Matriz Global)
+            </button>
+            <button class="tab-btn" data-tab="c3-v-areas" onclick="switchTab('c3VigenteSubTabs','c3-v-areas')">
+                <i class="fas fa-layer-group"></i> Áreas de Formación (Tabla 9)
+            </button>
+            <button class="tab-btn" data-tab="c3-v-perfiles" onclick="switchTab('c3VigenteSubTabs','c3-v-perfiles')">
+                <i class="fas fa-user-check"></i> Perfiles y RAPs (Anexo 1)
+            </button>
+            <button class="tab-btn" data-tab="c3-v-flex" onclick="switchTab('c3VigenteSubTabs','c3-v-flex')">
+                <i class="fas fa-arrows-alt"></i> Flexibilidad Curricular (Sec 3.6.3)
+            </button>
+            <button class="tab-btn" data-tab="c3-v-eval" onclick="switchTab('c3VigenteSubTabs','c3-v-eval')">
+                <i class="fas fa-clipboard-check"></i> Evaluación de RA e Institucional
+            </button>
+        </div>
 
-    <div class="metric-row">
-        <div class="metric-card"><div class="metric-val">158</div><div class="metric-lbl">Créditos Totales</div></div>
-        <div class="metric-card"><div class="metric-val">9</div><div class="metric-lbl">Semestres</div></div>
-        <div class="metric-card"><div class="metric-val">58</div><div class="metric-lbl">Asignaturas</div></div>
-        <div class="metric-card"><div class="metric-val">1.896h</div><div class="metric-lbl">Horas Directas / Mediadas</div></div>
-        <div class="metric-card"><div class="metric-val">5.688h</div><div class="metric-lbl">Horas Trabajo Indep.</div></div>
-    </div>
+        <!-- SUB TAB 2.1: MALLA VIGENTE (MATRIZ GLOBAL) -->
+        <div class="tab-panel active" id="c3-v-malla" style="display:block;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
+                Malla Curricular del Plan Vigente (Vista Global Matriz por Componentes x Semestres I a IX)
+            </h3>
+            <p style="color:var(--gray-text); font-size:0.82rem; margin-bottom:16px;">
+                Estructura por semestres académicos (columnas I a IX) y componentes curriculares (filas) de la Malla Registrada ante SACES (158 créditos, 58 asignaturas). Haga clic en cualquier materia para ver su trazabilidad completa.
+            </p>
 
-    <!-- MATRIX GLOBAL VIEW VIGENTE -->
-    
+            <div class="metric-row">
+                <div class="metric-card"><div class="metric-val">158</div><div class="metric-lbl">Créditos Totales</div></div>
+                <div class="metric-card"><div class="metric-val">9</div><div class="metric-lbl">Semestres</div></div>
+                <div class="metric-card"><div class="metric-val">58</div><div class="metric-lbl">Asignaturas</div></div>
+                <div class="metric-card"><div class="metric-val">1.896h</div><div class="metric-lbl">Horas Directas / Mediadas</div></div>
+                <div class="metric-card"><div class="metric-val">5.688h</div><div class="metric-lbl">Horas Trabajo Indep.</div></div>
+            </div>
+
+            <!-- MATRIX GLOBAL VIEW VIGENTE -->
+            
 <div class="malla-matrix-wrapper">
     <div class="malla-matrix-scroll">
         <table class="malla-matrix-table">
@@ -4718,12 +5169,227 @@ window.SECTIONS['c3'] = `
 </div>
 
 
-    <!-- TRACEABILITY DETAIL PANEL VIGENTE -->
-    <div class="matrix-detail-panel" id="c3-vigente-matrix-detail-panel">
-        <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
-            <i class="fas fa-hand-pointer" style="font-size:2.5rem; color:var(--orange); margin-bottom:12px;"></i>
-            <h4 style="font-size:1.1rem; color:var(--carbon); font-weight:800; font-family:var(--font-heading);">Seleccione una Asignatura de la Matriz Vigente</h4>
-            <p style="font-size:0.85rem; max-width:600px; margin:6px auto 0;">Haga clic en cualquier materia de la matriz para desplegar la información completa de la asignatura.</p>
+            <!-- TRACEABILITY DETAIL PANEL VIGENTE -->
+            <div class="matrix-detail-panel" id="c3-vigente-matrix-detail-panel">
+                <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
+                    <i class="fas fa-hand-pointer" style="font-size:2.5rem; color:var(--orange); margin-bottom:12px;"></i>
+                    <h4 style="font-size:1.1rem; color:var(--carbon); font-weight:800; font-family:var(--font-heading);">Seleccione una Asignatura de la Matriz Vigente</h4>
+                    <p style="font-size:0.85rem; max-width:600px; margin:6px auto 0;">Haga clic en cualquier materia de la matriz para desplegar la información completa de la asignatura.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUB TAB 2.2: ÁREAS VIGENTE -->
+        <div class="tab-panel" id="c3-v-areas" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Distribución de Créditos y Asignaturas por Área de Formación (Tabla 9 Oficial)
+            </h3>
+            
+<div class="grid-3" style="margin-bottom:24px;">
+    <div class="card" style="border-top:4px solid #0284C7;">
+        <h4 style="color:#0284C7;"><i class="fas fa-book-reader"></i> 1. Área Transversal (Humanística y Básica)</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>17 Asignaturas · 41 Créditos · 1.968 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla competencias genéricas en matemáticas, cálculo, estadísticas, comunicación, inglés (I a VI), legislación y democracia.</p>
+    </div>
+    <div class="card" style="border-top:4px solid #C2410C;">
+        <h4 style="color:#C2410C;"><i class="fas fa-briefcase"></i> 2. Área Disciplinar / Específica</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>36 Asignaturas · 107 Créditos · 5.136 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla la fundamentación profesional en gestión, contabilidad, economía, finanzas, mercadeo, operaciones y talento humano.</p>
+    </div>
+    <div class="card" style="border-top:4px solid #15803D;">
+        <h4 style="color:#15803D;"><i class="fas fa-cubes"></i> 3. Área Electiva</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>5 Asignaturas · 10 Créditos · 480 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Bolsa de electividad dividida en 3 Electivas de Profundización (6cr) y 2 Electivas Humanísticas (4cr).</p>
+    </div>
+</div>
+
+        </div>
+
+        <!-- SUB TAB 2.3: PERFILES Y RAPS VIGENTE -->
+        <div class="tab-panel" id="c3-v-perfiles" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Matriz de Resultados de Aprendizaje y Competencias del Plan Vigente (Anexo 1 Oficial)
+            </h3>
+            <div class="grid-2" style="margin-bottom:20px;">
+                <div class="card" style="border-left:4px solid var(--orange);">
+                    <h4><i class="fas fa-briefcase" style="color:var(--orange);"></i> Perfil Profesional del Plan Vigente</h4>
+                    <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
+                        El profesional en Administración de Empresas del plan vigente es un egresado formado para la comprensión integral de las organizaciones, el manejo estratégico de sus recursos humanos, financieros y tecnológicos, la toma de decisiones informadas en entornos dinámicos y la conducción ética de proyectos empresariales regionales.
+                    </p>
+                </div>
+                <div class="card" style="border-left:4px solid var(--carbon);">
+                    <h4><i class="fas fa-building" style="color:var(--carbon);"></i> Perfil Ocupacional del Plan Vigente</h4>
+                    <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
+                        Desempeño en roles como: Director General, Gerente Administrativo o Financiero, Director de Mercadeo y Ventas, Coordinador de Talento Humano, Gestor de Calidad y Operaciones, Consultor Organizacional o Empresario Independiente.
+                    </p>
+                </div>
+            </div>
+            
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 1</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Innovación y Optimización de Productos, Servicios y Procesos</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Implementar procesos de innovación para optimizar productos, servicios y procesos, promoviendo soluciones creativas y estrategias de marketing innovadoras que generen valor, mejoren la competitividad y adapten la organización a las demandas del mercado globalizado.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña procesos de innovación para optimizar productos, servicios y procesos, utilizando estrategias de marketing innovadoras basadas en un análisis crítico del contexto y alineadas a las demandas del mercado global.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (10 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Creatividad e Innovación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Cultura Emprendedora</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Tecnología e Innovación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés I</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Modelos de Desarrollo Económico</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Evaluación de Proyectos de Inversión</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos Contables</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 2</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Liderazgo, Productividad y Sistemas de Información Gerencial</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Dirigir equipos de trabajo de manera eficaz, guiando a las personas con visión, ética y comunicación efectiva, tomando decisiones estratégicas en los procesos organizacionales para optimizar la productividad, competitividad y el desarrollo general de la empresa.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Formula estrategias de innovación tecnológica y sistemas de información gerencial que optimicen la productividad y competitividad de una organización, ajustando las soluciones con la planeación estratégica y las demandas del mercado global.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (10 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gestión de la Calidad</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Planeación y Prospectiva</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Sistemas de Información Gerencial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés II</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Habilidades Gerenciales</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Distribución Física y Logística</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Administración de Salarios</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Talento Humano</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 3</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Sostenibilidad, Operaciones y Responsabilidad Social Empresarial</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Deducir los principios de sostenibilidad y responsabilidad social en la toma de decisiones empresariales, estableciendo estrategias que fomenten la conservación del medio ambiente, la equidad social y la viabilidad económica.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Elabora estrategias integradas para mejorar la competitividad, sostenibilidad y cuidado del medio ambiente en la organización, mediante el desarrollo de procedimientos operacionales que optimicen costos, aumenten las utilidades y minimicen el impacto ambiental.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (16 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Administración por Procesos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Producción</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia Financiera</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Responsabilidad Social Empresarial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Evaluación de Proyectos de Inversión</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Sistemas de Información Gerencial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Liderazgo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés III</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto Empresarial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Metodología de la Investigación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Matemática Financiera</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Presupuestos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Legislación Tributaria</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gobierno Corporativo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 4</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Investigación de Mercados y Estudios Aplicados</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Diseñar investigaciones de mercado utilizando herramientas cuantitativas y cualitativas, con el objetivo de analizar las tendencias del entorno y formular decisiones comerciales estratégicas.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Estructura proyectos de investigación aplicada y estudios de mercado que aporten datos rigurosos para la formulación de planes comerciales e internacionales.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Métodos Cuantitativos y Cualitativos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Metodología de la Investigación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto de Grado I</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto de Grado II</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Entorno Económico Colombiano e Internacional</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+
+        <!-- SUB TAB 2.4: FLEXIBILIDAD VIGENTE -->
+        <div class="tab-panel" id="c3-v-flex" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Sustentación de la Flexibilidad Curricular del Plan Vigente (Sección 3.6.3)
+            </h3>
+            <div class="grid-2" style="margin-bottom:20px;">
+                <div class="card" style="border-top:4px solid var(--orange);">
+                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> Bolsa de Electividad Disciplinar y Humanística (10 cr)</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        • Electivas de Profundización I, II y III (6 cr): Marketing Digital, Prevención de Riesgos, Finanzas Corporativas.<br>
+                        • Electivas Humanísticas I y II (4 cr): Ética y Ciudadanía, Diversidad e Inclusión Social.
+                    </p>
+                </div>
+                <div class="card" style="border-top:4px solid var(--carbon);">
+                    <h4><i class="fas fa-graduation-cap" style="color:var(--carbon);"></i> Flexibilidad en Opciones de Graduación</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        • Proyecto de Investigación Formativa (Proyecto de Grado I y II).<br>
+                        • Práctica Profesional en Organizaciones Aliadas.<br>
+                        • Seminario Especializado de Profundización Posgradual.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUB TAB 2.5: EVALUACIÓN VIGENTE -->
+        <div class="tab-panel" id="c3-v-eval" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Sistema Institucional de Evaluación del Aprendizaje (Plan Vigente)
+            </h3>
+            <div class="grid-3">
+                <div class="card" style="border-top:4px solid var(--orange);">
+                    <h4><i class="fas fa-percentage" style="color:var(--orange);"></i> 3 Cortes Sumativos</h4>
+                    <p style="font-size:0.83rem;">• Corte 1: 30%<br>• Corte 2: 30%<br>• Corte 3: 40%</p>
+                </div>
+                <div class="card" style="border-top:4px solid var(--carbon);">
+                    <h4><i class="fas fa-sliders-h" style="color:var(--carbon);"></i> Escala Cuantitativa</h4>
+                    <p style="font-size:0.83rem;">Calificación de 0.0 a 5.0.<br>Nota mínima de aprobación: <strong>3.0</strong>.</p>
+                </div>
+                <div class="card" style="border-top:4px solid #059669;">
+                    <h4><i class="fas fa-users-cog" style="color:#059669;"></i> Triada Evaluativa</h4>
+                    <p style="font-size:0.83rem;">Integración activa de Heteroevaluación, Coevaluación y Autoevaluación.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -4798,4 +5464,6 @@ window.SECTIONS['c3'] = `
 
 window.c3Init = function() {
     window.switchTab('c3MainTabsGroup', 'c3-main-propuesto');
+    window.switchTab('c3PropuestoSubTabs', 'c3-p-malla');
+    window.switchTab('c3VigenteSubTabs', 'c3-v-malla');
 };
