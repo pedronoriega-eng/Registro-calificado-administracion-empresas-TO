@@ -6,6 +6,31 @@
 
 window.SECTIONS = window.SECTIONS || {};
 
+window.switchTab = window.switchTab || function(tabGroupId, tabId) {
+    const group = document.getElementById(tabGroupId);
+    if (group) {
+        group.querySelectorAll('.tab-btn, .c3-main-tab-btn').forEach(b => b.classList.remove('active'));
+        const activeBtn = group.querySelector(`[data-tab="${tabId}"]`);
+        if (activeBtn) activeBtn.classList.add('active');
+    }
+
+    const targetPanel = document.getElementById(tabId);
+    if (!targetPanel) return;
+
+    const parent = targetPanel.parentElement;
+    if (parent) {
+        Array.from(parent.children).forEach(child => {
+            if (child.classList && child.classList.contains('tab-panel')) {
+                child.classList.remove('active');
+                child.style.display = 'none';
+            }
+        });
+    }
+
+    targetPanel.classList.add('active');
+    targetPanel.style.display = 'block';
+};
+
 window.C3_SUBJECTS = [
   {
     "id": "prop_1",
@@ -1683,7 +1708,7 @@ window.SECTIONS['c3'] = `
 <!-- =========================================================
      MAIN TAB 1: PLAN DE ESTUDIOS VIGENTE (158 CRÉDITOS)
      ========================================================= -->
-<div class="tab-panel active" id="c3-main-vigente">
+<div class="tab-panel active" id="c3-main-vigente" style="display:block;">
     <div class="tabs-container" id="c3VigenteSubTabs">
         <div class="tabs-nav">
             <button class="tab-btn active" data-tab="c3-v-malla" onclick="switchTab('c3VigenteSubTabs','c3-v-malla')">
@@ -1704,7 +1729,7 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: MALLA VIGENTE -->
-        <div class="tab-panel active" id="c3-v-malla">
+        <div class="tab-panel active" id="c3-v-malla" style="display:block;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
                 Plan de Estudios Vigente · 158 Créditos · 9 Semestres · 62 Asignaturas
             </h3>
@@ -1789,7 +1814,7 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: ÁREAS VIGENTE -->
-        <div class="tab-panel" id="c3-v-areas">
+        <div class="tab-panel" id="c3-v-areas" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Distribución por Áreas de Formación (Plan Vigente)
             </h3>
@@ -1807,19 +1832,19 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: PERFILES VIGENTE -->
-        <div class="tab-panel" id="c3-v-perfiles">
+        <div class="tab-panel" id="c3-v-perfiles" style="display:none;">
             <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">Perfil de Egreso Vigente</h4>
             <p style="font-size:0.85rem; color:var(--gray-text); line-height:1.6;">El egresado del plan vigente se caracteriza por competencias generales en administración tradicional, gestión financiera básica y dirección de operaciones en organizaciones locales y regionales.</p>
         </div>
 
         <!-- SUB TAB: FLEXIBILIDAD VIGENTE -->
-        <div class="tab-panel" id="c3-v-flex">
+        <div class="tab-panel" id="c3-v-flex" style="display:none;">
             <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">Flexibilidad en el Plan Vigente</h4>
             <p style="font-size:0.85rem; color:var(--gray-text);">Bolsa de 10 créditos electivos distribuidos en semestres avanzados (electivas profesionales y complementarias).</p>
         </div>
 
         <!-- SUB TAB: EVALUACIÓN VIGENTE -->
-        <div class="tab-panel" id="c3-v-eval">
+        <div class="tab-panel" id="c3-v-eval" style="display:none;">
             <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">Sistema de Evaluación Vigente</h4>
             <p style="font-size:0.85rem; color:var(--gray-text);">Evaluación sumativa y formativa mediante 3 cortes académicos (30%, 30%, 40%) institucionales.</p>
         </div>
@@ -1829,7 +1854,7 @@ window.SECTIONS['c3'] = `
 <!-- =========================================================
      MAIN TAB 2: PLAN DE ESTUDIOS PROPUESTO (144 CRÉDITOS)
      ========================================================= -->
-<div class="tab-panel" id="c3-main-propuesto">
+<div class="tab-panel" id="c3-main-propuesto" style="display:none;">
     <div class="tabs-container" id="c3PropuestoSubTabs">
         <div class="tabs-nav">
             <button class="tab-btn active" data-tab="c3-p-malla" onclick="switchTab('c3PropuestoSubTabs','c3-p-malla')">
@@ -1850,7 +1875,7 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: MALLA PROPUESTA (INTERACTIVA) -->
-        <div class="tab-panel active" id="c3-p-malla">
+        <div class="tab-panel active" id="c3-p-malla" style="display:block;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:10px;">
                 <div>
                     <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
@@ -1954,7 +1979,7 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: ÁREAS Y MODALIDADES -->
-        <div class="tab-panel" id="c3-p-areas">
+        <div class="tab-panel" id="c3-p-areas" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Distribución por Áreas de Formación (Plan Propuesto)
             </h3>
@@ -2002,7 +2027,7 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: PERFILES Y RAPS (7 COMPETENCIAS) -->
-        <div class="tab-panel" id="c3-p-perfiles">
+        <div class="tab-panel" id="c3-p-perfiles" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Perfil de Egreso (7 Competencias Clave) & 9 RAPs del Programa
             </h3>
@@ -2075,7 +2100,7 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: FLEXIBILIDAD PROPUESTA -->
-        <div class="tab-panel" id="c3-p-flex">
+        <div class="tab-panel" id="c3-p-flex" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Estrategias de Flexibilidad Curricular en el Plan Propuesto
             </h3>
@@ -2092,7 +2117,7 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SUB TAB: EVALUACIÓN PROPUESTA -->
-        <div class="tab-panel" id="c3-p-eval">
+        <div class="tab-panel" id="c3-p-eval" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Sistema de Evaluación por Resultados de Aprendizaje (Decreto 1330)
             </h3>
@@ -2104,7 +2129,7 @@ window.SECTIONS['c3'] = `
 <!-- =========================================================
      MAIN TAB 3: COMPARACIÓN Y JUSTIFICACIÓN DE LA REESTRUCTURACIÓN
      ========================================================= -->
-<div class="tab-panel" id="c3-main-comparacion">
+<div class="tab-panel" id="c3-main-comparacion" style="display:none;">
     <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--carbon); margin-bottom:6px;">
         Cuadro Comparativo y Sustentación Técnica de la Reestructuración Curricular
     </h3>
@@ -2204,10 +2229,7 @@ window.SECTIONS['c3'] = `
 `;
 
 window.c3Init = function() {
-    const mainTab = document.querySelector('#c3MainTabsGroup .c3-main-tab-btn');
-    if (mainTab) mainTab.click();
-    const subTab1 = document.querySelector('#c3VigenteSubTabs .tab-btn');
-    if (subTab1) subTab1.click();
-    const subTab2 = document.querySelector('#c3PropuestoSubTabs .tab-btn');
-    if (subTab2) subTab2.click();
+    window.switchTab('c3MainTabsGroup', 'c3-main-vigente');
+    window.switchTab('c3VigenteSubTabs', 'c3-v-malla');
+    window.switchTab('c3PropuestoSubTabs', 'c3-p-malla');
 };

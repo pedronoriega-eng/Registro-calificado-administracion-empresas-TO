@@ -146,25 +146,27 @@ document.addEventListener('keydown', e => {
 // Tab switching utility
 window.switchTab = function(tabGroupId, tabId) {
     const group = document.getElementById(tabGroupId);
-    if (!group) return;
-    
-    // Deactivate all tab buttons in this group
-    group.querySelectorAll('.tab-btn, .c3-main-tab-btn').forEach(b => b.classList.remove('active'));
-    const btn = group.querySelector(`[data-tab="${tabId}"]`);
-    if (btn) btn.classList.add('active');
-
-    // Activate target panel and deactivate sibling panels at the same nesting level
-    const panel = document.getElementById(tabId);
-    if (panel) {
-        const parent = panel.parentElement;
-        if (parent) {
-            Array.from(parent.children).forEach(child => {
-                if (child.classList.contains('tab-panel')) {
-                    child.classList.remove('active');
-                }
-            });
-        }
-        panel.classList.add('active');
+    if (group) {
+        group.querySelectorAll('.tab-btn, .c3-main-tab-btn').forEach(b => b.classList.remove('active'));
+        const activeBtn = group.querySelector(`[data-tab="${tabId}"]`);
+        if (activeBtn) activeBtn.classList.add('active');
     }
+
+    const targetPanel = document.getElementById(tabId);
+    if (!targetPanel) return;
+
+    const parent = targetPanel.parentElement;
+    if (parent) {
+        Array.from(parent.children).forEach(child => {
+            if (child.classList && child.classList.contains('tab-panel')) {
+                child.classList.remove('active');
+                child.style.display = 'none';
+            }
+        });
+    }
+
+    targetPanel.classList.add('active');
+    targetPanel.style.display = 'block';
 };
+
 
