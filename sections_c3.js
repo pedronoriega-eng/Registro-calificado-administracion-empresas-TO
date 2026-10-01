@@ -49,21 +49,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Desarrolla el pensamiento lógico- matemático aplicado a la resolución de problemas empresariales, financieros y económicos mediante modelos lineales.",
+    "descripcion": "La asignatura Álgebra Lineal proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Emplea herramientas algebraicas en la resolución de",
-      "RA2: Interpreta datos cuantitativos y desarrolla modelos",
-      "RA3: Utiliza el razonamiento lógico para plantear soluciones",
-      "RA1: Comprende los principios básicos del mercadeo y su"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Álgebra Lineal en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Álgebra Lineal.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Álgebra Lineal."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Álgebra Lineal",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Álgebra Lineal"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Álgebra Lineal",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Álgebra Lineal"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_2",
@@ -82,20 +81,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "al como herramienta de liderazgo y trabajo en equipo. I Cátedra de la Paz y Resolución de Conflictos Promueve la reflexión sobre la convivencia, los valores democráticos, la cultura de paz y la gestión",
+    "descripcion": "La asignatura Comunicación Oral y Escrita proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Reconoce los principios de la cultura de paz y la",
-      "RA2: Analiza conflictos organizacionales y propone",
-      "RA1: Aplica conceptos de derivada en la interpretación de"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Comunicación Oral y Escrita en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Comunicación Oral y Escrita.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Comunicación Oral y Escrita."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Comunicación Oral y Escrita",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Comunicación Oral y Escrita"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Comunicación Oral y Escrita",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Comunicación Oral y Escrita"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_3",
@@ -114,20 +113,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Asignatura del área Transversal que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Cátedra de la Paz y Resolución de Conflictos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Cátedra de la Paz y Resolución de Conflictos en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Cátedra de la Paz y Resolución de Conflictos.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Cátedra de la Paz y Resolución de Conflictos."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Cátedra de la Paz y Resolución de Conflictos en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Cátedra de la Paz y Resolución de Conflictos.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Cátedra de la Paz y Resolución de Conflictos."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Cátedra de la Paz y Resolución de Conflictos",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Cátedra de la Paz y Resolución de Conflictos"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Cátedra de la Paz y Resolución de Conflictos",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Cátedra de la Paz y Resolución de Conflictos"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_4",
@@ -146,21 +145,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Administración Introduce los principios, teorías y enfoques de la administración moderna, analizando la evolución del pensamiento administrativo y su aplicación en organizaciones contemporáneas.",
+    "descripcion": "La asignatura Fundamentos de Administración proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Explica los fundamentos y funciones básicas de la",
-      "RA2: Analiza la evolución histórica y los enfoques modernos",
-      "RA3: Aplica conceptos de planeación, organización, dirección",
-      "RA1: Reconoce los principios contables y su importancia en la"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Fundamentos de Administración en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Fundamentos de Administración.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Fundamentos de Administración."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Fundamentos de Administración",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Fundamentos de Administración"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Fundamentos de Administración",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Fundamentos de Administración"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_5",
@@ -179,20 +177,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Fundamentos Contables y Financieros proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Fundamentos Contables y Financieros en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Fundamentos Contables y Financieros.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Fundamentos Contables y Financieros."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Fundamentos Contables y Financieros en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Fundamentos Contables y Financieros.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Fundamentos Contables y Financieros."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Fundamentos Contables y Financieros",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Fundamentos Contables y Financieros"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Fundamentos Contables y Financieros",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Fundamentos Contables y Financieros"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_6",
@@ -211,21 +209,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Administración Introduce los principios, teorías y enfoques de la administración moderna, analizando la evolución del pensamiento administrativo y su aplicación en organizaciones contemporáneas.",
+    "descripcion": "La asignatura Fundamentos de mercadeo proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Explica los fundamentos y funciones básicas de la",
-      "RA2: Analiza la evolución histórica y los enfoques modernos",
-      "RA3: Aplica conceptos de planeación, organización, dirección",
-      "RA1: Reconoce los principios contables y su importancia en la"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Fundamentos de mercadeo en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Fundamentos de mercadeo.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Fundamentos de mercadeo."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Fundamentos de mercadeo",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Fundamentos de mercadeo"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Fundamentos de mercadeo",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Fundamentos de mercadeo"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 4: Gestión de mercadeo, comunicación, canales digitales y transformación digital.",
+    "rap_asociado": "RAP 5: Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible."
   },
   {
     "id": "prop_7",
@@ -244,20 +241,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Asignatura del área Transversal que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Cálculo Diferencial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Cálculo Diferencial en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Cálculo Diferencial.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Cálculo Diferencial."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Cálculo Diferencial en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Cálculo Diferencial.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Cálculo Diferencial."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Cálculo Diferencial",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Cálculo Diferencial"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Cálculo Diferencial",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Cálculo Diferencial"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_8",
@@ -276,21 +273,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "criptiva aplicada al análisis y la interpretación de datos en contextos empresariales y sociales.",
+    "descripcion": "La asignatura Estadística Descriptiva proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Organiza y presenta información estadística mediante",
-      "RA2: Analiza datos cuantitativos para apoyar procesos de",
-      "RA3: Aplica métodos estadísticos descriptivos en estudios de",
-      "RA1: Reconoce el marco legal que regula las actividades"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Estadística Descriptiva en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Estadística Descriptiva.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Estadística Descriptiva."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Estadística Descriptiva",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Estadística Descriptiva"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Estadística Descriptiva",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Estadística Descriptiva"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_9",
@@ -309,21 +305,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Desarrolla competencias comunicativas básicas en lengua inglesa, enfocadas en la comprensión y producción de textos relacionados con la administración y los negocios.",
+    "descripcion": "La asignatura Inglés I proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Comprende estructuras gramaticales básicas y vocabulario",
-      "RA2: Produce textos orales y escritos simples en contextos",
-      "RA3: Utiliza el inglés como herramienta para el acceso a",
-      "RA1: Explica las principales variables macroeconómica"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inglés I en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Inglés I.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Inglés I."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Inglés I",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Inglés I"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Inglés I",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Inglés I"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_10",
@@ -342,21 +337,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Analiza los principios de la economía desde la perspectiva del consumidor y del productor, abordando temas como la oferta, demanda, elasticidad y formación de precios.",
+    "descripcion": "La asignatura Microeconomía proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Explica el comportamiento del consumidor y del productor",
-      "RA2: Interpreta modelos microeconómicos aplicados a la gestión",
-      "RA3: Analiza el impacto de los cambios en el mercado sobre la",
-      "RA1: Organiza y presenta información estadística mediante"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Microeconomía en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Microeconomía.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Microeconomía."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Microeconomía",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Microeconomía"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Microeconomía",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Microeconomía"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_11",
@@ -375,21 +369,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "ercial en la gestión y administración de organizaciones. II Costos y Presupuestos Introduce los fundamentos del costeo, la planeación presupuestal y el control financiero como herramientas de apoyo a la gestión administrativa.",
+    "descripcion": "La asignatura Legislación Comercial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Clasifica y calcula los diferentes tipos de costos según su",
-      "RA2: Elabora presupuestos operativos y financieros básicos",
-      "RA3: Aplica herramientas de mediación y diálogo para la",
-      "RA3: Evalúa el comportamiento de los costos y presupuestos"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Legislación Comercial en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Legislación Comercial.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Legislación Comercial."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Legislación Comercial",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Legislación Comercial"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Legislación Comercial",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Legislación Comercial"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_12",
@@ -408,20 +401,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "uestos para mejorar la eficiencia organizacional. II Inglés I Desarrolla competencias comunicativas básicas en lengua inglesa, enfocadas en la comprensión y producción de textos relacionados con la administración y los negocios.",
+    "descripcion": "La asignatura Costos y Presupuestos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Comprende estructuras gramaticales básicas y vocabulario",
-      "RA2: Produce textos orales y escritos simples en contextos",
-      "RA3: Utiliza el inglés como herramienta para el acceso a"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Costos y Presupuestos en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Costos y Presupuestos.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Costos y Presupuestos."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Costos y Presupuestos",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Costos y Presupuestos"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Costos y Presupuestos",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Costos y Presupuestos"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_13",
@@ -440,20 +433,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Asignatura del área Transversal que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Estadística Inferencial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Estadística Inferencial en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Estadística Inferencial.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Estadística Inferencial."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Estadística Inferencial en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Estadística Inferencial.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Estadística Inferencial."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Estadística Inferencial",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Estadística Inferencial"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Estadística Inferencial",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Estadística Inferencial"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_14",
@@ -472,21 +465,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Fortalece las habilidades comunicativas en inglés, con énfasis en la comprensión lectora y la interacción en contextos empresariales.",
+    "descripcion": "La asignatura Inglés II proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Utiliza estructuras intermedias del inglés en situaciones",
-      "RA2: Interpreta textos técnicos y administrativos en lengua",
-      "RA3: Se comunica oralmente en inglés en escenarios",
-      "RA1: Diseña instrumentos y métodos para la recolección y análisis"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inglés II en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Inglés II.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Inglés II."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Inglés II",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Inglés II"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Inglés II",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Inglés II"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_15",
@@ -505,21 +497,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Analiza el funcionamiento general de la economía a nivel nacional e internacional, abordando variables como el PIB, inflación, desempleo, política fiscal y monetaria.",
+    "descripcion": "La asignatura Macroeconomía proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Explica las principales variables macroeconómicas y su",
-      "RA2: Analiza el impacto de las políticas económicas en los",
-      "RA3: Interpreta indicadores macroeconómicos para la toma de",
-      "RA1: Aplica técnicas de análisis financiero para evaluar la"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Macroeconomía en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Macroeconomía.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Macroeconomía."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Macroeconomía",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Macroeconomía"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Macroeconomía",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Macroeconomía"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_16",
@@ -538,21 +529,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "iero para evaluar la situación económica de una empresa. RA2: Calcula e interpreta indicadores financieros clave para la gestión organizacional. RA3: Propone estrategias de mejoramiento financiero basadas en evidencias cuantitativas. III Estadística Inferencial Introduce los conceptos de inferencia estadística, estimación y pruebas de hipótesis aplicados a la toma de decisiones empresariales.",
+    "descripcion": "La asignatura Análisis Financiero proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA2: Calcula e interpreta indicadores financieros clave para la",
-      "RA3: Propone estrategias de mejoramiento financiero basadas",
-      "RA1: Aplica métodos inferenciales para el análisis de muestras",
-      "RA2: Interpreta resultados estadísticos para respaldar"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Análisis Financiero en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Análisis Financiero.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Análisis Financiero."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Análisis Financiero",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Análisis Financiero"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Análisis Financiero",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Análisis Financiero"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_17",
@@ -571,21 +561,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "strativos y financieros. RA3: Interpreta indicadores macroeconómicos para la toma de decisiones estratégicas. III Análisis Financiero Desarrolla herramientas para interpretar y evaluar los estados financieros, medir la rentabilidad, liquidez y solvencia de las organizaciones.",
+    "descripcion": "La asignatura Procesos Administrativos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA3: Interpreta indicadores macroeconómicos para la toma de",
-      "RA1: Aplica técnicas de análisis financiero para evaluar la",
-      "RA2: Calcula e interpreta indicadores financieros clave para la",
-      "RA3: Propone estrategias de mejoramiento financiero basadas"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Procesos Administrativos en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Procesos Administrativos.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Procesos Administrativos."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Procesos Administrativos",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Procesos Administrativos"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Procesos Administrativos",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Procesos Administrativos"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_18",
@@ -604,21 +593,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "cional, su estructura, cultura y comportamiento.",
+    "descripcion": "La asignatura Teoría Organizacional proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Analiza los principales modelos teóricos de la",
-      "RA2: Evalúa la estructura organizacional como elemento clave",
-      "RA3: Propone mejoras en la organización basadas en el",
-      "RA1: Utiliza estructuras intermedias del inglés en situaciones"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Teoría Organizacional en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Teoría Organizacional.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Teoría Organizacional."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Teoría Organizacional",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Teoría Organizacional"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Teoría Organizacional",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Teoría Organizacional"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_19",
@@ -637,20 +625,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Asignatura del área Transversal que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Competencias Investigativas proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Competencias Investigativas en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Competencias Investigativas.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Competencias Investigativas."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Competencias Investigativas en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Competencias Investigativas.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Competencias Investigativas."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Competencias Investigativas",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Competencias Investigativas"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Competencias Investigativas",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Competencias Investigativas"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_20",
@@ -669,21 +657,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Consolida las competencias comunicativas en inglés, con énfasis en vocabulario técnico, redacción de informes y comprensión de textos empresariales.",
+    "descripcion": "La asignatura Inglés III proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Interpreta y redacta documentos administrativos y",
-      "RA2: Participa en conversaciones y presentaciones orales en",
-      "RA3: Aplica vocabulario técnico-administrativo en la comunicación",
-      "RA1: Analiza la estructura financiera y"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inglés III en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Inglés III.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Inglés III."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Inglés III",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Inglés III"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Inglés III",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Inglés III"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_21",
@@ -702,21 +689,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "e mercados en estudios orientados a la innovación empresarial. IV Matemática Financiera Presenta los fundamentos de la matemática aplicada a las finanzas, incluyendo el valor del dinero en el tiempo, tasas de interés y amortización de créditos.",
+    "descripcion": "La asignatura Investigación de Mercados proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica conceptos de valor del dinero en el tiempo en",
-      "RA2: Calcula tasas, rentabilidades y flujos de efectivo en",
-      "RA3: Utiliza herramientas financieras para analizar inversiones y",
-      "RA1: Analiza los sectores productivos y el comportami"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Investigación de Mercados en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Investigación de Mercados.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Investigación de Mercados."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Investigación de Mercados",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Investigación de Mercados"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Investigación de Mercados",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Investigación de Mercados"
     ],
-    "perfil_asociado": "Competencia 1 & 4: Gestión de mercadeo, canales digitales y transformación digital.",
-    "rap_asociado": "RAP 2: Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_22",
@@ -735,20 +721,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Matemática Financiera proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Matemática Financiera en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Matemática Financiera.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Matemática Financiera."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Matemática Financiera en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Matemática Financiera.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Matemática Financiera."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Matemática Financiera",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Matemática Financiera"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Matemática Financiera",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Matemática Financiera"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_23",
@@ -767,20 +753,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Economía Colombiana e Internacional proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Economía Colombiana e Internacional en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Economía Colombiana e Internacional.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Economía Colombiana e Internacional."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Economía Colombiana e Internacional en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Economía Colombiana e Internacional.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Economía Colombiana e Internacional."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Economía Colombiana e Internacional",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Economía Colombiana e Internacional"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Economía Colombiana e Internacional",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Economía Colombiana e Internacional"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_24",
@@ -799,21 +785,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "y la seguridad social. RA3: Aplica la normativa vigente en procesos de contratación y gestión del talento humano. IV Inglés III Consolida las competencias comunicativas en inglés, con énfasis en vocabulario técnico, redacción de informes y comprensión de textos empresariales.",
+    "descripcion": "La asignatura Derecho Laboral y Seguridad Social proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA3: Aplica la normativa vigente en procesos de contratación y",
-      "RA1: Interpreta y redacta documentos administrativos y",
-      "RA2: Participa en conversaciones y presentaciones orales en",
-      "RA3: Aplica vocabulario técnico-administrativo en la comunicación"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Derecho Laboral y Seguridad Social en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Derecho Laboral y Seguridad Social.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Derecho Laboral y Seguridad Social."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Derecho Laboral y Seguridad Social",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Derecho Laboral y Seguridad Social"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Derecho Laboral y Seguridad Social",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Derecho Laboral y Seguridad Social"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_25",
@@ -832,21 +817,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "lento Humano Aborda los fundamentos, procesos y estrategias de gestión del talento humano orientadas al desarrollo integral, la motivación y la productividad.",
+    "descripcion": "La asignatura Gerencia del Talento Humano proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Diseña políticas y estrategias de",
-      "RA2: Evalúa el desempeño laboral",
-      "RA3:",
-      "RA1: Formula estrategias de marketing"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia del Talento Humano en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Gerencia del Talento Humano.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Gerencia del Talento Humano."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Gerencia del Talento Humano",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Gerencia del Talento Humano"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Gerencia del Talento Humano",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Gerencia del Talento Humano"
     ],
-    "perfil_asociado": "Competencia 5 & 6: Habilidades gerenciales, liderazgo colaborativo y compromiso ético.",
-    "rap_asociado": "RAP 6: Diseña políticas de gestión humana y lidera equipos participativos."
+    "perfil_asociado": "Competencia 5 & 6: Liderazgo colaborativo, habilidades gerenciales, compromiso ético y responsabilidad social.",
+    "rap_asociado": "RAP 3 & RAP 10: Diseña políticas de gestión humana y toma decisiones éticas en la organización."
   },
   {
     "id": "prop_26",
@@ -865,21 +849,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Introduce los principios, teorías y enfoques de la administración moderna, analizando la evolución del pensamiento administrativo y su aplicación en organizaciones contemporáneas.",
+    "descripcion": "La asignatura Administración Financiera proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Explica los fundamentos y funciones básicas de la",
-      "RA2: Analiza la evolución histórica y los enfoques modernos",
-      "RA3: Aplica conceptos de planeación, organización, dirección",
-      "RA1: Reconoce los principios contables y su importancia en la"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Administración Financiera en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Administración Financiera.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Administración Financiera."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Administración Financiera",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Administración Financiera"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Administración Financiera",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Administración Financiera"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_27",
@@ -898,21 +881,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "aciones Estudia los procesos productivos y de servicios, la administración de recursos, la planeación de la capacidad y el control de la producción.",
+    "descripcion": "La asignatura Gestión de Operaciones proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1:",
-      "RA2: Aplica técnicas de planeación y",
-      "RA3:",
-      "RA1: Diseña políticas y estrategias de"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gestión de Operaciones en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Gestión de Operaciones.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Gestión de Operaciones."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Gestión de Operaciones",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Gestión de Operaciones"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Gestión de Operaciones",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Gestión de Operaciones"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_28",
@@ -931,21 +913,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "ados de Gestión (HSEQ) Estudia los principios, normas y herramientas de los sistemas integrados de gestión de calidad, ambiente, seguridad y salud en el trabajo.",
+    "descripcion": "La asignatura Sistemas Integrados de Gestión (HSEQ) proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Explica la estructura y alcance de",
-      "RA2: Aplica normas ISO y estándares",
-      "RA3: Diseña propuestas de mejora",
-      "RA1: Identifica estilos de liderazgo y su"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Sistemas Integrados de Gestión (HSEQ) en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Sistemas Integrados de Gestión (HSEQ).",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Sistemas Integrados de Gestión (HSEQ)."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Sistemas Integrados de Gestión (HSEQ)",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Sistemas Integrados de Gestión (HSEQ)"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Sistemas Integrados de Gestión (HSEQ)",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Sistemas Integrados de Gestión (HSEQ)"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_29",
@@ -964,20 +945,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Negocios y Gerencia Internacional proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Negocios y Gerencia Internacional en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Negocios y Gerencia Internacional.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Negocios y Gerencia Internacional."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Negocios y Gerencia Internacional en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Negocios y Gerencia Internacional.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Negocios y Gerencia Internacional."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Negocios y Gerencia Internacional",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Negocios y Gerencia Internacional"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Negocios y Gerencia Internacional",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Negocios y Gerencia Internacional"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_30",
@@ -996,20 +977,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "ELECTIVA",
-    "descripcion": "Asignatura del área Electiva que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Electiva Profesional I proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Electiva necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Electiva Profesional I en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Electiva Profesional I.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Electiva Profesional I."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Electiva Profesional I en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Electiva Profesional I.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Electiva Profesional I."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Electiva Profesional I",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Electiva Profesional I"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Electiva Profesional I",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Electiva Profesional I"
     ],
-    "perfil_asociado": "Competencia 3: Diseña y lidera proyectos de innovación y profundización.",
-    "rap_asociado": "RAP 5: Formulación y gestión de proyectos innovadores y sostenibles."
+    "perfil_asociado": "Competencia 3 & 7: Diseña y lidera proyectos de innovación, desarrollo sostenible y profundización profesional.",
+    "rap_asociado": "RAP 4 & RAP 7: Evalúa proyectos de emprendimiento, sostenibilidad y economía circular."
   },
   {
     "id": "prop_31",
@@ -1028,21 +1009,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "ítica de Datos Introduce los conceptos, herramientas y aplicaciones de la analítica de datos y Big Data para la toma de decisiones en entornos empresariales.",
+    "descripcion": "La asignatura Big Data y Analítica de Datos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Comprende los fundamentos del",
-      "RA2: Utiliza herramientas digitales y",
-      "RA3: Aplica la analítica de datos en la",
-      "RA1:"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Big Data y Analítica de Datos en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Big Data y Analítica de Datos.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Big Data y Analítica de Datos."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Big Data y Analítica de Datos",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Big Data y Analítica de Datos"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Big Data y Analítica de Datos",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Big Data y Analítica de Datos"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_32",
@@ -1061,20 +1041,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Asignatura del área Transversal que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Métodos Cualitativos y Cuantitativos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Métodos Cualitativos y Cuantitativos en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Métodos Cualitativos y Cuantitativos.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Métodos Cualitativos y Cuantitativos."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Métodos Cualitativos y Cuantitativos en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Métodos Cualitativos y Cuantitativos.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Métodos Cualitativos y Cuantitativos."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Métodos Cualitativos y Cuantitativos",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Métodos Cualitativos y Cuantitativos"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Métodos Cualitativos y Cuantitativos",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Métodos Cualitativos y Cuantitativos"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_33",
@@ -1093,21 +1073,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "keting Analiza los principios de dirección y gestión estratégica del mercadeo, orientados al posicionamiento, segmentación y fidelización de clientes.",
+    "descripcion": "La asignatura Gerencia de Marketing proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Formula estrategias de marketing",
-      "RA2: Evalúa la efectividad de las",
-      "RA3: Diseña planes de marketing con",
-      "RA1: Analiza dilemas éticos en la gestión"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de Marketing en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Gerencia de Marketing.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Gerencia de Marketing."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Gerencia de Marketing",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Gerencia de Marketing"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Gerencia de Marketing",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Gerencia de Marketing"
     ],
-    "perfil_asociado": "Competencia 1 & 4: Gestión de mercadeo, canales digitales y transformación digital.",
-    "rap_asociado": "RAP 2: Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible."
+    "perfil_asociado": "Competencia 1 & 4: Gestión de mercadeo, comunicación, canales digitales y transformación digital.",
+    "rap_asociado": "RAP 5: Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible."
   },
   {
     "id": "prop_34",
@@ -1126,20 +1105,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Legislación Tributaria proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Legislación Tributaria en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Legislación Tributaria.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Legislación Tributaria."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Legislación Tributaria en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Legislación Tributaria.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Legislación Tributaria."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Legislación Tributaria",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Legislación Tributaria"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Legislación Tributaria",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Legislación Tributaria"
     ],
-    "perfil_asociado": "Competencia 2 & 7: Análisis financiero, económico y toma de decisiones éticas.",
-    "rap_asociado": "RAP 3: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras."
+    "perfil_asociado": "Competencia 2: Análisis financiero, económico y contable para la toma de decisiones estratégicas.",
+    "rap_asociado": "RAP 2: Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles."
   },
   {
     "id": "prop_35",
@@ -1158,20 +1137,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Modelos de emprendimiento proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Modelos de emprendimiento en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Modelos de emprendimiento.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Modelos de emprendimiento."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Modelos de emprendimiento en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Modelos de emprendimiento.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Modelos de emprendimiento."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Modelos de emprendimiento",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Modelos de emprendimiento"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Modelos de emprendimiento",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Modelos de emprendimiento"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_36",
@@ -1190,20 +1169,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "ELECTIVA",
-    "descripcion": "Asignatura del área Electiva que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Electiva Profesional II proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Electiva necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Electiva Profesional II en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Electiva Profesional II.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Electiva Profesional II."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Electiva Profesional II en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Electiva Profesional II.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Electiva Profesional II."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Electiva Profesional II",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Electiva Profesional II"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Electiva Profesional II",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Electiva Profesional II"
     ],
-    "perfil_asociado": "Competencia 3: Diseña y lidera proyectos de innovación y profundización.",
-    "rap_asociado": "RAP 5: Formulación y gestión de proyectos innovadores y sostenibles."
+    "perfil_asociado": "Competencia 3 & 7: Diseña y lidera proyectos de innovación, desarrollo sostenible y profundización profesional.",
+    "rap_asociado": "RAP 4 & RAP 7: Evalúa proyectos de emprendimiento, sostenibilidad y economía circular."
   },
   {
     "id": "prop_37",
@@ -1222,21 +1201,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "ratégico y Prospectivo Profundiza en la planeación estratégica avanzada y la prospectiva empresarial para la anticipación de escenarios y la toma de decisiones en entornos dinámicos.",
+    "descripcion": "La asignatura Pensamiento Estratégico y Prospectivo proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica metodologías de análisis",
-      "RA2:",
-      "RA3: Diseña estrategias innovadoras",
-      "RA1: Comprende los modelos de"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Pensamiento Estratégico y Prospectivo en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Pensamiento Estratégico y Prospectivo.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Pensamiento Estratégico y Prospectivo."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Pensamiento Estratégico y Prospectivo",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Pensamiento Estratégico y Prospectivo"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Pensamiento Estratégico y Prospectivo",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Pensamiento Estratégico y Prospectivo"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_38",
@@ -1255,20 +1233,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Formulación y Evaluación de Proyectos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Formulación y Evaluación de Proyectos en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Formulación y Evaluación de Proyectos.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Formulación y Evaluación de Proyectos."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Formulación y Evaluación de Proyectos en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Formulación y Evaluación de Proyectos.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Formulación y Evaluación de Proyectos."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Formulación y Evaluación de Proyectos",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Formulación y Evaluación de Proyectos"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Formulación y Evaluación de Proyectos",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Formulación y Evaluación de Proyectos"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_39",
@@ -1287,21 +1265,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "tas y Canales de Distribución Analiza los procesos de planificación, ejecución y control de las estrategias de ventas y distribución en mercados nacionales e internacionales.",
+    "descripcion": "La asignatura Gerencia de Ventas y Canales de Distribución proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Diseña estrategias de ventas",
-      "RA2: Evalúa la eficiencia de los canales",
-      "RA3: Aplica técnicas de negociación y",
-      "RA1: Comprende los fundamentos del"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de Ventas y Canales de Distribución en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Gerencia de Ventas y Canales de Distribución.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Gerencia de Ventas y Canales de Distribución."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Gerencia de Ventas y Canales de Distribución",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Gerencia de Ventas y Canales de Distribución"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Gerencia de Ventas y Canales de Distribución",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Gerencia de Ventas y Canales de Distribución"
     ],
-    "perfil_asociado": "Competencia 1 & 4: Gestión de mercadeo, canales digitales y transformación digital.",
-    "rap_asociado": "RAP 2: Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible."
+    "perfil_asociado": "Competencia 1 & 4: Gestión de mercadeo, comunicación, canales digitales y transformación digital.",
+    "rap_asociado": "RAP 5: Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible."
   },
   {
     "id": "prop_40",
@@ -1320,21 +1297,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "ducción Analiza los modelos de gestión de la producción y la optimización de procesos productivos bajo criterios de eficiencia, calidad y sostenibilidad.",
+    "descripcion": "La asignatura Gerencia de Producción proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Diseña y gestiona procesos",
-      "RA2: Implementa técnicas de control de",
-      "RA3:",
-      "RA1: Diseña proyectos empresariales"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de Producción en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Gerencia de Producción.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Gerencia de Producción."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Gerencia de Producción",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Gerencia de Producción"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Gerencia de Producción",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Gerencia de Producción"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_41",
@@ -1353,20 +1329,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura E-comerce proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de E-comerce en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con E-comerce.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de E-comerce."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de E-comerce en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de E-comerce.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en E-comerce."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de E-comerce",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en E-comerce"
+      "Unidad 1: Marco teórico y conceptos fundamentales de E-comerce",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en E-comerce"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_42",
@@ -1385,20 +1361,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "ELECTIVA",
-    "descripcion": "Asignatura del área Electiva que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Electiva Profesional III proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Electiva necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Electiva Profesional III en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Electiva Profesional III.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Electiva Profesional III."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Electiva Profesional III en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Electiva Profesional III.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Electiva Profesional III."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Electiva Profesional III",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Electiva Profesional III"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Electiva Profesional III",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Electiva Profesional III"
     ],
-    "perfil_asociado": "Competencia 3: Diseña y lidera proyectos de innovación y profundización.",
-    "rap_asociado": "RAP 5: Formulación y gestión de proyectos innovadores y sostenibles."
+    "perfil_asociado": "Competencia 3 & 7: Diseña y lidera proyectos de innovación, desarrollo sostenible y profundización profesional.",
+    "rap_asociado": "RAP 4 & RAP 7: Evalúa proyectos de emprendimiento, sostenibilidad y economía circular."
   },
   {
     "id": "prop_43",
@@ -1417,20 +1393,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
-    "descripcion": "Asignatura del área Transversal que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Inteligencia artificial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Inteligencia artificial en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Inteligencia artificial.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Inteligencia artificial."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inteligencia artificial en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Inteligencia artificial.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Inteligencia artificial."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Inteligencia artificial",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Inteligencia artificial"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Inteligencia artificial",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Inteligencia artificial"
     ],
-    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, analítica de datos y herramientas tecnológicas emergentes.",
-    "rap_asociado": "RAP 4 & RAP 8: Aplica herramientas tecnológicas, analítica de datos e investigación para la solución de problemas."
+    "perfil_asociado": "Competencia 2 & 4: Toma de decisiones informadas, pensamiento crítico, analítica de datos y herramientas tecnológicas emergentes.",
+    "rap_asociado": "RAP 6 & RAP 9: Aplica tecnologías de la información, analítica de datos e investigación para la innovación empresarial."
   },
   {
     "id": "prop_44",
@@ -1449,20 +1425,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Laboratorio de Innovación y Emprendimiento proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Laboratorio de Innovación y Emprendimiento en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Laboratorio de Innovación y Emprendimiento.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Laboratorio de Innovación y Emprendimiento."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Laboratorio de Innovación y Emprendimiento en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Laboratorio de Innovación y Emprendimiento.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Laboratorio de Innovación y Emprendimiento."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Laboratorio de Innovación y Emprendimiento",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Laboratorio de Innovación y Emprendimiento"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Laboratorio de Innovación y Emprendimiento",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Laboratorio de Innovación y Emprendimiento"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_45",
@@ -1481,20 +1457,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Simula la gestión integral de una organización a través de la toma de decisiones estratégicas en entornos competitivos.",
+    "descripcion": "La asignatura Juego Gerencial (Simulación de Negocios) proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Integra conocimientos de las",
-      "RA2:",
-      "RA3:"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Juego Gerencial (Simulación de Negocios) en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Juego Gerencial (Simulación de Negocios).",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Juego Gerencial (Simulación de Negocios)."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Juego Gerencial (Simulación de Negocios)",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Juego Gerencial (Simulación de Negocios)"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Juego Gerencial (Simulación de Negocios)",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Juego Gerencial (Simulación de Negocios)"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_46",
@@ -1513,21 +1489,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "enciales y Liderazgo Desarrolla competencias de liderazgo, comunicación, negociación y gestión de equipos de trabajo orientadas a la efectividad organizacional.",
+    "descripcion": "La asignatura Habilidades gerenciales y liderazgo proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Identifica estilos de liderazgo y su",
-      "RA2:",
-      "RA3: Evalúa su desempeño gerencial",
-      "RA1: Analiza tendencias de marketing"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Habilidades gerenciales y liderazgo en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Habilidades gerenciales y liderazgo.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Habilidades gerenciales y liderazgo."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Habilidades gerenciales y liderazgo",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Habilidades gerenciales y liderazgo"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Habilidades gerenciales y liderazgo",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Habilidades gerenciales y liderazgo"
     ],
-    "perfil_asociado": "Competencia 5 & 6: Habilidades gerenciales, liderazgo colaborativo y compromiso ético.",
-    "rap_asociado": "RAP 6: Diseña políticas de gestión humana y lidera equipos participativos."
+    "perfil_asociado": "Competencia 5 & 6: Liderazgo colaborativo, habilidades gerenciales, compromiso ético y responsabilidad social.",
+    "rap_asociado": "RAP 3 & RAP 10: Diseña políticas de gestión humana y toma decisiones éticas en la organización."
   },
   {
     "id": "prop_47",
@@ -1546,20 +1521,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "Asignatura del área Disciplinar que aporta al desarrollo de las competencias gerenciales y profesionales del estudiante en Administración de Empresas.",
+    "descripcion": "La asignatura Gerencia de  Calidad proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Aplica los conceptos fundamentales de Gerencia de  Calidad en contextos organizacionales.",
-      "RA2: Analiza problemas y situaciones empresariales relacionadas con Gerencia de  Calidad.",
-      "RA3: Propone soluciones innovadoras e integrales derivadas del estudio de Gerencia de  Calidad."
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de  Calidad en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Gerencia de  Calidad.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Gerencia de  Calidad."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Gerencia de  Calidad",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Gerencia de  Calidad"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Gerencia de  Calidad",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Gerencia de  Calidad"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   },
   {
     "id": "prop_48",
@@ -1578,21 +1553,20 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
-    "descripcion": "do Integra los conocimientos adquiridos a lo largo del programa mediante el desarrollo de un proyecto aplicado de investigación o intervención empresarial.",
+    "descripcion": "La asignatura Proyecto de Grado proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
-      "RA1: Formula un proyecto aplicado que",
-      "RA2:",
-      "RA3: Sustenta los resultados del",
-      "RA1:"
+      "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Proyecto de Grado en las organizaciones.",
+      "RA2: Diagnostica problemáticas y evalúa escenarios empresariales mediante la aplicación de herramientas de Proyecto de Grado.",
+      "RA3: Diseña e implementa soluciones estratégicas e innovadoras orientadas al mejoramiento continuo en Proyecto de Grado."
     ],
     "temas": [
-      "Unidad 1: Fundamentos y conceptos generales de Proyecto de Grado",
-      "Unidad 2: Herramientas y metodologías aplicadas",
-      "Unidad 3: Diagnóstico y toma de decisiones organizacionales",
-      "Unidad 4: Evaluación, sostenibilidad e innovación en Proyecto de Grado"
+      "Unidad 1: Marco teórico y conceptos fundamentales de Proyecto de Grado",
+      "Unidad 2: Herramientas de análisis, diagnóstico y evaluación",
+      "Unidad 3: Formulación de estrategias organizacionales y aplicación práctica",
+      "Unidad 4: Evaluación de impacto, sostenibilidad e innovación tecnológica en Proyecto de Grado"
     ],
-    "perfil_asociado": "Competencia 1: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
-    "rap_asociado": "RAP 1: Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad."
+    "perfil_asociado": "Competencia 1 & 8: Gestión estratégica de organizaciones, procesos administrativos, calidad y operaciones.",
+    "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   }
 ];
 
@@ -1708,243 +1682,440 @@ window.SECTIONS['c3'] = `
     <div class="tabs-container" id="c3VigenteSubTabs">
         <div class="tabs-nav">
             <button class="tab-btn active" data-tab="c3-v-malla" onclick="switchTab('c3VigenteSubTabs','c3-v-malla')">
-                <i class="fas fa-th"></i> Malla Curricular (Vigente)
+                <i class="fas fa-th"></i> Malla Curricular (Tabla 10 Oficial)
             </button>
             <button class="tab-btn" data-tab="c3-v-areas" onclick="switchTab('c3VigenteSubTabs','c3-v-areas')">
-                <i class="fas fa-layer-group"></i> Áreas de Formación
+                <i class="fas fa-layer-group"></i> Áreas (Tabla 9 Oficial)
             </button>
             <button class="tab-btn" data-tab="c3-v-perfiles" onclick="switchTab('c3VigenteSubTabs','c3-v-perfiles')">
-                <i class="fas fa-user-check"></i> Perfiles y RAPs
+                <i class="fas fa-user-check"></i> Perfiles y RAPs (Anexo 1 Oficial)
             </button>
             <button class="tab-btn" data-tab="c3-v-flex" onclick="switchTab('c3VigenteSubTabs','c3-v-flex')">
-                <i class="fas fa-arrows-alt"></i> Flexibilidad
+                <i class="fas fa-arrows-alt"></i> Flexibilidad (Sec 3.6.3)
             </button>
             <button class="tab-btn" data-tab="c3-v-eval" onclick="switchTab('c3VigenteSubTabs','c3-v-eval')">
-                <i class="fas fa-clipboard-check"></i> Evaluación RA
+                <i class="fas fa-clipboard-check"></i> Evaluación RA e Institucional
             </button>
         </div>
 
-        <!-- SUB TAB 1.1: MALLA VIGENTE -->
+        <!-- SUB TAB 1.1: MALLA VIGENTE (TABLA 10 OFICIAL) -->
         <div class="tab-panel active" id="c3-v-malla" style="display:block;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
-                Plan de Estudios Vigente · 158 Créditos · 9 Semestres · 62 Asignaturas
+                Tabla 10. Distribución de Créditos en el Plan de Estudios por Semestre (Plan Vigente)
             </h3>
-            <p style="color:var(--gray-text); font-size:0.82rem; margin-bottom:20px;">Estructura del plan de estudios inicial registrado ante SACES con 9 periodos académicos (148 créditos obligatorios + 10 electivos).</p>
+            <p style="color:var(--gray-text); font-size:0.82rem; margin-bottom:16px;">
+                Estructura oficial del plan de estudios registrado ante SACES con 9 semestres, 158 créditos (148 obligatorios + 10 electivos) y 7.584 horas totales.
+            </p>
 
             <div class="metric-row">
-                <div class="metric-card"><div class="metric-val">62</div><div class="metric-lbl">Asignaturas Totales</div></div>
                 <div class="metric-card"><div class="metric-val">158</div><div class="metric-lbl">Créditos Totales</div></div>
                 <div class="metric-card"><div class="metric-val">9</div><div class="metric-lbl">Semestres</div></div>
-                <div class="metric-card"><div class="metric-val">7.584</div><div class="metric-lbl">Horas Totales (144h/cr)</div></div>
+                <div class="metric-card"><div class="metric-val">1.896h</div><div class="metric-lbl">Horas Directas / Mediadas</div></div>
+                <div class="metric-card"><div class="metric-val">5.688h</div><div class="metric-lbl">Horas Trabajo Indep.</div></div>
             </div>
 
-            <!-- Grid 9 Semestres Vigente -->
-            <div class="malla" style="grid-template-columns: repeat(9, 1fr);">
-                <div class="sh">SEM 1</div><div class="sh">SEM 2</div><div class="sh">SEM 3</div><div class="sh">SEM 4</div><div class="sh">SEM 5</div><div class="sh">SEM 6</div><div class="sh">SEM 7</div><div class="sh">SEM 8</div><div class="sh">SEM 9</div>
-
-                <div class="mc">Álgebra Lineal</div>
-                <div class="mc">Cálculo Diferencial</div>
-                <div class="mc">Estadística Inferencial</div>
-                <div class="mc">Metodología Investigación</div>
-                <div class="mc">Gerencia Talento Humano</div>
-                <div class="mc">Investigación Formativa</div>
-                <div class="mc">Pensamiento Estratégico</div>
-                <div class="mc">Electiva Profesional I</div>
-                <div class="mc">Proyecto de Grado II</div>
-
-                <div class="mc">Comunicación Escrita</div>
-                <div class="mc">Estadística Descriptiva</div>
-                <div class="mc">Inglés II</div>
-                <div class="mc">Inglés III</div>
-                <div class="mc">Admón. Financiera</div>
-                <div class="mc">Métodos Cuantitativos</div>
-                <div class="mc">Formulación Proyectos</div>
-                <div class="mc">Electiva Profesional II</div>
-                <div class="mc">Opción de Grado</div>
-
-                <div class="mc">Cátedra Institucional</div>
-                <div class="mc">Inglés I</div>
-                <div class="mc">Análisis Financiero</div>
-                <div class="mc">Inv. de Mercados</div>
-                <div class="mc">Gestión Operaciones</div>
-                <div class="mc">Gerencia Marketing</div>
-                <div class="mc">Gerencia de Ventas</div>
-                <div class="mc">Juego Gerencial</div>
-                <div class="mc">Práctica Profesional</div>
-
-                <div class="mc">Fund. Administración</div>
-                <div class="mc">Microeconomía</div>
-                <div class="mc">Macroeconomía</div>
-                <div class="mc">Matemática Financiera</div>
-                <div class="mc">Sistemas de Gestión</div>
-                <div class="mc">Legislación Tributaria</div>
-                <div class="mc">Gerencia Producción</div>
-                <div class="mc">Habilidades Liderazgo</div>
-                <div class="mc">Ética Profesional</div>
-
-                <div class="mc">Fund. Contables</div>
-                <div class="mc">Legislación Comercial</div>
-                <div class="mc">Procesos Admón.</div>
-                <div class="mc">Economía Colombiana</div>
-                <div class="mc">Gerencia Internacional</div>
-                <div class="mc">Emprendimiento I</div>
-                <div class="mc">Comercio Exterior</div>
-                <div class="mc">Gerencia Calidad</div>
-                <div class="mc">Electiva V</div>
-
-                <div class="mc">Fund. Mercadeo</div>
-                <div class="mc">Costos Presupuestos</div>
-                <div class="mc">Teoría Organizacional</div>
-                <div class="mc">Derecho Laboral</div>
-                <div class="mc">Electiva III</div>
-                <div class="mc">Electiva IV</div>
-                <div class="mc">Proyecto de Grado I</div>
-                <div class="mc">Emprendimiento II</div>
-                <div class="mc">Simulación Empresarial</div>
+            <!-- Precision of Hours by Modality -->
+            <div class="grid-2" style="margin:20px 0;">
+                <div class="card-accent" style="background:#0F172A; border-bottom:4px solid #0284C7;">
+                    <h4><i class="fas fa-university" style="color:#38BDF8;"></i> Precisión Horas - Modalidad Presencial (Vigente)</h4>
+                    <p style="font-size:0.82rem; color:#94A3B8; margin-top:4px;">
+                        • <strong>Horas Docencia Directa:</strong> 36 horas por crédito (o 24h para asignaturas de 2cr). Total: 1.896 horas en campus.<br>
+                        • <strong>Horas Trabajo Independiente:</strong> 108 horas por crédito (o 72h para asignaturas de 2cr). Total: 5.688 horas autónomas.<br>
+                        • <strong>Total Carga Horaria:</strong> 7.584 horas efectivas (144h por crédito).
+                    </p>
+                </div>
+                <div class="card-accent" style="background:#064E3B; border-bottom:4px solid #10B981;">
+                    <h4><i class="fas fa-laptop" style="color:#34D399;"></i> Precisión Horas - Modalidad Virtual (Vigente)</h4>
+                    <p style="font-size:0.82rem; color:#A7F3D0; margin-top:4px;">
+                        • <strong>Horas Trabajo Mediado TIC:</strong> 36 horas por crédito (o 24h) en plataforma LMS Moodle y tutorías sincrónicas.<br>
+                        • <strong>Horas Trabajo Independiente:</strong> 108 horas por crédito (o 72h) de trabajo autónomo guiado.<br>
+                        • <strong>Total Carga Horaria:</strong> 7.584 horas equivalentes en Registro Único.
+                    </p>
+                </div>
             </div>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
+                Desglose Completo de Asignaturas por Semestre (Tabla 10 Oficial)
+            </h4>
+
+            <table class="tbl">
+                <thead>
+                    <tr>
+                        <th>Sem.</th>
+                        <th>Asignatura</th>
+                        <th>Tipo</th>
+                        <th>Créditos</th>
+                        <th>H. Docencia Directa / Mediada</th>
+                        <th>H. Trabajo Independiente</th>
+                        <th>Horas Totales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- SEMESTRE 1 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE I (18 Créditos · 864 Horas Totales)</strong></td></tr>
+                    <tr><td>1</td><td>Matemáticas Básicas</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>1</td><td>Constitución y Democracia</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>1</td><td>Expresión Oral y Escrita</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>1</td><td>Inglés I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>1</td><td>Fundamentos de Administración</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>1</td><td>Fundamentos Contables</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>1</td><td>Fundamentos de Economía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <!-- SEMESTRE 2 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE II (17 Créditos · 816 Horas Totales)</strong></td></tr>
+                    <tr><td>2</td><td>Cálculo</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>2</td><td>Legislación Laboral</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>2</td><td>Teoría Organizacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>2</td><td>Costos</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>2</td><td>Metodología de la Investigación</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>2</td><td>Microeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>2</td><td>Inglés II</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <!-- SEMESTRE 3 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE III (17 Créditos · 816 Horas Totales)</strong></td></tr>
+                    <tr><td>3</td><td>Estadística Descriptiva</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>3</td><td>Derecho Administrativo</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>3</td><td>Administración por Procesos</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>3</td><td>Electiva Profundización I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>3</td><td>Cultura Emprendedora</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>3</td><td>Macroeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>3</td><td>Inglés III</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <!-- SEMESTRE 4 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE IV (18 Créditos · 864 Horas Totales)</strong></td></tr>
+                    <tr><td>4</td><td>Estadística Inferencial</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>4</td><td>Legislación Tributaria</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>4</td><td>Electiva Humanística I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>4</td><td>Liderazgo</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>4</td><td>Creatividad e Innovación</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>4</td><td>Entorno Económico Colombiano e Internacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>4</td><td>Inglés IV</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <!-- SEMESTRE 5 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE V (18 Créditos · 864 Horas Totales)</strong></td></tr>
+                    <tr><td>5</td><td>Matemática Financiera</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>5</td><td>Investigación de Operaciones</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>5</td><td>Fundamentos de Mercadeo</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>5</td><td>Modelos de Desarrollo Económico</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>5</td><td>Administración de Salarios</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>5</td><td>Electiva Profundización II</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>5</td><td>Inglés V</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <!-- SEMESTRE 6 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE VI (18 Créditos · 864 Horas Totales)</strong></td></tr>
+                    <tr><td>6</td><td>Legislación Comercial</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>6</td><td>Gerencia de Mercadeo</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>6</td><td>E-Commerce</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>6</td><td>Tecnología e Innovación</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>6</td><td>Métodos Cuantitativos y Cualitativos</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>6</td><td>Electiva Humanística II</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>6</td><td>Inglés VI</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <!-- SEMESTRE 7 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE VII (18 Créditos · 864 Horas Totales)</strong></td></tr>
+                    <tr><td>7</td><td>Fundamentos de Administración Pública</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>7</td><td>Gestión de la Calidad</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>7</td><td>Presupuesto</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>7</td><td>Gerencia de Talento Humano</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>7</td><td>Proyecto Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>7</td><td>Electiva Profundización III</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>7</td><td>Sistema de Información Gerencial</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+
+                    <!-- SEMESTRE 8 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE VIII (16 Créditos · 768 Horas Totales)</strong></td></tr>
+                    <tr><td>8</td><td>Habilidades Gerenciales</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>8</td><td>Gerencia de Producción</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>8</td><td>Investigación de Mercados</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>8</td><td>Gerencia Financiera</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>8</td><td>Deontología</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>8</td><td>Proyecto de Grado I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <!-- SEMESTRE 9 -->
+                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE IX (18 Créditos · 864 Horas Totales)</strong></td></tr>
+                    <tr><td>9</td><td>Planeación y Prospectiva</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>9</td><td>Gerencia del Servicio</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>9</td><td>Evaluación de Proyectos de Inversión</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>9</td><td>Responsabilidad Social Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>9</td><td>Gobierno Corporativo</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                    <tr><td>9</td><td>Distribución Física y Logística</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                    <tr><td>9</td><td>Proyecto de Grado II</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+
+                    <tr style="background:var(--carbon); color:#fff;">
+                        <td colspan="3" style="color:#fff; font-weight:800;">TOTAL PROGRAMA VIGENTE</td>
+                        <td style="color:#fff; font-weight:800;">158 cr</td>
+                        <td style="color:#fff; font-weight:800;">1.896h</td>
+                        <td style="color:#fff; font-weight:800;">5.688h</td>
+                        <td style="color:#fff; font-weight:800;">7.584 Horas</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <div class="evidence-box" style="margin-top:20px;">
                 <i class="fas fa-file-pdf"></i>
-                <strong>Soporte Oficial:</strong> Anexo 5. Documento Maestro Administración de Empresas_RU inicial (PDF).
+                <strong>Soporte Oficial:</strong> Anexo 5. Documento Maestro Administración de Empresas_RU inicial (Tabla 10).
             </div>
         </div>
 
-        <!-- SUB TAB 1.2: ÁREAS VIGENTE -->
+        <!-- SUB TAB 1.2: ÁREAS VIGENTE (TABLA 9 OFICIAL) -->
         <div class="tab-panel" id="c3-v-areas" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Distribución por Áreas de Formación (Plan Vigente · 158 Créditos)
+                Tabla 9. Distribución de Créditos y Asignaturas por Área de Formación (Plan Vigente)
             </h3>
-            <table class="tbl">
-                <thead>
-                    <tr><th>Área de Formación</th><th>Asignaturas</th><th>Créditos</th><th>% del Plan</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td class="lb">Transversal</td><td>17 asignaturas</td><td>41</td><td>25.95%</td></tr>
-                    <tr class="row-accent"><td class="lb">Disciplinar</td><td>40 asignaturas</td><td>107</td><td>67.72%</td></tr>
-                    <tr><td class="lb">Electiva</td><td>5 asignaturas</td><td>10</td><td>6.33%</td></tr>
-                    <tr style="background:var(--carbon); color:#fff;"><td style="color:#fff; font-weight:800;">TOTAL</td><td style="color:#fff;">62 asignaturas</td><td style="color:#fff;">158</td><td style="color:#fff;">100%</td></tr>
-                </tbody>
-            </table>
 
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:24px 0 12px;">
-                <i class="fas fa-clock" style="color:var(--orange); margin-right:6px;"></i> Carga Horaria del Plan Vigente (144 horas por Crédito)
-            </h4>
-            <div class="grid-2">
-                <div class="card">
-                    <h4><i class="fas fa-users" style="color:var(--orange);"></i> Horas Acompañadas Directas</h4>
-                    <p>En el plan inicial, cada crédito equivalía a <strong>36 horas de acompañamiento docente directo / mediado</strong> (sincrónico/asincrónico).</p>
+            <div style="margin-bottom:20px;">
+                <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--orange-dark); margin-bottom:8px;">
+                    1. Área de Formación Transversal (17 Asignaturas · 41 Créditos · 1.968 Horas Totales)
+                </h4>
+                <p style="font-size:0.83rem; color:var(--gray-text); margin-bottom:10px;">
+                    Conjunto de asignaturas que desarrollan competencias genéricas en habilidades comunicativas, razonamiento cuantitativo, ética, liderazgo e idioma extranjero:
+                </p>
+                <table class="tbl">
+                    <thead><tr><th>Asignatura</th><th>Obligatoria/Electiva</th><th>Créditos</th><th>H. Directas / Mediadas</th><th>H. Independientes</th></tr></thead>
+                    <tbody>
+                        <tr><td>Matemáticas Básicas</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
+                        <tr><td>Constitución y Democracia</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Expresión Oral y Escrita</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
+                        <tr><td>Inglés I</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Cálculo</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
+                        <tr><td>Legislación Laboral</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Inglés II</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Estadística Descriptiva</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
+                        <tr><td>Derecho Administrativo</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Inglés III</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Estadística Inferencial</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
+                        <tr><td>Legislación Tributaria</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
+                        <tr><td>Inglés IV</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Inglés V</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Legislación Comercial</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
+                        <tr><td>Inglés VI</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Fundamentos de Administración Pública</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr style="background:var(--orange-light); font-weight:700;"><td colspan="2">SUBTOTAL ÁREA TRANSVERSAL</td><td>41 cr</td><td>492h</td><td>1.476h</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin-bottom:20px;">
+                <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--carbon); margin-bottom:8px;">
+                    2. Área de Formación Disciplinar (36 Asignaturas · 107 Créditos · 5.136 Horas Totales)
+                </h4>
+                <p style="font-size:0.83rem; color:var(--gray-text); margin-bottom:10px;">
+                    Asignaturas técnicas y específicas de la gestión empresarial, finanzas, economía, mercadeo, producción y estrategia:
+                </p>
+                <div style="max-height:350px; overflow-y:auto; border:1px solid var(--gray-100); border-radius:6px;">
+                    <table class="tbl" style="margin:0;">
+                        <thead><tr><th>Asignatura</th><th>Tipo</th><th>Créditos</th><th>H. Directas / Mediadas</th><th>H. Independientes</th></tr></thead>
+                        <tbody>
+                            <tr><td>Fundamentos de Administración</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Fundamentos Contables</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Fundamentos de Economía</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Teoría Organizacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Costos</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Metodología de la Investigación</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Microeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Administración por Procesos</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Macroeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Cultura Emprendedora</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Liderazgo</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Creatividad e Innovación</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Entorno Económico Colombiano e Internacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Matemática Financiera</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Investigación de Operaciones</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Fundamentos de Mercadeo</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Modelos de Desarrollo Económico</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Administración de Salarios</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Gerencia de Mercadeo</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>E-Commerce</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Tecnología e Innovación</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Métodos Cuantitativos y Cualitativos</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Gestión de la Calidad</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Presupuesto</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Gerencia de Talento Humano</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Proyecto Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Sistema de Información Gerencial</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Habilidades Gerenciales</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Gerencia de Producción</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Investigación de Mercados</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Gerencia Financiera</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Deontología</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Proyecto de Grado I</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Planeación y Prospectiva</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Gerencia del Servicio</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Evaluación de Proyectos de Inversión</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Responsabilidad Social Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Gobierno Corporativo</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr><td>Distribución Física y Logística</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
+                            <tr><td>Proyecto de Grado II</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
+                            <tr style="background:var(--orange-light); font-weight:700;"><td colspan="2">SUBTOTAL ÁREA DISCIPLINAR</td><td>107 cr</td><td>1.284h</td><td>3.852h</td></tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="card">
-                    <h4><i class="fas fa-user-clock" style="color:var(--orange);"></i> Horas de Trabajo Independiente</h4>
-                    <p>Cada crédito requería <strong>108 horas de trabajo independiente</strong> del estudiante para lecturas, talleres y actividades virtuales.</p>
-                </div>
+            </div>
+
+            <div>
+                <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--carbon); margin-bottom:8px;">
+                    3. Área Electiva (5 Asignaturas · 10 Créditos · 480 Horas Totales)
+                </h4>
+                <table class="tbl">
+                    <thead><tr><th>Asignatura Electiva</th><th>Tipo</th><th>Créditos</th><th>H. Directas / Mediadas</th><th>H. Independientes</th></tr></thead>
+                    <tbody>
+                        <tr><td>Electiva I Profundización</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Electiva I Humanística</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Electiva II Profundización</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Electiva II Humanística</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr><td>Electiva III Profundización</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
+                        <tr style="background:var(--orange-light); font-weight:700;"><td colspan="2">SUBTOTAL ÁREA ELECTIVA</td><td>10 cr</td><td>120h</td><td>360h</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
-        <!-- SUB TAB 1.3: PERFILES Y RAPS VIGENTE -->
+        <!-- SUB TAB 1.3: PERFILES Y RAPS VIGENTE (ANEXO 1 OFICIAL) -->
         <div class="tab-panel" id="c3-v-perfiles" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Perfiles del Egresado y Competencias (Plan Vigente · 158 Créditos)
+                Anexo 1. Matriz de Resultados de Aprendizaje y Competencias del Plan Vigente
             </h3>
-            
+
             <div class="grid-2" style="margin-bottom:20px;">
                 <div class="card" style="border-left:4px solid var(--orange);">
-                    <h4><i class="fas fa-briefcase" style="color:var(--orange);"></i> Perfil Profesional Vigente</h4>
+                    <h4><i class="fas fa-briefcase" style="color:var(--orange);"></i> Perfil Profesional del Plan Vigente</h4>
                     <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
-                        El profesional en Administración de Empresas del plan inicial se concibe con capacidad para gestionar organizaciones públicas y privadas, liderar procesos administrativos, diseñar presupuestos, supervisar operaciones y dirigir equipos de trabajo con visión ética y compromiso social.
+                        El profesional en Administración de Empresas del plan vigente es un egresado formado para la comprensión integral de las organizaciones, el manejo estratégico de sus recursos humanos, financieros y tecnológicos, la toma de decisiones informadas en entornos dinámicos y la conducción ética de proyectos empresariales regionales.
                     </p>
                 </div>
                 <div class="card" style="border-left:4px solid var(--carbon);">
-                    <h4><i class="fas fa-building" style="color:var(--carbon);"></i> Perfil Ocupacional Vigente</h4>
+                    <h4><i class="fas fa-building" style="color:var(--carbon);"></i> Perfil Ocupacional del Plan Vigente</h4>
                     <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
-                        El egresado del plan vigente puede desempeñarse como: Director Administrativo, Gerente Financiero, Coordinador del Talento Humano, Jefe de Ventas y Mercadeo, Analista de Operaciones o Consultor Organizacional en Pymes y microempresas regionales.
+                        Desempeño en roles como: Director General, Gerente Administrativo o Financiero, Director de Mercadeo y Ventas, Coordinador de Talento Humano, Gestor de Calidad y Operaciones, Consultor Organizacional o Empresario Independiente.
                     </p>
                 </div>
             </div>
 
             <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                <i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> Competencias Genéricas (Proyecto Tuning América Latina)
+                Matriz Oficial de Resultados de Aprendizaje del Programa (Anexo 1)
             </h4>
-            <div class="grid-3" style="margin-bottom:20px;">
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-users"></i> 1. Componente Social</h4>
-                    <p style="font-size:0.82rem;">Capacidad de toma de decisiones, trabajo en equipo, liderazgo motivacional, ética, responsabilidad social y valor de la diversidad multicultural.</p>
-                </div>
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-comments"></i> 2. Componente Comunicativo</h4>
-                    <p style="font-size:0.82rem;">Comunicación oral y escrita, competencias en segundo idioma (Inglés B1), manejo de tecnologías TIC e innovación en nuevas situaciones.</p>
-                </div>
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-search"></i> 3. Componente Investigativo</h4>
-                    <p style="font-size:0.82rem;">Abstracción, análisis y síntesis, aplicación práctica de conceptos, actualización continua y procesamiento crítico de información.</p>
-                </div>
-            </div>
 
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                <i class="fas fa-bullseye" style="color:var(--orange); margin-right:6px;"></i> Resultados de Aprendizaje del Programa (RAP Vigentes)
-            </h4>
-            <div style="background:var(--gray-bg); padding:16px; border-radius:var(--radius-md);">
-                <ul style="list-style:none; padding:0; margin:0; font-size:0.83rem;">
-                    <li style="padding:8px 0; border-bottom:1px solid var(--gray-100);"><strong>RAP-V1:</strong> Aplica modelos de gestión administrativa y financiera en la toma de decisiones organizacionales.</li>
-                    <li style="padding:8px 0; border-bottom:1px solid var(--gray-100);"><strong>RAP-V2:</strong> Diseña planes de trabajo operativo y estrategias comerciales orientadas al cumplimiento de metas.</li>
-                    <li style="padding:8px 0; border-bottom:1px solid var(--gray-100);"><strong>RAP-V3:</strong> Coordina procesos de talento humano y resolución de conflictos en entornos laborales.</li>
-                    <li style="padding:8px 0;"><strong>RAP-V4:</strong> Desarrolla proyectos de emprendimiento e investigación formativa aplicados al entorno regional.</li>
-                </ul>
-            </div>
+            <table class="tbl">
+                <thead>
+                    <tr>
+                        <th style="width:5%;">Nro.</th>
+                        <th style="width:30%;">Competencias del Egresado / Graduado</th>
+                        <th style="width:35%;">Resultado de Aprendizaje del Programa (RAP)</th>
+                        <th style="width:30%;">Asignaturas Asociadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="lb">1</td>
+                        <td>Implementar procesos de innovación para optimizar productos, servicios y procesos, promoviendo soluciones creativas y estrategias de marketing innovadoras que generen valor, mejoren la competitividad y adapten la organización a las demandas del mercado globalizado.</td>
+                        <td>Diseña procesos de innovación para optimizar productos, servicios y procesos, utilizando estrategias de marketing innovadoras basadas en un análisis crítico del contexto y alineadas a las demandas del mercado global.</td>
+                        <td>Creatividad e Innovación • Cultura Emprendedora • Gerencia de Mercadeo • Tecnología e Innovación • E-Commerce • Inglés I • Fundamentos de Mercadeo • Modelo de Desarrollo Económico • Evaluación de Proyectos de Inversión • Fundamentos Contables.</td>
+                    </tr>
+                    <tr class="row-accent">
+                        <td class="lb">2</td>
+                        <td>Dirigir equipos de trabajo de manera eficaz, guiando a las personas con visión, ética y comunicación efectiva, tomando decisiones estratégicas en los procesos organizacionales para optimizar la productividad, competitividad y el desarrollo general de la empresa.</td>
+                        <td>Formula estrategias de innovación tecnológica y sistemas de información gerencial que optimicen la productividad y competitividad de una organización, ajustando las soluciones con la planeación estratégica y las demandas del mercado global, mejorando la sostenibilidad, eficiencia y capacidad de respuesta organizacional, mientras fomenta el bienestar social y ambiental.</td>
+                        <td>Gestión de la Calidad • Investigación de Mercados • E-Commerce • Planeación y Prospectiva • Sistemas de Información Gerencial • Inglés II • Habilidades Gerenciales • Distribución Física y Logística • Administración de Salarios • Gerencia del Talento Humano.</td>
+                    </tr>
+                    <tr>
+                        <td class="lb">3</td>
+                        <td>Deducir los principios de sostenibilidad y responsabilidad social en la toma de decisiones empresariales, estableciendo estrategias que fomenten la conservación del medio ambiente, la equidad social y la viabilidad económica.</td>
+                        <td>Elabora estrategias integradas para mejorar la competitividad, sostenibilidad y cuidado del medio ambiente en la organización, mediante el desarrollo de procedimientos operacionales que optimicen costos, aumenten las utilidades y minimicen el impacto ambiental.</td>
+                        <td>Administración de Procesos • Gerencia de Producción • Fundamentos de Mercadeo • Investigación de Mercados • Gerencia Financiera • Responsabilidad Social Empresarial • Evaluación de Proyectos de Inversión • Sistemas de Información Gerencial • Liderazgo • Inglés III • Proyecto Empresarial • Metodología de la Investigación • Matemática Financiera • Presupuestos • Legislación Tributaria • Gobierno Corporativo.</td>
+                    </tr>
+                    <tr class="row-accent">
+                        <td class="lb">4</td>
+                        <td>Diseñar investigaciones de mercado utilizando herramientas cuantitativas y cualitativas, con el objetivo de analizar las tendencias del entorno y formular decisiones comerciales estratégicas.</td>
+                        <td>Estructura proyectos de investigación aplicada y estudios de mercado que aporten datos rigurosos para la formulación de planes comerciales e internacionales.</td>
+                        <td>Investigación de Mercados • Métodos Cuantitativos y Cualitativos • Metodología de la Investigación • Proyecto de Grado I y II • Entorno Económico Colombiano e Internacional • Comercio Exterior.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- SUB TAB 1.4: FLEXIBILIDAD VIGENTE -->
+        <!-- SUB TAB 1.4: FLEXIBILIDAD VIGENTE (SECCIÓN 3.6.3 COMPLETA) -->
         <div class="tab-panel" id="c3-v-flex" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Estrategias de Flexibilidad en el Plan Vigente
+                Sustentación de la Flexibilidad Curricular del Plan Vigente (Sección 3.6.3)
             </h3>
 
             <div class="grid-2" style="margin-bottom:20px;">
                 <div class="card">
-                    <h4><i class="fas fa-th-list" style="color:var(--orange);"></i> Bolsa de 10 Créditos Electivos</h4>
-                    <p style="font-size:0.85rem; color:var(--gray-text);">El plan vigente contemplaba 5 asignaturas electivas (2 créditos c/u) distribuidas en los semestres 5, 6, 7, 8 y 9 para profundización o actualización disciplinar.</p>
+                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Bolsa de Electividad Disciplinar y Humanística</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        El plan vigente contemplaba 10 créditos electivos divididos en:
+                    </p>
+                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Electivas de Profundización I, II y III (6 cr):</strong> Marketing Digital, Prevención y Control de Riesgos, Finanzas Corporativas.</li>
+                        <li>• <strong>Electivas Humanísticas I y II (4 cr):</strong> Ética y Ciudadanía, Diversidad e Inclusión Social.</li>
+                    </ul>
                 </div>
+
                 <div class="card">
-                    <h4><i class="fas fa-graduation-cap" style="color:var(--orange);"></i> Rutas de Graduación Tradicionales</h4>
-                    <p style="font-size:0.85rem; color:var(--gray-text);">Opciones de grado compuestas por Proyecto de Grado I y II, Práctica Profesional o Seminario de Profundización disciplinar.</p>
+                    <h4><i class="fas fa-graduation-cap" style="color:var(--orange);"></i> 2. Flexibilidad en las Opciones de Graduación</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        Conforme al Reglamento de Opciones de Grado institucional (Anexo 8), el estudiante podía optar por:
+                    </p>
+                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• Desarrollo de Proyecto de Investigación Formativa (Proyecto de Grado I y II).</li>
+                        <li>• Práctica Profesional Empresarial supervisada.</li>
+                        <li>• Plan de Negocio o Emprendimiento validado.</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="card-accent">
-                <h4><i class="fas fa-balance-scale"></i> Limitaciones Identificadas en la Flexibilidad Vigente</h4>
-                <p style="font-size:0.84rem; color:rgba(255,255,255,0.8); margin-top:6px;">
-                    La estructura inicial de 9 semestres y 62 asignaturas generaba dispersión de créditos (asignaturas de 2 créditos), rigidez en prerrequisitos y una menor diferenciación entre las modalidades presencial y virtual en la guía de horas.
+            <div class="card-accent" style="margin-bottom:20px;">
+                <h4><i class="fas fa-exclamation-triangle"></i> Diagnóstico de Limitaciones que Motivaron la Renovación Curricular</h4>
+                <p style="font-size:0.84rem; color:rgba(255,255,255,0.85); margin-top:6px; line-height:1.6;">
+                    El análisis de autoevaluación reveló que la flexibilidad del plan vigente presentaba barreras: dispersión de materias de 2 créditos (dificultando homologaciones), rigidez en la secuenciación de semestres y la falta de una plataforma de tránsito formal entre las modalidades presencial y virtual dentro del registro único.
                 </p>
             </div>
         </div>
 
-        <!-- SUB TAB 1.5: EVALUACIÓN RA VIGENTE -->
+        <!-- SUB TAB 1.5: EVALUACIÓN RA VIGENTE (SISTEMA E HETERO/CO/AUTO EVALUACIÓN) -->
         <div class="tab-panel" id="c3-v-eval" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Sistema de Evaluación en el Plan Vigente
+                Modelo Institucional de Evaluación del Plan Vigente
             </h3>
 
             <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:16px;">
-                El esquema de evaluación inicial se basaba en el Reglamento Estudiantil institucional mediante 3 cortes académicos sumativos acumulativos:
+                Estructura del modelo evaluativo institucional de la CETO basado en la evaluación continua, formativa y sumativa articulada en tres agentes principales:
             </p>
 
-            <table class="tbl" style="margin-bottom:20px;">
+            <div class="grid-3" style="margin-bottom:24px;">
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-chalkboard-teacher"></i> 1. Heteroevaluación (70% - 80%)</h4>
+                    <p style="font-size:0.82rem; color:var(--gray-text);">
+                        Valoración realizada por el docente a través de parciales escritos, pruebas teóricoprácticas, análisis de casos y proyectos finales entregables.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-users"></i> 2. Coevaluación (10% - 15%)</h4>
+                    <p style="font-size:0.82rem; color:var(--gray-text);">
+                        Evaluación entre pares donde los estudiantes valoran el desempeño colaborativo, aportes al grupo y la solución conjunta de casos en aula virtual o presencial.
+                    </p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-user-edit"></i> 3. Autoevaluación (10% - 15%)</h4>
+                    <p style="font-size:0.82rem; color:var(--gray-text);">
+                        Reflexión autocrítica del estudiante sobre su compromiso, aprendizaje autónomo, cumplimiento de lecturas y alcance de competencias de la asignatura.
+                    </p>
+                </div>
+            </div>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
+                Estructura de Cortes Académicos y Puntajes Institucionales
+            </h4>
+            <table class="tbl">
                 <thead>
-                    <tr><th>Corte Académico</th><th>Ponderación</th><th>Componentes Evaluativos</th></tr>
+                    <tr><th>Corte Académico</th><th>Porcentaje</th><th>Escala de Calificación</th><th>Criterio de Aprobación</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td class="lb">Primer Corte (Semana 1 a 5)</td><td><strong>30%</strong></td><td>Examen parcial teóricopráctico, talleres, actividades en plataforma.</td></tr>
-                    <tr class="row-accent"><td class="lb">Segundo Corte (Semana 6 a 10)</td><td><strong>30%</strong></td><td>Segundo parcial, estudios de caso, avance de investigación.</td></tr>
-                    <tr><td class="lb">Tercer Corte (Semana 11 a 16)</td><td><strong>40%</strong></td><td>Evaluación final integradora, sustentación de proyectos o entregable.</td></tr>
+                    <tr><td class="lb">Corte I (Semanas 1 a 5)</td><td><strong>30%</strong></td><td>0.0 a 5.0</td><td>Nota acumulativa registrada en plataforma.</td></tr>
+                    <tr class="row-accent"><td class="lb">Corte II (Semanas 6 a 10)</td><td><strong>30%</strong></td><td>0.0 a 5.0</td><td>Nota acumulativa registrada en plataforma.</td></tr>
+                    <tr><td class="lb">Corte III (Semanas 11 a 16)</td><td><strong>40%</strong></td><td>0.0 a 5.0</td><td>Evaluación integradora final.</td></tr>
+                    <tr style="background:var(--carbon); color:#fff;"><td style="color:#fff; font-weight:800;">NOTA DEFINITIVA ASIGNATURA</td><td style="color:#fff; font-weight:800;">100%</td><td style="color:#fff; font-weight:800;">0.0 a 5.0</td><td style="color:#fff; font-weight:800;">Aprobado con Nota ≥ 3.0</td></tr>
                 </tbody>
             </table>
-
-            <div class="card" style="border-left:4px solid var(--orange);">
-                <h4><i class="fas fa-clipboard-check" style="color:var(--orange);"></i> Monitoreo de Logro Académico</h4>
-                <p style="font-size:0.84rem; color:var(--gray-text);">
-                    La medición del aprendizaje se realizaba mediante calificaciones cuantitativas de 0.0 a 5.0 con nota mínima de aprobación de 3.0, registrando notas en el sistema de información académico institucional.
-                </p>
-            </div>
         </div>
     </div>
 </div>
@@ -1962,7 +2133,7 @@ window.SECTIONS['c3'] = `
                 <i class="fas fa-layer-group"></i> Áreas y Modalidades
             </button>
             <button class="tab-btn" data-tab="c3-p-perfiles" onclick="switchTab('c3PropuestoSubTabs','c3-p-perfiles')">
-                <i class="fas fa-bullseye"></i> Perfiles y RAPs (7 Competencias)
+                <i class="fas fa-bullseye"></i> Perfiles y RAPs (Tabla 35 Oficial)
             </button>
             <button class="tab-btn" data-tab="c3-p-flex" onclick="switchTab('c3PropuestoSubTabs','c3-p-flex')">
                 <i class="fas fa-arrows-alt"></i> Flexibilidad (Extensa)
@@ -2093,7 +2264,6 @@ window.SECTIONS['c3'] = `
                 </tbody>
             </table>
 
-            <!-- Desglose de Horas por Modalidad -->
             <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:28px 0 12px;">
                 <i class="fas fa-clock" style="color:var(--orange); margin-right:6px;"></i> Diferenciación Explicita de Horas por Modalidad (Registro Único)
             </h4>
@@ -2124,148 +2294,147 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
 
-        <!-- SUB TAB 2.3: PERFILES Y RAPS PROPUESTO (7 COMPETENCIAS) -->
+        <!-- SUB TAB 2.3: PERFILES Y RAPS PROPUESTO (TABLA 35 OFICIAL REQUERIDA) -->
         <div class="tab-panel" id="c3-p-perfiles" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Perfil de Egreso (7 Competencias Clave) & 9 RAPs del Programa
+                Tabla 35. Matriz de Resultados de Aprendizaje del Programa (Documento Maestro)
             </h3>
+            <p style="color:var(--gray-text); font-size:0.83rem; margin-bottom:20px;">
+                Articulación directa entre las Competencias del Egresado/Graduado, los Resultados de Aprendizaje del Programa (RAP) y las Asignaturas Asociadas del plan propuesto.
+            </p>
 
-            <div class="grid-2">
-                <div>
-                    <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">
-                        <i class="fas fa-user-graduate" style="color:var(--orange); margin-right:6px;"></i> Competencias del Perfil de Egreso
-                    </h4>
-                    <ul style="list-style:none; padding:0; margin:0;">
-                        <li style="padding:10px 12px; background:var(--white); border-left:3px solid var(--orange); margin-bottom:8px; border-radius:4px; font-size:0.82rem; box-shadow:var(--shadow-sm);">
-                            <strong>1. Gestión Estratégica:</strong> Integra procesos administrativos, financieros, talento humano y operaciones con eficiencia y sostenibilidad.
-                        </li>
-                        <li style="padding:10px 12px; background:var(--white); border-left:3px solid var(--orange); margin-bottom:8px; border-radius:4px; font-size:0.82rem; box-shadow:var(--shadow-sm);">
-                            <strong>2. Toma de Decisiones Ética:</strong> Utiliza análisis financiero, estadístico y digital para la competitividad empresarial.
-                        </li>
-                        <li style="padding:10px 12px; background:var(--white); border-left:3px solid var(--orange); margin-bottom:8px; border-radius:4px; font-size:0.82rem; box-shadow:var(--shadow-sm);">
-                            <strong>3. Innovación y Emprendimiento:</strong> Lidera proyectos empresariales articulando investigación aplicada y creatividad.
-                        </li>
-                        <li style="padding:10px 12px; background:var(--white); border-left:3px solid var(--orange); margin-bottom:8px; border-radius:4px; font-size:0.82rem; box-shadow:var(--shadow-sm);">
-                            <strong>4. Transformación Digital:</strong> Aplica tecnologías emergentes (analítica, IA, E-Commerce) para optimizar decisiones.
-                        </li>
-                        <li style="padding:10px 12px; background:var(--white); border-left:3px solid var(--orange); margin-bottom:8px; border-radius:4px; font-size:0.82rem; box-shadow:var(--shadow-sm);">
-                            <strong>5. Liderazgo Colaborativo:</strong> Desarrolla habilidades gerenciales, resolución de conflictos y gestión del talento.
-                        </li>
-                        <li style="padding:10px 12px; background:var(--white); border-left:3px solid var(--orange); margin-bottom:8px; border-radius:4px; font-size:0.82rem; box-shadow:var(--shadow-sm);">
-                            <strong>6. Compromiso Social y Ético:</strong> Actúa con responsabilidad social y visión sostenible en la comunidad.
-                        </li>
-                        <li style="padding:10px 12px; background:var(--white); border-left:3px solid var(--orange); margin-bottom:8px; border-radius:4px; font-size:0.82rem; box-shadow:var(--shadow-sm);">
-                            <strong>7. Pensamiento Prospectivo:</strong> Interpreta el entorno económico y social anticipando escenarios de futuro.
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">
-                        <i class="fas fa-bullseye" style="color:var(--orange); margin-right:6px;"></i> Resultados de Aprendizaje del Programa (RAP)
-                    </h4>
-                    <div style="display:flex; flex-direction:column; gap:6px;">
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 1:</strong> Diseña e implementa estrategias organizacionales que optimizan recursos y fortalecen la competitividad.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 2:</strong> Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 3:</strong> Diseña políticas y estrategias de gestión humana que potencian la productividad y el bienestar.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 4:</strong> Evalúa y ejecuta proyectos de emprendimiento y sostenibilidad con impacto económico y social.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 5:</strong> Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 6:</strong> Integra tecnologías de información, analítica de datos e inteligencia artificial en la gestión administrativa.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 7:</strong> Implementa prácticas de sostenibilidad, economía circular y responsabilidad social.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 8:</strong> Diseña e implementa sistemas integrados de gestión orientados a la calidad y mejora continua.
-                        </div>
-                        <div style="padding:8px 12px; background:var(--gray-bg); border-radius:6px; font-size:0.8rem;">
-                            <strong style="color:var(--orange-dark);">RAP 9:</strong> Diseña e implementa proyectos de investigación aplicada que aporten a la innovación empresarial.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <table class="tbl">
+                <thead>
+                    <tr>
+                        <th style="width:30%;">Competencias del Egresado / Graduado</th>
+                        <th style="width:35%;">Resultado de Aprendizaje del Programa (RAP)</th>
+                        <th style="width:35%;">Asignaturas Asociadas del Plan Propuesto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gestiona estratégica y éticamente las organizaciones, articulando los recursos humanos, financieros y tecnológicos para el logro de los objetivos institucionales.</td>
+                        <td><strong>RAP 1:</strong> Diseña e implementa estrategias organizacionales que optimizan los recursos y fortalecen la competitividad empresarial.</td>
+                        <td>Fundamentos de Administración • Procesos Administrativos • Teoría Organizacional • Pensamiento Estratégico y Prospectivo • Juego Gerencial • Proyecto de Grado</td>
+                    </tr>
+                    <tr class="row-accent">
+                        <td>Analiza información financiera, económica y contable para la toma de decisiones en contextos locales y globales.</td>
+                        <td><strong>RAP 2:</strong> Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles.</td>
+                        <td>Fundamentos Contables y Financieros • Análisis Financiero • Administración Financiera • Costos y Presupuestos • Matemática Financiera • Legislación Tributaria</td>
+                    </tr>
+                    <tr>
+                        <td>Dirige el talento humano con liderazgo participativo, promoviendo la innovación, la cultura organizacional y el bienestar laboral.</td>
+                        <td><strong>RAP 3:</strong> Diseña políticas y estrategias de gestión humana que potencian la productividad y el desarrollo del personal.</td>
+                        <td>Gerencia del Talento Humano • Habilidades Gerenciales y Liderazgo • Cátedra de la Paz y Resolución de Conflictos • Comunicación Oral y Escrita</td>
+                    </tr>
+                    <tr class="row-accent">
+                        <td>Formula y gestiona proyectos empresariales innovadores, sostenibles y socialmente responsables.</td>
+                        <td><strong>RAP 4:</strong> Evalúa y ejecuta proyectos de emprendimiento y sostenibilidad que generen impacto económico y social.</td>
+                        <td>Modelos de Emprendimiento • Laboratorio de Innovación y Emprendimiento • Formulación y Evaluación de Proyectos • Economía Colombiana e Internacional • Proyecto de Grado</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrolla estrategias de marketing y comunicación enfocadas en la satisfacción del cliente, la competitividad y la sostenibilidad.</td>
+                        <td><strong>RAP 5:</strong> Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible.</td>
+                        <td>Fundamentos de Mercadeo • Gerencia de Marketing • Investigación de Mercados • Gerencia de Ventas y Canales de Distribución • E-Commerce • Marketing Verde (Electiva)</td>
+                    </tr>
+                    <tr class="row-accent">
+                        <td>Aplica herramientas tecnológicas, digitales y analíticas para la optimización de procesos y la toma de decisiones estratégicas.</td>
+                        <td><strong>RAP 6:</strong> Integra tecnologías de información, analítica de datos e inteligencia artificial en la gestión administrativa.</td>
+                        <td>Big Data y Analítica de Datos • Inteligencia Artificial • Sistemas Integrados de Gestión (HSEQ) • Transformación Digital (Electiva)</td>
+                    </tr>
+                    <tr>
+                        <td>Promueve la sostenibilidad y la responsabilidad social como ejes de la gestión empresarial.</td>
+                        <td><strong>RAP 7:</strong> Implementa prácticas de sostenibilidad, economía circular y responsabilidad social en la organización.</td>
+                        <td>Desarrollo Sostenible y Economía Circular (Electiva) • Gerencia de la Calidad • Ética y Gobernanza Corporativa (Electiva) • Finanzas Sostenibles (Electiva)</td>
+                    </tr>
+                    <tr class="row-accent">
+                        <td>Gestiona procesos operativos y de calidad con enfoque de mejora continua y eficiencia organizacional.</td>
+                        <td><strong>RAP 8:</strong> Diseña e implementa sistemas integrados de gestión orientados a la calidad, productividad y sostenibilidad.</td>
+                        <td>Gestión de Operaciones • Gerencia de Producción • Sistemas Integrados de Gestión (HSEQ) • Gerencia de la Calidad</td>
+                    </tr>
+                    <tr>
+                        <td>Aplica la investigación y el análisis crítico para la solución de problemas organizacionales y el mejoramiento continuo.</td>
+                        <td><strong>RAP 9:</strong> Diseña e implementa proyectos de investigación aplicada que aporten a la innovación y competitividad empresarial.</td>
+                        <td>Competencias Investigativas • Métodos Cualitativos y Cuantitativos • Proyecto de Grado</td>
+                    </tr>
+                    <tr class="row-accent">
+                        <td>Actúa con ética, responsabilidad y compromiso social en el ejercicio profesional.</td>
+                        <td><strong>RAP 10:</strong> Toma decisiones con base en principios éticos, legales y de responsabilidad social empresarial.</td>
+                        <td>Cátedra de la Paz y Resolución de Conflictos • Legislación Comercial • Derecho Laboral y Seguridad Social • Electiva de Diversidad e Inclusión</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- SUB TAB 2.4: FLEXIBILIDAD PROPUESTA (EXTENSA) -->
+        <!-- SUB TAB 2.4: FLEXIBILIDAD PROPUESTA (COMPLETA EN 4 DIMENSIONES) -->
         <div class="tab-panel" id="c3-p-flex" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Estrategias de Flexibilidad Curricular en el Plan Propuesto (4 Dimensiones)
+                Sustentación de la Flexibilidad Curricular en el Plan Propuesto (4 Dimensiones)
             </h3>
 
             <div class="grid-2" style="margin-bottom:20px;">
                 <div class="card" style="border-top:4px solid var(--orange);">
-                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Flexibilidad Curricular y Electividad</h4>
+                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Flexibilidad Curricular y Electividad de Profundización</h4>
                     <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        El programa dispone de un banco de electivas de profundización profesional en semestres 5, 6 y 7 (9 créditos), estructurado en 3 líneas de vanguardia:
+                        El programa dispone de un banco de electivas en semestres 5, 6 y 7 (9 créditos de 3cr c/u), estructurado en líneas avanzadas de actualización tecnológica:
                     </p>
-                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Línea de Transformación Digital:</strong> Inteligencia Artificial Aplicada, Big Data Gerencial, Marketing Digital y E-Commerce.</li>
-                        <li>• <strong>Línea de Sostenibilidad:</strong> Finanzas Sostenibles, Desarrollo Sostenible y Economía Circular.</li>
-                        <li>• <strong>Línea de Gobernanza:</strong> Ética y Gobernanza Corporativa, Gestión de la Inclusión y Diversidad.</li>
+                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Línea de Transformación Digital & IA:</strong> Inteligencia Artificial Aplicada a Negocios, Analítica Avanzada, Marketing Digital.</li>
+                        <li>• <strong>Línea de Sostenibilidad & Economía Circular:</strong> Finanzas Sostenibles, Gerencia Ambiental y Economía Circular.</li>
+                        <li>• <strong>Línea de Gobernanza & Ética:</strong> Ética y Gobernanza Corporativa, Gestión de la Diversidad e Inclusión.</li>
                     </ul>
                 </div>
 
                 <div class="card" style="border-top:4px solid var(--carbon);">
-                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--carbon);"></i> 2. Flexibilidad Pedagógica</h4>
+                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--carbon);"></i> 2. Flexibilidad Pedagógica y Didáctica Mediada</h4>
                     <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Estrategias pedagógicas activas centradas en el estudiante:
+                        Estrategias activas adaptadas a las necesidades del estudiante profesional:
                     </p>
-                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Aulas Virtuales Interactivas:</strong> Campus LMS Moodle intuitivo con recursos educativos digitales, laboratorios y simuladores.</li>
-                        <li>• <strong>Encuentros Sincrónicos y Asincrónicos:</strong> Flexibilidad de acceso a grabaciones y materiales formativos las 24/7.</li>
-                        <li>• <strong>Metodologías de Caso y Proyectos:</strong> Aprendizaje basado en retos reales del entorno productivo.</li>
+                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Aulas Virtuales Interactivas:</strong> Campus LMS Moodle intuitivo con laboratorios virtuales y simuladores empresariales 24/7.</li>
+                        <li>• <strong>Acceso Asincrónico y Sincrónico:</strong> Flexibilidad horaria para trabajadores y estudiantes de regiones alejadas.</li>
+                        <li>• <strong>Aprendizaje Basado en Retos:</strong> Casos reales de empresas de Tocancipá y Sabana Centro.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="grid-2">
                 <div class="card" style="border-top:4px solid #0284C7;">
-                    <h4><i class="fas fa-random" style="color:#0284C7;"></i> 3. Flexibilidad Administrativa y Registro Único</h4>
+                    <h4><i class="fas fa-random" style="color:#0284C7;"></i> 3. Flexibilidad Administrativa y Transitabilidad en Registro Único</h4>
                     <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Mecanismos institucionales de movilidad interna y transitabilidad:
+                        Mecanismos institucionales de movilidad interna:
                     </p>
-                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Transitabilidad de Modalidad:</strong> Estudiantes pueden cursar créditos entre modalidad Presencial y Virtual.</li>
-                        <li>• <strong>Movilidad Inter-semestral:</strong> Sistema flexible de requisitos para aceleración o ritmo adaptado.</li>
-                        <li>• <strong>Régimen de Homologaciones Directas:</strong> Reconocimiento de saberes previos y transferencia de créditos entre programas de la CETO.</li>
+                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Transitabilidad de Modalidad:</strong> Estudiantes de modalidad Presencial pueden cursar asignaturas virtuales y viceversa dentro del Registro Único.</li>
+                        <li>• <strong>Movilidad Inter-semestral:</strong> Sistema simplificado de requisitos para avanzar al ritmo del estudiante.</li>
+                        <li>• <strong>Homologaciones y Transferencias:</strong> Régimen automatizado de reconocimiento de saberes y transferencia de créditos.</li>
                     </ul>
                 </div>
 
                 <div class="card" style="border-top:4px solid #059669;">
-                    <h4><i class="fas fa-globe-americas" style="color:#059669;"></i> 4. Flexibilidad e Internacionalización</h4>
+                    <h4><i class="fas fa-globe-americas" style="color:#059669;"></i> 4. Flexibilidad e Internacionalización del Currículo</h4>
                     <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Apertura global del currículo:
+                        Dimensión internacional integrada en la experiencia formativa:
                     </p>
-                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Clases Espejo Internacionales:</strong> Desarrollo de módulos conjuntos con universidades aliadas de América Latina.</li>
-                        <li>• <strong>Plan de Bilingüismo Integrado:</strong> Asignaturas de Inglés I, II y III articuladas al marco MCER (Nivel B1).</li>
-                        <li>• <strong>Profesores Invitados Internacionales:</strong> Seminarios y ponencias magistrales en modalidad virtual.</li>
+                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Clases Espejo Internacionales:</strong> Convenios activos con universidades de México, Perú y Chile.</li>
+                        <li>• <strong>Plan de Bilingüismo (Inglés I, II y III):</strong> Alineado al estándar MCER (Nivel B1) con contenidos de negocios.</li>
+                        <li>• <strong>Conferencias Magistrales Internacionales:</strong> Docentes y consultores internacionales invitados a aulas virtuales.</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- SUB TAB 2.5: EVALUACIÓN RA PROPUESTA (DECRETO 1330) -->
+        <!-- SUB TAB 2.5: EVALUACIÓN RA PROPUESTA (DECRETO 1330 Y BLOOM) -->
         <div class="tab-panel" id="c3-p-eval" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Sistema de Evaluación de Resultados de Aprendizaje (Decreto 1330 de 2019)
             </h3>
 
             <div class="card-accent" style="margin-bottom:20px;">
-                <h4><i class="fas fa-balance-scale"></i> Marco Normativo y Filosofía de Evaluación</h4>
+                <h4><i class="fas fa-balance-scale"></i> Marco Normativo e Integración en la CETO</h4>
                 <p style="font-size:0.85rem; color:rgba(255,255,255,0.85); margin-top:6px; line-height:1.6;">
-                    Conforme al Decreto 1330 de 2019, la CETO concibe los Resultados de Aprendizaje (RA) como las declaraciones expresas de lo que se espera que el estudiante conozca, comprenda y sea capaz de demostrar. La evaluación se asume como una herramienta formativa para el aprendizaje y la mejora continua del quehacer pedagógico.
+                    El programa asume los Resultados de Aprendizaje (RA) en cumplimiento del Decreto 1330 de 2019 y los acuerdos del Men, estructurando el aprendizaje como la manifestación verificable de lo que el estudiante conoce, comprende y puede ejecutar al culminar su formación.
                 </p>
             </div>
 
@@ -2275,15 +2444,15 @@ window.SECTIONS['c3'] = `
             <div class="grid-3" style="margin-bottom:24px;">
                 <div class="card">
                     <h4 style="color:var(--orange-dark);"><i class="fas fa-brain"></i> 1. Plano Cognitivo</h4>
-                    <p style="font-size:0.82rem;">Estructurado en 6 niveles: Conocimiento, Comprensión, Aplicación, Análisis, Síntesis y Evaluación de problemáticas empresariales.</p>
+                    <p style="font-size:0.82rem;">Niveles: Conocimiento, Comprensión, Aplicación, Análisis, Síntesis y Evaluación de modelos empresariales.</p>
                 </div>
                 <div class="card">
                     <h4 style="color:var(--orange-dark);"><i class="fas fa-heart"></i> 2. Plano Subjetivo (Afectivo)</h4>
-                    <p style="font-size:0.82rem;">Desarrollo de competencias socioemocionales: Disposición, Reacción, Valoración ética, Organización y Caracterización profesional.</p>
+                    <p style="font-size:0.82rem;">Niveles: Disposición, Reacción, Valoración ética, Organización de valores y Caracterización del perfil profesional.</p>
                 </div>
                 <div class="card">
                     <h4 style="color:var(--orange-dark);"><i class="fas fa-hands"></i> 3. Plano Psicomotor</h4>
-                    <p style="font-size:0.82rem;">Desarrollo de habilidades prácticas: Imitación, Manipulación de herramientas digitales, Precisión, Articulación y Naturalización del desempeño.</p>
+                    <p style="font-size:0.82rem;">Niveles: Imitación, Manipulación de software/LMS, Precisión, Articulación y Naturalización de habilidades gerenciales.</p>
                 </div>
             </div>
 
@@ -2292,39 +2461,34 @@ window.SECTIONS['c3'] = `
             </h4>
             <table class="tbl" style="margin-bottom:24px;">
                 <thead>
-                    <tr><th>Rango de Nota</th><th>Nivel de Logro Socioformativo</th><th>Criterio y Evidencia del Resultado de Aprendizaje</th></tr>
+                    <tr><th>Rango de Nota</th><th>Nivel Socioformativo</th><th>Criterio y Evidencia del Resultado de Aprendizaje</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td class="lb">0.0 – 1.0</td><td><span style="color:#DC2626; font-weight:700;">Nivel Receptivo Inicial</span></td><td>El estudiante no alcanza los resultados de aprendizaje previstos. No aporta evidencias mínimas.</td></tr>
-                    <tr><td class="lb">1.1 – 2.0</td><td><span style="color:#EA580C; font-weight:700;">Nivel Receptivo</span></td><td>Alcanza de manera muy limitada los RA. Requiere refuerzo pedagógico significativo.</td></tr>
-                    <tr><td class="lb">2.1 – 2.9</td><td><span style="color:#D97706; font-weight:700;">Nivel Resolutivo Básico</span></td><td>Alcanza algunos RA con inconsistencias en el desempeño o la aplicación técnica.</td></tr>
-                    <tr class="row-accent"><td class="lb">3.0 – 4.0</td><td><span style="color:#0284C7; font-weight:700;">Nivel Autónomo</span></td><td>Alcanza satisfactoriamente los resultados de aprendizaje demostrando idoneidad y aplicación práctica.</td></tr>
-                    <tr class="row-accent"><td class="lb">4.1 – 4.5</td><td><span style="color:#059669; font-weight:700;">Nivel Estratégico</span></td><td>Alcanza óptimamente los RA con capacidad de análisis crítico y solución de problemas organizacionales.</td></tr>
-                    <tr class="row-accent"><td class="lb">4.6 – 5.0</td><td><span style="color:#7C3AED; font-weight:700;">Nivel Sobresaliente</span></td><td>Alcanza plenamente los RA demostrando innovación, liderazgo y excelencia técnica en el desempeño.</td></tr>
+                    <tr><td class="lb">0.0 – 1.0</td><td><span style="color:#DC2626; font-weight:700;">Nivel Receptivo Inicial</span></td><td>El estudiante no alcanza los resultados de aprendizaje previstos. No aporta evidencias mínimas requeridas.</td></tr>
+                    <tr><td class="lb">1.1 – 2.0</td><td><span style="color:#EA580C; font-weight:700;">Nivel Receptivo</span></td><td>Alcanza de manera muy limitada los RA. Requiere plan de nivelación pedagógica.</td></tr>
+                    <tr><td class="lb">2.1 – 2.9</td><td><span style="color:#D97706; font-weight:700;">Nivel Resolutivo Básico</span></td><td>Alcanza algunos RA con vacíos en la argumentación o aplicación técnica.</td></tr>
+                    <tr class="row-accent"><td class="lb">3.0 – 4.0</td><td><span style="color:#0284C7; font-weight:700;">Nivel Autónomo</span></td><td>Alcanza satisfactoriamente los resultados de aprendizaje demostrando idoneidad y capacidad resolutiva.</td></tr>
+                    <tr class="row-accent"><td class="lb">4.1 – 4.5</td><td><span style="color:#059669; font-weight:700;">Nivel Estratégico</span></td><td>Alcanza óptimamente los RA con capacidad de análisis crítico y solución de retos organizacionales.</td></tr>
+                    <tr class="row-accent"><td class="lb">4.6 – 5.0</td><td><span style="color:#7C3AED; font-weight:700;">Nivel Sobresaliente</span></td><td>Alcanza plenamente los RA demostrando innovación, liderazgo y excelencia en el desempeño.</td></tr>
                 </tbody>
             </table>
 
             <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                <i class="fas fa-users-cog" style="color:var(--orange); margin-right:6px;"></i> Triada de Evaluativa y Mecanismos de Seguimiento
+                <i class="fas fa-users-cog" style="color:var(--orange); margin-right:6px;"></i> Agentes Evaluadores: Heteroevaluación, Coevaluación y Autoevaluación
             </h4>
             <div class="grid-3">
                 <div class="card">
-                    <h4><i class="fas fa-user-edit" style="color:var(--orange);"></i> Autoevaluación</h4>
-                    <p style="font-size:0.83rem;">Proceso metacognitivo donde el estudiante reflexiona sobre el logro de sus propios aprendizajes y fortalezas a mejorar.</p>
+                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--orange);"></i> Heteroevaluación (70%)</h4>
+                    <p style="font-size:0.83rem;">Evaluación continua y objetiva realizada por el docente mediante rúbricas de desempeño socioformativas, casos prácticos y entregables finales.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-users" style="color:var(--orange);"></i> Coevaluación</h4>
-                    <p style="font-size:0.83rem;">Valoración entre pares mediante rúbricas objetivas durante trabajos en equipo, simulaciones y proyectos colaborativos.</p>
+                    <h4><i class="fas fa-users" style="color:var(--orange);"></i> Coevaluación (15%)</h4>
+                    <p style="font-size:0.83rem;">Valoración entre compañeros de equipo para juzgar el trabajo colaborativo, la responsabilidad compartida y los aportes a la solución de problemas.</p>
                 </div>
                 <div class="card">
-                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--orange);"></i> Heteroevaluación</h4>
-                    <p style="font-size:0.83rem;">Valoración docente directa respaldada por rúbricas socioformativas de desempeño medibles cualitativa y cuantitativamente.</p>
+                    <h4><i class="fas fa-user-edit" style="color:var(--orange);"></i> Autoevaluación (15%)</h4>
+                    <p style="font-size:0.83rem;">Reflexión autónoma guiada donde el estudiante evalúa su propio nivel de logro respecto a los RA declarados en la asignatura.</p>
                 </div>
-            </div>
-
-            <div class="evidence-box" style="margin-top:20px;">
-                <i class="fas fa-check-circle"></i>
-                <strong>Seguimiento Institucional:</strong> Los Comités Curriculares de Escuela y Reuniones de Área monitorean periódicamente los porcentajes de alcance de los RA por cohorte y asignatura para realizar intervenciones pedagógicas oportunas.
             </div>
         </div>
     </div>
@@ -2365,7 +2529,7 @@ window.SECTIONS['c3'] = `
             </tr>
             <tr class="row-accent">
                 <td class="lb">Número de Asignaturas</td>
-                <td>62 Asignaturas</td>
+                <td>58 Asignaturas</td>
                 <td><strong>48 Asignaturas</strong></td>
                 <td>Asignaturas unificadas a 3 créditos cada una, garantizando dedicación estándar de 144h.</td>
             </tr>
