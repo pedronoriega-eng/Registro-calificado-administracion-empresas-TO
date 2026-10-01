@@ -1484,3 +1484,90 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     margin-top: 20px;
     animation: fadeIn 0.3s ease;
 }
+
+
+/* =========================================================
+   MATRIX GLOBAL FIT & SCROLL UX ENHANCEMENTS
+   ========================================================= */
+
+.matrix-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    padding: 10px 16px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.malla-matrix-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    background: #FFFFFF;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #CBD5E1;
+    border-top: none;
+    margin-bottom: 24px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* TOP AND BOTTOM VISIBLE SCROLLBARS */
+.malla-matrix-wrapper::-webkit-scrollbar {
+    height: 12px;
+}
+.malla-matrix-wrapper::-webkit-scrollbar-track {
+    background: #F1F5F9;
+    border-radius: 0 0 8px 8px;
+}
+.malla-matrix-wrapper::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 6px;
+    border: 2px solid #F1F5F9;
+}
+.malla-matrix-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #D97706;
+}
+
+/* COMPACT FIT TO SCREEN MODE */
+.matrix-fit-screen {
+    overflow-x: hidden !important;
+}
+
+.matrix-fit-screen .malla-matrix-table {
+    table-layout: fixed;
+    width: 100% !important;
+}
+
+.matrix-fit-screen .malla-matrix-table td {
+    min-width: 0 !important;
+    padding: 4px !important;
+}
+
+.matrix-fit-screen .matrix-comp-header {
+    width: 180px !important;
+    min-width: 180px !important;
+    font-size: 0.74rem !important;
+    padding: 8px 6px !important;
+}
+
+.matrix-fit-screen .malla-matrix-subject-card {
+    padding: 6px 6px !important;
+    margin-bottom: 4px !important;
+    border-left-width: 3px !important;
+}
+
+.matrix-fit-screen .subject-card-title,
+.matrix-fit-screen .matrix-card-title {
+    font-size: 0.72rem !important;
+    line-height: 1.15 !important;
+}
+
+.matrix-fit-screen .matrix-card-prereq {
+    font-size: 0.6rem !important;
+}

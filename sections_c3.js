@@ -3768,6 +3768,27 @@ window.C3_VIGENTE_SUBJECTS = [
   }
 ];
 
+window.scrollMatrix = function(direction, type) {
+    const wrapper = document.getElementById('malla-matrix-wrapper-' + type);
+    if (!wrapper) return;
+    const scrollAmount = direction === 'left' ? -400 : 400;
+    wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+};
+
+window.toggleMatrixFit = function(type) {
+    const wrapper = document.getElementById('malla-matrix-wrapper-' + type);
+    const btn = document.getElementById('toggleMatrixBtn_' + type);
+    if (!wrapper) return;
+
+    if (wrapper.classList.contains('matrix-fit-screen')) {
+        wrapper.classList.remove('matrix-fit-screen');
+        if (btn) btn.innerHTML = '<i class="fas fa-compress-alt"></i> Ajustar a Pantalla';
+    } else {
+        wrapper.classList.add('matrix-fit-screen');
+        if (btn) btn.innerHTML = '<i class="fas fa-expand-alt"></i> Vista Con Desplazamiento';
+    }
+};
+
 window.selectMatrixSubject = function(id, type) {
     let s = type === 'vig' ? window.C3_VIGENTE_SUBJECTS.find(i => i.id === id) : window.C3_SUBJECTS.find(i => i.id === id);
     if (!s) return;
@@ -3913,7 +3934,27 @@ window.SECTIONS.c3 = `
             </div>
         </div>
 
-        <div class="malla-matrix-wrapper">
+        
+    <!-- MATRIX NAV & CONTROL TOOLBAR -->
+    <div class="matrix-nav-bar">
+        <div style="font-size:0.82rem; font-weight:700; color:#334155; display:flex; align-items:center; gap:8px;">
+            <i class="fas fa-arrows-alt-h" style="color:var(--orange);"></i>
+            <span>Navegación de Malla: <strong>Semestres I a VIII</strong></span>
+        </div>
+        <div style="display:flex; gap:6px; align-items:center;">
+            <button onclick="scrollMatrix('left', 'prop')" class="tab-btn" style="padding:5px 10px; font-size:0.75rem; font-weight:700; background:#FFFFFF; border:1px solid #CBD5E1; border-radius:6px; cursor:pointer;">
+                <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <button onclick="scrollMatrix('right', 'prop')" class="tab-btn" style="padding:5px 10px; font-size:0.75rem; font-weight:700; background:#FFFFFF; border:1px solid #CBD5E1; border-radius:6px; cursor:pointer;">
+                Siguiente <i class="fas fa-chevron-right"></i>
+            </button>
+            <button id="toggleMatrixBtn_prop" onclick="toggleMatrixFit('prop')" style="padding:5px 12px; font-size:0.75rem; font-weight:800; background:var(--orange); color:#FFFFFF; border:none; border-radius:6px; cursor:pointer; margin-left:6px;">
+                <i class="fas fa-compress-alt"></i> Ajustar a Pantalla
+            </button>
+        </div>
+    </div>
+
+    <div class="malla-matrix-wrapper" id="malla-matrix-wrapper-prop">
         <table class="malla-matrix-table">
             <thead>
                 <tr>
@@ -3935,7 +3976,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Álgebra Lineal</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_7', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_7', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 2</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -3949,59 +3990,59 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Estadística Descriptiva</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_13', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_13', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Estadística Inferencial</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Descriptiva</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_32', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_32', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Métodos Cualitativos y Cuantitativos</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Competencias Investigativas</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td></tr><tr>
             <td class="matrix-comp-header comp-border-tecnologia" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-laptop-code" style="color:#0D9488; margin-right:6px;"></i> Tecnología, Análisis y Transformación Digital
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_31', 'prop')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_31', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Big Data y Analítica de Datos</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_41', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_41', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">E-comerce</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de mercadeo</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_43', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_43', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Inteligencia artificial</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Big Data y Analítica de Datos</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-procesos_operaciones" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-cogs" style="color:#EA580C; margin-right:6px;"></i> Procesos, Operaciones y Sistemas Productivos
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_17', 'prop')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_17', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Procesos Administrativos</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_27', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_27', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4015,21 +4056,21 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Sistemas Integrados de Gestión (HSEQ)</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_40', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_40', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia de Producción</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Gestión de Operaciones</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_47', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_47', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia de  Calidad</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-gestion_financiera" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-chart-pie" style="color:#7C3AED; margin-right:6px;"></i> Gestión Organizacional, Económica y Financiera
@@ -4055,7 +4096,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Fundamentos de mercadeo</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_10', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_10', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 2</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4069,7 +4110,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Costos y Presupuestos</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_15', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_15', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4090,7 +4131,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Teoría Organizacional</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_22', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_22', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4104,7 +4145,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Economía Colombiana e Internacional</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Macroeconomía</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_26', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_26', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4118,14 +4159,14 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Negocios y Gerencia Internacional</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Economía Colombiana e Internacional</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_33', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_33', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia de Marketing</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de mercadeo</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_37', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_37', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4139,38 +4180,38 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Gerencia de Ventas y Canales de Distribución</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Marketing</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_45', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_45', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Juego Gerencial (Simulación de Negocios)</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Pensamiento Estratégico y Prospectivo</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-talento_liderazgo" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-users-cog" style="color:#DB2777; margin-right:6px;"></i> Gestión del Talento Humano y Liderazgo
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('prop_25', 'prop')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('prop_25', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia del Talento Humano</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Procesos Administrativos</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('prop_46', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('prop_46', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Habilidades gerenciales y liderazgo</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia del Talento Humano</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-investigacion_innovacion" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-lightbulb" style="color:#16A34A; margin-right:6px;"></i> Investigación, Innovación y Emprendimiento
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_19', 'prop')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_19', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4184,21 +4225,21 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Investigación de Mercados</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de mercadeo</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_35', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_35', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Modelos de emprendimiento</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_38', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_38', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Formulación y Evaluación de Proyectos</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Análisis Financiero</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_44', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_44', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4212,7 +4253,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Proyecto de Grado</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Competencias Investigativas</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-humanistica_bilinguismo" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-globe" style="color:#DC2626; margin-right:6px;"></i> Formación Humanística, Ética y Bilingüismo
@@ -4231,7 +4272,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Cátedra de la Paz y Resolución de Conflictos</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_9', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_9', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 2</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4245,14 +4286,14 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Legislación Comercial</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_14', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_14', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Inglés II</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés I</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_20', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_20', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -4266,40 +4307,40 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Derecho Laboral y Seguridad Social</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_34', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_34', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Legislación Tributaria</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td></tr><tr>
             <td class="matrix-comp-header comp-border-electivo" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-cubes" style="color:#D97706; margin-right:6px;"></i> Componente Electivo (Profundización / Humanística)
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_30', 'prop')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_30', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Profesional I</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_36', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_36', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Profesional II</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profesional I</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_42', 'prop')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_42', 'prop')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Profesional III</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profesional II</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div>
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td></tr></tbody></table></div>
 
         <div class="matrix-detail-panel" id="c3-propuesto-matrix-detail-panel" style="margin-top:24px;">
             <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
@@ -4909,7 +4950,27 @@ window.SECTIONS.c3 = `
             </div>
         </div>
 
-        <div class="malla-matrix-wrapper">
+        
+    <!-- MATRIX NAV & CONTROL TOOLBAR -->
+    <div class="matrix-nav-bar">
+        <div style="font-size:0.82rem; font-weight:700; color:#334155; display:flex; align-items:center; gap:8px;">
+            <i class="fas fa-arrows-alt-h" style="color:var(--orange);"></i>
+            <span>Navegación de Malla: <strong>Semestres I a IX</strong></span>
+        </div>
+        <div style="display:flex; gap:6px; align-items:center;">
+            <button onclick="scrollMatrix('left', 'vig')" class="tab-btn" style="padding:5px 10px; font-size:0.75rem; font-weight:700; background:#FFFFFF; border:1px solid #CBD5E1; border-radius:6px; cursor:pointer;">
+                <i class="fas fa-chevron-left"></i> Anterior
+            </button>
+            <button onclick="scrollMatrix('right', 'vig')" class="tab-btn" style="padding:5px 10px; font-size:0.75rem; font-weight:700; background:#FFFFFF; border:1px solid #CBD5E1; border-radius:6px; cursor:pointer;">
+                Siguiente <i class="fas fa-chevron-right"></i>
+            </button>
+            <button id="toggleMatrixBtn_vig" onclick="toggleMatrixFit('vig')" style="padding:5px 12px; font-size:0.75rem; font-weight:800; background:var(--orange); color:#FFFFFF; border:none; border-radius:6px; cursor:pointer; margin-left:6px;">
+                <i class="fas fa-compress-alt"></i> Ajustar a Pantalla
+            </button>
+        </div>
+    </div>
+
+    <div class="malla-matrix-wrapper" id="malla-matrix-wrapper-vig">
         <table class="malla-matrix-table">
             <thead>
                 <tr>
@@ -4924,87 +4985,87 @@ window.SECTIONS.c3 = `
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-calculator" style="color:#0284C7; margin-right:6px;"></i> Fundamentación Científica y Razonamiento Cuantitativo
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_8', 'vig')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_8', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 2</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Cálculo</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Matemáticas Básicas</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_15', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_15', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Estadística Descriptiva</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Cálculo</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_22', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_22', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Estadística Inferencial</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Descriptiva</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_40', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_40', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Métodos Cuantitativos y Cualitativos</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td></tr><tr>
             <td class="matrix-comp-header comp-border-tecnologia" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-laptop-code" style="color:#0D9488; margin-right:6px;"></i> Tecnología, Análisis y Transformación Digital
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('vig_38', 'vig')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('vig_38', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">E-Commerce</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td></tr><tr>
             <td class="matrix-comp-header comp-border-procesos_operaciones" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-cogs" style="color:#EA580C; margin-right:6px;"></i> Procesos, Operaciones y Sistemas Productivos
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_17', 'vig')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_17', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Administración por Procesos</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Teoría Organizacional</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_30', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_30', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Investigación de Operaciones</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_44', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_44', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gestión de la Calidad</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Administración por Procesos</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_51', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_51', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia de Producción</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Investigación de Operaciones</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_61', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_61', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 9</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Distribución Física y Logística</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Producción</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-gestion_financiera" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-chart-pie" style="color:#7C3AED; margin-right:6px;"></i> Gestión Organizacional, Económica y Financiera
@@ -5044,7 +5105,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Fundamentos de Economía</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_10', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_10', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 2</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5065,7 +5126,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Microeconomía</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Economía</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_19', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_19', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5079,14 +5140,14 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Macroeconomía</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Microeconomía</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_27', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_27', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Entorno Económico Colombiano e Internacional</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Macroeconomía</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_29', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_29', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5107,14 +5168,14 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Modelos de Desarrollo Económico</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Entorno Económico</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_37', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_37', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia de Mercadeo</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_45', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_45', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5135,14 +5196,14 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Sistema de Información Gerencial</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Tecnología e Innovación</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_53', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_53', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia Financiera</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Matemática Financiera</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_56', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_56', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 9</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5156,33 +5217,33 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Gerencia del Servicio</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Mercadeo</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-talento_liderazgo" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-users-cog" style="color:#DB2777; margin-right:6px;"></i> Gestión del Talento Humano y Liderazgo
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_25', 'vig')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_25', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Liderazgo</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_33', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_33', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Administración de Salarios</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Laboral</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_46', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_46', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Gerencia de Talento Humano</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Administración de Salarios</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_50', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_50', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5196,33 +5257,33 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Deontología</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td></tr><tr>
             <td class="matrix-comp-header comp-border-investigacion_innovacion" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-lightbulb" style="color:#16A34A; margin-right:6px;"></i> Investigación, Innovación y Emprendimiento
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_12', 'vig')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_12', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 2</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Metodología de la Investigación</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_26', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_26', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Creatividad e Innovación</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Cultura Emprendedora</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_39', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_39', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Tecnología e Innovación</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Creatividad e Innovación</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_52', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_52', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 8</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5236,7 +5297,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Proyecto de Grado I</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Metodología de la Investigación</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_58', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_58', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 9</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5250,7 +5311,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Proyecto de Grado II</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Proyecto de Grado I</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-humanistica_bilinguismo" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-globe" style="color:#DC2626; margin-right:6px;"></i> Formación Humanística, Ética y Bilingüismo
@@ -5269,7 +5330,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Inglés I</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_9', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_9', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 2</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
@@ -5283,7 +5344,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Inglés II</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés I</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_16', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_16', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
@@ -5297,7 +5358,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Inglés III</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés II</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_23', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_23', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5311,14 +5372,14 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Inglés IV</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés III</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_35', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_35', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Inglés V</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés IV</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_36', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_36', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
@@ -5332,14 +5393,14 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Inglés VI</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés V</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_43', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_43', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Fundamentos de Administración Pública</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Derecho Administrativo</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_59', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_59', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 9</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
@@ -5353,47 +5414,47 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Gobierno Corporativo</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Comercial</div>
-                    </div></td></tr><tr>
+                    </div>td></tr><tr>
             <td class="matrix-comp-header comp-border-electivo" style="position:sticky; left:0; z-index:3; background:#F8FAFC;">
                 <div style="font-weight:700; color:var(--carbon); font-size:0.83rem;">
                     <i class="fa-cubes" style="color:#D97706; margin-right:6px;"></i> Componente Electivo (Profundización / Humanística)
                 </div>
-            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_18', 'vig')">
+            </td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_18', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 3</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Profundización I</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_24', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_24', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 4</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Humanística I</div>
                         
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_34', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_34', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 5</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Profundización II</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización I</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_41', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_41', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 6</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">3 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Humanística II</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Humanística I</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_48', 'vig')">
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_48', 'vig')">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:4px; margin-bottom:4px;">
                             <span style="font-size:0.68rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 5px; border-radius:3px;">Sem 7</span>
                             <span style="font-size:0.68rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 5px; border-radius:3px;">2 cr</span>
                         </div>
                         <div class="subject-card-title">Electiva Profundización III</div>
                         <div style="font-size:0.68rem; color:#64748B; margin-top:4px; font-weight:500;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización II</div>
-                    </div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div>
+                    </div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td><td style="padding:6px; vertical-align:top; background:#FFFFFF;"><div style="height:100%; min-height:50px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div>td></tr></tbody></table></div>
 
         <div class="matrix-detail-panel" id="c3-vigente-matrix-detail-panel" style="margin-top:24px;">
             <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
