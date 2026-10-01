@@ -1834,3 +1834,201 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     animation: fadeIn 0.3s ease;
     -webkit-font-smoothing: antialiased;
 }
+
+
+/* =========================================================
+   PERFECT ZERO-CUTOFF 100% FULL-SCREEN MATRIX (SEM 1 TO SEM 8/9)
+   ========================================================= */
+
+.viewer-card {
+    max-width: 99vw !important;
+    width: 99vw !important;
+    margin: 0 auto !important;
+}
+
+.viewer-card-body {
+    padding: 12px 14px !important;
+}
+
+.dashboard {
+    max-width: 99vw !important;
+    padding: 12px !important;
+}
+
+.malla-matrix-scale-outer {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    margin-bottom: 20px;
+}
+
+.malla-matrix-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    background: #FFFFFF;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #CBD5E1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.malla-matrix-table {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.76rem;
+}
+
+.malla-matrix-table th {
+    background: #1E293B;
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 8px 3px;
+    border-bottom: 3px solid var(--orange);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* COMPONENT COLUMN WIDTH - 15.5% FOR ZERO CUTOFF */
+.matrix-comp-header-corner {
+    width: 15.5% !important;
+    min-width: 115px !important;
+    max-width: 15.5% !important;
+    background: #0F172A !important;
+    text-align: left;
+    padding: 8px 6px !important;
+}
+
+.matrix-comp-header {
+    background: #F8FAFC !important;
+    color: var(--carbon) !important;
+    font-family: var(--font-heading);
+    font-size: 0.74rem !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+    padding: 8px 6px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-right: 2px solid #CBD5E1 !important;
+    width: 15.5% !important;
+    min-width: 115px !important;
+    max-width: 15.5% !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    vertical-align: middle;
+}
+
+.malla-matrix-table td.matrix-cell {
+    padding: 4px 3px !important;
+    vertical-align: top;
+    background: #FFFFFF;
+    border-bottom: 1px solid #F1F5F9;
+    border-right: 1px solid #F1F5F9;
+    min-width: 0 !important;
+}
+
+/* 8 SEMESTERS TABLE (PLAN PROPUESTO) */
+.malla-matrix-table-8sem td.matrix-cell,
+.malla-matrix-table-8sem th.sem-header {
+    width: 10.56% !important;
+}
+
+/* 9 SEMESTERS TABLE (PLAN VIGENTE) */
+.malla-matrix-table-9sem td.matrix-cell,
+.malla-matrix-table-9sem th.sem-header {
+    width: 9.38% !important;
+}
+
+.malla-matrix-subject-card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 6px 5px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #94A3B8;
+    overflow: hidden;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
+
+.malla-matrix-subject-card:last-child {
+    margin-bottom: 0;
+}
+
+.malla-matrix-subject-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(243, 146, 0, 0.25);
+    border-color: var(--orange) !important;
+    background: #FFFDF9;
+}
+
+.malla-matrix-subject-card.selected-card {
+    border-color: var(--orange) !important;
+    background: #FFF7ED !important;
+    box-shadow: 0 0 0 2px var(--orange);
+}
+
+.subject-card-title, .matrix-card-title {
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.15;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.matrix-card-prereq {
+    font-size: 0.58rem;
+    color: #64748B;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Component Row Accent Border Colors */
+.comp-border-ciencias_basicas { border-left-color: #0284C7 !important; }
+.comp-border-tecnologia { border-left-color: #0D9488 !important; }
+.comp-border-procesos_operaciones { border-left-color: #EA580C !important; }
+.comp-border-gestion_financiera { border-left-color: #7C3AED !important; }
+.comp-border-talento_liderazgo { border-left-color: #DB2777 !important; }
+.comp-border-investigacion_innovacion { border-left-color: #16A34A !important; }
+.comp-border-humanistica_bilinguismo { border-left-color: #DC2626 !important; }
+.comp-border-electivo { border-left-color: #D97706 !important; }
+
+/* Traceability Detail Panel Below Matrix */
+.matrix-detail-panel {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-top: 20px;
+    animation: fadeIn 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+}
