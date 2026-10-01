@@ -1571,3 +1571,142 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .matrix-fit-screen .matrix-card-prereq {
     font-size: 0.6rem !important;
 }
+
+
+/* =========================================================
+   ZERO-SCROLL 100% SCREEN-FIT MATRIX GLOBAL LAYOUT
+   ========================================================= */
+
+.malla-matrix-wrapper {
+    width: 100%;
+    overflow-x: hidden !important;
+    overflow-y: visible;
+    background: #FFFFFF;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #CBD5E1;
+    margin-bottom: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.malla-matrix-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.78rem;
+}
+
+.malla-matrix-table th {
+    background: #1E293B;
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 10px 4px;
+    border-bottom: 2px solid var(--orange);
+    text-align: center;
+    overflow: hidden;
+}
+
+.matrix-comp-header {
+    background: #F8FAFC;
+    color: var(--carbon);
+    font-family: var(--font-heading);
+    font-size: 0.76rem;
+    font-weight: 800;
+    padding: 10px 8px;
+    border-bottom: 1px solid #E2E8F0;
+    border-right: 2px solid #CBD5E1;
+    width: 14%;
+    vertical-align: middle;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.malla-matrix-table td {
+    padding: 5px 4px;
+    vertical-align: top;
+    background: #FFFFFF;
+    border-bottom: 1px solid #F1F5F9;
+    border-right: 1px solid #F1F5F9;
+    width: 10.75%;
+    min-width: 0 !important;
+}
+
+.malla-matrix-subject-card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 6px 6px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #94A3B8;
+    overflow: hidden;
+}
+
+.malla-matrix-subject-card:last-child {
+    margin-bottom: 0;
+}
+
+.malla-matrix-subject-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(243, 146, 0, 0.22);
+    border-color: var(--orange) !important;
+    background: #FFFDF9;
+}
+
+.malla-matrix-subject-card.selected-card {
+    border-color: var(--orange) !important;
+    background: #FFF7ED !important;
+    box-shadow: 0 0 0 2px var(--orange);
+}
+
+.subject-card-title, .matrix-card-title {
+    font-family: var(--font-heading);
+    font-size: 0.73rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.18;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.matrix-card-prereq {
+    font-size: 0.6rem;
+    color: #64748B;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 2px;
+}
+
+/* Component Row Accent Border Colors */
+.comp-border-ciencias_basicas { border-left-color: #0284C7 !important; }
+.comp-border-tecnologia { border-left-color: #0D9488 !important; }
+.comp-border-procesos_operaciones { border-left-color: #EA580C !important; }
+.comp-border-gestion_financiera { border-left-color: #7C3AED !important; }
+.comp-border-talento_liderazgo { border-left-color: #DB2777 !important; }
+.comp-border-investigacion_innovacion { border-left-color: #16A34A !important; }
+.comp-border-humanistica_bilinguismo { border-left-color: #DC2626 !important; }
+.comp-border-electivo { border-left-color: #D97706 !important; }
+
+/* Traceability Detail Panel Below Matrix */
+.matrix-detail-panel {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-top: 20px;
+    animation: fadeIn 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+}
