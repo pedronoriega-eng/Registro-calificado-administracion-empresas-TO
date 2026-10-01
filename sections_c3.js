@@ -1625,7 +1625,6 @@ window.openSubjectModal = function(id) {
             </div>
             
             <div class="c3-modal-body">
-                <!-- Modality Distribution -->
                 <div class="c3-modal-section">
                     <div class="c3-modal-section-title"><i class="fas fa-clock"></i> Distribución de Horas por Modalidad (144h por Crédito)</div>
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:8px;">
@@ -1648,7 +1647,6 @@ window.openSubjectModal = function(id) {
                     </div>
                 </div>
 
-                <!-- Coherence: Profile & RAP -->
                 <div class="c3-modal-section">
                     <div class="c3-modal-section-title"><i class="fas fa-bullseye"></i> Articulación con Perfil de Egreso y RAP del Programa</div>
                     <div style="background:var(--gray-bg); padding:12px; border-radius:8px; font-size:0.83rem;">
@@ -1657,7 +1655,6 @@ window.openSubjectModal = function(id) {
                     </div>
                 </div>
 
-                <!-- Description & RAs -->
                 <div class="c3-modal-section">
                     <div class="c3-modal-section-title"><i class="fas fa-file-alt"></i> Descripción y Resultados de Aprendizaje (RA)</div>
                     <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:12px;">${s.descripcion}</p>
@@ -1666,7 +1663,6 @@ window.openSubjectModal = function(id) {
                     </ul>
                 </div>
 
-                <!-- Syllabus & Topics -->
                 <div class="c3-modal-section">
                     <div class="c3-modal-section-title"><i class="fas fa-list-ol"></i> Temas y Subtemas Principales</div>
                     <ul style="list-style:none; padding:0; margin:0;">
@@ -1728,7 +1724,7 @@ window.SECTIONS['c3'] = `
             </button>
         </div>
 
-        <!-- SUB TAB: MALLA VIGENTE -->
+        <!-- SUB TAB 1.1: MALLA VIGENTE -->
         <div class="tab-panel active" id="c3-v-malla" style="display:block;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
                 Plan de Estudios Vigente · 158 Créditos · 9 Semestres · 62 Asignaturas
@@ -1809,14 +1805,14 @@ window.SECTIONS['c3'] = `
 
             <div class="evidence-box" style="margin-top:20px;">
                 <i class="fas fa-file-pdf"></i>
-                <strong>Soporte:</strong> Anexo 5. Documento Maestro Administracion de Empresas_RU inicial (PDF).
+                <strong>Soporte Oficial:</strong> Anexo 5. Documento Maestro Administración de Empresas_RU inicial (PDF).
             </div>
         </div>
 
-        <!-- SUB TAB: ÁREAS VIGENTE -->
+        <!-- SUB TAB 1.2: ÁREAS VIGENTE -->
         <div class="tab-panel" id="c3-v-areas" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Distribución por Áreas de Formación (Plan Vigente)
+                Distribución por Áreas de Formación (Plan Vigente · 158 Créditos)
             </h3>
             <table class="tbl">
                 <thead>
@@ -1829,24 +1825,126 @@ window.SECTIONS['c3'] = `
                     <tr style="background:var(--carbon); color:#fff;"><td style="color:#fff; font-weight:800;">TOTAL</td><td style="color:#fff;">62 asignaturas</td><td style="color:#fff;">158</td><td style="color:#fff;">100%</td></tr>
                 </tbody>
             </table>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:24px 0 12px;">
+                <i class="fas fa-clock" style="color:var(--orange); margin-right:6px;"></i> Carga Horaria del Plan Vigente (144 horas por Crédito)
+            </h4>
+            <div class="grid-2">
+                <div class="card">
+                    <h4><i class="fas fa-users" style="color:var(--orange);"></i> Horas Acompañadas Directas</h4>
+                    <p>En el plan inicial, cada crédito equivalía a <strong>36 horas de acompañamiento docente directo / mediado</strong> (sincrónico/asincrónico).</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-user-clock" style="color:var(--orange);"></i> Horas de Trabajo Independiente</h4>
+                    <p>Cada crédito requería <strong>108 horas de trabajo independiente</strong> del estudiante para lecturas, talleres y actividades virtuales.</p>
+                </div>
+            </div>
         </div>
 
-        <!-- SUB TAB: PERFILES VIGENTE -->
+        <!-- SUB TAB 1.3: PERFILES Y RAPS VIGENTE -->
         <div class="tab-panel" id="c3-v-perfiles" style="display:none;">
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">Perfil de Egreso Vigente</h4>
-            <p style="font-size:0.85rem; color:var(--gray-text); line-height:1.6;">El egresado del plan vigente se caracteriza por competencias generales en administración tradicional, gestión financiera básica y dirección de operaciones en organizaciones locales y regionales.</p>
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Perfiles del Egresado y Competencias (Plan Vigente · 158 Créditos)
+            </h3>
+            
+            <div class="grid-2" style="margin-bottom:20px;">
+                <div class="card" style="border-left:4px solid var(--orange);">
+                    <h4><i class="fas fa-briefcase" style="color:var(--orange);"></i> Perfil Profesional Vigente</h4>
+                    <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
+                        El profesional en Administración de Empresas del plan inicial se concibe con capacidad para gestionar organizaciones públicas y privadas, liderar procesos administrativos, diseñar presupuestos, supervisar operaciones y dirigir equipos de trabajo con visión ética y compromiso social.
+                    </p>
+                </div>
+                <div class="card" style="border-left:4px solid var(--carbon);">
+                    <h4><i class="fas fa-building" style="color:var(--carbon);"></i> Perfil Ocupacional Vigente</h4>
+                    <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
+                        El egresado del plan vigente puede desempeñarse como: Director Administrativo, Gerente Financiero, Coordinador del Talento Humano, Jefe de Ventas y Mercadeo, Analista de Operaciones o Consultor Organizacional en Pymes y microempresas regionales.
+                    </p>
+                </div>
+            </div>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
+                <i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> Competencias Genéricas (Proyecto Tuning América Latina)
+            </h4>
+            <div class="grid-3" style="margin-bottom:20px;">
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-users"></i> 1. Componente Social</h4>
+                    <p style="font-size:0.82rem;">Capacidad de toma de decisiones, trabajo en equipo, liderazgo motivacional, ética, responsabilidad social y valor de la diversidad multicultural.</p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-comments"></i> 2. Componente Comunicativo</h4>
+                    <p style="font-size:0.82rem;">Comunicación oral y escrita, competencias en segundo idioma (Inglés B1), manejo de tecnologías TIC e innovación en nuevas situaciones.</p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-search"></i> 3. Componente Investigativo</h4>
+                    <p style="font-size:0.82rem;">Abstracción, análisis y síntesis, aplicación práctica de conceptos, actualización continua y procesamiento crítico de información.</p>
+                </div>
+            </div>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
+                <i class="fas fa-bullseye" style="color:var(--orange); margin-right:6px;"></i> Resultados de Aprendizaje del Programa (RAP Vigentes)
+            </h4>
+            <div style="background:var(--gray-bg); padding:16px; border-radius:var(--radius-md);">
+                <ul style="list-style:none; padding:0; margin:0; font-size:0.83rem;">
+                    <li style="padding:8px 0; border-bottom:1px solid var(--gray-100);"><strong>RAP-V1:</strong> Aplica modelos de gestión administrativa y financiera en la toma de decisiones organizacionales.</li>
+                    <li style="padding:8px 0; border-bottom:1px solid var(--gray-100);"><strong>RAP-V2:</strong> Diseña planes de trabajo operativo y estrategias comerciales orientadas al cumplimiento de metas.</li>
+                    <li style="padding:8px 0; border-bottom:1px solid var(--gray-100);"><strong>RAP-V3:</strong> Coordina procesos de talento humano y resolución de conflictos en entornos laborales.</li>
+                    <li style="padding:8px 0;"><strong>RAP-V4:</strong> Desarrolla proyectos de emprendimiento e investigación formativa aplicados al entorno regional.</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- SUB TAB: FLEXIBILIDAD VIGENTE -->
+        <!-- SUB TAB 1.4: FLEXIBILIDAD VIGENTE -->
         <div class="tab-panel" id="c3-v-flex" style="display:none;">
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">Flexibilidad en el Plan Vigente</h4>
-            <p style="font-size:0.85rem; color:var(--gray-text);">Bolsa de 10 créditos electivos distribuidos en semestres avanzados (electivas profesionales y complementarias).</p>
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Estrategias de Flexibilidad en el Plan Vigente
+            </h3>
+
+            <div class="grid-2" style="margin-bottom:20px;">
+                <div class="card">
+                    <h4><i class="fas fa-th-list" style="color:var(--orange);"></i> Bolsa de 10 Créditos Electivos</h4>
+                    <p style="font-size:0.85rem; color:var(--gray-text);">El plan vigente contemplaba 5 asignaturas electivas (2 créditos c/u) distribuidas en los semestres 5, 6, 7, 8 y 9 para profundización o actualización disciplinar.</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-graduation-cap" style="color:var(--orange);"></i> Rutas de Graduación Tradicionales</h4>
+                    <p style="font-size:0.85rem; color:var(--gray-text);">Opciones de grado compuestas por Proyecto de Grado I y II, Práctica Profesional o Seminario de Profundización disciplinar.</p>
+                </div>
+            </div>
+
+            <div class="card-accent">
+                <h4><i class="fas fa-balance-scale"></i> Limitaciones Identificadas en la Flexibilidad Vigente</h4>
+                <p style="font-size:0.84rem; color:rgba(255,255,255,0.8); margin-top:6px;">
+                    La estructura inicial de 9 semestres y 62 asignaturas generaba dispersión de créditos (asignaturas de 2 créditos), rigidez en prerrequisitos y una menor diferenciación entre las modalidades presencial y virtual en la guía de horas.
+                </p>
+            </div>
         </div>
 
-        <!-- SUB TAB: EVALUACIÓN VIGENTE -->
+        <!-- SUB TAB 1.5: EVALUACIÓN RA VIGENTE -->
         <div class="tab-panel" id="c3-v-eval" style="display:none;">
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">Sistema de Evaluación Vigente</h4>
-            <p style="font-size:0.85rem; color:var(--gray-text);">Evaluación sumativa y formativa mediante 3 cortes académicos (30%, 30%, 40%) institucionales.</p>
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Sistema de Evaluación en el Plan Vigente
+            </h3>
+
+            <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:16px;">
+                El esquema de evaluación inicial se basaba en el Reglamento Estudiantil institucional mediante 3 cortes académicos sumativos acumulativos:
+            </p>
+
+            <table class="tbl" style="margin-bottom:20px;">
+                <thead>
+                    <tr><th>Corte Académico</th><th>Ponderación</th><th>Componentes Evaluativos</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="lb">Primer Corte (Semana 1 a 5)</td><td><strong>30%</strong></td><td>Examen parcial teóricopráctico, talleres, actividades en plataforma.</td></tr>
+                    <tr class="row-accent"><td class="lb">Segundo Corte (Semana 6 a 10)</td><td><strong>30%</strong></td><td>Segundo parcial, estudios de caso, avance de investigación.</td></tr>
+                    <tr><td class="lb">Tercer Corte (Semana 11 a 16)</td><td><strong>40%</strong></td><td>Evaluación final integradora, sustentación de proyectos o entregable.</td></tr>
+                </tbody>
+            </table>
+
+            <div class="card" style="border-left:4px solid var(--orange);">
+                <h4><i class="fas fa-clipboard-check" style="color:var(--orange);"></i> Monitoreo de Logro Académico</h4>
+                <p style="font-size:0.84rem; color:var(--gray-text);">
+                    La medición del aprendizaje se realizaba mediante calificaciones cuantitativas de 0.0 a 5.0 con nota mínima de aprobación de 3.0, registrando notas en el sistema de información académico institucional.
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -1867,14 +1965,14 @@ window.SECTIONS['c3'] = `
                 <i class="fas fa-bullseye"></i> Perfiles y RAPs (7 Competencias)
             </button>
             <button class="tab-btn" data-tab="c3-p-flex" onclick="switchTab('c3PropuestoSubTabs','c3-p-flex')">
-                <i class="fas fa-arrows-alt"></i> Flexibilidad
+                <i class="fas fa-arrows-alt"></i> Flexibilidad (Extensa)
             </button>
             <button class="tab-btn" data-tab="c3-p-eval" onclick="switchTab('c3PropuestoSubTabs','c3-p-eval')">
-                <i class="fas fa-clipboard-check"></i> Evaluación RA
+                <i class="fas fa-clipboard-check"></i> Evaluación RA (Decreto 1330)
             </button>
         </div>
 
-        <!-- SUB TAB: MALLA PROPUESTA (INTERACTIVA) -->
+        <!-- SUB TAB 2.1: MALLA PROPUESTA (INTERACTIVA) -->
         <div class="tab-panel active" id="c3-p-malla" style="display:block;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:10px;">
                 <div>
@@ -1978,10 +2076,10 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
 
-        <!-- SUB TAB: ÁREAS Y MODALIDADES -->
+        <!-- SUB TAB 2.2: ÁREAS Y MODALIDADES -->
         <div class="tab-panel" id="c3-p-areas" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Distribución por Áreas de Formación (Plan Propuesto)
+                Distribución por Áreas de Formación (Plan Propuesto · 144 Créditos)
             </h3>
             <table class="tbl">
                 <thead>
@@ -2026,7 +2124,7 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
 
-        <!-- SUB TAB: PERFILES Y RAPS (7 COMPETENCIAS) -->
+        <!-- SUB TAB 2.3: PERFILES Y RAPS PROPUESTO (7 COMPETENCIAS) -->
         <div class="tab-panel" id="c3-p-perfiles" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Perfil de Egreso (7 Competencias Clave) & 9 RAPs del Programa
@@ -2099,29 +2197,135 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
 
-        <!-- SUB TAB: FLEXIBILIDAD PROPUESTA -->
+        <!-- SUB TAB 2.4: FLEXIBILIDAD PROPUESTA (EXTENSA) -->
         <div class="tab-panel" id="c3-p-flex" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Estrategias de Flexibilidad Curricular en el Plan Propuesto
+                Estrategias de Flexibilidad Curricular en el Plan Propuesto (4 Dimensiones)
             </h3>
-            <div class="grid-2">
-                <div class="card">
-                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> Electivas de Profundización</h4>
-                    <p>Banco de electivas en semestres 5, 6 y 7 orientadas a Transformación Digital, Finanzas Sostenibles y Marketing Verde.</p>
+
+            <div class="grid-2" style="margin-bottom:20px;">
+                <div class="card" style="border-top:4px solid var(--orange);">
+                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Flexibilidad Curricular y Electividad</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        El programa dispone de un banco de electivas de profundización profesional en semestres 5, 6 y 7 (9 créditos), estructurado en 3 líneas de vanguardia:
+                    </p>
+                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Línea de Transformación Digital:</strong> Inteligencia Artificial Aplicada, Big Data Gerencial, Marketing Digital y E-Commerce.</li>
+                        <li>• <strong>Línea de Sostenibilidad:</strong> Finanzas Sostenibles, Desarrollo Sostenible y Economía Circular.</li>
+                        <li>• <strong>Línea de Gobernanza:</strong> Ética y Gobernanza Corporativa, Gestión de la Inclusión y Diversidad.</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <h4><i class="fas fa-random" style="color:var(--orange);"></i> Transitabilidad de Modalidad</h4>
-                    <p>En el marco del Registro Único, los estudiantes pueden cursar créditos entre las modalidades presencial y virtual mediante la plataforma LMS institucional.</p>
+
+                <div class="card" style="border-top:4px solid var(--carbon);">
+                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--carbon);"></i> 2. Flexibilidad Pedagógica</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        Estrategias pedagógicas activas centradas en el estudiante:
+                    </p>
+                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Aulas Virtuales Interactivas:</strong> Campus LMS Moodle intuitivo con recursos educativos digitales, laboratorios y simuladores.</li>
+                        <li>• <strong>Encuentros Sincrónicos y Asincrónicos:</strong> Flexibilidad de acceso a grabaciones y materiales formativos las 24/7.</li>
+                        <li>• <strong>Metodologías de Caso y Proyectos:</strong> Aprendizaje basado en retos reales del entorno productivo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card" style="border-top:4px solid #0284C7;">
+                    <h4><i class="fas fa-random" style="color:#0284C7;"></i> 3. Flexibilidad Administrativa y Registro Único</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        Mecanismos institucionales de movilidad interna y transitabilidad:
+                    </p>
+                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Transitabilidad de Modalidad:</strong> Estudiantes pueden cursar créditos entre modalidad Presencial y Virtual.</li>
+                        <li>• <strong>Movilidad Inter-semestral:</strong> Sistema flexible de requisitos para aceleración o ritmo adaptado.</li>
+                        <li>• <strong>Régimen de Homologaciones Directas:</strong> Reconocimiento de saberes previos y transferencia de créditos entre programas de la CETO.</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-top:4px solid #059669;">
+                    <h4><i class="fas fa-globe-americas" style="color:#059669;"></i> 4. Flexibilidad e Internacionalización</h4>
+                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
+                        Apertura global del currículo:
+                    </p>
+                    <ul style="font-size:0.8rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
+                        <li>• <strong>Clases Espejo Internacionales:</strong> Desarrollo de módulos conjuntos con universidades aliadas de América Latina.</li>
+                        <li>• <strong>Plan de Bilingüismo Integrado:</strong> Asignaturas de Inglés I, II y III articuladas al marco MCER (Nivel B1).</li>
+                        <li>• <strong>Profesores Invitados Internacionales:</strong> Seminarios y ponencias magistrales en modalidad virtual.</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- SUB TAB: EVALUACIÓN PROPUESTA -->
+        <!-- SUB TAB 2.5: EVALUACIÓN RA PROPUESTA (DECRETO 1330) -->
         <div class="tab-panel" id="c3-p-eval" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Sistema de Evaluación por Resultados de Aprendizaje (Decreto 1330)
+                Sistema de Evaluación de Resultados de Aprendizaje (Decreto 1330 de 2019)
             </h3>
-            <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:16px;">Mecanismos de evaluación formativa basados en la Taxonomía de Bloom y rúbricas socioformativas de desempeño.</p>
+
+            <div class="card-accent" style="margin-bottom:20px;">
+                <h4><i class="fas fa-balance-scale"></i> Marco Normativo y Filosofía de Evaluación</h4>
+                <p style="font-size:0.85rem; color:rgba(255,255,255,0.85); margin-top:6px; line-height:1.6;">
+                    Conforme al Decreto 1330 de 2019, la CETO concibe los Resultados de Aprendizaje (RA) como las declaraciones expresas de lo que se espera que el estudiante conozca, comprenda y sea capaz de demostrar. La evaluación se asume como una herramienta formativa para el aprendizaje y la mejora continua del quehacer pedagógico.
+                </p>
+            </div>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
+                <i class="fas fa-sitemap" style="color:var(--orange); margin-right:6px;"></i> Fundamento en Taxonomía de Bloom (Revisada) y los 3 Planos del Aprendizaje
+            </h4>
+            <div class="grid-3" style="margin-bottom:24px;">
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-brain"></i> 1. Plano Cognitivo</h4>
+                    <p style="font-size:0.82rem;">Estructurado en 6 niveles: Conocimiento, Comprensión, Aplicación, Análisis, Síntesis y Evaluación de problemáticas empresariales.</p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-heart"></i> 2. Plano Subjetivo (Afectivo)</h4>
+                    <p style="font-size:0.82rem;">Desarrollo de competencias socioemocionales: Disposición, Reacción, Valoración ética, Organización y Caracterización profesional.</p>
+                </div>
+                <div class="card">
+                    <h4 style="color:var(--orange-dark);"><i class="fas fa-hands"></i> 3. Plano Psicomotor</h4>
+                    <p style="font-size:0.82rem;">Desarrollo de habilidades prácticas: Imitación, Manipulación de herramientas digitales, Precisión, Articulación y Naturalización del desempeño.</p>
+                </div>
+            </div>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
+                <i class="fas fa-star" style="color:var(--orange); margin-right:6px;"></i> Escala Socioformativa de Valoración del Logro del RA
+            </h4>
+            <table class="tbl" style="margin-bottom:24px;">
+                <thead>
+                    <tr><th>Rango de Nota</th><th>Nivel de Logro Socioformativo</th><th>Criterio y Evidencia del Resultado de Aprendizaje</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="lb">0.0 – 1.0</td><td><span style="color:#DC2626; font-weight:700;">Nivel Receptivo Inicial</span></td><td>El estudiante no alcanza los resultados de aprendizaje previstos. No aporta evidencias mínimas.</td></tr>
+                    <tr><td class="lb">1.1 – 2.0</td><td><span style="color:#EA580C; font-weight:700;">Nivel Receptivo</span></td><td>Alcanza de manera muy limitada los RA. Requiere refuerzo pedagógico significativo.</td></tr>
+                    <tr><td class="lb">2.1 – 2.9</td><td><span style="color:#D97706; font-weight:700;">Nivel Resolutivo Básico</span></td><td>Alcanza algunos RA con inconsistencias en el desempeño o la aplicación técnica.</td></tr>
+                    <tr class="row-accent"><td class="lb">3.0 – 4.0</td><td><span style="color:#0284C7; font-weight:700;">Nivel Autónomo</span></td><td>Alcanza satisfactoriamente los resultados de aprendizaje demostrando idoneidad y aplicación práctica.</td></tr>
+                    <tr class="row-accent"><td class="lb">4.1 – 4.5</td><td><span style="color:#059669; font-weight:700;">Nivel Estratégico</span></td><td>Alcanza óptimamente los RA con capacidad de análisis crítico y solución de problemas organizacionales.</td></tr>
+                    <tr class="row-accent"><td class="lb">4.6 – 5.0</td><td><span style="color:#7C3AED; font-weight:700;">Nivel Sobresaliente</span></td><td>Alcanza plenamente los RA demostrando innovación, liderazgo y excelencia técnica en el desempeño.</td></tr>
+                </tbody>
+            </table>
+
+            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
+                <i class="fas fa-users-cog" style="color:var(--orange); margin-right:6px;"></i> Triada de Evaluativa y Mecanismos de Seguimiento
+            </h4>
+            <div class="grid-3">
+                <div class="card">
+                    <h4><i class="fas fa-user-edit" style="color:var(--orange);"></i> Autoevaluación</h4>
+                    <p style="font-size:0.83rem;">Proceso metacognitivo donde el estudiante reflexiona sobre el logro de sus propios aprendizajes y fortalezas a mejorar.</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-users" style="color:var(--orange);"></i> Coevaluación</h4>
+                    <p style="font-size:0.83rem;">Valoración entre pares mediante rúbricas objetivas durante trabajos en equipo, simulaciones y proyectos colaborativos.</p>
+                </div>
+                <div class="card">
+                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--orange);"></i> Heteroevaluación</h4>
+                    <p style="font-size:0.83rem;">Valoración docente directa respaldada por rúbricas socioformativas de desempeño medibles cualitativa y cuantitativamente.</p>
+                </div>
+            </div>
+
+            <div class="evidence-box" style="margin-top:20px;">
+                <i class="fas fa-check-circle"></i>
+                <strong>Seguimiento Institucional:</strong> Los Comités Curriculares de Escuela y Reuniones de Área monitorean periódicamente los porcentajes de alcance de los RA por cohorte y asignatura para realizar intervenciones pedagógicas oportunas.
+            </div>
         </div>
     </div>
 </div>
@@ -2137,7 +2341,6 @@ window.SECTIONS['c3'] = `
         Sustentación entregada a los Pares Académicos del Ministerio de Educación Nacional para la Renovación de Registro Calificado.
     </p>
 
-    <!-- Table comparison -->
     <table class="tbl" style="margin-bottom:28px;">
         <thead>
             <tr>
@@ -2193,7 +2396,6 @@ window.SECTIONS['c3'] = `
         </tbody>
     </table>
 
-    <!-- Strategic Pillars -->
     <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:24px 0 12px;">
         <i class="fas fa-lightbulb" style="color:var(--orange); margin-right:6px;"></i> Ejes de la Modernización Curricular
     </h4>
@@ -2212,7 +2414,6 @@ window.SECTIONS['c3'] = `
         </div>
     </div>
 
-    <!-- Transition Plan -->
     <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:24px 0 12px;">
         <i class="fas fa-exchange-alt" style="color:var(--orange); margin-right:6px;"></i> Plan de Transición y Matriz de Homologación para Estudiantes Activos
     </h4>
