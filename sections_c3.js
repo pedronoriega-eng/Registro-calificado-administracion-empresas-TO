@@ -3822,6 +3822,121 @@ setTimeout(function() {
     window.fitAllMatricesToScreen();
 }, 500);
 
+window.closeSubjectModal = function() {
+    const overlay = document.getElementById('c3-subject-modal-overlay');
+    if (overlay) {
+        overlay.style.display = 'none';
+    }
+};
+
+if (typeof document !== 'undefined') {
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            window.closeSubjectModal();
+        }
+    });
+}
+
+window.openSubjectModal = function(id, type) {
+    let s = type === 'vig' ? window.C3_VIGENTE_SUBJECTS.find(i => i.id === id) : window.C3_SUBJECTS.find(i => i.id === id);
+    if (!s) return;
+
+    let overlay = document.getElementById('c3-subject-modal-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'c3-subject-modal-overlay';
+        overlay.className = 'c3-modal-overlay';
+        overlay.style.cssText = 'position:fixed; inset:0; z-index:99999; background:rgba(15,23,42,0.8); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:center; padding:16px; overflow-y:auto;';
+        overlay.onclick = function(e) {
+            if (e.target === overlay) window.closeSubjectModal();
+        };
+        document.body.appendChild(overlay);
+    }
+
+    const planTag = type === 'vig' 
+        ? '<span style="background:#475569; color:#fff; padding:4px 10px; border-radius:6px; font-weight:700; font-size:0.78rem; display:inline-flex; align-items:center; gap:5px;"><i class="fas fa-history"></i> Plan Vigente (158 cr, 9 semestres)</span>'
+        : '<span style="background:#059669; color:#fff; padding:4px 10px; border-radius:6px; font-weight:700; font-size:0.78rem; display:inline-flex; align-items:center; gap:5px;"><i class="fas fa-rocket"></i> Plan Propuesto (144 cr, 8 semestres)</span>';
+
+    const rasHtml = s.ras.map(r => `<li style="margin-bottom:8px; padding:10px 14px; background:#FEF3C7; border-left:4px solid #D97706; border-radius:6px; font-size:0.88rem; color:#92400E; font-weight:600;"><i class="fas fa-check-circle" style="color:#D97706; margin-right:8px;"></i>${r}</li>`).join('');
+
+    const temasHtml = s.temas.map(t => `<li style="margin-bottom:6px; padding:8px 12px; background:#F1F5F9; border-left:3px solid var(--orange); border-radius:6px; font-size:0.86rem; color:#334155; font-weight:500;"><i class="fas fa-book-open" style="color:var(--orange); margin-right:8px;"></i>${t}</li>`).join('');
+
+    overlay.innerHTML = `
+        <div class="c3-modal-card" style="background:#ffffff; width:100%; max-width:850px; max-height:90vh; border-radius:16px; box-shadow:0 25px 50px -12px rgba(0,0,0,0.4); overflow-y:auto; display:flex; flex-direction:column; border:1px solid rgba(0,0,0,0.1);">
+            <!-- Modal Header -->
+            <div style="background:var(--carbon); color:#ffffff; padding:20px 24px; border-bottom:4px solid var(--orange); position:sticky; top:0; z-index:10; display:flex; justify-content:space-between; align-items:flex-start; gap:16px;">
+                <div>
+                    <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                        ${planTag}
+                        <span style="background:rgba(255,255,255,0.15); color:#fff; padding:3px 9px; border-radius:6px; font-size:0.78rem; font-weight:700;"><i class="fas fa-graduation-cap"></i> Semestre ${s.semestre}</span>
+                        <span style="background:rgba(243,146,0,0.3); color:#FDBA74; padding:3px 9px; border-radius:6px; font-size:0.78rem; font-weight:700;"><i class="fas fa-layer-group"></i> ${s.area}</span>
+                        <span style="background:rgba(255,255,255,0.2); color:#fff; padding:3px 9px; border-radius:6px; font-size:0.78rem; font-weight:700;">${s.creditos} Créditos (${s.tipo})</span>
+                    </div>
+                    <h2 style="font-family:var(--font-heading); font-size:1.5rem; font-weight:800; color:#ffffff; margin:4px 0 6px 0; line-height:1.2;">${s.nombre}</h2>
+                    <div style="font-size:0.84rem; color:#CBD5E1;"><i class="fas fa-link" style="color:var(--orange);"></i> <strong>Prerrequisito Explícito:</strong> ${s.prerrequisito}</div>
+                </div>
+                <button onclick="closeSubjectModal()" style="background:rgba(255,255,255,0.15); border:none; color:#ffffff; width:36px; height:36px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; transition:all 0.2s;" onmouseover="this.style.background='#EF4444'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div style="padding:24px; color:#1E293B; font-size:0.9rem; line-height:1.6;">
+                <!-- Grid 2 Columnas para Perfil y RAP -->
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px;">
+                    <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:16px; border-radius:10px;">
+                        <h4 style="font-size:0.92rem; font-weight:800; color:#0369A1; margin:0 0 8px 0; display:flex; align-items:center; gap:8px;">
+                            <i class="fas fa-user-graduate" style="font-size:1.1rem;"></i> Perfil de Egreso (Competencia)
+                        </h4>
+                        <p style="font-size:0.86rem; color:#0C4A6E; margin:0; line-height:1.5;">${s.perfil_asociado}</p>
+                    </div>
+                    <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:16px; border-radius:10px;">
+                        <h4 style="font-size:0.92rem; font-weight:800; color:#15803D; margin:0 0 8px 0; display:flex; align-items:center; gap:8px;">
+                            <i class="fas fa-bullseye" style="font-size:1.1rem;"></i> Resultado de Aprendizaje del Programa (RAP)
+                        </h4>
+                        <p style="font-size:0.86rem; color:#14532D; margin:0; line-height:1.5;">${s.rap_asociado}</p>
+                    </div>
+                </div>
+
+                <!-- Resultados de Aprendizaje de la Asignatura -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="font-size:0.95rem; font-weight:800; color:var(--carbon); margin:0 0 10px 0; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-list-ol" style="color:var(--orange);"></i> Resultados de Aprendizaje de la Asignatura (RA):
+                    </h4>
+                    <ul style="list-style:none; padding:0; margin:0;">${rasHtml}</ul>
+                </div>
+
+                <!-- Contenidos Temáticos Desagregados -->
+                <div style="margin-bottom:20px;">
+                    <h4 style="font-size:0.95rem; font-weight:800; color:var(--carbon); margin:0 0 10px 0; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-book-open" style="color:var(--orange);"></i> Contenidos Temáticos y Unidades Desagregadas:
+                    </h4>
+                    <ul style="list-style:none; padding:0; margin:0;">${temasHtml}</ul>
+                </div>
+
+                <!-- Horas por Modalidad -->
+                <div style="background:#FAF5FF; border:1px solid #E9D5FF; padding:14px 18px; border-radius:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <div style="font-size:0.84rem; color:#6B21A8;">
+                        <strong><i class="fas fa-clock"></i> Modalidad Presencial (Ratio 1:2):</strong> ${s.presencial.directa}h Acompañamiento Directo + ${s.presencial.independiente}h Trabajo Independiente = <strong>${s.presencial.total}h Totales</strong>
+                    </div>
+                    <div style="font-size:0.84rem; color:#047857;">
+                        <strong><i class="fas fa-laptop-code"></i> Modalidad Virtual (Ratio 1:3):</strong> ${s.virtual.mediado}h Acompañamiento Mediado + ${s.virtual.independiente}h Trabajo Autónomo = <strong>${s.virtual.total}h Totales</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div style="background:#F8FAFC; padding:12px 24px; border-top:1px solid #E2E8F0; text-align:right; border-bottom-left-radius:16px; border-bottom-right-radius:16px;">
+                <button onclick="closeSubjectModal()" class="viewer-nav-btn next" style="padding:8px 20px; font-size:0.85rem; font-weight:700;">
+                    <i class="fas fa-check"></i> Entendido / Cerrar
+                </button>
+            </div>
+        </div>
+    `;
+
+    overlay.style.display = 'flex';
+};
+
 window.selectMatrixSubject = function(id, type) {
     let s = type === 'vig' ? window.C3_VIGENTE_SUBJECTS.find(i => i.id === id) : window.C3_SUBJECTS.find(i => i.id === id);
     if (!s) return;
@@ -3833,59 +3948,61 @@ window.selectMatrixSubject = function(id, type) {
 
     const panelId = type === 'vig' ? 'c3-vigente-matrix-detail-panel' : 'c3-propuesto-matrix-detail-panel';
     const panel = document.getElementById(panelId);
-    if (!panel) return;
+    if (panel) {
+        const rasHtml = s.ras.map(r => `<li style="margin-bottom:6px; padding-left:10px; border-left:3px solid var(--orange); font-size:0.84rem;">${r}</li>`).join('');
+        const temasHtml = s.temas.map(t => `<li style="margin-bottom:4px; font-size:0.84rem; color:var(--carbon);"><i class="fas fa-check-circle" style="color:var(--orange); margin-right:6px;"></i>${t}</li>`).join('');
 
-    const rasHtml = s.ras.map(r => `<li style="margin-bottom:6px; padding-left:10px; border-left:3px solid var(--orange); font-size:0.84rem;">${r}</li>`).join('');
-    const temasHtml = s.temas.map(t => `<li style="margin-bottom:4px; font-size:0.84rem; color:var(--carbon);"><i class="fas fa-check-circle" style="color:var(--orange); margin-right:6px;"></i>${t}</li>`).join('');
+        const planTag = type === 'vig' ? '<span class="badge-presencial" style="background:#475569; color:#fff;"><i class="fas fa-history"></i> Plan Vigente (158 cr)</span>' : '<span class="badge-presencial" style="background:#059669; color:#fff;"><i class="fas fa-rocket"></i> Plan Propuesto (144 cr)</span>';
 
-    const planTag = type === 'vig' ? '<span class="badge-presencial" style="background:#475569; color:#fff;"><i class="fas fa-history"></i> Plan Vigente (158 cr)</span>' : '<span class="badge-presencial" style="background:#059669; color:#fff;"><i class="fas fa-rocket"></i> Plan Propuesto (144 cr)</span>';
+        panel.innerHTML = `
+            <div style="border-bottom:2px solid var(--orange); padding-bottom:12px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">
+                <div>
+                    ${planTag}
+                    <span class="badge-presencial" style="margin-left:6px;"><i class="fas fa-graduation-cap"></i> Semestre ${s.semestre}</span>
+                    <span class="badge-virtual" style="margin-left:6px;"><i class="fas fa-layer-group"></i> ${s.area}</span>
+                    <span style="background:var(--carbon); color:#fff; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:700; margin-left:6px;">${s.creditos} Créditos (Tipo ${s.tipo})</span>
+                    <h3 style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:var(--carbon); margin-top:8px;">${s.nombre}</h3>
+                    <div style="font-size:0.8rem; color:var(--gray-text); margin-top:2px;"><i class="fas fa-link" style="color:var(--orange);"></i> <strong>Prerrequisito:</strong> ${s.prerrequisito}</div>
+                </div>
+                <button onclick="openSubjectModal('${s.id}', '${type}')" class="viewer-nav-btn next" style="padding:8px 14px; font-size:0.8rem;">
+                    <i class="fas fa-expand"></i> Ver Modal Completo
+                </button>
+            </div>
 
-    panel.innerHTML = `
-        <div style="border-bottom:2px solid var(--orange); padding-bottom:12px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">
-            <div>
-                ${planTag}
-                <span class="badge-presencial" style="margin-left:6px;"><i class="fas fa-graduation-cap"></i> Semestre ${s.semestre}</span>
-                <span class="badge-virtual" style="margin-left:6px;"><i class="fas fa-layer-group"></i> ${s.area}</span>
-                <span style="background:var(--carbon); color:#fff; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:700; margin-left:6px;">${s.creditos} Créditos (Tipo ${s.tipo})</span>
-                <h3 style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:var(--carbon); margin-top:8px;">${s.nombre}</h3>
-                <div style="font-size:0.8rem; color:var(--gray-text); margin-top:2px;"><i class="fas fa-link" style="color:var(--orange);"></i> <strong>Prerrequisito:</strong> ${s.prerrequisito}</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+                <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:12px; border-radius:8px;">
+                    <h4 style="font-size:0.85rem; font-weight:800; color:#0369A1; margin-bottom:6px;"><i class="fas fa-user-graduate"></i> Perfil del Egresado Asociado</h4>
+                    <p style="font-size:0.82rem; color:#0C4A6E; margin:0;">${s.perfil_asociado}</p>
+                </div>
+                <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:12px; border-radius:8px;">
+                    <h4 style="font-size:0.85rem; font-weight:800; color:#15803D; margin-bottom:6px;"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</h4>
+                    <p style="font-size:0.82rem; color:#14532D; margin:0;">${s.rap_asociado}</p>
+                </div>
             </div>
-            <button onclick="openSubjectModal('${s.id}', '${type}')" class="viewer-nav-btn next" style="padding:8px 14px; font-size:0.8rem;">
-                <i class="fas fa-expand"></i> Ver Modal Completo
-            </button>
-        </div>
 
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
-            <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:12px; border-radius:8px;">
-                <h4 style="font-size:0.85rem; font-weight:800; color:#0369A1; margin-bottom:6px;"><i class="fas fa-user-graduate"></i> Perfil del Egresado Asociado</h4>
-                <p style="font-size:0.82rem; color:#0C4A6E; margin:0;">${s.perfil_asociado}</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+                <div>
+                    <h4 style="font-size:0.88rem; font-weight:800; color:var(--carbon); margin-bottom:8px;"><i class="fas fa-list-ol" style="color:var(--orange);"></i> Resultados de Aprendizaje (RAs) de la Asignatura:</h4>
+                    <ul style="list-style:none; padding:0; margin:0;">${rasHtml}</ul>
+                </div>
+                <div>
+                    <h4 style="font-size:0.88rem; font-weight:800; color:var(--carbon); margin-bottom:8px;"><i class="fas fa-book-open" style="color:var(--orange);"></i> Contenidos Temáticos Desagregados:</h4>
+                    <ul style="list-style:none; padding:0; margin:0;">${temasHtml}</ul>
+                </div>
             </div>
-            <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:12px; border-radius:8px;">
-                <h4 style="font-size:0.85rem; font-weight:800; color:#15803D; margin-bottom:6px;"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</h4>
-                <p style="font-size:0.82rem; color:#14532D; margin:0;">${s.rap_asociado}</p>
-            </div>
-        </div>
 
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
-            <div>
-                <h4 style="font-size:0.88rem; font-weight:800; color:var(--carbon); margin-bottom:8px;"><i class="fas fa-list-ol" style="color:var(--orange);"></i> Resultados de Aprendizaje (RAs) de la Asignatura:</h4>
-                <ul style="list-style:none; padding:0; margin:0;">${rasHtml}</ul>
+            <div style="background:#FAF5FF; border:1px solid #E9D5FF; padding:10px 14px; border-radius:8px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <div style="font-size:0.8rem; color:#6B21A8;">
+                    <strong><i class="fas fa-clock"></i> Modalidad Presencial (1:2):</strong> ${s.presencial.directa}h Acompañamiento Directo + ${s.presencial.independiente}h Trabajo Independiente = <strong>${s.presencial.total}h Totales</strong>
+                </div>
+                <div style="font-size:0.8rem; color:#047857;">
+                    <strong><i class="fas fa-laptop-code"></i> Modalidad Virtual (1:3):</strong> ${s.virtual.mediado}h Acompañamiento Mediado + ${s.virtual.independiente}h Trabajo Autónomo = <strong>${s.virtual.total}h Totales</strong>
+                </div>
             </div>
-            <div>
-                <h4 style="font-size:0.88rem; font-weight:800; color:var(--carbon); margin-bottom:8px;"><i class="fas fa-book-open" style="color:var(--orange);"></i> Contenidos Temáticos Desagregados:</h4>
-                <ul style="list-style:none; padding:0; margin:0;">${temasHtml}</ul>
-            </div>
-        </div>
+        `;
+    }
 
-        <div style="background:#FAF5FF; border:1px solid #E9D5FF; padding:10px 14px; border-radius:8px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-            <div style="font-size:0.8rem; color:#6B21A8;">
-                <strong><i class="fas fa-clock"></i> Modalidad Presencial (1:2):</strong> ${s.presencial.directa}h Acompañamiento Directo + ${s.presencial.independiente}h Trabajo Independiente = <strong>${s.presencial.total}h Totales</strong>
-            </div>
-            <div style="font-size:0.8rem; color:#047857;">
-                <strong><i class="fas fa-laptop-code"></i> Modalidad Virtual (1:3):</strong> ${s.virtual.mediado}h Acompañamiento Mediado + ${s.virtual.independiente}h Trabajo Autónomo = <strong>${s.virtual.total}h Totales</strong>
-            </div>
-        </div>
-    `;
+    window.openSubjectModal(id, type);
 };
 
 window.SECTIONS.c3 = `
