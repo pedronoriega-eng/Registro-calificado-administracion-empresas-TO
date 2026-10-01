@@ -147,10 +147,24 @@ document.addEventListener('keydown', e => {
 window.switchTab = function(tabGroupId, tabId) {
     const group = document.getElementById(tabGroupId);
     if (!group) return;
-    group.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    group.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    
+    // Deactivate all tab buttons in this group
+    group.querySelectorAll('.tab-btn, .c3-main-tab-btn').forEach(b => b.classList.remove('active'));
     const btn = group.querySelector(`[data-tab="${tabId}"]`);
-    const panel = document.getElementById(tabId);
     if (btn) btn.classList.add('active');
-    if (panel) panel.classList.add('active');
+
+    // Activate target panel and deactivate sibling panels at the same nesting level
+    const panel = document.getElementById(tabId);
+    if (panel) {
+        const parent = panel.parentElement;
+        if (parent) {
+            Array.from(parent.children).forEach(child => {
+                if (child.classList.contains('tab-panel')) {
+                    child.classList.remove('active');
+                }
+            });
+        }
+        panel.classList.add('active');
+    }
 };
+
