@@ -20,6 +20,7 @@ window.switchTab = window.switchTab || function(tabGroupId, tabId) {
     }
     targetPanel.classList.add('active');
     targetPanel.style.display = 'block';
+    if (window.fitAllMatricesToScreen) setTimeout(window.fitAllMatricesToScreen, 50);
 };
 
 window.C3_SUBJECTS = [
@@ -3789,6 +3790,38 @@ window.toggleMatrixFit = function(type) {
     }
 };
 
+window.fitAllMatricesToScreen = function() {
+    document.querySelectorAll('.malla-matrix-scale-outer').forEach(outer => {
+        const wrapper = outer.querySelector('.malla-matrix-wrapper');
+        if (!wrapper) return;
+        
+        const outerWidth = outer.clientWidth;
+        const targetWidth = 1480;
+        
+        if (outerWidth > 100 && outerWidth < targetWidth) {
+            const scale = outerWidth / targetWidth;
+            wrapper.style.transform = `scale(${scale})`;
+            wrapper.style.transformOrigin = 'top left';
+            outer.style.height = (wrapper.offsetHeight * scale + 10) + 'px';
+        } else {
+            wrapper.style.transform = 'none';
+            outer.style.height = 'auto';
+        }
+    });
+};
+
+window.addEventListener('resize', function() {
+    window.fitAllMatricesToScreen();
+});
+
+setTimeout(function() {
+    window.fitAllMatricesToScreen();
+}, 100);
+
+setTimeout(function() {
+    window.fitAllMatricesToScreen();
+}, 500);
+
 window.selectMatrixSubject = function(id, type) {
     let s = type === 'vig' ? window.C3_VIGENTE_SUBJECTS.find(i => i.id === id) : window.C3_SUBJECTS.find(i => i.id === id);
     if (!s) return;
@@ -3935,28 +3968,30 @@ window.SECTIONS.c3 = `
         </div>
 
         
-    <!-- INSTRUCTION & CONTROL BANNER -->
-    <div style="background:#FFF7ED; border:1px solid #FFEDD5; color:#C2410C; padding:12px 18px; border-radius:10px; margin-bottom:14px; font-weight:700; font-size:0.86rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; box-shadow:0 2px 8px rgba(243,146,0,0.08);">
-        <div style="display:flex; align-items:center; gap:10px;">
-            <i class="fas fa-arrows-left-right" style="font-size:1.2rem; color:var(--orange);"></i>
-            <span><strong>Malla Curricular Completa (Semestres I a VIII (144 cr)):</strong> Desliza la tabla hacia la derecha para ver todos los semestres. La columna de <strong>Componentes Curriculares permanece fija</strong> a la izquierda.</span>
+    <!-- HEADER BADGE -->
+    <div style="background:#ECFDF5; border:1px solid #A7F3D0; padding:10px 16px; border-radius:8px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div style="font-size:0.86rem; font-weight:800; color:#065F46;">
+            <i class="fas fa-desktop" style="color:#059669; margin-right:6px;"></i> Matriz Global Ajustada 100% a Pantalla Completa — Plan Propuesto (144 cr - 8 Semestres)
         </div>
-        <span class="badge-presencial" style="background:var(--orange); color:#fff; font-size:0.75rem; font-weight:800; padding:4px 12px; border-radius:20px;">
-            <i class="fas fa-th-large"></i> Matriz Global 100% Sin Distorsión
-        </span>
+        <div style="display:flex; gap:8px;">
+            <span class="badge-presencial" style="background:#059669; color:#fff; font-size:0.72rem; font-weight:800; padding:3px 10px; border-radius:20px;">
+                <i class="fas fa-check-circle"></i> Visibilidad 100% Sin Desplazamiento
+            </span>
+        </div>
     </div>
 
-    <div class="malla-matrix-wrapper" id="malla-matrix-wrapper-prop">
-        <table class="malla-matrix-table">
-            <thead>
-                <tr>
-                    <th class="matrix-comp-header-corner">
-                        <i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> COMPONENTE
-                    </th>
-                    <th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 1</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 2</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 3</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 4</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 5</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 6</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 7</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 8</th>
-                </tr>
-            </thead>
-            <tbody><tr>
+    <div class="malla-matrix-scale-outer" id="malla-matrix-outer-prop">
+        <div class="malla-matrix-wrapper" id="malla-matrix-wrapper-prop">
+            <table class="malla-matrix-table">
+                <thead>
+                    <tr>
+                        <th class="matrix-comp-header-corner">
+                            <i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> COMPONENTE
+                        </th>
+                        <th style="text-align:center;">SEM 1</th><th style="text-align:center;">SEM 2</th><th style="text-align:center;">SEM 3</th><th style="text-align:center;">SEM 4</th><th style="text-align:center;">SEM 5</th><th style="text-align:center;">SEM 6</th><th style="text-align:center;">SEM 7</th><th style="text-align:center;">SEM 8</th>
+                    </tr>
+                </thead>
+                <tbody><tr>
             <td class="matrix-comp-header comp-border-ciencias_basicas">
                 <div style="font-weight:800; color:var(--carbon); font-size:0.82rem; line-height:1.3;">
                     <i class="fa-calculator" style="color:#0284C7; margin-right:6px;"></i> Fundamentación Científica y Razonamiento Cuantitativo
@@ -4332,7 +4367,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Electiva Profesional III</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profesional II</div>
-                    </div></td><td class="matrix-cell"><div style="height:100%; min-height:54px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div>
+                    </div></td><td class="matrix-cell"><div style="height:100%; min-height:54px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div></div>
 
         <div class="matrix-detail-panel" id="c3-propuesto-matrix-detail-panel" style="margin-top:24px;">
             <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
@@ -4943,28 +4978,30 @@ window.SECTIONS.c3 = `
         </div>
 
         
-    <!-- INSTRUCTION & CONTROL BANNER -->
-    <div style="background:#FFF7ED; border:1px solid #FFEDD5; color:#C2410C; padding:12px 18px; border-radius:10px; margin-bottom:14px; font-weight:700; font-size:0.86rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; box-shadow:0 2px 8px rgba(243,146,0,0.08);">
-        <div style="display:flex; align-items:center; gap:10px;">
-            <i class="fas fa-arrows-left-right" style="font-size:1.2rem; color:var(--orange);"></i>
-            <span><strong>Malla Curricular Completa (Semestres I a IX (158 cr)):</strong> Desliza la tabla hacia la derecha para ver todos los semestres. La columna de <strong>Componentes Curriculares permanece fija</strong> a la izquierda.</span>
+    <!-- HEADER BADGE -->
+    <div style="background:#ECFDF5; border:1px solid #A7F3D0; padding:10px 16px; border-radius:8px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div style="font-size:0.86rem; font-weight:800; color:#065F46;">
+            <i class="fas fa-desktop" style="color:#059669; margin-right:6px;"></i> Matriz Global Ajustada 100% a Pantalla Completa — Plan Vigente (158 cr - 9 Semestres)
         </div>
-        <span class="badge-presencial" style="background:var(--orange); color:#fff; font-size:0.75rem; font-weight:800; padding:4px 12px; border-radius:20px;">
-            <i class="fas fa-th-large"></i> Matriz Global 100% Sin Distorsión
-        </span>
+        <div style="display:flex; gap:8px;">
+            <span class="badge-presencial" style="background:#059669; color:#fff; font-size:0.72rem; font-weight:800; padding:3px 10px; border-radius:20px;">
+                <i class="fas fa-check-circle"></i> Visibilidad 100% Sin Desplazamiento
+            </span>
+        </div>
     </div>
 
-    <div class="malla-matrix-wrapper" id="malla-matrix-wrapper-vig">
-        <table class="malla-matrix-table">
-            <thead>
-                <tr>
-                    <th class="matrix-comp-header-corner">
-                        <i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> COMPONENTE
-                    </th>
-                    <th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 1</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 2</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 3</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 4</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 5</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 6</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 7</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 8</th><th style="text-align:center; min-width:165px; padding:12px 10px;">SEM 9</th>
-                </tr>
-            </thead>
-            <tbody><tr>
+    <div class="malla-matrix-scale-outer" id="malla-matrix-outer-vig">
+        <div class="malla-matrix-wrapper" id="malla-matrix-wrapper-vig">
+            <table class="malla-matrix-table">
+                <thead>
+                    <tr>
+                        <th class="matrix-comp-header-corner">
+                            <i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> COMPONENTE
+                        </th>
+                        <th style="text-align:center;">SEM 1</th><th style="text-align:center;">SEM 2</th><th style="text-align:center;">SEM 3</th><th style="text-align:center;">SEM 4</th><th style="text-align:center;">SEM 5</th><th style="text-align:center;">SEM 6</th><th style="text-align:center;">SEM 7</th><th style="text-align:center;">SEM 8</th><th style="text-align:center;">SEM 9</th>
+                    </tr>
+                </thead>
+                <tbody><tr>
             <td class="matrix-comp-header comp-border-ciencias_basicas">
                 <div style="font-weight:800; color:var(--carbon); font-size:0.82rem; line-height:1.3;">
                     <i class="fa-calculator" style="color:#0284C7; margin-right:6px;"></i> Fundamentación Científica y Razonamiento Cuantitativo
@@ -5438,7 +5475,7 @@ window.SECTIONS.c3 = `
                         </div>
                         <div class="subject-card-title">Electiva Profundización III</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización II</div>
-                    </div></td><td class="matrix-cell"><div style="height:100%; min-height:54px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:54px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div>
+                    </div></td><td class="matrix-cell"><div style="height:100%; min-height:54px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:54px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div></div>
 
         <div class="matrix-detail-panel" id="c3-vigente-matrix-detail-panel" style="margin-top:24px;">
             <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">

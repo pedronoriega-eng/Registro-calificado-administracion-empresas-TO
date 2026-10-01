@@ -1652,3 +1652,185 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     animation: fadeIn 0.3s ease;
     -webkit-font-smoothing: antialiased;
 }
+
+
+/* =========================================================
+   PERFECT AUTO-FIT MALLA MATRIX - 100% PANTALLA COMPLETA
+   ========================================================= */
+
+/* Widen modal viewer for Malla Curricular */
+.viewer-card {
+    max-width: 98vw !important;
+    width: 98vw !important;
+    margin: 0 auto !important;
+}
+
+.viewer-card-body {
+    padding: 16px 20px !important;
+}
+
+.dashboard {
+    max-width: 98vw !important;
+    padding: 16px !important;
+}
+
+.malla-matrix-scale-outer {
+    width: 100% !important;
+    overflow: hidden !important;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.malla-matrix-wrapper {
+    width: 1480px !important;
+    min-width: 1480px !important;
+    background: #FFFFFF;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #CBD5E1;
+    position: relative;
+    transform-origin: top left;
+    transition: transform 0.2s ease-out;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.malla-matrix-table {
+    width: 1480px !important;
+    min-width: 1480px !important;
+    table-layout: fixed !important;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.83rem;
+}
+
+.malla-matrix-table th {
+    background: #1E293B;
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 10px;
+    border-bottom: 3px solid var(--orange);
+    text-align: center;
+}
+
+.matrix-comp-header-corner {
+    width: 230px !important;
+    min-width: 230px !important;
+    max-width: 230px !important;
+    background: #0F172A !important;
+    text-align: left;
+}
+
+.matrix-comp-header {
+    background: #F8FAFC !important;
+    color: var(--carbon) !important;
+    font-family: var(--font-heading);
+    font-size: 0.82rem !important;
+    font-weight: 800 !important;
+    padding: 12px 14px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-right: 2px solid #CBD5E1 !important;
+    width: 230px !important;
+    min-width: 230px !important;
+    max-width: 230px !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    vertical-align: middle;
+}
+
+.malla-matrix-table td.matrix-cell {
+    padding: 6px;
+    vertical-align: top;
+    background: #FFFFFF;
+    border-bottom: 1px solid #F1F5F9;
+    border-right: 1px solid #F1F5F9;
+    width: 156px !important;
+    min-width: 156px !important;
+    max-width: 156px !important;
+}
+
+.malla-matrix-subject-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid #E2E8F0;
+    border-left: 5px solid #94A3B8;
+    overflow: hidden;
+    white-space: normal;
+    word-break: normal;
+}
+
+.malla-matrix-subject-card:last-child {
+    margin-bottom: 0;
+}
+
+.malla-matrix-subject-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(243, 146, 0, 0.25);
+    border-color: var(--orange) !important;
+    background: #FFFDF9;
+}
+
+.malla-matrix-subject-card.selected-card {
+    border-color: var(--orange) !important;
+    background: #FFF7ED !important;
+    box-shadow: 0 0 0 2px var(--orange), 0 4px 12px rgba(243, 146, 0, 0.15);
+}
+
+.subject-card-title, .matrix-card-title {
+    font-family: var(--font-heading);
+    font-size: 0.81rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.25;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.matrix-card-prereq {
+    font-size: 0.65rem;
+    color: #64748B;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Component Row Accent Border Colors */
+.comp-border-ciencias_basicas { border-left-color: #0284C7 !important; }
+.comp-border-tecnologia { border-left-color: #0D9488 !important; }
+.comp-border-procesos_operaciones { border-left-color: #EA580C !important; }
+.comp-border-gestion_financiera { border-left-color: #7C3AED !important; }
+.comp-border-talento_liderazgo { border-left-color: #DB2777 !important; }
+.comp-border-investigacion_innovacion { border-left-color: #16A34A !important; }
+.comp-border-humanistica_bilinguismo { border-left-color: #DC2626 !important; }
+.comp-border-electivo { border-left-color: #D97706 !important; }
+
+/* Traceability Detail Panel Below Matrix */
+.matrix-detail-panel {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-top: 20px;
+    animation: fadeIn 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+}
