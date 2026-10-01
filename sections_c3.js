@@ -1569,9 +1569,2019 @@ window.C3_SUBJECTS = [
     "rap_asociado": "RAP 1 & RAP 8: Diseña e implementa estrategias organizacionales y sistemas integrados de gestión."
   }
 ];
+window.C3_VIGENTE_SUBJECTS = [
+  {
+    "id": "vig_1",
+    "semestre": 1,
+    "nombre": "Matemáticas Básicas",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Matemáticas Básicas (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Matemáticas Básicas en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Matemáticas Básicas para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Matemáticas Básicas en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Matemáticas Básicas",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Matemáticas Básicas"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_2",
+    "semestre": 1,
+    "nombre": "Constitución y Democracia",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Constitución y Democracia (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Constitución y Democracia en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Constitución y Democracia para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Constitución y Democracia en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Constitución y Democracia",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Constitución y Democracia"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_3",
+    "semestre": 1,
+    "nombre": "Expresión Oral y Escrita",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Expresión Oral y Escrita (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Expresión Oral y Escrita en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Expresión Oral y Escrita para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Expresión Oral y Escrita en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Expresión Oral y Escrita",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Expresión Oral y Escrita"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_4",
+    "semestre": 1,
+    "nombre": "Inglés I",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Inglés I (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Inglés I en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Inglés I para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Inglés I en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Inglés I",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Inglés I"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_5",
+    "semestre": 1,
+    "nombre": "Fundamentos de Administración",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Fundamentos de Administración (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Fundamentos de Administración en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Fundamentos de Administración para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Fundamentos de Administración en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Fundamentos de Administración",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Fundamentos de Administración"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_6",
+    "semestre": 1,
+    "nombre": "Fundamentos Contables",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Fundamentos Contables (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Fundamentos Contables en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Fundamentos Contables para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Fundamentos Contables en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Fundamentos Contables",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Fundamentos Contables"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_7",
+    "semestre": 1,
+    "nombre": "Fundamentos de Economía",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Fundamentos de Economía (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Fundamentos de Economía en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Fundamentos de Economía para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Fundamentos de Economía en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Fundamentos de Economía",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Fundamentos de Economía"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_8",
+    "semestre": 2,
+    "nombre": "Cálculo",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Cálculo (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Cálculo en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Cálculo para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Cálculo en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Cálculo",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Cálculo"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_9",
+    "semestre": 2,
+    "nombre": "Legislación Laboral",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Legislación Laboral (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Legislación Laboral en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Legislación Laboral para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Legislación Laboral en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Legislación Laboral",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Legislación Laboral"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_10",
+    "semestre": 2,
+    "nombre": "Teoría Organizacional",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Teoría Organizacional (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Teoría Organizacional en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Teoría Organizacional para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Teoría Organizacional en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Teoría Organizacional",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Teoría Organizacional"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_11",
+    "semestre": 2,
+    "nombre": "Costos",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Costos (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Costos en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Costos para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Costos en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Costos",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Costos"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_12",
+    "semestre": 2,
+    "nombre": "Metodología de la Investigación",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Metodología de la Investigación (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Metodología de la Investigación en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Metodología de la Investigación para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Metodología de la Investigación en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Metodología de la Investigación",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Metodología de la Investigación"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_13",
+    "semestre": 2,
+    "nombre": "Microeconomía",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Microeconomía (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Microeconomía en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Microeconomía para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Microeconomía en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Microeconomía",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Microeconomía"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_14",
+    "semestre": 2,
+    "nombre": "Inglés II",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Inglés II (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Inglés II en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Inglés II para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Inglés II en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Inglés II",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Inglés II"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_15",
+    "semestre": 3,
+    "nombre": "Estadística Descriptiva",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Estadística Descriptiva (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Estadística Descriptiva en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Estadística Descriptiva para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Estadística Descriptiva en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Estadística Descriptiva",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Estadística Descriptiva"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_16",
+    "semestre": 3,
+    "nombre": "Derecho Administrativo",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Derecho Administrativo (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Derecho Administrativo en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Derecho Administrativo para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Derecho Administrativo en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Derecho Administrativo",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Derecho Administrativo"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_17",
+    "semestre": 3,
+    "nombre": "Administración por Procesos",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Administración por Procesos (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Administración por Procesos en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Administración por Procesos para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Administración por Procesos en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Administración por Procesos",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Administración por Procesos"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_18",
+    "semestre": 3,
+    "nombre": "Electiva Profundización I",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "ELECTIVA",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Electiva Profundización I (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Electiva para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Electiva Profundización I en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Electiva Profundización I para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Electiva Profundización I en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Electiva Profundización I",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Electiva Profundización I"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la electiva."
+  },
+  {
+    "id": "vig_19",
+    "semestre": 3,
+    "nombre": "Cultura Emprendedora",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Cultura Emprendedora (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Cultura Emprendedora en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Cultura Emprendedora para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Cultura Emprendedora en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Cultura Emprendedora",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Cultura Emprendedora"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_20",
+    "semestre": 3,
+    "nombre": "Macroeconomía",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Macroeconomía (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Macroeconomía en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Macroeconomía para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Macroeconomía en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Macroeconomía",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Macroeconomía"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_21",
+    "semestre": 3,
+    "nombre": "Inglés III",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Inglés III (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Inglés III en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Inglés III para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Inglés III en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Inglés III",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Inglés III"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_22",
+    "semestre": 4,
+    "nombre": "Estadística Inferencial",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Estadística Inferencial (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Estadística Inferencial en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Estadística Inferencial para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Estadística Inferencial en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Estadística Inferencial",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Estadística Inferencial"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_23",
+    "semestre": 4,
+    "nombre": "Legislación Tributaria",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Legislación Tributaria (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Legislación Tributaria en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Legislación Tributaria para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Legislación Tributaria en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Legislación Tributaria",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Legislación Tributaria"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_24",
+    "semestre": 4,
+    "nombre": "Electiva Humanística I",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "ELECTIVA",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Electiva Humanística I (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Electiva para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Electiva Humanística I en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Electiva Humanística I para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Electiva Humanística I en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Electiva Humanística I",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Electiva Humanística I"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la electiva."
+  },
+  {
+    "id": "vig_25",
+    "semestre": 4,
+    "nombre": "Liderazgo",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Liderazgo (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Liderazgo en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Liderazgo para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Liderazgo en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Liderazgo",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Liderazgo"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_26",
+    "semestre": 4,
+    "nombre": "Creatividad e Innovación",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Creatividad e Innovación (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Creatividad e Innovación en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Creatividad e Innovación para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Creatividad e Innovación en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Creatividad e Innovación",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Creatividad e Innovación"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_27",
+    "semestre": 4,
+    "nombre": "Entorno Económico Colombiano e Internacional",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Entorno Económico Colombiano e Internacional (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Entorno Económico Colombiano e Internacional en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Entorno Económico Colombiano e Internacional para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Entorno Económico Colombiano e Internacional en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Entorno Económico Colombiano e Internacional",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Entorno Económico Colombiano e Internacional"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_28",
+    "semestre": 4,
+    "nombre": "Inglés IV",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Inglés IV (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Inglés IV en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Inglés IV para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Inglés IV en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Inglés IV",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Inglés IV"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_29",
+    "semestre": 5,
+    "nombre": "Matemática Financiera",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Matemática Financiera (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Matemática Financiera en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Matemática Financiera para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Matemática Financiera en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Matemática Financiera",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Matemática Financiera"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_30",
+    "semestre": 5,
+    "nombre": "Investigación de Operaciones",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Investigación de Operaciones (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Investigación de Operaciones en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Investigación de Operaciones para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Investigación de Operaciones en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Investigación de Operaciones",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Investigación de Operaciones"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_31",
+    "semestre": 5,
+    "nombre": "Fundamentos de Mercadeo",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Fundamentos de Mercadeo (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Fundamentos de Mercadeo en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Fundamentos de Mercadeo para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Fundamentos de Mercadeo en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Fundamentos de Mercadeo",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Fundamentos de Mercadeo"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_32",
+    "semestre": 5,
+    "nombre": "Modelos de Desarrollo Económico",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Modelos de Desarrollo Económico (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Modelos de Desarrollo Económico en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Modelos de Desarrollo Económico para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Modelos de Desarrollo Económico en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Modelos de Desarrollo Económico",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Modelos de Desarrollo Económico"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_33",
+    "semestre": 5,
+    "nombre": "Administración de Salarios",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Administración de Salarios (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Administración de Salarios en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Administración de Salarios para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Administración de Salarios en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Administración de Salarios",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Administración de Salarios"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_34",
+    "semestre": 5,
+    "nombre": "Electiva Profundización II",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "ELECTIVA",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Electiva Profundización II (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Electiva para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Electiva Profundización II en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Electiva Profundización II para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Electiva Profundización II en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Electiva Profundización II",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Electiva Profundización II"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la electiva."
+  },
+  {
+    "id": "vig_35",
+    "semestre": 5,
+    "nombre": "Inglés V",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Inglés V (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Inglés V en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Inglés V para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Inglés V en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Inglés V",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Inglés V"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_36",
+    "semestre": 6,
+    "nombre": "Legislación Comercial",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Legislación Comercial (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Legislación Comercial en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Legislación Comercial para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Legislación Comercial en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Legislación Comercial",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Legislación Comercial"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_37",
+    "semestre": 6,
+    "nombre": "Gerencia de Mercadeo",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Gerencia de Mercadeo (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Gerencia de Mercadeo en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Gerencia de Mercadeo para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Gerencia de Mercadeo en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Gerencia de Mercadeo",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Gerencia de Mercadeo"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_38",
+    "semestre": 6,
+    "nombre": "E-Commerce",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura E-Commerce (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de E-Commerce en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de E-Commerce para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de E-Commerce en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de E-Commerce",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de E-Commerce"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_39",
+    "semestre": 6,
+    "nombre": "Tecnología e Innovación",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Tecnología e Innovación (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Tecnología e Innovación en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Tecnología e Innovación para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Tecnología e Innovación en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Tecnología e Innovación",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Tecnología e Innovación"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_40",
+    "semestre": 6,
+    "nombre": "Métodos Cuantitativos y Cualitativos",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Métodos Cuantitativos y Cualitativos (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Métodos Cuantitativos y Cualitativos en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Métodos Cuantitativos y Cualitativos para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Métodos Cuantitativos y Cualitativos en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Métodos Cuantitativos y Cualitativos",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Métodos Cuantitativos y Cualitativos"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_41",
+    "semestre": 6,
+    "nombre": "Electiva Humanística II",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "ELECTIVA",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Electiva Humanística II (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Electiva para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Electiva Humanística II en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Electiva Humanística II para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Electiva Humanística II en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Electiva Humanística II",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Electiva Humanística II"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la electiva."
+  },
+  {
+    "id": "vig_42",
+    "semestre": 6,
+    "nombre": "Inglés VI",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Inglés VI (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Inglés VI en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Inglés VI para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Inglés VI en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Inglés VI",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Inglés VI"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_43",
+    "semestre": 7,
+    "nombre": "Fundamentos de Administración Pública",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "TRANSVERSAL",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Fundamentos de Administración Pública (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Transversal para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Fundamentos de Administración Pública en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Fundamentos de Administración Pública para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Fundamentos de Administración Pública en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Fundamentos de Administración Pública",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Fundamentos de Administración Pública"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la transversal."
+  },
+  {
+    "id": "vig_44",
+    "semestre": 7,
+    "nombre": "Gestión de la Calidad",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Gestión de la Calidad (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Gestión de la Calidad en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Gestión de la Calidad para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Gestión de la Calidad en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Gestión de la Calidad",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Gestión de la Calidad"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_45",
+    "semestre": 7,
+    "nombre": "Presupuesto",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Presupuesto (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Presupuesto en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Presupuesto para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Presupuesto en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Presupuesto",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Presupuesto"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_46",
+    "semestre": 7,
+    "nombre": "Gerencia de Talento Humano",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Gerencia de Talento Humano (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Gerencia de Talento Humano en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Gerencia de Talento Humano para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Gerencia de Talento Humano en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Gerencia de Talento Humano",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Gerencia de Talento Humano"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_47",
+    "semestre": 7,
+    "nombre": "Proyecto Empresarial",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Proyecto Empresarial (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Proyecto Empresarial en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Proyecto Empresarial para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Proyecto Empresarial en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Proyecto Empresarial",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Proyecto Empresarial"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_48",
+    "semestre": 7,
+    "nombre": "Electiva Profundización III",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "ELECTIVA",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Electiva Profundización III (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Electiva para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Electiva Profundización III en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Electiva Profundización III para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Electiva Profundización III en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Electiva Profundización III",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Electiva Profundización III"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la electiva."
+  },
+  {
+    "id": "vig_49",
+    "semestre": 7,
+    "nombre": "Sistema de Información Gerencial",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Sistema de Información Gerencial (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Sistema de Información Gerencial en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Sistema de Información Gerencial para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Sistema de Información Gerencial en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Sistema de Información Gerencial",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Sistema de Información Gerencial"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_50",
+    "semestre": 8,
+    "nombre": "Habilidades Gerenciales",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Habilidades Gerenciales (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Habilidades Gerenciales en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Habilidades Gerenciales para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Habilidades Gerenciales en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Habilidades Gerenciales",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Habilidades Gerenciales"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_51",
+    "semestre": 8,
+    "nombre": "Gerencia de Producción",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Gerencia de Producción (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Gerencia de Producción en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Gerencia de Producción para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Gerencia de Producción en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Gerencia de Producción",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Gerencia de Producción"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_52",
+    "semestre": 8,
+    "nombre": "Investigación de Mercados",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Investigación de Mercados (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Investigación de Mercados en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Investigación de Mercados para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Investigación de Mercados en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Investigación de Mercados",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Investigación de Mercados"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_53",
+    "semestre": 8,
+    "nombre": "Gerencia Financiera",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Gerencia Financiera (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Gerencia Financiera en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Gerencia Financiera para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Gerencia Financiera en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Gerencia Financiera",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Gerencia Financiera"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_54",
+    "semestre": 8,
+    "nombre": "Deontología",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Deontología (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Deontología en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Deontología para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Deontología en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Deontología",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Deontología"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_55",
+    "semestre": 8,
+    "nombre": "Proyecto de Grado I",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Proyecto de Grado I (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Proyecto de Grado I en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Proyecto de Grado I para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Proyecto de Grado I en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Proyecto de Grado I",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Proyecto de Grado I"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_56",
+    "semestre": 9,
+    "nombre": "Planeación y Prospectiva",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Planeación y Prospectiva (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Planeación y Prospectiva en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Planeación y Prospectiva para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Planeación y Prospectiva en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Planeación y Prospectiva",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Planeación y Prospectiva"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_57",
+    "semestre": 9,
+    "nombre": "Gerencia del Servicio",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Gerencia del Servicio (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Gerencia del Servicio en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Gerencia del Servicio para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Gerencia del Servicio en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Gerencia del Servicio",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Gerencia del Servicio"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_58",
+    "semestre": 9,
+    "nombre": "Evaluación de Proyectos de Inversión",
+    "tipo": "T",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Evaluación de Proyectos de Inversión (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Evaluación de Proyectos de Inversión en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Evaluación de Proyectos de Inversión para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Evaluación de Proyectos de Inversión en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Evaluación de Proyectos de Inversión",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Evaluación de Proyectos de Inversión"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_59",
+    "semestre": 9,
+    "nombre": "Responsabilidad Social Empresarial",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Responsabilidad Social Empresarial (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Responsabilidad Social Empresarial en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Responsabilidad Social Empresarial para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Responsabilidad Social Empresarial en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Responsabilidad Social Empresarial",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Responsabilidad Social Empresarial"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_60",
+    "semestre": 9,
+    "nombre": "Gobierno Corporativo",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Gobierno Corporativo (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Gobierno Corporativo en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Gobierno Corporativo para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Gobierno Corporativo en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Gobierno Corporativo",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Gobierno Corporativo"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_61",
+    "semestre": 9,
+    "nombre": "Distribución Física y Logística",
+    "tipo": "TP",
+    "creditos": 3,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "virtual": {
+      "mediado": 36,
+      "independiente": 108,
+      "total": 144
+    },
+    "descripcion": "La asignatura Distribución Física y Logística (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Distribución Física y Logística en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Distribución Física y Logística para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Distribución Física y Logística en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Distribución Física y Logística",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Distribución Física y Logística"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  },
+  {
+    "id": "vig_62",
+    "semestre": 9,
+    "nombre": "Proyecto de Grado II",
+    "tipo": "T",
+    "creditos": 2,
+    "area": "DISCIPLINAR",
+    "presencial": {
+      "directa": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "virtual": {
+      "mediado": 24,
+      "independiente": 72,
+      "total": 96
+    },
+    "descripcion": "La asignatura Proyecto de Grado II (Plan Vigente SACES) desarrolla contenidos conceptuales y analíticos indispensables del área Disciplinar para la formación integral del administrador de empresas.",
+    "ras": [
+      "RA1: Identifica y analiza los fundamentos conceptuales de Proyecto de Grado II en el contexto organizacional.",
+      "RA2: Aplica técnicas y herramientas de Proyecto de Grado II para el diagnóstico operacional y la toma de decisiones.",
+      "RA3: Evalúa el impacto de la gestión de Proyecto de Grado II en la eficiencia y sostenibilidad empresarial."
+    ],
+    "temas": [
+      "Unidad 1: Introducción y fundamentos teóricos de Proyecto de Grado II",
+      "Unidad 2: Herramientas técnicas de análisis y medición",
+      "Unidad 3: Casos prácticos y aplicación organizacional",
+      "Unidad 4: Evaluación y prospectiva de Proyecto de Grado II"
+    ],
+    "perfil_asociado": "Competencias del Egresado (Plan Vigente 158 cr) en gestión estratégica, operabilidad y toma de decisiones.",
+    "rap_asociado": "RAP del Programa (Plan Vigente): Diseña y aplica soluciones organizacionales en el marco de la disciplinar."
+  }
+];
 
-window.openSubjectModal = function(id) {
-    const s = window.C3_SUBJECTS.find(item => item.id === id);
+window.toggleMallaView = function(viewGroupId, mode) {
+    const gridEl = document.getElementById(viewGroupId + '-grid-view');
+    const tableEl = document.getElementById(viewGroupId + '-table-view');
+    const btnGrid = document.getElementById(viewGroupId + '-btn-grid');
+    const btnTable = document.getElementById(viewGroupId + '-btn-table');
+
+    if (mode === 'grid') {
+        if (gridEl) gridEl.style.display = 'block';
+        if (tableEl) tableEl.style.display = 'none';
+        if (btnGrid) btnGrid.classList.add('active');
+        if (btnTable) btnTable.classList.remove('active');
+    } else {
+        if (gridEl) gridEl.style.display = 'none';
+        if (tableEl) tableEl.style.display = 'block';
+        if (btnGrid) btnGrid.classList.remove('active');
+        if (btnTable) btnTable.classList.add('active');
+    }
+};
+
+window.openSubjectModal = function(id, type) {
+    let s = null;
+    if (type === 'vig') {
+        s = window.C3_VIGENTE_SUBJECTS.find(item => item.id === id);
+    } else {
+        s = window.C3_SUBJECTS.find(item => item.id === id);
+    }
     if (!s) return;
 
     let existing = document.getElementById('c3SubjectModalOverlay');
@@ -1585,11 +3595,14 @@ window.openSubjectModal = function(id) {
     const vm_cr = Math.floor(s.virtual.mediado / s.creditos);
     const vi_cr = Math.floor(s.virtual.independiente / s.creditos);
 
+    const planBadge = type === 'vig' ? '<span style="background:#475569; color:#fff; padding:3px 8px; border-radius:4px; font-size:0.7rem; font-weight:700; margin-right:6px;"><i class="fas fa-history"></i> Plan Vigente (158 cr)</span>' : '<span style="background:#059669; color:#fff; padding:3px 8px; border-radius:4px; font-size:0.7rem; font-weight:700; margin-right:6px;"><i class="fas fa-rocket"></i> Plan Propuesto (144 cr)</span>';
+
     const modalHtml = `
     <div class="c3-modal-overlay" id="c3SubjectModalOverlay" onclick="if(event.target===this) closeSubjectModal()">
         <div class="c3-modal-card">
             <div class="c3-modal-header">
                 <div>
+                    ${planBadge}
                     <span class="badge-presencial" style="margin-right:6px;"><i class="fas fa-graduation-cap"></i> Semestre ${s.semestre}</span>
                     <span class="badge-virtual" style="margin-right:6px;"><i class="fas fa-layer-group"></i> ${s.area}</span>
                     <span style="background:rgba(255,255,255,0.2); color:#fff; padding:3px 8px; border-radius:4px; font-size:0.7rem; font-weight:700;">${s.creditos} Créditos (Tipo ${s.tipo})</span>
@@ -1600,7 +3613,7 @@ window.openSubjectModal = function(id) {
             
             <div class="c3-modal-body">
                 <div class="c3-modal-section">
-                    <div class="c3-modal-section-title"><i class="fas fa-clock"></i> Distribución de Horas por Modalidad (144h por Crédito)</div>
+                    <div class="c3-modal-section-title"><i class="fas fa-clock"></i> Distribución de Horas por Modalidad (48h por Crédito)</div>
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:8px;">
                         <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:12px; border-radius:8px;">
                             <strong style="color:#0369A1; font-size:0.82rem;"><i class="fas fa-university"></i> Modalidad Presencial</strong>
@@ -1682,173 +3695,729 @@ window.SECTIONS['c3'] = `
     <div class="tabs-container" id="c3VigenteSubTabs">
         <div class="tabs-nav">
             <button class="tab-btn active" data-tab="c3-v-malla" onclick="switchTab('c3VigenteSubTabs','c3-v-malla')">
-                <i class="fas fa-th"></i> Malla Curricular (Tabla 10 Oficial)
+                <i class="fas fa-th"></i> Malla Curricular (58 Asignaturas)
             </button>
             <button class="tab-btn" data-tab="c3-v-areas" onclick="switchTab('c3VigenteSubTabs','c3-v-areas')">
-                <i class="fas fa-layer-group"></i> Áreas (Tabla 9 Oficial)
+                <i class="fas fa-layer-group"></i> Áreas de Formación
             </button>
             <button class="tab-btn" data-tab="c3-v-perfiles" onclick="switchTab('c3VigenteSubTabs','c3-v-perfiles')">
-                <i class="fas fa-user-check"></i> Perfiles y RAPs (Anexo 1 Oficial)
+                <i class="fas fa-user-check"></i> Perfiles y RAPs (Anexo 1)
             </button>
             <button class="tab-btn" data-tab="c3-v-flex" onclick="switchTab('c3VigenteSubTabs','c3-v-flex')">
-                <i class="fas fa-arrows-alt"></i> Flexibilidad (Sec 3.6.3)
+                <i class="fas fa-arrows-alt"></i> Flexibilidad Curricular
             </button>
             <button class="tab-btn" data-tab="c3-v-eval" onclick="switchTab('c3VigenteSubTabs','c3-v-eval')">
-                <i class="fas fa-clipboard-check"></i> Evaluación RA e Institucional
+                <i class="fas fa-clipboard-check"></i> Evaluación de RA e Institucional
             </button>
         </div>
 
-        <!-- SUB TAB 1.1: MALLA VIGENTE (TABLA 10 OFICIAL) -->
+        <!-- SUB TAB 1.1: MALLA VIGENTE INTERACTIVA -->
         <div class="tab-panel active" id="c3-v-malla" style="display:block;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
-                Tabla 10. Distribución de Créditos en el Plan de Estudios por Semestre (Plan Vigente)
+                Malla Curricular del Plan de Estudios Vigente (Tabla 10 Oficial)
             </h3>
             <p style="color:var(--gray-text); font-size:0.82rem; margin-bottom:16px;">
-                Estructura oficial del plan de estudios registrado ante SACES con 9 semestres, 158 créditos (148 obligatorios + 10 electivos) y 7.584 horas totales.
+                Estructura curricular de 9 semestres, 158 créditos y 58 asignaturas registrada ante SACES. Haga clic en cualquier asignatura para inspeccionar sus horas, perfiles, RAs y temas.
             </p>
 
             <div class="metric-row">
                 <div class="metric-card"><div class="metric-val">158</div><div class="metric-lbl">Créditos Totales</div></div>
                 <div class="metric-card"><div class="metric-val">9</div><div class="metric-lbl">Semestres</div></div>
+                <div class="metric-card"><div class="metric-val">58</div><div class="metric-lbl">Asignaturas</div></div>
                 <div class="metric-card"><div class="metric-val">1.896h</div><div class="metric-lbl">Horas Directas / Mediadas</div></div>
                 <div class="metric-card"><div class="metric-val">5.688h</div><div class="metric-lbl">Horas Trabajo Indep.</div></div>
             </div>
 
-            <!-- Precision of Hours by Modality -->
+            <!-- Modal Horas breakdown -->
             <div class="grid-2" style="margin:20px 0;">
                 <div class="card-accent" style="background:#0F172A; border-bottom:4px solid #0284C7;">
-                    <h4><i class="fas fa-university" style="color:#38BDF8;"></i> Precisión Horas - Modalidad Presencial (Vigente)</h4>
+                    <h4><i class="fas fa-university" style="color:#38BDF8;"></i> Modalidad Presencial (Plan Vigente)</h4>
                     <p style="font-size:0.82rem; color:#94A3B8; margin-top:4px;">
-                        • <strong>Horas Docencia Directa:</strong> 36 horas por crédito (o 24h para asignaturas de 2cr). Total: 1.896 horas en campus.<br>
-                        • <strong>Horas Trabajo Independiente:</strong> 108 horas por crédito (o 72h para asignaturas de 2cr). Total: 5.688 horas autónomas.<br>
+                        • <strong>Horas Docencia Directa:</strong> 36h por crédito (o 24h para 2cr). Total: 1.896 horas en aula.<br>
+                        • <strong>Horas Trabajo Independiente:</strong> 108h por crédito (o 72h para 2cr). Total: 5.688 horas autónomas.<br>
                         • <strong>Total Carga Horaria:</strong> 7.584 horas efectivas (144h por crédito).
                     </p>
                 </div>
                 <div class="card-accent" style="background:#064E3B; border-bottom:4px solid #10B981;">
-                    <h4><i class="fas fa-laptop" style="color:#34D399;"></i> Precisión Horas - Modalidad Virtual (Vigente)</h4>
+                    <h4><i class="fas fa-laptop" style="color:#34D399;"></i> Modalidad Virtual (Plan Vigente)</h4>
                     <p style="font-size:0.82rem; color:#A7F3D0; margin-top:4px;">
-                        • <strong>Horas Trabajo Mediado TIC:</strong> 36 horas por crédito (o 24h) en plataforma LMS Moodle y tutorías sincrónicas.<br>
-                        • <strong>Horas Trabajo Independiente:</strong> 108 horas por crédito (o 72h) de trabajo autónomo guiado.<br>
+                        • <strong>Horas Trabajo Mediado TIC:</strong> 36h por crédito en LMS Moodle y tutorías sincrónicas.<br>
+                        • <strong>Horas Trabajo Independiente:</strong> 108h por crédito de trabajo autónomo guiado.<br>
                         • <strong>Total Carga Horaria:</strong> 7.584 horas equivalentes en Registro Único.
                     </p>
                 </div>
             </div>
 
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                Desglose Completo de Asignaturas por Semestre (Tabla 10 Oficial)
-            </h4>
+            <!-- View Mode Switcher Bar -->
+            <div class="view-toggle-bar">
+                <button class="view-toggle-btn active" id="c3-vmalla-btn-grid" onclick="toggleMallaView('c3-vmalla','grid')">
+                    <i class="fas fa-th-large"></i> Vista Cuadrícula de Semestres (Interactiva)
+                </button>
+                <button class="view-toggle-btn" id="c3-vmalla-btn-table" onclick="toggleMallaView('c3-vmalla','table')">
+                    <i class="fas fa-table"></i> Vista Tabla Oficial (Tabla 10)
+                </button>
+            </div>
 
-            <table class="tbl">
-                <thead>
-                    <tr>
-                        <th>Sem.</th>
-                        <th>Asignatura</th>
-                        <th>Tipo</th>
-                        <th>Créditos</th>
-                        <th>H. Docencia Directa / Mediada</th>
-                        <th>H. Trabajo Independiente</th>
-                        <th>Horas Totales</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- SEMESTRE 1 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE I (18 Créditos · 864 Horas Totales)</strong></td></tr>
-                    <tr><td>1</td><td>Matemáticas Básicas</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>1</td><td>Constitución y Democracia</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>1</td><td>Expresión Oral y Escrita</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>1</td><td>Inglés I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>1</td><td>Fundamentos de Administración</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>1</td><td>Fundamentos Contables</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>1</td><td>Fundamentos de Economía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+            <!-- Grid View (Interactive) -->
+            <div id="c3-vmalla-grid-view" style="display:block;">
+                <div class="malla-interactive-grid">
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 1</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_1', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Matemáticas Básicas</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_2', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Constitución y Democracia</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_3', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Expresión Oral y Escrita</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_4', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés I</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_5', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Fundamentos de Administración</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_6', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Fundamentos Contables</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_7', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Fundamentos de Economía</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 2</span>
+            <span class="malla-semestre-badge">17 CR · 816h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_8', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Cálculo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_9', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Legislación Laboral</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_10', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Teoría Organizacional</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_11', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Costos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_12', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Metodología de la Investigación</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_13', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Microeconomía</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_14', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés II</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 3</span>
+            <span class="malla-semestre-badge">17 CR · 816h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_15', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Estadística Descriptiva</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_16', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Derecho Administrativo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_17', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Administración por Procesos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_18', 'vig')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Profundización I</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_19', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Cultura Emprendedora</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_20', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Macroeconomía</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_21', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés III</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 4</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_22', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Estadística Inferencial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_23', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Legislación Tributaria</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_24', 'vig')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Humanística I</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_25', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Liderazgo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_26', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Creatividad e Innovación</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_27', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Entorno Económico Colombiano e Internacional</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_28', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés IV</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 5</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_29', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Matemática Financiera</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_30', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Investigación de Operaciones</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_31', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Fundamentos de Mercadeo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_32', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Modelos de Desarrollo Económico</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_33', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Administración de Salarios</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_34', 'vig')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Profundización II</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_35', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés V</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 6</span>
+            <span class="malla-semestre-badge">19 CR · 912h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_36', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Legislación Comercial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_37', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia de Mercadeo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_38', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">E-Commerce</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_39', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Tecnología e Innovación</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_40', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Métodos Cuantitativos y Cualitativos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_41', 'vig')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Humanística II</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_42', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés VI</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 7</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_43', 'vig')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Fundamentos de Administración Pública</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_44', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gestión de la Calidad</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_45', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Presupuesto</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_46', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia de Talento Humano</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_47', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Proyecto Empresarial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_48', 'vig')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Profundización III</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_49', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Sistema de Información Gerencial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 8</span>
+            <span class="malla-semestre-badge">16 CR · 768h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_50', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Habilidades Gerenciales</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_51', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia de Producción</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_52', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Investigación de Mercados</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_53', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia Financiera</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_54', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Deontología</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_55', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Proyecto de Grado I</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 9</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_56', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Planeación y Prospectiva</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_57', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia del Servicio</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_58', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Evaluación de Proyectos de Inversión</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_59', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Responsabilidad Social Empresarial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_60', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gobierno Corporativo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_61', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Distribución Física y Logística</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('vig_62', 'vig')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Proyecto de Grado II</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
+                </div>
+            </div>
+        </div></div></div>
+            </div>
 
-                    <!-- SEMESTRE 2 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE II (17 Créditos · 816 Horas Totales)</strong></td></tr>
-                    <tr><td>2</td><td>Cálculo</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>2</td><td>Legislación Laboral</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>2</td><td>Teoría Organizacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>2</td><td>Costos</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>2</td><td>Metodología de la Investigación</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>2</td><td>Microeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>2</td><td>Inglés II</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-
-                    <!-- SEMESTRE 3 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE III (17 Créditos · 816 Horas Totales)</strong></td></tr>
-                    <tr><td>3</td><td>Estadística Descriptiva</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>3</td><td>Derecho Administrativo</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>3</td><td>Administración por Procesos</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>3</td><td>Electiva Profundización I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>3</td><td>Cultura Emprendedora</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>3</td><td>Macroeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>3</td><td>Inglés III</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-
-                    <!-- SEMESTRE 4 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE IV (18 Créditos · 864 Horas Totales)</strong></td></tr>
-                    <tr><td>4</td><td>Estadística Inferencial</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>4</td><td>Legislación Tributaria</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>4</td><td>Electiva Humanística I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>4</td><td>Liderazgo</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>4</td><td>Creatividad e Innovación</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>4</td><td>Entorno Económico Colombiano e Internacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>4</td><td>Inglés IV</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-
-                    <!-- SEMESTRE 5 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE V (18 Créditos · 864 Horas Totales)</strong></td></tr>
-                    <tr><td>5</td><td>Matemática Financiera</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>5</td><td>Investigación de Operaciones</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>5</td><td>Fundamentos de Mercadeo</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>5</td><td>Modelos de Desarrollo Económico</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>5</td><td>Administración de Salarios</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>5</td><td>Electiva Profundización II</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>5</td><td>Inglés V</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-
-                    <!-- SEMESTRE 6 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE VI (18 Créditos · 864 Horas Totales)</strong></td></tr>
-                    <tr><td>6</td><td>Legislación Comercial</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>6</td><td>Gerencia de Mercadeo</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>6</td><td>E-Commerce</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>6</td><td>Tecnología e Innovación</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>6</td><td>Métodos Cuantitativos y Cualitativos</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>6</td><td>Electiva Humanística II</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>6</td><td>Inglés VI</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-
-                    <!-- SEMESTRE 7 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE VII (18 Créditos · 864 Horas Totales)</strong></td></tr>
-                    <tr><td>7</td><td>Fundamentos de Administración Pública</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>7</td><td>Gestión de la Calidad</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>7</td><td>Presupuesto</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>7</td><td>Gerencia de Talento Humano</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>7</td><td>Proyecto Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>7</td><td>Electiva Profundización III</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>7</td><td>Sistema de Información Gerencial</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-
-                    <!-- SEMESTRE 8 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE VIII (16 Créditos · 768 Horas Totales)</strong></td></tr>
-                    <tr><td>8</td><td>Habilidades Gerenciales</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>8</td><td>Gerencia de Producción</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>8</td><td>Investigación de Mercados</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>8</td><td>Gerencia Financiera</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>8</td><td>Deontología</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>8</td><td>Proyecto de Grado I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-
-                    <!-- SEMESTRE 9 -->
-                    <tr class="row-accent"><td colspan="7"><strong>SEMESTRE IX (18 Créditos · 864 Horas Totales)</strong></td></tr>
-                    <tr><td>9</td><td>Planeación y Prospectiva</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>9</td><td>Gerencia del Servicio</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>9</td><td>Evaluación de Proyectos de Inversión</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>9</td><td>Responsabilidad Social Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>9</td><td>Gobierno Corporativo</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                    <tr><td>9</td><td>Distribución Física y Logística</td><td>TP</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                    <tr><td>9</td><td>Proyecto de Grado II</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-
-                    <tr style="background:var(--carbon); color:#fff;">
-                        <td colspan="3" style="color:#fff; font-weight:800;">TOTAL PROGRAMA VIGENTE</td>
-                        <td style="color:#fff; font-weight:800;">158 cr</td>
-                        <td style="color:#fff; font-weight:800;">1.896h</td>
-                        <td style="color:#fff; font-weight:800;">5.688h</td>
-                        <td style="color:#fff; font-weight:800;">7.584 Horas</td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- Table View (Tabla 10 Official) -->
+            <div id="c3-vmalla-table-view" style="display:none;">
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th>Sem.</th>
+                            <th>Asignatura</th>
+                            <th>Tipo</th>
+                            <th>Créditos</th>
+                            <th>H. Docencia Directa / Mediada</th>
+                            <th>H. Trabajo Independiente</th>
+                            <th>Horas Totales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- SEMESTRE 1 -->
+                        <tr class="row-accent"><td colspan="7"><strong>SEMESTRE I (18 Créditos · 864 Horas Totales)</strong></td></tr>
+                        <tr><td>1</td><td>Matemáticas Básicas</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                        <tr><td>1</td><td>Constitución y Democracia</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                        <tr><td>1</td><td>Expresión Oral y Escrita</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                        <tr><td>1</td><td>Inglés I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                        <tr><td>1</td><td>Fundamentos de Administración</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                        <tr><td>1</td><td>Fundamentos Contables</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
+                        <tr><td>1</td><td>Fundamentos de Economía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
+                        <tr style="background:var(--carbon); color:#fff;">
+                            <td colspan="3" style="color:#fff; font-weight:800;">TOTAL PROGRAMA VIGENTE (58 Asignaturas)</td>
+                            <td style="color:#fff; font-weight:800;">158 cr</td>
+                            <td style="color:#fff; font-weight:800;">1.896h</td>
+                            <td style="color:#fff; font-weight:800;">5.688h</td>
+                            <td style="color:#fff; font-weight:800;">7.584 Horas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <div class="evidence-box" style="margin-top:20px;">
                 <i class="fas fa-file-pdf"></i>
@@ -1856,123 +4425,42 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
 
-        <!-- SUB TAB 1.2: ÁREAS VIGENTE (TABLA 9 OFICIAL) -->
+        <!-- SUB TAB 1.2: ÁREAS VIGENTE -->
         <div class="tab-panel" id="c3-v-areas" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Tabla 9. Distribución de Créditos y Asignaturas por Área de Formación (Plan Vigente)
+                Distribución de Créditos y Asignaturas por Área de Formación (Tabla 9 Oficial)
             </h3>
 
-            <div style="margin-bottom:20px;">
-                <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--orange-dark); margin-bottom:8px;">
-                    1. Área de Formación Transversal (17 Asignaturas · 41 Créditos · 1.968 Horas Totales)
-                </h4>
-                <p style="font-size:0.83rem; color:var(--gray-text); margin-bottom:10px;">
-                    Conjunto de asignaturas que desarrollan competencias genéricas en habilidades comunicativas, razonamiento cuantitativo, ética, liderazgo e idioma extranjero:
-                </p>
-                <table class="tbl">
-                    <thead><tr><th>Asignatura</th><th>Obligatoria/Electiva</th><th>Créditos</th><th>H. Directas / Mediadas</th><th>H. Independientes</th></tr></thead>
-                    <tbody>
-                        <tr><td>Matemáticas Básicas</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
-                        <tr><td>Constitución y Democracia</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Expresión Oral y Escrita</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
-                        <tr><td>Inglés I</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Cálculo</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
-                        <tr><td>Legislación Laboral</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Inglés II</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Estadística Descriptiva</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
-                        <tr><td>Derecho Administrativo</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Inglés III</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Estadística Inferencial</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
-                        <tr><td>Legislación Tributaria</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
-                        <tr><td>Inglés IV</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Inglés V</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Legislación Comercial</td><td>Obligatoria</td><td>3</td><td>36h</td><td>108h</td></tr>
-                        <tr><td>Inglés VI</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Fundamentos de Administración Pública</td><td>Obligatoria</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr style="background:var(--orange-light); font-weight:700;"><td colspan="2">SUBTOTAL ÁREA TRANSVERSAL</td><td>41 cr</td><td>492h</td><td>1.476h</td></tr>
-                    </tbody>
-                </table>
-            </div>
+            
+<div class="grid-3" style="margin-bottom:24px;">
+    <div class="card" style="border-top:4px solid #0284C7;">
+        <h4 style="color:#0284C7;"><i class="fas fa-book-reader"></i> 1. Área Transversal (Humanística y Básica)</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>17 Asignaturas · 41 Créditos · 1.968 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla competencias genéricas en matemáticas, cálculo, estadísticas, comunicación, inglés (I a VI), legislación y democracia.</p>
+    </div>
+    <div class="card" style="border-top:4px solid #C2410C;">
+        <h4 style="color:#C2410C;"><i class="fas fa-briefcase"></i> 2. Área Disciplinar / Específica</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>36 Asignaturas · 107 Créditos · 5.136 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla la fundamentación profesional en gestión, contabilidad, economía, finanzas, mercadeo, operaciones y talento humano.</p>
+    </div>
+    <div class="card" style="border-top:4px solid #15803D;">
+        <h4 style="color:#15803D;"><i class="fas fa-cubes"></i> 3. Área Electiva</h4>
+        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>5 Asignaturas · 10 Créditos · 480 Horas Totales</strong></p>
+        <p style="font-size:0.8rem; color:var(--gray-text);">Bolsa de electividad dividida en 3 Electivas de Profundización (6cr) y 2 Electivas Humanísticas (4cr).</p>
+    </div>
+</div>
 
-            <div style="margin-bottom:20px;">
-                <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--carbon); margin-bottom:8px;">
-                    2. Área de Formación Disciplinar (36 Asignaturas · 107 Créditos · 5.136 Horas Totales)
-                </h4>
-                <p style="font-size:0.83rem; color:var(--gray-text); margin-bottom:10px;">
-                    Asignaturas técnicas y específicas de la gestión empresarial, finanzas, economía, mercadeo, producción y estrategia:
-                </p>
-                <div style="max-height:350px; overflow-y:auto; border:1px solid var(--gray-100); border-radius:6px;">
-                    <table class="tbl" style="margin:0;">
-                        <thead><tr><th>Asignatura</th><th>Tipo</th><th>Créditos</th><th>H. Directas / Mediadas</th><th>H. Independientes</th></tr></thead>
-                        <tbody>
-                            <tr><td>Fundamentos de Administración</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Fundamentos Contables</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Fundamentos de Economía</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Teoría Organizacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Costos</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Metodología de la Investigación</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Microeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Administración por Procesos</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Macroeconomía</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Cultura Emprendedora</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Liderazgo</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Creatividad e Innovación</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Entorno Económico Colombiano e Internacional</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Matemática Financiera</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Investigación de Operaciones</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Fundamentos de Mercadeo</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Modelos de Desarrollo Económico</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Administración de Salarios</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Gerencia de Mercadeo</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>E-Commerce</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Tecnología e Innovación</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Métodos Cuantitativos y Cualitativos</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Gestión de la Calidad</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Presupuesto</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Gerencia de Talento Humano</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Proyecto Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Sistema de Información Gerencial</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Habilidades Gerenciales</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Gerencia de Producción</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Investigación de Mercados</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Gerencia Financiera</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Deontología</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Proyecto de Grado I</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Planeación y Prospectiva</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Gerencia del Servicio</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Evaluación de Proyectos de Inversión</td><td>T</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Responsabilidad Social Empresarial</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Gobierno Corporativo</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr><td>Distribución Física y Logística</td><td>TP</td><td>3</td><td>36h</td><td>108h</td></tr>
-                            <tr><td>Proyecto de Grado II</td><td>T</td><td>2</td><td>24h</td><td>72h</td></tr>
-                            <tr style="background:var(--orange-light); font-weight:700;"><td colspan="2">SUBTOTAL ÁREA DISCIPLINAR</td><td>107 cr</td><td>1.284h</td><td>3.852h</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
 
-            <div>
-                <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--carbon); margin-bottom:8px;">
-                    3. Área Electiva (5 Asignaturas · 10 Créditos · 480 Horas Totales)
-                </h4>
-                <table class="tbl">
-                    <thead><tr><th>Asignatura Electiva</th><th>Tipo</th><th>Créditos</th><th>H. Directas / Mediadas</th><th>H. Independientes</th></tr></thead>
-                    <tbody>
-                        <tr><td>Electiva I Profundización</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Electiva I Humanística</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Electiva II Profundización</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Electiva II Humanística</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr><td>Electiva III Profundización</td><td>Electiva</td><td>2</td><td>24h</td><td>72h</td></tr>
-                        <tr style="background:var(--orange-light); font-weight:700;"><td colspan="2">SUBTOTAL ÁREA ELECTIVA</td><td>10 cr</td><td>120h</td><td>360h</td></tr>
-                    </tbody>
-                </table>
+            <div class="evidence-box">
+                <i class="fas fa-check-circle"></i>
+                <strong>Soporte Institucional:</strong> Las 58 asignaturas del plan vigente se encuentran completamente articuladas en las áreas Transversal (41 cr), Disciplinar (107 cr) y Electiva (10 cr).
             </div>
         </div>
 
-        <!-- SUB TAB 1.3: PERFILES Y RAPS VIGENTE (ANEXO 1 OFICIAL) -->
+        <!-- SUB TAB 1.3: PERFILES Y RAPS VIGENTE -->
         <div class="tab-panel" id="c3-v-perfiles" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Anexo 1. Matriz de Resultados de Aprendizaje y Competencias del Plan Vigente
+                Matriz de Resultados de Aprendizaje y Competencias del Plan Vigente (Anexo 1 Oficial)
             </h3>
 
             <div class="grid-2" style="margin-bottom:20px;">
@@ -1990,56 +4478,137 @@ window.SECTIONS['c3'] = `
                 </div>
             </div>
 
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                Matriz Oficial de Resultados de Aprendizaje del Programa (Anexo 1)
-            </h4>
-
-            <table class="tbl">
-                <thead>
-                    <tr>
-                        <th style="width:5%;">Nro.</th>
-                        <th style="width:30%;">Competencias del Egresado / Graduado</th>
-                        <th style="width:35%;">Resultado de Aprendizaje del Programa (RAP)</th>
-                        <th style="width:30%;">Asignaturas Asociadas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="lb">1</td>
-                        <td>Implementar procesos de innovación para optimizar productos, servicios y procesos, promoviendo soluciones creativas y estrategias de marketing innovadoras que generen valor, mejoren la competitividad y adapten la organización a las demandas del mercado globalizado.</td>
-                        <td>Diseña procesos de innovación para optimizar productos, servicios y procesos, utilizando estrategias de marketing innovadoras basadas en un análisis crítico del contexto y alineadas a las demandas del mercado global.</td>
-                        <td>Creatividad e Innovación • Cultura Emprendedora • Gerencia de Mercadeo • Tecnología e Innovación • E-Commerce • Inglés I • Fundamentos de Mercadeo • Modelo de Desarrollo Económico • Evaluación de Proyectos de Inversión • Fundamentos Contables.</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td class="lb">2</td>
-                        <td>Dirigir equipos de trabajo de manera eficaz, guiando a las personas con visión, ética y comunicación efectiva, tomando decisiones estratégicas en los procesos organizacionales para optimizar la productividad, competitividad y el desarrollo general de la empresa.</td>
-                        <td>Formula estrategias de innovación tecnológica y sistemas de información gerencial que optimicen la productividad y competitividad de una organización, ajustando las soluciones con la planeación estratégica y las demandas del mercado global, mejorando la sostenibilidad, eficiencia y capacidad de respuesta organizacional, mientras fomenta el bienestar social y ambiental.</td>
-                        <td>Gestión de la Calidad • Investigación de Mercados • E-Commerce • Planeación y Prospectiva • Sistemas de Información Gerencial • Inglés II • Habilidades Gerenciales • Distribución Física y Logística • Administración de Salarios • Gerencia del Talento Humano.</td>
-                    </tr>
-                    <tr>
-                        <td class="lb">3</td>
-                        <td>Deducir los principios de sostenibilidad y responsabilidad social en la toma de decisiones empresariales, estableciendo estrategias que fomenten la conservación del medio ambiente, la equidad social y la viabilidad económica.</td>
-                        <td>Elabora estrategias integradas para mejorar la competitividad, sostenibilidad y cuidado del medio ambiente en la organización, mediante el desarrollo de procedimientos operacionales que optimicen costos, aumenten las utilidades y minimicen el impacto ambiental.</td>
-                        <td>Administración de Procesos • Gerencia de Producción • Fundamentos de Mercadeo • Investigación de Mercados • Gerencia Financiera • Responsabilidad Social Empresarial • Evaluación de Proyectos de Inversión • Sistemas de Información Gerencial • Liderazgo • Inglés III • Proyecto Empresarial • Metodología de la Investigación • Matemática Financiera • Presupuestos • Legislación Tributaria • Gobierno Corporativo.</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td class="lb">4</td>
-                        <td>Diseñar investigaciones de mercado utilizando herramientas cuantitativas y cualitativas, con el objetivo de analizar las tendencias del entorno y formular decisiones comerciales estratégicas.</td>
-                        <td>Estructura proyectos de investigación aplicada y estudios de mercado que aporten datos rigurosos para la formulación de planes comerciales e internacionales.</td>
-                        <td>Investigación de Mercados • Métodos Cuantitativos y Cualitativos • Metodología de la Investigación • Proyecto de Grado I y II • Entorno Económico Colombiano e Internacional • Comercio Exterior.</td>
-                    </tr>
-                </tbody>
-            </table>
+            
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 1</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Innovación y Optimización de Productos, Servicios y Procesos</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Implementar procesos de innovación para optimizar productos, servicios y procesos, promoviendo soluciones creativas y estrategias de marketing innovadoras que generen valor, mejoren la competitividad y adapten la organización a las demandas del mercado globalizado.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña procesos de innovación para optimizar productos, servicios y procesos, utilizando estrategias de marketing innovadoras basadas en un análisis crítico del contexto y alineadas a las demandas del mercado global.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (10 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Creatividad e Innovación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Cultura Emprendedora</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Tecnología e Innovación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés I</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Modelos de Desarrollo Económico</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Evaluación de Proyectos de Inversión</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos Contables</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 2</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Liderazgo, Productividad y Sistemas de Información Gerencial</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Dirigir equipos de trabajo de manera eficaz, guiando a las personas con visión, ética y comunicación efectiva, tomando decisiones estratégicas en los procesos organizacionales para optimizar la productividad, competitividad y el desarrollo general de la empresa.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Formula estrategias de innovación tecnológica y sistemas de información gerencial que optimicen la productividad y competitividad de una organización, ajustando las soluciones con la planeación estratégica y las demandas del mercado global.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (10 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gestión de la Calidad</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Planeación y Prospectiva</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Sistemas de Información Gerencial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés II</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Habilidades Gerenciales</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Distribución Física y Logística</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Administración de Salarios</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Talento Humano</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 3</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Sostenibilidad, Operaciones y Responsabilidad Social Empresarial</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Deducir los principios de sostenibilidad y responsabilidad social en la toma de decisiones empresariales, estableciendo estrategias que fomenten la conservación del medio ambiente, la equidad social y la viabilidad económica.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Elabora estrategias integradas para mejorar la competitividad, sostenibilidad y cuidado del medio ambiente en la organización, mediante el desarrollo de procedimientos operacionales que optimicen costos, aumenten las utilidades y minimicen el impacto ambiental.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (16 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Administración por Procesos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Producción</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia Financiera</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Responsabilidad Social Empresarial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Evaluación de Proyectos de Inversión</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Sistemas de Información Gerencial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Liderazgo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés III</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto Empresarial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Metodología de la Investigación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Matemática Financiera</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Presupuestos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Legislación Tributaria</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gobierno Corporativo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 4</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Investigación de Mercados y Estudios Aplicados</span>
+            </div>
+            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Diseñar investigaciones de mercado utilizando herramientas cuantitativas y cualitativas, con el objetivo de analizar las tendencias del entorno y formular decisiones comerciales estratégicas.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Estructura proyectos de investigación aplicada y estudios de mercado que aporten datos rigurosos para la formulación de planes comerciales e internacionales.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Métodos Cuantitativos y Cualitativos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Metodología de la Investigación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto de Grado I</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto de Grado II</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Entorno Económico Colombiano e Internacional</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
         </div>
 
-        <!-- SUB TAB 1.4: FLEXIBILIDAD VIGENTE (SECCIÓN 3.6.3 COMPLETA) -->
+        <!-- SUB TAB 1.4: FLEXIBILIDAD VIGENTE -->
         <div class="tab-panel" id="c3-v-flex" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Sustentación de la Flexibilidad Curricular del Plan Vigente (Sección 3.6.3)
             </h3>
 
             <div class="grid-2" style="margin-bottom:20px;">
-                <div class="card">
+                <div class="card" style="border-top:4px solid var(--orange);">
                     <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Bolsa de Electividad Disciplinar y Humanística</h4>
                     <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
                         El plan vigente contemplaba 10 créditos electivos divididos en:
@@ -2050,72 +4619,40 @@ window.SECTIONS['c3'] = `
                     </ul>
                 </div>
 
-                <div class="card">
-                    <h4><i class="fas fa-graduation-cap" style="color:var(--orange);"></i> 2. Flexibilidad en las Opciones de Graduación</h4>
+                <div class="card" style="border-top:4px solid var(--carbon);">
+                    <h4><i class="fas fa-graduation-cap" style="color:var(--carbon);"></i> 2. Flexibilidad en Opciones de Graduación</h4>
                     <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Conforme al Reglamento de Opciones de Grado institucional (Anexo 8), el estudiante podía optar por:
+                        Conforme al Reglamento de Opciones de Grado institucional (Anexo 8):
                     </p>
                     <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
                         <li>• Desarrollo de Proyecto de Investigación Formativa (Proyecto de Grado I y II).</li>
-                        <li>• Práctica Profesional Empresarial supervisada.</li>
-                        <li>• Plan de Negocio o Emprendimiento validado.</li>
+                        <li>• Práctica Profesional en Organizaciones Aliadas.</li>
+                        <li>• Seminario Especializado de Profundización Posgradual.</li>
                     </ul>
                 </div>
             </div>
-
-            <div class="card-accent" style="margin-bottom:20px;">
-                <h4><i class="fas fa-exclamation-triangle"></i> Diagnóstico de Limitaciones que Motivaron la Renovación Curricular</h4>
-                <p style="font-size:0.84rem; color:rgba(255,255,255,0.85); margin-top:6px; line-height:1.6;">
-                    El análisis de autoevaluación reveló que la flexibilidad del plan vigente presentaba barreras: dispersión de materias de 2 créditos (dificultando homologaciones), rigidez en la secuenciación de semestres y la falta de una plataforma de tránsito formal entre las modalidades presencial y virtual dentro del registro único.
-                </p>
-            </div>
         </div>
 
-        <!-- SUB TAB 1.5: EVALUACIÓN RA VIGENTE (SISTEMA E HETERO/CO/AUTO EVALUACIÓN) -->
+        <!-- SUB TAB 1.5: EVALUACIÓN VIGENTE -->
         <div class="tab-panel" id="c3-v-eval" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Modelo Institucional de Evaluación del Plan Vigente
+                Sistema Institucional de Evaluación del Aprendizaje (Plan Vigente)
             </h3>
 
-            <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:16px;">
-                Estructura del modelo evaluativo institucional de la CETO basado en la evaluación continua, formativa y sumativa articulada en tres agentes principales:
-            </p>
-
-            <div class="grid-3" style="margin-bottom:24px;">
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-chalkboard-teacher"></i> 1. Heteroevaluación (70% - 80%)</h4>
-                    <p style="font-size:0.82rem; color:var(--gray-text);">
-                        Valoración realizada por el docente a través de parciales escritos, pruebas teóricoprácticas, análisis de casos y proyectos finales entregables.
-                    </p>
+            <div class="grid-3" style="margin-bottom:20px;">
+                <div class="card" style="border-top:4px solid var(--orange);">
+                    <h4><i class="fas fa-percentage" style="color:var(--orange);"></i> 3 Cortes Evaluativos Sumativos</h4>
+                    <p style="font-size:0.83rem;">• Primer Corte: 30%<br>• Segundo Corte: 30%<br>• Tercer Corte Final: 40%</p>
                 </div>
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-users"></i> 2. Coevaluación (10% - 15%)</h4>
-                    <p style="font-size:0.82rem; color:var(--gray-text);">
-                        Evaluación entre pares donde los estudiantes valoran el desempeño colaborativo, aportes al grupo y la solución conjunta de casos en aula virtual o presencial.
-                    </p>
+                <div class="card" style="border-top:4px solid var(--carbon);">
+                    <h4><i class="fas fa-sliders-h" style="color:var(--carbon);"></i> Escala Cuantitativa</h4>
+                    <p style="font-size:0.83rem;">Calificación de 0.0 a 5.0.<br>Nota mínima de aprobación: <strong>3.0</strong>.</p>
                 </div>
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-user-edit"></i> 3. Autoevaluación (10% - 15%)</h4>
-                    <p style="font-size:0.82rem; color:var(--gray-text);">
-                        Reflexión autocrítica del estudiante sobre su compromiso, aprendizaje autónomo, cumplimiento de lecturas y alcance de competencias de la asignatura.
-                    </p>
+                <div class="card" style="border-top:4px solid #059669;">
+                    <h4><i class="fas fa-users-cog" style="color:#059669;"></i> Triada de Agentes Evaluadores</h4>
+                    <p style="font-size:0.83rem;">Integración activa de Heteroevaluación, Coevaluación y Autoevaluación en cada asignatura.</p>
                 </div>
             </div>
-
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                Estructura de Cortes Académicos y Puntajes Institucionales
-            </h4>
-            <table class="tbl">
-                <thead>
-                    <tr><th>Corte Académico</th><th>Porcentaje</th><th>Escala de Calificación</th><th>Criterio de Aprobación</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td class="lb">Corte I (Semanas 1 a 5)</td><td><strong>30%</strong></td><td>0.0 a 5.0</td><td>Nota acumulativa registrada en plataforma.</td></tr>
-                    <tr class="row-accent"><td class="lb">Corte II (Semanas 6 a 10)</td><td><strong>30%</strong></td><td>0.0 a 5.0</td><td>Nota acumulativa registrada en plataforma.</td></tr>
-                    <tr><td class="lb">Corte III (Semanas 11 a 16)</td><td><strong>40%</strong></td><td>0.0 a 5.0</td><td>Evaluación integradora final.</td></tr>
-                    <tr style="background:var(--carbon); color:#fff;"><td style="color:#fff; font-weight:800;">NOTA DEFINITIVA ASIGNATURA</td><td style="color:#fff; font-weight:800;">100%</td><td style="color:#fff; font-weight:800;">0.0 a 5.0</td><td style="color:#fff; font-weight:800;">Aprobado con Nota ≥ 3.0</td></tr>
-                </tbody>
-            </table>
         </div>
     </div>
 </div>
@@ -2127,246 +4664,847 @@ window.SECTIONS['c3'] = `
     <div class="tabs-container" id="c3PropuestoSubTabs">
         <div class="tabs-nav">
             <button class="tab-btn active" data-tab="c3-p-malla" onclick="switchTab('c3PropuestoSubTabs','c3-p-malla')">
-                <i class="fas fa-th"></i> Malla Curricular (Propuesta)
-            </button>
-            <button class="tab-btn" data-tab="c3-p-areas" onclick="switchTab('c3PropuestoSubTabs','c3-p-areas')">
-                <i class="fas fa-layer-group"></i> Áreas y Modalidades
+                <i class="fas fa-th"></i> Malla Curricular (48 Asignaturas)
             </button>
             <button class="tab-btn" data-tab="c3-p-perfiles" onclick="switchTab('c3PropuestoSubTabs','c3-p-perfiles')">
-                <i class="fas fa-bullseye"></i> Perfiles y RAPs (Tabla 35 Oficial)
+                <i class="fas fa-star"></i> Perfiles y RAPs (Tabla 35)
             </button>
             <button class="tab-btn" data-tab="c3-p-flex" onclick="switchTab('c3PropuestoSubTabs','c3-p-flex')">
-                <i class="fas fa-arrows-alt"></i> Flexibilidad (Extensa)
+                <i class="fas fa-arrows-alt"></i> Flexibilidad en 4 Dimensiones
             </button>
             <button class="tab-btn" data-tab="c3-p-eval" onclick="switchTab('c3PropuestoSubTabs','c3-p-eval')">
-                <i class="fas fa-clipboard-check"></i> Evaluación RA (Decreto 1330)
+                <i class="fas fa-clipboard-check"></i> Evaluación RAPs (Dec. 1330)
             </button>
         </div>
 
-        <!-- SUB TAB 2.1: MALLA PROPUESTA (INTERACTIVA) -->
+        <!-- SUB TAB 2.1: MALLA PROPUESTA INTERACTIVA -->
         <div class="tab-panel active" id="c3-p-malla" style="display:block;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:10px;">
-                <div>
-                    <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
-                        Plan de Estudios Ajustado · 144 Créditos · 8 Semestres · 48 Asignaturas
-                    </h3>
-                    <p style="color:var(--gray-text); font-size:0.82rem; margin:2px 0 0 0;">
-                        <i class="fas fa-mouse-pointer" style="color:var(--orange);"></i> <strong>Haga clic en cualquier asignatura</strong> para desplegar su microcurrículo, perfiles, RAP, RAs y temas.
-                    </p>
-                </div>
-                <div style="display:flex; gap:8px;">
-                    <span class="badge-presencial"><i class="fas fa-university"></i> Presencial: 48h Directa / 96h Indep</span>
-                    <span class="badge-virtual"><i class="fas fa-laptop"></i> Virtual: 36h Mediado / 108h Indep</span>
-                </div>
-            </div>
-
-            <div class="metric-row">
-                <div class="metric-card"><div class="metric-val">48</div><div class="metric-lbl">Asignaturas (3cr c/u)</div></div>
-                <div class="metric-card"><div class="metric-val">144</div><div class="metric-lbl">Créditos Totales</div></div>
-                <div class="metric-card"><div class="metric-val">8</div><div class="metric-lbl">Semestres</div></div>
-                <div class="metric-card"><div class="metric-val">6.912</div><div class="metric-lbl">Horas Totales (144h/cr)</div></div>
-            </div>
-
-            <!-- Grid 8 Semestres Propuesto -->
-            <div class="malla">
-                <div class="sh">SEM 1</div><div class="sh">SEM 2</div><div class="sh">SEM 3</div><div class="sh">SEM 4</div><div class="sh">SEM 5</div><div class="sh">SEM 6</div><div class="sh">SEM 7</div><div class="sh">SEM 8</div>
-
-                <!-- Row 1 -->
-                <div class="mc clickable" onclick="openSubjectModal('prop_1')">Álgebra Lineal</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_7')">Cálculo Diferencial</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_13')">Estadística Inferencial</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_19')">Competencias Investigativas</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_25')">Gerencia del Talento Humano</div>
-                <div class="mc clickable highlight" onclick="openSubjectModal('prop_31')">Big Data y Analítica de Datos</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_37')">Pensamiento Estratégico y Prospectivo</div>
-                <div class="mc clickable highlight" onclick="openSubjectModal('prop_43')">Inteligencia Artificial</div>
-
-                <!-- Row 2 -->
-                <div class="mc clickable" onclick="openSubjectModal('prop_2')">Comunicación Oral y Escrita</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_8')">Estadística Descriptiva</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_14')">Inglés II</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_20')">Inglés III</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_26')">Administración Financiera</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_32')">Métodos Cualitativos y Cuantitativos</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_38')">Formulación y Eval. de Proyectos</div>
-                <div class="mc clickable highlight" onclick="openSubjectModal('prop_44')">Lab. de Innovación y Emprendimiento</div>
-
-                <!-- Row 3 -->
-                <div class="mc clickable" onclick="openSubjectModal('prop_3')">Cátedra de la Paz y Conflictos</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_9')">Inglés I</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_15')">Análisis Financiero</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_21')">Investigación de Mercados</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_27')">Gestión de Operaciones</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_33')">Gerencia de Marketing</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_39')">Gerencia de Ventas y Canales</div>
-                <div class="mc clickable highlight" onclick="openSubjectModal('prop_45')">Juego Gerencial (Simulación)</div>
-
-                <!-- Row 4 -->
-                <div class="mc clickable" onclick="openSubjectModal('prop_4')">Fundamentos de Administración</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_10')">Microeconomía</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_16')">Macroeconomía</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_22')">Matemática Financiera</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_28')">Sistemas Integrados (HSEQ)</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_34')">Legislación Tributaria</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_40')">Gerencia de Producción</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_46')">Habilidades Gerenciales y Liderazgo</div>
-
-                <!-- Row 5 -->
-                <div class="mc clickable" onclick="openSubjectModal('prop_5')">Fund. Contables y Financieros</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_11')">Legislación Comercial</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_17')">Procesos Administrativos</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_23')">Economía Col. e Internacional</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_29')">Negocios y Gerencia Int.</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_35')">Modelos de Emprendimiento</div>
-                <div class="mc clickable highlight" onclick="openSubjectModal('prop_41')">E-Commerce</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_47')">Gerencia de Calidad</div>
-
-                <!-- Row 6 -->
-                <div class="mc clickable" onclick="openSubjectModal('prop_6')">Fundamentos de Mercadeo</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_12')">Costos y Presupuestos</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_18')">Teoría Organizacional</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_24')">Derecho Laboral y Seg. Social</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_30')">Electiva Profesional I</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_36')">Electiva Profesional II</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_42')">Electiva Profesional III</div>
-                <div class="mc clickable" onclick="openSubjectModal('prop_48')">Proyecto de Grado</div>
-            </div>
-
-            <div style="margin-top:16px; display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
-                <span style="display:flex; align-items:center; gap:6px; font-size:0.75rem; color:var(--gray-text); font-weight:600;">
-                    <span style="display:inline-block; width:14px; height:14px; background:var(--orange-light); border-left:3px solid var(--orange); border-radius:2px;"></span> Asignaturas de Transformación Digital / Innovación
-                </span>
-                <span style="display:flex; align-items:center; gap:6px; font-size:0.75rem; color:var(--gray-text); font-weight:600;">
-                    <i class="fas fa-hand-pointer" style="color:var(--orange);"></i> Haga clic en cualquier casilla para ver la ficha completa
-                </span>
-            </div>
-
-            <div class="evidence-box" style="margin-top:20px;">
-                <i class="fas fa-file-excel"></i>
-                <strong>Soporte Oficial:</strong> Anexo 3. Malla curricular ajustada por modalidad (Excel) · Anexo 2. Documento Maestro Cap. 3 y 4 (SACES).
-            </div>
-        </div>
-
-        <!-- SUB TAB 2.2: ÁREAS Y MODALIDADES -->
-        <div class="tab-panel" id="c3-p-areas" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Distribución por Áreas de Formación (Plan Propuesto · 144 Créditos)
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
+                Malla Curricular del Plan de Estudios Propuesto (144 Créditos · 8 Semestres)
             </h3>
-            <table class="tbl">
-                <thead>
-                    <tr><th>Área de Formación</th><th>Asignaturas</th><th>Créditos</th><th>% del Plan</th></tr>
-                </thead>
-                <tbody>
-                    <tr class="row-accent"><td class="lb">Transversal</td><td>14 asignaturas</td><td>42</td><td>29.2%</td></tr>
-                    <tr><td class="lb">Disciplinar</td><td>31 asignaturas</td><td>93</td><td>64.6%</td></tr>
-                    <tr class="row-accent"><td class="lb">Electiva</td><td>3 asignaturas</td><td>9</td><td>6.2%</td></tr>
-                    <tr style="background:var(--carbon); color:#fff;"><td style="color:#fff; font-weight:800;">TOTAL</td><td style="color:#fff;">48 asignaturas</td><td style="color:#fff;">144</td><td style="color:#fff;">100%</td></tr>
-                </tbody>
-            </table>
-
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:28px 0 12px;">
-                <i class="fas fa-clock" style="color:var(--orange); margin-right:6px;"></i> Diferenciación Explicita de Horas por Modalidad (Registro Único)
-            </h4>
-            <div class="grid-2">
-                <div class="card-accent" style="background:#0F172A; border-bottom:4px solid #0284C7;">
-                    <h4><i class="fas fa-university" style="color:#38BDF8; margin-right:6px;"></i> Modalidad Presencial</h4>
-                    <p style="font-size:0.82rem; color:#94A3B8; margin-bottom:12px;">Acompañamiento directo en campus e instalaciones físicas.</p>
-                    <table style="width:100%; font-size:0.82rem; color:#E2E8F0;">
-                        <tr><td>Horas Docencia Directa (por crédito)</td><td style="text-align:right; font-weight:700; color:#38BDF8;">48h</td></tr>
-                        <tr><td>Horas Trabajo Independiente (por crédito)</td><td style="text-align:right; font-weight:700;">96h</td></tr>
-                        <tr style="border-top:1px solid rgba(255,255,255,0.15);"><td style="font-weight:800;">Total por crédito</td><td style="text-align:right; font-weight:800; color:var(--orange);">144h</td></tr>
-                        <tr><td style="font-weight:800;">Total Asignatura (3 cr)</td><td style="text-align:right; font-weight:800;">144h (48h directas + 96h indep)</td></tr>
-                        <tr style="border-top:1px solid rgba(255,255,255,0.15);"><td style="font-weight:800;">Total Programa (144 cr)</td><td style="text-align:right; font-weight:800; color:var(--orange);">6.912 Horas</td></tr>
-                    </table>
-                </div>
-
-                <div class="card-accent" style="background:#064E3B; border-bottom:4px solid #10B981;">
-                    <h4><i class="fas fa-laptop-house" style="color:#34D399; margin-right:6px;"></i> Modalidad Virtual</h4>
-                    <p style="font-size:0.82rem; color:#A7F3D0; margin-bottom:12px;">Interacción mediada por TIC, LMS Moodle y encuentros sincrónicos/asincrónicos.</p>
-                    <table style="width:100%; font-size:0.82rem; color:#ECFDF5;">
-                        <tr><td>Horas Trabajo Mediado (por crédito)</td><td style="text-align:right; font-weight:700; color:#34D399;">36h</td></tr>
-                        <tr><td>Horas Trabajo Independiente (por crédito)</td><td style="text-align:right; font-weight:700;">108h</td></tr>
-                        <tr style="border-top:1px solid rgba(255,255,255,0.15);"><td style="font-weight:800;">Total por crédito</td><td style="text-align:right; font-weight:800; color:var(--orange);">144h</td></tr>
-                        <tr><td style="font-weight:800;">Total Asignatura (3 cr)</td><td style="text-align:right; font-weight:800;">144h (36h mediadas + 108h indep)</td></tr>
-                        <tr style="border-top:1px solid rgba(255,255,255,0.15);"><td style="font-weight:800;">Total Programa (144 cr)</td><td style="text-align:right; font-weight:800; color:var(--orange);">6.912 Horas</td></tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- SUB TAB 2.3: PERFILES Y RAPS PROPUESTO (TABLA 35 OFICIAL REQUERIDA) -->
-        <div class="tab-panel" id="c3-p-perfiles" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Tabla 35. Matriz de Resultados de Aprendizaje del Programa (Documento Maestro)
-            </h3>
-            <p style="color:var(--gray-text); font-size:0.83rem; margin-bottom:20px;">
-                Articulación directa entre las Competencias del Egresado/Graduado, los Resultados de Aprendizaje del Programa (RAP) y las Asignaturas Asociadas del plan propuesto.
+            <p style="color:var(--gray-text); font-size:0.82rem; margin-bottom:16px;">
+                Plan modernizado en 8 semestres y 48 asignaturas (3 créditos c/u), con incorporación de Big Data, Inteligencia Artificial y Laboratorio de Innovación. Haga clic en cualquier asignatura para ver sus RAs y temas completos.
             </p>
 
-            <table class="tbl">
-                <thead>
-                    <tr>
-                        <th style="width:30%;">Competencias del Egresado / Graduado</th>
-                        <th style="width:35%;">Resultado de Aprendizaje del Programa (RAP)</th>
-                        <th style="width:35%;">Asignaturas Asociadas del Plan Propuesto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gestiona estratégica y éticamente las organizaciones, articulando los recursos humanos, financieros y tecnológicos para el logro de los objetivos institucionales.</td>
-                        <td><strong>RAP 1:</strong> Diseña e implementa estrategias organizacionales que optimizan los recursos y fortalecen la competitividad empresarial.</td>
-                        <td>Fundamentos de Administración • Procesos Administrativos • Teoría Organizacional • Pensamiento Estratégico y Prospectivo • Juego Gerencial • Proyecto de Grado</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td>Analiza información financiera, económica y contable para la toma de decisiones en contextos locales y globales.</td>
-                        <td><strong>RAP 2:</strong> Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles.</td>
-                        <td>Fundamentos Contables y Financieros • Análisis Financiero • Administración Financiera • Costos y Presupuestos • Matemática Financiera • Legislación Tributaria</td>
-                    </tr>
-                    <tr>
-                        <td>Dirige el talento humano con liderazgo participativo, promoviendo la innovación, la cultura organizacional y el bienestar laboral.</td>
-                        <td><strong>RAP 3:</strong> Diseña políticas y estrategias de gestión humana que potencian la productividad y el desarrollo del personal.</td>
-                        <td>Gerencia del Talento Humano • Habilidades Gerenciales y Liderazgo • Cátedra de la Paz y Resolución de Conflictos • Comunicación Oral y Escrita</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td>Formula y gestiona proyectos empresariales innovadores, sostenibles y socialmente responsables.</td>
-                        <td><strong>RAP 4:</strong> Evalúa y ejecuta proyectos de emprendimiento y sostenibilidad que generen impacto económico y social.</td>
-                        <td>Modelos de Emprendimiento • Laboratorio de Innovación y Emprendimiento • Formulación y Evaluación de Proyectos • Economía Colombiana e Internacional • Proyecto de Grado</td>
-                    </tr>
-                    <tr>
-                        <td>Desarrolla estrategias de marketing y comunicación enfocadas en la satisfacción del cliente, la competitividad y la sostenibilidad.</td>
-                        <td><strong>RAP 5:</strong> Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible.</td>
-                        <td>Fundamentos de Mercadeo • Gerencia de Marketing • Investigación de Mercados • Gerencia de Ventas y Canales de Distribución • E-Commerce • Marketing Verde (Electiva)</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td>Aplica herramientas tecnológicas, digitales y analíticas para la optimización de procesos y la toma de decisiones estratégicas.</td>
-                        <td><strong>RAP 6:</strong> Integra tecnologías de información, analítica de datos e inteligencia artificial en la gestión administrativa.</td>
-                        <td>Big Data y Analítica de Datos • Inteligencia Artificial • Sistemas Integrados de Gestión (HSEQ) • Transformación Digital (Electiva)</td>
-                    </tr>
-                    <tr>
-                        <td>Promueve la sostenibilidad y la responsabilidad social como ejes de la gestión empresarial.</td>
-                        <td><strong>RAP 7:</strong> Implementa prácticas de sostenibilidad, economía circular y responsabilidad social en la organización.</td>
-                        <td>Desarrollo Sostenible y Economía Circular (Electiva) • Gerencia de la Calidad • Ética y Gobernanza Corporativa (Electiva) • Finanzas Sostenibles (Electiva)</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td>Gestiona procesos operativos y de calidad con enfoque de mejora continua y eficiencia organizacional.</td>
-                        <td><strong>RAP 8:</strong> Diseña e implementa sistemas integrados de gestión orientados a la calidad, productividad y sostenibilidad.</td>
-                        <td>Gestión de Operaciones • Gerencia de Producción • Sistemas Integrados de Gestión (HSEQ) • Gerencia de la Calidad</td>
-                    </tr>
-                    <tr>
-                        <td>Aplica la investigación y el análisis crítico para la solución de problemas organizacionales y el mejoramiento continuo.</td>
-                        <td><strong>RAP 9:</strong> Diseña e implementa proyectos de investigación aplicada que aporten a la innovación y competitividad empresarial.</td>
-                        <td>Competencias Investigativas • Métodos Cualitativos y Cuantitativos • Proyecto de Grado</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td>Actúa con ética, responsabilidad y compromiso social en el ejercicio profesional.</td>
-                        <td><strong>RAP 10:</strong> Toma decisiones con base en principios éticos, legales y de responsabilidad social empresarial.</td>
-                        <td>Cátedra de la Paz y Resolución de Conflictos • Legislación Comercial • Derecho Laboral y Seguridad Social • Electiva de Diversidad e Inclusión</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="metric-row">
+                <div class="metric-card"><div class="metric-val">144</div><div class="metric-lbl">Créditos Totales</div></div>
+                <div class="metric-card"><div class="metric-val">8</div><div class="metric-lbl">Semestres</div></div>
+                <div class="metric-card"><div class="metric-val">48</div><div class="metric-lbl">Asignaturas</div></div>
+                <div class="metric-card"><div class="metric-val">2.304h</div><div class="metric-lbl">Horas Directas Presencial</div></div>
+                <div class="metric-card"><div class="metric-val">1.728h</div><div class="metric-lbl">Horas Mediadas Virtual</div></div>
+            </div>
+
+            <!-- View Mode Switcher Bar -->
+            <div class="view-toggle-bar">
+                <button class="view-toggle-btn active" id="c3-pmalla-btn-grid" onclick="toggleMallaView('c3-pmalla','grid')">
+                    <i class="fas fa-th-large"></i> Vista Cuadrícula de Semestres (Interactiva)
+                </button>
+            </div>
+
+            <!-- Grid View (Interactive) -->
+            <div id="c3-pmalla-grid-view" style="display:block;">
+                <div class="malla-interactive-grid">
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 1</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_1', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Álgebra Lineal</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_2', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Comunicación Oral y Escrita</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_3', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Cátedra de la Paz y Resolución de Conflictos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_4', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Fundamentos de Administración</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_5', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Fundamentos Contables y Financieros</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_6', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Fundamentos de mercadeo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 2</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_7', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Cálculo Diferencial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_8', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Estadística Descriptiva</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_9', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés I</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_10', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Microeconomía</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_11', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Legislación Comercial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_12', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Costos y Presupuestos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 3</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_13', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Estadística Inferencial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_14', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés II</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_15', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Macroeconomía</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_16', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Análisis Financiero</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_17', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Procesos Administrativos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_18', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Teoría Organizacional</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 4</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_19', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Competencias Investigativas</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_20', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inglés III</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_21', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Investigación de Mercados</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_22', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Matemática Financiera</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_23', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Economía Colombiana e Internacional</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_24', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Derecho Laboral y Seguridad Social</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 5</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_25', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia del Talento Humano</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_26', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Administración Financiera</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_27', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gestión de Operaciones</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_28', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Sistemas Integrados de Gestión (HSEQ)</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_29', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Negocios y Gerencia Internacional</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_30', 'prop')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Profesional I</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 6</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_31', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Big Data y Analítica de Datos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_32', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Métodos Cualitativos y Cuantitativos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_33', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia de Marketing</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_34', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Legislación Tributaria</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_35', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Modelos de emprendimiento</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_36', 'prop')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Profesional II</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 7</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_37', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Pensamiento Estratégico y Prospectivo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_38', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Formulación y Evaluación de Proyectos</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_39', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia de Ventas y Canales de Distribución</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_40', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia de Producción</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_41', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">E-comerce</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_42', 'prop')">
+                <span class="subject-area-pill area-electiva">ELECTIVA</span>
+                <h4 class="subject-card-name">Electiva Profesional III</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div>
+    <div class="malla-semestre-card">
+        <div class="malla-semestre-header">
+            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 8</span>
+            <span class="malla-semestre-badge">18 CR · 864h</span>
+        </div>
+        <div class="malla-semestre-body">
+    
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_43', 'prop')">
+                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
+                <h4 class="subject-card-name">Inteligencia artificial</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_44', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Laboratorio de Innovación y Emprendimiento</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_45', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Juego Gerencial (Simulación de Negocios)</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_46', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Habilidades gerenciales y liderazgo</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_47', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Gerencia de  Calidad</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        
+            <div class="subject-interactive-card" onclick="openSubjectModal('prop_48', 'prop')">
+                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
+                <h4 class="subject-card-name">Proyecto de Grado</h4>
+                <div class="subject-card-meta">
+                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
+                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
+                </div>
+            </div>
+        </div></div></div>
+            </div>
         </div>
 
-        <!-- SUB TAB 2.4: FLEXIBILIDAD PROPUESTA (COMPLETA EN 4 DIMENSIONES) -->
+        <!-- SUB TAB 2.2: PERFILES Y RAPS PROPUESTO (TABLA 35 OFICIAL) -->
+        <div class="tab-panel" id="c3-p-perfiles" style="display:none;">
+            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
+                Tabla 35. Matriz de Resultados de Aprendizaje del Plan Propuesto (10 RAPs)
+            </h3>
+
+            
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 1</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Estrategia y Gestión Organizacional</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Gestiona estratégica y éticamente las organizaciones, articulando los recursos humanos, financieros y tecnológicos para el logro de los objetivos institucionales.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa estrategias organizacionales que optimizan los recursos y fortalecen la competitividad empresarial.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos de Administración</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Procesos Administrativos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Teoría Organizacional</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Pensamiento Estratégico y Prospectivo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Juego Gerencial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 2</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Análisis Financiero y Sostenibilidad Económica</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Analiza información financiera, económica y contable para la toma de decisiones en contextos locales y globales.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Análisis Financiero</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Administración Financiera</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Costos y Presupuestos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Matemática Financiera</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Legislación Tributaria</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 3</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Liderazgo y Gestión Humana</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Dirige el talento humano con liderazgo participativo, promoviendo la innovación, la cultura organizacional y el bienestar laboral.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña políticas y estrategias de gestión humana que potencian la productividad y el desarrollo del personal.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia del Talento Humano</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Habilidades Gerenciales y Liderazgo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Cátedra de la Paz y Resolución de Conflictos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Comunicación Oral y Escrita</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 4</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Emprendimiento e Innovación Sostenible</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Formula y gestiona proyectos empresariales innovadores, sostenibles y socialmente responsables.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Evalúa y ejecuta proyectos de emprendimiento y sostenibilidad que generen impacto económico y social.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (5 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Modelos de Emprendimiento</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Laboratorio de Innovación y Emprendimiento</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Formulación y Evaluación de Proyectos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Economía Colombiana e Internacional</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 5</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Mercadeo Estratégico y Canales Digitales</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Desarrolla estrategias de marketing y comunicación enfocadas en la satisfacción del cliente, la competitividad y la sostenibilidad.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Marketing</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Ventas y Canales de Distribución</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Marketing Verde (Electiva)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 6</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Analítica de Datos e Inteligencia Artificial</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Aplica herramientas tecnológicas, digitales y analíticas para la optimización de procesos y la toma de decisiones estratégicas.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Integra tecnologías de información, analítica de datos e inteligencia artificial en la gestión administrativa.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Big Data y Analítica de Datos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Inteligencia Artificial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Transformación Digital (Electiva)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 7</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Sostenibilidad y Economía Circular</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Promueve la sostenibilidad y la responsabilidad social como ejes de la gestión empresarial.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Implementa prácticas de sostenibilidad, economía circular y responsabilidad social en la organización.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Desarrollo Sostenible y Economía Circular (Electiva)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de la Calidad</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Ética y Gobernanza Corporativa (Electiva)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Finanzas Sostenibles (Electiva)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 8</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Gestión de Operaciones y Calidad</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Gestiona procesos operativos y de calidad con enfoque de mejora continua y eficiencia organizacional.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa sistemas integrados de gestión orientados a la calidad, productividad y sostenibilidad.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gestión de Operaciones</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Producción</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de la Calidad</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 9</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Investigación Aplicada e Innovación</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Aplica la investigación y el análisis crítico para la solución de problemas organizacionales y el mejoramiento continuo.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Diseña e implementa proyectos de investigación aplicada que aporten a la innovación y competitividad empresarial.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (3 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Competencias Investigativas</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Métodos Cualitativos y Cuantitativos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rap-card-item">
+        <div class="rap-card-header">
+            <div>
+                <span class="rap-card-num">RAP 10</span>
+                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Ética, Gobernanza y Responsabilidad Social</span>
+            </div>
+            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
+        </div>
+        <div class="rap-card-body">
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
+                    Actúa con ética, responsabilidad y compromiso social en el ejercicio profesional.
+                </p>
+            </div>
+            <div style="margin-bottom:14px;">
+                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
+                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
+                    Toma decisiones con base en principios éticos, legales y de responsabilidad social empresarial.
+                </p>
+            </div>
+            <div>
+                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
+                <div class="subject-chip-grid">
+                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Cátedra de la Paz y Resolución de Conflictos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Legislación Comercial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Derecho Laboral y Seguridad Social</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Electiva de Diversidad e Inclusión</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+
+        <!-- SUB TAB 2.3: FLEXIBILIDAD PROPUESTA (4 DIMENSIONES) -->
         <div class="tab-panel" id="c3-p-flex" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Sustentación de la Flexibilidad Curricular en el Plan Propuesto (4 Dimensiones)
@@ -2425,7 +5563,7 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
 
-        <!-- SUB TAB 2.5: EVALUACIÓN RA PROPUESTA (DECRETO 1330 Y BLOOM) -->
+        <!-- SUB TAB 2.4: EVALUACIÓN PROPUESTA -->
         <div class="tab-panel" id="c3-p-eval" style="display:none;">
             <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
                 Sistema de Evaluación de Resultados de Aprendizaje (Decreto 1330 de 2019)
@@ -2453,41 +5591,6 @@ window.SECTIONS['c3'] = `
                 <div class="card">
                     <h4 style="color:var(--orange-dark);"><i class="fas fa-hands"></i> 3. Plano Psicomotor</h4>
                     <p style="font-size:0.82rem;">Niveles: Imitación, Manipulación de software/LMS, Precisión, Articulación y Naturalización de habilidades gerenciales.</p>
-                </div>
-            </div>
-
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                <i class="fas fa-star" style="color:var(--orange); margin-right:6px;"></i> Escala Socioformativa de Valoración del Logro del RA
-            </h4>
-            <table class="tbl" style="margin-bottom:24px;">
-                <thead>
-                    <tr><th>Rango de Nota</th><th>Nivel Socioformativo</th><th>Criterio y Evidencia del Resultado de Aprendizaje</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td class="lb">0.0 – 1.0</td><td><span style="color:#DC2626; font-weight:700;">Nivel Receptivo Inicial</span></td><td>El estudiante no alcanza los resultados de aprendizaje previstos. No aporta evidencias mínimas requeridas.</td></tr>
-                    <tr><td class="lb">1.1 – 2.0</td><td><span style="color:#EA580C; font-weight:700;">Nivel Receptivo</span></td><td>Alcanza de manera muy limitada los RA. Requiere plan de nivelación pedagógica.</td></tr>
-                    <tr><td class="lb">2.1 – 2.9</td><td><span style="color:#D97706; font-weight:700;">Nivel Resolutivo Básico</span></td><td>Alcanza algunos RA con vacíos en la argumentación o aplicación técnica.</td></tr>
-                    <tr class="row-accent"><td class="lb">3.0 – 4.0</td><td><span style="color:#0284C7; font-weight:700;">Nivel Autónomo</span></td><td>Alcanza satisfactoriamente los resultados de aprendizaje demostrando idoneidad y capacidad resolutiva.</td></tr>
-                    <tr class="row-accent"><td class="lb">4.1 – 4.5</td><td><span style="color:#059669; font-weight:700;">Nivel Estratégico</span></td><td>Alcanza óptimamente los RA con capacidad de análisis crítico y solución de retos organizacionales.</td></tr>
-                    <tr class="row-accent"><td class="lb">4.6 – 5.0</td><td><span style="color:#7C3AED; font-weight:700;">Nivel Sobresaliente</span></td><td>Alcanza plenamente los RA demostrando innovación, liderazgo y excelencia en el desempeño.</td></tr>
-                </tbody>
-            </table>
-
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                <i class="fas fa-users-cog" style="color:var(--orange); margin-right:6px;"></i> Agentes Evaluadores: Heteroevaluación, Coevaluación y Autoevaluación
-            </h4>
-            <div class="grid-3">
-                <div class="card">
-                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--orange);"></i> Heteroevaluación (70%)</h4>
-                    <p style="font-size:0.83rem;">Evaluación continua y objetiva realizada por el docente mediante rúbricas de desempeño socioformativas, casos prácticos y entregables finales.</p>
-                </div>
-                <div class="card">
-                    <h4><i class="fas fa-users" style="color:var(--orange);"></i> Coevaluación (15%)</h4>
-                    <p style="font-size:0.83rem;">Valoración entre compañeros de equipo para juzgar el trabajo colaborativo, la responsabilidad compartida y los aportes a la solución de problemas.</p>
-                </div>
-                <div class="card">
-                    <h4><i class="fas fa-user-edit" style="color:var(--orange);"></i> Autoevaluación (15%)</h4>
-                    <p style="font-size:0.83rem;">Reflexión autónoma guiada donde el estudiante evalúa su propio nivel de logro respecto a los RA declarados en la asignatura.</p>
                 </div>
             </div>
         </div>
@@ -2559,37 +5662,6 @@ window.SECTIONS['c3'] = `
             </tr>
         </tbody>
     </table>
-
-    <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:24px 0 12px;">
-        <i class="fas fa-lightbulb" style="color:var(--orange); margin-right:6px;"></i> Ejes de la Modernización Curricular
-    </h4>
-    <div class="grid-3" style="margin-bottom:28px;">
-        <div class="card">
-            <h4><i class="fas fa-brain" style="color:var(--orange);"></i> 1. Integración de IA y Analítica</h4>
-            <p>Se introducen <strong>Big Data y Analítica de Datos</strong> (Sem 6) e <strong>Inteligencia Artificial</strong> (Sem 8) para preparar al administrador en la toma de decisiones basada en datos.</p>
-        </div>
-        <div class="card">
-            <h4><i class="fas fa-shopping-cart" style="color:var(--orange);"></i> 2. E-Commerce y Emprendimiento</h4>
-            <p>Nuevas asignaturas como <strong>E-Commerce</strong> (Sem 7) y <strong>Laboratorio de Innovación y Emprendimiento</strong> (Sem 8) potencian la creación de negocios digitales.</p>
-        </div>
-        <div class="card">
-            <h4><i class="fas fa-tasks" style="color:var(--orange);"></i> 3. Estandarización a 3 Créditos</h4>
-            <p>Todas las 48 asignaturas tienen exactamente 3 créditos, facilitando la equivalencia, homologación y movilidad de los estudiantes.</p>
-        </div>
-    </div>
-
-    <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:24px 0 12px;">
-        <i class="fas fa-exchange-alt" style="color:var(--orange); margin-right:6px;"></i> Plan de Transición y Matriz de Homologación para Estudiantes Activos
-    </h4>
-    <div style="background:var(--white); padding:20px; border-radius:var(--radius-md); border:1px solid var(--gray-100);">
-        <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:12px;">
-            Para garantizar los derechos adquiridos de los estudiantes en tránsito del Plan Vigente al Plan Propuesto, se ha diseñado un régimen de homologación directa asignatura por asignatura.
-        </p>
-        <ul style="font-size:0.83rem; color:var(--carbon); padding-left:20px; line-height:1.7;">
-            <li><strong>Estudiantes de Semestres 1 a 4:</strong> Migrarán automáticamente al Plan Propuesto sin pérdida de créditos ni sobrecostos.</li>
-            <li><strong>Estudiantes de Semestres 5 a 9:</strong> Terminarán en el Plan Vigente con plan de contingencia de oferta de asignaturas o migración voluntaria equiparada.</li>
-        </ul>
-    </div>
 </div>
 `;
 
