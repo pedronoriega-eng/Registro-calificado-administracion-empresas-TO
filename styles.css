@@ -1338,3 +1338,146 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     color: var(--carbon);
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
+
+/* =========================================================
+   MALLA MATRIX GLOBAL VIEW & TRACEABILITY PANEL STYLES
+   ========================================================= */
+
+.malla-matrix-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.malla-matrix-scroll {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.malla-matrix-table {
+    width: 100%;
+    min-width: 1250px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.malla-matrix-table th {
+    background: #1A1A1B;
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 10px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.malla-matrix-table th:first-child {
+    left: 0;
+    z-index: 11;
+    text-align: left;
+    min-width: 220px;
+    background: #0F172A;
+}
+
+.matrix-comp-header {
+    background: #F8FAFC;
+    font-family: var(--font-heading);
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: var(--carbon);
+    padding: 12px 10px;
+    border-bottom: 1px solid #E2E8F0;
+    border-right: 2px solid #CBD5E1;
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.matrix-cell {
+    background: #FFFFFF;
+    border-bottom: 1px solid #F1F5F9;
+    border-right: 1px solid #F1F5F9;
+    padding: 6px;
+    vertical-align: top;
+    min-width: 135px;
+}
+
+.malla-matrix-subject-card {
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #94A3B8;
+}
+
+.malla-matrix-subject-card:last-child {
+    margin-bottom: 0;
+}
+
+.malla-matrix-subject-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(243, 146, 0, 0.2);
+    border-color: var(--orange) !important;
+    background: #FFFDF9;
+}
+
+.malla-matrix-subject-card.selected-card {
+    border-color: var(--orange) !important;
+    background: #FFF7ED !important;
+    box-shadow: 0 0 0 2px var(--orange);
+}
+
+.matrix-card-title {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--carbon);
+    line-height: 1.25;
+    margin-bottom: 4px;
+}
+
+.matrix-card-prereq {
+    font-size: 0.65rem;
+    color: #64748B;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Component Row Accent Border Colors */
+.comp-border-ciencias_basicas { border-left-color: #0284C7 !important; }
+.comp-border-tecnologia { border-left-color: #0D9488 !important; }
+.comp-border-procesos_operaciones { border-left-color: #EA580C !important; }
+.comp-border-gestion_financiera { border-left-color: #7C3AED !important; }
+.comp-border-talento_liderazgo { border-left-color: #DB2777 !important; }
+.comp-border-investigacion_innovacion { border-left-color: #16A34A !important; }
+.comp-border-humanistica_bilinguismo { border-left-color: #DC2626 !important; }
+.comp-border-electivo { border-left-color: #D97706 !important; }
+
+/* Traceability Detail Panel Below Matrix */
+.matrix-detail-panel {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-top: 20px;
+    animation: fadeIn 0.3s ease;
+}

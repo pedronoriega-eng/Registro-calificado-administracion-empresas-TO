@@ -1,7 +1,7 @@
 /* =========================================================
    CONDICIÓN 3 – ASPECTOS CURRICULARES (DOCUMENTO MAESTRO RENOVACIÓN)
    Plan de Estudios Vigente (158 cr) vs Plan Propuesto (144 cr)
-   Registro Único: Modalidad Presencial y Virtual · CETO
+   VISTA GLOBAL DE MALLA EN MATRIZ DE COMPONENTES X SEMESTRES
    ========================================================= */
 
 window.SECTIONS = window.SECTIONS || {};
@@ -49,6 +49,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "ciencias_basicas",
     "descripcion": "La asignatura Álgebra Lineal proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Álgebra Lineal en las organizaciones.",
@@ -81,6 +83,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Comunicación Oral y Escrita proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Comunicación Oral y Escrita en las organizaciones.",
@@ -113,6 +117,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Cátedra de la Paz y Resolución de Conflictos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Cátedra de la Paz y Resolución de Conflictos en las organizaciones.",
@@ -145,6 +151,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Fundamentos de Administración proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Fundamentos de Administración en las organizaciones.",
@@ -177,6 +185,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Fundamentos Contables y Financieros proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Fundamentos Contables y Financieros en las organizaciones.",
@@ -209,6 +219,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Fundamentos de mercadeo proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Fundamentos de mercadeo en las organizaciones.",
@@ -241,6 +253,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Álgebra Lineal",
+    "componente_id": "ciencias_basicas",
     "descripcion": "La asignatura Cálculo Diferencial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Cálculo Diferencial en las organizaciones.",
@@ -273,6 +287,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "ciencias_basicas",
     "descripcion": "La asignatura Estadística Descriptiva proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Estadística Descriptiva en las organizaciones.",
@@ -305,6 +321,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Inglés I proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inglés I en las organizaciones.",
@@ -337,6 +355,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Microeconomía proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Microeconomía en las organizaciones.",
@@ -369,6 +389,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Legislación Comercial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Legislación Comercial en las organizaciones.",
@@ -401,6 +423,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos Contables y Financieros",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Costos y Presupuestos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Costos y Presupuestos en las organizaciones.",
@@ -433,6 +457,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Estadística Descriptiva",
+    "componente_id": "ciencias_basicas",
     "descripcion": "La asignatura Estadística Inferencial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Estadística Inferencial en las organizaciones.",
@@ -465,6 +491,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Inglés I",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Inglés II proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inglés II en las organizaciones.",
@@ -497,6 +525,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Microeconomía",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Macroeconomía proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Macroeconomía en las organizaciones.",
@@ -529,6 +559,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos Contables y Financieros",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Análisis Financiero proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Análisis Financiero en las organizaciones.",
@@ -561,6 +593,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de Administración",
+    "componente_id": "procesos_operaciones",
     "descripcion": "La asignatura Procesos Administrativos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Procesos Administrativos en las organizaciones.",
@@ -593,6 +627,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de Administración",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Teoría Organizacional proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Teoría Organizacional en las organizaciones.",
@@ -625,6 +661,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "investigacion_innovacion",
     "descripcion": "La asignatura Competencias Investigativas proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Competencias Investigativas en las organizaciones.",
@@ -657,6 +695,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Inglés II",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Inglés III proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inglés III en las organizaciones.",
@@ -689,6 +729,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de mercadeo",
+    "componente_id": "investigacion_innovacion",
     "descripcion": "La asignatura Investigación de Mercados proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Investigación de Mercados en las organizaciones.",
@@ -721,6 +763,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Análisis Financiero",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Matemática Financiera proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Matemática Financiera en las organizaciones.",
@@ -753,6 +797,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Macroeconomía",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Economía Colombiana e Internacional proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Economía Colombiana e Internacional en las organizaciones.",
@@ -785,6 +831,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Derecho Laboral y Seguridad Social proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Derecho Laboral y Seguridad Social en las organizaciones.",
@@ -817,6 +865,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Procesos Administrativos",
+    "componente_id": "talento_liderazgo",
     "descripcion": "La asignatura Gerencia del Talento Humano proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia del Talento Humano en las organizaciones.",
@@ -849,6 +899,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Matemática Financiera",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Administración Financiera proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Administración Financiera en las organizaciones.",
@@ -881,6 +933,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Procesos Administrativos",
+    "componente_id": "procesos_operaciones",
     "descripcion": "La asignatura Gestión de Operaciones proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gestión de Operaciones en las organizaciones.",
@@ -913,6 +967,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "procesos_operaciones",
     "descripcion": "La asignatura Sistemas Integrados de Gestión (HSEQ) proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Sistemas Integrados de Gestión (HSEQ) en las organizaciones.",
@@ -945,6 +1001,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Economía Colombiana e Internacional",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Negocios y Gerencia Internacional proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Negocios y Gerencia Internacional en las organizaciones.",
@@ -977,6 +1035,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "ELECTIVA",
+    "prerrequisito": "Ninguno",
+    "componente_id": "electivo",
     "descripcion": "La asignatura Electiva Profesional I proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Electiva necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Electiva Profesional I en las organizaciones.",
@@ -1009,6 +1069,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Estadística Inferencial",
+    "componente_id": "tecnologia",
     "descripcion": "La asignatura Big Data y Analítica de Datos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Big Data y Analítica de Datos en las organizaciones.",
@@ -1041,6 +1103,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Competencias Investigativas",
+    "componente_id": "ciencias_basicas",
     "descripcion": "La asignatura Métodos Cualitativos y Cuantitativos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Métodos Cualitativos y Cuantitativos en las organizaciones.",
@@ -1073,6 +1137,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de mercadeo",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Gerencia de Marketing proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de Marketing en las organizaciones.",
@@ -1105,6 +1171,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "descripcion": "La asignatura Legislación Tributaria proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Legislación Tributaria en las organizaciones.",
@@ -1137,6 +1205,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "investigacion_innovacion",
     "descripcion": "La asignatura Modelos de emprendimiento proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Modelos de emprendimiento en las organizaciones.",
@@ -1169,6 +1239,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "ELECTIVA",
+    "prerrequisito": "Electiva Profesional I",
+    "componente_id": "electivo",
     "descripcion": "La asignatura Electiva Profesional II proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Electiva necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Electiva Profesional II en las organizaciones.",
@@ -1201,6 +1273,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Teoría Organizacional",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Pensamiento Estratégico y Prospectivo proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Pensamiento Estratégico y Prospectivo en las organizaciones.",
@@ -1233,6 +1307,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Análisis Financiero",
+    "componente_id": "investigacion_innovacion",
     "descripcion": "La asignatura Formulación y Evaluación de Proyectos proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Formulación y Evaluación de Proyectos en las organizaciones.",
@@ -1265,6 +1341,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Gerencia de Marketing",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Gerencia de Ventas y Canales de Distribución proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de Ventas y Canales de Distribución en las organizaciones.",
@@ -1297,6 +1375,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Gestión de Operaciones",
+    "componente_id": "procesos_operaciones",
     "descripcion": "La asignatura Gerencia de Producción proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de Producción en las organizaciones.",
@@ -1329,6 +1409,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de mercadeo",
+    "componente_id": "tecnologia",
     "descripcion": "La asignatura E-comerce proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de E-comerce en las organizaciones.",
@@ -1361,6 +1443,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "ELECTIVA",
+    "prerrequisito": "Electiva Profesional II",
+    "componente_id": "electivo",
     "descripcion": "La asignatura Electiva Profesional III proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Electiva necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Electiva Profesional III en las organizaciones.",
@@ -1393,6 +1477,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "TRANSVERSAL",
+    "prerrequisito": "Big Data y Analítica de Datos",
+    "componente_id": "tecnologia",
     "descripcion": "La asignatura Inteligencia artificial proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Transversal necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Inteligencia artificial en las organizaciones.",
@@ -1425,6 +1511,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Modelos de emprendimiento",
+    "componente_id": "investigacion_innovacion",
     "descripcion": "La asignatura Laboratorio de Innovación y Emprendimiento proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Laboratorio de Innovación y Emprendimiento en las organizaciones.",
@@ -1457,6 +1545,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Pensamiento Estratégico y Prospectivo",
+    "componente_id": "gestion_financiera",
     "descripcion": "La asignatura Juego Gerencial (Simulación de Negocios) proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Juego Gerencial (Simulación de Negocios) en las organizaciones.",
@@ -1489,6 +1579,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Gerencia del Talento Humano",
+    "componente_id": "talento_liderazgo",
     "descripcion": "La asignatura Habilidades gerenciales y liderazgo proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Habilidades gerenciales y liderazgo en las organizaciones.",
@@ -1521,6 +1613,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Sistemas Integrados de Gestión (HSEQ)",
+    "componente_id": "procesos_operaciones",
     "descripcion": "La asignatura Gerencia de  Calidad proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Gerencia de  Calidad en las organizaciones.",
@@ -1553,6 +1647,8 @@ window.C3_SUBJECTS = [
       "total": 144
     },
     "area": "DISCIPLINAR",
+    "prerrequisito": "Competencias Investigativas",
+    "componente_id": "investigacion_innovacion",
     "descripcion": "La asignatura Proyecto de Grado proporciona al estudiante las herramientas teóricas, conceptuales y prácticas del área Disciplinar necesarias para el análisis, diagnóstico y toma de decisiones empresariales en entornos competitivos y sostenibles.",
     "ras": [
       "RA1: Comprende y explica los principios y marcos teóricos fundamentales de Proyecto de Grado en las organizaciones.",
@@ -1577,6 +1673,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -1609,6 +1707,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -1641,6 +1741,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -1673,6 +1775,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -1705,6 +1809,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -1737,6 +1843,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -1769,6 +1877,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -1801,6 +1911,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Matemáticas Básicas",
+    "componente_id": "ciencias_basicas",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -1833,6 +1945,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -1865,6 +1979,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de Administración",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -1897,6 +2013,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos Contables",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -1929,6 +2047,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "investigacion_innovacion",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -1961,6 +2081,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de Economía",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -1993,6 +2115,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Inglés I",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2025,6 +2149,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Cálculo",
+    "componente_id": "ciencias_basicas",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2057,6 +2183,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Constitución y Democracia",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2089,6 +2217,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Teoría Organizacional",
+    "componente_id": "procesos_operaciones",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2121,6 +2251,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "ELECTIVA",
+    "prerrequisito": "Ninguno",
+    "componente_id": "electivo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2153,6 +2285,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2185,6 +2319,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Microeconomía",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2217,6 +2353,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Inglés II",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2249,6 +2387,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Estadística Descriptiva",
+    "componente_id": "ciencias_basicas",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2281,6 +2421,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2313,6 +2455,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "ELECTIVA",
+    "prerrequisito": "Ninguno",
+    "componente_id": "electivo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2345,6 +2489,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "talento_liderazgo",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2377,6 +2523,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Cultura Emprendedora",
+    "componente_id": "investigacion_innovacion",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2409,6 +2557,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Macroeconomía",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2441,6 +2591,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Inglés III",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2473,6 +2625,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Costos",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2505,6 +2659,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Estadística Inferencial",
+    "componente_id": "procesos_operaciones",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2537,6 +2693,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2569,6 +2727,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Entorno Económico",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2601,6 +2761,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Legislación Laboral",
+    "componente_id": "talento_liderazgo",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2633,6 +2795,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "ELECTIVA",
+    "prerrequisito": "Electiva Profundización I",
+    "componente_id": "electivo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2665,6 +2829,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Inglés IV",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2697,6 +2863,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Ninguno",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2729,6 +2897,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de Mercadeo",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2761,6 +2931,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Fundamentos de Mercadeo",
+    "componente_id": "tecnologia",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2793,6 +2965,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Creatividad e Innovación",
+    "componente_id": "investigacion_innovacion",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2825,6 +2999,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Estadística Inferencial",
+    "componente_id": "ciencias_basicas",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2857,6 +3033,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "ELECTIVA",
+    "prerrequisito": "Electiva Humanística I",
+    "componente_id": "electivo",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2889,6 +3067,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Inglés V",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2921,6 +3101,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "TRANSVERSAL",
+    "prerrequisito": "Derecho Administrativo",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -2953,6 +3135,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Administración por Procesos",
+    "componente_id": "procesos_operaciones",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -2985,6 +3169,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Costos",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3017,6 +3203,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Administración de Salarios",
+    "componente_id": "talento_liderazgo",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3049,6 +3237,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Cultura Emprendedora",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -3081,6 +3271,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "ELECTIVA",
+    "prerrequisito": "Electiva Profundización II",
+    "componente_id": "electivo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -3113,6 +3305,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Tecnología e Innovación",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3145,6 +3339,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Liderazgo",
+    "componente_id": "talento_liderazgo",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3177,6 +3373,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Investigación de Operaciones",
+    "componente_id": "procesos_operaciones",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3209,6 +3407,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Gerencia de Mercadeo",
+    "componente_id": "investigacion_innovacion",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3241,6 +3441,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Matemática Financiera",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3273,6 +3475,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Ninguno",
+    "componente_id": "talento_liderazgo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -3305,6 +3509,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Metodología de la Investigación",
+    "componente_id": "investigacion_innovacion",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -3337,6 +3543,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Habilidades Gerenciales",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3369,6 +3577,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Gerencia de Mercadeo",
+    "componente_id": "gestion_financiera",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3401,6 +3611,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Gerencia Financiera",
+    "componente_id": "investigacion_innovacion",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3433,6 +3645,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Deontología",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -3465,6 +3679,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Legislación Comercial",
+    "componente_id": "humanistica_bilinguismo",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -3497,6 +3713,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "TP",
     "creditos": 3,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Gerencia de Producción",
+    "componente_id": "procesos_operaciones",
     "presencial": {
       "directa": 36,
       "independiente": 108,
@@ -3529,6 +3747,8 @@ window.C3_VIGENTE_SUBJECTS = [
     "tipo": "T",
     "creditos": 2,
     "area": "DISCIPLINAR",
+    "prerrequisito": "Proyecto de Grado I",
+    "componente_id": "investigacion_innovacion",
     "presencial": {
       "directa": 24,
       "independiente": 72,
@@ -3556,32 +3776,94 @@ window.C3_VIGENTE_SUBJECTS = [
   }
 ];
 
-window.toggleMallaView = function(viewGroupId, mode) {
-    const gridEl = document.getElementById(viewGroupId + '-grid-view');
-    const tableEl = document.getElementById(viewGroupId + '-table-view');
-    const btnGrid = document.getElementById(viewGroupId + '-btn-grid');
-    const btnTable = document.getElementById(viewGroupId + '-btn-table');
+window.selectMatrixSubject = function(id, type) {
+    let s = type === 'vig' ? window.C3_VIGENTE_SUBJECTS.find(i => i.id === id) : window.C3_SUBJECTS.find(i => i.id === id);
+    if (!s) return;
 
-    if (mode === 'grid') {
-        if (gridEl) gridEl.style.display = 'block';
-        if (tableEl) tableEl.style.display = 'none';
-        if (btnGrid) btnGrid.classList.add('active');
-        if (btnTable) btnTable.classList.remove('active');
-    } else {
-        if (gridEl) gridEl.style.display = 'none';
-        if (tableEl) tableEl.style.display = 'block';
-        if (btnGrid) btnGrid.classList.remove('active');
-        if (btnTable) btnTable.classList.add('active');
+    // Highlight selected subject card
+    document.querySelectorAll('.malla-matrix-subject-card').forEach(c => c.classList.remove('selected-card'));
+    if (event && event.currentTarget) {
+        event.currentTarget.classList.add('selected-card');
     }
+
+    // Update bottom detail panel
+    const panelId = type === 'vig' ? 'c3-vigente-matrix-detail-panel' : 'c3-propuesto-matrix-detail-panel';
+    const panel = document.getElementById(panelId);
+    if (!panel) return;
+
+    const rasHtml = s.ras.map(r => `<li style="margin-bottom:6px; padding-left:10px; border-left:3px solid var(--orange); font-size:0.84rem;">${r}</li>`).join('');
+    const temasHtml = s.temas.map(t => `<li style="margin-bottom:4px; font-size:0.84rem; color:var(--carbon);"><i class="fas fa-check-circle" style="color:var(--orange); margin-right:6px;"></i>${t}</li>`).join('');
+
+    const pd_cr = Math.floor(s.presencial.directa / s.creditos);
+    const pi_cr = Math.floor(s.presencial.independiente / s.creditos);
+    const vm_cr = Math.floor(s.virtual.mediado / s.creditos);
+    const vi_cr = Math.floor(s.virtual.independiente / s.creditos);
+
+    const planTag = type === 'vig' ? '<span class="badge-presencial" style="background:#475569; color:#fff;"><i class="fas fa-history"></i> Plan Vigente (158 cr)</span>' : '<span class="badge-presencial" style="background:#059669; color:#fff;"><i class="fas fa-rocket"></i> Plan Propuesto (144 cr)</span>';
+
+    panel.innerHTML = `
+        <div style="border-bottom:2px solid var(--orange); padding-bottom:12px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">
+            <div>
+                ${planTag}
+                <span class="badge-presencial" style="margin-left:6px;"><i class="fas fa-graduation-cap"></i> Semestre ${s.semestre}</span>
+                <span class="badge-virtual" style="margin-left:6px;"><i class="fas fa-layer-group"></i> ${s.area}</span>
+                <span style="background:var(--carbon); color:#fff; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:700; margin-left:6px;">${s.creditos} Créditos (Tipo ${s.tipo})</span>
+                <h3 style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:var(--carbon); margin-top:8px;">${s.nombre}</h3>
+                <div style="font-size:0.8rem; color:var(--gray-text); margin-top:2px;"><i class="fas fa-link" style="color:var(--orange);"></i> <strong>Prerrequisito:</strong> ${s.prerrequisito}</div>
+            </div>
+            <button onclick="openSubjectModal('${s.id}', '${type}')" class="viewer-nav-btn next" style="padding:8px 14px; font-size:0.8rem;">
+                <i class="fas fa-expand"></i> Ver Modal Completo
+            </button>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;">
+            <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:12px; border-radius:8px;">
+                <strong style="color:#0369A1; font-size:0.82rem;"><i class="fas fa-university"></i> Modalidad Presencial (1:2)</strong>
+                <div style="font-size:0.8rem; margin-top:4px; color:#0C4A6E;">
+                    • Directa: <strong>${s.presencial.directa}h</strong> (${pd_cr}h/cr)<br>
+                    • Independiente: <strong>${s.presencial.independiente}h</strong> (${pi_cr}h/cr)<br>
+                    • Total: <strong>${s.presencial.total}h</strong>
+                </div>
+            </div>
+            <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:12px; border-radius:8px;">
+                <strong style="color:#15803D; font-size:0.82rem;"><i class="fas fa-laptop"></i> Modalidad Virtual (1:3)</strong>
+                <div style="font-size:0.8rem; margin-top:4px; color:#14532D;">
+                    • Mediado: <strong>${s.virtual.mediado}h</strong> (${vm_cr}h/cr)<br>
+                    • Independiente: <strong>${s.virtual.independiente}h</strong> (${vi_cr}h/cr)<br>
+                    • Total: <strong>${s.virtual.total}h</strong>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom:16px;">
+            <div class="c3-modal-section-title"><i class="fas fa-user-graduate"></i> 1. Articulación con Perfil de Egreso y RAP del Programa</div>
+            <div style="background:var(--gray-bg); padding:12px; border-radius:8px; font-size:0.83rem;">
+                <p style="margin-bottom:6px;"><strong>Perfil del Egresado:</strong> ${s.perfil_asociado}</p>
+                <p style="margin:0;"><strong>RAP del Programa:</strong> ${s.rap_asociado}</p>
+            </div>
+        </div>
+
+        <div style="margin-bottom:16px;">
+            <div class="c3-modal-section-title"><i class="fas fa-bullseye"></i> 2. Resultados de Aprendizaje de la Asignatura (RA)</div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:8px;">${s.descripcion}</p>
+            <ul style="list-style:none; padding:0; margin:0;">
+                ${rasHtml}
+            </ul>
+        </div>
+
+        <div>
+            <div class="c3-modal-section-title"><i class="fas fa-list-ol"></i> 3. Temas y Subtemas de la Asignatura</div>
+            <ul style="list-style:none; padding:0; margin:0;">
+                ${temasHtml}
+            </ul>
+        </div>
+    `;
+
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 };
 
 window.openSubjectModal = function(id, type) {
-    let s = null;
-    if (type === 'vig') {
-        s = window.C3_VIGENTE_SUBJECTS.find(item => item.id === id);
-    } else {
-        s = window.C3_SUBJECTS.find(item => item.id === id);
-    }
+    let s = type === 'vig' ? window.C3_VIGENTE_SUBJECTS.find(item => item.id === id) : window.C3_SUBJECTS.find(item => item.id === id);
     if (!s) return;
 
     let existing = document.getElementById('c3SubjectModalOverlay');
@@ -3607,6 +3889,7 @@ window.openSubjectModal = function(id, type) {
                     <span class="badge-virtual" style="margin-right:6px;"><i class="fas fa-layer-group"></i> ${s.area}</span>
                     <span style="background:rgba(255,255,255,0.2); color:#fff; padding:3px 8px; border-radius:4px; font-size:0.7rem; font-weight:700;">${s.creditos} Créditos (Tipo ${s.tipo})</span>
                     <h3 style="font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:#fff; margin-top:8px;">${s.nombre}</h3>
+                    <div style="font-size:0.75rem; color:rgba(255,255,255,0.8); margin-top:2px;"><i class="fas fa-link"></i> Prerrequisito: ${s.prerrequisito}</div>
                 </div>
                 <button class="c3-modal-close" onclick="closeSubjectModal()"><i class="fas fa-times"></i></button>
             </div>
@@ -3635,15 +3918,15 @@ window.openSubjectModal = function(id, type) {
                 </div>
 
                 <div class="c3-modal-section">
-                    <div class="c3-modal-section-title"><i class="fas fa-bullseye"></i> Articulación con Perfil de Egreso y RAP del Programa</div>
+                    <div class="c3-modal-section-title"><i class="fas fa-user-graduate"></i> Articulación con Perfil de Egreso y RAP del Programa</div>
                     <div style="background:var(--gray-bg); padding:12px; border-radius:8px; font-size:0.83rem;">
-                        <p style="margin-bottom:6px;"><strong>Perfil de Egreso:</strong> ${s.perfil_asociado}</p>
+                        <p style="margin-bottom:6px;"><strong>Perfil del Egresado:</strong> ${s.perfil_asociado}</p>
                         <p style="margin:0;"><strong>RAP del Programa:</strong> ${s.rap_asociado}</p>
                     </div>
                 </div>
 
                 <div class="c3-modal-section">
-                    <div class="c3-modal-section-title"><i class="fas fa-file-alt"></i> Descripción y Resultados de Aprendizaje (RA)</div>
+                    <div class="c3-modal-section-title"><i class="fas fa-bullseye"></i> Resultados de Aprendizaje de la Asignatura (RA)</div>
                     <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:12px;">${s.descripcion}</p>
                     <ul style="list-style:none; padding:0; margin:0;">
                         ${rasHtml}
@@ -3672,16 +3955,16 @@ window.closeSubjectModal = function() {
 window.SECTIONS['c3'] = `
 <div class="info-banner">
     <h4><i class="fas fa-sitemap"></i> Condición 3 · Aspectos Curriculares</h4>
-    <p>Estructura curricular, plan de estudios, perfiles, Resultados de Aprendizaje (RAP) y estrategias de flexibilidad del Programa de Administración de Empresas (Registro Único Presencial / Virtual).</p>
+    <p>Estructura curricular, plan de estudios en matriz global, perfiles, Resultados de Aprendizaje (RAP) y estrategias de flexibilidad del Programa de Administración de Empresas (Registro Único Presencial / Virtual).</p>
 </div>
 
 <!-- LEVEL 1 MAIN TABS -->
 <div class="c3-main-tabs" id="c3MainTabsGroup">
-    <button class="c3-main-tab-btn active" data-tab="c3-main-vigente" onclick="switchTab('c3MainTabsGroup','c3-main-vigente')">
-        <i class="fas fa-history"></i> 1. Plan Vigente (158 cr)
+    <button class="c3-main-tab-btn active" data-tab="c3-main-propuesto" onclick="switchTab('c3MainTabsGroup','c3-main-propuesto')">
+        <i class="fas fa-rocket"></i> 1. Plan Propuesto (144 cr · Matriz Global)
     </button>
-    <button class="c3-main-tab-btn" data-tab="c3-main-propuesto" onclick="switchTab('c3MainTabsGroup','c3-main-propuesto')">
-        <i class="fas fa-rocket"></i> 2. Plan Propuesto (144 cr)
+    <button class="c3-main-tab-btn" data-tab="c3-main-vigente" onclick="switchTab('c3MainTabsGroup','c3-main-vigente')">
+        <i class="fas fa-history"></i> 2. Plan Vigente (158 cr · Matriz Global)
     </button>
     <button class="c3-main-tab-btn" data-tab="c3-main-comparacion" onclick="switchTab('c3MainTabsGroup','c3-main-comparacion')">
         <i class="fas fa-balance-scale"></i> 3. Comparación y Justificación
@@ -3689,1910 +3972,758 @@ window.SECTIONS['c3'] = `
 </div>
 
 <!-- =========================================================
-     MAIN TAB 1: PLAN DE ESTUDIOS VIGENTE (158 CRÉDITOS)
+     MAIN TAB 1: PLAN DE ESTUDIOS PROPUESTO (144 CRÉDITOS - VISTA GLOBAL MATRIZ)
      ========================================================= -->
-<div class="tab-panel active" id="c3-main-vigente" style="display:block;">
-    <div class="tabs-container" id="c3VigenteSubTabs">
-        <div class="tabs-nav">
-            <button class="tab-btn active" data-tab="c3-v-malla" onclick="switchTab('c3VigenteSubTabs','c3-v-malla')">
-                <i class="fas fa-th"></i> Malla Curricular (58 Asignaturas)
-            </button>
-            <button class="tab-btn" data-tab="c3-v-areas" onclick="switchTab('c3VigenteSubTabs','c3-v-areas')">
-                <i class="fas fa-layer-group"></i> Áreas de Formación
-            </button>
-            <button class="tab-btn" data-tab="c3-v-perfiles" onclick="switchTab('c3VigenteSubTabs','c3-v-perfiles')">
-                <i class="fas fa-user-check"></i> Perfiles y RAPs (Anexo 1)
-            </button>
-            <button class="tab-btn" data-tab="c3-v-flex" onclick="switchTab('c3VigenteSubTabs','c3-v-flex')">
-                <i class="fas fa-arrows-alt"></i> Flexibilidad Curricular
-            </button>
-            <button class="tab-btn" data-tab="c3-v-eval" onclick="switchTab('c3VigenteSubTabs','c3-v-eval')">
-                <i class="fas fa-clipboard-check"></i> Evaluación de RA e Institucional
-            </button>
-        </div>
+<div class="tab-panel active" id="c3-main-propuesto" style="display:block;">
+    <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
+        <i class="fas fa-th" style="color:var(--orange); margin-right:8px;"></i> Malla Curricular del Plan Propuesto (Vista Global Matriz)
+    </h3>
+    <p style="color:var(--gray-text); font-size:0.84rem; margin-bottom:16px;">
+        Estructura por semestres académicos (columnas I a VIII) y componentes curriculares (filas). Haga clic en cualquier materia para cargar su trazabilidad detallada (Perfil del Egresado, RAP del Programa, RAs de la Asignatura y Temas/Subtemas) en el panel inferior y modal.
+    </p>
 
-        <!-- SUB TAB 1.1: MALLA VIGENTE INTERACTIVA -->
-        <div class="tab-panel active" id="c3-v-malla" style="display:block;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
-                Malla Curricular del Plan de Estudios Vigente (Tabla 10 Oficial)
-            </h3>
-            <p style="color:var(--gray-text); font-size:0.82rem; margin-bottom:16px;">
-                Estructura curricular de 9 semestres, 158 créditos y 58 asignaturas registrada ante SACES. Haga clic en cualquier asignatura para inspeccionar sus horas, perfiles, RAs y temas.
-            </p>
+    <div class="metric-row">
+        <div class="metric-card"><div class="metric-val">144</div><div class="metric-lbl">Créditos Totales</div></div>
+        <div class="metric-card"><div class="metric-val">8</div><div class="metric-lbl">Semestres</div></div>
+        <div class="metric-card"><div class="metric-val">48</div><div class="metric-lbl">Asignaturas</div></div>
+        <div class="metric-card"><div class="metric-val">2.304h</div><div class="metric-lbl">Horas Directas Presencial</div></div>
+        <div class="metric-card"><div class="metric-val">1.728h</div><div class="metric-lbl">Horas Mediadas Virtual</div></div>
+    </div>
 
-            <div class="metric-row">
-                <div class="metric-card"><div class="metric-val">158</div><div class="metric-lbl">Créditos Totales</div></div>
-                <div class="metric-card"><div class="metric-val">9</div><div class="metric-lbl">Semestres</div></div>
-                <div class="metric-card"><div class="metric-val">58</div><div class="metric-lbl">Asignaturas</div></div>
-                <div class="metric-card"><div class="metric-val">1.896h</div><div class="metric-lbl">Horas Directas / Mediadas</div></div>
-                <div class="metric-card"><div class="metric-val">5.688h</div><div class="metric-lbl">Horas Trabajo Indep.</div></div>
-            </div>
+    <!-- MATRIX GLOBAL VIEW PROPUESTO -->
+    
+<div class="malla-matrix-wrapper">
+    <div class="malla-matrix-scroll">
+        <table class="malla-matrix-table">
+            <thead>
+                <tr>
+                    <th>Componente Curricular</th>
+                    <th>SEMESTRE I</th>
+                    <th>SEMESTRE II</th>
+                    <th>SEMESTRE III</th>
+                    <th>SEMESTRE IV</th>
+                    <th>SEMESTRE V</th>
+                    <th>SEMESTRE VI</th>
+                    <th>SEMESTRE VII</th>
+                    <th>SEMESTRE VIII</th>
+                </tr>
+            </thead>
+            <tbody>
 
-            <!-- Modal Horas breakdown -->
-            <div class="grid-2" style="margin:20px 0;">
-                <div class="card-accent" style="background:#0F172A; border-bottom:4px solid #0284C7;">
-                    <h4><i class="fas fa-university" style="color:#38BDF8;"></i> Modalidad Presencial (Plan Vigente)</h4>
-                    <p style="font-size:0.82rem; color:#94A3B8; margin-top:4px;">
-                        • <strong>Horas Docencia Directa:</strong> 36h por crédito (o 24h para 2cr). Total: 1.896 horas en aula.<br>
-                        • <strong>Horas Trabajo Independiente:</strong> 108h por crédito (o 72h para 2cr). Total: 5.688 horas autónomas.<br>
-                        • <strong>Total Carga Horaria:</strong> 7.584 horas efectivas (144h por crédito).
-                    </p>
-                </div>
-                <div class="card-accent" style="background:#064E3B; border-bottom:4px solid #10B981;">
-                    <h4><i class="fas fa-laptop" style="color:#34D399;"></i> Modalidad Virtual (Plan Vigente)</h4>
-                    <p style="font-size:0.82rem; color:#A7F3D0; margin-top:4px;">
-                        • <strong>Horas Trabajo Mediado TIC:</strong> 36h por crédito en LMS Moodle y tutorías sincrónicas.<br>
-                        • <strong>Horas Trabajo Independiente:</strong> 108h por crédito de trabajo autónomo guiado.<br>
-                        • <strong>Total Carga Horaria:</strong> 7.584 horas equivalentes en Registro Único.
-                    </p>
-                </div>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #0284C7;">
+            <i class="fas fa-calculator" style="color:#0284C7; font-size:1.1rem;"></i>
+            <span>Fundamentación Científica y Razonamiento Cuantitativo</span>
+        </td>
+    <td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_1', 'prop')">
+                <div class="matrix-card-title">Álgebra Lineal</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_7', 'prop')">
+                <div class="matrix-card-title">Cálculo Diferencial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Álgebra Lineal</div>
             </div>
-
-            <!-- View Mode Switcher Bar -->
-            <div class="view-toggle-bar">
-                <button class="view-toggle-btn active" id="c3-vmalla-btn-grid" onclick="toggleMallaView('c3-vmalla','grid')">
-                    <i class="fas fa-th-large"></i> Vista Cuadrícula de Semestres (Interactiva)
-                </button>
-                <button class="view-toggle-btn" id="c3-vmalla-btn-table" onclick="toggleMallaView('c3-vmalla','table')">
-                    <i class="fas fa-table"></i> Vista Tabla Oficial (Tabla 10)
-                </button>
-            </div>
-
-            <!-- Grid View (Interactive) -->
-            <div id="c3-vmalla-grid-view" style="display:block;">
-                <div class="malla-interactive-grid">
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 1</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_1', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Matemáticas Básicas</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_2', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Constitución y Democracia</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_3', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Expresión Oral y Escrita</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_4', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés I</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_5', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Fundamentos de Administración</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_6', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Fundamentos Contables</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_7', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Fundamentos de Economía</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 2</span>
-            <span class="malla-semestre-badge">17 CR · 816h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_8', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Cálculo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_9', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Legislación Laboral</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_10', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Teoría Organizacional</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_11', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Costos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_12', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Metodología de la Investigación</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_13', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Microeconomía</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_14', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés II</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 3</span>
-            <span class="malla-semestre-badge">17 CR · 816h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_15', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Estadística Descriptiva</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_16', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Derecho Administrativo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_17', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Administración por Procesos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_18', 'vig')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Profundización I</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_19', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Cultura Emprendedora</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_20', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Macroeconomía</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_21', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés III</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 4</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_22', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Estadística Inferencial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_23', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Legislación Tributaria</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_24', 'vig')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Humanística I</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_25', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Liderazgo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_26', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Creatividad e Innovación</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_27', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Entorno Económico Colombiano e Internacional</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_28', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés IV</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 5</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_29', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Matemática Financiera</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_30', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Investigación de Operaciones</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_31', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Fundamentos de Mercadeo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_32', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Modelos de Desarrollo Económico</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_33', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Administración de Salarios</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_34', 'vig')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Profundización II</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_35', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés V</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 6</span>
-            <span class="malla-semestre-badge">19 CR · 912h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_36', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Legislación Comercial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_37', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia de Mercadeo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_38', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">E-Commerce</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_39', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Tecnología e Innovación</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_40', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Métodos Cuantitativos y Cualitativos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_41', 'vig')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Humanística II</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_42', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés VI</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 7</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_43', 'vig')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Fundamentos de Administración Pública</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_44', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gestión de la Calidad</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_45', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Presupuesto</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_46', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia de Talento Humano</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_47', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Proyecto Empresarial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_48', 'vig')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Profundización III</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_49', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Sistema de Información Gerencial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 8</span>
-            <span class="malla-semestre-badge">16 CR · 768h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_50', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Habilidades Gerenciales</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_51', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia de Producción</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_52', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Investigación de Mercados</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_53', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia Financiera</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_54', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Deontología</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_55', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Proyecto de Grado I</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-layer-group" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 9</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_56', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Planeación y Prospectiva</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_57', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia del Servicio</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_58', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Evaluación de Proyectos de Inversión</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_59', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Responsabilidad Social Empresarial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_60', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gobierno Corporativo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_61', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Distribución Física y Logística</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 36h / 108h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('vig_62', 'vig')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Proyecto de Grado II</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 2 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 24h / 72h</span>
-                </div>
-            </div>
-        </div></div></div>
-            </div>
-
-            <!-- Table View (Tabla 10 Official) -->
-            <div id="c3-vmalla-table-view" style="display:none;">
-                <table class="tbl">
-                    <thead>
-                        <tr>
-                            <th>Sem.</th>
-                            <th>Asignatura</th>
-                            <th>Tipo</th>
-                            <th>Créditos</th>
-                            <th>H. Docencia Directa / Mediada</th>
-                            <th>H. Trabajo Independiente</th>
-                            <th>Horas Totales</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- SEMESTRE 1 -->
-                        <tr class="row-accent"><td colspan="7"><strong>SEMESTRE I (18 Créditos · 864 Horas Totales)</strong></td></tr>
-                        <tr><td>1</td><td>Matemáticas Básicas</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                        <tr><td>1</td><td>Constitución y Democracia</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                        <tr><td>1</td><td>Expresión Oral y Escrita</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                        <tr><td>1</td><td>Inglés I</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                        <tr><td>1</td><td>Fundamentos de Administración</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                        <tr><td>1</td><td>Fundamentos Contables</td><td>T</td><td>3</td><td>36h</td><td>108h</td><td>144h</td></tr>
-                        <tr><td>1</td><td>Fundamentos de Economía</td><td>T</td><td>2</td><td>24h</td><td>72h</td><td>96h</td></tr>
-                        <tr style="background:var(--carbon); color:#fff;">
-                            <td colspan="3" style="color:#fff; font-weight:800;">TOTAL PROGRAMA VIGENTE (58 Asignaturas)</td>
-                            <td style="color:#fff; font-weight:800;">158 cr</td>
-                            <td style="color:#fff; font-weight:800;">1.896h</td>
-                            <td style="color:#fff; font-weight:800;">5.688h</td>
-                            <td style="color:#fff; font-weight:800;">7.584 Horas</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="evidence-box" style="margin-top:20px;">
-                <i class="fas fa-file-pdf"></i>
-                <strong>Soporte Oficial:</strong> Anexo 5. Documento Maestro Administración de Empresas_RU inicial (Tabla 10).
-            </div>
-        </div>
-
-        <!-- SUB TAB 1.2: ÁREAS VIGENTE -->
-        <div class="tab-panel" id="c3-v-areas" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Distribución de Créditos y Asignaturas por Área de Formación (Tabla 9 Oficial)
-            </h3>
-
             
-<div class="grid-3" style="margin-bottom:24px;">
-    <div class="card" style="border-top:4px solid #0284C7;">
-        <h4 style="color:#0284C7;"><i class="fas fa-book-reader"></i> 1. Área Transversal (Humanística y Básica)</h4>
-        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>17 Asignaturas · 41 Créditos · 1.968 Horas Totales</strong></p>
-        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla competencias genéricas en matemáticas, cálculo, estadísticas, comunicación, inglés (I a VI), legislación y democracia.</p>
-    </div>
-    <div class="card" style="border-top:4px solid #C2410C;">
-        <h4 style="color:#C2410C;"><i class="fas fa-briefcase"></i> 2. Área Disciplinar / Específica</h4>
-        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>36 Asignaturas · 107 Créditos · 5.136 Horas Totales</strong></p>
-        <p style="font-size:0.8rem; color:var(--gray-text);">Desarrolla la fundamentación profesional en gestión, contabilidad, economía, finanzas, mercadeo, operaciones y talento humano.</p>
-    </div>
-    <div class="card" style="border-top:4px solid #15803D;">
-        <h4 style="color:#15803D;"><i class="fas fa-cubes"></i> 3. Área Electiva</h4>
-        <p style="font-size:0.83rem; margin-bottom:10px;"><strong>5 Asignaturas · 10 Créditos · 480 Horas Totales</strong></p>
-        <p style="font-size:0.8rem; color:var(--gray-text);">Bolsa de electividad dividida en 3 Electivas de Profundización (6cr) y 2 Electivas Humanísticas (4cr).</p>
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_8', 'prop')">
+                <div class="matrix-card-title">Estadística Descriptiva</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_13', 'prop')">
+                <div class="matrix-card-title">Estadística Inferencial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Descriptiva</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_32', 'prop')">
+                <div class="matrix-card-title">Métodos Cualitativos y Cuantitativos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Competencias Investigativas</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #0D9488;">
+            <i class="fas fa-laptop-code" style="color:#0D9488; font-size:1.1rem;"></i>
+            <span>Tecnología, Análisis y Transformación Digital</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_31', 'prop')">
+                <div class="matrix-card-title">Big Data y Analítica de Datos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_41', 'prop')">
+                <div class="matrix-card-title">E-comerce</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de mercadeo</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('prop_43', 'prop')">
+                <div class="matrix-card-title">Inteligencia artificial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Big Data y Analítica de Datos</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #EA580C;">
+            <i class="fas fa-cogs" style="color:#EA580C; font-size:1.1rem;"></i>
+            <span>Procesos, Operaciones y Sistemas Productivos</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_17', 'prop')">
+                <div class="matrix-card-title">Procesos Administrativos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_27', 'prop')">
+                <div class="matrix-card-title">Gestión de Operaciones</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Procesos Administrativos</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_28', 'prop')">
+                <div class="matrix-card-title">Sistemas Integrados de Gestión (HSEQ)</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_40', 'prop')">
+                <div class="matrix-card-title">Gerencia de Producción</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gestión de Operaciones</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('prop_47', 'prop')">
+                <div class="matrix-card-title">Gerencia de  Calidad</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #7C3AED;">
+            <i class="fas fa-chart-pie" style="color:#7C3AED; font-size:1.1rem;"></i>
+            <span>Gestión Organizacional, Económica y Financiera</span>
+        </td>
+    <td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_4', 'prop')">
+                <div class="matrix-card-title">Fundamentos de Administración</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_5', 'prop')">
+                <div class="matrix-card-title">Fundamentos Contables y Financieros</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_6', 'prop')">
+                <div class="matrix-card-title">Fundamentos de mercadeo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_10', 'prop')">
+                <div class="matrix-card-title">Microeconomía</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_12', 'prop')">
+                <div class="matrix-card-title">Costos y Presupuestos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_15', 'prop')">
+                <div class="matrix-card-title">Macroeconomía</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Microeconomía</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_16', 'prop')">
+                <div class="matrix-card-title">Análisis Financiero</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_18', 'prop')">
+                <div class="matrix-card-title">Teoría Organizacional</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_22', 'prop')">
+                <div class="matrix-card-title">Matemática Financiera</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Análisis Financiero</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_23', 'prop')">
+                <div class="matrix-card-title">Economía Colombiana e Internacional</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Macroeconomía</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_26', 'prop')">
+                <div class="matrix-card-title">Administración Financiera</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Matemática Financiera</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_29', 'prop')">
+                <div class="matrix-card-title">Negocios y Gerencia Internacional</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Economía Colombiana e Internacional</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_33', 'prop')">
+                <div class="matrix-card-title">Gerencia de Marketing</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de mercadeo</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_37', 'prop')">
+                <div class="matrix-card-title">Pensamiento Estratégico y Prospectivo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Teoría Organizacional</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_39', 'prop')">
+                <div class="matrix-card-title">Gerencia de Ventas y Canales de Distribución</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Marketing</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('prop_45', 'prop')">
+                <div class="matrix-card-title">Juego Gerencial (Simulación de Negocios)</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Pensamiento Estratégico y Prospectivo</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #DB2777;">
+            <i class="fas fa-users-cog" style="color:#DB2777; font-size:1.1rem;"></i>
+            <span>Gestión del Talento Humano y Liderazgo</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('prop_25', 'prop')">
+                <div class="matrix-card-title">Gerencia del Talento Humano</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Procesos Administrativos</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('prop_46', 'prop')">
+                <div class="matrix-card-title">Habilidades gerenciales y liderazgo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia del Talento Humano</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #16A34A;">
+            <i class="fas fa-lightbulb" style="color:#16A34A; font-size:1.1rem;"></i>
+            <span>Investigación, Innovación y Emprendimiento</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_19', 'prop')">
+                <div class="matrix-card-title">Competencias Investigativas</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_21', 'prop')">
+                <div class="matrix-card-title">Investigación de Mercados</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de mercadeo</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_35', 'prop')">
+                <div class="matrix-card-title">Modelos de emprendimiento</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_38', 'prop')">
+                <div class="matrix-card-title">Formulación y Evaluación de Proyectos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Análisis Financiero</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_44', 'prop')">
+                <div class="matrix-card-title">Laboratorio de Innovación y Emprendimiento</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Modelos de emprendimiento</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('prop_48', 'prop')">
+                <div class="matrix-card-title">Proyecto de Grado</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Competencias Investigativas</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #DC2626;">
+            <i class="fas fa-globe" style="color:#DC2626; font-size:1.1rem;"></i>
+            <span>Formación Humanística, Ética y Bilingüismo</span>
+        </td>
+    <td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_2', 'prop')">
+                <div class="matrix-card-title">Comunicación Oral y Escrita</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_3', 'prop')">
+                <div class="matrix-card-title">Cátedra de la Paz y Resolución de Conflictos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_9', 'prop')">
+                <div class="matrix-card-title">Inglés I</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_11', 'prop')">
+                <div class="matrix-card-title">Legislación Comercial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_14', 'prop')">
+                <div class="matrix-card-title">Inglés II</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés I</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_20', 'prop')">
+                <div class="matrix-card-title">Inglés III</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés II</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_24', 'prop')">
+                <div class="matrix-card-title">Derecho Laboral y Seguridad Social</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('prop_34', 'prop')">
+                <div class="matrix-card-title">Legislación Tributaria</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #D97706;">
+            <i class="fas fa-cubes" style="color:#D97706; font-size:1.1rem;"></i>
+            <span>Componente Electivo (Profundización / Humanística)</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_30', 'prop')">
+                <div class="matrix-card-title">Electiva Profesional I</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_36', 'prop')">
+                <div class="matrix-card-title">Electiva Profesional II</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profesional I</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_42', 'prop')">
+                <div class="matrix-card-title">Electiva Profesional III</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profesional II</div>
+            </div>
+            </td><td class="matrix-cell"></td></tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
 
-            <div class="evidence-box">
-                <i class="fas fa-check-circle"></i>
-                <strong>Soporte Institucional:</strong> Las 58 asignaturas del plan vigente se encuentran completamente articuladas en las áreas Transversal (41 cr), Disciplinar (107 cr) y Electiva (10 cr).
-            </div>
-        </div>
-
-        <!-- SUB TAB 1.3: PERFILES Y RAPS VIGENTE -->
-        <div class="tab-panel" id="c3-v-perfiles" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Matriz de Resultados de Aprendizaje y Competencias del Plan Vigente (Anexo 1 Oficial)
-            </h3>
-
-            <div class="grid-2" style="margin-bottom:20px;">
-                <div class="card" style="border-left:4px solid var(--orange);">
-                    <h4><i class="fas fa-briefcase" style="color:var(--orange);"></i> Perfil Profesional del Plan Vigente</h4>
-                    <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
-                        El profesional en Administración de Empresas del plan vigente es un egresado formado para la comprensión integral de las organizaciones, el manejo estratégico de sus recursos humanos, financieros y tecnológicos, la toma de decisiones informadas en entornos dinámicos y la conducción ética de proyectos empresariales regionales.
-                    </p>
-                </div>
-                <div class="card" style="border-left:4px solid var(--carbon);">
-                    <h4><i class="fas fa-building" style="color:var(--carbon);"></i> Perfil Ocupacional del Plan Vigente</h4>
-                    <p style="font-size:0.85rem; color:var(--carbon); line-height:1.6;">
-                        Desempeño en roles como: Director General, Gerente Administrativo o Financiero, Director de Mercadeo y Ventas, Coordinador de Talento Humano, Gestor de Calidad y Operaciones, Consultor Organizacional o Empresario Independiente.
-                    </p>
-                </div>
-            </div>
-
-            
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 1</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Innovación y Optimización de Productos, Servicios y Procesos</span>
-            </div>
-            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Implementar procesos de innovación para optimizar productos, servicios y procesos, promoviendo soluciones creativas y estrategias de marketing innovadoras que generen valor, mejoren la competitividad y adapten la organización a las demandas del mercado globalizado.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Diseña procesos de innovación para optimizar productos, servicios y procesos, utilizando estrategias de marketing innovadoras basadas en un análisis crítico del contexto y alineadas a las demandas del mercado global.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (10 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Creatividad e Innovación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Cultura Emprendedora</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Tecnología e Innovación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés I</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Modelos de Desarrollo Económico</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Evaluación de Proyectos de Inversión</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos Contables</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 2</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Liderazgo, Productividad y Sistemas de Información Gerencial</span>
-            </div>
-            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Dirigir equipos de trabajo de manera eficaz, guiando a las personas con visión, ética y comunicación efectiva, tomando decisiones estratégicas en los procesos organizacionales para optimizar la productividad, competitividad y el desarrollo general de la empresa.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Formula estrategias de innovación tecnológica y sistemas de información gerencial que optimicen la productividad y competitividad de una organización, ajustando las soluciones con la planeación estratégica y las demandas del mercado global.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (10 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gestión de la Calidad</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Planeación y Prospectiva</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Sistemas de Información Gerencial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés II</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Habilidades Gerenciales</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Distribución Física y Logística</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Administración de Salarios</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Talento Humano</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 3</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Sostenibilidad, Operaciones y Responsabilidad Social Empresarial</span>
-            </div>
-            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Deducir los principios de sostenibilidad y responsabilidad social en la toma de decisiones empresariales, estableciendo estrategias que fomenten la conservación del medio ambiente, la equidad social y la viabilidad económica.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Elabora estrategias integradas para mejorar la competitividad, sostenibilidad y cuidado del medio ambiente en la organización, mediante el desarrollo de procedimientos operacionales que optimicen costos, aumenten las utilidades y minimicen el impacto ambiental.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (16 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Administración por Procesos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia de Producción</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gerencia Financiera</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Responsabilidad Social Empresarial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Evaluación de Proyectos de Inversión</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Sistemas de Información Gerencial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Liderazgo</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Inglés III</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto Empresarial</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Metodología de la Investigación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Matemática Financiera</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Presupuestos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Legislación Tributaria</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Gobierno Corporativo</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 4</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Investigación de Mercados y Estudios Aplicados</span>
-            </div>
-            <i class="fas fa-check-circle" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Vigente)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Diseñar investigaciones de mercado utilizando herramientas cuantitativas y cualitativas, con el objetivo de analizar las tendencias del entorno y formular decisiones comerciales estratégicas.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Estructura proyectos de investigación aplicada y estudios de mercado que aporten datos rigurosos para la formulación de planes comerciales e internacionales.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Vigente (6 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Métodos Cuantitativos y Cualitativos</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Metodología de la Investigación</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto de Grado I</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Proyecto de Grado II</span><span class="subject-chip-item"><i class="fas fa-book" style="color:var(--orange);"></i> Entorno Económico Colombiano e Internacional</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-        </div>
-
-        <!-- SUB TAB 1.4: FLEXIBILIDAD VIGENTE -->
-        <div class="tab-panel" id="c3-v-flex" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Sustentación de la Flexibilidad Curricular del Plan Vigente (Sección 3.6.3)
-            </h3>
-
-            <div class="grid-2" style="margin-bottom:20px;">
-                <div class="card" style="border-top:4px solid var(--orange);">
-                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Bolsa de Electividad Disciplinar y Humanística</h4>
-                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        El plan vigente contemplaba 10 créditos electivos divididos en:
-                    </p>
-                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Electivas de Profundización I, II y III (6 cr):</strong> Marketing Digital, Prevención y Control de Riesgos, Finanzas Corporativas.</li>
-                        <li>• <strong>Electivas Humanísticas I y II (4 cr):</strong> Ética y Ciudadanía, Diversidad e Inclusión Social.</li>
-                    </ul>
-                </div>
-
-                <div class="card" style="border-top:4px solid var(--carbon);">
-                    <h4><i class="fas fa-graduation-cap" style="color:var(--carbon);"></i> 2. Flexibilidad en Opciones de Graduación</h4>
-                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Conforme al Reglamento de Opciones de Grado institucional (Anexo 8):
-                    </p>
-                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• Desarrollo de Proyecto de Investigación Formativa (Proyecto de Grado I y II).</li>
-                        <li>• Práctica Profesional en Organizaciones Aliadas.</li>
-                        <li>• Seminario Especializado de Profundización Posgradual.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- SUB TAB 1.5: EVALUACIÓN VIGENTE -->
-        <div class="tab-panel" id="c3-v-eval" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Sistema Institucional de Evaluación del Aprendizaje (Plan Vigente)
-            </h3>
-
-            <div class="grid-3" style="margin-bottom:20px;">
-                <div class="card" style="border-top:4px solid var(--orange);">
-                    <h4><i class="fas fa-percentage" style="color:var(--orange);"></i> 3 Cortes Evaluativos Sumativos</h4>
-                    <p style="font-size:0.83rem;">• Primer Corte: 30%<br>• Segundo Corte: 30%<br>• Tercer Corte Final: 40%</p>
-                </div>
-                <div class="card" style="border-top:4px solid var(--carbon);">
-                    <h4><i class="fas fa-sliders-h" style="color:var(--carbon);"></i> Escala Cuantitativa</h4>
-                    <p style="font-size:0.83rem;">Calificación de 0.0 a 5.0.<br>Nota mínima de aprobación: <strong>3.0</strong>.</p>
-                </div>
-                <div class="card" style="border-top:4px solid #059669;">
-                    <h4><i class="fas fa-users-cog" style="color:#059669;"></i> Triada de Agentes Evaluadores</h4>
-                    <p style="font-size:0.83rem;">Integración activa de Heteroevaluación, Coevaluación y Autoevaluación en cada asignatura.</p>
-                </div>
-            </div>
+    <!-- TRACEABILITY DETAIL PANEL PROPUESTO -->
+    <div class="matrix-detail-panel" id="c3-propuesto-matrix-detail-panel">
+        <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
+            <i class="fas fa-hand-pointer" style="font-size:2.5rem; color:var(--orange); margin-bottom:12px;"></i>
+            <h4 style="font-size:1.1rem; color:var(--carbon); font-weight:800; font-family:var(--font-heading);">Seleccione una Asignatura de la Matriz</h4>
+            <p style="font-size:0.85rem; max-width:600px; margin:6px auto 0;">Haga clic en cualquier materia de la malla curricular global para visualizar su Perfil de Egreso, RAP del Programa, Resultados de Aprendizaje específicos, Temas y Horas por modalidad.</p>
         </div>
     </div>
 </div>
 
 <!-- =========================================================
-     MAIN TAB 2: PLAN DE ESTUDIOS PROPUESTO (144 CRÉDITOS)
+     MAIN TAB 2: PLAN DE ESTUDIOS VIGENTE (158 CRÉDITOS - VISTA GLOBAL MATRIZ)
      ========================================================= -->
-<div class="tab-panel" id="c3-main-propuesto" style="display:none;">
-    <div class="tabs-container" id="c3PropuestoSubTabs">
-        <div class="tabs-nav">
-            <button class="tab-btn active" data-tab="c3-p-malla" onclick="switchTab('c3PropuestoSubTabs','c3-p-malla')">
-                <i class="fas fa-th"></i> Malla Curricular (48 Asignaturas)
-            </button>
-            <button class="tab-btn" data-tab="c3-p-perfiles" onclick="switchTab('c3PropuestoSubTabs','c3-p-perfiles')">
-                <i class="fas fa-star"></i> Perfiles y RAPs (Tabla 35)
-            </button>
-            <button class="tab-btn" data-tab="c3-p-flex" onclick="switchTab('c3PropuestoSubTabs','c3-p-flex')">
-                <i class="fas fa-arrows-alt"></i> Flexibilidad en 4 Dimensiones
-            </button>
-            <button class="tab-btn" data-tab="c3-p-eval" onclick="switchTab('c3PropuestoSubTabs','c3-p-eval')">
-                <i class="fas fa-clipboard-check"></i> Evaluación RAPs (Dec. 1330)
-            </button>
-        </div>
+<div class="tab-panel" id="c3-main-vigente" style="display:none;">
+    <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
+        <i class="fas fa-th" style="color:var(--orange); margin-right:8px;"></i> Malla Curricular del Plan Vigente (Vista Global Matriz)
+    </h3>
+    <p style="color:var(--gray-text); font-size:0.84rem; margin-bottom:16px;">
+        Estructura por semestres académicos (columnas I a IX) y componentes curriculares (filas) de la Malla Registrada ante SACES (158 créditos, 58 asignaturas). Haga clic en cualquier materia para ver su trazabilidad completa.
+    </p>
 
-        <!-- SUB TAB 2.1: MALLA PROPUESTA INTERACTIVA -->
-        <div class="tab-panel active" id="c3-p-malla" style="display:block;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
-                Malla Curricular del Plan de Estudios Propuesto (144 Créditos · 8 Semestres)
-            </h3>
-            <p style="color:var(--gray-text); font-size:0.82rem; margin-bottom:16px;">
-                Plan modernizado en 8 semestres y 48 asignaturas (3 créditos c/u), con incorporación de Big Data, Inteligencia Artificial y Laboratorio de Innovación. Haga clic en cualquier asignatura para ver sus RAs y temas completos.
-            </p>
+    <div class="metric-row">
+        <div class="metric-card"><div class="metric-val">158</div><div class="metric-lbl">Créditos Totales</div></div>
+        <div class="metric-card"><div class="metric-val">9</div><div class="metric-lbl">Semestres</div></div>
+        <div class="metric-card"><div class="metric-val">58</div><div class="metric-lbl">Asignaturas</div></div>
+        <div class="metric-card"><div class="metric-val">1.896h</div><div class="metric-lbl">Horas Directas / Mediadas</div></div>
+        <div class="metric-card"><div class="metric-val">5.688h</div><div class="metric-lbl">Horas Trabajo Indep.</div></div>
+    </div>
 
-            <div class="metric-row">
-                <div class="metric-card"><div class="metric-val">144</div><div class="metric-lbl">Créditos Totales</div></div>
-                <div class="metric-card"><div class="metric-val">8</div><div class="metric-lbl">Semestres</div></div>
-                <div class="metric-card"><div class="metric-val">48</div><div class="metric-lbl">Asignaturas</div></div>
-                <div class="metric-card"><div class="metric-val">2.304h</div><div class="metric-lbl">Horas Directas Presencial</div></div>
-                <div class="metric-card"><div class="metric-val">1.728h</div><div class="metric-lbl">Horas Mediadas Virtual</div></div>
-            </div>
+    <!-- MATRIX GLOBAL VIEW VIGENTE -->
+    
+<div class="malla-matrix-wrapper">
+    <div class="malla-matrix-scroll">
+        <table class="malla-matrix-table">
+            <thead>
+                <tr>
+                    <th>Componente Curricular</th>
+                    <th>SEMESTRE I</th>
+                    <th>SEMESTRE II</th>
+                    <th>SEMESTRE III</th>
+                    <th>SEMESTRE IV</th>
+                    <th>SEMESTRE V</th>
+                    <th>SEMESTRE VI</th>
+                    <th>SEMESTRE VII</th>
+                    <th>SEMESTRE VIII</th>
+                    <th>SEMESTRE IX</th>
+                </tr>
+            </thead>
+            <tbody>
 
-            <!-- View Mode Switcher Bar -->
-            <div class="view-toggle-bar">
-                <button class="view-toggle-btn active" id="c3-pmalla-btn-grid" onclick="toggleMallaView('c3-pmalla','grid')">
-                    <i class="fas fa-th-large"></i> Vista Cuadrícula de Semestres (Interactiva)
-                </button>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #0284C7;">
+            <i class="fas fa-calculator" style="color:#0284C7; font-size:1.1rem;"></i>
+            <span>Fundamentación Científica y Razonamiento Cuantitativo</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_8', 'vig')">
+                <div class="matrix-card-title">Cálculo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Matemáticas Básicas</div>
             </div>
-
-            <!-- Grid View (Interactive) -->
-            <div id="c3-pmalla-grid-view" style="display:block;">
-                <div class="malla-interactive-grid">
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 1</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_1', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Álgebra Lineal</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_15', 'vig')">
+                <div class="matrix-card-title">Estadística Descriptiva</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Cálculo</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_2', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Comunicación Oral y Escrita</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_22', 'vig')">
+                <div class="matrix-card-title">Estadística Inferencial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Descriptiva</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_3', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Cátedra de la Paz y Resolución de Conflictos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('vig_40', 'vig')">
+                <div class="matrix-card-title">Métodos Cuantitativos y Cualitativos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_4', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Fundamentos de Administración</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #0D9488;">
+            <i class="fas fa-laptop-code" style="color:#0D9488; font-size:1.1rem;"></i>
+            <span>Tecnología, Análisis y Transformación Digital</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-tecnologia" onclick="selectMatrixSubject('vig_38', 'vig')">
+                <div class="matrix-card-title">E-Commerce</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_5', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Fundamentos Contables y Financieros</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #EA580C;">
+            <i class="fas fa-cogs" style="color:#EA580C; font-size:1.1rem;"></i>
+            <span>Procesos, Operaciones y Sistemas Productivos</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_17', 'vig')">
+                <div class="matrix-card-title">Administración por Procesos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Teoría Organizacional</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_6', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Fundamentos de mercadeo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_30', 'vig')">
+                <div class="matrix-card-title">Investigación de Operaciones</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
             </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 2</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_7', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Cálculo Diferencial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_44', 'vig')">
+                <div class="matrix-card-title">Gestión de la Calidad</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Administración por Procesos</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_8', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Estadística Descriptiva</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_51', 'vig')">
+                <div class="matrix-card-title">Gerencia de Producción</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Investigación de Operaciones</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_9', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés I</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-procesos_operaciones" onclick="selectMatrixSubject('vig_61', 'vig')">
+                <div class="matrix-card-title">Distribución Física y Logística</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Producción</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_10', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Microeconomía</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #7C3AED;">
+            <i class="fas fa-chart-pie" style="color:#7C3AED; font-size:1.1rem;"></i>
+            <span>Gestión Organizacional, Económica y Financiera</span>
+        </td>
+    <td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_1', 'vig')">
+                <div class="matrix-card-title">Matemáticas Básicas</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
             </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_11', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Legislación Comercial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_12', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Costos y Presupuestos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 3</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_13', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Estadística Inferencial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_14', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés II</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_15', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Macroeconomía</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_16', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Análisis Financiero</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_17', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Procesos Administrativos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_18', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Teoría Organizacional</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 4</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_19', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Competencias Investigativas</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_20', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inglés III</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_21', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Investigación de Mercados</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_22', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Matemática Financiera</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_23', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Economía Colombiana e Internacional</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_24', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Derecho Laboral y Seguridad Social</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 5</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_25', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia del Talento Humano</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_26', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Administración Financiera</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_27', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gestión de Operaciones</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_28', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Sistemas Integrados de Gestión (HSEQ)</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_29', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Negocios y Gerencia Internacional</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_30', 'prop')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Profesional I</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 6</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_31', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Big Data y Analítica de Datos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_32', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Métodos Cualitativos y Cuantitativos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_33', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia de Marketing</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_34', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Legislación Tributaria</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_35', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Modelos de emprendimiento</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_36', 'prop')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Profesional II</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 7</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_37', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Pensamiento Estratégico y Prospectivo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_38', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Formulación y Evaluación de Proyectos</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_39', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia de Ventas y Canales de Distribución</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_40', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia de Producción</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_41', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">E-comerce</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_42', 'prop')">
-                <span class="subject-area-pill area-electiva">ELECTIVA</span>
-                <h4 class="subject-card-name">Electiva Profesional III</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        </div></div>
-    <div class="malla-semestre-card">
-        <div class="malla-semestre-header">
-            <span class="malla-semestre-title"><i class="fas fa-rocket" style="color:var(--orange); margin-right:6px;"></i> SEMESTRE 8</span>
-            <span class="malla-semestre-badge">18 CR · 864h</span>
-        </div>
-        <div class="malla-semestre-body">
-    
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_43', 'prop')">
-                <span class="subject-area-pill area-transversal">TRANSVERSAL</span>
-                <h4 class="subject-card-name">Inteligencia artificial</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_44', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Laboratorio de Innovación y Emprendimiento</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_45', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Juego Gerencial (Simulación de Negocios)</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_46', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Habilidades gerenciales y liderazgo</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_47', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Gerencia de  Calidad</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (TP)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        
-            <div class="subject-interactive-card" onclick="openSubjectModal('prop_48', 'prop')">
-                <span class="subject-area-pill area-disciplinar">DISCIPLINAR</span>
-                <h4 class="subject-card-name">Proyecto de Grado</h4>
-                <div class="subject-card-meta">
-                    <span class="subject-cr-tag"><i class="fas fa-award"></i> 3 Créditos (T)</span>
-                    <span class="subject-hours-tag"><i class="fas fa-clock"></i> 48h / 96h</span>
-                </div>
-            </div>
-        </div></div></div>
-            </div>
-        </div>
-
-        <!-- SUB TAB 2.2: PERFILES Y RAPS PROPUESTO (TABLA 35 OFICIAL) -->
-        <div class="tab-panel" id="c3-p-perfiles" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Tabla 35. Matriz de Resultados de Aprendizaje del Plan Propuesto (10 RAPs)
-            </h3>
-
             
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 1</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Estrategia y Gestión Organizacional</span>
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_3', 'vig')">
+                <div class="matrix-card-title">Expresión Oral y Escrita</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
             </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Gestiona estratégica y éticamente las organizaciones, articulando los recursos humanos, financieros y tecnológicos para el logro de los objetivos institucionales.
-                </p>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_5', 'vig')">
+                <div class="matrix-card-title">Fundamentos de Administración</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
             </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Diseña e implementa estrategias organizacionales que optimizan los recursos y fortalecen la competitividad empresarial.
-                </p>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_6', 'vig')">
+                <div class="matrix-card-title">Fundamentos Contables</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
             </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos de Administración</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Procesos Administrativos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Teoría Organizacional</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Pensamiento Estratégico y Prospectivo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Juego Gerencial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
-                </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_7', 'vig')">
+                <div class="matrix-card-title">Fundamentos de Economía</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
             </div>
-        </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_10', 'vig')">
+                <div class="matrix-card-title">Teoría Organizacional</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_11', 'vig')">
+                <div class="matrix-card-title">Costos</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_13', 'vig')">
+                <div class="matrix-card-title">Microeconomía</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Economía</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_19', 'vig')">
+                <div class="matrix-card-title">Cultura Emprendedora</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_20', 'vig')">
+                <div class="matrix-card-title">Macroeconomía</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Microeconomía</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_27', 'vig')">
+                <div class="matrix-card-title">Entorno Económico Colombiano e Internacional</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Macroeconomía</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_29', 'vig')">
+                <div class="matrix-card-title">Matemática Financiera</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Costos</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_31', 'vig')">
+                <div class="matrix-card-title">Fundamentos de Mercadeo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_32', 'vig')">
+                <div class="matrix-card-title">Modelos de Desarrollo Económico</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Entorno Económico</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_37', 'vig')">
+                <div class="matrix-card-title">Gerencia de Mercadeo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_45', 'vig')">
+                <div class="matrix-card-title">Presupuesto</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Costos</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_47', 'vig')">
+                <div class="matrix-card-title">Proyecto Empresarial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Cultura Emprendedora</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_49', 'vig')">
+                <div class="matrix-card-title">Sistema de Información Gerencial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Tecnología e Innovación</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_53', 'vig')">
+                <div class="matrix-card-title">Gerencia Financiera</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Matemática Financiera</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_56', 'vig')">
+                <div class="matrix-card-title">Planeación y Prospectiva</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Habilidades Gerenciales</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-gestion_financiera" onclick="selectMatrixSubject('vig_57', 'vig')">
+                <div class="matrix-card-title">Gerencia del Servicio</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Mercadeo</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #DB2777;">
+            <i class="fas fa-users-cog" style="color:#DB2777; font-size:1.1rem;"></i>
+            <span>Gestión del Talento Humano y Liderazgo</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_25', 'vig')">
+                <div class="matrix-card-title">Liderazgo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_33', 'vig')">
+                <div class="matrix-card-title">Administración de Salarios</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Laboral</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_46', 'vig')">
+                <div class="matrix-card-title">Gerencia de Talento Humano</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Administración de Salarios</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_50', 'vig')">
+                <div class="matrix-card-title">Habilidades Gerenciales</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Liderazgo</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-talento_liderazgo" onclick="selectMatrixSubject('vig_54', 'vig')">
+                <div class="matrix-card-title">Deontología</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell"></td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #16A34A;">
+            <i class="fas fa-lightbulb" style="color:#16A34A; font-size:1.1rem;"></i>
+            <span>Investigación, Innovación y Emprendimiento</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_12', 'vig')">
+                <div class="matrix-card-title">Metodología de la Investigación</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_26', 'vig')">
+                <div class="matrix-card-title">Creatividad e Innovación</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Cultura Emprendedora</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_39', 'vig')">
+                <div class="matrix-card-title">Tecnología e Innovación</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Creatividad e Innovación</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_52', 'vig')">
+                <div class="matrix-card-title">Investigación de Mercados</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Mercadeo</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_55', 'vig')">
+                <div class="matrix-card-title">Proyecto de Grado I</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Metodología de la Investigación</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_58', 'vig')">
+                <div class="matrix-card-title">Evaluación de Proyectos de Inversión</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia Financiera</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-investigacion_innovacion" onclick="selectMatrixSubject('vig_62', 'vig')">
+                <div class="matrix-card-title">Proyecto de Grado II</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Proyecto de Grado I</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #DC2626;">
+            <i class="fas fa-globe" style="color:#DC2626; font-size:1.1rem;"></i>
+            <span>Formación Humanística, Ética y Bilingüismo</span>
+        </td>
+    <td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_2', 'vig')">
+                <div class="matrix-card-title">Constitución y Democracia</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_4', 'vig')">
+                <div class="matrix-card-title">Inglés I</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_9', 'vig')">
+                <div class="matrix-card-title">Legislación Laboral</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_14', 'vig')">
+                <div class="matrix-card-title">Inglés II</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés I</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_16', 'vig')">
+                <div class="matrix-card-title">Derecho Administrativo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Constitución y Democracia</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_21', 'vig')">
+                <div class="matrix-card-title">Inglés III</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés II</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_23', 'vig')">
+                <div class="matrix-card-title">Legislación Tributaria</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_28', 'vig')">
+                <div class="matrix-card-title">Inglés IV</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés III</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_35', 'vig')">
+                <div class="matrix-card-title">Inglés V</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés IV</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_36', 'vig')">
+                <div class="matrix-card-title">Legislación Comercial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_42', 'vig')">
+                <div class="matrix-card-title">Inglés VI</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés V</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_43', 'vig')">
+                <div class="matrix-card-title">Fundamentos de Administración Pública</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Derecho Administrativo</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_59', 'vig')">
+                <div class="matrix-card-title">Responsabilidad Social Empresarial</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Deontología</div>
+            </div>
+            
+            <div class="malla-matrix-subject-card comp-border-humanistica_bilinguismo" onclick="selectMatrixSubject('vig_60', 'vig')">
+                <div class="matrix-card-title">Gobierno Corporativo</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Comercial</div>
+            </div>
+            </td></tr>
+    <tr>
+        <td class="matrix-comp-header" style="border-left:4px solid #D97706;">
+            <i class="fas fa-cubes" style="color:#D97706; font-size:1.1rem;"></i>
+            <span>Componente Electivo (Profundización / Humanística)</span>
+        </td>
+    <td class="matrix-cell"></td><td class="matrix-cell"></td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_18', 'vig')">
+                <div class="matrix-card-title">Electiva Profundización I</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_24', 'vig')">
+                <div class="matrix-card-title">Electiva Humanística I</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Ninguno</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_34', 'vig')">
+                <div class="matrix-card-title">Electiva Profundización II</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización I</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_41', 'vig')">
+                <div class="matrix-card-title">Electiva Humanística II</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Humanística I</div>
+            </div>
+            </td><td class="matrix-cell">
+            <div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('vig_48', 'vig')">
+                <div class="matrix-card-title">Electiva Profundización III</div>
+                <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización II</div>
+            </div>
+            </td><td class="matrix-cell"></td><td class="matrix-cell"></td></tr>
+            </tbody>
+        </table>
     </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 2</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Análisis Financiero y Sostenibilidad Económica</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Analiza información financiera, económica y contable para la toma de decisiones en contextos locales y globales.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Análisis Financiero</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Administración Financiera</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Costos y Presupuestos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Matemática Financiera</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Legislación Tributaria</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 3</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Liderazgo y Gestión Humana</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Dirige el talento humano con liderazgo participativo, promoviendo la innovación, la cultura organizacional y el bienestar laboral.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Diseña políticas y estrategias de gestión humana que potencian la productividad y el desarrollo del personal.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia del Talento Humano</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Habilidades Gerenciales y Liderazgo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Cátedra de la Paz y Resolución de Conflictos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Comunicación Oral y Escrita</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 4</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Emprendimiento e Innovación Sostenible</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Formula y gestiona proyectos empresariales innovadores, sostenibles y socialmente responsables.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Evalúa y ejecuta proyectos de emprendimiento y sostenibilidad que generen impacto económico y social.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (5 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Modelos de Emprendimiento</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Laboratorio de Innovación y Emprendimiento</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Formulación y Evaluación de Proyectos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Economía Colombiana e Internacional</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 5</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Mercadeo Estratégico y Canales Digitales</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Desarrolla estrategias de marketing y comunicación enfocadas en la satisfacción del cliente, la competitividad y la sostenibilidad.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (6 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Fundamentos de Mercadeo</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Marketing</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Investigación de Mercados</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Ventas y Canales de Distribución</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> E-Commerce</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Marketing Verde (Electiva)</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 6</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Analítica de Datos e Inteligencia Artificial</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Aplica herramientas tecnológicas, digitales y analíticas para la optimización de procesos y la toma de decisiones estratégicas.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Integra tecnologías de información, analítica de datos e inteligencia artificial en la gestión administrativa.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Big Data y Analítica de Datos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Inteligencia Artificial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Transformación Digital (Electiva)</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 7</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Sostenibilidad y Economía Circular</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Promueve la sostenibilidad y la responsabilidad social como ejes de la gestión empresarial.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Implementa prácticas de sostenibilidad, economía circular y responsabilidad social en la organización.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Desarrollo Sostenible y Economía Circular (Electiva)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de la Calidad</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Ética y Gobernanza Corporativa (Electiva)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Finanzas Sostenibles (Electiva)</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 8</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Gestión de Operaciones y Calidad</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Gestiona procesos operativos y de calidad con enfoque de mejora continua y eficiencia organizacional.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Diseña e implementa sistemas integrados de gestión orientados a la calidad, productividad y sostenibilidad.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gestión de Operaciones</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de Producción</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Gerencia de la Calidad</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 9</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Investigación Aplicada e Innovación</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Aplica la investigación y el análisis crítico para la solución de problemas organizacionales y el mejoramiento continuo.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Diseña e implementa proyectos de investigación aplicada que aporten a la innovación y competitividad empresarial.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (3 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Competencias Investigativas</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Métodos Cualitativos y Cuantitativos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Proyecto de Grado</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="rap-card-item">
-        <div class="rap-card-header">
-            <div>
-                <span class="rap-card-num">RAP 10</span>
-                <span style="font-family:var(--font-heading); font-weight:800; font-size:1rem; margin-left:10px;">Ética, Gobernanza y Responsabilidad Social</span>
-            </div>
-            <i class="fas fa-star" style="color:var(--orange); font-size:1.2rem;"></i>
-        </div>
-        <div class="rap-card-body">
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-user-graduate"></i> Competencia del Egresado (Plan Propuesto)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#F8FAFC; padding:12px; border-radius:8px; border-left:3px solid #0284C7; margin:0;">
-                    Actúa con ética, responsabilidad y compromiso social en el ejercicio profesional.
-                </p>
-            </div>
-            <div style="margin-bottom:14px;">
-                <div class="rap-section-label"><i class="fas fa-bullseye"></i> Resultado de Aprendizaje del Programa (RAP)</div>
-                <p style="font-size:0.85rem; color:var(--carbon); background:#FFFDF9; padding:12px; border-radius:8px; border-left:3px solid var(--orange); margin:0;">
-                    Toma decisiones con base en principios éticos, legales y de responsabilidad social empresarial.
-                </p>
-            </div>
-            <div>
-                <div class="rap-section-label"><i class="fas fa-layer-group"></i> Asignaturas Asociadas del Plan Propuesto (4 asignaturas)</div>
-                <div class="subject-chip-grid">
-                    <span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Cátedra de la Paz y Resolución de Conflictos</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Legislación Comercial</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Derecho Laboral y Seguridad Social</span><span class="subject-chip-item"><i class="fas fa-rocket" style="color:var(--orange);"></i> Electiva de Diversidad e Inclusión</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-        </div>
+</div>
 
-        <!-- SUB TAB 2.3: FLEXIBILIDAD PROPUESTA (4 DIMENSIONES) -->
-        <div class="tab-panel" id="c3-p-flex" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Sustentación de la Flexibilidad Curricular en el Plan Propuesto (4 Dimensiones)
-            </h3>
 
-            <div class="grid-2" style="margin-bottom:20px;">
-                <div class="card" style="border-top:4px solid var(--orange);">
-                    <h4><i class="fas fa-cubes" style="color:var(--orange);"></i> 1. Flexibilidad Curricular y Electividad de Profundización</h4>
-                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        El programa dispone de un banco de electivas en semestres 5, 6 y 7 (9 créditos de 3cr c/u), estructurado en líneas avanzadas de actualización tecnológica:
-                    </p>
-                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Línea de Transformación Digital & IA:</strong> Inteligencia Artificial Aplicada a Negocios, Analítica Avanzada, Marketing Digital.</li>
-                        <li>• <strong>Línea de Sostenibilidad & Economía Circular:</strong> Finanzas Sostenibles, Gerencia Ambiental y Economía Circular.</li>
-                        <li>• <strong>Línea de Gobernanza & Ética:</strong> Ética y Gobernanza Corporativa, Gestión de la Diversidad e Inclusión.</li>
-                    </ul>
-                </div>
-
-                <div class="card" style="border-top:4px solid var(--carbon);">
-                    <h4><i class="fas fa-chalkboard-teacher" style="color:var(--carbon);"></i> 2. Flexibilidad Pedagógica y Didáctica Mediada</h4>
-                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Estrategias activas adaptadas a las necesidades del estudiante profesional:
-                    </p>
-                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Aulas Virtuales Interactivas:</strong> Campus LMS Moodle intuitivo con laboratorios virtuales y simuladores empresariales 24/7.</li>
-                        <li>• <strong>Acceso Asincrónico y Sincrónico:</strong> Flexibilidad horaria para trabajadores y estudiantes de regiones alejadas.</li>
-                        <li>• <strong>Aprendizaje Basado en Retos:</strong> Casos reales de empresas de Tocancipá y Sabana Centro.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="grid-2">
-                <div class="card" style="border-top:4px solid #0284C7;">
-                    <h4><i class="fas fa-random" style="color:#0284C7;"></i> 3. Flexibilidad Administrativa y Transitabilidad en Registro Único</h4>
-                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Mecanismos institucionales de movilidad interna:
-                    </p>
-                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Transitabilidad de Modalidad:</strong> Estudiantes de modalidad Presencial pueden cursar asignaturas virtuales y viceversa dentro del Registro Único.</li>
-                        <li>• <strong>Movilidad Inter-semestral:</strong> Sistema simplificado de requisitos para avanzar al ritmo del estudiante.</li>
-                        <li>• <strong>Homologaciones y Transferencias:</strong> Régimen automatizado de reconocimiento de saberes y transferencia de créditos.</li>
-                    </ul>
-                </div>
-
-                <div class="card" style="border-top:4px solid #059669;">
-                    <h4><i class="fas fa-globe-americas" style="color:#059669;"></i> 4. Flexibilidad e Internacionalización del Currículo</h4>
-                    <p style="font-size:0.84rem; color:var(--gray-text); line-height:1.6;">
-                        Dimensión internacional integrada en la experiencia formativa:
-                    </p>
-                    <ul style="font-size:0.82rem; color:var(--carbon); padding-left:16px; margin-top:6px; line-height:1.6;">
-                        <li>• <strong>Clases Espejo Internacionales:</strong> Convenios activos con universidades de México, Perú y Chile.</li>
-                        <li>• <strong>Plan de Bilingüismo (Inglés I, II y III):</strong> Alineado al estándar MCER (Nivel B1) con contenidos de negocios.</li>
-                        <li>• <strong>Conferencias Magistrales Internacionales:</strong> Docentes y consultores internacionales invitados a aulas virtuales.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- SUB TAB 2.4: EVALUACIÓN PROPUESTA -->
-        <div class="tab-panel" id="c3-p-eval" style="display:none;">
-            <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
-                Sistema de Evaluación de Resultados de Aprendizaje (Decreto 1330 de 2019)
-            </h3>
-
-            <div class="card-accent" style="margin-bottom:20px;">
-                <h4><i class="fas fa-balance-scale"></i> Marco Normativo e Integración en la CETO</h4>
-                <p style="font-size:0.85rem; color:rgba(255,255,255,0.85); margin-top:6px; line-height:1.6;">
-                    El programa asume los Resultados de Aprendizaje (RA) en cumplimiento del Decreto 1330 de 2019 y los acuerdos del Men, estructurando el aprendizaje como la manifestación verificable de lo que el estudiante conoce, comprende y puede ejecutar al culminar su formación.
-                </p>
-            </div>
-
-            <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:20px 0 12px;">
-                <i class="fas fa-sitemap" style="color:var(--orange); margin-right:6px;"></i> Fundamento en Taxonomía de Bloom (Revisada) y los 3 Planos del Aprendizaje
-            </h4>
-            <div class="grid-3" style="margin-bottom:24px;">
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-brain"></i> 1. Plano Cognitivo</h4>
-                    <p style="font-size:0.82rem;">Niveles: Conocimiento, Comprensión, Aplicación, Análisis, Síntesis y Evaluación de modelos empresariales.</p>
-                </div>
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-heart"></i> 2. Plano Subjetivo (Afectivo)</h4>
-                    <p style="font-size:0.82rem;">Niveles: Disposición, Reacción, Valoración ética, Organización de valores y Caracterización del perfil profesional.</p>
-                </div>
-                <div class="card">
-                    <h4 style="color:var(--orange-dark);"><i class="fas fa-hands"></i> 3. Plano Psicomotor</h4>
-                    <p style="font-size:0.82rem;">Niveles: Imitación, Manipulación de software/LMS, Precisión, Articulación y Naturalización de habilidades gerenciales.</p>
-                </div>
-            </div>
+    <!-- TRACEABILITY DETAIL PANEL VIGENTE -->
+    <div class="matrix-detail-panel" id="c3-vigente-matrix-detail-panel">
+        <div style="text-align:center; padding:30px 20px; color:var(--gray-text);">
+            <i class="fas fa-hand-pointer" style="font-size:2.5rem; color:var(--orange); margin-bottom:12px;"></i>
+            <h4 style="font-size:1.1rem; color:var(--carbon); font-weight:800; font-family:var(--font-heading);">Seleccione una Asignatura de la Matriz Vigente</h4>
+            <p style="font-size:0.85rem; max-width:600px; margin:6px auto 0;">Haga clic en cualquier materia de la matriz para desplegar la información completa de la asignatura.</p>
         </div>
     </div>
 </div>
@@ -5666,7 +4797,5 @@ window.SECTIONS['c3'] = `
 `;
 
 window.c3Init = function() {
-    window.switchTab('c3MainTabsGroup', 'c3-main-vigente');
-    window.switchTab('c3VigenteSubTabs', 'c3-v-malla');
-    window.switchTab('c3PropuestoSubTabs', 'c3-p-malla');
+    window.switchTab('c3MainTabsGroup', 'c3-main-propuesto');
 };
