@@ -6171,363 +6171,488 @@ window.SECTIONS.c3 = `
 
 <!-- MAIN TAB 3: COMPARACIÓN Y JUSTIFICACIÓN -->
 <div class="tab-panel" id="c3-main-comparacion" style="display:none;">
-    <h3 style="font-family:var(--font-heading); font-size:1.25rem; font-weight:800; color:var(--carbon); margin-bottom:6px;">
-        <i class="fas fa-balance-scale" style="color:var(--orange);"></i> Cuadro Comparativo, Asignaturas Eliminadas, Nuevas y Tabla de Equivalencias (Decreto 1330)
-    </h3>
-    <p style="color:var(--gray-text); font-size:0.88rem; margin-bottom:20px;">
-        Sustentación técnica y académica entregada a los Pares Académicos del Ministerio de Educación Nacional (MEN) para la Renovación del Registro Calificado Único de Administración de Empresas.
-    </p>
+<style>
+/* ===== PREMIUM COMPARISON DASHBOARD STYLES ===== */
+.comp-dash-hero {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+    border-radius: 16px; padding: 32px; margin-bottom: 28px; position: relative; overflow: hidden;
+    border: 1px solid rgba(243,146,0,0.2);
+}
+.comp-dash-hero::before {
+    content: ''; position: absolute; top: -50%; right: -20%; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(243,146,0,0.08) 0%, transparent 70%); border-radius: 50%;
+}
+.comp-dash-hero::after {
+    content: ''; position: absolute; bottom: -30%; left: -10%; width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(2,132,199,0.06) 0%, transparent 70%); border-radius: 50%;
+}
+.comp-dash-hero h3 { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #F8FAFC; margin: 0 0 6px 0; position: relative; z-index: 1; }
+.comp-dash-hero p { color: #94A3B8; font-size: 0.88rem; margin: 0; max-width: 750px; line-height: 1.5; position: relative; z-index: 1; }
+.comp-dash-hero .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(243,146,0,0.15); border: 1px solid rgba(243,146,0,0.3); color: #F39200; padding: 5px 14px; border-radius: 20px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; position: relative; z-index: 1; }
 
-    <!-- RESUMEN EJECUTIVO DE INDICADORES -->
-    <div class="card" style="margin-bottom:28px; border-top:4px solid var(--orange);">
-        <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:14px;">
-            <i class="fas fa-chart-line" style="color:var(--orange);"></i> 1. Matriz de Indicadores Curriculares Comparativos
-        </h4>
-        <table class="tbl">
+/* KPI ROW */
+.comp-kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin-bottom: 28px; }
+.comp-kpi-card {
+    background: #FFFFFF; border-radius: 14px; padding: 20px 18px; text-align: center; position: relative; overflow: hidden;
+    border: 1px solid #E2E8F0; box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.comp-kpi-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.comp-kpi-card .kpi-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 1.1rem; }
+.comp-kpi-card .kpi-value { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; line-height: 1; margin-bottom: 4px; }
+.comp-kpi-card .kpi-label { font-size: 0.72rem; font-weight: 600; color: #64748B; text-transform: uppercase; letter-spacing: 0.3px; }
+.comp-kpi-card .kpi-delta { font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 10px; display: inline-block; margin-top: 6px; }
+.comp-kpi-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; border-radius: 14px 14px 0 0; }
+.kpi-orange::after { background: linear-gradient(90deg, #F39200, #FBA94C); }
+.kpi-red::after { background: linear-gradient(90deg, #DC2626, #F87171); }
+.kpi-blue::after { background: linear-gradient(90deg, #0284C7, #38BDF8); }
+.kpi-green::after { background: linear-gradient(90deg, #16A34A, #4ADE80); }
+.kpi-purple::after { background: linear-gradient(90deg, #7C3AED, #A78BFA); }
+
+/* SECTION HEADERS */
+.comp-section { margin-bottom: 28px; }
+.comp-section-header {
+    display: flex; align-items: center; gap: 14px; padding: 18px 22px; border-radius: 14px 14px 0 0;
+    position: relative; overflow: hidden;
+}
+.comp-section-header .section-num {
+    width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-heading); font-weight: 900; font-size: 1rem; color: #fff; flex-shrink: 0;
+}
+.comp-section-header .section-info h4 { font-family: var(--font-heading); font-size: 1.05rem; font-weight: 800; margin: 0; }
+.comp-section-header .section-info p { font-size: 0.78rem; margin: 2px 0 0 0; opacity: 0.7; }
+.comp-section-header .section-count {
+    margin-left: auto; padding: 5px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 800; flex-shrink: 0;
+}
+
+/* INTERACTIVE ACCORDION CARDS */
+.comp-accordion { border: 1px solid #E2E8F0; border-top: none; border-radius: 0 0 14px 14px; overflow: hidden; background: #fff; }
+.comp-acc-item { border-bottom: 1px solid #F1F5F9; }
+.comp-acc-item:last-child { border-bottom: none; }
+.comp-acc-trigger {
+    width: 100%; display: flex; align-items: center; gap: 12px; padding: 14px 20px; background: transparent;
+    border: none; cursor: pointer; text-align: left; transition: background 0.2s ease; font-family: inherit;
+}
+.comp-acc-trigger:hover { background: #F8FAFC; }
+.comp-acc-trigger .acc-idx { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 800; color: #fff; flex-shrink: 0; }
+.comp-acc-trigger .acc-name { font-size: 0.88rem; font-weight: 700; color: var(--carbon); flex: 1; }
+.comp-acc-trigger .acc-sem { font-size: 0.72rem; font-weight: 700; color: #64748B; background: #F1F5F9; padding: 3px 10px; border-radius: 12px; }
+.comp-acc-trigger .acc-area { font-size: 0.68rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; }
+.comp-acc-trigger .acc-chevron { font-size: 0.7rem; color: #94A3B8; transition: transform 0.3s ease; }
+.comp-acc-item.open .acc-chevron { transform: rotate(180deg); }
+.comp-acc-detail {
+    max-height: 0; overflow: hidden; transition: max-height 0.35s ease;
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+}
+.comp-acc-item.open .comp-acc-detail { max-height: 200px; }
+.comp-acc-detail-inner { padding: 14px 20px 14px 60px; font-size: 0.84rem; color: #475569; line-height: 1.6; border-left: 3px solid; margin-left: 20px; }
+
+/* FLOW MAP FOR EQUIVALENCES */
+.comp-flow-grid { display: grid; gap: 6px; }
+.comp-flow-row {
+    display: grid; grid-template-columns: 1fr 36px 1fr 90px; gap: 8px; align-items: center;
+    padding: 10px 16px; border-radius: 10px; background: #fff; border: 1px solid #E2E8F0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.comp-flow-row:hover { transform: translateX(4px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.comp-flow-row:nth-child(even) { background: #F8FAFC; }
+.comp-flow-from { font-size: 0.82rem; font-weight: 600; color: #475569; display: flex; align-items: center; gap: 8px; }
+.comp-flow-from .flow-sem { font-size: 0.65rem; font-weight: 800; color: #fff; background: #64748B; padding: 2px 7px; border-radius: 6px; flex-shrink: 0; }
+.comp-flow-arrow { display: flex; align-items: center; justify-content: center; color: var(--orange); font-size: 0.9rem; }
+.comp-flow-to { font-size: 0.82rem; font-weight: 700; color: #0F172A; display: flex; align-items: center; gap: 8px; }
+.comp-flow-to .flow-sem { font-size: 0.65rem; font-weight: 800; color: #fff; background: #0284C7; padding: 2px 7px; border-radius: 6px; flex-shrink: 0; }
+.comp-flow-badge { font-size: 0.62rem; font-weight: 800; padding: 4px 8px; border-radius: 8px; text-align: center; line-height: 1.2; }
+.badge-direct { background: #DCFCE7; color: #15803D; }
+.badge-content { background: #DBEAFE; color: #1D4ED8; }
+.badge-credit { background: #E0E7FF; color: #4338CA; }
+.badge-area { background: #EDE9FE; color: #6D28D9; }
+.badge-fusion { background: #FEF3C7; color: #B45309; }
+.badge-unify { background: #FFE4E6; color: #BE123C; }
+
+/* COMPARISON MATRIX TABLE (PREMIUM) */
+.comp-matrix-premium { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden; border: 1px solid #E2E8F0; }
+.comp-matrix-premium thead th {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: #F8FAFC;
+    padding: 14px 16px; font-family: var(--font-heading); font-weight: 700; font-size: 0.82rem;
+    text-align: left; border-bottom: 2px solid var(--orange);
+}
+.comp-matrix-premium tbody td { padding: 12px 16px; font-size: 0.84rem; color: #334155; border-bottom: 1px solid #F1F5F9; vertical-align: middle; }
+.comp-matrix-premium tbody tr { transition: background 0.15s ease; }
+.comp-matrix-premium tbody tr:hover { background: #FFF7ED; }
+.comp-matrix-premium tbody tr:nth-child(even) { background: #F8FAFC; }
+.comp-matrix-premium tbody tr:nth-child(even):hover { background: #FFF7ED; }
+.comp-matrix-premium .metric-label { font-weight: 700; color: #0F172A; display: flex; align-items: center; gap: 8px; }
+.comp-matrix-premium .metric-label i { color: var(--orange); font-size: 0.9rem; width: 20px; text-align: center; }
+.comp-matrix-premium .metric-vigente { color: #64748B; font-weight: 600; }
+.comp-matrix-premium .metric-propuesto { color: var(--orange); font-weight: 800; }
+.comp-matrix-premium .metric-impact { font-size: 0.82rem; color: #475569; }
+.comp-matrix-premium .metric-impact strong { color: #059669; }
+
+/* SUB-TABS inside comparison */
+.comp-sub-tabs { display: flex; gap: 4px; background: #F1F5F9; padding: 4px; border-radius: 10px; margin-bottom: 20px; }
+.comp-sub-tab {
+    flex: 1; padding: 10px 12px; border-radius: 8px; border: none; cursor: pointer;
+    font-family: inherit; font-size: 0.78rem; font-weight: 700; color: #64748B;
+    background: transparent; transition: all 0.25s ease; display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+.comp-sub-tab:hover { background: rgba(255,255,255,0.5); color: #334155; }
+.comp-sub-tab.active { background: #fff; color: var(--carbon); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.comp-sub-panel { display: none; }
+.comp-sub-panel.active { display: block; }
+
+/* VANGUARD CARDS */
+.comp-vanguard-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.comp-vanguard-card {
+    background: #fff; border-radius: 14px; border: 1px solid #E2E8F0; overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease; position: relative;
+}
+.comp-vanguard-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+.comp-vanguard-card .vc-header { padding: 16px 18px 12px; position: relative; }
+.comp-vanguard-card .vc-header::after { content: ''; position: absolute; bottom: 0; left: 18px; right: 18px; height: 1px; background: #F1F5F9; }
+.comp-vanguard-card .vc-icon-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.comp-vanguard-card .vc-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; }
+.comp-vanguard-card .vc-meta { display: flex; gap: 6px; }
+.comp-vanguard-card .vc-meta span { font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 8px; }
+.comp-vanguard-card .vc-name { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 800; color: #0F172A; }
+.comp-vanguard-card .vc-body { padding: 12px 18px 16px; }
+.comp-vanguard-card .vc-body p { font-size: 0.8rem; color: #475569; line-height: 1.5; margin: 0; }
+.comp-vanguard-card .vc-body .vc-prereq { font-size: 0.72rem; color: #64748B; margin-top: 8px; display: flex; align-items: center; gap: 4px; }
+.comp-vanguard-card .vc-tag { position: absolute; top: 14px; right: 14px; font-size: 0.6rem; font-weight: 800; padding: 3px 8px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+.vc-tag-vanguard { background: linear-gradient(135deg, #0284C7, #0EA5E9); color: #fff; }
+.vc-tag-disruptive { background: linear-gradient(135deg, #7C3AED, #A78BFA); color: #fff; }
+.vc-tag-lab { background: linear-gradient(135deg, #059669, #34D399); color: #fff; }
+.vc-tag-core { background: #F1F5F9; color: #475569; }
+
+/* SEARCH/FILTER BAR */
+.comp-filter-bar { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; }
+.comp-filter-bar input {
+    flex: 1; padding: 10px 16px; border-radius: 10px; border: 1px solid #E2E8F0; font-family: inherit;
+    font-size: 0.84rem; background: #F8FAFC; transition: border-color 0.2s ease; outline: none;
+}
+.comp-filter-bar input:focus { border-color: var(--orange); background: #fff; }
+.comp-filter-bar .filter-count { font-size: 0.75rem; font-weight: 700; color: #64748B; white-space: nowrap; }
+
+/* ANIMATE ON SCROLL */
+@keyframes comp-fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.comp-animate { animation: comp-fade-up 0.5s ease forwards; }
+</style>
+
+<!-- HERO HEADER -->
+<div class="comp-dash-hero">
+    <div class="hero-badge"><i class="fas fa-gavel"></i> DECRETO 1330 / RESOLUCIÓN 021795 / ACUERDOS CESU</div>
+    <h3><i class="fas fa-balance-scale" style="color:#F39200; margin-right:8px;"></i>Análisis Comparativo y Sustentación de Cambios Curriculares</h3>
+    <p>Sustentación técnica y académica entregada a los Pares Académicos del Ministerio de Educación Nacional (MEN) para la Renovación del Registro Calificado Único del programa de Administración de Empresas — CETO, Tocancipá.</p>
+</div>
+
+    <!-- KPI DASHBOARD ROW -->
+    <div class="comp-kpi-row comp-animate">
+        <div class="comp-kpi-card kpi-orange">
+            <div class="kpi-icon" style="background:#FFF7ED; color:#F39200;"><i class="fas fa-exchange-alt"></i></div>
+            <div class="kpi-value" style="color:#F39200;">-14</div>
+            <div class="kpi-label">Créditos Reducidos</div>
+            <div class="kpi-delta" style="background:#FFF7ED; color:#C2410C;">158 → 144 cr</div>
+        </div>
+        <div class="comp-kpi-card kpi-red">
+            <div class="kpi-icon" style="background:#FEF2F2; color:#DC2626;"><i class="fas fa-minus-circle"></i></div>
+            <div class="kpi-value" style="color:#DC2626;">28</div>
+            <div class="kpi-label">Asignaturas Reestructuradas</div>
+            <div class="kpi-delta" style="background:#FEF2F2; color:#991B1B;">Eliminadas / Fusionadas</div>
+        </div>
+        <div class="comp-kpi-card kpi-blue">
+            <div class="kpi-icon" style="background:#EFF6FF; color:#0284C7;"><i class="fas fa-plus-circle"></i></div>
+            <div class="kpi-value" style="color:#0284C7;">15</div>
+            <div class="kpi-label">Asignaturas Nuevas</div>
+            <div class="kpi-delta" style="background:#EFF6FF; color:#0369A1;">+31.25% Innovación</div>
+        </div>
+        <div class="comp-kpi-card kpi-green">
+            <div class="kpi-icon" style="background:#F0FDF4; color:#16A34A;"><i class="fas fa-link"></i></div>
+            <div class="kpi-value" style="color:#16A34A;">38</div>
+            <div class="kpi-label">Equivalencias Registradas</div>
+            <div class="kpi-delta" style="background:#F0FDF4; color:#15803D;">Homologación Completa</div>
+        </div>
+        <div class="comp-kpi-card kpi-purple">
+            <div class="kpi-icon" style="background:#F5F3FF; color:#7C3AED;"><i class="fas fa-microchip"></i></div>
+            <div class="kpi-value" style="color:#7C3AED;">4</div>
+            <div class="kpi-label">Asignaturas de Vanguardia</div>
+            <div class="kpi-delta" style="background:#F5F3FF; color:#6D28D9;">IA, Big Data, E-Commerce</div>
+        </div>
+    </div>
+
+    <!-- SUB-TAB NAVIGATION -->
+    <div class="comp-sub-tabs" id="compSubTabsGroup">
+        <button class="comp-sub-tab active" data-comptab="comp-panel-indicadores" onclick="window.switchCompTab('comp-panel-indicadores')">
+            <i class="fas fa-chart-bar"></i> Indicadores
+        </button>
+        <button class="comp-sub-tab" data-comptab="comp-panel-eliminadas" onclick="window.switchCompTab('comp-panel-eliminadas')">
+            <i class="fas fa-trash-alt"></i> Reestructuradas
+        </button>
+        <button class="comp-sub-tab" data-comptab="comp-panel-nuevas" onclick="window.switchCompTab('comp-panel-nuevas')">
+            <i class="fas fa-plus-circle"></i> Nuevas
+        </button>
+        <button class="comp-sub-tab" data-comptab="comp-panel-equivalencias" onclick="window.switchCompTab('comp-panel-equivalencias')">
+            <i class="fas fa-project-diagram"></i> Equivalencias
+        </button>
+    </div>
+
+    <!-- PANEL 1: INDICADORES COMPARATIVOS -->
+    <div class="comp-sub-panel active" id="comp-panel-indicadores">
+        <table class="comp-matrix-premium">
             <thead>
                 <tr>
-                    <th>Indicador Curricular</th>
-                    <th>Plan Vigente SACES</th>
-                    <th>Plan Propuesto (Rediseño)</th>
-                    <th>Impacto / Justificación Técnica MEN</th>
+                    <th style="width:250px;"><i class="fas fa-clipboard-list" style="margin-right:6px;"></i>Indicador Curricular</th>
+                    <th style="width:160px;"><i class="fas fa-history" style="margin-right:6px;"></i>Plan Vigente SACES</th>
+                    <th style="width:180px;"><i class="fas fa-rocket" style="margin-right:6px; color:#F39200;"></i>Plan Propuesto</th>
+                    <th><i class="fas fa-check-double" style="margin-right:6px;"></i>Impacto / Justificación MEN</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="row-accent">
-                    <td class="lb">Duración (Semestres)</td>
-                    <td>9 Semestres</td>
-                    <td><strong style="color:var(--orange);">8 Semestres</strong></td>
-                    <td><span style="color:#059669; font-weight:700;">Optimización de la ruta de titulación</span> adaptada al estándar nacional e internacional de 4 años.</td>
+                <tr>
+                    <td><div class="metric-label"><i class="fas fa-calendar-alt"></i>Duración (Semestres)</div></td>
+                    <td class="metric-vigente">9 Semestres</td>
+                    <td class="metric-propuesto">8 Semestres</td>
+                    <td class="metric-impact"><strong>Optimización de la ruta de titulación</strong> adaptada al estándar nacional e internacional de 4 años.</td>
                 </tr>
                 <tr>
-                    <td class="lb">Créditos Académicos</td>
-                    <td>158 Créditos</td>
-                    <td><strong style="color:var(--orange);">144 Créditos</strong></td>
-                    <td>Reducción de 14 créditos (-8.86%) eliminando redundancias temáticas sin perder densidad conceptual.</td>
-                </tr>
-                <tr class="row-accent">
-                    <td class="lb">Número de Asignaturas</td>
-                    <td>58 / 62 Asignaturas</td>
-                    <td><strong style="color:var(--orange);">48 Asignaturas</strong></td>
-                    <td>Asignaturas unificadas a 3 créditos cada una (144h totales por curso), garantizando mayor profundidad.</td>
+                    <td><div class="metric-label"><i class="fas fa-graduation-cap"></i>Créditos Académicos</div></td>
+                    <td class="metric-vigente">158 Créditos</td>
+                    <td class="metric-propuesto">144 Créditos</td>
+                    <td class="metric-impact">Reducción de <strong>14 créditos (-8.86%)</strong> eliminando redundancias sin perder densidad conceptual.</td>
                 </tr>
                 <tr>
-                    <td class="lb">Horas Totales del Plan</td>
-                    <td>7.584 Horas</td>
-                    <td><strong style="color:var(--orange);">6.912 Horas</strong></td>
-                    <td>Ruta más ágil y eficiente centrada en competencias y Resultados de Aprendizaje del Programa (RAP).</td>
-                </tr>
-                <tr class="row-accent">
-                    <td class="lb">Transformación Digital e IA</td>
-                    <td>Básica / Tradicional</td>
-                    <td><strong style="color:#0284C7;">Big Data, IA, E-Commerce, Lab. Innovación</strong></td>
-                    <td>Incorporación de 15 asignaturas de vanguardia tecnológica en los semestres 5, 6, 7 y 8.</td>
+                    <td><div class="metric-label"><i class="fas fa-book-open"></i>Número de Asignaturas</div></td>
+                    <td class="metric-vigente">58 / 62 Asignaturas</td>
+                    <td class="metric-propuesto">48 Asignaturas</td>
+                    <td class="metric-impact">Unificación a <strong>3 créditos c/u</strong> (144h totales por curso), mayor profundidad.</td>
                 </tr>
                 <tr>
-                    <td class="lb">Ratio Presencial (Acompañamiento)</td>
-                    <td>36h Directas / 108h Indep.</td>
-                    <td><strong style="color:#059669;">48h Directas / 96h Indep. (1:2)</strong></td>
-                    <td><span style="color:#0284C7; font-weight:700;">Cumplimiento estricto MEN:</span> 1 hora acompañada por 2 horas independientes.</td>
+                    <td><div class="metric-label"><i class="fas fa-clock"></i>Horas Totales</div></td>
+                    <td class="metric-vigente">7.584 Horas</td>
+                    <td class="metric-propuesto">6.912 Horas</td>
+                    <td class="metric-impact">Ruta más ágil centrada en <strong>competencias y RAPs</strong>.</td>
                 </tr>
-                <tr class="row-accent">
-                    <td class="lb">Ratio Virtual (Mediación)</td>
-                    <td>36h Mediadas / 108h Indep.</td>
-                    <td><strong style="color:#059669;">36h Mediadas / 108h Indep. (1:3)</strong></td>
-                    <td><span style="color:#059669; font-weight:700;">Cumplimiento estricto MEN:</span> Aprendizaje autónomo guiado en LMS Canvas/Moodle.</td>
+                <tr>
+                    <td><div class="metric-label"><i class="fas fa-microchip"></i>Transformación Digital e IA</div></td>
+                    <td class="metric-vigente">Básica / Tradicional</td>
+                    <td class="metric-propuesto" style="color:#0284C7;">Big Data, IA, E-Commerce</td>
+                    <td class="metric-impact">Incorporación de <strong>15 asignaturas de vanguardia</strong> tecnológica.</td>
+                </tr>
+                <tr>
+                    <td><div class="metric-label"><i class="fas fa-users"></i>Ratio Presencial</div></td>
+                    <td class="metric-vigente">36h Dir / 108h Indep.</td>
+                    <td class="metric-propuesto">48h Dir / 96h Indep. (1:2)</td>
+                    <td class="metric-impact"><strong>Cumplimiento estricto MEN:</strong> 1 hora acompañada por 2 independientes.</td>
+                </tr>
+                <tr>
+                    <td><div class="metric-label"><i class="fas fa-laptop"></i>Ratio Virtual</div></td>
+                    <td class="metric-vigente">36h Med / 108h Indep.</td>
+                    <td class="metric-propuesto">36h Med / 108h Indep. (1:3)</td>
+                    <td class="metric-impact"><strong>Cumplimiento estricto MEN:</strong> Aprendizaje autónomo en LMS Canvas/Moodle.</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <!-- SECCIÓN 2: ASIGNATURAS ELIMINADAS DE LA MALLA VIGENTE -->
-    <div class="card" style="margin-bottom:28px; border-top:4px solid #DC2626;">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
-            <div>
-                <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--carbon); margin:0;">
-                    <i class="fas fa-trash-alt" style="color:#DC2626; margin-right:8px;"></i> 2. Asignaturas Eliminadas / Reestructuradas de la Malla Vigente (28 Asignaturas)
-                </h4>
-                <p style="font-size:0.83rem; color:var(--gray-text); margin-top:2px; margin-bottom:0;">
-                    Matriz detallada de las 28 asignaturas del plan de 158 créditos que fueron sustituidas, fusionadas o rearticuladas conceptualmente en el nuevo plan de 144 créditos.
-                </p>
+    <!-- PANEL 2: ASIGNATURAS REESTRUCTURADAS (ACCORDION) -->
+    <div class="comp-sub-panel" id="comp-panel-eliminadas">
+        <div class="comp-section">
+            <div class="comp-section-header" style="background: linear-gradient(135deg, #FEF2F2 0%, #FFF1F2 100%); border: 1px solid #FECACA;">
+                <div class="section-num" style="background:#DC2626;"><i class="fas fa-trash-alt"></i></div>
+                <div class="section-info">
+                    <h4 style="color:#991B1B;">Asignaturas Eliminadas / Reestructuradas de la Malla Vigente</h4>
+                    <p style="color:#B91C1C;">28 asignaturas del plan de 158 créditos sustituidas, fusionadas o rearticuladas en el nuevo plan de 144 créditos.</p>
+                </div>
+                <div class="section-count" style="background:#FEE2E2; color:#991B1B;">-28 Asignaturas</div>
             </div>
-            <span style="background:#FEE2E2; color:#991B1B; padding:4px 12px; border-radius:20px; font-weight:800; font-size:0.78rem;">
-                -28 Asignaturas (-22.58% Reducción)
-            </span>
-        </div>
-        
-        <div style="max-height:480px; overflow-y:auto; border:1px solid #CBD5E1; border-radius:8px;">
-            <table class="tbl" style="width:100%; margin:0;">
-                <thead style="position:sticky; top:0; background:#1A1A1B; color:#fff; z-index:5;">
-                    <tr>
-                        <th style="width:220px; color:#fff;">Asignatura Eliminada</th>
-                        <th style="width:90px; text-align:center; color:#fff;">Sem. Anterior</th>
-                        <th style="width:140px; color:#fff;">Área de Formación</th>
-                        <th style="color:#fff;">Justificación Académica y Curricular de Retiro / Sustitución</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="row-accent"><td class="lb">Matemáticas Básicas</td><td style="text-align:center; font-weight:700;">1</td><td>Transversal</td><td>Reemplazada por <strong>Álgebra Lineal</strong> (Semestre I) para elevar la capacidad de modelación cuantitativa avanzada.</td></tr>
-                    <tr><td class="lb">Constitución y Democracia</td><td style="text-align:center; font-weight:700;">1</td><td>Transversal</td><td>Integrada de forma transversal en <strong>Cátedra de la Paz y Resolución de Conflictos</strong> (Semestre I).</td></tr>
-                    <tr class="row-accent"><td class="lb">Costos</td><td style="text-align:center; font-weight:700;">2</td><td>Disciplinar</td><td>FUSIONADA con Presupuesto en la nueva asignatura unificada <strong>Costos y Presupuestos</strong> (Semestre II, 3 cr).</td></tr>
-                    <tr><td class="lb">Legislación Laboral</td><td style="text-align:center; font-weight:700;">2</td><td>Transversal</td><td>Modernizada e integrada en la asignatura <strong>Derecho Laboral y Seguridad Social</strong> (Semestre IV, 3 cr).</td></tr>
-                    <tr class="row-accent"><td class="lb">Administración por Procesos</td><td style="text-align:center; font-weight:700;">3</td><td>Disciplinar</td><td>Reestructurada e incorporada en la asignatura <strong>Procesos Administrativos</strong> (Semestre III, 3 cr).</td></tr>
-                    <tr><td class="lb">Cultura Emprendedora</td><td style="text-align:center; font-weight:700;">3</td><td>Disciplinar</td><td>Evolucionó a <strong>Modelos de Emprendimiento</strong> (Sem VI) y <strong>Laboratorio de Innovación y Emprendimiento</strong> (Sem VIII).</td></tr>
-                    <tr class="row-accent"><td class="lb">Derecho Administrativo</td><td style="text-align:center; font-weight:700;">3</td><td>Transversal</td><td>Contenidos normativos clave rearticulados en Derecho Laboral y Legislación Comercial.</td></tr>
-                    <tr><td class="lb">Creatividad e Innovación</td><td style="text-align:center; font-weight:700;">4</td><td>Disciplinar</td><td>Integrada de forma práctica en el nuevo <strong>Laboratorio de Innovación y Emprendimiento</strong> (Semestre VIII).</td></tr>
-                    <tr class="row-accent"><td class="lb">Liderazgo</td><td style="text-align:center; font-weight:700;">4</td><td>Disciplinar</td><td>Integrada en la asignatura <strong>Habilidades Gerenciales y Liderazgo</strong> (Semestre VIII).</td></tr>
-                    <tr><td class="lb">Electiva Humanística I</td><td style="text-align:center; font-weight:700;">4</td><td>Electiva</td><td>Reestructurada dentro de la bolsa de Electivas Profesionales de profundización (I a IV).</td></tr>
-                    <tr class="row-accent"><td class="lb">Inglés IV</td><td style="text-align:center; font-weight:700;">4</td><td>Transversal</td><td>Plan de bilingüismo optimizado a 3 niveles intensivos integrados (Inglés I, II y III) alineados con MCER.</td></tr>
-                    <tr><td class="lb">Administración de Salarios</td><td style="text-align:center; font-weight:700;">5</td><td>Disciplinar</td><td>Integrada conceptualmente dentro del núcleo de <strong>Gerencia del Talento Humano</strong> (Semestre V).</td></tr>
-                    <tr class="row-accent"><td class="lb">Investigación de Operaciones</td><td style="text-align:center; font-weight:700;">5</td><td>Disciplinar</td><td>Reemplazada por la asignatura de vanguardia tecnológica <strong>Big Data y Analítica de Datos</strong> (Semestre VI).</td></tr>
-                    <tr><td class="lb">Inglés V</td><td style="text-align:center; font-weight:700;">5</td><td>Transversal</td><td>Optimización del esquema de bilingüismo garantizando suficiencia B1 en 3 módulos intensivos.</td></tr>
-                    <tr class="row-accent"><td class="lb">Electiva Profundización II</td><td style="text-align:center; font-weight:700;">5</td><td>Electiva</td><td>Reorganizada en las 4 Electivas Profesionales de 3 créditos cada una distribuidas en la ruta propuesto.</td></tr>
-                    <tr><td class="lb">Tecnología e Innovación</td><td style="text-align:center; font-weight:700;">6</td><td>Disciplinar</td><td>Evolucionó hacia las asignaturas especializadas <strong>Inteligencia Artificial</strong> y <strong>Big Data</strong>.</td></tr>
-                    <tr class="row-accent"><td class="lb">E-Commerce</td><td style="text-align:center; font-weight:700;">6</td><td>Disciplinar</td><td>Actualizada y reubicada estratégicamente en el Semestre VII con enfoque en ecosistemas y pasarelas digitales.</td></tr>
-                    <tr><td class="lb">Electiva Humanística II</td><td style="text-align:center; font-weight:700;">6</td><td>Electiva</td><td>Reestructurada dentro de la bolsa de Electivas Profesionales.</td></tr>
-                    <tr class="row-accent"><td class="lb">Inglés VI</td><td style="text-align:center; font-weight:700;">6</td><td>Transversal</td><td>Optimización de la densidad de horas lectivas del plan de estudios.</td></tr>
-                    <tr><td class="lb">Fundamentos de Admón. Pública</td><td style="text-align:center; font-weight:700;">7</td><td>Transversal</td><td>Contenidos de gestión pública articulados en Teoría Organizacional y Derecho Laboral.</td></tr>
-                    <tr class="row-accent"><td class="lb">Presupuesto</td><td style="text-align:center; font-weight:700;">7</td><td>Disciplinar</td><td>FUSIONADA en la asignatura <strong>Costos y Presupuestos</strong> (Semestre II).</td></tr>
-                    <tr><td class="lb">Proyecto Empresarial</td><td style="text-align:center; font-weight:700;">7</td><td>Disciplinar</td><td>Integrado en el nuevo <strong>Laboratorio de Innovación y Emprendimiento</strong> (Semestre VIII).</td></tr>
-                    <tr class="row-accent"><td class="lb">Gerencia Financiera</td><td style="text-align:center; font-weight:700;">8</td><td>Disciplinar</td><td>Actualizada conceptualmente a <strong>Administración Financiera</strong> (Semestre V).</td></tr>
-                    <tr><td class="lb">Deontología</td><td style="text-align:center; font-weight:700;">8</td><td>Disciplinar</td><td>Integrada transversalmente en Cátedra de la Paz, Ética Profesional y Responsabilidad Social.</td></tr>
-                    <tr class="row-accent"><td class="lb">Proyecto de Grado I</td><td style="text-align:center; font-weight:700;">8</td><td>Disciplinar</td><td>Unificado en un único <strong>Proyecto de Grado</strong> integrador (Semestre VIII).</td></tr>
-                    <tr><td class="lb">Planeación y Prospectiva</td><td style="text-align:center; font-weight:700;">9</td><td>Disciplinar</td><td>Modernizada a <strong>Pensamiento Estratégico y Prospectivo</strong> (Semestre VII).</td></tr>
-                    <tr class="row-accent"><td class="lb">Gerencia del Servicio</td><td style="text-align:center; font-weight:700;">9</td><td>Disciplinar</td><td>Integrada en Gerencia de Marketing y Gerencia de Ventas y Canales.</td></tr>
-                    <tr><td class="lb">Gobierno Corporativo</td><td style="text-align:center; font-weight:700;">9</td><td>Disciplinar</td><td>Integrada conceptualmente en Pensamiento Estratégico y Ética Organizacional.</td></tr>
-                </tbody>
-            </table>
+            <div class="comp-filter-bar" style="padding: 12px 16px; background: #fff; border: 1px solid #E2E8F0; border-top: none;">
+                <i class="fas fa-search" style="color:#94A3B8;"></i>
+                <input type="text" id="filterEliminadas" placeholder="Buscar asignatura eliminada..." oninput="window.filterAccordion('eliminadas-accordion', this.value, 'filterEliminadasCount')">
+                <span class="filter-count" id="filterEliminadasCount">28 de 28</span>
+            </div>
+            <div class="comp-accordion" id="eliminadas-accordion">
+                <div class="comp-acc-item" data-name="Matemáticas Básicas"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">1</span><span class="acc-name">Matemáticas Básicas</span><span class="acc-sem">Sem 1</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Reemplazada por <strong>Álgebra Lineal</strong> (Semestre I) para elevar la capacidad de modelación cuantitativa avanzada.</div></div></div>
+                <div class="comp-acc-item" data-name="Constitución y Democracia"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">2</span><span class="acc-name">Constitución y Democracia</span><span class="acc-sem">Sem 1</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrada en <strong>Cátedra de la Paz y Resolución de Conflictos</strong> (Semestre I).</div></div></div>
+                <div class="comp-acc-item" data-name="Costos"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">3</span><span class="acc-name">Costos</span><span class="acc-sem">Sem 2</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">FUSIONADA con Presupuesto en <strong>Costos y Presupuestos</strong> (Semestre II, 3 cr).</div></div></div>
+                <div class="comp-acc-item" data-name="Legislación Laboral"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">4</span><span class="acc-name">Legislación Laboral</span><span class="acc-sem">Sem 2</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Modernizada en <strong>Derecho Laboral y Seguridad Social</strong> (Semestre IV, 3 cr).</div></div></div>
+                <div class="comp-acc-item" data-name="Administración por Procesos"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">5</span><span class="acc-name">Administración por Procesos</span><span class="acc-sem">Sem 3</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Incorporada en <strong>Procesos Administrativos</strong> (Semestre III, 3 cr).</div></div></div>
+                <div class="comp-acc-item" data-name="Cultura Emprendedora"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">6</span><span class="acc-name">Cultura Emprendedora</span><span class="acc-sem">Sem 3</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Evolucionó a <strong>Modelos de Emprendimiento</strong> (Sem VI) y <strong>Lab. Innovación</strong> (Sem VIII).</div></div></div>
+                <div class="comp-acc-item" data-name="Derecho Administrativo"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">7</span><span class="acc-name">Derecho Administrativo</span><span class="acc-sem">Sem 3</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Rearticulada en Derecho Laboral y Legislación Comercial.</div></div></div>
+                <div class="comp-acc-item" data-name="Creatividad e Innovación"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">8</span><span class="acc-name">Creatividad e Innovación</span><span class="acc-sem">Sem 4</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrada en <strong>Lab. de Innovación y Emprendimiento</strong> (Semestre VIII).</div></div></div>
+                <div class="comp-acc-item" data-name="Liderazgo"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">9</span><span class="acc-name">Liderazgo</span><span class="acc-sem">Sem 4</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrada en <strong>Habilidades Gerenciales y Liderazgo</strong> (Semestre VIII).</div></div></div>
+                <div class="comp-acc-item" data-name="Electiva Humanística I"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">10</span><span class="acc-name">Electiva Humanística I</span><span class="acc-sem">Sem 4</span><span class="acc-area" style="background:#F5F3FF; color:#6D28D9;">Electiva</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Reestructurada en Electivas Profesionales de profundización (I a IV).</div></div></div>
+                <div class="comp-acc-item" data-name="Inglés IV"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">11</span><span class="acc-name">Inglés IV</span><span class="acc-sem">Sem 4</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Bilingüismo optimizado a 3 niveles intensivos (Inglés I-III) alineados con MCER.</div></div></div>
+                <div class="comp-acc-item" data-name="Administración de Salarios"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">12</span><span class="acc-name">Administración de Salarios</span><span class="acc-sem">Sem 5</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrada en <strong>Gerencia del Talento Humano</strong> (Semestre V).</div></div></div>
+                <div class="comp-acc-item" data-name="Investigación de Operaciones"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">13</span><span class="acc-name">Investigación de Operaciones</span><span class="acc-sem">Sem 5</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Reemplazada por <strong>Big Data y Analítica de Datos</strong> (Semestre VI).</div></div></div>
+                <div class="comp-acc-item" data-name="Inglés V"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">14</span><span class="acc-name">Inglés V</span><span class="acc-sem">Sem 5</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Suficiencia B1 garantizada en 3 módulos intensivos.</div></div></div>
+                <div class="comp-acc-item" data-name="Electiva Profundización II"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">15</span><span class="acc-name">Electiva Profundización II</span><span class="acc-sem">Sem 5</span><span class="acc-area" style="background:#F5F3FF; color:#6D28D9;">Electiva</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Reorganizada en 4 Electivas Profesionales de 3 cr c/u.</div></div></div>
+                <div class="comp-acc-item" data-name="Tecnología e Innovación"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">16</span><span class="acc-name">Tecnología e Innovación</span><span class="acc-sem">Sem 6</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Evolucionó a <strong>Inteligencia Artificial</strong> y <strong>Big Data</strong>.</div></div></div>
+                <div class="comp-acc-item" data-name="E-Commerce (Vigente)"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">17</span><span class="acc-name">E-Commerce (Vigente)</span><span class="acc-sem">Sem 6</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Actualizada y reubicada en Sem VII con enfoque en ecosistemas digitales.</div></div></div>
+                <div class="comp-acc-item" data-name="Electiva Humanística II"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">18</span><span class="acc-name">Electiva Humanística II</span><span class="acc-sem">Sem 6</span><span class="acc-area" style="background:#F5F3FF; color:#6D28D9;">Electiva</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Reestructurada en Electivas Profesionales.</div></div></div>
+                <div class="comp-acc-item" data-name="Inglés VI"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">19</span><span class="acc-name">Inglés VI</span><span class="acc-sem">Sem 6</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Optimización de densidad de horas lectivas.</div></div></div>
+                <div class="comp-acc-item" data-name="Fundamentos de Admón. Pública"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">20</span><span class="acc-name">Fundamentos de Admón. Pública</span><span class="acc-sem">Sem 7</span><span class="acc-area" style="background:#EFF6FF; color:#1D4ED8;">Transversal</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Articulada en Teoría Organizacional y Derecho Laboral.</div></div></div>
+                <div class="comp-acc-item" data-name="Presupuesto"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">21</span><span class="acc-name">Presupuesto</span><span class="acc-sem">Sem 7</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">FUSIONADA en <strong>Costos y Presupuestos</strong> (Semestre II).</div></div></div>
+                <div class="comp-acc-item" data-name="Proyecto Empresarial"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">22</span><span class="acc-name">Proyecto Empresarial</span><span class="acc-sem">Sem 7</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrado en <strong>Lab. de Innovación y Emprendimiento</strong> (Sem VIII).</div></div></div>
+                <div class="comp-acc-item" data-name="Gerencia Financiera"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">23</span><span class="acc-name">Gerencia Financiera</span><span class="acc-sem">Sem 8</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Actualizada a <strong>Administración Financiera</strong> (Semestre V).</div></div></div>
+                <div class="comp-acc-item" data-name="Deontología"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">24</span><span class="acc-name">Deontología</span><span class="acc-sem">Sem 8</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrada en Cátedra de la Paz, Ética Profesional y RSE.</div></div></div>
+                <div class="comp-acc-item" data-name="Proyecto de Grado I"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">25</span><span class="acc-name">Proyecto de Grado I</span><span class="acc-sem">Sem 8</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Unificado en <strong>Proyecto de Grado</strong> integrador (Semestre VIII).</div></div></div>
+                <div class="comp-acc-item" data-name="Planeación y Prospectiva"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">26</span><span class="acc-name">Planeación y Prospectiva</span><span class="acc-sem">Sem 9</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Modernizada a <strong>Pensamiento Estratégico y Prospectivo</strong> (Sem VII).</div></div></div>
+                <div class="comp-acc-item" data-name="Gerencia del Servicio"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">27</span><span class="acc-name">Gerencia del Servicio</span><span class="acc-sem">Sem 9</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrada en Gerencia de Marketing y Gerencia de Ventas y Canales.</div></div></div>
+                <div class="comp-acc-item" data-name="Gobierno Corporativo"><button class="comp-acc-trigger" onclick="window.toggleAccItem(this)"><span class="acc-idx" style="background:#DC2626;">28</span><span class="acc-name">Gobierno Corporativo</span><span class="acc-sem">Sem 9</span><span class="acc-area" style="background:#FFF7ED; color:#C2410C;">Disciplinar</span><i class="fas fa-chevron-down acc-chevron"></i></button><div class="comp-acc-detail"><div class="comp-acc-detail-inner" style="border-color:#DC2626;">Integrada en Pensamiento Estratégico y Ética Organizacional.</div></div></div>
+            </div>
         </div>
     </div>
 
-    <!-- SECCIÓN 3: TABLA 28 - ASIGNATURAS NUEVAS EN LA MALLA PROPUESTA -->
-    <div class="card" style="margin-bottom:28px; border-top:4px solid #0284C7;">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
-            <div>
-                <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--carbon); margin:0;">
-                    <i class="fas fa-plus-circle" style="color:#0284C7; margin-right:8px;"></i> 3. Tabla 28. Asignaturas Nuevas en la Malla Propuesta (15 Asignaturas)
-                </h4>
-                <p style="font-size:0.83rem; color:var(--gray-text); margin-top:2px; margin-bottom:0;">
-                    Tabla 28 oficial del Documento Maestro: Asignaturas incorporadas en el rediseño curricular con su código, créditos, horas por modalidad, prerrequisitos y justificación.
-                </p>
+    <!-- PANEL 3: ASIGNATURAS NUEVAS (VANGUARD CARDS) -->
+    <div class="comp-sub-panel" id="comp-panel-nuevas">
+        <div class="comp-section">
+            <div class="comp-section-header" style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); border: 1px solid #BFDBFE; border-radius: 14px; margin-bottom: 20px;">
+                <div class="section-num" style="background:#0284C7;"><i class="fas fa-plus-circle"></i></div>
+                <div class="section-info">
+                    <h4 style="color:#0369A1;">15 Asignaturas Incorporadas al Nuevo Plan de 144 Créditos</h4>
+                    <p style="color:#0284C7;">Cada asignatura responde a brechas en pertinencia, tecnología y competitividad. Incluye 4 asignaturas disruptivas.</p>
+                </div>
+                <div class="section-count" style="background:#DBEAFE; color:#0369A1;">+15 Nuevas</div>
             </div>
-            <span style="background:#E0F2FE; color:#0369A1; padding:4px 12px; border-radius:20px; font-weight:800; font-size:0.78rem;">
-                15 Nuevas Asignaturas (+31.25% Innovación)
-            </span>
-        </div>
-
-        <div style="max-height:500px; overflow-y:auto; border:1px solid #CBD5E1; border-radius:8px;">
-            <table class="tbl" style="width:100%; margin:0;">
-                <thead style="position:sticky; top:0; background:#1A1A1B; color:#fff; z-index:5;">
-                    <tr>
-                        <th style="width:210px; color:#fff;">Asignatura Nueva</th>
-                        <th style="width:75px; text-align:center; color:#fff;">Sem.</th>
-                        <th style="width:65px; text-align:center; color:#fff;">Cr.</th>
-                        <th style="width:140px; color:#fff;">Horas (Pres/Virt)</th>
-                        <th style="width:150px; color:#fff;">Prerrequisito Explícito</th>
-                        <th style="color:#fff;">Justificación Académica y Curricular (Decreto 1330)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="row-accent">
-                        <td class="lb">Álgebra Lineal</td>
-                        <td style="text-align:center; font-weight:700;">1</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Ninguno</td>
-                        <td>Desarrolla el pensamiento lógico-matemático y modelos cuantitativos para la toma de decisiones.</td>
-                    </tr>
-                    <tr>
-                        <td class="lb">Costos y Presupuestos</td>
-                        <td style="text-align:center; font-weight:700;">2</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Fundamentos Contables</td>
-                        <td>Unifica el análisis de costeo y planeación presupuestal en una sola estructura analítica más eficiente.</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td class="lb">Análisis Financiero</td>
-                        <td style="text-align:center; font-weight:700;">3</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Fundamentos Contables</td>
-                        <td>Proporciona diagnóstico cualitativo y cuantitativo de estados financieros para la toma de decisiones.</td>
-                    </tr>
-                    <tr>
-                        <td class="lb">Procesos Administrativos</td>
-                        <td style="text-align:center; font-weight:700;">3</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Fundamentos de Admón.</td>
-                        <td>Estructura la planeación, organización, dirección y control operativo de las organizaciones.</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td class="lb">Competencias Investigativas</td>
-                        <td style="text-align:center; font-weight:700;">4</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Ninguno</td>
-                        <td>Fundamenta la metodología de investigación aplicada a la solución de problemas gerenciales.</td>
-                    </tr>
-                    <tr>
-                        <td class="lb">Derecho Laboral y Seguridad Social</td>
-                        <td style="text-align:center; font-weight:700;">4</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Ninguno</td>
-                        <td>Actualiza el marco normativo de relaciones de trabajo, contratación y sistema general de seguridad social.</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td class="lb">Administración Financiera</td>
-                        <td style="text-align:center; font-weight:700;">5</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Análisis Financiero</td>
-                        <td>Fortalece la toma de decisiones en estructura de capital, fuentes de financiamiento e inversiones de largo plazo.</td>
-                    </tr>
-                    <tr>
-                        <td class="lb">Negocios y Gerencia Internacional</td>
-                        <td style="text-align:center; font-weight:700;">5</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Economía Colombiana</td>
-                        <td>Prepara al estudiante para la internacionalización de mercados, acuerdos comerciales y operaciones transfronterizas.</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td class="lb">Sistemas Integrados de Gestión (HSEQ)</td>
-                        <td style="text-align:center; font-weight:700;">5</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Ninguno</td>
-                        <td>Especializa al administrador en normas ISO (9001, 14001, 45001), sostenibilidad y auditoría de procesos.</td>
-                    </tr>
-                    <tr style="background:#EFF6FF;">
-                        <td class="lb" style="color:#1D4ED8;"><i class="fas fa-microchip" style="color:var(--orange);"></i> Big Data y Analítica de Datos</td>
-                        <td style="text-align:center; font-weight:700;">6</td>
-                        <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Estadística Inferencial</td>
-                        <td><strong>Asignatura de Vanguardia:</strong> Aplica inteligencia de negocios, minería de datos y visualización analítica.</td>
-                    </tr>
-                    <tr class="row-accent" style="background:#EFF6FF;">
-                        <td class="lb" style="color:#1D4ED8;"><i class="fas fa-shopping-cart" style="color:var(--orange);"></i> E-Commerce</td>
-                        <td style="text-align:center; font-weight:700;">7</td>
-                        <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Fundamentos de Mercadeo</td>
-                        <td><strong>Asignatura de Vanguardia:</strong> Desarrolla competencias en comercio electrónico, pasarelas y marketing digital.</td>
-                    </tr>
-                    <tr>
-                        <td class="lb">Pensamiento Estratégico y Prospectivo</td>
-                        <td style="text-align:center; font-weight:700;">7</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Procesos Administrativos</td>
-                        <td>Capacita en construcción de escenarios de futuro, planeación estratégica y gestión del cambio organizacional.</td>
-                    </tr>
-                    <tr class="row-accent">
-                        <td class="lb">Gerencia de Calidad</td>
-                        <td style="text-align:center; font-weight:700;">8</td>
-                        <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Sistemas Integrados HSEQ</td>
-                        <td>Implementa estrategias de gestión de calidad total, Six Sigma y mejora continua en organizaciones modernas.</td>
-                    </tr>
-                    <tr style="background:#EFF6FF;">
-                        <td class="lb" style="color:#1D4ED8;"><i class="fas fa-robot" style="color:var(--orange);"></i> Inteligencia Artificial</td>
-                        <td style="text-align:center; font-weight:700;">8</td>
-                        <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Big Data y Analítica</td>
-                        <td><strong>Asignatura Disruptiva:</strong> Aplica IA generativa, automatización de procesos y machine learning gerencial.</td>
-                    </tr>
-                    <tr class="row-accent" style="background:#EFF6FF;">
-                        <td class="lb" style="color:#1D4ED8;"><i class="fas fa-flask" style="color:var(--orange);"></i> Lab. de Innovación y Emprendimiento</td>
-                        <td style="text-align:center; font-weight:700;">8</td>
-                        <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
-                        <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
-                        <td style="font-size:0.78rem;">Modelos de Emprendimiento</td>
-                        <td><strong>Laboratorio Práctico:</strong> Espacio de prototipado, aceleración de negocios y transferencia tecnológica.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="comp-vanguard-grid">
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Base</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#EFF6FF; color:#0284C7;"><i class="fas fa-calculator"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 1</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Álgebra Lineal</div></div><div class="vc-body"><p>Pensamiento lógico-matemático y modelos cuantitativos para decisiones gerenciales.</p><div class="vc-prereq"><i class="fas fa-lock-open" style="color:#16A34A;"></i> Ninguno</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Base</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#FFF7ED; color:#C2410C;"><i class="fas fa-coins"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 2</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Costos y Presupuestos</div></div><div class="vc-body"><p>Unifica costeo y planeación presupuestal en una estructura analítica eficiente.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Fund. Contables</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Base</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#EFF6FF; color:#0284C7;"><i class="fas fa-chart-line"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 3</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Análisis Financiero</div></div><div class="vc-body"><p>Diagnóstico cualitativo y cuantitativo de estados financieros para decisiones ejecutivas.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Fund. Contables</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Base</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#F0FDF4; color:#16A34A;"><i class="fas fa-sitemap"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 3</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Procesos Administrativos</div></div><div class="vc-body"><p>Planeación, organización, dirección y control operativo organizacional.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Fund. de Admón.</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Base</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#F5F3FF; color:#7C3AED;"><i class="fas fa-microscope"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 4</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Competencias Investigativas</div></div><div class="vc-body"><p>Metodología de investigación aplicada a problemas gerenciales.</p><div class="vc-prereq"><i class="fas fa-lock-open" style="color:#16A34A;"></i> Ninguno</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Base</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#FEF2F2; color:#DC2626;"><i class="fas fa-gavel"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 4</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Derecho Laboral y Seg. Social</div></div><div class="vc-body"><p>Marco normativo de relaciones de trabajo, contratación y seguridad social.</p><div class="vc-prereq"><i class="fas fa-lock-open" style="color:#16A34A;"></i> Ninguno</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Profesional</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#FFF7ED; color:#C2410C;"><i class="fas fa-hand-holding-usd"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 5</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Administración Financiera</div></div><div class="vc-body"><p>Estructura de capital, financiamiento e inversiones de largo plazo.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Análisis Financiero</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Profesional</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#EFF6FF; color:#0284C7;"><i class="fas fa-globe-americas"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 5</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Negocios y Gerencia Internacional</div></div><div class="vc-body"><p>Internacionalización de mercados y operaciones transfronterizas.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Economía Colombiana</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Profesional</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#F0FDF4; color:#16A34A;"><i class="fas fa-shield-alt"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 5</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Sistemas Integrados HSEQ</div></div><div class="vc-body"><p>ISO 9001/14001/45001, sostenibilidad y auditoría de procesos.</p><div class="vc-prereq"><i class="fas fa-lock-open" style="color:#16A34A;"></i> Ninguno</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Profesional</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#EFF6FF; color:#0284C7;"><i class="fas fa-chess-king"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 7</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Pensamiento Estratégico y Prospectivo</div></div><div class="vc-body"><p>Escenarios de futuro, planeación estratégica y gestión del cambio.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Procesos Admtivos.</div></div></div>
+                <div class="comp-vanguard-card"><span class="vc-tag vc-tag-core">Profesional</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background:#F0FDF4; color:#16A34A;"><i class="fas fa-certificate"></i></div><div class="vc-meta"><span style="background:#DBEAFE; color:#1D4ED8;">Sem 8</span><span style="background:#E2E8F0; color:#475569;">3 cr</span></div></div><div class="vc-name">Gerencia de Calidad</div></div><div class="vc-body"><p>Calidad total, Six Sigma y mejora continua organizacional.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Sist. Integrados HSEQ</div></div></div>
+                <div class="comp-vanguard-card" style="border-color:#BFDBFE; background:linear-gradient(135deg, #fff 0%, #EFF6FF 100%);"><span class="vc-tag vc-tag-vanguard">Vanguardia</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background: linear-gradient(135deg, #0284C7, #0EA5E9); color:#fff;"><i class="fas fa-database"></i></div><div class="vc-meta"><span style="background:#0284C7; color:#fff;">Sem 6</span><span style="background:#F39200; color:#fff;">3 cr</span></div></div><div class="vc-name" style="color:#0369A1;">Big Data y Analítica de Datos</div></div><div class="vc-body"><p><strong>Vanguardia:</strong> Inteligencia de negocios, minería de datos y visualización analítica.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Estadística Inferencial</div></div></div>
+                <div class="comp-vanguard-card" style="border-color:#BFDBFE; background:linear-gradient(135deg, #fff 0%, #EFF6FF 100%);"><span class="vc-tag vc-tag-vanguard">Vanguardia</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background: linear-gradient(135deg, #0284C7, #0EA5E9); color:#fff;"><i class="fas fa-shopping-cart"></i></div><div class="vc-meta"><span style="background:#0284C7; color:#fff;">Sem 7</span><span style="background:#F39200; color:#fff;">3 cr</span></div></div><div class="vc-name" style="color:#0369A1;">E-Commerce</div></div><div class="vc-body"><p><strong>Vanguardia:</strong> Comercio electrónico, pasarelas de pago y marketing digital.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Fund. de Mercadeo</div></div></div>
+                <div class="comp-vanguard-card" style="border-color:#C4B5FD; background:linear-gradient(135deg, #fff 0%, #F5F3FF 100%);"><span class="vc-tag vc-tag-disruptive">Disruptiva</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background: linear-gradient(135deg, #7C3AED, #A78BFA); color:#fff;"><i class="fas fa-robot"></i></div><div class="vc-meta"><span style="background:#7C3AED; color:#fff;">Sem 8</span><span style="background:#F39200; color:#fff;">3 cr</span></div></div><div class="vc-name" style="color:#6D28D9;">Inteligencia Artificial</div></div><div class="vc-body"><p><strong>Disruptiva:</strong> IA generativa, RPA y machine learning gerencial.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Big Data y Analítica</div></div></div>
+                <div class="comp-vanguard-card" style="border-color:#A7F3D0; background:linear-gradient(135deg, #fff 0%, #F0FDF4 100%);"><span class="vc-tag vc-tag-lab">Laboratorio</span><div class="vc-header"><div class="vc-icon-row"><div class="vc-icon" style="background: linear-gradient(135deg, #059669, #34D399); color:#fff;"><i class="fas fa-flask"></i></div><div class="vc-meta"><span style="background:#059669; color:#fff;">Sem 8</span><span style="background:#F39200; color:#fff;">3 cr</span></div></div><div class="vc-name" style="color:#047857;">Lab. de Innovación y Emprendimiento</div></div><div class="vc-body"><p><strong>Laboratorio:</strong> Prototipado, aceleración de negocios y transferencia tecnológica.</p><div class="vc-prereq"><i class="fas fa-link" style="color:#F39200;"></i> Modelos de Emprendimiento</div></div></div>
+            </div>
         </div>
     </div>
 
-    <!-- SECCIÓN 4: TABLA 29 - EQUIVALENCIAS ENTRE LA MALLA VIGENTE Y LA MALLA PROPUESTA -->
-    <div class="card" style="margin-bottom:28px; border-top:4px solid #16A34A;">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
-            <div>
-                <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--carbon); margin:0;">
-                    <i class="fas fa-exchange-alt" style="color:#16A34A; margin-right:8px;"></i> 4. Tabla 29. Equivalencias entre las Asignaturas de la Malla Vigente y Malla Propuesta
-                </h4>
-                <p style="font-size:0.83rem; color:var(--gray-text); margin-top:2px; margin-bottom:0;">
-                    Tabla 29 oficial del Documento Maestro: Matriz de homologación biunívoca entre las asignaturas del plan anterior (158 cr, 9 semestres) y el nuevo plan (144 cr, 8 semestres).
-                </p>
+    <!-- PANEL 4: MAPA DE EQUIVALENCIAS (FLOW MAP) -->
+    <div class="comp-sub-panel" id="comp-panel-equivalencias">
+        <div class="comp-section">
+            <div class="comp-section-header" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%); border: 1px solid #BBF7D0; border-radius: 14px; margin-bottom: 16px;">
+                <div class="section-num" style="background:#16A34A;"><i class="fas fa-project-diagram"></i></div>
+                <div class="section-info">
+                    <h4 style="color:#15803D;">Mapa de Equivalencias: Malla Vigente → Malla Propuesta</h4>
+                    <p style="color:#16A34A;">Tabla 29 del Documento Maestro: Homologación biunívoca entre planes (58 → 48 asignaturas).</p>
+                </div>
+                <div class="section-count" style="background:#DCFCE7; color:#15803D;">38 Homologaciones</div>
             </div>
-            <span style="background:#DCFCE7; color:#15803D; padding:4px 12px; border-radius:20px; font-weight:800; font-size:0.78rem;">
-                38 Homologaciones Registradas
-            </span>
-        </div>
-
-        <div style="max-height:550px; overflow-y:auto; border:1px solid #CBD5E1; border-radius:8px;">
-            <table class="tbl" style="width:100%; margin:0;">
-                <thead style="position:sticky; top:0; background:#1A1A1B; color:#fff; z-index:5;">
-                    <tr>
-                        <th style="width:230px; color:#fff;">Asignatura Malla Vigente (158 cr)</th>
-                        <th style="width:75px; text-align:center; color:#fff;">Sem. Ant.</th>
-                        <th style="width:230px; color:#fff;">Asignatura Malla Propuesta (144 cr)</th>
-                        <th style="width:75px; text-align:center; color:#fff;">Sem. Nue.</th>
-                        <th style="color:#fff;">Tipo de Homologación / Equivalencia Curricular</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="row-accent"><td class="lb">Expresión Oral y Escrita</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Comunicación Oral y Escrita</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Inglés I</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Inglés I</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Fundamentos Contables</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Fundamentos Contables y Financieros</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Fundamentos de Economía</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
-                    <tr><td class="lb">Teoría Organizacional</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#0284C7; font-weight:700;">Teoría Organizacional</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Metodología de la Investigación</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#0284C7; font-weight:700;">Cátedra de la Paz y Resolución de Conflictos</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
-                    <tr><td class="lb">Inglés II</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#0284C7; font-weight:700;">Inglés II</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Estadística Descriptiva</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#0284C7; font-weight:700;">Estadística Descriptiva</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Electiva Profundización I</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional I</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Inglés III</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#0284C7; font-weight:700;">Inglés III</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Estadística Inferencial</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Estadística Inferencial</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Legislación Tributaria</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Legislación Tributaria</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Electiva Humanística I</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional I</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Entorno Económico Colombiano</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Economía Colombiana e Internacional</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Matemática Financiera</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Matemática Financiera</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Investigación de Operaciones</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
-                    <tr><td class="lb">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Modelos de Desarrollo Económico</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Modelos de Emprendimiento</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
-                    <tr><td class="lb">Administración de Salarios</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#D97706; color:#fff; font-size:0.7rem;">Fusión Conceptual</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Electiva Profundización II</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional II</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Legislación Comercial</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Legislación Comercial</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Gerencia de Mercadeo</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
-                    <tr><td class="lb">Métodos Cuantitativos y Cualitativos</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Métodos Cualitativos y Cuantitativos</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Electiva Humanística II</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional II</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
-                    <tr><td class="lb">Fundamentos de Admón. Pública</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#D97706; color:#fff; font-size:0.7rem;">Fusión Conceptual</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Gestión de la Calidad</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Cátedra de la Paz y Res. Conflictos</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Fusión en HSEQ / Calidad</span></td></tr>
-                    <tr><td class="lb">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Electiva Profundización III</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional III</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Sistema de Información Gerencial</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Juego Gerencial (Simulación)</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Aplicación</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Habilidades Gerenciales</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Habilidades Gerenciales y Liderazgo</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Gerencia de Producción</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Gerencia de Producción</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr><td class="lb">Proyecto de Grado I</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Proyecto de Grado</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Unificación de Proyecto</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Gerencia del Servicio</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
-                    <tr><td class="lb">Evaluación de Proyectos de Inversión</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Formulación y Evaluación de Proyectos</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
-                    <tr class="row-accent"><td class="lb">Distribución Física y Logística</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Gerencia de Ventas y Canales</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
-                    <tr><td class="lb">Proyecto de Grado II</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Proyecto de Grado</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Unificación de Proyecto</span></td></tr>
-                </tbody>
-            </table>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; padding:10px 14px; background:#F8FAFC; border-radius:10px; border:1px solid #E2E8F0;">
+                <span style="font-size:0.72rem; font-weight:700; color:#475569; margin-right:4px;"><i class="fas fa-info-circle"></i> Leyenda:</span>
+                <span class="comp-flow-badge badge-direct">Directa 1:1</span>
+                <span class="comp-flow-badge badge-content">Por Contenido</span>
+                <span class="comp-flow-badge badge-credit">Por Créditos</span>
+                <span class="comp-flow-badge badge-area">Por Área</span>
+                <span class="comp-flow-badge badge-fusion">Fusión Conceptual</span>
+                <span class="comp-flow-badge badge-unify">Unificación</span>
+            </div>
+            <div class="comp-filter-bar">
+                <i class="fas fa-search" style="color:#94A3B8;"></i>
+                <input type="text" id="filterEquivalencias" placeholder="Buscar asignatura en el mapa..." oninput="window.filterFlowRows(this.value)">
+                <span class="filter-count" id="filterEquivalenciasCount">38 de 38</span>
+            </div>
+            <div class="comp-flow-grid" id="equivalencias-flow-grid" style="max-height:600px; overflow-y:auto; border:1px solid #E2E8F0; border-radius:12px; padding:10px;">
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S1</span>Expresión Oral y Escrita</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Comunicación Oral y Escrita</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S1</span>Inglés I</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S2</span>Inglés I</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S1</span>Fund. de Administración</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Fund. de Administración</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S1</span>Fundamentos Contables</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Fund. Contables y Financieros</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S1</span>Fundamentos de Economía</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Fund. de Administración</div><span class="comp-flow-badge badge-content">Por Contenido</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S2</span>Teoría Organizacional</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S3</span>Teoría Organizacional</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S2</span>Metodología de la Investigación</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Cátedra de la Paz</div><span class="comp-flow-badge badge-credit">Por Créditos</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S2</span>Inglés II</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S3</span>Inglés II</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S3</span>Estadística Descriptiva</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S2</span>Estadística Descriptiva</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S3</span>Electiva Profundización I</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S5</span>Electiva Profesional I</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S3</span>Inglés III</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S4</span>Inglés III</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S4</span>Estadística Inferencial</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S3</span>Estadística Inferencial</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S4</span>Legislación Tributaria</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S6</span>Legislación Tributaria</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S4</span>Electiva Humanística I</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S5</span>Electiva Profesional I</div><span class="comp-flow-badge badge-credit">Por Créditos</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S4</span>Entorno Económico Colombiano</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S4</span>Economía Col. e Internacional</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S5</span>Matemática Financiera</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S4</span>Matemática Financiera</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S5</span>Invest. de Operaciones</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S4</span>Invest. de Mercados</div><span class="comp-flow-badge badge-area">Por Área</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S5</span>Fund. de Mercadeo</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Fund. de Mercadeo</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S5</span>Modelos de Desarrollo Econ.</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S6</span>Modelos de Emprendimiento</div><span class="comp-flow-badge badge-content">Por Contenido</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S5</span>Admón. de Salarios</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Fund. de Administración</div><span class="comp-flow-badge badge-fusion">Fusión Conceptual</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S5</span>Electiva Profundización II</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S6</span>Electiva Profesional II</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S6</span>Legislación Comercial</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S2</span>Legislación Comercial</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S6</span>Gerencia de Mercadeo</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Fund. de Mercadeo</div><span class="comp-flow-badge badge-content">Por Contenido</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S6</span>Métodos Cuanti/Cualitativos</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S6</span>Métodos Cuali/Cuantitativos</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S6</span>Electiva Humanística II</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S6</span>Electiva Profesional II</div><span class="comp-flow-badge badge-credit">Por Créditos</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S7</span>Fund. de Admón. Pública</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Fund. de Administración</div><span class="comp-flow-badge badge-fusion">Fusión Conceptual</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S7</span>Gestión de la Calidad</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S1</span>Cátedra de la Paz</div><span class="comp-flow-badge badge-area">Fusión HSEQ</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S7</span>Ger. del Talento Humano</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S5</span>Ger. del Talento Humano</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S7</span>Electiva Profundización III</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S7</span>Electiva Profesional III</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S7</span>Sistema de Info. Gerencial</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S8</span>Juego Gerencial (Simulación)</div><span class="comp-flow-badge badge-content">Por Aplicación</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S8</span>Habilidades Gerenciales</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S8</span>Hab. Gerenciales y Liderazgo</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S8</span>Gerencia de Producción</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S7</span>Gerencia de Producción</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S8</span>Invest. de Mercados</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S4</span>Invest. de Mercados</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S8</span>Proyecto de Grado I</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S8</span>Proyecto de Grado</div><span class="comp-flow-badge badge-unify">Unificación</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S9</span>Gerencia del Servicio</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S5</span>Ger. del Talento Humano</div><span class="comp-flow-badge badge-area">Por Área</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S9</span>Eval. de Proyectos de Inversión</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S7</span>Formulación y Eval. de Proyectos</div><span class="comp-flow-badge badge-direct">Directa 1:1</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S9</span>Distribución Física y Logística</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S7</span>Ger. de Ventas y Canales</div><span class="comp-flow-badge badge-area">Por Área</span></div>
+                <div class="comp-flow-row"><div class="comp-flow-from"><span class="flow-sem">S9</span>Proyecto de Grado II</div><div class="comp-flow-arrow"><i class="fas fa-long-arrow-alt-right"></i></div><div class="comp-flow-to"><span class="flow-sem">S8</span>Proyecto de Grado</div><span class="comp-flow-badge badge-unify">Unificación</span></div>
+            </div>
         </div>
     </div>
+
 </div>
 `;
+
+window.switchCompTab = function(panelId) {
+    document.querySelectorAll('.comp-sub-tab').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-comptab') === panelId);
+    });
+    document.querySelectorAll('.comp-sub-panel').forEach(p => {
+        p.classList.toggle('active', p.id === panelId);
+        p.style.display = p.id === panelId ? 'block' : 'none';
+    });
+};
+
+window.toggleAccItem = function(btn) {
+    const item = btn.closest('.comp-acc-item');
+    item.classList.toggle('open');
+};
+
+window.filterAccordion = function(accId, query, countId) {
+    const acc = document.getElementById(accId);
+    if (!acc) return;
+    const items = acc.querySelectorAll('.comp-acc-item');
+    const q = query.toLowerCase();
+    let visible = 0;
+    items.forEach(item => {
+        const name = (item.getAttribute('data-name') || '').toLowerCase();
+        const show = !q || name.includes(q);
+        item.style.display = show ? '' : 'none';
+        if (show) visible++;
+    });
+    const counter = document.getElementById(countId);
+    if (counter) counter.textContent = visible + ' de ' + items.length;
+};
+
+window.filterFlowRows = function(query) {
+    const grid = document.getElementById('equivalencias-flow-grid');
+    if (!grid) return;
+    const rows = grid.querySelectorAll('.comp-flow-row');
+    const q = query.toLowerCase();
+    let visible = 0;
+    rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        const show = !q || text.includes(q);
+        row.style.display = show ? '' : 'none';
+        if (show) visible++;
+    });
+    const counter = document.getElementById('filterEquivalenciasCount');
+    if (counter) counter.textContent = visible + ' de ' + rows.length;
+};
 
 window.c3Init = function() {
     window.switchTab('c3MainTabsGroup', 'c3-main-propuesto');
     window.switchTab('c3PropuestoSubTabs', 'c3-p-malla');
     window.switchTab('c3VigenteSubTabs', 'c3-v-malla');
+    if (window.switchCompTab) window.switchCompTab('comp-panel-indicadores');
 };
