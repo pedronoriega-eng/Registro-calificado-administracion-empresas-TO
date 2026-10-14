@@ -2032,3 +2032,48 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     animation: fadeIn 0.3s ease;
     -webkit-font-smoothing: antialiased;
 }
+
+/* ==========================================================
+   V9 — Malla por Área de Formación + Componente (definitivo)
+   ========================================================== */
+.matrix-area-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 9px; border-radius: 999px;
+    font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em;
+    text-transform: uppercase; line-height: 1.3; white-space: nowrap;
+    border: 1px solid transparent;
+}
+.matrix-area-badge.area-transversal { background: #DBEAFE; color: #1E40AF; border-color: #93C5FD; }
+.matrix-area-badge.area-disciplinar { background: #FFEDD5; color: #9A3412; border-color: #FDBA74; }
+.matrix-area-badge.area-electiva,
+.matrix-area-badge.area-electivo   { background: #EDE9FE; color: #5B21B6; border-color: #C4B5FD; }
+
+.matrix-comp-title {
+    margin-top: 6px; font-size: 0.8rem; font-weight: 800;
+    color: #0F172A; line-height: 1.25; white-space: normal;
+}
+.malla-matrix-table th.matrix-comp-header,
+.matrix-comp-header {
+    min-width: 190px; max-width: 230px; text-align: left !important;
+    vertical-align: middle; background: #F8FAFC !important;
+    border-left: 5px solid #94A3B8; padding: 10px 12px !important;
+}
+.matrix-card-prereq {
+    margin-top: 4px; font-size: 0.62rem; color: #64748B; line-height: 1.2;
+}
+
+/* Bordes de componentes — Plan Propuesto */
+.comp-border-ciencias_basicas         { border-left-color: #2563EB !important; }
+.comp-border-legislacion_habilidades  { border-left-color: #0EA5E9 !important; }
+.comp-border-admon_gestion            { border-left-color: #EA580C !important; }
+.comp-border-economia_finanzas        { border-left-color: #F59E0B !important; }
+.comp-border-mercadeo_tech            { border-left-color: #DC2626 !important; }
+.comp-border-electivo                 { border-left-color: #7C3AED !important; }
+/* Bordes de componentes — Plan Vigente */
+.comp-border-v_ciencias_basicas       { border-left-color: #2563EB !important; }
+.comp-border-v_socio_humanistica      { border-left-color: #0EA5E9 !important; }
+.comp-border-v_admon_procesos         { border-left-color: #EA580C !important; }
+.comp-border-v_finanzas_contabilidad  { border-left-color: #F59E0B !important; }
+.comp-border-v_mercadeo_comercial     { border-left-color: #DC2626 !important; }
+.comp-border-v_investigacion_grado    { border-left-color: #16A34A !important; }
+.comp-border-v_electivo               { border-left-color: #7C3AED !important; }

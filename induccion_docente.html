@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Alineación Curricular SST | Decreto 1330</title>
+    
+    <!-- Fuentes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* --- VARIABLES GLOBALES --- */
+        :root {
+            --sidebar-width: 280px;
+            --orange: #FF6600;
+            --green: #009933;
+            --blue-dark: #1e3a8a;
+            --blue-aneca: #3b82f6;
+            --red-tobon: #dc2626;
+            --purple-ausubel: #8b5cf6;
+            --teal-vygotsky: #14b8a6;
+            --lime-dewey: #84cc16;
+            
+            --dark-bg: #111827;
+            --light-bg: #f3f4f6;
+            --white: #ffffff;
+            --text-main: #1f2937;
+            --text-light: #6b7280;
+        }
+
+        /* --- RESET Y BASE --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--light-bg);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* --- SIDEBAR --- */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--dark-bg);
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        .brand { padding: 30px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        .brand h2 { font-family: 'Montserrat', sans-serif; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+        .brand span { color: var(--orange); }
+        .nav-menu { flex: 1; padding-top: 20px; overflow-y: auto; }
+        .nav-btn {
+            width: 100%; background: none; border: none; color: var(--text-light); padding: 18px 25px;
+            text-align: left; cursor: pointer; transition: all 0.3s ease; font-size: 0.9rem;
+            display: flex; align-items: center; border-left: 4px solid transparent;
+        }
+        .nav-btn i { width: 30px; font-size: 1.1rem; }
+        .nav-btn:hover { background-color: rgba(255,255,255,0.05); color: var(--white); }
+        .nav-btn.active { background: linear-gradient(90deg, rgba(255,102,0,0.1) 0%, transparent 100%); color: var(--orange); border-left-color: var(--orange); font-weight: 500; }
+        .nav-footer { padding: 20px; font-size: 0.75rem; color: var(--text-light); text-align: center; border-top: 1px solid rgba(255,255,255,0.1); }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        .main-content { flex: 1; padding: 40px; overflow-y: auto; position: relative; }
+        .slide-header { margin-bottom: 30px; padding-bottom: 15px; border-bottom: 2px solid #e2e8f0; display: flex; justify-content: space-between; align-items: end; }
+        .slide-title h1 { font-family: 'Montserrat', sans-serif; font-size: 2rem; color: var(--text-main); margin-bottom: 5px; }
+        .slide-subtitle { color: var(--orange); font-weight: 600; font-size: 1rem; text-transform: uppercase; }
+        .content-section { display: none; animation: fadeIn 0.4s ease-in-out; }
+        .content-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* --- ESTILOS DE COMPONENTES --- */
+        
+        /* Ruta de Coherencia */
+        .coherence-flow { display: flex; flex-direction: column; gap: 20px; padding: 10px; }
+        .flow-row { display: flex; gap: 15px; align-items: stretch; }
+        .flow-card { flex: 1; background: var(--white); padding: 15px; border-radius: 8px; border-left: 4px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center; }
+        .card-level-1 { border-left-color: var(--orange); background: #fff7ed; }
+        .card-level-2 { border-left-color: #3b82f6; background: #eff6ff; }
+        .card-level-3 { border-left-color: var(--green); background: #f0fdf4; }
+        .flow-label { font-size: 0.75rem; text-transform: uppercase; color: var(--text-light); font-weight: bold; margin-bottom: 5px; }
+        .flow-value { font-size: 1rem; color: var(--text-main); font-weight: 700; }
+        .flow-desc { font-size: 0.8rem; color: #666; margin-top: 4px; }
+        .arrow-separator { display: flex; align-items: center; justify-content: center; color: #cbd5e1; font-size: 1.2rem; }
+
+        /* Cubo Teórico */
+        .theory-stack { display: flex; flex-direction: column; gap: 10px; max-width: 800px; margin: 0 auto; }
+        .theory-layer {
+            padding: 15px 20px; border-radius: 8px; color: white; position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .theory-layer:hover { transform: scale(1.02); }
+        .layer-title { font-weight: 800; font-size: 1.2rem; font-family: 'Montserrat', sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+        .layer-desc { font-size: 0.9rem; background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 4px; }
+        .bg-vygotsky { background: linear-gradient(135deg, var(--teal-vygotsky), #0d9488); }
+        .bg-ausubel { background: linear-gradient(135deg, var(--purple-ausubel), #7c3aed); }
+        .bg-dewey { background: linear-gradient(135deg, var(--lime-dewey), #65a30d); }
+        .bg-tobon { background: linear-gradient(135deg, var(--red-tobon), #b91c1c); }
+        .bg-aneca { background: linear-gradient(135deg, var(--blue-aneca), #2563eb); }
+
+        /* PERFIL DE EGRESO DETALLADO */
+        .profile-detailed-box {
+            background: white; border-radius: 10px; padding: 20px; margin-bottom: 20px;
+            border-left: 5px solid var(--orange); box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .profile-detailed-box h4 { color: var(--orange); margin-bottom: 15px; font-family: 'Montserrat', sans-serif; display: flex; align-items: center; gap: 10px; }
+        .pe-item { display: flex; gap: 15px; margin-bottom: 12px; align-items: flex-start; }
+        .pe-tag { background: var(--dark-bg); color: white; padding: 5px 10px; border-radius: 6px; font-weight: bold; font-size: 0.85rem; min-width: 50px; text-align: center; }
+        .pe-text { font-size: 0.9rem; color: #4b5563; line-height: 1.5; }
+
+        /* MATRIZ SST */
+        .matrix-container { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .sst-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .sst-table th { background: var(--dark-bg); color: white; padding: 12px; text-align: left; border-bottom: 3px solid var(--orange); }
+        .sst-table td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: top; color: #374151; }
+        .sst-table tr:hover { background: #f9fafb; }
+        .verb-highlight { color: var(--orange); font-weight: bold; }
+
+        /* CICLO Y RÚBRICAS */
+        .cycle-dashboard { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        .timeline-vertical { display: flex; flex-direction: column; gap: 15px; }
+        .cycle-phase { background: white; border-radius: 10px; padding: 15px; border-left: 5px solid #ccc; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; }
+        .phase-1 { border-left-color: var(--teal-vygotsky); }
+        .phase-2 { border-left-color: var(--blue-aneca); }
+        .phase-3 { border-left-color: var(--orange); }
+        .phase-info h4 { margin: 0; font-size: 1rem; color: var(--text-main); }
+        .phase-info span { font-size: 0.8rem; color: var(--text-light); }
+        .weight-pill { background: var(--dark-bg); color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; min-width: 80px; text-align: center; }
+        
+        .rubric-card { background: var(--white); border-radius: 10px; padding: 20px; height: 100%; border: 1px solid #e5e7eb; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .rubric-header { text-align: center; color: var(--text-main); font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .rubric-item { display: flex; align-items: center; margin-bottom: 15px; }
+        .rubric-icon { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; margin-right: 10px; }
+        .r-title { display: block; font-weight: bold; font-size: 0.9rem; }
+        .r-desc { font-size: 0.75rem; color: #666; }
+        .r-pct { font-size: 1.2rem; font-weight: 800; color: var(--text-main); }
+
+        /* BANNER INFOGRAFÍA */
+        .info-banner {
+            margin-top: 30px;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: transform 0.2s;
+            text-decoration: none; /* Para el enlace */
+        }
+        .info-banner:hover { transform: scale(1.01); }
+        .banner-icon { font-size: 2.5rem; opacity: 0.8; }
+        .banner-text h3 { margin: 0; font-size: 1.2rem; font-family: 'Montserrat', sans-serif; color: white; }
+        .banner-text p { margin: 5px 0 0; font-size: 0.9rem; opacity: 0.9; color: white; }
+        .banner-arrow { background: rgba(255,255,255,0.2); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;}
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body { flex-direction: column; overflow: auto; }
+            .sidebar { width: 100%; height: auto; flex-direction: row; padding: 10px; overflow-x: auto; }
+            .brand, .nav-footer { display: none; }
+            .nav-menu { display: flex; }
+            .nav-btn { width: auto; white-space: nowrap; padding: 10px; }
+            .flow-row, .cycle-dashboard, .theory-layer, .info-banner { flex-direction: column; align-items: flex-start; }
+            .arrow-separator { transform: rotate(90deg); margin: 5px 0; }
+            .sst-table { display: block; overflow-x: auto; }
+            .banner-arrow { margin-top: 10px; align-self: flex-end; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="brand">
+            <h2>Gestión <span>Curricular</span></h2>
+            <div class="year">Consultoría 2025</div>
+        </div>
+
+        <div class="nav-menu">
+            <button class="nav-btn active" onclick="showSection('coherencia', this)">
+                <i class="fas fa-project-diagram"></i> Ruta de Coherencia
+            </button>
+            <button class="nav-btn" onclick="showSection('teoricos', this)">
+                <i class="fas fa-cubes"></i> Referentes Teóricos
+            </button>
+            <button class="nav-btn" onclick="showSection('matrices', this)">
+                <i class="fas fa-table"></i> Matriz SST (Alineada)
+            </button>
+            <button class="nav-btn" onclick="showSection('ciclo', this)">
+                <i class="fas fa-tasks"></i> Ciclo y Evaluación
+            </button>
+        </div>
+
+        <div class="nav-footer">
+            Alineación Constructiva<br>Dec. 1330/2019
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- 1. RUTA DE COHERENCIA -->
+        <div id="coherencia" class="content-section active">
+            <div class="slide-header">
+                <div class="slide-title">
+                    <h1>Ruta de Coherencia Integral</h1>
+                    <div class="slide-subtitle">Alineación Sistémica</div>
+                </div>
+                <div class="date-badge">Visión Macro</div>
+            </div>
+
+            <div class="coherence-flow">
+                <!-- Nivel 1 -->
+                <div class="flow-row">
+                    <div class="flow-card card-level-1">
+                        <div class="flow-label">1. Fundamento</div>
+                        <div class="flow-value">Modelo Pedagógico</div>
+                        <div class="flow-desc">Formación en Contextos de Aplicación</div>
+                    </div>
+                    <div class="arrow-separator"><i class="fas fa-chevron-right"></i></div>
+                    <div class="flow-card card-level-1">
+                        <div class="flow-label">2. Promesa</div>
+                        <div class="flow-value">Perfil de Egreso</div>
+                        <div class="flow-desc">Competencias declaradas ante el MEN</div>
+                    </div>
+                    <div class="arrow-separator"><i class="fas fa-chevron-right"></i></div>
+                    <div class="flow-card card-level-2">
+                        <div class="flow-label">3. Estructura</div>
+                        <div class="flow-value">Plan de Estudios</div>
+                        <div class="flow-desc">Malla Curricular / Núcleos</div>
+                    </div>
+                </div>
+
+                <!-- Conector -->
+                <div style="text-align: center; color: #cbd5e1;"><i class="fas fa-arrow-down"></i></div>
+
+                <!-- Nivel 2 -->
+                <div class="flow-row">
+                    <div class="flow-card card-level-2">
+                        <div class="flow-label">4. Microcurrículo</div>
+                        <div class="flow-value">Syllabus</div>
+                        <div class="flow-desc">Competencias específicas</div>
+                    </div>
+                    <div class="arrow-separator"><i class="fas fa-chevron-right"></i></div>
+                    <div class="flow-card card-level-3">
+                        <div class="flow-label">5. Medición</div>
+                        <div class="flow-value">Resultado de Aprendizaje</div>
+                        <div class="flow-desc">Acción + Objeto + Condición</div>
+                    </div>
+                    <div class="arrow-separator"><i class="fas fa-chevron-right"></i></div>
+                    <div class="flow-card card-level-3">
+                        <div class="flow-label">6. Verificación</div>
+                        <div class="flow-value">Evaluación (MBE)</div>
+                        <div class="flow-desc">Evidencias de Desempeño</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. REFERENTES TEÓRICOS -->
+        <div id="teoricos" class="content-section">
+            <div class="slide-header">
+                <div class="slide-title">
+                    <h1>Referentes Teóricos del Modelo Pedagógico</h1>
+                    <div class="slide-subtitle">Fundamentación Pedagógica</div>
+                </div>
+                <div class="date-badge">Teoría Educativa</div>
+            </div>
+
+            <div class="theory-stack">
+                <div class="theory-layer bg-vygotsky">
+                    <div class="layer-title">Lev Vygotsky</div>
+                    <div class="layer-desc"><i class="fas fa-users"></i> Labor social y colaborativa. ZDP.</div>
+                </div>
+                <div class="theory-layer bg-ausubel">
+                    <div class="layer-title">David Ausubel</div>
+                    <div class="layer-desc"><i class="fas fa-brain"></i> Aprendizaje Significativo.</div>
+                </div>
+                <div class="theory-layer bg-dewey">
+                    <div class="layer-title">John Dewey</div>
+                    <div class="layer-desc"><i class="fas fa-child"></i> Escuela Nueva. Estudiante al centro.</div>
+                </div>
+                <div class="theory-layer bg-tobon">
+                    <div class="layer-title">Sergio Tobón</div>
+                    <div class="layer-desc"><i class="fas fa-award"></i> Formación basada en Competencias.</div>
+                </div>
+                <div class="theory-layer bg-aneca">
+                    <div class="layer-title">ANECA</div>
+                    <div class="layer-desc"><i class="fas fa-check-circle"></i> Resultados de Aprendizaje.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. MATRICES DE COHERENCIA (CON PERFIL COMPLETO) -->
+        <div id="matrices" class="content-section">
+            <div class="slide-header">
+                <div class="slide-title">
+                    <h1>Matriz de Coherencia</h1>
+                    <div class="slide-subtitle">Programa: Profesional en SST</div>
+                </div>
+                <div class="date-badge">SST Alineado</div>
+            </div>
+
+            <!-- PERFIL DE EGRESO DETALLADO -->
+            <div class="profile-detailed-box">
+                <h4><i class="fas fa-user-graduate"></i> Perfil de Egreso Aplicable (SST)</h4>
+                
+                <div class="pe-item">
+                    <span class="pe-tag">PE1</span>
+                    <div class="pe-text">Controlar los riesgos asociados a la higiene y seguridad industrial por medio del marco legal aplicable y uso de metodologías que garanticen la prevención de accidentes y enfermedades laborales.</div>
+                </div>
+                
+                <div class="pe-item">
+                    <span class="pe-tag">PE2</span>
+                    <div class="pe-text">Estructurar el Sistema de Gestión de Seguridad y Salud en el Trabajo conforme al marco legal de referencia y el ciclo de mejora continua que garanticen la continuidad del negocio.</div>
+                </div>
+            </div>
+
+<div class="pe-item">
+                    <span class="pe-tag">PE3</span>
+                    <div class="pe-text">Proponer los mecanismos conducentes para la generación de estrategias de promoción y prevención en seguridad y salud en el trabajo, para la disminución de los indicadores de ausentismo derivados de la enfermedad</div>
+                </div>
+            </div>
+
+<div class="pe-item">
+                    <span class="pe-tag">PE4</span>
+                    <div class="pe-text">Solucionar problemas reales del entorno, bajo principios humanísticos y de responsabilidad tanto social como ambiental.</div>
+                </div>
+            </div>
+
+            <!-- FLECHA CONECTORA -->
+            <div style="text-align: center; color: var(--orange); margin-bottom: 15px; font-size: 1.5rem;">
+                <i class="fas fa-arrow-down"></i>
+            </div>
+
+            <!-- MATRIZ -->
+            <div class="matrix-container">
+                <h3 style="margin-bottom: 10px; color: var(--text-main);">Asignatura: Higiene y Seguridad Industrial</h3>
+                
+                <div style="overflow-x:auto;">
+                    <table class="sst-table">
+                        <thead>
+                            <tr>
+                                <th width="20%">Competencia Syllabus</th>
+                                <th width="25%">Resultado de Aprendizaje (RA)</th>
+                                <th width="20%">Indicador de Desempeño</th>
+                                <th width="20%">Estrategia de Evaluación</th>
+                                <th width="15%">Vinculación Saber Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Relacionado con PE1 (Higiene) -->
+                            <tr>
+                                <td>Evaluar los factores de riesgo físico y químico en el entorno laboral según normativa.</td>
+                                <td>
+                                    <span class="verb-highlight">Analiza</span> los niveles de exposición a agentes contaminantes utilizando medición instrumental y límites permisibles.
+                                </td>
+                                <td>Calcula dosis de ruido y TWA interpretando datos según Res. 1792.</td>
+                                <td>
+                                    <strong>Tarea 2 (20%):</strong><br>
+                                    Informe Técnico de Higiene Industrial con cálculos.
+                                </td>
+                                <td>
+                                    <strong>Razonamiento Cuantitativo</strong>
+                                </td>
+                            </tr>
+                            <!-- Relacionado con PE2 (Sistemas de Gestión) -->
+                            <tr>
+                                <td>Diseñar estrategias de prevención y control de accidentes de trabajo.</td>
+                                <td>
+                                    <span class="verb-highlight">Diseña</span> una jerarquía de controles de ingeniería para mitigar riesgos prioritarios.
+                                </td>
+                                <td>Propone medidas correctivas justificando viabilidad (Dec. 1072).</td>
+                                <td>
+                                    <strong>Tarea 3 (20%):</strong><br>
+                                    Matriz de Peligros y Plan de Intervención.
+                                </td>
+                                <td>
+                                    <strong>Lectura Crítica</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. CICLO OPERATIVO Y CIERRE -->
+        <div id="ciclo" class="content-section">
+            <div class="slide-header">
+                <div class="slide-title">
+                    <h1>Ciclo Operativo (8 Semanas)</h1>
+                    <div class="slide-subtitle">Implementación y Evaluación</div>
+                </div>
+                <div class="date-badge">Operatividad</div>
+            </div>
+
+            <div class="cycle-dashboard">
+                <!-- Timeline -->
+                <div class="timeline-vertical">
+                    <div class="cycle-phase phase-1">
+                        <div class="phase-info">
+                            <h4>Fundamentación (Semanas 1-2)</h4>
+                            <span>Diagnóstico y talleres iniciales.</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="weight-pill" style="background: #3b82f6; margin-bottom:5px;">Tarea 1: 15%</div>
+                            <div class="weight-pill" style="background: var(--orange);">Quiz 1: 5%</div>
+                        </div>
+                    </div>
+
+                    <div class="cycle-phase phase-2">
+                        <div class="phase-info">
+                            <h4>Desarrollo (Semanas 3-5)</h4>
+                            <span>Cierre de brechas (Casos/ABP).</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="weight-pill" style="background: #3b82f6; margin-bottom:5px;">Tarea 2: 20%</div>
+                            <div class="weight-pill" style="background: var(--orange);">Quiz 2: 5%</div>
+                        </div>
+                    </div>
+
+                    <div class="cycle-phase phase-3">
+                        <div class="phase-info">
+                            <h4>Cierre (Semanas 6-8)</h4>
+                            <span>Validación del RA.</span>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="weight-pill" style="background: #3b82f6; margin-bottom:5px;">Tarea 3: 20%</div>
+                            <div class="weight-pill" style="background: var(--green); font-size: 0.9rem;">Final: 30%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rúbricas -->
+                <div class="rubric-card">
+                    <div class="rubric-header">RÚBRICAS ANALÍTICAS</div>
+                    <div class="rubric-item">
+                        <div class="rubric-icon" style="background: #3b82f6;"><i class="fas fa-cogs"></i></div>
+                        <div class="rubric-text"><span class="r-title">Disciplinar</span><span class="r-desc">Dominio técnico</span></div>
+                        <span class="r-pct">60%</span>
+                    </div>
+                    <div class="rubric-item">
+                        <div class="rubric-icon" style="background: #14b8a6;"><i class="fas fa-brain"></i></div>
+                        <div class="rubric-text"><span class="r-title">Genérica</span><span class="r-desc">Saber Pro</span></div>
+                        <span class="r-pct">30%</span>
+                    </div>
+                    <div class="rubric-item">
+                        <div class="rubric-icon" style="background: #f59e0b;"><i class="fas fa-file-alt"></i></div>
+                        <div class="rubric-text"><span class="r-title">Formalidad</span><span class="r-desc">Normas</span></div>
+                        <span class="r-pct">10%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BANNER INFOGRAFÍA -->
+            <!-- Aquí configuramos la ruta para que busque 'infografia.png' en la misma carpeta. -->
+            <!-- También se deja la ruta absoluta en comentario como respaldo, pero se recomienda mover la imagen. -->
+            
+            <a href="infografia.png" target="_blank" style="text-decoration: none;">
+                <div class="info-banner">
+                    <div class="banner-icon"><i class="fas fa-image"></i></div>
+                    <div class="banner-text">
+                        <h3>Ver Infografía Resumen</h3>
+                        <p>Clic aquí para abrir el archivo: infografia.png</p>
+                    </div>
+                    <div class="banner-arrow"><i class="fas fa-external-link-alt"></i></div>
+                </div>
+            </a>
+            <p style="font-size: 0.75rem; color: #999; margin-top: 5px; text-align: center;">
+                *Para que funcione, guarda este HTML en la misma carpeta que la imagen "infografia.png"
+            </p>
+
+        </div>
+
+    </main>
+
+    <script>
+        function showSection(sectionId, btnElement) {
+            document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+            btnElement.classList.add('active');
+        }
+    </script>
+</body>
+</html>

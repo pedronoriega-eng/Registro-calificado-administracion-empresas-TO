@@ -7,15 +7,15 @@ const PWD_HASH = "CETO2026";
 
 // ---- Conditions Info ----
 const condInfo = [
-    { id: 'c1', title: '1. Denominación del Programa', icon: 'fas fa-id-badge', desc: 'Denominación académica, título otorgado, NBC y clasificación CINE.', img: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80' },
+    { id: 'c1', title: '1. Denominación del Programa', icon: 'fas fa-id-badge', desc: 'Denominación académica, título otorgado, NBC y clasificación CINE.', img: 'assets/sedes_institucionales.png' },
     { id: 'c2', title: '2. Justificación del Programa', icon: 'fas fa-chart-line', desc: 'Pertinencia, estudios de contexto, necesidades del sector y análisis de oferta.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80' },
     { id: 'c3', title: '3. Aspectos Curriculares', icon: 'fas fa-sitemap', desc: 'Malla curricular, competencias, RAP, flexibilidad y plan de estudios unificado.', img: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80' },
-    { id: 'c4', title: '4. Organización de Actividades Académicas', icon: 'fas fa-cogs', desc: 'Modelo pedagógico, créditos, estrategias didácticas y sistema de evaluación.', img: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80' },
-    { id: 'c5', title: '5. Investigación', icon: 'fas fa-flask', desc: 'Grupos, líneas, semilleros, producción académica y proyección investigativa.', img: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80' },
+    { id: 'c4', title: '4. Organización de Actividades Académicas', icon: 'fas fa-cogs', desc: 'Modelo pedagógico, créditos, estrategias didácticas y sistema de evaluación.', img: 'assets/virtual_card_cover.png' },
+    { id: 'c5', title: '5. Investigación', icon: 'fas fa-flask', desc: 'Grupos, líneas, semilleros, producción académica y proyección investigativa.', img: 'assets/investigacion_card.jpg' },
     { id: 'c6', title: '6. Relación con el Sector Externo', icon: 'fas fa-handshake', desc: 'Convenios, prácticas empresariales, proyección social e internacionalización.', img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80' },
     { id: 'c7', title: '7. Personal Docente', icon: 'fas fa-chalkboard-teacher', desc: 'Perfiles docentes, dedicación, formación posgradual y plan de cualificación.', img: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80' },
     { id: 'c8', title: '8. Medios Educativos', icon: 'fas fa-laptop-code', desc: 'Biblioteca digital, LMS Moodle, software especializado y recursos de aprendizaje.', img: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80' },
-    { id: 'c9', title: '9. Infraestructura Física y Tecnológica', icon: 'fas fa-building', desc: 'Sedes, laboratorios, infraestructura AWS, conectividad y plan de mantenimiento.', img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80' }
+    { id: 'c9', title: '9. Infraestructura Física y Tecnológica', icon: 'fas fa-building', desc: 'Sedes, laboratorios, infraestructura AWS, conectividad y plan de mantenimiento.', img: 'assets/sedes_institucionales.png' }
 ];
 
 // ---- Auth Functions ----
