@@ -1627,6 +1627,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .comp-border-electivo                { border-left-color: #7C3AED !important; }
 
 /* Plan Vigente */
+.comp-border-area_transversal        { border-left: 4px solid #2563EB !important; }
+.comp-border-area_disciplinar        { border-left: 4px solid #F39200 !important; }
+.comp-border-area_electiva           { border-left: 4px solid #D97706 !important; }
 .comp-border-v_ciencias_basicas      { border-left-color: #2563EB !important; }
 .comp-border-v_socio_humanistica     { border-left-color: #0EA5E9 !important; }
 .comp-border-v_admon_procesos        { border-left-color: #EA580C !important; }
