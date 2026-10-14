@@ -1360,140 +1360,152 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     padding: 16px !important;
 }
 
-/* Outer & Scroll Wrapper */
+/* =========================================================
+   PERFECT NO-SCROLL FIT-TO-SCREEN MALLA MATRIX (SEM 1 TO 8/9)
+   Cero desplazamiento horizontal - Ajuste proporcional 100%
+   ========================================================= */
+
+.viewer-modal {
+    padding: 8px !important;
+}
+
+.viewer-card {
+    width: 98.5vw !important;
+    max-width: 98.5vw !important;
+    min-width: 95vw !important;
+    margin: 0 auto !important;
+}
+
+.viewer-card-body {
+    padding: 10px 12px !important;
+}
+
+.dashboard {
+    max-width: 98.5vw !important;
+    padding: 10px 12px !important;
+}
+
+/* Outer Container - Strict Zero Horizontal Scroll */
 .malla-matrix-scale-outer {
     width: 100% !important;
     max-width: 100% !important;
-    overflow: visible !important;
-    margin-top: 16px;
-    margin-bottom: 24px;
+    overflow: hidden !important;
+    margin-top: 12px;
+    margin-bottom: 20px;
     position: relative;
 }
 
 .malla-matrix-wrapper {
     width: 100% !important;
     max-width: 100% !important;
-    overflow-x: auto !important;
+    min-width: 100% !important;
+    overflow-x: hidden !important; /* CERO BARRA DE DESPLAZAMIENTO */
     overflow-y: visible !important;
     background: #FFFFFF !important;
     border-radius: var(--radius-lg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     border: 1px solid #CBD5E1;
-    position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    scrollbar-width: thin;
-    scrollbar-color: var(--orange) #F1F5F9;
 }
 
-/* Sleek visible orange scrollbar */
-.malla-matrix-wrapper::-webkit-scrollbar {
-    height: 12px;
-}
-.malla-matrix-wrapper::-webkit-scrollbar-track {
-    background: #F1F5F9;
-    border-radius: 0 0 10px 10px;
-}
-.malla-matrix-wrapper::-webkit-scrollbar-thumb {
-    background: var(--orange);
-    border-radius: 6px;
-    border: 2px solid #F1F5F9;
-}
-.malla-matrix-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #D97706;
-}
-
-/* The Table */
+/* Table - Fixed Layout Filling 100% Container */
 .malla-matrix-table {
-    width: max-content !important;
+    width: 100% !important;
     min-width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed !important;
     border-collapse: separate !important;
     border-spacing: 0 !important;
-    table-layout: auto !important;
-    font-size: 0.8rem;
+    font-size: 0.74rem;
     background: #FFFFFF;
 }
 
-/* Header Cells (General) */
+/* Header Cells */
 .malla-matrix-table th {
     background: #0F172A;
     color: #FFFFFF;
     font-family: var(--font-heading);
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 12px 10px;
+    letter-spacing: 0.3px;
+    padding: 8px 2px;
     border-bottom: 3px solid var(--orange);
     text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 10;
     white-space: nowrap;
+    overflow: hidden;
 }
 
-/* Sticky Corner Header Cell (Top-Left) */
 .malla-matrix-table th.matrix-comp-header-corner,
 .matrix-comp-header-corner {
-    position: sticky !important;
-    top: 0 !important;
-    left: 0 !important;
-    z-index: 25 !important;
     background: #0A0F1D !important;
     color: #FFFFFF !important;
-    width: 260px !important;
-    min-width: 260px !important;
-    max-width: 260px !important;
     text-align: left !important;
-    padding: 12px 16px !important;
+    padding: 8px 8px !important;
     border-bottom: 3px solid var(--orange) !important;
     border-right: 2px solid #CBD5E1 !important;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.18) !important;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Semester Headers */
-.malla-matrix-table th.sem-header,
-.sem-header {
-    width: 175px !important;
-    min-width: 175px !important;
-    max-width: 175px !important;
-    text-align: center !important;
+/* Plan Vigente (9 Semesters + 1 Component = 10 columns) */
+.malla-matrix-table-9sem th.matrix-comp-header-corner,
+.malla-matrix-table-9sem td.matrix-comp-header {
+    width: 14.5% !important;
+    min-width: 110px !important;
+    max-width: 14.5% !important;
 }
 
-/* Sticky First Column: Component & Area Header */
+.malla-matrix-table-9sem th.sem-header,
+.malla-matrix-table-9sem td.matrix-cell {
+    width: 9.5% !important;
+    min-width: 0 !important;
+    max-width: 9.5% !important;
+}
+
+/* Plan Propuesto (8 Semesters + 1 Component = 9 columns) */
+.malla-matrix-table-8sem th.matrix-comp-header-corner,
+.malla-matrix-table-8sem td.matrix-comp-header {
+    width: 15.2% !important;
+    min-width: 115px !important;
+    max-width: 15.2% !important;
+}
+
+.malla-matrix-table-8sem th.sem-header,
+.malla-matrix-table-8sem td.matrix-cell {
+    width: 10.6% !important;
+    min-width: 0 !important;
+    max-width: 10.6% !important;
+}
+
+/* First Column: Component & Area Header */
 .malla-matrix-table td.matrix-comp-header,
 .matrix-comp-header {
     background: #F8FAFC !important;
     color: var(--carbon) !important;
-    padding: 12px 14px !important;
+    padding: 6px 6px !important;
     border-bottom: 1px solid #E2E8F0 !important;
     border-right: 2px solid #CBD5E1 !important;
-    position: sticky !important;
-    left: 0 !important;
-    z-index: 12 !important;
-    width: 260px !important;
-    min-width: 260px !important;
-    max-width: 260px !important;
     display: table-cell !important;
     vertical-align: middle !important;
-    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.06) !important;
     box-sizing: border-box !important;
+    overflow: hidden !important;
 }
 
 /* Area Badges */
 .matrix-area-badge {
     display: inline-flex !important;
     align-items: center !important;
-    gap: 5px !important;
-    padding: 3px 9px !important;
-    margin-bottom: 6px !important;
+    gap: 3px !important;
+    padding: 2px 6px !important;
+    margin-bottom: 3px !important;
     border-radius: 999px !important;
-    font-size: 0.65rem !important;
+    font-size: 0.58rem !important;
     font-weight: 800 !important;
-    letter-spacing: 0.04em !important;
+    letter-spacing: 0.03em !important;
     text-transform: uppercase !important;
-    line-height: 1.25 !important;
+    line-height: 1.15 !important;
     white-space: nowrap !important;
     border: 1px solid transparent !important;
 }
@@ -1524,10 +1536,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     margin: 0 !important;
     padding: 0 !important;
     font-family: var(--font-heading) !important;
-    font-size: 0.82rem !important;
+    font-size: 0.68rem !important;
     font-weight: 800 !important;
     color: #0F172A !important;
-    line-height: 1.35 !important;
+    line-height: 1.2 !important;
     white-space: normal !important;
     word-break: normal !important;
 }
@@ -1535,32 +1547,28 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 /* Semester Data Cell */
 .malla-matrix-table td.matrix-cell,
 .matrix-cell {
-    padding: 8px 8px !important;
+    padding: 4px 3px !important;
     vertical-align: top !important;
     background: #FFFFFF !important;
     border-bottom: 1px solid #F1F5F9 !important;
     border-right: 1px solid #F1F5F9 !important;
-    width: 175px !important;
-    min-width: 175px !important;
-    max-width: 175px !important;
     box-sizing: border-box !important;
+    overflow: hidden !important;
 }
 
-/* Subject Cards in Matrix */
+/* Subject Cards in Matrix - Proportional and Sleek */
 .malla-matrix-subject-card {
     background: #FFFFFF !important;
-    border-radius: 8px !important;
-    padding: 8px 10px !important;
-    margin-bottom: 8px !important;
+    border-radius: 6px !important;
+    padding: 5px 4px !important;
+    margin-bottom: 4px !important;
     cursor: pointer !important;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
     border: 1px solid #E2E8F0 !important;
-    border-left: 4px solid #94A3B8 !important;
+    border-left: 3px solid #94A3B8 !important;
     position: relative !important;
     overflow: hidden !important;
-    white-space: normal !important;
-    word-break: normal !important;
     box-sizing: border-box !important;
 }
 
@@ -1570,7 +1578,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .malla-matrix-subject-card:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 6px 18px rgba(243, 146, 0, 0.22) !important;
+    box-shadow: 0 4px 12px rgba(243, 146, 0, 0.22) !important;
     border-color: var(--orange) !important;
     background: #FFFDF9 !important;
 }
@@ -1578,32 +1586,35 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .malla-matrix-subject-card.selected-card {
     border-color: var(--orange) !important;
     background: #FFF7ED !important;
-    box-shadow: 0 0 0 2px var(--orange), 0 4px 12px rgba(243, 146, 0, 0.15) !important;
+    box-shadow: 0 0 0 2px var(--orange), 0 3px 8px rgba(243, 146, 0, 0.15) !important;
 }
 
 .subject-card-title,
 .matrix-card-title {
     font-family: var(--font-heading) !important;
-    font-size: 0.74rem !important;
-    font-weight: 800 !important;
+    font-size: 0.63rem !important;
+    font-weight: 750 !important;
     color: #0F172A !important;
-    line-height: 1.25 !important;
-    margin-top: 3px !important;
-    margin-bottom: 4px !important;
+    line-height: 1.15 !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
     white-space: normal !important;
     word-break: normal !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
     -webkit-font-smoothing: antialiased;
 }
 
 .matrix-card-prereq {
-    font-size: 0.58rem !important;
+    font-size: 0.52rem !important;
     color: #64748B !important;
     display: flex !important;
     align-items: center !important;
-    gap: 3px !important;
+    gap: 2px !important;
     margin-top: 2px !important;
+    line-height: 1.1 !important;
     white-space: normal !important;
-    line-height: 1.2 !important;
+    word-break: normal !important;
 }
 
 /* Component Row Accent Border Colors */
@@ -1638,19 +1649,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     border: 1px solid #E2E8F0 !important;
     border-radius: var(--radius-lg) !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
-    padding: 24px !important;
-    margin-top: 20px !important;
+    padding: 20px !important;
+    margin-top: 16px !important;
     animation: fadeIn 0.3s ease !important;
     -webkit-font-smoothing: antialiased;
-}
-
-/* Explicit Total Widths for Matrix Tables to Guarantee Zero Compression */
-.malla-matrix-table-9sem {
-    width: 1835px !important;
-    min-width: 1835px !important;
-}
-
-.malla-matrix-table-8sem {
-    width: 1660px !important;
-    min-width: 1660px !important;
 }

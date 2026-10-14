@@ -11421,7 +11421,454 @@ window.SECTIONS['c3'] = `
  <p style="font-size:0.78rem; color:var(--gray-text); margin:0;">4 Asignaturas (5.1%)</p>
  </div>
  </div>
- """ + areas_vigente_html + """
+ <div class="card" style="margin-bottom:16px; border-top:4px solid #0284C7;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-calculator" style="color:#0284C7; margin-right:8px;"></i> Área de Formación Transversal y Básica (Plan Vigente 158 cr)
+                </h4>
+                <div style="display:flex; gap:10px;">
+                    <span style="background:#0284C7; color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">10 Asignaturas</span>
+                    <span style="background:var(--carbon); color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">22 Créditos Totales</span>
+                </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:14px;">Fundamentación científica, cuantitativa, humanística, comunicativa y de bilingüismo del administrador de empresas (10 asignaturas / 22 créditos).</p>
+            <div style="overflow-x:auto;">
+                <table class="tbl" style="width:100%; font-size:0.83rem;">
+                    <thead>
+                        <tr style="background:#F8FAFC;">
+                            <th style="width:110px;">Semestre</th>
+                            <th>Asignatura</th>
+                            <th style="width:80px; text-align:center;">Créditos</th>
+                            <th>Prerrequisito</th>
+                            <th>Modalidad Presencial (Decreto 1330)</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Constitución y Democracia</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Expresión Oral y Escrita</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés I</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés II</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés I</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés III</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés II</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés IV</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés III</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Investigación de Operaciones</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés V</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés IV</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés VI</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés V</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Deontología</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div><div class="card" style="margin-bottom:16px; border-top:4px solid #7C3AED;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-briefcase" style="color:#7C3AED; margin-right:8px;"></i> Área de Formación Disciplinar y Específica (Plan Vigente 158 cr)
+                </h4>
+                <div style="display:flex; gap:10px;">
+                    <span style="background:#7C3AED; color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">49 Asignaturas</span>
+                    <span style="background:var(--carbon); color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">130 Créditos Totales</span>
+                </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:14px;">Núcleo estructurante profesional en gestión, finanzas, operaciones, mercadeo, derecho corporativo y estrategia (49 asignaturas / 130 créditos).</p>
+            <div style="overflow-x:auto;">
+                <table class="tbl" style="width:100%; font-size:0.83rem;">
+                    <thead>
+                        <tr style="background:#F8FAFC;">
+                            <th style="width:110px;">Semestre</th>
+                            <th>Asignatura</th>
+                            <th style="width:80px; text-align:center;">Créditos</th>
+                            <th>Prerrequisito</th>
+                            <th>Modalidad Presencial (Decreto 1330)</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Matemáticas Básicas</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos de Administración</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos Contables</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos de Economía</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Cálculo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Matemáticas Básicas</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Legislación Laboral</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Teoría Organizacional</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Costos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Metodología de la Investigación</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Microeconomía</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Economía</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Estadística Descriptiva</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Cálculo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Derecho Administrativo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Constitución y Democracia</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Administración por Procesos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Teoría Organizacional</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Cultura Emprendedora</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Macroeconomía</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Microeconomía</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Estadística Inferencial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Descriptiva</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Legislación Tributaria</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva Humanística I</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Liderazgo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Creatividad e Innovación</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Cultura Emprendedora</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Entorno Económico Colombiano e Internacional</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Macroeconomía</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Matemática Financiera</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Costos</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos de Mercadeo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Modelos de Desarrollo Económico</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Entorno Económico Colombiano e Internacional</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Administración de Salarios</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Laboral</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Legislación Comercial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia de Mercadeo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">E-Commerce</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Tecnología e Innovación</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Creatividad e Innovación</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Métodos Cuantitativos y Cualitativos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva Humanística II</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Humanística I</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos de Administración Pública</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Derecho Administrativo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gestión de la Calidad</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Administración por Procesos</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Presupuesto</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Costos</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia de Talento Humano</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Administración de Salarios</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Proyecto Empresarial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Cultura Emprendedora</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Sistema de Información Gerencial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Tecnología e Innovación</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Habilidades Gerenciales</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Liderazgo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia de Producción</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Investigación de Operaciones</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Investigación de Mercados</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Mercadeo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia Financiera</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Matemática Financiera</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Proyecto de Grado I</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Metodología de la Investigación</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 9</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Planeación y Prospectiva</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Habilidades Gerenciales</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 9</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia del Servicio</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Mercadeo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 9</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Evaluación de Proyectos de Inversión</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia Financiera</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 9</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Responsabilidad Social Empresarial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Deontología</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 9</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gobierno Corporativo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Comercial</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 9</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Distribución Física y Logística</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Producción</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">TP (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 9</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Proyecto de Grado II</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Proyecto de Grado I</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div><div class="card" style="margin-bottom:16px; border-top:4px solid #D97706;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-sliders-h" style="color:#D97706; margin-right:8px;"></i> Área Electiva y de Profundización (Plan Vigente 158 cr)
+                </h4>
+                <div style="display:flex; gap:10px;">
+                    <span style="background:#D97706; color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">3 Asignaturas</span>
+                    <span style="background:var(--carbon); color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">6 Créditos Totales</span>
+                </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:14px;">Bolsa de flexibilidad académica dividida en Electivas de Profundización y Electivas Humanísticas (3 asignaturas / 6 créditos).</p>
+            <div style="overflow-x:auto;">
+                <table class="tbl" style="width:100%; font-size:0.83rem;">
+                    <thead>
+                        <tr style="background:#F8FAFC;">
+                            <th style="width:110px;">Semestre</th>
+                            <th>Asignatura</th>
+                            <th style="width:80px; text-align:center;">Créditos</th>
+                            <th>Prerrequisito</th>
+                            <th>Modalidad Presencial (Decreto 1330)</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva Profundización I</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva Profundización II</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización I</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva Profundización III</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">2 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización II</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">T (32h dir / 64h indep = 96h)</td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div>
  </div>
 
  <!-- SUB TAB 2.3: PERFILES Y RAPS VIGENTES -->
@@ -12140,7 +12587,401 @@ window.SECTIONS['c3'] = `
  <p style="font-size:0.78rem; color:var(--gray-text); margin:0;">4 Asignaturas (8.3%)</p>
  </div>
  </div>
- """ + areas_propuesto_html + """
+ <div class="card" style="margin-bottom:16px; border-top:4px solid #0284C7;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-calculator" style="color:#0284C7; margin-right:8px;"></i> Área de Formación Básica (Plan Propuesto 144 cr)
+                </h4>
+                <div style="display:flex; gap:10px;">
+                    <span style="background:#0284C7; color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">9 Asignaturas</span>
+                    <span style="background:var(--carbon); color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">27 Créditos Totales</span>
+                </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:14px;">Herramientas cuantitativas, razonamiento lógico-matemático, análisis económico y modelación estadística fundamental.</p>
+            <div style="overflow-x:auto;">
+                <table class="tbl" style="width:100%; font-size:0.83rem;">
+                    <thead>
+                        <tr style="background:#F8FAFC;">
+                            <th style="width:110px;">Semestre</th>
+                            <th>Asignatura</th>
+                            <th style="width:80px; text-align:center;">Créditos</th>
+                            <th>Prerrequisito</th>
+                            <th>Modalidad Presencial (Decreto 1330)</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos Contables y Financieros</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Álgebra Lineal</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Cálculo Diferencial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Microeconomía</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Estadística Descriptiva</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Costos y Presupuestos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Macroeconomía</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Análisis Financiero</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Estadística Inferencial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div><div class="card" style="margin-bottom:16px; border-top:4px solid #7C3AED;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-briefcase" style="color:#7C3AED; margin-right:8px;"></i> Área de Formación Disciplinar (Plan Propuesto 144 cr)
+                </h4>
+                <div style="display:flex; gap:10px;">
+                    <span style="background:#7C3AED; color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">27 Asignaturas</span>
+                    <span style="background:var(--carbon); color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">81 Créditos Totales</span>
+                </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:14px;">Núcleo estructurante de la profesión: gestión estratégica, operaciones, talento humano, marketing, proyectos y analítica de datos.</p>
+            <div style="overflow-x:auto;">
+                <table class="tbl" style="width:100%; font-size:0.83rem;">
+                    <thead>
+                        <tr style="background:#F8FAFC;">
+                            <th style="width:110px;">Semestre</th>
+                            <th>Asignatura</th>
+                            <th style="width:80px; text-align:center;">Créditos</th>
+                            <th>Prerrequisito</th>
+                            <th>Modalidad Presencial (Decreto 1330)</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos de Administración</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Fundamentos de Mercadeo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Procesos Administrativos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Teoría Organizacional</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Investigación de Mercados</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Matemática Financiera</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Economía Colombiana e Internacional</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Administración Financiera</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gestión de Operaciones</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia del Talento Humano</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Procesos Administrativos</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia de Marketing</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Ética y Responsabilidad Social Empresarial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Planeación Estratégica y Prospectiva</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia de Producción</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Formulación y Evaluación de Proyectos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Sistemas Integrados de Gestión (HSEQ)</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Habilidades Gerenciales y Liderazgo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia del Talento Humano</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia Financiera</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia de Ventas y Canales de Distribución</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Big Data y Analítica de Datos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Emprendimiento e Innovación</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gestión de la Calidad</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Pensamiento Estratégico y Prospectivo</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Gerencia de la Innovación y la Tecnología</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Proyecto de Grado</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Competencias Investigativas</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Seminario de Actualización Empresarial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Juego Gerencial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Pensamiento Estratégico y Prospectivo</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div><div class="card" style="margin-bottom:16px; border-top:4px solid #16A34A;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-globe-americas" style="color:#16A34A; margin-right:8px;"></i> Área de Formación Transversal e Investigativa (Plan Propuesto 144 cr)
+                </h4>
+                <div style="display:flex; gap:10px;">
+                    <span style="background:#16A34A; color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">9 Asignaturas</span>
+                    <span style="background:var(--carbon); color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">27 Créditos Totales</span>
+                </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:14px;">Competencias genéricas en comunicación, competencias ciudadanas, investigación formativa, legislación y bilingüismo.</p>
+            <div style="overflow-x:auto;">
+                <table class="tbl" style="width:100%; font-size:0.83rem;">
+                    <thead>
+                        <tr style="background:#F8FAFC;">
+                            <th style="width:110px;">Semestre</th>
+                            <th>Asignatura</th>
+                            <th style="width:80px; text-align:center;">Créditos</th>
+                            <th>Prerrequisito</th>
+                            <th>Modalidad Presencial (Decreto 1330)</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Comunicación Oral y Escrita</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 1</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Cátedra de la Paz y Resolución de Conflictos</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Cálculo Diferencial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Legislación Comercial</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 2</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés I</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 3</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés II</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Competencias Investigativas</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Derecho Laboral y Seguridad Social</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 4</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Inglés III</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Obligatoria (48h dir / 96h indep = 144h)</td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div><div class="card" style="margin-bottom:16px; border-top:4px solid #D97706;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-sliders-h" style="color:#D97706; margin-right:8px;"></i> Área de Electividad y Profundización (Plan Propuesto 144 cr)
+                </h4>
+                <div style="display:flex; gap:10px;">
+                    <span style="background:#D97706; color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">4 Asignaturas</span>
+                    <span style="background:var(--carbon); color:#fff; padding:4px 10px; border-radius:20px; font-size:0.78rem; font-weight:800;">12 Créditos Totales</span>
+                </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--gray-text); margin-bottom:14px;">Rutas de profundización en tendencias globales, sostenibilidad, transformación digital y nuevos modelos de negocio.</p>
+            <div style="overflow-x:auto;">
+                <table class="tbl" style="width:100%; font-size:0.83rem;">
+                    <thead>
+                        <tr style="background:#F8FAFC;">
+                            <th style="width:110px;">Semestre</th>
+                            <th>Asignatura</th>
+                            <th style="width:80px; text-align:center;">Créditos</th>
+                            <th>Prerrequisito</th>
+                            <th>Modalidad Presencial (Decreto 1330)</th>
+                        </tr>
+                    </thead>
+                    <tbody><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 5</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva I (Desarrollo Sostenible y Economía Circular)</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Electiva (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 6</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva I (Desarrollo Sostenible y Economía Circular)</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Electiva (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 7</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva I (Desarrollo Sostenible y Economía Circular)</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Electiva (48h dir / 96h indep = 144h)</td>
+            </tr><tr style="border-bottom:1px solid #E2E8F0;">
+                <td style="padding:8px 12px; font-weight:700; color:var(--carbon); font-size:0.83rem; white-space:nowrap;">Semestre 8</td>
+                <td style="padding:8px 12px; font-weight:700; color:#0284C7; font-size:0.85rem;">Electiva I (Desarrollo Sostenible y Economía Circular)</td>
+                <td style="padding:8px 12px; text-align:center;"><span style="background:var(--carbon); color:#fff; padding:2px 8px; border-radius:4px; font-weight:700; font-size:0.75rem;">3 cr</span></td>
+                <td style="padding:8px 12px; font-size:0.8rem; color:#64748B;"><i class="fas fa-link" style="color:var(--orange);"></i> Sin prerrequisito</td>
+                <td style="padding:8px 12px; font-size:0.78rem; color:var(--gray-text);">Electiva (48h dir / 96h indep = 144h)</td>
+            </tr></tbody>
+                </table>
+            </div>
+        </div>
  </div>
 
  <!-- SUB TAB 1.3: PERFILES Y RAPS PROPUESTOS -->
