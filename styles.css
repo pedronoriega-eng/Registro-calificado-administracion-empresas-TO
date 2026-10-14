@@ -1643,3 +1643,14 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     animation: fadeIn 0.3s ease !important;
     -webkit-font-smoothing: antialiased;
 }
+
+/* Explicit Total Widths for Matrix Tables to Guarantee Zero Compression */
+.malla-matrix-table-9sem {
+    width: 1835px !important;
+    min-width: 1835px !important;
+}
+
+.malla-matrix-table-8sem {
+    width: 1660px !important;
+    min-width: 1660px !important;
+}
