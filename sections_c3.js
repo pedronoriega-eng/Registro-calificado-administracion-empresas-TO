@@ -10747,6 +10747,9 @@ window.SECTIONS['c3'] = `
             <button class="tab-btn" data-tab="c3-v-eval" onclick="switchTab('c3VigenteSubTabs','c3-v-eval')">
                 <i class="fas fa-tasks"></i> 5. Sistema de Evaluación
             </button>
+            <button class="tab-btn" data-tab="c3-v-rutas" onclick="switchTab('c3VigenteSubTabs','c3-v-rutas')">
+                <i class="fas fa-route"></i> 6. Rutas de Formación
+            </button>
         </div>
 
         <!-- SUB TAB 2.1: MALLA GLOBAL VIGENTE -->
@@ -13738,6 +13741,934 @@ window.SECTIONS['c3'] = `
         </div>
     </div>
     
+
+        
+    <div class="tab-panel" id="c3-v-rutas" style="display:none;">
+        <!-- BANNER DE ENCABEZADO -->
+        <div style="background:linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; border-left:6px solid #3B82F6; box-shadow:0 8px 20px rgba(0,0,0,0.12);">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1.5px; color:#93C5FD; font-weight:800; margin-bottom:6px;">
+                <i class="fas fa-route"></i> Numeral 3.6.5 · Documento Maestro Inicial (Anexo 5)
+            </div>
+            <h3 style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:#fff; margin-bottom:8px;">
+                Rutas de Formación y Trayectoria de Aprendizaje del Programa (Plan Vigente)
+            </h3>
+            <p style="color:#E2E8F0; font-size:0.86rem; line-height:1.6; margin-bottom:14px; max-width:980px;">
+                Teniendo en cuenta la modalidad de formación virtual del programa académico, se realiza un ejercicio organizado como un conjunto de actividades específicas (ruta), mediante las cuales se promueven procesos académicos para desarrollar progresivamente el nivel de pensamiento del estudiante, con el propósito de alcanzar los resultados de aprendizaje y los conocimientos de acuerdo con el nivel de formación; en otras palabras, una trayectoria es una ruta formativa que pretende llevar al estudiante de un punto inicial de aprendizaje y pensamiento a otro más avanzado, en el marco de un dominio disciplinar específico.
+            </p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-calendar-alt"></i> Bloques Bimestrales de 8 Semanas
+                </span>
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-graduation-cap"></i> 9 Semestres Académicos (158 Créditos)
+                </span>
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-book"></i> 62 Asignaturas Curriculares
+                </span>
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-table"></i> Tabla 12 Oficial Anexo 5 (págs. 118-119)
+                </span>
+            </div>
+        </div>
+
+        <!-- 3 PILARES DE LA TRAYECTORIA FORMATIVA -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:24px;">
+            <div class="card" style="border-top:4px solid #2563EB;">
+                <h5 style="font-size:0.92rem; font-weight:800; color:#1E3A8A; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-brain" style="color:#2563EB;"></i> 1. Autoconstrucción y Aprendizaje Progresivo
+                </h5>
+                <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
+                    La trayectoria no es una simple serie de requisitos rígidos, sino una estrategia para desarrollar progresivamente habilidades, competencias y valores. Guía al estudiante en la autoconstrucción del conocimiento para sustentar el perfil de egreso.
+                </p>
+            </div>
+            <div class="card" style="border-top:4px solid #7C3AED;">
+                <h5 style="font-size:0.92rem; font-weight:800; color:#5B21B6; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-layer-group" style="color:#7C3AED;"></i> 2. Esquema Modular de 8 Semanas
+                </h5>
+                <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
+                    El programa divide cada semestre en dos bloques intensivos bimestrales: <strong>Semana 1 a 8</strong> y <strong>Semana 9 a 16</strong>. Esta dosificación modular reduce la dispersión cognitiva de los estudiantes en la virtualidad.
+                </p>
+            </div>
+            <div class="card" style="border-top:4px solid #059669;">
+                <h5 style="font-size:0.92rem; font-weight:800; color:#065F46; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-balance-scale" style="color:#059669;"></i> 3. Tríada Compleja de Formación
+                </h5>
+                <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
+                    Involucra la vivencia activa del estudiante en la síntesis compleja de <strong>teoría (saber)</strong>, <strong>práctica (hacer)</strong> y <strong>ética (ser)</strong>, garantizando el dominio holístico de la profesión administrativa.
+                </p>
+            </div>
+        </div>
+
+        <!-- DESPLIEGUE POR SEMESTRES (MODULAR VIGENTE) -->
+        <div class="card" style="margin-bottom:24px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:8px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-th-list" style="color:#2563EB;"></i> Despliegue de la Ruta Modular por Semestres (I al IX)
+                </h4>
+                <div style="font-size:0.75rem; color:var(--gray-text);">
+                    Distribuido en <strong>Bloque A (Sem. 1-8)</strong> y <strong>Bloque B (Sem. 9-16)</strong>
+                </div>
+            </div>
+            
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE I</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 1 (7 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 8 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Matemáticas Básicas</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    3 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Constitución y Democracia</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Fundamentos de Administración</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Fundamentos de Economía</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 8 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés I</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Expresión Oral y Escrita</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    3 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Fundamentos Contables</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE II</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 2 (7 Asignaturas · 17 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 7 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Cálculo</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    3 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Legislación Laboral</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Teoría Organizacional</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Costos</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 7 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Metodología de la Investigación</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Microeconomía</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés II</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE III</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 3 (7 Asignaturas · 17 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 7 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Estadística Descriptiva</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    3 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Derecho Administrativo</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Administración por Procesos</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Electiva Profundización I</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FEF3C7; color:#B45309;">
+                    2 cr · Electiva
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 7 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Cultura Emprendedora</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Macroeconomía</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés III</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE IV</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 4 (7 Asignaturas · 17 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 7 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Estadística Inferencial</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    3 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Legislación Tributaria</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Electiva Humanística I</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FEF3C7; color:#B45309;">
+                    2 cr · Electiva
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Liderazgo</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 7 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Creatividad e Innovación</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Entorno Económico Colombiano e Internacional</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés IV</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE V</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 5 (7 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 9 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Matemática Financiera</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Investigación de Operaciones</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Fundamentos de Mercadeo</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (4 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Administración de Salarios</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Electiva Profundización II</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FEF3C7; color:#B45309;">
+                    2 cr · Electiva
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés V</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Modelos de Desarrollo Económico</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VI</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 6 (7 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 12 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 6 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 12 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Legislación Comercial</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Gerencia de Mercadeo</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Tecnología e Innovación</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Métodos Cuantitativos y Cualitativos</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    3 cr · Transversal
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 6 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">E-Commerce</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Electiva Humanística II</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FEF3C7; color:#B45309;">
+                    2 cr · Electiva
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés VI</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VII</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 7 (7 Asignaturas · 19 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 11 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 8 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 11 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Fundamentos de Administración Pública</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Presupuesto</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Proyecto Empresarial</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Sistema de Información Gerencial</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 8 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Gestión de la Calidad</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Gerencia de Talento Humano</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Electiva Profundización III</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FEF3C7; color:#B45309;">
+                    2 cr · Electiva
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VIII</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 8 (6 Asignaturas · 17 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 9 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 8 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Habilidades Gerenciales</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Investigación de Mercados</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Gerencia Financiera</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 8 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Gerencia de Producción</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Deontología</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    2 cr · Transversal
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Proyecto de Grado I</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE IX</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 9 (7 Asignaturas · 20 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 11 cr</span>
+                    <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 11 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Planeación y Prospectiva</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Evaluación de Proyectos de Inversión</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Gobierno Corporativo</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    2 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Proyecto de Grado II</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#F5F3FF; border:1px solid #DDD6FE; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#6D28D9; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Gerencia del Servicio</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Responsabilidad Social Empresarial</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Distribución Física y Logística</span>
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                    3 cr · Disciplinar
+                </span>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+        <!-- TABLA REPRODUCIDA TAL COMO ESTÁ EN EL DOCUMENTO MAESTRO -->
+        <div class="card" style="margin-bottom:24px;">
+            <div style="margin-bottom:14px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
+                    <i class="fas fa-table" style="color:#2563EB;"></i> Tabla 12. Rutas de formación programa académico
+                </h4>
+                <p style="font-size:0.82rem; color:var(--gray-text); margin:0;">
+                    Transcripción exacta y fidedigna de la <strong>Tabla 12 del Documento Maestro Anexo 5 (págs. 118-119)</strong>:
+                </p>
+            </div>
+            <div style="overflow-x:auto;">
+                <table style="width:100%; border-collapse:collapse; font-size:0.84rem; text-align:left;">
+                    <thead>
+                        <tr style="background:#1E3A8A; color:#fff;">
+                            <th style="padding:10px 12px; border:1px solid #1E3A8A; width:18%; text-align:center;">Sem.</th>
+                            <th style="padding:10px 12px; border:1px solid #1E3A8A; width:41%;">Semana 1 a 8</th>
+                            <th style="padding:10px 12px; border:1px solid #1E3A8A; width:41%;">Semana 9 a 16</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 1<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Matemáticas Básicas</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés I</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Constitución y Democracia</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Expresión Oral y Escrita</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos de Administración</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos Contables</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos de Economía</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 2<br><span style="font-size:0.75rem; color:#64748B;">(17 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Cálculo</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Metodología de la Investigación</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Legislación Laboral</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Microeconomía</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Teoría Organizacional</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés II</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Costos</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 3<br><span style="font-size:0.75rem; color:#64748B;">(17 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Estadística Descriptiva</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Cultura Emprendedora</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Derecho Administrativo</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Macroeconomía</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Administración por Procesos</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés III</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Electiva Profundización I</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 4<br><span style="font-size:0.75rem; color:#64748B;">(17 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Estadística Inferencial</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Creatividad e Innovación</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Legislación Tributaria</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Entorno Económico Colombiano e Internacional</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Electiva Humanística I</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés IV</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Liderazgo</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 5<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Matemática Financiera</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Administración de Salarios</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Investigación de Operaciones</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Electiva Profundización II</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos de Mercadeo</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés V</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Modelos de Desarrollo Económico</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 6<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Legislación Comercial</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">E-Commerce</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de Mercadeo</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Electiva Humanística II</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Tecnología e Innovación</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés VI</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Métodos Cuantitativos y Cualitativos</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 7<br><span style="font-size:0.75rem; color:#64748B;">(19 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos de Administración Pública</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gestión de la Calidad</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Presupuesto</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de Talento Humano</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Proyecto Empresarial</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Electiva Profundización III</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Sistema de Información Gerencial</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 8<br><span style="font-size:0.75rem; color:#64748B;">(17 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Habilidades Gerenciales</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de Producción</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Investigación de Mercados</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Deontología</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia Financiera</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Proyecto de Grado I</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="4" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 9<br><span style="font-size:0.75rem; color:#64748B;">(20 cr)</span></td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Planeación y Prospectiva</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia del Servicio</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Evaluación de Proyectos de Inversión</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Responsabilidad Social Empresarial</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gobierno Corporativo</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Distribución Física y Logística</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Proyecto de Grado II</td>
+                <td style="padding:8px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);"></td>
+            </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin-top:12px; font-size:0.78rem; color:#64748B; font-style:italic; border-top:1px solid #E2E8F0; padding-top:8px;">
+                <strong>Fuente:</strong> Desarrollo propio programa Administración de Empresas · Extraído del <em>Anexo 5. Documento Maestro Administración de Empresas_RU inicial</em> (págs. 118-119).
+            </div>
+        </div>
+
+        <!-- SÍNTESIS PEDAGÓGICA -->
+        <div style="background:#F8FAFC; border:1px solid #CBD5E1; border-radius:8px; padding:16px;">
+            <h5 style="font-size:0.88rem; font-weight:800; color:var(--carbon); margin-bottom:6px;">
+                <i class="fas fa-info-circle" style="color:#2563EB;"></i> Articulación con el Perfil de Egreso y Competencias
+            </h5>
+            <p style="font-size:0.82rem; color:var(--gray-text); line-height:1.55; margin:0;">
+                Esta trayectoria de aprendizaje implica involucrar la vivencia del estudiante en la síntesis compleja de teoría (saber), práctica (hacer) y ética (ser) con el fin de alcanzar el perfil de egreso de los estudiantes del Programa. Por su parte, el perfil de egreso está dado por las competencias, los aprendizajes, las habilidades, etc., que se desarrollan en los estudiantes en su proceso de formación, es decir, en su trayectoria de aprendizaje (Anexo 5, pág. 119).
+            </p>
+        </div>
+    </div>
+    
     </div>
 </div>
 
@@ -13761,6 +14692,9 @@ window.SECTIONS['c3'] = `
             </button>
             <button class="tab-btn" data-tab="c3-p-eval" onclick="switchTab('c3PropuestoSubTabs','c3-p-eval')">
                 <i class="fas fa-tasks"></i> 5. Evaluación de RA y Rúbricas
+            </button>
+            <button class="tab-btn" data-tab="c3-p-rutas" onclick="switchTab('c3PropuestoSubTabs','c3-p-rutas')">
+                <i class="fas fa-route"></i> 6. Rutas de Formación
             </button>
         </div>
 
@@ -14858,6 +15792,1053 @@ window.SECTIONS['c3'] = `
     </div>
 </div>
 
+
+        
+    <div class="tab-panel" id="c3-p-rutas" style="display:none;">
+        <!-- BANNER DE ENCABEZADO -->
+        <div style="background:linear-gradient(135deg, #1A1A1B 0%, #2D3748 100%); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; border-left:6px solid var(--orange); box-shadow:0 8px 20px rgba(0,0,0,0.12);">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--orange); font-weight:800; margin-bottom:6px;">
+                <i class="fas fa-route"></i> Numeral 3.6.5 · Documento Maestro de Renovación (Anexo 2)
+            </div>
+            <h3 style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:#fff; margin-bottom:8px;">
+                Rutas de Formación y Trayectoria de Aprendizaje del Programa (Plan Propuesto)
+            </h3>
+            <p style="color:#E2E8F0; font-size:0.86rem; line-height:1.6; margin-bottom:14px; max-width:980px;">
+                Teniendo en cuenta la modalidad de formación virtual del programa académico, se realiza un ejercicio organizado como un conjunto de actividades específicas (ruta), mediante las cuales se promueven procesos académicos para desarrollar progresivamente el nivel de pensamiento del estudiante, con el propósito de alcanzar los resultados de aprendizaje y los conocimientos de acuerdo con el nivel de formación; en otras palabras, una trayectoria es una ruta formativa que pretende llevar al estudiante de un punto inicial de aprendizaje y pensamiento a otro más avanzado, en el marco de un dominio disciplinar específico.
+            </p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-balance-scale"></i> Balance Cognitivo Perfecto (3 Asignaturas por Bloque)
+                </span>
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-graduation-cap"></i> 8 Semestres Académicos (144 Créditos)
+                </span>
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-book"></i> 48 Asignaturas de 3 Créditos
+                </span>
+                <span style="background:rgba(255,255,255,0.15); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.76rem; font-weight:700;">
+                    <i class="fas fa-table"></i> Tabla 31 Oficial Anexo 2 (págs. 153-154)
+                </span>
+            </div>
+        </div>
+
+        <!-- 3 PILARES DE LA REESTRUCTURACIÓN DE RUTAS -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:24px;">
+            <div class="card" style="border-top:4px solid var(--orange);">
+                <h5 style="font-size:0.92rem; font-weight:800; color:#C2410C; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-sliders-h" style="color:var(--orange);"></i> 1. Optimización de la Carga Cognitiva
+                </h5>
+                <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
+                    En el Plan Propuesto, cada semestre cuenta con exactamente <strong>6 asignaturas de 3 créditos (18 créditos)</strong> divididas simétricamente en <strong>3 asignaturas en las Semanas 1 a 8</strong> y <strong>3 asignaturas en las Semanas 9 a 16</strong>.
+                </p>
+            </div>
+            <div class="card" style="border-top:4px solid #059669;">
+                <h5 style="font-size:0.92rem; font-weight:800; color:#065F46; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-bullseye" style="color:#059669;"></i> 2. Articulación Directa con RAPs
+                </h5>
+                <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
+                    Cada bloque de 8 semanas permite un seguimiento minucioso del avance en los Resultados de Aprendizaje del Programa (RAPs), con 3 unidades temáticas y una evaluación final de sustentación del 35%.
+                </p>
+            </div>
+            <div class="card" style="border-top:4px solid #2563EB;">
+                <h5 style="font-size:0.92rem; font-weight:800; color:#1E3A8A; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-sync-alt" style="color:#2563EB;"></i> 3. Continuidad Pedagógica y Ética
+                </h5>
+                <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
+                    Sintetiza de manera integral el saber (teoría gerencial y analítica), el hacer (simulaciones, ABP y laboratorios) y el ser (ética profesional, liderazgo y responsabilidad social), orientado a las demandas actuales del sector productivo.
+                </p>
+            </div>
+        </div>
+
+        <!-- DESPLIEGUE POR SEMESTRES (MODULAR PROPUESTO) -->
+        <div class="card" style="margin-bottom:24px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:8px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin:0;">
+                    <i class="fas fa-th-list" style="color:var(--orange);"></i> Despliegue de la Ruta Modular por Semestres (I al VIII)
+                </h4>
+                <div style="font-size:0.75rem; color:var(--gray-text);">
+                    Estructura balanceada: <strong>Bloque 1 (Sem. 1-8 · 9 cr)</strong> + <strong>Bloque 2 (Sem. 9-16 · 9 cr)</strong>
+                </div>
+            </div>
+            
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE I</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 1 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Álgebra Lineal</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Expresión Oral y Escrita</span>
+                    <div style="font-size:0.71rem; color:#64748B;">(Comunicación Oral y Escrita en Malla)</div>
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Fundamentos de Administración</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Cátedra de la Paz y Resolución de Conflictos</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Fundamentos de Mercadeo</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Fundamentos Contables y Financieros</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE II</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 2 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Cálculo Diferencial</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Legislación Comercial</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Costos y Presupuestos</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Estadística Descriptiva</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Microeconomía</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Inglés I</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE III</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 3 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Estadística Inferencial</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Procesos Administrativos</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Teoría Organizacional</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Análisis Financiero</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Macroeconomía</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Inglés II</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE IV</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 4 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Matemática Financiera</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Investigación de Mercados</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Economía Colombiana e Internacional</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Competencias Investigativas</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Derecho Laboral y Seguridad Social</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Inglés III</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE V</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 5 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Gerencia del Talento Humano</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Administración Financiera</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Negocios y Gerencia Internacional</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Gestión de Operaciones</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Sistemas Integrados de Gestión (HSEQ)</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Electiva Profesional I</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FEF3C7; color:#B45309;">
+                        3 cr · Electiva
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Electivas Profesionales</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VI</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 6 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Legislación Tributaria</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Gerencia de Mercadeo</span>
+                    <div style="font-size:0.71rem; color:#64748B;">(Asociada a Marketing Estratégico)</div>
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Métodos Cualitativos y Cuantitativos</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Big Data y Analítica de Datos</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Gerencia de Marketing</span>
+                    <div style="font-size:0.71rem; color:#64748B;">(Electiva Prof. II / Marketing Digital)</div>
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Modelos de Emprendimiento</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VII</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 7 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Formulación y Evaluación de Proyectos</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Economía y Finanzas</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Gerencia de Producción</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">E-Commerce</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Gerencia de Ventas y Canales de Distribución</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Pensamiento Estratégico y Prospectivo</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Electiva Profesional III</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FEF3C7; color:#B45309;">
+                        3 cr · Electiva
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Electivas Profesionales</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:18px; border-left:5px solid var(--orange); background:#FAFAFA;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="background:var(--carbon); color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VIII</span>
+                    <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 8 (6 Asignaturas · 18 Créditos)</h5>
+                </div>
+                <div style="display:flex; gap:8px;">
+                    <span style="font-size:0.72rem; background:#FEF3C7; color:#B45309; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 3 asig · 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF7ED; color:#C2410C; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 3 asig · 9 cr</span>
+                </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
+                <!-- Bloque 1 -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#B45309; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Laboratorio de Innovación y Emprendimiento</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Habilidades Gerenciales y Liderazgo</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Inteligencia Artificial</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Mercadeo, Tech y Emprendimiento</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+                <!-- Bloque 2 -->
+                <div style="background:#FFF7ED; border:1px solid #FFEDD5; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#C2410C; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-calendar-alt"></i> Semanas 9 a 16 (3 asignaturas · 9 créditos)
+                    </div>
+                    <ul style="list-style:none; padding:0; margin:0;">
+                        <li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Juego Gerencial (Simulación de Negocios)</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Gerencia de la Calidad</span>
+                    <div style="font-size:0.71rem; color:#64748B;">(Gerencia de Calidad en Tabla 31)</div>
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#C2410C;">
+                        3 cr · Disciplinar
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Administración y Gestión</div>
+                </div>
+            </li><li style="padding:8px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                    <span style="font-size:0.83rem; font-weight:700; color:var(--carbon);">Proyecto de Grado</span>
+                    
+                </div>
+                <div style="text-align:right;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                        3 cr · Transversal
+                    </span>
+                    <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
+                </div>
+            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+        <!-- TABLA REPRODUCIDA TAL COMO ESTÁ EN EL DOCUMENTO MAESTRO -->
+        <div class="card" style="margin-bottom:24px;">
+            <div style="margin-bottom:14px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
+                    <i class="fas fa-table" style="color:var(--orange);"></i> Tabla 31. Rutas de formación programa académico
+                </h4>
+                <p style="font-size:0.82rem; color:var(--gray-text); margin:0;">
+                    Transcripción exacta y fidedigna de la <strong>Tabla 31 del Documento Maestro Anexo 2 (págs. 153-154)</strong>:
+                </p>
+            </div>
+            <div style="overflow-x:auto;">
+                <table style="width:100%; border-collapse:collapse; font-size:0.84rem; text-align:left;">
+                    <thead>
+                        <tr style="background:#1A1A1B; color:#fff;">
+                            <th style="padding:10px 12px; border:1px solid #1A1A1B; width:18%; text-align:center;">Sem.</th>
+                            <th style="padding:10px 12px; border:1px solid #1A1A1B; width:41%;">Semana 1 a 8</th>
+                            <th style="padding:10px 12px; border:1px solid #1A1A1B; width:41%;">Semana 9 a 16</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 1<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Álgebra Lineal</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Cátedra de la Paz y Resolución de Conflictos</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Expresión Oral y Escrita</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos de Mercadeo</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos de Administración</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Fundamentos Contables y Financieros</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 2<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Cálculo Diferencial</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Estadística Descriptiva</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Legislación Comercial</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Microeconomía</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Costos y Presupuestos</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés I</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 3<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Estadística Inferencial</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Análisis Financiero</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Procesos Administrativos</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Macroeconomía</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Teoría Organizacional</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés II</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 4<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Matemática Financiera</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Competencias Investigativas</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Investigación de Mercados</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Derecho Laboral y Seguridad Social</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Economía Colombiana e Internacional</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inglés III</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 5<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia del Talento Humano</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gestión de Operaciones</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Administración Financiera</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Sistemas Integrados de Gestión (HSEQ)</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Negocios y Gerencia Internacional</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Electiva Profesional I</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 6<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Legislación Tributaria</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Big Data y Analítica de Datos</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de Mercadeo</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de Marketing</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Métodos Cualitativos y Cuantitativos</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Modelos de Emprendimiento</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 7<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Formulación y Evaluación de Proyectos</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de Ventas y Canales de Distribución</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de Producción</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Pensamiento Estratégico y Prospectivo</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">E-Commerce</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Electiva Profesional III</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                <td rowspan="3" style="font-weight:800; vertical-align:middle; text-align:center; background:#F8FAFC; border:1px solid #E2E8F0;">Semestre 8<br><span style="font-size:0.75rem; color:#64748B;">(18 cr)</span></td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Laboratorio de Innovación y Emprendimiento</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Juego Gerencial (Simulación de Negocios)</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Habilidades Gerenciales y Liderazgo</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Gerencia de la Calidad</td>
+            </tr>
+            
+            <tr style="border-bottom:1px solid #E2E8F0;">
+                
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Inteligencia Artificial</td>
+                <td style="padding:9px 12px; border:1px solid #E2E8F0; font-size:0.83rem; font-weight:600; color:var(--carbon);">Proyecto de Grado</td>
+            </tr>
+            
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin-top:12px; font-size:0.78rem; color:#64748B; font-style:italic; border-top:1px solid #E2E8F0; padding-top:8px;">
+                <strong>Fuente:</strong> Desarrollo propio programa Administración de Empresas · Extraído del <em>Anexo 2. Documento Maestro</em> (págs. 153-154).
+            </div>
+        </div>
+
+        <!-- NOTA DE COHERENCIA CURRICULAR CON LAS TABLAS 15 Y 16 -->
+        <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:16px;">
+            <h5 style="font-size:0.88rem; font-weight:800; color:#B45309; margin-bottom:6px;">
+                <i class="fas fa-check-circle" style="color:#D97706;"></i> Coherencia y Articulación Curricular (Tablas 15, 16 y 31)
+            </h5>
+            <p style="font-size:0.82rem; color:#78350F; line-height:1.55; margin:0;">
+                La Tabla 31 sintetiza la ruta secuencial de aprendizaje de los estudiantes. En trazabilidad con la Malla Curricular oficial (Tablas 15 y 16 del Documento Maestro), la asignatura <em>Expresión Oral y Escrita</em> se denomina <em>Comunicación Oral y Escrita</em>; en el Semestre 6, la oferta electiva profesional y disciplinar de marketing se articula entre <em>Marketing Estratégico</em> y <em>Electiva Profesional II</em>, y <em>Gerencia de Calidad</em> en Semestre 8 se corresponde con <em>Gerencia de la Calidad</em>, conservando en todos los semestres la rigurosa carga de 18 créditos (3 asignaturas de 3 créditos en Semanas 1 a 8 y 3 asignaturas de 3 créditos en Semanas 9 a 16).
+            </p>
+        </div>
+    </div>
+    
     </div>
 </div>
 
