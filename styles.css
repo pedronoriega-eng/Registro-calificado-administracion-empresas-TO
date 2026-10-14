@@ -1340,325 +1340,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 /* =========================================================
-   MALLA MATRIX GLOBAL VIEW & TRACEABILITY PANEL STYLES
+   MALLA MATRIX GLOBAL VIEW & TRACEABILITY PANEL (DEFINITIVO)
+   Diseño impecable, amplio, despejado y altamente profesional
    ========================================================= */
 
-.malla-matrix-wrapper {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    overflow: hidden;
-    margin-top: 16px;
-    margin-bottom: 24px;
-}
-
-.malla-matrix-scroll {
-    overflow-x: auto;
-    width: 100%;
-}
-
-.malla-matrix-table {
-    width: 100%;
-    min-width: 1250px;
-    border-collapse: separate;
-    border-spacing: 0;
-}
-
-.malla-matrix-table th {
-    background: #1A1A1B;
-    color: #FFFFFF;
-    font-family: var(--font-heading);
-    font-size: 0.78rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 12px 10px;
-    text-align: center;
-    border-right: 1px solid rgba(255,255,255,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.malla-matrix-table th:first-child {
-    left: 0;
-    z-index: 11;
-    text-align: left;
-    min-width: 220px;
-    background: #0F172A;
-}
-
-.matrix-comp-header {
-    background: #F8FAFC;
-    font-family: var(--font-heading);
-    font-size: 0.76rem;
-    font-weight: 800;
-    color: var(--carbon);
-    padding: 12px 10px;
-    border-bottom: 1px solid #E2E8F0;
-    border-right: 2px solid #CBD5E1;
-    position: sticky;
-    left: 0;
-    z-index: 5;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.matrix-cell {
-    background: #FFFFFF;
-    border-bottom: 1px solid #F1F5F9;
-    border-right: 1px solid #F1F5F9;
-    padding: 6px;
-    vertical-align: top;
-    min-width: 175px;
-    -webkit-font-smoothing: antialiased;
-}
-
-.malla-matrix-subject-card {
-    background: #FFFFFF;
-    border-radius: 6px;
-    padding: 8px 10px;
-    margin-bottom: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    border: 1px solid #E2E8F0;
-    border-left: 4px solid #94A3B8;
-}
-
-.malla-matrix-subject-card:last-child {
-    margin-bottom: 0;
-}
-
-.malla-matrix-subject-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(243, 146, 0, 0.2);
-    border-color: var(--orange) !important;
-    background: #FFFDF9;
-}
-
-.malla-matrix-subject-card.selected-card {
-    border-color: var(--orange) !important;
-    background: #FFF7ED !important;
-    box-shadow: 0 0 0 2px var(--orange);
-}
-
-.subject-card-title, .matrix-card-title {
-    font-family: var(--font-heading);
-    font-size: 0.84rem;
-    font-weight: 800;
-    color: #0F172A;
-    line-height: 1.3;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    -webkit-font-smoothing: antialiased;
-}
-
-.matrix-card-prereq {
-    font-size: 0.65rem;
-    color: #64748B;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-
-
-
-/* =========================================================
-   PERFECT MALLA CURRICULAR MATRIX - STICKY COMPONENT & ZERO DISTORTION
-   ========================================================= */
-
-.malla-matrix-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: visible;
-    background: #FFFFFF;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    border: 1px solid #CBD5E1;
-    margin-bottom: 24px;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* THICK VISIBLE ORANGE SCROLLBAR AT BOTTOM */
-.malla-matrix-wrapper::-webkit-scrollbar {
-    height: 14px;
-}
-.malla-matrix-wrapper::-webkit-scrollbar-track {
-    background: #F1F5F9;
-    border-radius: 0 0 10px 10px;
-}
-.malla-matrix-wrapper::-webkit-scrollbar-thumb {
-    background: var(--orange);
-    border-radius: 7px;
-    border: 3px solid #F1F5F9;
-}
-.malla-matrix-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #D97706;
-}
-
-.malla-matrix-table {
-    width: max-content;
-    min-width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 0.83rem;
-    table-layout: auto;
-}
-
-.malla-matrix-table th {
-    background: #1E293B;
-    color: #FFFFFF;
-    font-family: var(--font-heading);
-    font-size: 0.78rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 12px 14px;
-    border-bottom: 3px solid var(--orange);
-    text-align: center;
-    white-space: nowrap;
-}
-
-/* STICKY TOP-LEFT HEADER CELL */
-.malla-matrix-table th.matrix-comp-header-corner {
-    position: sticky;
-    left: 0;
-    z-index: 15;
-    background: #0F172A;
-    width: 230px;
-    min-width: 230px;
-    max-width: 230px;
-    text-align: left;
-    box-shadow: 4px 0 10px rgba(0,0,0,0.15);
-}
-
-/* STICKY LEFT COMPONENT COLUMN - NO TEXT DISTORTION EVER */
-.matrix-comp-header {
-    background: #F8FAFC !important;
-    color: var(--carbon) !important;
-    font-family: var(--font-heading);
-    font-size: 0.82rem !important;
-    font-weight: 800 !important;
-    padding: 14px 14px !important;
-    border-bottom: 1px solid #E2E8F0 !important;
-    border-right: 2px solid #CBD5E1 !important;
-    position: sticky !original;
-    position: sticky;
-    left: 0;
-    z-index: 10;
-    width: 230px !important;
-    min-width: 230px !important;
-    max-width: 230px !important;
-    white-space: normal !important;
-    word-break: normal !important;
-    overflow-wrap: normal !important;
-    hyphens: none !important;
-    box-shadow: 4px 0 10px rgba(0,0,0,0.08);
-    vertical-align: middle;
-}
-
-.malla-matrix-table td.matrix-cell {
-    padding: 8px;
-    vertical-align: top;
-    background: #FFFFFF;
-    border-bottom: 1px solid #F1F5F9;
-    border-right: 1px solid #F1F5F9;
-    width: 165px;
-    min-width: 165px;
-}
-
-.malla-matrix-subject-card {
-    background: #FFFFFF;
-    border-radius: 8px;
-    padding: 10px 12px;
-    margin-bottom: 6px;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    border: 1px solid #E2E8F0;
-    border-left: 5px solid #94A3B8;
-    overflow: hidden;
-    white-space: normal;
-    word-break: normal;
-}
-
-.malla-matrix-subject-card:last-child {
-    margin-bottom: 0;
-}
-
-.malla-matrix-subject-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(243, 146, 0, 0.25);
-    border-color: var(--orange) !important;
-    background: #FFFDF9;
-}
-
-.malla-matrix-subject-card.selected-card {
-    border-color: var(--orange) !important;
-    background: #FFF7ED !important;
-    box-shadow: 0 0 0 2px var(--orange), 0 4px 12px rgba(243, 146, 0, 0.15);
-}
-
-.subject-card-title, .matrix-card-title {
-    font-family: var(--font-heading);
-    font-size: 0.82rem;
-    font-weight: 800;
-    color: #0F172A;
-    line-height: 1.3;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    white-space: normal;
-    word-break: normal;
-    overflow-wrap: normal;
-    -webkit-font-smoothing: antialiased;
-}
-
-.matrix-card-prereq {
-    font-size: 0.68rem;
-    color: #64748B;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Component Row Accent Border Colors */
-.comp-border-ciencias_basicas { border-left-color: #0284C7 !important; }
-.comp-border-tecnologia { border-left-color: #0D9488 !important; }
-.comp-border-procesos_operaciones { border-left-color: #EA580C !important; }
-.comp-border-gestion_financiera { border-left-color: #7C3AED !important; }
-.comp-border-talento_liderazgo { border-left-color: #DB2777 !important; }
-.comp-border-investigacion_innovacion { border-left-color: #16A34A !important; }
-.comp-border-humanistica_bilinguismo { border-left-color: #DC2626 !important; }
-.comp-border-electivo { border-left-color: #D97706 !important; }
-
-/* Traceability Detail Panel Below Matrix */
-.matrix-detail-panel {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    padding: 24px;
-    margin-top: 20px;
-    animation: fadeIn 0.3s ease;
-    -webkit-font-smoothing: antialiased;
-}
-
-
-/* =========================================================
-   PERFECT AUTO-FIT MALLA MATRIX - 100% PANTALLA COMPLETA
-   ========================================================= */
-
-/* Widen modal viewer for Malla Curricular */
+/* Modal Viewer Full Width */
 .viewer-card {
     max-width: 98vw !important;
     width: 98vw !important;
@@ -1674,38 +1360,63 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     padding: 16px !important;
 }
 
+/* Outer & Scroll Wrapper */
 .malla-matrix-scale-outer {
     width: 100% !important;
-    overflow: hidden !important;
-    position: relative;
+    max-width: 100% !important;
+    overflow: visible !important;
+    margin-top: 16px;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .malla-matrix-wrapper {
-    width: 1480px !important;
-    min-width: 1480px !important;
-    background: #FFFFFF;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    background: #FFFFFF !important;
     border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
     border: 1px solid #CBD5E1;
     position: relative;
-    transform-origin: top left;
-    transition: transform 0.2s ease-out;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: thin;
+    scrollbar-color: var(--orange) #F1F5F9;
 }
 
+/* Sleek visible orange scrollbar */
+.malla-matrix-wrapper::-webkit-scrollbar {
+    height: 12px;
+}
+.malla-matrix-wrapper::-webkit-scrollbar-track {
+    background: #F1F5F9;
+    border-radius: 0 0 10px 10px;
+}
+.malla-matrix-wrapper::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 6px;
+    border: 2px solid #F1F5F9;
+}
+.malla-matrix-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #D97706;
+}
+
+/* The Table */
 .malla-matrix-table {
-    width: 1480px !important;
-    min-width: 1480px !important;
-    table-layout: fixed !important;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 0.83rem;
+    width: max-content !important;
+    min-width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    table-layout: auto !important;
+    font-size: 0.8rem;
+    background: #FFFFFF;
 }
 
+/* Header Cells (General) */
 .malla-matrix-table th {
-    background: #1E293B;
+    background: #0F172A;
     color: #FFFFFF;
     font-family: var(--font-heading);
     font-size: 0.78rem;
@@ -1715,365 +1426,220 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     padding: 12px 10px;
     border-bottom: 3px solid var(--orange);
     text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    white-space: nowrap;
 }
 
+/* Sticky Corner Header Cell (Top-Left) */
+.malla-matrix-table th.matrix-comp-header-corner,
 .matrix-comp-header-corner {
-    width: 230px !important;
-    min-width: 230px !important;
-    max-width: 230px !important;
-    background: #0F172A !important;
-    text-align: left;
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 25 !important;
+    background: #0A0F1D !important;
+    color: #FFFFFF !important;
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    text-align: left !important;
+    padding: 12px 16px !important;
+    border-bottom: 3px solid var(--orange) !important;
+    border-right: 2px solid #CBD5E1 !important;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.18) !important;
 }
 
+/* Semester Headers */
+.malla-matrix-table th.sem-header,
+.sem-header {
+    width: 175px !important;
+    min-width: 175px !important;
+    max-width: 175px !important;
+    text-align: center !important;
+}
+
+/* Sticky First Column: Component & Area Header */
+.malla-matrix-table td.matrix-comp-header,
 .matrix-comp-header {
     background: #F8FAFC !important;
     color: var(--carbon) !important;
-    font-family: var(--font-heading);
+    padding: 12px 14px !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    border-right: 2px solid #CBD5E1 !important;
+    position: sticky !important;
+    left: 0 !important;
+    z-index: 12 !important;
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.06) !important;
+    box-sizing: border-box !important;
+}
+
+/* Area Badges */
+.matrix-area-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    padding: 3px 9px !important;
+    margin-bottom: 6px !important;
+    border-radius: 999px !important;
+    font-size: 0.65rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
+    line-height: 1.25 !important;
+    white-space: nowrap !important;
+    border: 1px solid transparent !important;
+}
+
+.matrix-area-badge.area-transversal {
+    background: #DBEAFE !important;
+    color: #1E40AF !important;
+    border-color: #93C5FD !important;
+}
+
+.matrix-area-badge.area-disciplinar {
+    background: #FFEDD5 !important;
+    color: #9A3412 !important;
+    border-color: #FDBA74 !important;
+}
+
+.matrix-area-badge.area-electiva,
+.matrix-area-badge.area-electivo {
+    background: #EDE9FE !important;
+    color: #5B21B6 !important;
+    border-color: #C4B5FD !important;
+}
+
+/* Component Title */
+.matrix-comp-title {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: var(--font-heading) !important;
     font-size: 0.82rem !important;
     font-weight: 800 !important;
-    padding: 12px 14px !important;
-    border-bottom: 1px solid #E2E8F0 !important;
-    border-right: 2px solid #CBD5E1 !important;
-    width: 230px !important;
-    min-width: 230px !important;
-    max-width: 230px !important;
+    color: #0F172A !important;
+    line-height: 1.35 !important;
     white-space: normal !important;
     word-break: normal !important;
-    overflow-wrap: normal !important;
-    hyphens: none !important;
-    vertical-align: middle;
 }
 
-.malla-matrix-table td.matrix-cell {
-    padding: 6px;
-    vertical-align: top;
-    background: #FFFFFF;
-    border-bottom: 1px solid #F1F5F9;
-    border-right: 1px solid #F1F5F9;
-    width: 156px !important;
-    min-width: 156px !important;
-    max-width: 156px !important;
+/* Semester Data Cell */
+.malla-matrix-table td.matrix-cell,
+.matrix-cell {
+    padding: 8px 8px !important;
+    vertical-align: top !important;
+    background: #FFFFFF !important;
+    border-bottom: 1px solid #F1F5F9 !important;
+    border-right: 1px solid #F1F5F9 !important;
+    width: 175px !important;
+    min-width: 175px !important;
+    max-width: 175px !important;
+    box-sizing: border-box !important;
 }
 
+/* Subject Cards in Matrix */
 .malla-matrix-subject-card {
-    background: #FFFFFF;
-    border-radius: 8px;
-    padding: 8px 10px;
-    margin-bottom: 6px;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    border: 1px solid #E2E8F0;
-    border-left: 5px solid #94A3B8;
-    overflow: hidden;
-    white-space: normal;
-    word-break: normal;
+    background: #FFFFFF !important;
+    border-radius: 8px !important;
+    padding: 8px 10px !important;
+    margin-bottom: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+    border: 1px solid #E2E8F0 !important;
+    border-left: 4px solid #94A3B8 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    box-sizing: border-box !important;
 }
 
 .malla-matrix-subject-card:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .malla-matrix-subject-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(243, 146, 0, 0.25);
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(243, 146, 0, 0.22) !important;
     border-color: var(--orange) !important;
-    background: #FFFDF9;
+    background: #FFFDF9 !important;
 }
 
 .malla-matrix-subject-card.selected-card {
     border-color: var(--orange) !important;
     background: #FFF7ED !important;
-    box-shadow: 0 0 0 2px var(--orange), 0 4px 12px rgba(243, 146, 0, 0.15);
+    box-shadow: 0 0 0 2px var(--orange), 0 4px 12px rgba(243, 146, 0, 0.15) !important;
 }
 
-.subject-card-title, .matrix-card-title {
-    font-family: var(--font-heading);
-    font-size: 0.81rem;
-    font-weight: 800;
-    color: #0F172A;
-    line-height: 1.25;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    white-space: normal;
-    word-break: normal;
-    overflow-wrap: normal;
-    -webkit-font-smoothing: antialiased;
-}
-
-.matrix-card-prereq {
-    font-size: 0.65rem;
-    color: #64748B;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 3px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* Component Row Accent Border Colors */
-.comp-border-ciencias_basicas { border-left-color: #0284C7 !important; }
-.comp-border-tecnologia { border-left-color: #0D9488 !important; }
-.comp-border-procesos_operaciones { border-left-color: #EA580C !important; }
-.comp-border-gestion_financiera { border-left-color: #7C3AED !important; }
-.comp-border-talento_liderazgo { border-left-color: #DB2777 !important; }
-.comp-border-investigacion_innovacion { border-left-color: #16A34A !important; }
-.comp-border-humanistica_bilinguismo { border-left-color: #DC2626 !important; }
-.comp-border-electivo { border-left-color: #D97706 !important; }
-
-/* Traceability Detail Panel Below Matrix */
-.matrix-detail-panel {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    padding: 24px;
-    margin-top: 20px;
-    animation: fadeIn 0.3s ease;
-    -webkit-font-smoothing: antialiased;
-}
-
-
-/* =========================================================
-   PERFECT ZERO-CUTOFF 100% FULL-SCREEN MATRIX (SEM 1 TO SEM 8/9)
-   ========================================================= */
-
-.viewer-card {
-    max-width: 99vw !important;
-    width: 99vw !important;
-    margin: 0 auto !important;
-}
-
-.viewer-card-body {
-    padding: 12px 14px !important;
-}
-
-.dashboard {
-    max-width: 99vw !important;
-    padding: 12px !important;
-}
-
-.malla-matrix-scale-outer {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: hidden !important;
-    margin-bottom: 20px;
-}
-
-.malla-matrix-wrapper {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 100% !important;
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
-    background: #FFFFFF;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    border: 1px solid #CBD5E1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.malla-matrix-table {
-    width: 100% !important;
-    min-width: 100% !important;
-    max-width: 100% !important;
-    table-layout: fixed !important;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 0.76rem;
-}
-
-.malla-matrix-table th {
-    background: #1E293B;
-    color: #FFFFFF;
-    font-family: var(--font-heading);
-    font-size: 0.7rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    padding: 8px 3px;
-    border-bottom: 3px solid var(--orange);
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-/* COMPONENT COLUMN WIDTH - 15.5% FOR ZERO CUTOFF */
-.matrix-comp-header-corner {
-    width: 15.5% !important;
-    min-width: 115px !important;
-    max-width: 15.5% !important;
-    background: #0F172A !important;
-    text-align: left;
-    padding: 8px 6px !important;
-}
-
-.matrix-comp-header {
-    background: #F8FAFC !important;
-    color: var(--carbon) !important;
-    font-family: var(--font-heading);
+.subject-card-title,
+.matrix-card-title {
+    font-family: var(--font-heading) !important;
     font-size: 0.74rem !important;
     font-weight: 800 !important;
-    line-height: 1.2 !important;
-    padding: 8px 6px !important;
-    border-bottom: 1px solid #E2E8F0 !important;
-    border-right: 2px solid #CBD5E1 !important;
-    width: 15.5% !important;
-    min-width: 115px !important;
-    max-width: 15.5% !important;
+    color: #0F172A !important;
+    line-height: 1.25 !important;
+    margin-top: 3px !important;
+    margin-bottom: 4px !important;
     white-space: normal !important;
-    word-break: keep-all !important;
-    overflow-wrap: normal !important;
-    hyphens: none !important;
-    vertical-align: middle;
-}
-
-.malla-matrix-table td.matrix-cell {
-    padding: 4px 3px !important;
-    vertical-align: top;
-    background: #FFFFFF;
-    border-bottom: 1px solid #F1F5F9;
-    border-right: 1px solid #F1F5F9;
-    min-width: 0 !important;
-}
-
-/* 8 SEMESTERS TABLE (PLAN PROPUESTO) */
-.malla-matrix-table-8sem td.matrix-cell,
-.malla-matrix-table-8sem th.sem-header {
-    width: 10.56% !important;
-}
-
-/* 9 SEMESTERS TABLE (PLAN VIGENTE) */
-.malla-matrix-table-9sem td.matrix-cell,
-.malla-matrix-table-9sem th.sem-header {
-    width: 9.38% !important;
-}
-
-.malla-matrix-subject-card {
-    background: #FFFFFF;
-    border-radius: 6px;
-    padding: 6px 5px;
-    margin-bottom: 4px;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    border: 1px solid #E2E8F0;
-    border-left: 4px solid #94A3B8;
-    overflow: hidden;
-    white-space: normal;
-    word-break: keep-all;
-    overflow-wrap: normal;
-}
-
-.malla-matrix-subject-card:last-child {
-    margin-bottom: 0;
-}
-
-.malla-matrix-subject-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(243, 146, 0, 0.25);
-    border-color: var(--orange) !important;
-    background: #FFFDF9;
-}
-
-.malla-matrix-subject-card.selected-card {
-    border-color: var(--orange) !important;
-    background: #FFF7ED !important;
-    box-shadow: 0 0 0 2px var(--orange);
-}
-
-.subject-card-title, .matrix-card-title {
-    font-family: var(--font-heading);
-    font-size: 0.72rem;
-    font-weight: 800;
-    color: #0F172A;
-    line-height: 1.15;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    white-space: normal;
-    word-break: keep-all;
-    overflow-wrap: normal;
+    word-break: normal !important;
     -webkit-font-smoothing: antialiased;
 }
 
 .matrix-card-prereq {
-    font-size: 0.58rem;
-    color: #64748B;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    margin-top: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 0.58rem !important;
+    color: #64748B !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 3px !important;
+    margin-top: 2px !important;
+    white-space: normal !important;
+    line-height: 1.2 !important;
 }
 
 /* Component Row Accent Border Colors */
-.comp-border-ciencias_basicas { border-left-color: #0284C7 !important; }
-.comp-border-tecnologia { border-left-color: #0D9488 !important; }
-.comp-border-procesos_operaciones { border-left-color: #EA580C !important; }
-.comp-border-gestion_financiera { border-left-color: #7C3AED !important; }
-.comp-border-talento_liderazgo { border-left-color: #DB2777 !important; }
-.comp-border-investigacion_innovacion { border-left-color: #16A34A !important; }
+/* Plan Propuesto */
+.comp-border-ciencias_basicas        { border-left-color: #2563EB !important; }
+.comp-border-legislacion_habilidades { border-left-color: #0EA5E9 !important; }
+.comp-border-admon_gestion           { border-left-color: #EA580C !important; }
+.comp-border-economia_finanzas       { border-left-color: #F59E0B !important; }
+.comp-border-mercadeo_tech           { border-left-color: #DC2626 !important; }
+.comp-border-electivo                { border-left-color: #7C3AED !important; }
+
+/* Plan Vigente */
+.comp-border-v_ciencias_basicas      { border-left-color: #2563EB !important; }
+.comp-border-v_socio_humanistica     { border-left-color: #0EA5E9 !important; }
+.comp-border-v_admon_procesos        { border-left-color: #EA580C !important; }
+.comp-border-v_finanzas_contabilidad { border-left-color: #F59E0B !important; }
+.comp-border-v_mercadeo_comercial    { border-left-color: #DC2626 !important; }
+.comp-border-v_investigacion_grado   { border-left-color: #16A34A !important; }
+.comp-border-v_electivo              { border-left-color: #7C3AED !important; }
+
+/* Legacy aliases */
+.comp-border-tecnologia              { border-left-color: #0D9488 !important; }
+.comp-border-procesos_operaciones    { border-left-color: #EA580C !important; }
+.comp-border-gestion_financiera      { border-left-color: #7C3AED !important; }
+.comp-border-talento_liderazgo       { border-left-color: #DB2777 !important; }
+.comp-border-investigacion_innovacion{ border-left-color: #16A34A !important; }
 .comp-border-humanistica_bilinguismo { border-left-color: #DC2626 !important; }
-.comp-border-electivo { border-left-color: #D97706 !important; }
 
 /* Traceability Detail Panel Below Matrix */
 .matrix-detail-panel {
-    background: #FFFFFF;
-    border: 1px solid #E2E8F0;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    padding: 24px;
-    margin-top: 20px;
-    animation: fadeIn 0.3s ease;
+    background: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+    padding: 24px !important;
+    margin-top: 20px !important;
+    animation: fadeIn 0.3s ease !important;
     -webkit-font-smoothing: antialiased;
 }
-
-/* ==========================================================
-   V9 — Malla por Área de Formación + Componente (definitivo)
-   ========================================================== */
-.matrix-area-badge {
-    display: inline-flex; align-items: center; gap: 5px;
-    padding: 3px 9px; border-radius: 999px;
-    font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em;
-    text-transform: uppercase; line-height: 1.3; white-space: nowrap;
-    border: 1px solid transparent;
-}
-.matrix-area-badge.area-transversal { background: #DBEAFE; color: #1E40AF; border-color: #93C5FD; }
-.matrix-area-badge.area-disciplinar { background: #FFEDD5; color: #9A3412; border-color: #FDBA74; }
-.matrix-area-badge.area-electiva,
-.matrix-area-badge.area-electivo   { background: #EDE9FE; color: #5B21B6; border-color: #C4B5FD; }
-
-.matrix-comp-title {
-    margin-top: 6px; font-size: 0.8rem; font-weight: 800;
-    color: #0F172A; line-height: 1.25; white-space: normal;
-}
-.malla-matrix-table th.matrix-comp-header,
-.matrix-comp-header {
-    min-width: 190px; max-width: 230px; text-align: left !important;
-    vertical-align: middle; background: #F8FAFC !important;
-    border-left: 5px solid #94A3B8; padding: 10px 12px !important;
-}
-.matrix-card-prereq {
-    margin-top: 4px; font-size: 0.62rem; color: #64748B; line-height: 1.2;
-}
-
-/* Bordes de componentes — Plan Propuesto */
-.comp-border-ciencias_basicas         { border-left-color: #2563EB !important; }
-.comp-border-legislacion_habilidades  { border-left-color: #0EA5E9 !important; }
-.comp-border-admon_gestion            { border-left-color: #EA580C !important; }
-.comp-border-economia_finanzas        { border-left-color: #F59E0B !important; }
-.comp-border-mercadeo_tech            { border-left-color: #DC2626 !important; }
-.comp-border-electivo                 { border-left-color: #7C3AED !important; }
-/* Bordes de componentes — Plan Vigente */
-.comp-border-v_ciencias_basicas       { border-left-color: #2563EB !important; }
-.comp-border-v_socio_humanistica      { border-left-color: #0EA5E9 !important; }
-.comp-border-v_admon_procesos         { border-left-color: #EA580C !important; }
-.comp-border-v_finanzas_contabilidad  { border-left-color: #F59E0B !important; }
-.comp-border-v_mercadeo_comercial     { border-left-color: #DC2626 !important; }
-.comp-border-v_investigacion_grado    { border-left-color: #16A34A !important; }
-.comp-border-v_electivo               { border-left-color: #7C3AED !important; }
