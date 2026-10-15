@@ -65,9 +65,22 @@ window.SECTIONS['c2'] = `
         
         <!-- MAPA CANVAS LEAFLET -->
         <div style="position:relative; border-radius:10px; overflow:hidden; border:1px solid #D1D1D1; box-shadow:inset 0 0 10px rgba(0,0,0,0.05);">
-            <div id="toGeoMap" style="height:540px; width:100%; background:#E5E7EB; z-index:1;"></div>
-            <div style="position:absolute; bottom:12px; left:12px; background:rgba(26,26,27,0.85); color:#FFFFFF; padding:6px 12px; border-radius:6px; font-size:0.75rem; z-index:1000; backdrop-filter:blur(4px);">
-                <i class="fas fa-map-pin" style="color:#F39200;"></i> <span id="mapStatusText">Enfoque: Área Metropolitana de Bucaramanga y Santander</span>
+            <div id="toGeoMap" style="height:550px; width:100%; background:#E5E7EB; z-index:1;"></div>
+            
+            <!-- CONTROLES FLOTANTES DE ENCUADRE CARTOGRÁFICO -->
+            <div style="position:absolute; top:12px; right:12px; z-index:1000; display:flex; gap:6px; background:rgba(26,26,27,0.88); padding:5px 8px; border-radius:8px; backdrop-filter:blur(4px); box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+                <button id="btnViewNacional" onclick="window.setMapView('colombia')" style="background:#F39200; color:#FFFFFF; border:none; padding:5px 10px; border-radius:5px; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; transition:all 0.2s ease;">
+                    <i class="fas fa-globe-americas"></i> Croquis Toda Colombia
+                </button>
+                <button id="btnViewSantander" onclick="window.setMapView('santander')" style="background:#334155; color:#FFFFFF; border:none; padding:5px 10px; border-radius:5px; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; transition:all 0.2s ease;">
+                    <i class="fas fa-search-location"></i> Enfocar Santander
+                </button>
+            </div>
+
+            <!-- BADGE INFERIOR DE ESTADO -->
+            <div style="position:absolute; bottom:12px; left:12px; background:rgba(26,26,27,0.88); color:#FFFFFF; padding:6px 14px; border-radius:6px; font-size:0.75rem; z-index:1000; backdrop-filter:blur(4px); display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-map-marked-alt" style="color:#F39200;"></i> 
+                <span id="mapStatusText">Croquis Oficial de Colombia y División Departamental (MEN · DANE)</span>
             </div>
         </div>
 
@@ -527,6 +540,7 @@ window._leafletMapInstance = null;
 window._leafletMarkers = [];
 window._geoMarkerMap = {};
 window._activeGeoNodeId = null;
+window._colombiaGeoLayer = null;
 
 window.c2Init = function() {
     const mapContainer = document.getElementById('toGeoMap');
@@ -551,15 +565,15 @@ window.c2Init = function() {
     }
 
     try {
-        // Inicializar Leaflet centrado en Bucaramanga
+        // Inicializar Leaflet centrado en el croquis de toda Colombia
         window._leafletMapInstance = L.map('toGeoMap', {
             zoomControl: true,
             scrollWheelZoom: false
-        }).setView([7.1193, -73.1227], 11);
+        }).setView([4.5709, -73.6500], 5.6);
 
         // Capa ESRI World Street Map (institucional, nítida, sin API key ni marcas de agua)
         const primaryTileLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, USGS, METI | TO 2026',
+            attribution: 'Tiles &copy; Esri &mdash; DANE · MEN | TO 2026',
             maxZoom: 18
         });
 
@@ -576,6 +590,11 @@ window.c2Init = function() {
 
         primaryTileLayer.addTo(window._leafletMapInstance);
 
+        // CAPA DEL CROQUIS DE TODA COLOMBIA Y SUS DEPARTAMENTOS
+        if (window.COLOMBIA_GEOJSON) {
+            window._renderColombiaDepartamentos();
+        }
+
         // Múltiples invalidateSize para sincronizar con transiciones de modal y visibilidad
         [50, 150, 300, 600, 1000].forEach(delay => {
             setTimeout(() => {
@@ -591,6 +610,88 @@ window.c2Init = function() {
     }
 };
 
+// Dibuja el croquis oficial de Colombia y la división departamental
+window._renderColombiaDepartamentos = function() {
+    if (!window._leafletMapInstance || !window.COLOMBIA_GEOJSON || typeof L === 'undefined') return;
+
+    if (window._colombiaGeoLayer) {
+        window._leafletMapInstance.removeLayer(window._colombiaGeoLayer);
+        window._colombiaGeoLayer = null;
+    }
+
+    window._colombiaGeoLayer = L.geoJSON(window.COLOMBIA_GEOJSON, {
+        style: function(feature) {
+            const nom = (feature.properties && feature.properties.nombre) ? feature.properties.nombre.toUpperCase() : '';
+            const isSantander = nom.includes('SANTANDER') && !nom.includes('NORTE');
+            return {
+                color: isSantander ? '#F39200' : '#334155',
+                weight: isSantander ? 2.8 : 1.3,
+                opacity: 0.95,
+                fillColor: isSantander ? '#F39200' : '#F1F5F9',
+                fillOpacity: isSantander ? 0.35 : 0.12,
+                dashArray: isSantander ? '' : '3, 3'
+            };
+        },
+        onEachFeature: function(feature, layer) {
+            const nom = (feature.properties && feature.properties.nombre) ? feature.properties.nombre : '';
+            const isSantander = nom.toUpperCase().includes('SANTANDER') && !nom.toUpperCase().includes('NORTE');
+
+            const tooltipHtml = isSantander 
+                ? `<strong>${nom}</strong><br><span style="color:#D97F00; font-weight:800;">Sede Principal TO · 18 Programas (MEN)</span>`
+                : `<strong>${nom}</strong><br><span style="color:#64748B;">Departamento de Colombia</span>`;
+
+            layer.bindTooltip(tooltipHtml, {
+                sticky: true,
+                direction: 'top',
+                className: 'custom-geo-tooltip'
+            });
+
+            layer.on('mouseover', function() {
+                if (!isSantander) {
+                    layer.setStyle({
+                        weight: 2,
+                        color: '#1A1A1B',
+                        fillColor: '#CBD5E1',
+                        fillOpacity: 0.3
+                    });
+                }
+            });
+
+            layer.on('mouseout', function() {
+                if (window._colombiaGeoLayer) {
+                    window._colombiaGeoLayer.resetStyle(layer);
+                }
+            });
+
+            layer.on('click', function() {
+                if (isSantander) {
+                    window.setMapView('santander');
+                    if (window._currentGeoMode === 'presencial') {
+                        window.selectGeoNode('bga', 'presencial');
+                    }
+                }
+            });
+        }
+    }).addTo(window._leafletMapInstance);
+};
+
+// Control manual de encuadre cartográfico
+window.setMapView = function(target) {
+    if (!window._leafletMapInstance) return;
+    const btnNac = document.getElementById('btnViewNacional');
+    const btnSan = document.getElementById('btnViewSantander');
+
+    if (target === 'colombia') {
+        window._leafletMapInstance.setView([4.5709, -73.6500], 5.6);
+        if (btnNac) { btnNac.style.background = '#F39200'; btnNac.style.color = '#FFFFFF'; }
+        if (btnSan) { btnSan.style.background = '#334155'; btnSan.style.color = '#FFFFFF'; }
+    } else {
+        window._leafletMapInstance.setView([7.0600, -73.1200], 9.8);
+        if (btnSan) { btnSan.style.background = '#F39200'; btnSan.style.color = '#FFFFFF'; }
+        if (btnNac) { btnNac.style.background = '#334155'; btnNac.style.color = '#FFFFFF'; }
+    }
+};
+
 window.switchGeoMode = function(mode) {
     window._currentGeoMode = mode;
     const btnPre = document.getElementById('btnGeoPresencial');
@@ -603,7 +704,7 @@ window.switchGeoMode = function(mode) {
     }
     window._activeGeoNodeId = null;
 
-    // 2. Actualizar botones de modalidad y centrar mapa en vista panorámica limpia
+    // 2. Actualizar botones de modalidad y centrar en el croquis de toda Colombia con departamentos
     if (mode === 'presencial') {
         if (btnPre) {
             btnPre.style.background = '#F39200';
@@ -615,9 +716,9 @@ window.switchGeoMode = function(mode) {
             btnVir.style.color = '#6B6B6B';
             btnVir.style.boxShadow = 'none';
         }
-        if (statusText) statusText.innerText = 'Enfoque: Santander y Área Metropolitana de Bucaramanga · Datos Oficiales MEN / SNIES';
+        if (statusText) statusText.innerText = 'Croquis Colombia: Santander destacado (Sede TO) · Puntos de Información AMB';
         if (window._leafletMapInstance) {
-            window._leafletMapInstance.setView([7.06, -73.12], 10.5);
+            window._leafletMapInstance.setView([4.5709, -73.6500], 5.6);
         }
     } else {
         if (btnVir) {
@@ -630,13 +731,13 @@ window.switchGeoMode = function(mode) {
             btnPre.style.color = '#6B6B6B';
             btnPre.style.boxShadow = 'none';
         }
-        if (statusText) statusText.innerText = 'Enfoque: Cobertura Nacional y Nodos Departamentales · Datos Oficiales MEN / SNIES';
+        if (statusText) statusText.innerText = 'Croquis Colombia: 32 Departamentos · Puntos de Oferta y Demanda SNIES';
         if (window._leafletMapInstance) {
-            window._leafletMapInstance.setView([4.57, -74.29], 5.8);
+            window._leafletMapInstance.setView([4.5709, -73.6500], 5.6);
         }
     }
 
-    // 3. Renderizar chips neutrales y marcadores en el mapa (sin popup abierto en primer plano)
+    // 3. Renderizar chips neutrales y los puntos interactivos sobre el croquis
     window.renderMunicipioChips(mode);
     window.renderGeoMarkers(mode);
 
@@ -678,13 +779,19 @@ window.renderGeoMarkers = function(mode) {
 
     nodes.forEach(node => {
         const marker = L.circleMarker(node.coords, {
-            radius: node.destacado ? 11 : 8,
+            radius: node.destacado ? 12 : 9,
             fillColor: node.destacado ? '#F39200' : '#1A1A1B',
             color: '#FFFFFF',
-            weight: 2.5,
+            weight: 3,
             opacity: 1,
-            fillOpacity: 0.95
+            fillOpacity: 1
         }).addTo(window._leafletMapInstance);
+
+        // Tooltip orientador al pasar el cursor sobre el punto
+        marker.bindTooltip(`${node.nombre.split(' (')[0]} · ${node.programas.split(' ')[0]} Prog`, {
+            direction: 'top',
+            offset: [0, -10]
+        });
 
         // SOLO al dar clic se abre la información y se actualiza el panel
         marker.on('click', () => {
@@ -1043,12 +1150,12 @@ window.updateSidePanel = function(node, mode) {
 window.resetGeoSelection = function(mode) {
     if (window._leafletMapInstance) {
         window._leafletMapInstance.closePopup();
-        if (mode === 'presencial') {
-            window._leafletMapInstance.setView([7.06, -73.12], 10.5);
-        } else {
-            window._leafletMapInstance.setView([4.57, -74.29], 5.8);
-        }
+        window._leafletMapInstance.setView([4.5709, -73.6500], 5.6);
     }
+    const btnNac = document.getElementById('btnViewNacional');
+    const btnSan = document.getElementById('btnViewSantander');
+    if (btnNac) { btnNac.style.background = '#F39200'; btnNac.style.color = '#FFFFFF'; }
+    if (btnSan) { btnSan.style.background = '#334155'; btnSan.style.color = '#FFFFFF'; }
     window._activeGeoNodeId = null;
     window.renderMunicipioChips(mode);
     window.renderGeoMarkers(mode);
