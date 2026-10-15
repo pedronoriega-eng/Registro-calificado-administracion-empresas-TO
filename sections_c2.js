@@ -68,13 +68,27 @@ window.SECTIONS['c2'] = `
             <div id="toGeoMap" style="height:550px; width:100%; background:#E5E7EB; z-index:1;"></div>
             
             <!-- CONTROLES FLOTANTES DE ENCUADRE CARTOGRÁFICO -->
-            <div style="position:absolute; top:12px; right:12px; z-index:1000; display:flex; gap:6px; background:rgba(26,26,27,0.88); padding:5px 8px; border-radius:8px; backdrop-filter:blur(4px); box-shadow:0 2px 8px rgba(0,0,0,0.2);">
-                <button id="btnViewNacional" onclick="window.setMapView('colombia')" style="background:#F39200; color:#FFFFFF; border:none; padding:5px 10px; border-radius:5px; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; transition:all 0.2s ease;">
-                    <i class="fas fa-globe-americas"></i> Croquis Toda Colombia
-                </button>
-                <button id="btnViewSantander" onclick="window.setMapView('santander')" style="background:#334155; color:#FFFFFF; border:none; padding:5px 10px; border-radius:5px; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; transition:all 0.2s ease;">
-                    <i class="fas fa-search-location"></i> Enfocar Santander
-                </button>
+            <!-- CONTROLES FLOTANTES ESTILO GOOGLE MAPS -->
+            <div style="position:absolute; top:12px; right:12px; z-index:1000; display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end;">
+                <!-- SELECTOR DE VISTA GEOGRÁFICA -->
+                <div style="display:flex; gap:4px; background:#FFFFFF; padding:3px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.18); border:1px solid #CBD5E1;">
+                    <button id="btnViewNacional" onclick="window.setMapView('colombia')" style="background:#F39200; color:#FFFFFF; border:none; padding:6px 11px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;">
+                        <i class="fas fa-globe-americas"></i> Toda Colombia
+                    </button>
+                    <button id="btnViewSantander" onclick="window.setMapView('santander')" style="background:#334155; color:#FFFFFF; border:none; padding:6px 11px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;">
+                        <i class="fas fa-search-location"></i> Santander (TO)
+                    </button>
+                </div>
+
+                <!-- SELECTOR DE CAPA GOOGLE MAPS -->
+                <div style="display:flex; gap:3px; background:#FFFFFF; padding:3px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.18); border:1px solid #CBD5E1;">
+                    <button id="btnGoogleStreet" onclick="window.switchGoogleMapLayer('roadmap')" style="background:#F39200; color:#FFFFFF; border:none; padding:6px 10px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;" title="Vista Oficial Google Maps">
+                        <i class="fab fa-google"></i> Mapa
+                    </button>
+                    <button id="btnGoogleSat" onclick="window.switchGoogleMapLayer('satellite')" style="background:#FFFFFF; color:#1A1A1B; border:none; padding:6px 10px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;" title="Vista Satelital Fotográfica">
+                        <i class="fas fa-satellite"></i> Satélite
+                    </button>
+                </div>
             </div>
 
             <!-- BADGE INFERIOR DE ESTADO -->
@@ -1852,21 +1866,30 @@ window.c2Init = function() {
         scrollWheelZoom: true
     });
 
-    // Capa base limpia y profesional
-    const cartoLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; CartoDB &copy; OpenStreetMap &copy; SNIES - MEN Colombia',
-        subdomains: 'abcd',
-        maxZoom: 19
-    }).addTo(window._leafletMapInstance);
-
-    cartoLayer.on('tileerror', function() {
-        if (!window._osmFallbackActive) {
-            window._osmFallbackActive = true;
-            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; OpenStreetMap &copy; SNIES - MEN'
-            }).addTo(window._leafletMapInstance);
-        }
+    // ========================================================
+    // CAPAS BASE GOOGLE MAPS (ESTÁNDAR MUNDIAL - CERO MARCAS DE AGUA)
+    // ========================================================
+    window._googleRoadmap = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google Maps &copy; SNIES - MEN Colombia'
     });
+
+    window._googleSatellite = L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google Maps Satélite &copy; SNIES - MEN'
+    });
+
+    window._googleTerrain = L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google Maps Terreno &copy; SNIES - MEN'
+    });
+
+    // Capa base por defecto: Google Maps Streets/Roadmap oficial
+    window._currentBaseLayer = window._googleRoadmap;
+    window._currentBaseLayer.addTo(window._leafletMapInstance);
 
     // Dibuja el croquis oficial de Colombia y las 33 entidades territoriales
     window._renderColombiaDepartamentos();
@@ -1901,12 +1924,12 @@ window._renderColombiaDepartamentos = function() {
             const nom = (feature.properties && feature.properties.nombre) ? feature.properties.nombre.toUpperCase() : '';
             const isSantander = nom.includes('SANTANDER') && !nom.includes('NORTE');
             return {
-                color: isSantander ? '#F39200' : '#475569',
-                weight: isSantander ? 2.8 : 1.2,
+                color: isSantander ? '#F39200' : '#2D3748',
+                weight: isSantander ? 3.0 : 1.4,
                 opacity: 0.95,
-                fillColor: isSantander ? '#F39200' : '#E2E8F0',
-                fillOpacity: isSantander ? 0.38 : 0.15,
-                dashArray: isSantander ? '' : '3, 3'
+                fillColor: isSantander ? '#F39200' : '#FFFFFF',
+                fillOpacity: isSantander ? 0.28 : 0.05, // Transparente para ver calles y nombres de Google Maps
+                dashArray: isSantander ? '' : '4, 4'
             };
         },
         onEachFeature: function(feature, layer) {
@@ -1962,6 +1985,35 @@ window._renderColombiaDepartamentos = function() {
 };
 
 // Control de encuadre cartográfico
+
+// Conmutador de capas base de Google Maps (Streets / Satellite / Terrain)
+window.switchGoogleMapLayer = function(layerType) {
+    if (!window._leafletMapInstance) return;
+
+    if (window._currentBaseLayer) {
+        window._leafletMapInstance.removeLayer(window._currentBaseLayer);
+    }
+
+    const btnStreet = document.getElementById('btnGoogleStreet');
+    const btnSat = document.getElementById('btnGoogleSat');
+
+    if (layerType === 'satellite') {
+        window._currentBaseLayer = window._googleSatellite;
+        if (btnSat) { btnSat.style.background = '#F39200'; btnSat.style.color = '#FFFFFF'; }
+        if (btnStreet) { btnStreet.style.background = '#FFFFFF'; btnStreet.style.color = '#1A1A1B'; }
+    } else {
+        window._currentBaseLayer = window._googleRoadmap;
+        if (btnStreet) { btnStreet.style.background = '#F39200'; btnStreet.style.color = '#FFFFFF'; }
+        if (btnSat) { btnSat.style.background = '#FFFFFF'; btnSat.style.color = '#1A1A1B'; }
+    }
+
+    window._currentBaseLayer.addTo(window._leafletMapInstance);
+    // Enviar capa base al fondo para mantener GeoJSON y marcadores arriba
+    if (window._currentBaseLayer.bringToBack) {
+        window._currentBaseLayer.bringToBack();
+    }
+};
+
 window.setMapView = function(target) {
     if (!window._leafletMapInstance) return;
     const btnNac = document.getElementById('btnViewNacional');
