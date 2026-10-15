@@ -1823,7 +1823,7 @@ window._colombiaGeoLayer = null;
 
 // Inicializador robusto con reintentos para mapa Leaflet
 window.c2Init = function() {
-    const mapEl = document.getElementById('mapaColombia');
+    const mapEl = document.getElementById('toGeoMap') || document.getElementById('mapaColombia');
     if (!mapEl) {
         return;
     }
@@ -1844,7 +1844,7 @@ window.c2Init = function() {
     }
 
     // Instanciar mapa centrado en el croquis de Colombia
-    window._leafletMapInstance = L.map('mapaColombia', {
+    window._leafletMapInstance = L.map(mapEl, {
         center: [4.5709, -73.6500],
         zoom: 5.6,
         minZoom: 4.8,
@@ -1878,11 +1878,13 @@ window.c2Init = function() {
     // Panel lateral inicial limpio
     window.renderInitialSidePanel(window._currentGeoMode);
 
-    setTimeout(() => {
-        if (window._leafletMapInstance) {
-            window._leafletMapInstance.invalidateSize();
-        }
-    }, 350);
+    [100, 300, 600, 1200].forEach(delay => {
+        setTimeout(() => {
+            if (window._leafletMapInstance) {
+                window._leafletMapInstance.invalidateSize(true);
+            }
+        }, delay);
+    });
 };
 
 // Dibuja el croquis oficial de Colombia con interacción total para los 33 departamentos
