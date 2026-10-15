@@ -1,6 +1,6 @@
 /* =========================================================
    CONDICIÓN 1 – DENOMINACIÓN DEL PROGRAMA (FICHA TÉCNICA COMPARATIVA)
-   Administración de Empresas · Registro Único (Presencial & Virtual) · CETO
+   Administración de Empresas · Registro Único (Presencial & Virtual) · TO
    Normativa: Decreto 1330 de 2019 · Resolución 2265 de 2023 · Proceso RD32362
    ========================================================= */
 window.SECTIONS = window.SECTIONS || {};
@@ -202,7 +202,7 @@ window.SECTIONS['c1'] = `
                     Acuerdo No. 001 de 2012 · Actualización del Proyecto Educativo Institucional (PEI)
                 </h5>
                 <p style="font-size:0.8rem; color:#4B5563; margin:0;">
-                    Actualización integral del PEI en cumplimiento del Decreto 1295 de 2010. Define la misión, visión, modelo de formación humanística y adopta la bandera institucional como símbolo corporativo de la CETO.
+                    Actualización integral del PEI en cumplimiento del Decreto 1295 de 2010. Define la misión, visión, modelo de formación humanística y adopta la bandera institucional como símbolo corporativo de la TO.
                 </p>
             </div>
         </div>

@@ -1,6 +1,6 @@
 /* =========================================================
    CONDICIÓN 5 – INVESTIGACIÓN
-   Administración de Empresas · CETO
+   Administración de Empresas · TO
    ========================================================= */
 window.SECTIONS = window.SECTIONS || {};
 window.SECTIONS['c5'] = `

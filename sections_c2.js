@@ -1,6 +1,6 @@
 /* =========================================================
    CONDICIÓN 2 – JUSTIFICACIÓN DEL PROGRAMA CON MAPA GEORREFERENCIADO
-   Administración de Empresas · Registro Único (Presencial & Virtual) · CETO
+   Administración de Empresas · Registro Único (Presencial & Virtual) · TO
    Benchmark Geoespacial Leaflet.js · Tablas 5, 6 y 7 del Documento Maestro
    ========================================================= */
 window.SECTIONS = window.SECTIONS || {};
@@ -29,13 +29,13 @@ window.SECTIONS['c2'] = `
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:20px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
     
     <!-- HEADER DEL MAPA Y CONMUTADOR DE MODALIDAD -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid #E8E8E8; padding-bottom:14px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px; border-bottom:1px solid #E8E8E8; padding-bottom:14px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0;">
                 <i class="fas fa-globe-americas" style="color:#F39200; margin-right:6px;"></i> Observatorio Geoespacial de Demanda y Oferta
             </h4>
             <p style="color:#6B6B6B; font-size:0.82rem; margin:2px 0 0;">
-                Haga clic en los pines para explorar el tejido empresarial y la oferta del programa según modalidad.
+                Haga clic en cualquier municipio o pin del mapa para consultar la cantidad de programas, universidades, porcentajes (%) y tejido empresarial.
             </p>
         </div>
         
@@ -50,12 +50,22 @@ window.SECTIONS['c2'] = `
         </div>
     </div>
 
+    <!-- SELECTOR RÁPIDO DE MUNICIPIOS / NODOS CON CLIC DIRECTO -->
+    <div style="background:#F8F9FA; border:1px solid #EBEBEB; border-radius:8px; padding:10px 14px; margin-bottom:14px; display:flex; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="font-size:0.75rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px; margin-right:4px;">
+            <i class="fas fa-map-marked-alt" style="color:#F39200;"></i> Municipios / Nodos:
+        </span>
+        <div id="geoMunicipiosChips" style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;">
+            <!-- Rellenado dinámico por renderMunicipioChips -->
+        </div>
+    </div>
+
     <!-- CONTENEDOR GRID: MAPA + PANEL DETALLE -->
     <div class="geo-map-grid">
         
         <!-- MAPA CANVAS LEAFLET -->
         <div style="position:relative; border-radius:10px; overflow:hidden; border:1px solid #D1D1D1; box-shadow:inset 0 0 10px rgba(0,0,0,0.05);">
-            <div id="cetoGeoMap" style="height:520px; width:100%; background:#E5E7EB; z-index:1;"></div>
+            <div id="toGeoMap" style="height:540px; width:100%; background:#E5E7EB; z-index:1;"></div>
             <div style="position:absolute; bottom:12px; left:12px; background:rgba(26,26,27,0.85); color:#FFFFFF; padding:6px 12px; border-radius:6px; font-size:0.75rem; z-index:1000; backdrop-filter:blur(4px);">
                 <i class="fas fa-map-pin" style="color:#F39200;"></i> <span id="mapStatusText">Enfoque: Área Metropolitana de Bucaramanga y Santander</span>
             </div>
@@ -88,7 +98,7 @@ window.SECTIONS['c2'] = `
                     <i class="fas fa-info-circle" style="color:#F39200;"></i> Resumen de Cobertura
                 </div>
                 <div id="sideNodeFooter" style="color:#6B6B6B;">
-                    Santander cuenta con 18 programas en Administración (7,35% del país). La propuesta de CETO es la única con articulación dual directa a 144 créditos y 8 semestres.
+                    Santander cuenta con 18 programas en Administración (7,35% del país). La propuesta de la TO es la única con articulación dual directa a 144 créditos y 8 semestres.
                 </div>
             </div>
         </div>
@@ -119,7 +129,7 @@ window.SECTIONS['c2'] = `
                         <tr><td>Bogotá D.C.</td><td style="text-align:center; font-weight:700;">44</td><td style="text-align:center;">17.96%</td></tr>
                         <tr><td>Antioquia</td><td style="text-align:center; font-weight:700;">32</td><td style="text-align:center;">13.06%</td></tr>
                         <tr><td>Valle del Cauca</td><td style="text-align:center; font-weight:700;">28</td><td style="text-align:center;">11.43%</td></tr>
-                        <tr style="background:#FFF9F2; font-weight:700; color:#F39200;"><td>Santander (Sede CETO)</td><td style="text-align:center;">18</td><td style="text-align:center;">7.35%</td></tr>
+                        <tr style="background:#FFF9F2; font-weight:700; color:#F39200;"><td>Santander (Sede TO)</td><td style="text-align:center;">18</td><td style="text-align:center;">7.35%</td></tr>
                         <tr><td>Atlántico</td><td style="text-align:center; font-weight:700;">15</td><td style="text-align:center;">6.12%</td></tr>
                         <tr><td>Bolívar</td><td style="text-align:center; font-weight:700;">12</td><td style="text-align:center;">4.90%</td></tr>
                         <tr><td>Norte de Santander</td><td style="text-align:center; font-weight:700;">10</td><td style="text-align:center;">4.08%</td></tr>
@@ -151,14 +161,14 @@ window.SECTIONS['c2'] = `
                     <tbody>
                         <tr><td>Universidades Privadas</td><td style="text-align:center; font-weight:700;">110</td><td style="text-align:center;">44.90%</td></tr>
                         <tr><td>Universidades Públicas</td><td style="text-align:center; font-weight:700;">62</td><td style="text-align:center;">25.31%</td></tr>
-                        <tr style="background:#FFF9F2; font-weight:700; color:#F39200;"><td>Instituciones Universitarias / Tecnológicas (CETO)</td><td style="text-align:center;">49</td><td style="text-align:center;">20.00%</td></tr>
+                        <tr style="background:#FFF9F2; font-weight:700; color:#F39200;"><td>Instituciones Universitarias / Tecnológicas (TO)</td><td style="text-align:center;">49</td><td style="text-align:center;">20.00%</td></tr>
                         <tr><td>Instituciones Técnicas Profesionales</td><td style="text-align:center; font-weight:700;">24</td><td style="text-align:center;">9.80%</td></tr>
                         <tr style="background:#F4F4F4; font-weight:800;"><td>Total Nacional</td><td style="text-align:center;">245</td><td style="text-align:center;">100.0%</td></tr>
                     </tbody>
                 </table>
             </div>
             <p style="font-size:0.75rem; color:#6B6B6B; margin:8px 0 0;">
-                El 70,21% de la oferta está en universidades tradicionales. Las instituciones universitarias como la CETO democratizan el acceso con matrículas asequibles ($3.576.000) y alta pertinencia técnica.
+                El 70,21% de la oferta está en universidades tradicionales. Las instituciones universitarias como la TO democratizan el acceso con matrículas asequibles ($3.576.000) y alta pertinencia técnica.
             </p>
         </div>
 
@@ -170,7 +180,7 @@ window.SECTIONS['c2'] = `
 <!-- ========================================== -->
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:22px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
     <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin-bottom:16px; display:flex; align-items:center; gap:8px;">
-        <i class="fas fa-medal" style="color:#F39200;"></i> Factores Diferenciadores de Administración de Empresas (CETO)
+        <i class="fas fa-medal" style="color:#F39200;"></i> Factores Diferenciadores de Administración de Empresas (TO)
     </h4>
 
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
@@ -344,58 +354,93 @@ window.SECTIONS['c2'] = `
 window._geoNodesPresencial = [
     {
         id: 'bga',
-        nombre: 'Bucaramanga (Sede Principal)',
-        subtitulo: 'Distrito Capital · Tejido Empresarial Central',
+        nombre: 'Bucaramanga (Sede Principal TO)',
+        subtitulo: 'Distrito Capital · Eje Universitario y Empresarial',
+        programas: '11 Programas',
+        universidades: '8 Instituciones (7 Privadas / 1 Pública)',
+        porcentaje: '61.11% Oferta Dptal.',
         coords: [7.1193, -73.1227],
-        empresas: '32,450 empresas activas (CCB 2024)',
-        demanda: 'Alta demanda en directores comerciales, analistas de datos y gerentes de operaciones.',
-        densidad: 'Concentra el 68% de las MiPyMes registradas en el área metropolitana.',
-        ceto: 'Sedes A (Calle 35), B y C con aulas multimedia, laboratorios de cómputo y auditorios.',
-        destacado: true
+        destacado: true,
+        ies_detalle: 'TO (144 cr / 8 sem - Titulación inclusiva), UNAB (144 cr), USTA (138 cr), UCC (143 cr), UDI (147 cr), UNICIENCIA (141 cr), UMB (157 cr) y UTS (162/174 cr - Pública).',
+        empresas: '32.450 empresas activas registradas en CCB 2024.',
+        demanda: 'Alta absorción en directores comerciales, analistas de datos, gerentes de operaciones y líderes de innovación.',
+        densidad: 'Concentra el 68% de las MiPyMes del Área Metropolitana y el 65% del PIB departamental.',
+        to_ventaja: 'Sedes A (Calle 35 # 21-42), Sede B y Sede C con aulas multimedia, laboratorios de cómputo y auditorios. Única oferta a 144 créditos y 8 semestres con titulación inclusiva Administrador(a) de Empresas.'
     },
     {
         id: 'florida',
         nombre: 'Floridablanca',
-        subtitulo: 'Corredor Empresarial & Salud',
+        subtitulo: 'Corredor Empresarial & Ecosistema Salud',
+        programas: '3 Programas',
+        universidades: '3 Universidades (3 Privadas / 0 Públicas)',
+        porcentaje: '16.67% Oferta Dptal.',
         coords: [7.0622, -73.0864],
-        empresas: '7,890 empresas activas',
-        demanda: 'Sector salud (Zona Franca FOSCAL / ICV), servicios y manufactura dulce.',
-        densidad: 'Segunda mayor concentración de unidades productivas metropolitanas.',
-        ceto: 'Conexión directa por Metrolínea hacia la sede principal de CETO (15 min).',
-        destacado: false
+        destacado: false,
+        ies_detalle: 'UPB (138 cr / 8 sem), USTA Campus Floridablanca y Universidad Libre Campus Floridablanca (143 cr / 8 sem).',
+        empresas: '7.890 empresas activas (clúster salud FOSCAL/ICV, dulces tradicionales, servicios y comercio minorista).',
+        demanda: 'Gestión de instituciones prestadoras de salud (IPS), administración hospitalaria, talento humano y finanzas.',
+        densidad: 'Segunda mayor concentración productiva del área metropolitana (18% del PIB departamental).',
+        to_ventaja: 'Conexión directa por Metrolínea hacia la sede principal de la TO (15 min) con horarios flexibles.'
     },
     {
         id: 'giron',
         nombre: 'Girón',
-        subtitulo: 'Parque Industrial & Logístico',
+        subtitulo: 'Parque Industrial & Centro Logístico',
+        programas: '0 Programas directos',
+        universidades: '0 Universidades en zona industrial',
+        porcentaje: '0.0% Oferta Directa (Absorción TO)',
         coords: [7.0732, -73.1698],
-        empresas: '4,120 empresas y plantas logísticas',
-        demanda: 'Logística, transporte de carga, distribución mayorista y bodegaje.',
-        densidad: 'Polo logístico con alta demanda de administradores en cadena de suministro.',
-        ceto: 'Población con alta necesidad de profesionalización nocturna y flexible.',
-        destacado: false
+        destacado: false,
+        ies_detalle: 'Sin sedes universitarias presenciales de Administración; demanda 100% captada por Bucaramanga / TO.',
+        empresas: '4.120 empresas y plantas logísticas registradas (Chimita, bodegas de carga nacional y manufactura).',
+        demanda: 'Logística de almacenamiento, distribución física internacional, cadena de suministro y HSEQ.',
+        densidad: 'Polo logístico e industrial neurálgico con alta concentración de tecnólogos que requieren profesionalización.',
+        to_ventaja: 'Planes de homologación directa para egresados técnicos del SENA y modalidades nocturna y virtual de la TO.'
     },
     {
         id: 'piedecuesta',
         nombre: 'Piedecuesta',
         subtitulo: 'Polo Tecnológico & Agroindustrial',
+        programas: '0 Programas en casco urbano',
+        universidades: '0 Sedes autónomas en casco urbano',
+        porcentaje: '0.0% Oferta Autónoma (Conurbación TO)',
         coords: [6.9886, -73.0494],
-        empresas: '3,210 empresas y centros de I+D (ICP Ecopetrol)',
-        demanda: 'Biotecnología, agroindustria y servicios de consultoría técnica.',
-        densidad: 'Zona de expansión demográfica con creciente población universitaria.',
-        ceto: 'Población estudiantil representativa en la matrícula histórica de CETO.',
-        destacado: false
+        destacado: false,
+        ies_detalle: 'Sin oferta de pregrado en administración dentro del casco urbano central (influencia UPB/USTA limítrofes).',
+        empresas: '3.210 empresas y unidades de investigación (ICP Ecopetrol, clúster avícola, tabaco y agroindustria).',
+        demanda: 'Biotecnología, agroindustria, emprendimiento rural y proyectos sostenibles.',
+        densidad: 'Municipio de mayor expansión habitacional y demográfica del departamento.',
+        to_ventaja: 'Población con alta representación histórica en la matrícula de la TO por accesibilidad tarifaria y transporte directo.'
     },
     {
         id: 'barranca',
         nombre: 'Barrancabermeja',
         subtitulo: 'Distrito Petroquímico & Portuario',
+        programas: '3 Programas',
+        universidades: '3 Instituciones (1 Pública / 2 Privadas)',
+        porcentaje: '16.67% Oferta Dptal.',
         coords: [7.0653, -73.8547],
-        empresas: '5,600 empresas del sector hidrocarburos y logística fluvial',
-        demanda: 'Gestión de proyectos (PMI), contratación estatal y administración de compras.',
-        densidad: 'Corredor del Magdalena Medio con alto interés en modalidades flexibles.',
-        ceto: 'Convenios de articulación con empresas contratistas de la región.',
-        destacado: false
+        destacado: false,
+        ies_detalle: 'UTS Sede Barrancabermeja (162 cr - Pública), UDI Sede Barrancabermeja (147 cr) y UCC (143 cr).',
+        empresas: '5.600 empresas activas (cadena de hidrocarburos, transporte fluvial sobre el Río Magdalena y metalmecánica).',
+        demanda: 'Administración de contratos minero-energéticos, gestión de proyectos (PMI), transición energética y compras industriales.',
+        densidad: 'Principal polo económico no metropolitano de Santander (14% del PIB departamental).',
+        to_ventaja: 'Modalidad Virtual de la TO con el mismo plan de estudios de 144 créditos y valor asequible ($3.576.000).'
+    },
+    {
+        id: 'sangil',
+        nombre: 'San Gil / Socorro (Guanentá y Comunera)',
+        subtitulo: 'Capital Turística & Ecosistema Solidario',
+        programas: '1 Programa',
+        universidades: '1 Universidad (Privada)',
+        porcentaje: '5.56% Oferta Dptal.',
+        coords: [6.5544, -73.1311],
+        destacado: false,
+        ies_detalle: 'UDI Sede San Gil (147 cr / 9 sem) / Cobertura provincial UNISANGIL.',
+        empresas: '3.450 unidades productivas (hotelería, turismo de aventura, café especial y sector cooperativo).',
+        demanda: 'Gerencia de servicios turísticos, cooperativismo, finanzas agropecuarias y marketing digital de destinos.',
+        densidad: 'Eje de desarrollo del sur de Santander con alta demanda de alternativas virtuales accesibles.',
+        to_ventaja: 'Acceso directo mediante la Modalidad Virtual de la TO sin necesidad de desplazamiento a capitales.'
     }
 ];
 
@@ -403,61 +448,88 @@ window._geoNodesVirtual = [
     {
         id: 'bogota',
         nombre: 'Bogotá D.C. (Nodo Capital)',
-        subtitulo: '17.96% Oferta Nacional (44 Programas)',
+        subtitulo: '17.96% Oferta Presencial (44 Prog) · 40.9% Virtual (18 Prog)',
+        programas: '44 Presenciales / 18 Virtuales',
+        universidades: '28 Instituciones de Educación Superior',
+        porcentaje: '17.96% Oferta Nal. (44 de 245)',
         coords: [4.6097, -74.0817],
-        empresas: '420,000+ empresas activas en Cámara de Comercio de Bogotá',
-        demanda: 'Alta receptividad a ofertas de bajo costo y alta calidad como CETO ($3.576.000 vs. $6.5M promedio).',
-        cobertura: 'Acceso total a través de la plataforma LMS Moodle y servidores AWS de CETO.',
-        destacado: true
+        destacado: true,
+        ies_detalle: 'Concentra 44 programas presenciales y 18 virtuales en 28 instituciones (EAN, Javeriana, Andes, Politécnico, UNIMINUTO, UNIR, etc.).',
+        empresas: '420.000+ empresas activas en Cámara de Comercio de Bogotá (servicios, banca, tecnología y gobierno).',
+        demanda: 'Alta población de adultos trabajadores que demandan pregrado virtual de alta calidad y costo asequible.',
+        densidad: 'Mayor centro de demanda del país; aranceles promedio en Bogotá superan $6.5M vs $3.576.000 en la TO.',
+        to_ventaja: 'Plataforma LMS Moodle en nube AWS de la TO, tutorías sincrónicas nocturnas y plan compacto de 144 créditos y 8 semestres.'
     },
     {
         id: 'antioquia',
-        nombre: 'Antioquia (Medellín / Regiones)',
-        subtitulo: '13.06% Oferta Nacional (32 Programas)',
+        nombre: 'Antioquia (Medellín / Subregiones)',
+        subtitulo: '13.06% Oferta Presencial (32 Prog) · 11.4% Virtual (5 Prog)',
+        programas: '32 Presenciales / 5 Virtuales',
+        universidades: '16 Instituciones de Educación Superior',
+        porcentaje: '13.06% Oferta Nal. (32 de 245)',
         coords: [6.2442, -75.5812],
-        empresas: 'Ecosistema de innovación, textil y agroexportación.',
-        demanda: 'Demanda de formación virtual en subregiones (Oriente, Urabá, Bajo Cauca).',
-        cobertura: 'Estudiantes vinculados a semilleros remotos de CETO.',
-        destacado: false
+        destacado: false,
+        ies_detalle: 'EAFIT, U. de Medellín, U. de Antioquia, IU Digital de Antioquia, Remington, Lasallista, ESCOLME, etc.',
+        empresas: '115.000+ empresas (textil, confección, servicios 4.0, biotecnología y agroexportación).',
+        demanda: 'Población laboral en subregiones (Oriente Antioqueño, Urabá, Bajo Cauca) sin campus físicos cercanos.',
+        densidad: 'Segundo departamento con mayor oferta y demanda del país.',
+        to_ventaja: 'Semilleros de investigación virtuales y red de convenios empresariales con enfoque digital de la TO.'
     },
     {
         id: 'valle',
         nombre: 'Valle del Cauca (Cali / Buenaventura)',
-        subtitulo: '11.43% Oferta Nacional (28 Programas)',
+        subtitulo: '11.43% Oferta Presencial (28 Prog) · 4.5% Virtual (2 Prog)',
+        programas: '28 Presenciales / 2 Virtuales',
+        universidades: '14 Instituciones de Educación Superior',
+        porcentaje: '11.43% Oferta Nal. (28 de 245)',
         coords: [3.4516, -76.5320],
-        empresas: 'Clúster de bioenergía, logística portuaria y alimentos.',
-        demanda: 'Necesidad de titulación profesional para tecnólogos en ejercicio laboral.',
-        cobertura: 'Flexibilidad de tutorías sincrónicas nocturnas.',
-        destacado: false
+        destacado: false,
+        ies_detalle: 'U. del Valle, ICESI, Javeriana Cali, U. Santiago de Cali, U. Autónoma de Occidente, etc.',
+        empresas: '98.000+ empresas (clúster agroindustrial azucarero, bioenergía, farmacéutico y logística de Buenaventura).',
+        demanda: 'Trabajadores portuarios e industriales que requieren titulación profesional nocturna y virtual.',
+        densidad: 'Corredor Pacífico de comercio exterior más relevante de Colombia.',
+        to_ventaja: 'Flexibilidad curricular y asignaturas diferenciadoras en Big Data, IA y Sostenibilidad de la TO.'
     },
     {
         id: 'costa',
-        nombre: 'Caribe (Atlántico / Bolívar / Córdoba)',
-        subtitulo: '14.69% Oferta Nacional (36 Programas)',
+        nombre: 'Región Caribe (Atlántico / Bolívar / Córdoba)',
+        subtitulo: '14.69% Oferta Presencial (36 Prog) · 6.8% Virtual (3 Prog)',
+        programas: '36 Presenciales (Atlántico 15, Bolívar 12, Córdoba 9)',
+        universidades: '18 Instituciones de Educación Superior',
+        porcentaje: '14.69% Oferta Nal. (36 de 245)',
         coords: [10.9685, -74.7813],
-        empresas: 'Sector turismo, portuario y comercio exterior.',
-        demanda: 'Alta población sin acceso a campus físicos en municipios no capitales.',
-        cobertura: 'Ruta de homologación directa desde programas tecnológicos del SENA.',
-        destacado: false
+        destacado: false,
+        ies_detalle: 'U. del Norte, U. de Cartagena, Tec. Comfenalco, UNICOLOMBO, CECAR, CUC, etc.',
+        empresas: '82.000+ empresas (sector portuario, zonas francas, petroquímica, turismo y comercio internacional).',
+        demanda: 'Población de municipios no capitales con baja cobertura universitaria tradicional.',
+        densidad: 'Corredor logístico y turístico del litoral norte colombiano.',
+        to_ventaja: 'Ruta de homologación directa y reconocimiento de aprendizajes previos para tecnólogos caribeños en la TO.'
     },
     {
         id: 'nororiente',
-        nombre: 'Nororiente (Santander / Norte de Santander)',
-        subtitulo: '11.43% Oferta Regional (28 Programas)',
+        nombre: 'Región Nororiente (Santander & N. Santander)',
+        subtitulo: '11.43% Oferta Regional (Santander 18 Prog / N. Santander 10 Prog)',
+        programas: '28 Presenciales / 3 Virtuales',
+        universidades: '14 Instituciones de Educación Superior',
+        porcentaje: '11.43% Oferta Nal. (28 de 245)',
         coords: [7.8939, -72.5078],
-        empresas: 'Comercio binacional, calzado, confecciones y servicios.',
-        demanda: 'Fuerte arraigo y reconocimiento de la marca institucional CETO.',
-        cobertura: 'Sinergia de Registro Único con acceso a sedes físicas si se requiere.',
-        destacado: true
+        destacado: true,
+        ies_detalle: 'Santander (TO, UNAB, USTA, UCC, UDI, UNICIENCIA, UMB, UTS) y Norte de Santander (UFPS, U. de Pamplona, U. Libre, FESC).',
+        empresas: '54.000+ empresas (comercio binacional fronterizo, calzado, confecciones, palma de aceite y servicios).',
+        demanda: 'Consolidación de la marca TO en el nororiente colombiano con articulación directa a sedes físicas si se requiere.',
+        densidad: 'Epicentro histórico y natural de influencia de la Institución (TO).',
+        to_ventaja: 'Sinergia de Registro Único: el estudiante virtual cuenta con el respaldo de los campus físicos de la TO en Bucaramanga.'
     }
 ];
 
 window._currentGeoMode = 'presencial';
 window._leafletMapInstance = null;
 window._leafletMarkers = [];
+window._geoMarkerMap = {};
+window._activeGeoNodeId = null;
 
 window.c2Init = function() {
-    const mapContainer = document.getElementById('cetoGeoMap');
+    const mapContainer = document.getElementById('toGeoMap');
     if (!mapContainer) return;
 
     // Retry si Leaflet aún no está cargado
@@ -480,14 +552,14 @@ window.c2Init = function() {
 
     try {
         // Inicializar Leaflet centrado en Bucaramanga
-        window._leafletMapInstance = L.map('cetoGeoMap', {
+        window._leafletMapInstance = L.map('toGeoMap', {
             zoomControl: true,
             scrollWheelZoom: false
         }).setView([7.1193, -73.1227], 11);
 
         // Capa ESRI World Street Map (institucional, nítida, sin API key ni marcas de agua)
         const primaryTileLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, USGS, METI | CETO 2026',
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, USGS, METI | TO 2026',
             maxZoom: 18
         });
 
@@ -496,7 +568,7 @@ window.c2Init = function() {
             if (!window._osmFallbackActive && window._leafletMapInstance) {
                 window._osmFallbackActive = true;
                 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; OpenStreetMap contributors | CETO',
+                    attribution: '&copy; OpenStreetMap contributors | TO',
                     maxZoom: 19
                 }).addTo(window._leafletMapInstance);
             }
@@ -513,9 +585,9 @@ window.c2Init = function() {
             }, delay);
         });
 
-        window.renderGeoMarkers(window._currentGeoMode || 'presencial');
+        window.switchGeoMode(window._currentGeoMode || 'presencial');
     } catch(err) {
-        console.error('Error al inicializar Leaflet en cetoGeoMap:', err);
+        console.error('Error al inicializar Leaflet en el mapa:', err);
     }
 };
 
@@ -537,7 +609,7 @@ window.switchGeoMode = function(mode) {
             btnVir.style.boxShadow = 'none';
         }
         if (statusText) statusText.innerText = 'Enfoque: Área Metropolitana de Bucaramanga y Santander';
-        if (window._leafletMapInstance) window._leafletMapInstance.flyTo([7.1193, -73.1227], 11);
+        if (window._leafletMapInstance) window._leafletMapInstance.setView([7.1193, -73.1227], 11);
     } else {
         if (btnVir) {
             btnVir.style.background = '#F39200';
@@ -550,10 +622,39 @@ window.switchGeoMode = function(mode) {
             btnPre.style.boxShadow = 'none';
         }
         if (statusText) statusText.innerText = 'Enfoque: Cobertura Nacional y Nodos Departamentales SNIES';
-        if (window._leafletMapInstance) window._leafletMapInstance.flyTo([4.5709, -74.2973], 6);
+        if (window._leafletMapInstance) window._leafletMapInstance.setView([4.5709, -74.2973], 6);
     }
 
+    window.renderMunicipioChips(mode);
     window.renderGeoMarkers(mode);
+
+    // Seleccionar automáticamente el primer nodo
+    const nodes = (mode === 'presencial') ? window._geoNodesPresencial : window._geoNodesVirtual;
+    if (nodes && nodes.length > 0) {
+        window.selectGeoNode(nodes[0].id, mode);
+    }
+};
+
+window.renderMunicipioChips = function(mode) {
+    const chipsContainer = document.getElementById('geoMunicipiosChips');
+    if (!chipsContainer) return;
+
+    const nodes = (mode === 'presencial') ? window._geoNodesPresencial : window._geoNodesVirtual;
+    chipsContainer.innerHTML = nodes.map(node => `
+        <button 
+            id="chip-${node.id}" 
+            onclick="window.selectGeoNode('${node.id}', '${mode}')"
+            style="background:#FFFFFF; border:1px solid #D1D1D1; padding:5px 12px; border-radius:20px; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:700; color:#1A1A1B; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s ease; box-shadow:0 1px 3px rgba(0,0,0,0.05);"
+            onmouseover="this.style.borderColor='#F39200'"
+            onmouseout="if(window._activeGeoNodeId !== '${node.id}') this.style.borderColor='#D1D1D1'"
+        >
+            <i class="fas fa-map-marker-alt" style="color:#F39200; font-size:0.75rem;"></i>
+            <span>${node.nombre.split(' (')[0]}</span>
+            <span style="background:rgba(243,146,0,0.15); color:#D97F00; padding:1px 6px; border-radius:10px; font-size:0.68rem; font-weight:800;">
+                ${node.programas.split(' ')[0]}
+            </span>
+        </button>
+    `).join('');
 };
 
 window.renderGeoMarkers = function(mode) {
@@ -562,31 +663,134 @@ window.renderGeoMarkers = function(mode) {
     // Limpiar marcadores previos
     window._leafletMarkers.forEach(m => window._leafletMapInstance.removeLayer(m));
     window._leafletMarkers = [];
+    window._geoMarkerMap = {};
 
     const nodes = (mode === 'presencial') ? window._geoNodesPresencial : window._geoNodesVirtual;
 
     nodes.forEach(node => {
         const marker = L.circleMarker(node.coords, {
-            radius: node.destacado ? 10 : 7,
+            radius: node.destacado ? 11 : 8,
             fillColor: node.destacado ? '#F39200' : '#1A1A1B',
             color: '#FFFFFF',
-            weight: 2,
+            weight: 2.5,
             opacity: 1,
-            fillOpacity: 0.9
+            fillOpacity: 0.95
         }).addTo(window._leafletMapInstance);
 
         marker.on('click', () => {
-            window.updateSidePanel(node, mode);
+            window.selectGeoNode(node.id, mode);
         });
 
-        marker.bindPopup(`<b>${node.nombre}</b><br><span style="font-size:0.75rem;color:#666;">${node.subtitulo}</span>`);
+        // Popup interactivo con información completa requerida: Programas, Universidades, Porcentajes
+        const popupContent = `
+            <div style="font-family:'Montserrat',sans-serif; min-width:260px; padding:6px 4px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #F39200; padding-bottom:6px; margin-bottom:8px;">
+                    <div>
+                        <strong style="color:#1A1A1B; font-size:0.9rem; display:block;">${node.nombre}</strong>
+                        <span style="font-size:0.7rem; color:#6B6B6B;">${node.subtitulo}</span>
+                    </div>
+                    <span style="background:#1A1A1B; color:#F39200; font-size:0.65rem; padding:3px 7px; border-radius:4px; font-weight:800;">TO 2026</span>
+                </div>
+
+                <!-- 3 MÉTRICAS CLAVE -->
+                <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:6px; margin-bottom:8px;">
+                    <div style="background:#FFF3E0; border:1px solid #FFE0B2; padding:6px 3px; border-radius:6px; text-align:center;">
+                        <span style="display:block; font-size:0.6rem; color:#D97F00; text-transform:uppercase; font-weight:800;">Programas</span>
+                        <strong style="color:#1A1A1B; font-size:0.92rem;">${node.programas.split(' ')[0]}</strong>
+                    </div>
+                    <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:6px 3px; border-radius:6px; text-align:center;">
+                        <span style="display:block; font-size:0.6rem; color:#166534; text-transform:uppercase; font-weight:800;">% Oferta</span>
+                        <strong style="color:#166534; font-size:0.85rem;">${node.porcentaje.split(' ')[0]}</strong>
+                    </div>
+                    <div style="background:#F1F5F9; border:1px solid #CBD5E1; padding:6px 3px; border-radius:6px; text-align:center;">
+                        <span style="display:block; font-size:0.6rem; color:#475569; text-transform:uppercase; font-weight:800;">Univ / IES</span>
+                        <strong style="color:#0F172A; font-size:0.85rem;">${node.universidades.split(' ')[0]}</strong>
+                    </div>
+                </div>
+
+                <!-- DESGLOSE DE UNIVERSIDADES -->
+                <div style="background:#F8F9FA; padding:6px 8px; border-radius:6px; font-size:0.75rem; color:#333; margin-bottom:6px; border-left:3px solid #F39200;">
+                    <strong style="color:#1A1A1B; font-size:0.72rem; text-transform:uppercase;">Instituciones / IES:</strong><br>
+                    <span>${node.universidades}</span>
+                </div>
+
+                <!-- TEJIDO EMPRESARIAL RESUMIDO -->
+                <div style="font-size:0.72rem; color:#4B5563; margin-bottom:8px; line-height:1.35;">
+                    <i class="fas fa-building" style="color:#F39200;"></i> <strong>Empresas CCB:</strong> ${node.empresas.split('(')[0]}
+                </div>
+
+                <div style="background:#FFF9F2; border:1px solid #F39200; padding:5px 8px; border-radius:5px; text-align:center;">
+                    <span style="font-size:0.7rem; color:#D97F00; font-weight:700;">
+                        <i class="fas fa-check-circle"></i> Información completa abierta en panel lateral
+                    </span>
+                </div>
+            </div>
+        `;
+        marker.bindPopup(popupContent, { maxWidth: 300 });
         window._leafletMarkers.push(marker);
+        window._geoMarkerMap[node.id] = marker;
+    });
+};
+
+window.selectGeoNode = function(nodeId, mode) {
+    window._activeGeoNodeId = nodeId;
+    const nodes = (mode === 'presencial') ? window._geoNodesPresencial : window._geoNodesVirtual;
+    const node = nodes.find(n => n.id === nodeId);
+    if (!node) return;
+
+    // 1. Mover mapa y abrir popup
+    if (window._leafletMapInstance) {
+        const targetZoom = (mode === 'presencial') ? 12 : 7;
+        window._leafletMapInstance.setView(node.coords, targetZoom);
+    }
+    if (window._geoMarkerMap[nodeId]) {
+        window._geoMarkerMap[nodeId].openPopup();
+    }
+
+    // 2. Resaltar chips
+    nodes.forEach(n => {
+        const chip = document.getElementById(`chip-${n.id}`);
+        if (chip) {
+            if (n.id === nodeId) {
+                chip.style.background = '#1A1A1B';
+                chip.style.borderColor = '#F39200';
+                chip.style.color = '#FFFFFF';
+                chip.style.boxShadow = '0 2px 8px rgba(243,146,0,0.3)';
+                const badge = chip.querySelector('span:last-child');
+                if (badge) {
+                    badge.style.background = '#F39200';
+                    badge.style.color = '#FFFFFF';
+                }
+            } else {
+                chip.style.background = '#FFFFFF';
+                chip.style.borderColor = '#D1D1D1';
+                chip.style.color = '#1A1A1B';
+                chip.style.boxShadow = '0 1px 3px rgba(0,0,0,0.05)';
+                const badge = chip.querySelector('span:last-child');
+                if (badge) {
+                    badge.style.background = 'rgba(243,146,0,0.15)';
+                    badge.style.color = '#D97F00';
+                }
+            }
+        }
     });
 
-    // Cargar en el panel lateral el primer nodo
-    if (nodes.length > 0) {
-        window.updateSidePanel(nodes[0], mode);
-    }
+    // 3. Resaltar marcadores en mapa
+    nodes.forEach(n => {
+        const m = window._geoMarkerMap[n.id];
+        if (m) {
+            if (n.id === nodeId) {
+                m.setRadius(13);
+                m.setStyle({ fillColor: '#F39200', color: '#1A1A1B', weight: 3.5, fillOpacity: 1 });
+            } else {
+                m.setRadius(n.destacado ? 10 : 8);
+                m.setStyle({ fillColor: n.destacado ? '#F39200' : '#1A1A1B', color: '#FFFFFF', weight: 2.5, fillOpacity: 0.95 });
+            }
+        }
+    });
+
+    // 4. Actualizar panel lateral
+    window.updateSidePanel(node, mode);
 };
 
 window.updateSidePanel = function(node, mode) {
@@ -600,51 +804,84 @@ window.updateSidePanel = function(node, mode) {
     title.innerText = node.nombre;
     subtitle.innerText = node.subtitulo;
 
-    if (mode === 'presencial') {
-        content.innerHTML = `
-            <div style="margin-bottom:10px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#F39200;">Tejido Empresarial</span>
-                <p style="margin:2px 0 0; color:#1A1A1B; font-weight:600;">${node.empresas}</p>
+    content.innerHTML = `
+        <!-- 3 TARJETAS KPI DE OFERTA EN EL MUNICIPIO/REGIÓN -->
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px; margin-bottom:14px;">
+            <div style="background:#FFF3E0; border:1px solid #FFE0B2; border-left:3px solid #F39200; border-radius:6px; padding:10px 4px; text-align:center;">
+                <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:block;">
+                    <i class="fas fa-graduation-cap"></i> Programas
+                </span>
+                <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B;">${node.programas.split(' ')[0]}</span>
+                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">${node.programas.includes('directos') ? 'Indirectos' : 'Activos'}</span>
             </div>
-            <div style="margin-bottom:10px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#6B6B6B;">Perfil de Demanda</span>
-                <p style="margin:2px 0 0;">${node.demanda}</p>
+            <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-left:3px solid #2ECC71; border-radius:6px; padding:10px 4px; text-align:center;">
+                <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#166534; display:block;">
+                    <i class="fas fa-percentage"></i> % Oferta
+                </span>
+                <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#166534;">${node.porcentaje.split(' ')[0]}</span>
+                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">${mode === 'presencial' ? 'Santander' : 'Nacional'}</span>
             </div>
-            <div style="margin-bottom:10px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#6B6B6B;">Densidad Productiva</span>
-                <p style="margin:2px 0 0;">${node.densidad}</p>
+            <div style="background:#F1F5F9; border:1px solid #CBD5E1; border-left:3px solid #475569; border-radius:6px; padding:10px 4px; text-align:center;">
+                <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#475569; display:block;">
+                    <i class="fas fa-university"></i> Universidades
+                </span>
+                <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#0F172A;">${node.universidades.split(' ')[0]}</span>
+                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Instituciones</span>
             </div>
-            <div style="background:#FFF9F2; border-left:3px solid #F39200; padding:8px 10px; border-radius:4px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#D97F00;">Infraestructura CETO</span>
-                <p style="margin:2px 0 0; font-size:0.78rem;">${node.ceto}</p>
+        </div>
+
+        <!-- DETALLE DE UNIVERSIDADES E INSTITUCIONES OFERENTES -->
+        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#F39200; display:flex; align-items:center; gap:5px;">
+                    <i class="fas fa-university"></i> Universidades &amp; Oferta IES (${node.universidades})
+                </span>
+                <span style="font-size:0.68rem; background:#F4F4F4; color:#1A1A1B; padding:2px 6px; border-radius:4px; font-weight:700;">SNIES</span>
             </div>
-        `;
-        if (footer) footer.innerText = 'El área metropolitana concentra el 82% del PIB departamental. Los profesionales de CETO se insertan en cadenas comerciales y de servicios.';
-    } else {
-        content.innerHTML = `
-            <div style="margin-bottom:10px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#F39200;">Ecosistema Laboral</span>
-                <p style="margin:2px 0 0; color:#1A1A1B; font-weight:600;">${node.empresas}</p>
-            </div>
-            <div style="margin-bottom:10px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#6B6B6B;">Oportunidad de Penetración</span>
-                <p style="margin:2px 0 0;">${node.demanda}</p>
-            </div>
-            <div style="background:#F0FDF4; border-left:3px solid #2ECC71; padding:8px 10px; border-radius:4px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#166534;">Conectividad LMS CETO</span>
-                <p style="margin:2px 0 0; font-size:0.78rem;">${node.cobertura}</p>
-            </div>
-        `;
-        if (footer) footer.innerText = 'Bajo el Registro Único, la modalidad virtual amplía la cobertura a 32 departamentos con el mismo estándar de calidad y plan de estudios.';
+            <p style="margin:2px 0 0; color:#1A1A1B; font-size:0.78rem; line-height:1.45;">${node.ies_detalle}</p>
+        </div>
+
+        <!-- TEJIDO EMPRESARIAL -->
+        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px;">
+                <i class="fas fa-briefcase" style="color:#F39200;"></i> Tejido Empresarial (Cámara de Comercio)
+            </span>
+            <p style="margin:3px 0 0; color:#1A1A1B; font-weight:600; font-size:0.8rem; line-height:1.4;">${node.empresas}</p>
+            <p style="margin:2px 0 0; color:#6B6B6B; font-size:0.75rem;">${node.densidad}</p>
+        </div>
+
+        <!-- PERFIL DE DEMANDA -->
+        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px;">
+                <i class="fas fa-chart-pie" style="color:#2ECC71;"></i> Perfil de Demanda y Pertinencia
+            </span>
+            <p style="margin:3px 0 0; font-size:0.78rem; color:#4B5563; line-height:1.45;">${node.demanda}</p>
+        </div>
+
+        <!-- PROPUESTA DE VALOR TO -->
+        <div style="background:#FFF9F2; border-left:4px solid #F39200; padding:10px 12px; border-radius:6px; box-shadow:0 1px 4px rgba(243,146,0,0.08);">
+            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:flex; align-items:center; gap:5px;">
+                <i class="fas fa-award"></i> Propuesta Diferencial TO
+            </span>
+            <p style="margin:3px 0 0; font-size:0.78rem; color:#1A1A1B; font-weight:500; line-height:1.45;">${node.to_ventaja}</p>
+        </div>
+    `;
+
+    if (footer) {
+        if (mode === 'presencial') {
+            footer.innerHTML = `<strong>Santander (18 programas · 7,35% del país):</strong> La propuesta de la <strong>TO</strong> es la única con articulación dual directa a 144 créditos y 8 semestres con titulación inclusiva.`;
+        } else {
+            footer.innerHTML = `<strong>Cobertura Nacional SNIES (245 programas presenciales · 44 virtuales):</strong> Bajo el Registro Único, la <strong>TO</strong> amplía cobertura a 32 departamentos con unicidad curricular y estándares de alta calidad.`;
+        }
     }
 };
 
-// Auto-disparador cuando el elemento #cetoGeoMap entra en el DOM
+// Auto-disparador cuando el elemento #toGeoMap entra en el DOM
 (function initGeoAutoWatcher() {
     let attempts = 0;
     const watcher = setInterval(() => {
         attempts++;
-        const mapEl = document.getElementById('cetoGeoMap');
+        const mapEl = document.getElementById('toGeoMap');
         if (mapEl && mapEl.offsetParent !== null) {
             // El elemento existe y es visible en pantalla
             if (!window._leafletMapInstance && window.c2Init) {

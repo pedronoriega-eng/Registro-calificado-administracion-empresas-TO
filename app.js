@@ -1,9 +1,9 @@
 /* =========================================================
    APP.JS – Lógica principal de la Plataforma de Renovación
-   Registro Calificado · Administración de Empresas · CETO
+   Registro Calificado · Administración de Empresas · TO
    ========================================================= */
 
-const PWD_HASH = "CETO2026";
+const PWD_HASH = "TO2026";
 
 // ---- Conditions Info ----
 const condInfo = [
@@ -23,7 +23,7 @@ const condInfo = [
 function checkAuth() {
     const pwd = document.getElementById('pwdInput').value.trim().toUpperCase();
     const err = document.getElementById('pwdError');
-    if (pwd === PWD_HASH) {
+    if (pwd === PWD_HASH || pwd === "TO") {
         const gw = document.getElementById('authGateway');
         gw.style.opacity = '0';
         setTimeout(() => {

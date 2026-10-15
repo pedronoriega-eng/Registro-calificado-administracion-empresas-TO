@@ -1,6 +1,6 @@
 /* =========================================================
    SECCIÓN DE ESTADÍSTICAS INSTITUCIONALES Y TENDENCIAS DE PERMANENCIA
-   Administración de Empresas · Registro Único · CETO
+   Administración de Empresas · Registro Único · TO
    Datos Oficiales: Tablas 11, 12 y 13 del Documento Maestro (Anexo 2)
    ========================================================= */
 window.SECTIONS = window.SECTIONS || {};
@@ -17,7 +17,7 @@ window.SECTIONS['c10'] = `
         </div>
         <div>
             <span class="tag-legal" style="background:rgba(243,146,0,0.25); color:#F39200; border:1px solid #F39200; font-weight:700; padding:6px 14px; border-radius:20px; font-size:0.8rem;">
-                <i class="fas fa-database"></i> Registro &amp; Control CETO 2025
+                <i class="fas fa-database"></i> Registro &amp; Control TO 2025
             </span>
         </div>
     </div>

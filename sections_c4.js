@@ -1,6 +1,6 @@
 /* =========================================================
    CONDICIÓN 4 – ORGANIZACIÓN DE ACTIVIDADES ACADÉMICAS
-   Administración de Empresas · CETO · Benchmark SST C4
+   Administración de Empresas · TO · Benchmark SST C4
    ========================================================= */
 window.SECTIONS = window.SECTIONS || {};
 window.SECTIONS['c4'] = `

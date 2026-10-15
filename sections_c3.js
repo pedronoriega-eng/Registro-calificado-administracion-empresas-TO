@@ -10681,7 +10681,7 @@ window.openSubjectModal = function(id, type) {
                                     ${s.perfil_asociado || 'Competencia profesional del egresado asociada a las áreas sustantivas de la administración y la gestión organizacional.'}
                                 </div>
                                 <div style="font-size:0.73rem; color:#64748B; margin-top:6px;">
-                                    Aporte clave al liderazgo directivo, ético e innovador del Administrador de Empresas CETO.
+                                    Aporte clave al liderazgo directivo, ético e innovador del Administrador de Empresas TO.
                                 </div>
                             </div>
 
@@ -14174,7 +14174,7 @@ window.SECTIONS['c3'] = `
         <!-- 2. LAS 4 DIMENSIONES DE FLEXIBILIZACIÓN INSTITUCIONAL -->
         <div class="card" style="margin-bottom:24px; border-top:4px solid #059669;">
             <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:14px;">
-                <i class="fas fa-cubes" style="color:#059669; margin-right:8px;"></i> 2. Cuatro Dimensiones de la Flexibilización Institucional (CETO)
+                <i class="fas fa-cubes" style="color:#059669; margin-right:8px;"></i> 2. Cuatro Dimensiones de la Flexibilización Institucional (TO)
             </h4>
             <div class="grid-2" style="gap:16px;">
                 <!-- a) Flexibilidad Pedagógica -->
@@ -14231,7 +14231,7 @@ window.SECTIONS['c3'] = `
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:0.83rem; color:#334155;">
                 <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:10px 14px; border-radius:6px;">
-                    <strong style="color:#0F172A;"><i class="fas fa-check-circle" style="color:#7C3AED; margin-right:6px;"></i> 1. Portafolio Multiprograma:</strong> Oferta articulada de programas académicos CETO con similar denominación en modalidad virtual.
+                    <strong style="color:#0F172A;"><i class="fas fa-check-circle" style="color:#7C3AED; margin-right:6px;"></i> 1. Portafolio Multiprograma:</strong> Oferta articulada de programas académicos TO con similar denominación en modalidad virtual.
                 </div>
                 <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:10px 14px; border-radius:6px;">
                     <strong style="color:#0F172A;"><i class="fas fa-check-circle" style="color:#7C3AED; margin-right:6px;"></i> 2. Rutas Semestrales:</strong> Definición de rutas de aprendizaje estructuradas por semestres (1 a 9) para acompañar la progresión académica.
@@ -17839,10 +17839,10 @@ window.SECTIONS['c3'] = `
 
  <div class="card" style="margin-bottom:24px; border-left:6px solid #16A34A;">
  <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin-bottom:8px;">
- <i class="fas fa-user-tie" style="color:#16A34A;"></i> Perfil Profesional del Administrador de Empresas CETO
+ <i class="fas fa-user-tie" style="color:#16A34A;"></i> Perfil Profesional del Administrador de Empresas TO
  </h4>
  <p style="font-size:0.86rem; color:var(--gray-text); line-height:1.5;">
- El Administrador de Empresas graduado de CETO es un profesional integral, innovador y ético, capacitado para dirigir, gestionar y transformar organizaciones sostenibles en entornos globalizados y digitales. Posee sólidas competencias en analítica de datos, toma de decisiones estratégicas, gestión financiera, liderazgo de equipos y formulación de proyectos con impacto social y ambiental.
+ El Administrador de Empresas graduado de la TO es un profesional integral, innovador y ético, capacitado para dirigir, gestionar y transformar organizaciones sostenibles en entornos globalizados y digitales. Posee sólidas competencias en analítica de datos, toma de decisiones estratégicas, gestión financiera, liderazgo de equipos y formulación de proyectos con impacto social y ambiental.
  </p>
  </div>
 
@@ -17938,7 +17938,7 @@ window.SECTIONS['c3'] = `
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
             <div style="max-width:700px;">
                 <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1.5px; color:var(--orange); font-weight:800; margin-bottom:6px;">
-                    <i class="fas fa-award"></i> Modelo Pedagógico y Alineación Curricular CETO · Decreto 1330
+                    <i class="fas fa-award"></i> Modelo Pedagógico y Alineación Curricular TO · Decreto 1330
                 </div>
                 <h3 style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:#fff; margin-bottom:8px;">
                     Inducción Docente Académico: Sistema de Evaluación por RAs y Rúbricas Analíticas
@@ -18000,7 +18000,7 @@ window.SECTIONS['c3'] = `
     <!-- 2. FUNDAMENTOS TEÓRICOS DEL MODELO PEDAGÓGICO -->
     <div class="card" style="margin-bottom:24px; border-top:4px solid var(--carbon);">
         <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">
-            <i class="fas fa-university" style="color:var(--orange);"></i> 2. Fundamentos Teóricos del Modelo Pedagógico CETO
+            <i class="fas fa-university" style="color:var(--orange);"></i> 2. Fundamentos Teóricos del Modelo Pedagógico TO
         </h4>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
             <div style="background:#F5F3FF; border:1px solid #DDD6FE; padding:14px; border-radius:8px;">
@@ -18028,7 +18028,7 @@ window.SECTIONS['c3'] = `
             <i class="fas fa-calendar-alt" style="color:#16A34A;"></i> 3. Ciclo Operativo Trimestral de Evaluación (8 Semanas · 3 Unidades)
         </h4>
         <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:16px;">
-            Distribución obligatoria de fases, unidades temáticas, resultados de aprendizaje y porcentajes evaluativos según el modelo CETO:
+            Distribución obligatoria de fases, unidades temáticas, resultados de aprendizaje y porcentajes evaluativos según el modelo TO:
         </p>
 
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
@@ -18103,10 +18103,10 @@ window.SECTIONS['c3'] = `
         </div>
     </div>
 
-    <!-- 4. RÚBRICAS ANALÍTICAS INSTITUCIONALES CETO -->
+    <!-- 4. RÚBRICAS ANALÍTICAS INSTITUCIONALES TO -->
     <div class="card" style="margin-bottom:24px; border-top:4px solid #7C3AED;">
         <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">
-            <i class="fas fa-tasks" style="color:#7C3AED;"></i> 4. Sistema Institucional de Rúbricas Analíticas CETO
+            <i class="fas fa-tasks" style="color:#7C3AED;"></i> 4. Sistema Institucional de Rúbricas Analíticas TO
         </h4>
         <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:16px;">
             Estructura estandarizada con la que todos los docentes deben calificar cada evidencia entregable:
