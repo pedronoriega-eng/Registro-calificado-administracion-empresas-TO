@@ -597,6 +597,13 @@ window.switchGeoMode = function(mode) {
     const btnVir = document.getElementById('btnGeoVirtual');
     const statusText = document.getElementById('mapStatusText');
 
+    // 1. Cerrar cualquier popup previo y resetear nodo activo
+    if (window._leafletMapInstance) {
+        window._leafletMapInstance.closePopup();
+    }
+    window._activeGeoNodeId = null;
+
+    // 2. Actualizar botones de modalidad y centrar mapa en vista panorámica limpia
     if (mode === 'presencial') {
         if (btnPre) {
             btnPre.style.background = '#F39200';
@@ -608,8 +615,10 @@ window.switchGeoMode = function(mode) {
             btnVir.style.color = '#6B6B6B';
             btnVir.style.boxShadow = 'none';
         }
-        if (statusText) statusText.innerText = 'Enfoque: Área Metropolitana de Bucaramanga y Santander';
-        if (window._leafletMapInstance) window._leafletMapInstance.setView([7.1193, -73.1227], 11);
+        if (statusText) statusText.innerText = 'Enfoque: Santander y Área Metropolitana de Bucaramanga · Datos Oficiales MEN / SNIES';
+        if (window._leafletMapInstance) {
+            window._leafletMapInstance.setView([7.06, -73.12], 10.5);
+        }
     } else {
         if (btnVir) {
             btnVir.style.background = '#F39200';
@@ -621,18 +630,18 @@ window.switchGeoMode = function(mode) {
             btnPre.style.color = '#6B6B6B';
             btnPre.style.boxShadow = 'none';
         }
-        if (statusText) statusText.innerText = 'Enfoque: Cobertura Nacional y Nodos Departamentales SNIES';
-        if (window._leafletMapInstance) window._leafletMapInstance.setView([4.5709, -74.2973], 6);
+        if (statusText) statusText.innerText = 'Enfoque: Cobertura Nacional y Nodos Departamentales · Datos Oficiales MEN / SNIES';
+        if (window._leafletMapInstance) {
+            window._leafletMapInstance.setView([4.57, -74.29], 5.8);
+        }
     }
 
+    // 3. Renderizar chips neutrales y marcadores en el mapa (sin popup abierto en primer plano)
     window.renderMunicipioChips(mode);
     window.renderGeoMarkers(mode);
 
-    // Seleccionar automáticamente el primer nodo
-    const nodes = (mode === 'presencial') ? window._geoNodesPresencial : window._geoNodesVirtual;
-    if (nodes && nodes.length > 0) {
-        window.selectGeoNode(nodes[0].id, mode);
-    }
+    // 4. Panel lateral muestra el resumen global del MEN, esperando el clic del usuario
+    window.renderInitialSidePanel(mode);
 };
 
 window.renderMunicipioChips = function(mode) {
@@ -644,8 +653,8 @@ window.renderMunicipioChips = function(mode) {
         <button 
             id="chip-${node.id}" 
             onclick="window.selectGeoNode('${node.id}', '${mode}')"
-            style="background:#FFFFFF; border:1px solid #D1D1D1; padding:5px 12px; border-radius:20px; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:700; color:#1A1A1B; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s ease; box-shadow:0 1px 3px rgba(0,0,0,0.05);"
-            onmouseover="this.style.borderColor='#F39200'"
+            style="background:#FFFFFF; border:1px solid #D1D1D1; padding:6px 12px; border-radius:20px; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:700; color:#1A1A1B; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s ease; box-shadow:0 1px 3px rgba(0,0,0,0.05);"
+            onmouseover="if(window._activeGeoNodeId !== '${node.id}') this.style.borderColor='#F39200'"
             onmouseout="if(window._activeGeoNodeId !== '${node.id}') this.style.borderColor='#D1D1D1'"
         >
             <i class="fas fa-map-marker-alt" style="color:#F39200; font-size:0.75rem;"></i>
@@ -677,77 +686,90 @@ window.renderGeoMarkers = function(mode) {
             fillOpacity: 0.95
         }).addTo(window._leafletMapInstance);
 
+        // SOLO al dar clic se abre la información y se actualiza el panel
         marker.on('click', () => {
             window.selectGeoNode(node.id, mode);
         });
 
-        // Popup interactivo con información completa requerida: Programas, Universidades, Porcentajes
+        // Popup interactivo con datos oficiales del MEN / SNIES
         const popupContent = `
-            <div style="font-family:'Montserrat',sans-serif; min-width:260px; padding:6px 4px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #F39200; padding-bottom:6px; margin-bottom:8px;">
+            <div style="font-family:'Montserrat',sans-serif; min-width:270px; padding:4px 2px;">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; border-bottom:2px solid #F39200; padding-bottom:6px; margin-bottom:8px;">
                     <div>
-                        <strong style="color:#1A1A1B; font-size:0.9rem; display:block;">${node.nombre}</strong>
-                        <span style="font-size:0.7rem; color:#6B6B6B;">${node.subtitulo}</span>
+                        <strong style="color:#1A1A1B; font-size:0.92rem; display:block; line-height:1.2;">${node.nombre}</strong>
+                        <span style="font-size:0.68rem; color:#6B6B6B;">${node.subtitulo}</span>
                     </div>
-                    <span style="background:#1A1A1B; color:#F39200; font-size:0.65rem; padding:3px 7px; border-radius:4px; font-weight:800;">TO 2026</span>
+                    <span style="background:#1A1A1B; color:#F39200; font-size:0.65rem; padding:2px 6px; border-radius:4px; font-weight:800; white-space:nowrap; margin-left:6px;">MEN · SNIES</span>
                 </div>
 
-                <!-- 3 MÉTRICAS CLAVE -->
+                <!-- 3 MÉTRICAS CLAVE DEL MEN -->
                 <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:6px; margin-bottom:8px;">
-                    <div style="background:#FFF3E0; border:1px solid #FFE0B2; padding:6px 3px; border-radius:6px; text-align:center;">
-                        <span style="display:block; font-size:0.6rem; color:#D97F00; text-transform:uppercase; font-weight:800;">Programas</span>
+                    <div style="background:#FFF3E0; border:1px solid #FFE0B2; padding:6px 2px; border-radius:6px; text-align:center;">
+                        <span style="display:block; font-size:0.58rem; color:#D97F00; text-transform:uppercase; font-weight:800;">Programas</span>
                         <strong style="color:#1A1A1B; font-size:0.92rem;">${node.programas.split(' ')[0]}</strong>
                     </div>
-                    <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:6px 3px; border-radius:6px; text-align:center;">
-                        <span style="display:block; font-size:0.6rem; color:#166534; text-transform:uppercase; font-weight:800;">% Oferta</span>
+                    <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:6px 2px; border-radius:6px; text-align:center;">
+                        <span style="display:block; font-size:0.58rem; color:#166534; text-transform:uppercase; font-weight:800;">% Oferta</span>
                         <strong style="color:#166534; font-size:0.85rem;">${node.porcentaje.split(' ')[0]}</strong>
                     </div>
-                    <div style="background:#F1F5F9; border:1px solid #CBD5E1; padding:6px 3px; border-radius:6px; text-align:center;">
-                        <span style="display:block; font-size:0.6rem; color:#475569; text-transform:uppercase; font-weight:800;">Univ / IES</span>
+                    <div style="background:#F1F5F9; border:1px solid #CBD5E1; padding:6px 2px; border-radius:6px; text-align:center;">
+                        <span style="display:block; font-size:0.58rem; color:#475569; text-transform:uppercase; font-weight:800;">Univ / IES</span>
                         <strong style="color:#0F172A; font-size:0.85rem;">${node.universidades.split(' ')[0]}</strong>
                     </div>
                 </div>
 
-                <!-- DESGLOSE DE UNIVERSIDADES -->
+                <!-- DESGLOSE OFICIAL DE IES (MEN) -->
                 <div style="background:#F8F9FA; padding:6px 8px; border-radius:6px; font-size:0.75rem; color:#333; margin-bottom:6px; border-left:3px solid #F39200;">
-                    <strong style="color:#1A1A1B; font-size:0.72rem; text-transform:uppercase;">Instituciones / IES:</strong><br>
+                    <strong style="color:#1A1A1B; font-size:0.7rem; text-transform:uppercase;">Instituciones MEN:</strong><br>
                     <span>${node.universidades}</span>
                 </div>
 
-                <!-- TEJIDO EMPRESARIAL RESUMIDO -->
+                <!-- TEJIDO EMPRESARIAL -->
                 <div style="font-size:0.72rem; color:#4B5563; margin-bottom:8px; line-height:1.35;">
                     <i class="fas fa-building" style="color:#F39200;"></i> <strong>Empresas CCB:</strong> ${node.empresas.split('(')[0]}
                 </div>
 
                 <div style="background:#FFF9F2; border:1px solid #F39200; padding:5px 8px; border-radius:5px; text-align:center;">
                     <span style="font-size:0.7rem; color:#D97F00; font-weight:700;">
-                        <i class="fas fa-check-circle"></i> Información completa abierta en panel lateral
+                        <i class="fas fa-check-circle"></i> Detalle completo abierto en panel lateral
                     </span>
                 </div>
             </div>
         `;
-        marker.bindPopup(popupContent, { maxWidth: 300 });
+
+        marker.bindPopup(popupContent, {
+            maxWidth: 310,
+            autoPan: true,
+            autoPanPaddingTopLeft: [25, 45],
+            autoPanPaddingBottomRight: [25, 25],
+            offset: [0, -8]
+        });
+
         window._leafletMarkers.push(marker);
         window._geoMarkerMap[node.id] = marker;
     });
 };
 
+// Se ejecuta ÚNICAMENTE al dar clic a un municipio o pin
 window.selectGeoNode = function(nodeId, mode) {
     window._activeGeoNodeId = nodeId;
     const nodes = (mode === 'presencial') ? window._geoNodesPresencial : window._geoNodesVirtual;
     const node = nodes.find(n => n.id === nodeId);
     if (!node) return;
 
-    // 1. Mover mapa y abrir popup
+    // 1. Mover mapa suavemente con offset vertical para que el popup flote centrado y no se corte arriba
     if (window._leafletMapInstance) {
         const targetZoom = (mode === 'presencial') ? 12 : 7;
-        window._leafletMapInstance.setView(node.coords, targetZoom);
+        const latOffset = (mode === 'presencial') ? 0.014 : 0.6;
+        window._leafletMapInstance.setView([node.coords[0] + latOffset, node.coords[1]], targetZoom);
     }
+
+    // 2. Abrir popup del municipio
     if (window._geoMarkerMap[nodeId]) {
         window._geoMarkerMap[nodeId].openPopup();
     }
 
-    // 2. Resaltar chips
+    // 3. Resaltar chip activo
     nodes.forEach(n => {
         const chip = document.getElementById(`chip-${n.id}`);
         if (chip) {
@@ -775,7 +797,7 @@ window.selectGeoNode = function(nodeId, mode) {
         }
     });
 
-    // 3. Resaltar marcadores en mapa
+    // 4. Resaltar marcador en mapa
     nodes.forEach(n => {
         const m = window._geoMarkerMap[n.id];
         if (m) {
@@ -789,10 +811,145 @@ window.selectGeoNode = function(nodeId, mode) {
         }
     });
 
-    // 4. Actualizar panel lateral
+    // 5. Cargar la información detallada del municipio en el panel lateral
     window.updateSidePanel(node, mode);
 };
 
+// Panel lateral en estado inicial (esperando clic del usuario)
+window.renderInitialSidePanel = function(mode) {
+    const title = document.getElementById('sideNodeTitle');
+    const subtitle = document.getElementById('sideNodeSubtitle');
+    const content = document.getElementById('sideNodeContent');
+    const footer = document.getElementById('sideNodeFooter');
+
+    if (!title || !content) return;
+
+    if (mode === 'presencial') {
+        title.innerText = 'Santander: Oferta Global SNIES · MEN';
+        subtitle.innerText = 'Documento Maestro · Registro Único Presencial (18 Programas)';
+
+        content.innerHTML = `
+            <!-- 3 TARJETAS KPI RESUMEN DE SANTANDER -->
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px; margin-bottom:14px;">
+                <div style="background:#FFF3E0; border:1px solid #FFE0B2; border-left:3px solid #F39200; border-radius:6px; padding:10px 4px; text-align:center;">
+                    <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:block;">
+                        <i class="fas fa-graduation-cap"></i> Oferta Dptal.
+                    </span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B;">18</span>
+                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Programas SNIES</span>
+                </div>
+                <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-left:3px solid #2ECC71; border-radius:6px; padding:10px 4px; text-align:center;">
+                    <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#166534; display:block;">
+                        <i class="fas fa-percentage"></i> % Nal.
+                    </span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#166534;">7.35%</span>
+                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">de 245 en el país</span>
+                </div>
+                <div style="background:#F1F5F9; border:1px solid #CBD5E1; border-left:3px solid #475569; border-radius:6px; padding:10px 4px; text-align:center;">
+                    <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#475569; display:block;">
+                        <i class="fas fa-university"></i> IES Oferentes
+                    </span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#0F172A;">12</span>
+                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Instituciones</span>
+                </div>
+            </div>
+
+            <!-- INSTRUCCIÓN OFICIAL INTERACTIVA -->
+            <div style="background:#FFF9F2; border:1.5px dashed #F39200; border-radius:8px; padding:12px 14px; margin-bottom:12px; text-align:center;">
+                <div style="color:#D97F00; font-size:1.1rem; margin-bottom:4px;"><i class="fas fa-hand-pointer"></i></div>
+                <strong style="color:#1A1A1B; font-size:0.82rem; display:block;">Interacción Geoespacial Activa</strong>
+                <p style="margin:4px 0 0; color:#4B5563; font-size:0.75rem; line-height:1.4;">
+                    Haga <strong>clic en cualquier municipio o pin del mapa</strong> para consultar la cantidad oficial de programas, instituciones de educación superior, porcentaje de oferta y tejido empresarial vigente según el Ministerio de Educación Nacional.
+                </p>
+            </div>
+
+            <!-- DISTRIBUCIÓN OFICIAL DE PROGRAMAS POR MUNICIPIO SEGÚN MEN -->
+            <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; margin-bottom:10px;">
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px; margin-bottom:6px;">
+                    <i class="fas fa-table" style="color:#F39200;"></i> Resumen Departamental MEN (18 Programas):
+                </span>
+                <ul style="margin:0; padding-left:18px; font-size:0.76rem; color:#4B5563; line-height:1.55;">
+                    <li><strong>Bucaramanga:</strong> 11 Programas (61.11%) · 8 IES (1 Pública: UTS / 7 Privadas).</li>
+                    <li><strong>Floridablanca:</strong> 3 Programas (16.67%) · 3 IES Privadas (UPB, USTA, Libre).</li>
+                    <li><strong>Barrancabermeja:</strong> 3 Programas (16.67%) · 3 IES (1 Pública: UTS / 2 Privadas).</li>
+                    <li><strong>San Gil / Socorro:</strong> 1 Programa (5.56%) · 1 IES Privada (UDI).</li>
+                    <li><strong>Girón y Piedecuesta:</strong> Demanda conurbada atendida por Bucaramanga / TO.</li>
+                </ul>
+            </div>
+
+            <!-- PROPUESTA DIFERENCIAL TO -->
+            <div style="background:#F8F9FA; border-left:3px solid #1A1A1B; padding:8px 10px; border-radius:4px;">
+                <span style="font-size:0.7rem; text-transform:uppercase; font-weight:800; color:#1A1A1B;">Sede Principal TO Bucaramanga:</span>
+                <p style="margin:2px 0 0; font-size:0.74rem; color:#4B5563; line-height:1.4;">
+                    Única oferta en Santander estructurada a 144 créditos y 8 semestres con titulación inclusiva Administrador(a) de Empresas y opción de tránsito a modalidad virtual.
+                </p>
+            </div>
+        `;
+
+        if (footer) {
+            footer.innerHTML = `<strong>Santander (18 programas · 7,35% del país):</strong> Información oficial del Documento Maestro basada en registros vigentes del SNIES - Ministerio de Educación Nacional.`;
+        }
+    } else {
+        title.innerText = 'Colombia: Oferta Nacional SNIES · MEN';
+        subtitle.innerText = 'Registro Único Virtual · Cobertura en los 32 Departamentos';
+
+        content.innerHTML = `
+            <!-- 3 TARJETAS KPI RESUMEN NACIONAL -->
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px; margin-bottom:14px;">
+                <div style="background:#FFF3E0; border:1px solid #FFE0B2; border-left:3px solid #F39200; border-radius:6px; padding:10px 4px; text-align:center;">
+                    <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:block;">
+                        <i class="fas fa-wifi"></i> Oferta Virtual
+                    </span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B;">44</span>
+                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Programas Colombia</span>
+                </div>
+                <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-left:3px solid #2ECC71; border-radius:6px; padding:10px 4px; text-align:center;">
+                    <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#166534; display:block;">
+                        <i class="fas fa-building"></i> Presencial
+                    </span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#166534;">245</span>
+                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Programas Base</span>
+                </div>
+                <div style="background:#F1F5F9; border:1px solid #CBD5E1; border-left:3px solid #475569; border-radius:6px; padding:10px 4px; text-align:center;">
+                    <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#475569; display:block;">
+                        <i class="fas fa-globe-americas"></i> Cobertura TO
+                    </span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#0F172A;">32</span>
+                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Departamentos</span>
+                </div>
+            </div>
+
+            <!-- INSTRUCCIÓN OFICIAL INTERACTIVA -->
+            <div style="background:#FFF9F2; border:1.5px dashed #F39200; border-radius:8px; padding:12px 14px; margin-bottom:12px; text-align:center;">
+                <div style="color:#D97F00; font-size:1.1rem; margin-bottom:4px;"><i class="fas fa-hand-pointer"></i></div>
+                <strong style="color:#1A1A1B; font-size:0.82rem; display:block;">Exploración de Nodos Regionales</strong>
+                <p style="margin:4px 0 0; color:#4B5563; font-size:0.75rem; line-height:1.4;">
+                    Haga <strong>clic en cualquier nodo regional en el mapa</strong> para consultar la concentración de programas presenciales y virtuales del MEN / SNIES y la pertinencia territorial del Registro Único.
+                </p>
+            </div>
+
+            <!-- DISTRIBUCIÓN NACIONAL SEGÚN MEN -->
+            <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px;">
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px; margin-bottom:6px;">
+                    <i class="fas fa-map-pin" style="color:#F39200;"></i> Nodos Principales de Demanda SNIES:
+                </span>
+                <ul style="margin:0; padding-left:18px; font-size:0.76rem; color:#4B5563; line-height:1.55;">
+                    <li><strong>Bogotá D.C.:</strong> 44 Presenciales (17.96%) / 18 Virtuales (40.91%) · 28 IES.</li>
+                    <li><strong>Antioquia:</strong> 32 Presenciales (13.06%) / 5 Virtuales · 16 IES.</li>
+                    <li><strong>Valle del Cauca:</strong> 28 Presenciales (11.43%) / 2 Virtuales · 14 IES.</li>
+                    <li><strong>Región Caribe:</strong> 36 Presenciales (14.69%) / 3 Virtuales · 18 IES.</li>
+                    <li><strong>Región Nororiente:</strong> 28 Presenciales (11.43%) / 3 Virtuales · 14 IES.</li>
+                </ul>
+            </div>
+        `;
+
+        if (footer) {
+            footer.innerHTML = `<strong>Cobertura Nacional SNIES (245 presenciales · 44 virtuales):</strong> Bajo el Registro Único, la <strong>TO</strong> amplía cobertura a 32 departamentos con unicidad curricular y estándares de alta calidad.`;
+        }
+    }
+};
+
+// Se ejecuta al dar clic a un municipio específico
 window.updateSidePanel = function(node, mode) {
     const title = document.getElementById('sideNodeTitle');
     const subtitle = document.getElementById('sideNodeSubtitle');
@@ -805,14 +962,21 @@ window.updateSidePanel = function(node, mode) {
     subtitle.innerText = node.subtitulo;
 
     content.innerHTML = `
-        <!-- 3 TARJETAS KPI DE OFERTA EN EL MUNICIPIO/REGIÓN -->
+        <!-- BOTÓN SUPERIOR PARA VOLVER A VISTA GENERAL -->
+        <div style="margin-bottom:10px; display:flex; justify-content:flex-end;">
+            <button onclick="window.resetGeoSelection('${mode}')" style="background:#FFFFFF; border:1px solid #D1D1D1; color:#6B6B6B; font-size:0.72rem; padding:4px 10px; border-radius:14px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s ease;">
+                <i class="fas fa-undo" style="color:#F39200;"></i> Ver Resumen Departamental MEN
+            </button>
+        </div>
+
+        <!-- 3 TARJETAS KPI DE OFERTA EN EL MUNICIPIO/REGIÓN (DATOS MEN / SNIES) -->
         <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px; margin-bottom:14px;">
             <div style="background:#FFF3E0; border:1px solid #FFE0B2; border-left:3px solid #F39200; border-radius:6px; padding:10px 4px; text-align:center;">
                 <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:block;">
-                    <i class="fas fa-graduation-cap"></i> Programas
+                    <i class="fas fa-graduation-cap"></i> Programas MEN
                 </span>
                 <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B;">${node.programas.split(' ')[0]}</span>
-                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">${node.programas.includes('directos') ? 'Indirectos' : 'Activos'}</span>
+                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">${node.programas.includes('directos') ? 'Indirectos' : 'Registrados'}</span>
             </div>
             <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-left:3px solid #2ECC71; border-radius:6px; padding:10px 4px; text-align:center;">
                 <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#166534; display:block;">
@@ -823,20 +987,20 @@ window.updateSidePanel = function(node, mode) {
             </div>
             <div style="background:#F1F5F9; border:1px solid #CBD5E1; border-left:3px solid #475569; border-radius:6px; padding:10px 4px; text-align:center;">
                 <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#475569; display:block;">
-                    <i class="fas fa-university"></i> Universidades
+                    <i class="fas fa-university"></i> Instituciones
                 </span>
                 <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#0F172A;">${node.universidades.split(' ')[0]}</span>
-                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Instituciones</span>
+                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">IES Oficiales</span>
             </div>
         </div>
 
-        <!-- DETALLE DE UNIVERSIDADES E INSTITUCIONES OFERENTES -->
+        <!-- DETALLE DE UNIVERSIDADES E INSTITUCIONES OFERENTES (MEN) -->
         <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
                 <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#F39200; display:flex; align-items:center; gap:5px;">
                     <i class="fas fa-university"></i> Universidades &amp; Oferta IES (${node.universidades})
                 </span>
-                <span style="font-size:0.68rem; background:#F4F4F4; color:#1A1A1B; padding:2px 6px; border-radius:4px; font-weight:700;">SNIES</span>
+                <span style="font-size:0.68rem; background:#F4F4F4; color:#1A1A1B; padding:2px 6px; border-radius:4px; font-weight:700;">SNIES / MEN</span>
             </div>
             <p style="margin:2px 0 0; color:#1A1A1B; font-size:0.78rem; line-height:1.45;">${node.ies_detalle}</p>
         </div>
@@ -874,6 +1038,21 @@ window.updateSidePanel = function(node, mode) {
             footer.innerHTML = `<strong>Cobertura Nacional SNIES (245 programas presenciales · 44 virtuales):</strong> Bajo el Registro Único, la <strong>TO</strong> amplía cobertura a 32 departamentos con unicidad curricular y estándares de alta calidad.`;
         }
     }
+};
+
+window.resetGeoSelection = function(mode) {
+    if (window._leafletMapInstance) {
+        window._leafletMapInstance.closePopup();
+        if (mode === 'presencial') {
+            window._leafletMapInstance.setView([7.06, -73.12], 10.5);
+        } else {
+            window._leafletMapInstance.setView([4.57, -74.29], 5.8);
+        }
+    }
+    window._activeGeoNodeId = null;
+    window.renderMunicipioChips(mode);
+    window.renderGeoMarkers(mode);
+    window.renderInitialSidePanel(mode);
 };
 
 // Auto-disparador cuando el elemento #toGeoMap entra en el DOM
