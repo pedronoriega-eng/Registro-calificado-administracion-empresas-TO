@@ -39,19 +39,19 @@ window.SECTIONS['c2'] = `
             </p>
         </div>
         
-        <!-- SWITCH DE MODALIDADES -->
-        <div style="display:flex; background:#F4F4F4; padding:4px; border-radius:30px; gap:4px; border:1px solid #D1D1D1;">
-            <button id="btnGeoPresencial" onclick="window.switchGeoMode('presencial')" style="background:#F39200; color:#FFFFFF; border:none; padding:8px 18px; border-radius:24px; font-family:'Montserrat',sans-serif; font-size:0.8rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.3s ease; box-shadow:0 2px 6px rgba(243,146,0,0.3);">
+        <!-- SWITCH DE MODALIDADES RESPONSIVO -->
+        <div style="display:flex; flex-wrap:wrap; background:#F4F4F4; padding:4px; border-radius:30px; gap:6px; border:1px solid #D1D1D1; max-width:100%;">
+            <button id="btnGeoPresencial" onclick="window.switchGeoMode('presencial')" style="background:#F39200; color:#FFFFFF; border:none; padding:8px 16px; border-radius:24px; font-family:'Montserrat',sans-serif; font-size:0.8rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.3s ease; box-shadow:0 2px 6px rgba(243,146,0,0.3);">
                 <i class="fas fa-building"></i> 🏢 Modalidad Presencial (Santander / AMB)
             </button>
-            <button id="btnGeoVirtual" onclick="window.switchGeoMode('virtual')" style="background:transparent; color:#6B6B6B; border:none; padding:8px 18px; border-radius:24px; font-family:'Montserrat',sans-serif; font-size:0.8rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.3s ease;">
+            <button id="btnGeoVirtual" onclick="window.switchGeoMode('virtual')" style="background:transparent; color:#6B6B6B; border:none; padding:8px 16px; border-radius:24px; font-family:'Montserrat',sans-serif; font-size:0.8rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.3s ease;">
                 <i class="fas fa-wifi"></i> 🌐 Modalidad Virtual (Nacional / SNIES)
             </button>
         </div>
     </div>
 
     <!-- CONTENEDOR GRID: MAPA + PANEL DETALLE -->
-    <div style="display:grid; grid-template-columns: 1fr 340px; gap:18px;">
+    <div class="geo-map-grid">
         
         <!-- MAPA CANVAS LEAFLET -->
         <div style="position:relative; border-radius:10px; overflow:hidden; border:1px solid #D1D1D1; box-shadow:inset 0 0 10px rgba(0,0,0,0.05);">
@@ -217,6 +217,125 @@ window.SECTIONS['c2'] = `
 
     </div>
 </div>
+
+<!-- ========================================== -->
+<!-- 4. DATOS ESTADÍSTICOS INSTITUCIONALES Y TENDENCIAS GENERALES DE PERMANENCIA -->
+<!-- ========================================== -->
+<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:22px; margin-top:28px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #E8E8E8; padding-bottom:14px;">
+        <div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-chart-line" style="color:#F39200;"></i> Datos Estadísticos Institucionales y Tendencias Generales de Permanencia
+            </h4>
+            <p style="color:#6B6B6B; font-size:0.83rem; margin:3px 0 0;">
+                Trazabilidad histórica de matrícula (Tabla 12), deserción por cohortes SPADIES (Tabla 11) y tasa de permanencia institucional (Tabla 13) del Anexo 2.
+            </p>
+        </div>
+        <div>
+            <button onclick="openPresentation('c10', '10. Datos Estadísticos Institucionales y Tendencias de Permanencia')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 16px; border-radius:24px; font-family:'Montserrat',sans-serif; font-size:0.8rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.3s ease; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
+                <i class="fas fa-chart-bar" style="color:#F39200;"></i> Ver Tablero Completo de Analítica (Condición 10) <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- 4 KPI SUMMARY CARDS -->
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:14px; margin-bottom:20px;">
+        <div style="background:#F8F9FA; border-left:4px solid #F39200; padding:14px; border-radius:8px;">
+            <div style="font-size:0.72rem; font-weight:700; color:#6B6B6B; text-transform:uppercase;">Matrícula Activa Reciente</div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:1.6rem; font-weight:800; color:#1A1A1B; margin:2px 0;">186 Estudiantes</div>
+            <div style="font-size:0.75rem; color:#2ECC71; font-weight:700;"><i class="fas fa-arrow-up"></i> +776% Crecimiento (2020 a 2025)</div>
+        </div>
+        <div style="background:#F8F9FA; border-left:4px solid #2ECC71; padding:14px; border-radius:8px;">
+            <div style="font-size:0.72rem; font-weight:700; color:#6B6B6B; text-transform:uppercase;">Permanencia Semestral 2025-1</div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:1.6rem; font-weight:800; color:#1A1A1B; margin:2px 0;">94.4%</div>
+            <div style="font-size:0.75rem; color:#2ECC71; font-weight:700;"><i class="fas fa-shield-alt"></i> Meta Institucional SAT: 80.0%</div>
+        </div>
+        <div style="background:#F8F9FA; border-left:4px solid #1A1A1B; padding:14px; border-radius:8px;">
+            <div style="font-size:0.72rem; font-weight:700; color:#6B6B6B; text-transform:uppercase;">Cupos Registro Único Solicitados</div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:1.6rem; font-weight:800; color:#1A1A1B; margin:2px 0;">300 Cupos</div>
+            <div style="font-size:0.75rem; color:#6B6B6B;">240 Virtuales / 60 Presenciales</div>
+        </div>
+        <div style="background:#F8F9FA; border-left:4px solid #3498DB; padding:14px; border-radius:8px;">
+            <div style="font-size:0.72rem; font-weight:700; color:#6B6B6B; text-transform:uppercase;">Retención por Cohortes</div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:1.6rem; font-weight:800; color:#1A1A1B; margin:2px 0;">SPADIES / MEN</div>
+            <div style="font-size:0.75rem; color:#3498DB; font-weight:700;"><i class="fas fa-check-circle"></i> Trazabilidad Cohorte 2020-2 a 2025-2</div>
+        </div>
+    </div>
+
+    <!-- TABLAS RESUMEN DE MATRÍCULA Y PERMANENCIA (TABLAS 12 Y 13) -->
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap:18px;">
+        
+        <!-- RESUMEN TABLA 12: MATRÍCULA HISTÓRICA -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:14px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h6 style="font-family:'Montserrat',sans-serif; font-size:0.85rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-users" style="color:#F39200; margin-right:4px;"></i> Tabla 12. Evolución de Matrícula (2020-2 a 2025-2)
+                </h6>
+                <span class="tag-legal" style="background:#FFF3E0; color:#F39200; font-size:0.68rem; font-weight:700;">Fuente DM</span>
+            </div>
+            <div style="max-height:200px; overflow-y:auto; border:1px solid #E8E8E8; border-radius:4px;">
+                <table class="tbl" style="width:100%; font-size:0.75rem; margin:0;">
+                    <thead style="position:sticky; top:0; background:#1A1A1B; color:#FFFFFF;">
+                        <tr><th>Período</th><th>Inscritos</th><th>Admitidos</th><th>Matriculados</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2020-2</td><td style="text-align:center;">25</td><td style="text-align:center;">20</td><td style="text-align:center; font-weight:700; color:#F39200;">13</td></tr>
+                        <tr><td>2021-1</td><td style="text-align:center;">37</td><td style="text-align:center;">32</td><td style="text-align:center; font-weight:700;">28</td></tr>
+                        <tr><td>2021-2</td><td style="text-align:center;">60</td><td style="text-align:center;">52</td><td style="text-align:center; font-weight:700;">46</td></tr>
+                        <tr><td>2022-1</td><td style="text-align:center;">74</td><td style="text-align:center;">61</td><td style="text-align:center; font-weight:700;">54</td></tr>
+                        <tr><td>2022-2</td><td style="text-align:center;">78</td><td style="text-align:center;">69</td><td style="text-align:center; font-weight:700;">62</td></tr>
+                        <tr><td>2023-1</td><td style="text-align:center;">75</td><td style="text-align:center;">65</td><td style="text-align:center; font-weight:700;">59</td></tr>
+                        <tr><td>2023-2</td><td style="text-align:center;">55</td><td style="text-align:center;">50</td><td style="text-align:center; font-weight:700;">48</td></tr>
+                        <tr><td>2024-1</td><td style="text-align:center;">56</td><td style="text-align:center;">48</td><td style="text-align:center; font-weight:700;">42</td></tr>
+                        <tr><td>2024-2</td><td style="text-align:center;">65</td><td style="text-align:center;">45</td><td style="text-align:center; font-weight:700;">38</td></tr>
+                        <tr><td>2025-1</td><td style="text-align:center;">88</td><td style="text-align:center;">80</td><td style="text-align:center; font-weight:700; color:#2ECC71;">72</td></tr>
+                        <tr style="background:#FFF9F2; font-weight:800;"><td>2025-2</td><td style="text-align:center;">127</td><td style="text-align:center;">120</td><td style="text-align:center; font-weight:800; color:#F39200;">114</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- RESUMEN TABLA 13: PERMANENCIA SEMESTRAL -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:14px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h6 style="font-family:'Montserrat',sans-serif; font-size:0.85rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-shield-alt" style="color:#2ECC71; margin-right:4px;"></i> Tabla 13. Tasa de Permanencia Semestral (%)
+                </h6>
+                <span class="tag-legal" style="background:#DCFCE7; color:#166534; font-size:0.68rem; font-weight:700;">Consolidación SAT</span>
+            </div>
+            <div style="max-height:200px; overflow-y:auto; border:1px solid #E8E8E8; border-radius:4px;">
+                <table class="tbl" style="width:100%; font-size:0.75rem; margin:0;">
+                    <thead style="position:sticky; top:0; background:#1A1A1B; color:#FFFFFF;">
+                        <tr><th>Período</th><th>Inicial</th><th>Final</th><th>Permanencia (%)</th><th>Estado SAT</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2020-2</td><td style="text-align:center;">13</td><td style="text-align:center;">8</td><td style="text-align:center; font-weight:700;">61.5%</td><td><span class="badge" style="background:#FFF3CD; color:#856404; font-size:0.65rem;">Apertura</span></td></tr>
+                        <tr><td>2021-1</td><td style="text-align:center;">28</td><td style="text-align:center;">23</td><td style="text-align:center; font-weight:700;">82.1%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Superada</span></td></tr>
+                        <tr><td>2021-2</td><td style="text-align:center;">46</td><td style="text-align:center;">29</td><td style="text-align:center; font-weight:700;">63.0%</td><td><span class="badge" style="background:#FFF3CD; color:#856404; font-size:0.65rem;">Ajuste</span></td></tr>
+                        <tr><td>2022-1</td><td style="text-align:center;">54</td><td style="text-align:center;">33</td><td style="text-align:center; font-weight:700;">61.1%</td><td><span class="badge" style="background:#FFF3CD; color:#856404; font-size:0.65rem;">Ajuste</span></td></tr>
+                        <tr><td>2022-2</td><td style="text-align:center;">62</td><td style="text-align:center;">53</td><td style="text-align:center; font-weight:700;">85.5%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Superada</span></td></tr>
+                        <tr><td>2023-1</td><td style="text-align:center;">59</td><td style="text-align:center;">45</td><td style="text-align:center; font-weight:700;">76.3%</td><td><span class="badge" style="background:#FFF3CD; color:#856404; font-size:0.65rem;">En seguimiento</span></td></tr>
+                        <tr><td>2023-2</td><td style="text-align:center;">48</td><td style="text-align:center;">39</td><td style="text-align:center; font-weight:700;">81.3%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Superada</span></td></tr>
+                        <tr style="background:#F0FDF4; font-weight:700;"><td>2024-1</td><td style="text-align:center;">42</td><td style="text-align:center;">39</td><td style="text-align:center; font-weight:800; color:#166534;">92.9%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Excelente</span></td></tr>
+                        <tr style="background:#F0FDF4; font-weight:700;"><td>2024-2</td><td style="text-align:center;">38</td><td style="text-align:center;">35</td><td style="text-align:center; font-weight:800; color:#166534;">92.1%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Excelente</span></td></tr>
+                        <tr style="background:#F0FDF4; font-weight:800;"><td>2025-1</td><td style="text-align:center;">72</td><td style="text-align:center;">68</td><td style="text-align:center; font-weight:800; color:#166534;">94.4%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Récord SAT</span></td></tr>
+                        <tr style="font-weight:700;"><td>2025-2</td><td style="text-align:center;">114</td><td style="text-align:center;">98</td><td style="text-align:center; font-weight:800; color:#166534;">86.0%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Superada</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BOTÓN DE ACCIÓN COMPLETO -->
+    <div style="margin-top:16px;">
+        <button onclick="openPresentation('c10', '10. Datos Estadísticos Institucionales y Tendencias de Permanencia')" style="width:100%; padding:14px; background:linear-gradient(135deg, #1A1A1B 0%, #333333 100%); color:#FFFFFF; border:2px solid #F39200; border-radius:8px; font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:12px; transition:all 0.3s ease; box-shadow:0 4px 12px rgba(0,0,0,0.12);">
+            <i class="fas fa-chart-line" style="color:#F39200; font-size:1.15rem;"></i>
+            <span>Ver Tablero Gráfico Interactivo Chart.js · Matrícula, Deserción SPADIES y Cohortes (Condición 10)</span>
+            <i class="fas fa-arrow-right" style="color:#F39200;"></i>
+        </button>
+    </div>
+</div>
 `;
 
 // ==========================================
@@ -341,32 +460,63 @@ window.c2Init = function() {
     const mapContainer = document.getElementById('cetoGeoMap');
     if (!mapContainer) return;
 
+    // Retry si Leaflet aún no está cargado
+    if (typeof L === 'undefined') {
+        if (!window._c2Retries) window._c2Retries = 0;
+        if (window._c2Retries < 30) {
+            window._c2Retries++;
+            setTimeout(window.c2Init, 120);
+        }
+        return;
+    }
+    window._c2Retries = 0;
+
     if (window._leafletMapInstance) {
-        window._leafletMapInstance.remove();
+        try {
+            window._leafletMapInstance.remove();
+        } catch(e) { console.warn(e); }
         window._leafletMapInstance = null;
     }
 
-    if (typeof L === 'undefined') {
-        console.warn('Leaflet no está cargado aún.');
-        return;
+    try {
+        // Inicializar Leaflet centrado en Bucaramanga
+        window._leafletMapInstance = L.map('cetoGeoMap', {
+            zoomControl: true,
+            scrollWheelZoom: false
+        }).setView([7.1193, -73.1227], 11);
+
+        // Capa ESRI World Street Map (institucional, nítida, sin API key ni marcas de agua)
+        const primaryTileLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, USGS, METI | CETO 2026',
+            maxZoom: 18
+        });
+
+        // Respaldo automático a OSM estándar
+        primaryTileLayer.on('tileerror', function() {
+            if (!window._osmFallbackActive && window._leafletMapInstance) {
+                window._osmFallbackActive = true;
+                L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; OpenStreetMap contributors | CETO',
+                    maxZoom: 19
+                }).addTo(window._leafletMapInstance);
+            }
+        });
+
+        primaryTileLayer.addTo(window._leafletMapInstance);
+
+        // Múltiples invalidateSize para sincronizar con transiciones de modal y visibilidad
+        [50, 150, 300, 600, 1000].forEach(delay => {
+            setTimeout(() => {
+                if (window._leafletMapInstance) {
+                    window._leafletMapInstance.invalidateSize();
+                }
+            }, delay);
+        });
+
+        window.renderGeoMarkers(window._currentGeoMode || 'presencial');
+    } catch(err) {
+        console.error('Error al inicializar Leaflet en cetoGeoMap:', err);
     }
-
-    // Inicializar Leaflet centrado en Bucaramanga
-    window._leafletMapInstance = L.map('cetoGeoMap', {
-        zoomControl: true,
-        scrollWheelZoom: false
-    }).setView([7.1193, -73.1227], 11);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors | CETO'
-    }).addTo(window._leafletMapInstance);
-
-    // Corregir tamaño del mapa si el modal abrió con display flex/none
-    setTimeout(() => {
-        if (window._leafletMapInstance) window._leafletMapInstance.invalidateSize();
-    }, 200);
-
-    window.renderGeoMarkers(window._currentGeoMode);
 };
 
 window.switchGeoMode = function(mode) {
@@ -488,3 +638,20 @@ window.updateSidePanel = function(node, mode) {
         if (footer) footer.innerText = 'Bajo el Registro Único, la modalidad virtual amplía la cobertura a 32 departamentos con el mismo estándar de calidad y plan de estudios.';
     }
 };
+
+// Auto-disparador cuando el elemento #cetoGeoMap entra en el DOM
+(function initGeoAutoWatcher() {
+    let attempts = 0;
+    const watcher = setInterval(() => {
+        attempts++;
+        const mapEl = document.getElementById('cetoGeoMap');
+        if (mapEl && mapEl.offsetParent !== null) {
+            // El elemento existe y es visible en pantalla
+            if (!window._leafletMapInstance && window.c2Init) {
+                window.c2Init();
+            }
+        }
+        if (attempts > 80) clearInterval(watcher);
+    }, 200);
+})();
+

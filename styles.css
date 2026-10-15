@@ -1657,3 +1657,16 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     animation: fadeIn 0.3s ease !important;
     -webkit-font-smoothing: antialiased;
 }
+
+/* Responsive Geo Map Layout Condición 2 */
+.geo-map-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 18px;
+}
+@media (max-width: 992px) {
+    .geo-map-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+

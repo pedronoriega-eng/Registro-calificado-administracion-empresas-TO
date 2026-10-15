@@ -297,6 +297,20 @@ window.SECTIONS['c4'] = `
             </div>
         </div>
 
+        <div style="margin-top:20px; background:#F8F9FA; border:1px solid #E8E8E8; border-left:4px solid var(--orange); border-radius:8px; padding:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+            <div>
+                <h5 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:var(--carbon); margin:0 0 4px;">
+                    <i class="fas fa-chart-line" style="color:var(--orange);"></i> Resultados Estadísticos del SAT y Permanencia Institucional
+                </h5>
+                <p style="font-size:0.82rem; color:var(--gray-text); margin:0;">
+                    Trazabilidad de permanencia (>94% en 2025-1), evolución de matrícula y deserción por cohortes SPADIES (Tablas 11, 12 y 13).
+                </p>
+            </div>
+            <button onclick="openPresentation('c10', '10. Datos Estadísticos Institucionales y Tendencias de Permanencia')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 16px; border-radius:20px; font-weight:700; font-size:0.8rem; cursor:pointer; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-chart-pie" style="color:#F39200;"></i> Ver Datos Estadísticos (C10) <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
         <div class="evidence-box" style="margin-top:20px;">
             <i class="fas fa-file-alt"></i>
             <strong>Soportes:</strong> Reglamento Estudiantil (Anexo 10) · Lineamiento de Educación Virtual (Anexo 9) · Documento Maestro Cap. 4 · Actas de Comités Curriculares

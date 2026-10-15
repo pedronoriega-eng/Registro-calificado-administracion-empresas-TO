@@ -9,7 +9,7 @@ window.SECTIONS['c10'] = `
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.25rem; font-weight:800; color:#FFFFFF; margin-bottom:4px; display:flex; align-items:center; gap:10px;">
-                <i class="fas fa-chart-line" style="color:#F39200;"></i> Analítica Institucional · Matrícula, Retención y Permanencia
+                <i class="fas fa-chart-line" style="color:#F39200;"></i> Datos Estadísticos Institucionales y Tendencias Generales de Permanencia
             </h4>
             <p style="color:#D1D1D1; font-size:0.88rem; margin:0;">
                 Trazabilidad estadística de la vigencia del Registro Calificado: comportamiento de matrícula (2020-2 a 2025-2), efectividad del Sistema de Alertas Tempranas (SAT) y deserción por cohortes SPADIES.
@@ -270,3 +270,19 @@ window.c10Init = function() {
         });
     }
 };
+
+// Auto-disparador cuando los canvas de C10 entran en el DOM
+(function initStatsAutoWatcher() {
+    let attempts = 0;
+    const watcher = setInterval(() => {
+        attempts++;
+        const chartEl = document.getElementById('chartMatricula');
+        if (chartEl && chartEl.offsetParent !== null) {
+            if (!window._chartMatInstance && window.c10Init) {
+                window.c10Init();
+            }
+        }
+        if (attempts > 80) clearInterval(watcher);
+    }, 200);
+})();
+
