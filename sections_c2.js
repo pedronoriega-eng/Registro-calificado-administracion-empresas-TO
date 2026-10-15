@@ -63,73 +63,92 @@ window.SECTIONS['c2'] = `
     <!-- CONTENEDOR GRID: MAPA + PANEL DETALLE -->
     <div class="geo-map-grid">
         
-        <!-- MAPA CANVAS LEAFLET -->
-        <div style="position:relative; border-radius:10px; overflow:hidden; border:1px solid #D1D1D1; box-shadow:inset 0 0 10px rgba(0,0,0,0.05);">
-            <div id="toGeoMap" style="height:550px; width:100%; background:#E5E7EB; z-index:1;"></div>
+        <!-- MAPA CANVAS CON EXPERIENCIA GOOGLE MAPS AUTÉNTICA -->
+        <div style="position:relative; border-radius:12px; overflow:hidden; border:1px solid #CBD5E1; box-shadow:0 4px 20px rgba(0,0,0,0.12); background:#AAD3DF;">
+            <div id="toGeoMap" style="height:580px; width:100%; background:#AAD3DF; z-index:1;"></div>
             
-            <!-- CONTROLES FLOTANTES DE ENCUADRE CARTOGRÁFICO -->
-            <!-- CONTROLES FLOTANTES ESTILO GOOGLE MAPS -->
+            <!-- BARRA DE BÚSQUEDA FLOTANTE ORIGINAL GOOGLE MAPS -->
+            <div style="position:absolute; top:12px; left:12px; z-index:1000; width:320px; max-width:85%;">
+                <div style="background:#FFFFFF; border-radius:24px; box-shadow:0 2px 10px rgba(0,0,0,0.22); display:flex; align-items:center; padding:5px 14px; border:1px solid #E2E8F0;">
+                    <i class="fab fa-google" style="color:#4285F4; font-size:1.05rem; margin-right:8px;"></i>
+                    <input 
+                        type="text" 
+                        id="googleSearchInput" 
+                        placeholder="Buscar departamento o universidad..." 
+                        oninput="window.filterGoogleMapSearch(this.value)"
+                        style="border:none; outline:none; font-family:'Montserrat',sans-serif; font-size:0.78rem; width:100%; color:#0F172A; background:transparent;"
+                    />
+                    <i class="fas fa-search" style="color:#64748B; font-size:0.85rem; margin-left:6px; cursor:pointer;"></i>
+                </div>
+                <div id="googleSearchResults" style="display:none; background:#FFFFFF; border-radius:10px; box-shadow:0 4px 16px rgba(0,0,0,0.2); margin-top:6px; max-height:190px; overflow-y:auto; border:1px solid #E2E8F0;">
+                </div>
+            </div>
+
+            <!-- CONTROLES FLOTANTES SUPERIORES (ENCUADRE + CAPAS GOOGLE MAPS) -->
             <div style="position:absolute; top:12px; right:12px; z-index:1000; display:flex; gap:6px; flex-wrap:wrap; justify-content:flex-end;">
-                <!-- SELECTOR DE VISTA GEOGRÁFICA -->
-                <div style="display:flex; gap:4px; background:#FFFFFF; padding:3px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.18); border:1px solid #CBD5E1;">
-                    <button id="btnViewNacional" onclick="window.setMapView('colombia')" style="background:#F39200; color:#FFFFFF; border:none; padding:6px 11px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;">
+                <!-- ENCUADRE TERRITORIAL -->
+                <div style="display:flex; gap:3px; background:#FFFFFF; padding:3px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border:1px solid #CBD5E1;">
+                    <button id="btnViewNacional" onclick="window.setMapView('colombia')" style="background:#F39200; color:#FFFFFF; border:none; padding:6px 12px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:5px; transition:all 0.2s ease;">
                         <i class="fas fa-globe-americas"></i> Toda Colombia
                     </button>
-                    <button id="btnViewSantander" onclick="window.setMapView('santander')" style="background:#334155; color:#FFFFFF; border:none; padding:6px 11px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;">
-                        <i class="fas fa-search-location"></i> Santander (TO)
+                    <button id="btnViewSantander" onclick="window.setMapView('santander')" style="background:#1E293B; color:#FFFFFF; border:none; padding:6px 12px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:5px; transition:all 0.2s ease;">
+                        <i class="fas fa-map-pin"></i> Santander (TO)
                     </button>
                 </div>
 
                 <!-- SELECTOR DE CAPA GOOGLE MAPS -->
-                <div style="display:flex; gap:3px; background:#FFFFFF; padding:3px; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.18); border:1px solid #CBD5E1;">
-                    <button id="btnGoogleStreet" onclick="window.switchGoogleMapLayer('roadmap')" style="background:#F39200; color:#FFFFFF; border:none; padding:6px 10px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;" title="Vista Oficial Google Maps">
-                        <i class="fab fa-google"></i> Mapa
+                <div style="display:flex; gap:3px; background:#FFFFFF; padding:3px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border:1px solid #CBD5E1;">
+                    <button id="btnGoogleTerrain" onclick="window.switchGoogleMapLayer('terrain')" style="background:#4285F4; color:#FFFFFF; border:none; padding:6px 10px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:4px; border-radius:5px; transition:all 0.2s ease;" title="Vista de Terreno con Relieve Oficial de Google">
+                        <i class="fas fa-mountain"></i> Relieve
                     </button>
-                    <button id="btnGoogleSat" onclick="window.switchGoogleMapLayer('satellite')" style="background:#FFFFFF; color:#1A1A1B; border:none; padding:6px 10px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:5px; border-radius:4px; transition:all 0.2s ease;" title="Vista Satelital Fotográfica">
+                    <button id="btnGoogleStreet" onclick="window.switchGoogleMapLayer('roadmap')" style="background:#FFFFFF; color:#1A1A1B; border:none; padding:6px 10px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:4px; border-radius:5px; transition:all 0.2s ease;" title="Vista de Calles Google Maps">
+                        <i class="fas fa-road"></i> Calles
+                    </button>
+                    <button id="btnGoogleSat" onclick="window.switchGoogleMapLayer('satellite')" style="background:#FFFFFF; color:#1A1A1B; border:none; padding:6px 10px; font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:4px; border-radius:5px; transition:all 0.2s ease;" title="Vista Satelital Fotográfica Google">
                         <i class="fas fa-satellite"></i> Satélite
                     </button>
                 </div>
             </div>
 
-            <!-- BADGE INFERIOR DE ESTADO -->
-            <div style="position:absolute; bottom:12px; left:12px; background:rgba(26,26,27,0.88); color:#FFFFFF; padding:6px 14px; border-radius:6px; font-size:0.75rem; z-index:1000; backdrop-filter:blur(4px); display:flex; align-items:center; gap:8px;">
-                <i class="fas fa-map-marked-alt" style="color:#F39200;"></i> 
-                <span id="mapStatusText">Croquis Oficial de Colombia y División Departamental (MEN · DANE)</span>
+            <!-- LOGO OFICIAL DE GOOGLE MAPS (ESQUINA INFERIOR IZQUIERDA) -->
+            <div style="position:absolute; bottom:12px; left:12px; z-index:1000; display:flex; align-items:center; gap:8px;">
+                <div style="background:rgba(255,255,255,0.95); padding:4px 9px; border-radius:5px; box-shadow:0 2px 6px rgba(0,0,0,0.25); display:flex; align-items:center; gap:5px;">
+                    <span style="font-family:'Product Sans',Arial,sans-serif; font-weight:700; font-size:0.88rem; color:#4285F4; letter-spacing:-0.5px;">G<span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span></span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:0.68rem; color:#5F6368; font-weight:700;">Maps</span>
+                </div>
+                <div style="background:rgba(15,23,42,0.88); color:#FFFFFF; padding:4px 10px; border-radius:4px; font-size:0.68rem; font-weight:700; display:flex; align-items:center; gap:5px; backdrop-filter:blur(3px);">
+                    <i class="fas fa-university" style="color:#F39200;"></i>
+                    <span id="mapStatusText">SNIES &bull; Ministerio de Educación Nacional</span>
+                </div>
             </div>
         </div>
 
-        <!-- PANEL DE DATOS LATERAL FLOTANTE -->
-        <div style="background:#F8F9FA; border:1px solid #E8E8E8; border-radius:10px; padding:16px; display:flex; flex-direction:column; justify-content:space-between; height:520px; overflow-y:auto;">
+        <!-- PANEL DE DATOS LATERAL OFICIAL DEL SNIES -->
+        <div style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:12px; padding:16px; display:flex; flex-direction:column; justify-content:space-between; height:580px; overflow-y:auto; box-shadow:0 4px 15px rgba(0,0,0,0.06);">
             <div>
-                <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
-                    <div id="sideNodeBadge" style="background:#F39200; color:#FFFFFF; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.85rem;">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px; padding-bottom:10px; border-bottom:2.5px solid #F39200;">
+                    <div id="sideNodeBadge" style="background:#EA4335; color:#FFFFFF; width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem; box-shadow:0 2px 6px rgba(234,67,53,0.35);">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                        <h5 id="sideNodeTitle" style="font-family:'Montserrat',sans-serif; font-size:1rem; font-weight:800; color:#1A1A1B; margin:0;">
-                            Bucaramanga (Sede Principal)
+                        <h5 id="sideNodeTitle" style="font-family:'Montserrat',sans-serif; font-size:1.02rem; font-weight:800; color:#0F172A; margin:0; line-height:1.2;">
+                            Colombia: Oferta Presencial SNIES
                         </h5>
-                        <span id="sideNodeSubtitle" style="font-size:0.72rem; color:#6B6B6B; text-transform:uppercase; font-weight:700;">
-                            Santander · Corredor Metropolitano
+                        <span id="sideNodeSubtitle" style="font-size:0.7rem; color:#64748B; font-weight:600;">
+                            245 Programas en Colombia &bull; 18 en Santander (Sede Principal TO)
                         </span>
                     </div>
                 </div>
 
-                <div id="sideNodeContent" style="font-size:0.82rem; color:#4B5563; line-height:1.5;">
-                    <!-- Relleno dinámico al hacer clic o switch -->
+                <div id="sideNodeContent">
+                    <!-- Rellenado dinámico por renderInitialSidePanel / selectGeoNode -->
                 </div>
             </div>
 
-            <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:12px; margin-top:14px; font-size:0.78rem;">
-                <div style="font-weight:700; color:#1A1A1B; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
-                    <i class="fas fa-info-circle" style="color:#F39200;"></i> Resumen de Cobertura
-                </div>
-                <div id="sideNodeFooter" style="color:#6B6B6B;">
-                    Santander cuenta con 18 programas en Administración (7,35% del país). La propuesta de la TO es la única con articulación dual directa a 144 créditos y 8 semestres.
-                </div>
+            <div id="sideNodeFooter" style="margin-top:14px; padding-top:10px; border-top:1px solid #E2E8F0; font-size:0.68rem; color:#64748B; line-height:1.4;">
+                <strong>Fuente Oficial:</strong> SNIES - Ministerio de Educación Nacional de Colombia (Corte Oficial Documento Maestro Radicado 2024-2026).
             </div>
         </div>
-
     </div>
 </div>
 
@@ -1836,11 +1855,30 @@ window._activeGeoNodeId = null;
 window._colombiaGeoLayer = null;
 
 // Inicializador robusto con reintentos para mapa Leaflet
+window.createGooglePinIcon = function(isSantander, progCount) {
+    const pinColor = isSantander ? '#EA4335' : '#1A73E8'; // Rojo Google Maps para Santander/TO, Azul Google para resto
+    const textColor = isSantander ? '#EA4335' : '#1A73E8';
+
+    return L.divIcon({
+        className: 'google-maps-pin',
+        html: `
+            <div style="position:relative; width:30px; height:40px; cursor:pointer; filter:drop-shadow(0 2px 5px rgba(0,0,0,0.35)); transition:transform 0.18s ease;" onmouseover="this.style.transform='scale(1.2) translateY(-2px)'" onmouseout="this.style.transform='scale(1)'">
+                <svg viewBox="0 0 24 36" width="30" height="40" style="display:block;">
+                    <path fill="${pinColor}" stroke="#FFFFFF" stroke-width="1.2" d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12z"/>
+                    <circle fill="#FFFFFF" cx="12" cy="11.5" r="5.2"/>
+                    <text x="12" y="14" font-family="'Montserrat',Arial,sans-serif" font-size="7.5" font-weight="900" fill="${textColor}" text-anchor="middle">${progCount}</text>
+                </svg>
+            </div>
+        `,
+        iconSize: [30, 40],
+        iconAnchor: [15, 40],
+        popupAnchor: [0, -38]
+    });
+};
+
 window.c2Init = function() {
     const mapEl = document.getElementById('toGeoMap') || document.getElementById('mapaColombia');
-    if (!mapEl) {
-        return;
-    }
+    if (!mapEl) return;
 
     if (typeof L === 'undefined') {
         window._c2Retries = (window._c2Retries || 0) + 1;
@@ -1857,51 +1895,55 @@ window.c2Init = function() {
         window._leafletMapInstance = null;
     }
 
-    // Instanciar mapa centrado en el croquis de Colombia
+    // Instanciar mapa centrado en Colombia
     window._leafletMapInstance = L.map(mapEl, {
         center: [4.5709, -73.6500],
         zoom: 5.6,
         minZoom: 4.8,
-        maxZoom: 16,
-        scrollWheelZoom: true
+        maxZoom: 18,
+        scrollWheelZoom: true,
+        zoomControl: true
     });
 
     // ========================================================
-    // CAPAS BASE GOOGLE MAPS (ESTÁNDAR MUNDIAL - CERO MARCAS DE AGUA)
+    // CAPAS BASE GOOGLE MAPS OFICIALES (CERO MARCAS DE AGUA)
     // ========================================================
-    window._googleRoadmap = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-        maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-        attribution: '&copy; Google Maps &copy; SNIES - MEN Colombia'
-    });
-
-    window._googleSatellite = L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
-        maxZoom: 20,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-        attribution: '&copy; Google Maps Satélite &copy; SNIES - MEN'
-    });
-
+    // 1. Google Terrain (Relieve con sombreado de montañas y vegetación natural)
     window._googleTerrain = L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
         maxZoom: 20,
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-        attribution: '&copy; Google Maps Terreno &copy; SNIES - MEN'
+        attribution: '&copy; Google Maps &copy; SNIES - MEN'
     });
 
-    // Capa base por defecto: Google Maps Streets/Roadmap oficial
-    window._currentBaseLayer = window._googleRoadmap;
+    // 2. Google Roadmap (Calles y carreteras)
+    window._googleRoadmap = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google Maps &copy; SNIES - MEN'
+    });
+
+    // 3. Google Satellite Hybrid (Satelital fotográfico de alta resolución)
+    window._googleSatellite = L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+        maxZoom: 20,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google Maps Satélite'
+    });
+
+    // CAPA BASE POR DEFECTO: Google Maps Terreno / Relieve (Verde natural, océanos azules, relieve andino)
+    window._currentBaseLayer = window._googleTerrain;
     window._currentBaseLayer.addTo(window._leafletMapInstance);
 
-    // Dibuja el croquis oficial de Colombia y las 33 entidades territoriales
+    // Dibuja el croquis de departamentos adaptado a Google Maps
     window._renderColombiaDepartamentos();
 
-    // Renderizar chips y marcadores
+    // Renderizar chips y marcadores estilo Google Pins
     window.renderMunicipioChips(window._currentGeoMode);
     window.renderGeoMarkers(window._currentGeoMode);
 
     // Panel lateral inicial limpio
     window.renderInitialSidePanel(window._currentGeoMode);
 
-    [100, 300, 600, 1200].forEach(delay => {
+    [80, 250, 500, 1000].forEach(delay => {
         setTimeout(() => {
             if (window._leafletMapInstance) {
                 window._leafletMapInstance.invalidateSize(true);
@@ -1910,7 +1952,38 @@ window.c2Init = function() {
     });
 };
 
-// Dibuja el croquis oficial de Colombia con interacción total para los 33 departamentos
+window.switchGoogleMapLayer = function(layerType) {
+    if (!window._leafletMapInstance) return;
+
+    if (window._currentBaseLayer) {
+        window._leafletMapInstance.removeLayer(window._currentBaseLayer);
+    }
+
+    const btnTerrain = document.getElementById('btnGoogleTerrain');
+    const btnStreet = document.getElementById('btnGoogleStreet');
+    const btnSat = document.getElementById('btnGoogleSat');
+
+    [btnTerrain, btnStreet, btnSat].forEach(btn => {
+        if (btn) { btn.style.background = '#FFFFFF'; btn.style.color = '#1A1A1B'; }
+    });
+
+    if (layerType === 'satellite') {
+        window._currentBaseLayer = window._googleSatellite;
+        if (btnSat) { btnSat.style.background = '#4285F4'; btnSat.style.color = '#FFFFFF'; }
+    } else if (layerType === 'roadmap') {
+        window._currentBaseLayer = window._googleRoadmap;
+        if (btnStreet) { btnStreet.style.background = '#4285F4'; btnStreet.style.color = '#FFFFFF'; }
+    } else {
+        window._currentBaseLayer = window._googleTerrain;
+        if (btnTerrain) { btnTerrain.style.background = '#4285F4'; btnTerrain.style.color = '#FFFFFF'; }
+    }
+
+    window._currentBaseLayer.addTo(window._leafletMapInstance);
+    if (window._currentBaseLayer.bringToBack) {
+        window._currentBaseLayer.bringToBack();
+    }
+};
+
 window._renderColombiaDepartamentos = function() {
     if (!window._leafletMapInstance || !window.COLOMBIA_GEOJSON || typeof L === 'undefined') return;
 
@@ -1924,12 +1997,12 @@ window._renderColombiaDepartamentos = function() {
             const nom = (feature.properties && feature.properties.nombre) ? feature.properties.nombre.toUpperCase() : '';
             const isSantander = nom.includes('SANTANDER') && !nom.includes('NORTE');
             return {
-                color: isSantander ? '#F39200' : '#2D3748',
-                weight: isSantander ? 3.0 : 1.4,
-                opacity: 0.95,
+                color: isSantander ? '#EA4335' : '#1E293B',
+                weight: isSantander ? 2.8 : 1.2,
+                opacity: 0.9,
                 fillColor: isSantander ? '#F39200' : '#FFFFFF',
-                fillOpacity: isSantander ? 0.28 : 0.05, // Transparente para ver calles y nombres de Google Maps
-                dashArray: isSantander ? '' : '4, 4'
+                fillOpacity: isSantander ? 0.22 : 0.04,
+                dashArray: isSantander ? '' : '3, 3'
             };
         },
         onEachFeature: function(feature, layer) {
@@ -1945,8 +2018,8 @@ window._renderColombiaDepartamentos = function() {
             const progCount = matchingNode ? matchingNode.programas.split(' ')[0] : '0';
 
             const tooltipHtml = isSantander 
-                ? `<strong>${nom}</strong><br><span style="color:#D97F00; font-weight:800;">Sede Principal TO &bull; 18 Programas SNIES</span>`
-                : `<strong>${nom}</strong><br><span style="color:#0F172A; font-weight:700;">SNIES: ${progCount} Programas</span><br><span style="font-size:0.65rem; color:#64748B;">Clic para ver datos oficiales MEN</span>`;
+                ? `<strong>${nom}</strong><br><span style="color:#EA4335; font-weight:800;">Sede Principal TO &bull; 18 Programas SNIES</span>`
+                : `<strong>${nom}</strong><br><span style="color:#0F172A; font-weight:700;">SNIES: ${progCount} Programas</span><br><span style="font-size:0.65rem; color:#64748B;">Clic para ver ficha oficial MEN</span>`;
 
             layer.bindTooltip(tooltipHtml, {
                 sticky: true,
@@ -1958,9 +2031,9 @@ window._renderColombiaDepartamentos = function() {
                 if (!isSantander) {
                     layer.setStyle({
                         weight: 2.2,
-                        color: '#F39200',
-                        fillColor: '#CBD5E1',
-                        fillOpacity: 0.45
+                        color: '#EA4335',
+                        fillColor: '#EA4335',
+                        fillOpacity: 0.2
                     });
                 }
             });
@@ -1971,8 +2044,7 @@ window._renderColombiaDepartamentos = function() {
                 }
             });
 
-            // CLIC EN CUALQUIER DEPARTAMENTO DE COLOMBIA
-            layer.on('click', function(e) {
+            layer.on('click', function() {
                 if (isSantander) {
                     window.setMapView('santander');
                     window.selectGeoNode('bga', window._currentGeoMode);
@@ -1984,36 +2056,6 @@ window._renderColombiaDepartamentos = function() {
     }).addTo(window._leafletMapInstance);
 };
 
-// Control de encuadre cartográfico
-
-// Conmutador de capas base de Google Maps (Streets / Satellite / Terrain)
-window.switchGoogleMapLayer = function(layerType) {
-    if (!window._leafletMapInstance) return;
-
-    if (window._currentBaseLayer) {
-        window._leafletMapInstance.removeLayer(window._currentBaseLayer);
-    }
-
-    const btnStreet = document.getElementById('btnGoogleStreet');
-    const btnSat = document.getElementById('btnGoogleSat');
-
-    if (layerType === 'satellite') {
-        window._currentBaseLayer = window._googleSatellite;
-        if (btnSat) { btnSat.style.background = '#F39200'; btnSat.style.color = '#FFFFFF'; }
-        if (btnStreet) { btnStreet.style.background = '#FFFFFF'; btnStreet.style.color = '#1A1A1B'; }
-    } else {
-        window._currentBaseLayer = window._googleRoadmap;
-        if (btnStreet) { btnStreet.style.background = '#F39200'; btnStreet.style.color = '#FFFFFF'; }
-        if (btnSat) { btnSat.style.background = '#FFFFFF'; btnSat.style.color = '#1A1A1B'; }
-    }
-
-    window._currentBaseLayer.addTo(window._leafletMapInstance);
-    // Enviar capa base al fondo para mantener GeoJSON y marcadores arriba
-    if (window._currentBaseLayer.bringToBack) {
-        window._currentBaseLayer.bringToBack();
-    }
-};
-
 window.setMapView = function(target) {
     if (!window._leafletMapInstance) return;
     const btnNac = document.getElementById('btnViewNacional');
@@ -2022,11 +2064,11 @@ window.setMapView = function(target) {
     if (target === 'colombia') {
         window._leafletMapInstance.setView([4.5709, -73.6500], 5.6);
         if (btnNac) { btnNac.style.background = '#F39200'; btnNac.style.color = '#FFFFFF'; }
-        if (btnSan) { btnSan.style.background = '#334155'; btnSan.style.color = '#FFFFFF'; }
+        if (btnSan) { btnSan.style.background = '#1E293B'; btnSan.style.color = '#FFFFFF'; }
     } else {
         window._leafletMapInstance.setView([7.0600, -73.1200], 9.8);
         if (btnSan) { btnSan.style.background = '#F39200'; btnSan.style.color = '#FFFFFF'; }
-        if (btnNac) { btnNac.style.background = '#334155'; btnNac.style.color = '#FFFFFF'; }
+        if (btnNac) { btnNac.style.background = '#1E293B'; btnNac.style.color = '#FFFFFF'; }
     }
 };
 
@@ -2052,7 +2094,7 @@ window.switchGeoMode = function(mode) {
             btnVir.style.color = '#6B6B6B';
             btnVir.style.boxShadow = 'none';
         }
-        if (statusText) statusText.innerText = 'Croquis Colombia: 245 Programas Presenciales SNIES en 26 Entidades Territoriales';
+        if (statusText) statusText.innerText = 'Presencial: 245 Programas SNIES en 26 Entidades Territoriales';
         if (window._leafletMapInstance) {
             window._leafletMapInstance.setView([4.5709, -73.6500], 5.6);
         }
@@ -2067,7 +2109,7 @@ window.switchGeoMode = function(mode) {
             btnPre.style.color = '#6B6B6B';
             btnPre.style.boxShadow = 'none';
         }
-        if (statusText) statusText.innerText = 'Croquis Colombia: 44 Programas Virtuales SNIES & Cobertura en 32 Departamentos';
+        if (statusText) statusText.innerText = 'Virtual: 44 Programas SNIES & Cobertura en 32 Departamentos';
         if (window._leafletMapInstance) {
             window._leafletMapInstance.setView([4.5709, -73.6500], 5.6);
         }
@@ -2100,13 +2142,13 @@ window.renderMunicipioChips = function(mode) {
 
     const filterTabsHtml = `
         <div style="display:flex; gap:6px; margin-bottom:8px; width:100%; border-bottom:1px solid #E2E8F0; padding-bottom:6px;">
-            <button onclick="window.setGeoChipFilter('all')" style="background:${currentFilter==='all'?'#1A1A1B':'#F1F5F9'}; color:${currentFilter==='all'?'#FFFFFF':'#475569'}; border:none; padding:4px 10px; border-radius:12px; font-size:0.7rem; font-weight:700; cursor:pointer;">
+            <button onclick="window.setGeoChipFilter('all')" style="background:${currentFilter==='all'?'#0F172A':'#F1F5F9'}; color:${currentFilter==='all'?'#FFFFFF':'#475569'}; border:none; padding:4px 10px; border-radius:12px; font-size:0.7rem; font-weight:700; cursor:pointer;">
                 Todos (${allNodes.length})
             </button>
             <button onclick="window.setGeoChipFilter('santander')" style="background:${currentFilter==='santander'?'#F39200':'#F1F5F9'}; color:${currentFilter==='santander'?'#FFFFFF':'#475569'}; border:none; padding:4px 10px; border-radius:12px; font-size:0.7rem; font-weight:700; cursor:pointer;">
                 Santander & AMB (6)
             </button>
-            <button onclick="window.setGeoChipFilter('colombia')" style="background:${currentFilter==='colombia'?'#1A1A1B':'#F1F5F9'}; color:${currentFilter==='colombia'?'#FFFFFF':'#475569'}; border:none; padding:4px 10px; border-radius:12px; font-size:0.7rem; font-weight:700; cursor:pointer;">
+            <button onclick="window.setGeoChipFilter('colombia')" style="background:${currentFilter==='colombia'?'#0F172A':'#F1F5F9'}; color:${currentFilter==='colombia'?'#FFFFFF':'#475569'}; border:none; padding:4px 10px; border-radius:12px; font-size:0.7rem; font-weight:700; cursor:pointer;">
                 Departamentos Colombia (${allNodes.filter(n=>n.tipo==='departamento_colombia').length})
             </button>
         </div>
@@ -2124,9 +2166,9 @@ window.renderMunicipioChips = function(mode) {
                 onmouseover="if(window._activeGeoNodeId !== '${node.id}') this.style.borderColor='#F39200'"
                 onmouseout="if(window._activeGeoNodeId !== '${node.id}') this.style.borderColor='#CBD5E1'"
             >
-                <i class="fas fa-map-marker-alt" style="color:${isSantanderNode ? '#F39200' : '#475569'}; font-size:0.7rem;"></i>
+                <i class="fas fa-map-marker-alt" style="color:${isSantanderNode ? '#EA4335' : '#1A73E8'}; font-size:0.7rem;"></i>
                 <span>${node.nombre.split(' (')[0]}</span>
-                <span style="background:${isSantanderNode ? 'rgba(243,146,0,0.18)' : '#F1F5F9'}; color:${isSantanderNode ? '#D97F00' : '#334155'}; padding:1px 5px; border-radius:8px; font-size:0.65rem; font-weight:800;">
+                <span style="background:${isSantanderNode ? 'rgba(234,67,53,0.12)' : 'rgba(26,115,232,0.12)'}; color:${isSantanderNode ? '#EA4335' : '#1A73E8'}; padding:1px 5px; border-radius:8px; font-size:0.65rem; font-weight:800;">
                     ${progCount}
                 </span>
             </button>
@@ -2147,18 +2189,18 @@ window.renderGeoMarkers = function(mode) {
 
     nodes.forEach(node => {
         const isSantander = (node.dcode === '68' || node.id === 'santander' || node.tipo === 'municipio_santander');
-        const marker = L.circleMarker(node.coords, {
-            radius: node.destacado ? 10 : (isSantander ? 8 : 6),
-            fillColor: node.destacado ? '#F39200' : (isSantander ? '#D97F00' : '#1E293B'),
-            color: '#FFFFFF',
-            weight: 2,
-            opacity: 1,
-            fillOpacity: 0.95
+        const progCount = node.programas.split(' ')[0];
+
+        const pinIcon = window.createGooglePinIcon(isSantander, progCount);
+
+        const marker = L.marker(node.coords, {
+            icon: pinIcon,
+            zIndexOffset: isSantander ? 1000 : 500
         }).addTo(window._leafletMapInstance);
 
-        marker.bindTooltip(`${node.nombre.split(' (')[0]} &bull; ${node.programas.split(' ')[0]} Prog`, {
+        marker.bindTooltip(`${node.nombre.split(' (')[0]} &bull; ${progCount} Prog`, {
             direction: 'top',
-            offset: [0, -8]
+            offset: [0, -38]
         });
 
         marker.on('click', () => {
@@ -2166,42 +2208,42 @@ window.renderGeoMarkers = function(mode) {
         });
 
         const popupContent = `
-            <div style="font-family:'Montserrat',sans-serif; min-width:275px; padding:4px 2px;">
-                <div style="display:flex; justify-content:space-between; align-items:flex-start; border-bottom:2px solid #F39200; padding-bottom:6px; margin-bottom:8px;">
+            <div style="font-family:'Montserrat',sans-serif; min-width:280px; padding:4px 2px;">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; border-bottom:2px solid #EA4335; padding-bottom:6px; margin-bottom:8px;">
                     <div>
-                        <strong style="color:#1A1A1B; font-size:0.9rem; display:block; line-height:1.2;">${node.nombre}</strong>
+                        <strong style="color:#0F172A; font-size:0.92rem; display:block; line-height:1.2;">${node.nombre}</strong>
                         <span style="font-size:0.68rem; color:#64748B;">${node.subtitulo}</span>
                     </div>
-                    <span style="background:#1A1A1B; color:#F39200; font-size:0.62rem; padding:2px 6px; border-radius:4px; font-weight:800; white-space:nowrap; margin-left:6px;">SNIES &bull; MEN</span>
+                    <span style="background:#0F172A; color:#F39200; font-size:0.62rem; padding:2px 6px; border-radius:4px; font-weight:800; white-space:nowrap; margin-left:6px;">SNIES &bull; MEN</span>
                 </div>
 
                 <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:6px; margin-bottom:8px;">
                     <div style="background:#FFF3E0; border:1px solid #FFE0B2; padding:5px 2px; border-radius:6px; text-align:center;">
                         <span style="display:block; font-size:0.56rem; color:#D97F00; text-transform:uppercase; font-weight:800;">Programas</span>
-                        <strong style="color:#1A1A1B; font-size:0.9rem;">${node.programas.split(' ')[0]}</strong>
+                        <strong style="color:#0F172A; font-size:0.92rem;">${progCount}</strong>
                     </div>
                     <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:5px 2px; border-radius:6px; text-align:center;">
                         <span style="display:block; font-size:0.56rem; color:#166534; text-transform:uppercase; font-weight:800;">% Oferta</span>
-                        <strong style="color:#166534; font-size:0.8rem;">${node.porcentaje.split(' ')[0]}</strong>
+                        <strong style="color:#166534; font-size:0.82rem;">${node.porcentaje.split(' ')[0]}</strong>
                     </div>
                     <div style="background:#F1F5F9; border:1px solid #CBD5E1; padding:5px 2px; border-radius:6px; text-align:center;">
                         <span style="display:block; font-size:0.56rem; color:#475569; text-transform:uppercase; font-weight:800;">IES</span>
-                        <strong style="color:#0F172A; font-size:0.8rem;">${node.universidades.split(' ')[0]}</strong>
+                        <strong style="color:#0F172A; font-size:0.82rem;">${node.universidades.split(' ')[0]}</strong>
                     </div>
                 </div>
 
-                <div style="background:#F8FAFC; padding:6px 8px; border-radius:6px; font-size:0.72rem; color:#334155; margin-bottom:6px; border-left:3px solid #F39200; max-height:80px; overflow-y:auto;">
-                    <strong style="color:#1A1A1B; font-size:0.68rem; text-transform:uppercase;">Oferta SNIES:</strong><br>
+                <div style="background:#F8FAFC; padding:6px 8px; border-radius:6px; font-size:0.72rem; color:#334155; margin-bottom:6px; border-left:3px solid #EA4335; max-height:80px; overflow-y:auto;">
+                    <strong style="color:#0F172A; font-size:0.68rem; text-transform:uppercase;">Oferta Registrada en SNIES:</strong><br>
                     <span>${node.ies_detalle}</span>
                 </div>
 
                 <div style="font-size:0.7rem; color:#475569; margin-bottom:6px; line-height:1.35;">
-                    <i class="fas fa-industry" style="color:#F39200;"></i> ${node.empresas}
+                    <i class="fas fa-industry" style="color:#EA4335;"></i> ${node.empresas}
                 </div>
 
-                <div style="background:#FFF9F2; border:1px solid #F39200; padding:4px 6px; border-radius:4px; text-align:center;">
-                    <span style="font-size:0.68rem; color:#D97F00; font-weight:700;">
-                        <i class="fas fa-check-circle"></i> Ficha técnica oficial desplegada en panel lateral
+                <div style="background:#FFF5F5; border:1px solid #FED7D7; padding:4px 6px; border-radius:4px; text-align:center;">
+                    <span style="font-size:0.68rem; color:#C53030; font-weight:700;">
+                        <i class="fas fa-check-circle"></i> Ficha oficial abierta en panel lateral
                     </span>
                 </div>
             </div>
@@ -2210,14 +2252,59 @@ window.renderGeoMarkers = function(mode) {
         marker.bindPopup(popupContent, {
             maxWidth: 320,
             autoPan: true,
-            autoPanPaddingTopLeft: [25, 45],
+            autoPanPaddingTopLeft: [30, 50],
             autoPanPaddingBottomRight: [25, 25],
-            offset: [0, -6]
+            offset: [0, -36]
         });
 
         window._leafletMarkers.push(marker);
         window._geoMarkerMap[node.id] = marker;
     });
+};
+
+window.filterGoogleMapSearch = function(query) {
+    const resultsContainer = document.getElementById('googleSearchResults');
+    if (!resultsContainer) return;
+
+    if (!query || query.trim().length < 2) {
+        resultsContainer.style.display = 'none';
+        return;
+    }
+
+    const q = query.toLowerCase().trim();
+    const mode = window._currentGeoMode || 'presencial';
+    const nodes = (mode === 'presencial') ? window._geoNodesPresencial : window._geoNodesVirtual;
+
+    const matches = nodes.filter(n => 
+        n.nombre.toLowerCase().includes(q) || 
+        n.subtitulo.toLowerCase().includes(q) || 
+        n.ies_detalle.toLowerCase().includes(q)
+    );
+
+    if (matches.length === 0) {
+        resultsContainer.innerHTML = '<div style="padding:8px 12px; font-size:0.72rem; color:#64748B;">No se encontraron resultados en el SNIES</div>';
+        resultsContainer.style.display = 'block';
+        return;
+    }
+
+    resultsContainer.innerHTML = matches.slice(0, 6).map(m => `
+        <div 
+            onclick="window.selectGeoNode('${m.id}', '${mode}'); document.getElementById('googleSearchResults').style.display='none'; document.getElementById('googleSearchInput').value='${m.nombre.split(' (')[0]}';"
+            style="padding:8px 12px; border-bottom:1px solid #F1F5F9; cursor:pointer; font-size:0.75rem; color:#0F172A; display:flex; justify-content:space-between; align-items:center; transition:background 0.15s ease;"
+            onmouseover="this.style.background='#F8FAFC'"
+            onmouseout="this.style.background='#FFFFFF'"
+        >
+            <div>
+                <strong>${m.nombre.split(' (')[0]}</strong>
+                <span style="display:block; font-size:0.65rem; color:#64748B;">${m.subtitulo.slice(0, 35)}...</span>
+            </div>
+            <span style="background:#EFF6FF; color:#1D4ED8; padding:2px 6px; border-radius:10px; font-size:0.65rem; font-weight:800;">
+                ${m.programas.split(' ')[0]} Prog
+            </span>
+        </div>
+    `).join('');
+
+    resultsContainer.style.display = 'block';
 };
 
 window.selectGeoNode = function(nodeId, mode) {
@@ -2261,52 +2348,52 @@ window.selectGeoNode = function(nodeId, mode) {
 
 window.renderInitialSidePanel = function(mode) {
     window._activeGeoNodeId = null;
-    const title = document.getElementById('geoDetailTitle');
-    const subtitle = document.getElementById('geoDetailSubtitle');
-    const content = document.getElementById('geoDetailContent');
-    const footer = document.getElementById('geoDetailFooter');
+    const titleEl = document.getElementById('sideNodeTitle') || document.getElementById('geoDetailTitle');
+    const subtitleEl = document.getElementById('sideNodeSubtitle') || document.getElementById('geoDetailSubtitle');
+    const contentEl = document.getElementById('sideNodeContent') || document.getElementById('geoDetailContent');
+    const footerEl = document.getElementById('sideNodeFooter') || document.getElementById('geoDetailFooter');
 
-    if (!title || !content) return;
+    if (!titleEl || !contentEl) return;
 
     if (mode === 'presencial') {
-        title.innerText = 'Colombia & Santander: Oferta Presencial SNIES';
-        if (subtitle) subtitle.innerText = '245 Programas en Colombia &bull; 18 en Santander (Sede Principal TO)';
+        titleEl.innerText = 'Colombia & Santander: Oferta Presencial SNIES';
+        if (subtitleEl) subtitleEl.innerText = '245 Programas en Colombia &bull; 18 en Santander (Sede Principal TO)';
 
-        content.innerHTML = `
+        contentEl.innerHTML = `
             <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px; margin-bottom:14px;">
                 <div style="background:#FFF3E0; border:1px solid #FFE0B2; border-left:3px solid #F39200; border-radius:6px; padding:10px 4px; text-align:center;">
                     <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:block;">
                         <i class="fas fa-building"></i> Colombia
                     </span>
-                    <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B;">245</span>
-                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Programas SNIES</span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#0F172A;">245</span>
+                    <span style="font-size:0.65rem; color:#64748B; display:block;">Programas SNIES</span>
                 </div>
                 <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-left:3px solid #2ECC71; border-radius:6px; padding:10px 4px; text-align:center;">
                     <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#166534; display:block;">
                         <i class="fas fa-map-marker-alt"></i> Santander
                     </span>
                     <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#166534;">18</span>
-                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">7,35% Oferta Nal.</span>
+                    <span style="font-size:0.65rem; color:#64748B; display:block;">7,35% Oferta Nal.</span>
                 </div>
                 <div style="background:#F1F5F9; border:1px solid #CBD5E1; border-left:3px solid #475569; border-radius:6px; padding:10px 4px; text-align:center;">
                     <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#475569; display:block;">
                         <i class="fas fa-award"></i> Estándar TO
                     </span>
                     <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#0F172A;">144</span>
-                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Créditos / 8 Sem.</span>
+                    <span style="font-size:0.65rem; color:#64748B; display:block;">Créditos / 8 Sem.</span>
                 </div>
             </div>
 
             <div style="background:#FFF9F2; border:1.5px dashed #F39200; border-radius:8px; padding:12px 14px; margin-bottom:12px; text-align:center;">
                 <div style="color:#D97F00; font-size:1.1rem; margin-bottom:4px;"><i class="fas fa-hand-pointer"></i></div>
-                <strong style="color:#1A1A1B; font-size:0.82rem; display:block;">Interacción Cartográfica Total SNIES - MEN</strong>
-                <p style="margin:4px 0 0; color:#4B5563; font-size:0.75rem; line-height:1.4;">
-                    Haga <strong>clic en cualquier departamento de Colombia o municipio del mapa</strong> para desplegar la cantidad oficial de programas SNIES, universidades oferentes, créditos y tejido empresarial vigente según el Ministerio de Educación Nacional.
+                <strong style="color:#0F172A; font-size:0.82rem; display:block;">Interacción Cartográfica Total SNIES - MEN</strong>
+                <p style="margin:4px 0 0; color:#475569; font-size:0.75rem; line-height:1.4;">
+                    Haga <strong>clic en cualquier departamento o pin de Google Maps</strong> para desplegar la cantidad oficial de programas SNIES, universidades oferentes, créditos y tejido empresarial vigente.
                 </p>
             </div>
 
             <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:10px 12px; margin-bottom:10px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px; margin-bottom:6px;">
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:5px; margin-bottom:6px;">
                     <i class="fas fa-table" style="color:#F39200;"></i> Distribución Nacional SNIES (Tabla 5 DM):
                 </span>
                 <ul style="margin:0; padding-left:18px; font-size:0.75rem; color:#334155; line-height:1.55;">
@@ -2321,55 +2408,55 @@ window.renderInitialSidePanel = function(mode) {
             </div>
 
             <div style="background:#F8FAFC; border-left:3.5px solid #F39200; padding:10px 12px; border-radius:4px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#1A1A1B;">Corporación Escuela Tecnológica del Oriente (TO):</span>
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#0F172A;">Corporación Escuela Tecnológica del Oriente (TO):</span>
                 <p style="margin:4px 0 0; font-size:0.75rem; color:#475569; line-height:1.45;">
                     Sede Principal Bucaramanga (Calle 35 # 21-42). Única oferta estructurada a 144 créditos y 8 semestres con titulación profesional inclusiva Administrador(a) de Empresas y articulación directa entre modalidades presencial y virtual.
                 </p>
             </div>
         `;
 
-        if (footer) {
-            footer.innerHTML = `<strong>Fuente Oficial:</strong> SNIES - Ministerio de Educación Nacional de Colombia (Tabla 2 y Tabla 5 del Documento Maestro radicado).`;
+        if (footerEl) {
+            footerEl.innerHTML = `<strong>Fuente Oficial:</strong> SNIES - Ministerio de Educación Nacional de Colombia (Tabla 2 y Tabla 5 del Documento Maestro radicado).`;
         }
     } else {
-        title.innerText = 'Colombia: Oferta Nacional Virtual SNIES';
-        if (subtitle) subtitle.innerText = '44 Programas en Colombia &bull; Cobertura en los 32 Departamentos';
+        titleEl.innerText = 'Colombia: Oferta Nacional Virtual SNIES';
+        if (subtitleEl) subtitleEl.innerText = '44 Programas en Colombia &bull; Cobertura en los 32 Departamentos';
 
-        content.innerHTML = `
+        contentEl.innerHTML = `
             <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px; margin-bottom:14px;">
                 <div style="background:#FFF3E0; border:1px solid #FFE0B2; border-left:3px solid #F39200; border-radius:6px; padding:10px 4px; text-align:center;">
                     <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:block;">
                         <i class="fas fa-wifi"></i> Oferta Virtual
                     </span>
-                    <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B;">44</span>
-                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Programas Colombia</span>
+                    <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#0F172A;">44</span>
+                    <span style="font-size:0.65rem; color:#64748B; display:block;">Programas Colombia</span>
                 </div>
                 <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-left:3px solid #2ECC71; border-radius:6px; padding:10px 4px; text-align:center;">
                     <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#166534; display:block;">
                         <i class="fas fa-building"></i> Presencial
                     </span>
                     <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#166534;">245</span>
-                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Programas Base</span>
+                    <span style="font-size:0.65rem; color:#64748B; display:block;">Programas Base</span>
                 </div>
                 <div style="background:#F1F5F9; border:1px solid #CBD5E1; border-left:3px solid #475569; border-radius:6px; padding:10px 4px; text-align:center;">
                     <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#475569; display:block;">
                         <i class="fas fa-globe-americas"></i> Cobertura
                     </span>
                     <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#0F172A;">32</span>
-                    <span style="font-size:0.65rem; color:#6B6B6B; display:block;">Departamentos</span>
+                    <span style="font-size:0.65rem; color:#64748B; display:block;">Departamentos</span>
                 </div>
             </div>
 
             <div style="background:#FFF9F2; border:1.5px dashed #F39200; border-radius:8px; padding:12px 14px; margin-bottom:12px; text-align:center;">
                 <div style="color:#D97F00; font-size:1.1rem; margin-bottom:4px;"><i class="fas fa-hand-pointer"></i></div>
-                <strong style="color:#1A1A1B; font-size:0.82rem; display:block;">Interacción Departamental SNIES</strong>
-                <p style="margin:4px 0 0; color:#4B5563; font-size:0.75rem; line-height:1.4;">
+                <strong style="color:#0F172A; font-size:0.82rem; display:block;">Interacción Departamental SNIES</strong>
+                <p style="margin:4px 0 0; color:#475569; font-size:0.75rem; line-height:1.4;">
                     Haga <strong>clic en cualquier departamento</strong> para explorar las instituciones líderes virtuales del SNIES (UNAD, Politécnico Grancolombiano, UNIMINUTO, Compensar, UDI, UTS, etc.).
                 </p>
             </div>
 
             <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:10px 12px; margin-bottom:10px;">
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px; margin-bottom:6px;">
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:5px; margin-bottom:6px;">
                     <i class="fas fa-table" style="color:#F39200;"></i> Comparativa Virtual SNIES (Tabla 7 DM):
                 </span>
                 <ul style="margin:0; padding-left:18px; font-size:0.75rem; color:#334155; line-height:1.55;">
@@ -2381,97 +2468,98 @@ window.renderInitialSidePanel = function(mode) {
             </div>
         `;
 
-        if (footer) {
-            footer.innerHTML = `<strong>Fuente Oficial:</strong> SNIES - Ministerio de Educación Nacional de Colombia (Tabla 7 del Documento Maestro radicado).`;
+        if (footerEl) {
+            footerEl.innerHTML = `<strong>Fuente Oficial:</strong> SNIES - Ministerio de Educación Nacional de Colombia (Tabla 7 del Documento Maestro radicado).`;
         }
     }
 };
 
 window.updateSidePanel = function(node, mode) {
-    const title = document.getElementById('geoDetailTitle');
-    const subtitle = document.getElementById('geoDetailSubtitle');
-    const content = document.getElementById('geoDetailContent');
-    const footer = document.getElementById('geoDetailFooter');
+    const titleEl = document.getElementById('sideNodeTitle') || document.getElementById('geoDetailTitle');
+    const subtitleEl = document.getElementById('sideNodeSubtitle') || document.getElementById('geoDetailSubtitle');
+    const contentEl = document.getElementById('sideNodeContent') || document.getElementById('geoDetailContent');
+    const footerEl = document.getElementById('sideNodeFooter') || document.getElementById('geoDetailFooter');
 
-    if (!title || !content) return;
+    if (!titleEl || !contentEl) return;
 
-    title.innerText = node.nombre;
-    if (subtitle) subtitle.innerText = node.subtitulo;
+    titleEl.innerText = node.nombre;
+    if (subtitleEl) subtitleEl.innerText = node.subtitulo;
 
     const isSantander = (node.dcode === '68' || node.id === 'santander' || node.tipo === 'municipio_santander');
+    const progCount = node.programas.split(' ')[0];
 
-    content.innerHTML = `
+    contentEl.innerHTML = `
         <div style="margin-bottom:10px; display:flex; justify-content:space-between; align-items:center;">
             <span style="background:#0F172A; color:#F39200; font-size:0.65rem; padding:3px 8px; border-radius:4px; font-weight:800;">
                 <i class="fas fa-certificate"></i> SNIES &bull; MEN
             </span>
-            <button onclick="window.resetGeoSelection('${mode}')" style="background:#FFFFFF; border:1px solid #D1D1D1; color:#6B6B6B; font-size:0.72rem; padding:4px 10px; border-radius:14px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s ease;">
-                <i class="fas fa-undo" style="color:#F39200;"></i> Ver Resumen General MEN
+            <button onclick="window.resetGeoSelection('${mode}')" style="background:#FFFFFF; border:1px solid #CBD5E1; color:#475569; font-size:0.72rem; padding:4px 10px; border-radius:14px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s ease;">
+                <i class="fas fa-undo" style="color:#F39200;"></i> Ver Resumen General
             </button>
         </div>
 
         <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:8px; margin-bottom:14px;">
             <div style="background:#FFF3E0; border:1px solid #FFE0B2; border-left:3px solid #F39200; border-radius:6px; padding:10px 4px; text-align:center;">
                 <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:block;">
-                    <i class="fas fa-graduation-cap"></i> Programas MEN
+                    <i class="fas fa-graduation-cap"></i> Programas
                 </span>
-                <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B;">${node.programas.split(' ')[0]}</span>
-                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">${node.programas.includes('Directos') ? 'Directos' : 'Registrados'}</span>
+                <span style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#0F172A;">${progCount}</span>
+                <span style="font-size:0.65rem; color:#64748B; display:block;">${node.programas.includes('Directos') ? 'Directos' : 'Registrados'}</span>
             </div>
             <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-left:3px solid #2ECC71; border-radius:6px; padding:10px 4px; text-align:center;">
                 <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#166534; display:block;">
                     <i class="fas fa-percentage"></i> % Oferta
                 </span>
                 <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#166534;">${node.porcentaje.split(' ')[0]}</span>
-                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">${node.tipo === 'municipio_santander' ? 'Santander' : 'Nacional'}</span>
+                <span style="font-size:0.65rem; color:#64748B; display:block;">${node.tipo === 'municipio_santander' ? 'Santander' : 'Nacional'}</span>
             </div>
             <div style="background:#F1F5F9; border:1px solid #CBD5E1; border-left:3px solid #475569; border-radius:6px; padding:10px 4px; text-align:center;">
                 <span style="font-size:0.62rem; text-transform:uppercase; font-weight:800; color:#475569; display:block;">
                     <i class="fas fa-university"></i> Instituciones
                 </span>
                 <span style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#0F172A;">${node.universidades.split(' ')[0]}</span>
-                <span style="font-size:0.65rem; color:#6B6B6B; display:block;">IES Oficiales</span>
+                <span style="font-size:0.65rem; color:#64748B; display:block;">IES Oficiales</span>
             </div>
         </div>
 
-        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#F39200; display:flex; align-items:center; gap:5px;">
-                    <i class="fas fa-university"></i> Instituciones &amp; Oferta IES (${node.universidades})
+                <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#EA4335; display:flex; align-items:center; gap:5px;">
+                    <i class="fas fa-university"></i> Oferta IES (${node.universidades})
                 </span>
-                <span style="font-size:0.68rem; background:#F4F4F4; color:#1A1A1B; padding:2px 6px; border-radius:4px; font-weight:700;">SNIES / MEN</span>
+                <span style="font-size:0.68rem; background:#F1F5F9; color:#0F172A; padding:2px 6px; border-radius:4px; font-weight:700;">SNIES / MEN</span>
             </div>
-            <p style="margin:2px 0 0; color:#1A1A1B; font-size:0.78rem; line-height:1.45;">${node.ies_detalle}</p>
+            <p style="margin:2px 0 0; color:#0F172A; font-size:0.78rem; line-height:1.45;">${node.ies_detalle}</p>
         </div>
 
-        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
-            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px;">
+        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:5px;">
                 <i class="fas fa-briefcase" style="color:#F39200;"></i> Tejido Empresarial &amp; Demanda Productiva
             </span>
-            <p style="margin:3px 0 0; color:#1A1A1B; font-weight:600; font-size:0.8rem; line-height:1.4;">${node.empresas}</p>
-            <p style="margin:2px 0 0; color:#6B6B6B; font-size:0.75rem;">${node.densidad}</p>
+            <p style="margin:3px 0 0; color:#0F172A; font-weight:600; font-size:0.8rem; line-height:1.4;">${node.empresas}</p>
+            <p style="margin:2px 0 0; color:#64748B; font-size:0.75rem;">${node.densidad}</p>
         </div>
 
-        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
-            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:5px;">
+        <div style="margin-bottom:10px; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.03);">
+            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:5px;">
                 <i class="fas fa-chart-pie" style="color:#2ECC71;"></i> Perfil de Pertinencia Laboral
             </span>
-            <p style="margin:3px 0 0; font-size:0.78rem; color:#4B5563; line-height:1.45;">${node.demanda}</p>
+            <p style="margin:3px 0 0; font-size:0.78rem; color:#475569; line-height:1.45;">${node.demanda}</p>
         </div>
 
         <div style="background:#FFF9F2; border-left:4px solid #F39200; padding:10px 12px; border-radius:6px; box-shadow:0 1px 4px rgba(243,146,0,0.08);">
             <span style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:#D97F00; display:flex; align-items:center; gap:5px;">
                 <i class="fas fa-award"></i> Propuesta Diferencial TO
             </span>
-            <p style="margin:3px 0 0; font-size:0.78rem; color:#1A1A1B; font-weight:500; line-height:1.45;">${node.to_ventaja}</p>
+            <p style="margin:3px 0 0; font-size:0.78rem; color:#0F172A; font-weight:500; line-height:1.45;">${node.to_ventaja}</p>
         </div>
     `;
 
-    if (footer) {
+    if (footerEl) {
         if (node.tipo === 'municipio_santander') {
-            footer.innerHTML = `<strong>Santander (18 programas &bull; 7,35% del país):</strong> La propuesta de la <strong>TO</strong> es la única con articulación dual directa a 144 créditos y 8 semestres con titulación inclusiva.`;
+            footerEl.innerHTML = `<strong>Santander (18 programas &bull; 7,35% del país):</strong> La propuesta de la <strong>TO</strong> es la única con articulación dual directa a 144 créditos y 8 semestres con titulación inclusiva.`;
         } else {
-            footer.innerHTML = `<strong>Cobertura Nacional SNIES (245 programas presenciales &bull; 44 virtuales):</strong> Bajo el Registro Único, la <strong>TO</strong> amplía cobertura a 32 departamentos con unicidad curricular y estándares de alta calidad.`;
+            footerEl.innerHTML = `<strong>Cobertura Nacional SNIES (245 programas presenciales &bull; 44 virtuales):</strong> Bajo el Registro Único, la <strong>TO</strong> amplía cobertura a 32 departamentos con unicidad curricular y estándares de alta calidad.`;
         }
     }
 };
@@ -2484,7 +2572,7 @@ window.resetGeoSelection = function(mode) {
     const btnNac = document.getElementById('btnViewNacional');
     const btnSan = document.getElementById('btnViewSantander');
     if (btnNac) { btnNac.style.background = '#F39200'; btnNac.style.color = '#FFFFFF'; }
-    if (btnSan) { btnSan.style.background = '#334155'; btnSan.style.color = '#FFFFFF'; }
+    if (btnSan) { btnSan.style.background = '#1E293B'; btnSan.style.color = '#FFFFFF'; }
     window._activeGeoNodeId = null;
     window.renderMunicipioChips(mode);
     window.renderGeoMarkers(mode);
@@ -2492,7 +2580,6 @@ window.resetGeoSelection = function(mode) {
 };
 
 
-// Auto-disparador cuando el elemento #toGeoMap entra en el DOM
 (function initGeoAutoWatcher() {
     let attempts = 0;
     const watcher = setInterval(() => {
