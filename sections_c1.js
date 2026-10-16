@@ -34,9 +34,9 @@ window.SECTIONS['c1'] = `
             <div>
                 <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #E8E8E8; padding-bottom:12px; margin-bottom:14px;">
                     <div>
-                        <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#6B6B6B; letter-spacing:0.5px;">Norma Base SACES</span>
+                        <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#6B6B6B; letter-spacing:0.5px;">Norma Base SACES · Acuerdo 011 de 2024</span>
                         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0;">
-                            Registro Calificado Vigente
+                            Registro Calificado Vigente (Registro Único)
                         </h4>
                     </div>
                     <span style="background:#E8E8E8; color:#1A1A1B; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px;">
@@ -49,21 +49,21 @@ window.SECTIONS['c1'] = `
                         <tr><td class="lb" style="width:40%; font-weight:700; color:#6B6B6B;">Denominación</td><td><strong>Administración de Empresas</strong></td></tr>
                         <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Código SNIES</td><td><span style="font-family:monospace; background:#F4F4F4; padding:2px 6px; border-radius:4px; font-weight:700;">108524 (SACES)</span></td></tr>
                         <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Nivel de Formación</td><td>Pregrado – Profesional Universitario</td></tr>
-                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Título Otorgado</td><td>Administrador de Empresas (Masculino genérico)</td></tr>
-                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Metodología / Modalidad</td><td><span class="tag-legal" style="background:#E8E8E8; color:#1A1A1B;">Presencial</span> (Sede Principal)</td></tr>
-                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Lugar de Desarrollo</td><td>Bucaramanga, Santander (Calle 35 # 27-28)</td></tr>
+                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Título Otorgado</td><td>Administrador de Empresas (Masculino genérico histórico)</td></tr>
+                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Metodología / Modalidad</td><td><span class="tag-legal" style="background:#1A1A1B; color:#FFFFFF;">REGISTRO ÚNICO</span> <span class="tag-legal" style="background:#E8E8E8; color:#1A1A1B;">Presencial &amp; Virtual</span></td></tr>
+                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Lugar de Desarrollo</td><td>Sede Principal Bucaramanga (Presencial) + Cobertura Nacional Digital (Virtual)</td></tr>
                         <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Duración Estimada</td><td><strong>9 semestres</strong> (4.5 años)</td></tr>
                         <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Número de Créditos</td><td><strong>158 créditos académicos</strong> (62 asignaturas)</td></tr>
                         <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Periodicidad</td><td>Semestral</td></tr>
-                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Cupos Primer Período</td><td>300 estudiantes / cohorte</td></tr>
-                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Relación de Trabajo</td><td>Presencial 1:2 (16h directas / 32h indep. por crédito)</td></tr>
+                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Cupos Primer Período</td><td><strong>300 estudiantes / cohorte</strong> (Oferta dual autorizada institucionalmente)</td></tr>
+                        <tr><td class="lb" style="font-weight:700; color:#6B6B6B;">Relación de Horas</td><td><strong>Presencial:</strong> 1:2 (16h directas / 32h indep.) · <strong>Virtual:</strong> 1:3 (12h mediadas / 36h autónomas)</td></tr>
                     </tbody>
                 </table>
             </div>
             
             <div style="background:#F8F9FA; border-left:3px solid #1A1A1B; padding:10px 14px; border-radius:6px; margin-top:16px; font-size:0.77rem; color:#4B5563;">
                 <i class="fas fa-info-circle" style="color:#1A1A1B; margin-right:4px;"></i>
-                <strong>Origen Normativo:</strong> Aprobado inicialmente mediante <strong>Resolución MEN 011375 de 2019</strong>, soportado en el <strong>Acuerdo de Consejo Directivo No. 05 de 2018</strong>.
+                <strong>Origen Normativo:</strong> Aprobado inicialmente mediante <strong>Resolución MEN 011375 de 2019</strong> (presencial), adoptado a <strong>Registro Calificado Único (Presencial y Virtual)</strong> mediante <strong>Acuerdo de Consejo Superior No. 011 de 2024</strong> (base de 158 créditos y 9 semestres en Anexo 5 SACES).
             </div>
         </div>
 
@@ -148,15 +148,15 @@ window.SECTIONS['c1'] = `
                 </tr>
                 <tr>
                     <td style="text-align:left; font-weight:700;">Estructura de Modalidad</td>
-                    <td>Presencial únicamente</td>
-                    <td style="font-weight:800; color:#F39200; background:#FFF9F2;">Doble Modalidad (Presencial &amp; Virtual)</td>
-                    <td style="text-align:left; font-size:0.8rem;">Movilidad académica transversal, inclusión regional e integración de plataformas tecnológicas institucionales.</td>
+                    <td>Registro Único (Presencial &amp; Virtual) · Plan 158 cr</td>
+                    <td style="font-weight:800; color:#F39200; background:#FFF9F2;">Registro Único (Presencial &amp; Virtual) · Plan 144 cr</td>
+                    <td style="text-align:left; font-size:0.8rem;">Continuidad de la modalidad dual con articulación pedagógica diferenciada y fortalecimiento de ambientes virtuales y físicos.</td>
                 </tr>
                 <tr>
                     <td style="text-align:left; font-weight:700;">Distribución de Cupos</td>
-                    <td>300 presenciales</td>
-                    <td style="font-weight:800; color:#F39200; background:#FFF9F2;">60 Presenciales / 240 Virtuales</td>
-                    <td style="text-align:left; font-size:0.8rem;">Capacidad instalada física optimizada y escalamiento digital en LMS Moodle y AWS cloud.</td>
+                    <td>300 estudiantes / cohorte (Capacidad institucional autorizada)</td>
+                    <td style="font-weight:800; color:#F39200; background:#FFF9F2;">300 estudiantes / cohorte (60 Presenciales / 240 Virtuales)</td>
+                    <td style="text-align:left; font-size:0.8rem;">Segmentación técnica de cupos formalizada ante la Sala CONACES del MEN para asegurar suficiencia profesoral y logística.</td>
                 </tr>
                 <tr>
                     <td style="text-align:left; font-weight:700;">Enfoque Disciplinar</td>
