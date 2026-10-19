@@ -292,30 +292,13 @@ window.SECTIONS['c1'] = `
             </div>
         </div>
 
-        <!-- HITO 7: COMPLETITUD RADICADO RD32362 -->
-        <div style="position:relative;">
-            <div style="position:absolute; left:-33px; top:4px; width:15px; height:15px; border-radius:50%; background:#1A1A1B; border:3px solid #FFFFFF; box-shadow:0 0 0 2px #F39200;"></div>
-            <div style="background:#F8F9FA; border:2px dashed #F39200; border-radius:8px; padding:12px 16px;">
-                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
-                    <span style="font-size:0.75rem; font-weight:800; color:#1A1A1B; background:#FED7AA; padding:2px 8px; border-radius:4px;">15 de Mayo de 2026</span>
-                    <span style="font-size:0.75rem; font-weight:700; color:#F39200;"><i class="fas fa-sync-alt"></i> Respuesta a Completitud SACES</span>
-                </div>
-                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:700; color:#1A1A1B; margin:6px 0 2px;">
-                    Radicado No. RD32362 · Respuesta Oficial a la Sala de Administración CONACES / MEN
-                </h5>
-                <p style="font-size:0.8rem; color:#4B5563; margin:0;">
-                    Radicación de aclaraciones de completitud: formalización de la doble titulación no sexista en plataforma, diferenciación estricta de las modalidades Presencial y Virtual (no híbridas), inclusión de cohortes de permanencia/deserción y blindaje docente.
-                </p>
-            </div>
-        </div>
-
     </div>
 </div>
 
 <!-- ========================================== -->
 <!-- 4. CLASIFICACIÓN INTERNACIONAL CINE & NBC -->
 <!-- ========================================== -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:20px; margin-bottom:28px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
     <h4 style="font-family:'Montserrat',sans-serif; font-size:1.05rem; font-weight:800; color:#1A1A1B; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
         <i class="fas fa-globe" style="color:#F39200;"></i> Coherencia y Clasificación CINE-UNESCO / NBC MEN
     </h4>
@@ -341,5 +324,165 @@ window.SECTIONS['c1'] = `
             <div style="font-size:0.75rem; color:#6B6B6B; margin-top:4px;">Enfoque gerencial, finanzas y analítica</div>
         </div>
     </div>
+</div>
+
+<!-- ========================================================================= -->
+<!-- 5. CORRESPONDENCIA DE LA DENOMINACIÓN CON LOS COMPONENTES CURRICULARES   -->
+<!--    Y EL PERFIL DE EGRESO (DOCUMENTO MAESTRO SECCIÓN 1.2 & ANEXO 2)        -->
+<!-- ========================================================================= -->
+<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid #E8E8E8; padding-bottom:12px;">
+        <div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-network-wired" style="color:#F39200;"></i> Correspondencia de la Denominación con los Componentes Curriculares y el Perfil de Egreso
+            </h4>
+            <p style="color:#6B6B6B; font-size:0.83rem; margin:4px 0 0;">
+                Articulación sistémica entre el título profesional, las áreas de formación disciplinar (144 créditos / 8 semestres) y las competencias de egreso (Decreto 1330 de 2019 · Resolución MEN 2767 de 2003).
+            </p>
+        </div>
+        <span class="tag-legal" style="background:#FFF9F2; color:#F39200; border:1px solid #FED7AA; font-weight:800; font-size:0.75rem; padding:4px 12px; border-radius:20px;">
+            <i class="fas fa-check-double"></i> 100% Coherencia Curricular
+        </span>
+    </div>
+
+    <!-- BANNER DE PRINCIPIO FUNDANTE -->
+    <div style="background:#F8F9FA; border-left:4px solid #1A1A1B; border-radius:8px; padding:14px 18px; margin-bottom:20px; font-size:0.83rem; color:#374151; line-height:1.5;">
+        <strong>Sustento Teórico y Normativo:</strong> Conforme al Artículo 2.5.3.2.3.2.2 del Decreto 1330 y el Documento Maestro (Págs. 17-18 y 104-106), la denominación <strong>Administración de Empresas</strong> responde al estudio de las organizaciones como sistemas socioeconómicos complejos y versátiles. El currículo modularizado de 144 créditos garantiza la convergencia entre la fundamentación científica (teorías de Porter, Mintzberg, Kotler, Maslow y Drucker), la analítica de negocios 4.0 y la aplicación práctica mediante el modelo pedagógico <em>"Formación en Contextos de Aplicación"</em> de la Corporación Escuela Tecnológica del Oriente (TO).
+    </div>
+
+    <!-- MATRIZ DE ARTICULACIÓN COMPONENTES VS PERFIL -->
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:16px; margin-bottom:22px;">
+        
+        <!-- COMPONENTE 1: GESTIÓN Y ESTRATEGIA -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-left:4px solid #F39200; border-radius:8px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-sitemap" style="color:#F39200; margin-right:6px;"></i> Gestión Organizacional y Estrategia
+                </h5>
+                <span style="font-size:0.7rem; font-weight:700; color:#C2410C; background:#FFEDD5; padding:2px 6px; border-radius:4px;">Disciplinar</span>
+            </div>
+            <p style="font-size:0.78rem; color:#6B6B6B; margin:0 0 8px;">
+                <strong>Asignaturas Clave:</strong> Teoría de la Administración, Planeación Estratégica, Dirección de Organizaciones, Juego Gerencial.
+            </p>
+            <div style="background:#FFF9F2; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#8A5300;">
+                <i class="fas fa-user-check" style="color:#F39200; margin-right:4px;"></i>
+                <strong>Aporte al Perfil de Egreso:</strong> Capacidad para diseñar, liderar y evaluar estrategias corporativas dinámicas, toma de decisiones prospectivas y adaptabilidad organizacional ante la incertidumbre.
+            </div>
+        </div>
+
+        <!-- COMPONENTE 2: ANALÍTICA Y TRANSFORMACIÓN DIGITAL -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-left:4px solid #1A1A1B; border-radius:8px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-robot" style="color:#1A1A1B; margin-right:6px;"></i> Transformación Digital, IA &amp; Analítica
+                </h5>
+                <span style="font-size:0.7rem; font-weight:700; color:#1A1A1B; background:#E8E8E8; padding:2px 6px; border-radius:4px;">Vanguardia 4.0</span>
+            </div>
+            <p style="font-size:0.78rem; color:#6B6B6B; margin:0 0 8px;">
+                <strong>Asignaturas Clave:</strong> Big Data y Analítica de Datos, Inteligencia Artificial en los Negocios, E-commerce, Sistemas de Información Gerencial.
+            </p>
+            <div style="background:#F8F9FA; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#1A1A1B;">
+                <i class="fas fa-user-check" style="color:#1A1A1B; margin-right:4px;"></i>
+                <strong>Aporte al Perfil de Egreso:</strong> Dirección basada en datos (<em>Data-Driven Management</em>), automatización de procesos gerenciales y liderazgo en la digitalización de modelos de negocio.
+            </div>
+        </div>
+
+        <!-- COMPONENTE 3: FINANZAS Y GESTIÓN DE RECURSOS -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-left:4px solid #2ECC71; border-radius:8px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-coins" style="color:#2ECC71; margin-right:6px;"></i> Finanzas y Métodos Cuantitativos
+                </h5>
+                <span style="font-size:0.7rem; font-weight:700; color:#166534; background:#DCFCE7; padding:2px 6px; border-radius:4px;">Económica</span>
+            </div>
+            <p style="font-size:0.78rem; color:#6B6B6B; margin:0 0 8px;">
+                <strong>Asignaturas Clave:</strong> Matemáticas Financieras, Costos y Presupuestos, Contabilidad Gerencial, Finanzas Corporativas y Mercado de Capitales.
+            </p>
+            <div style="background:#F0FDF4; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#166534;">
+                <i class="fas fa-user-check" style="color:#2ECC71; margin-right:4px;"></i>
+                <strong>Aporte al Perfil de Egreso:</strong> Asignación óptima y sostenible de recursos de capital, valoración de proyectos de inversión, control presupuestal y mitigación del riesgo financiero.
+            </div>
+        </div>
+
+        <!-- COMPONENTE 4: OPERACIONES, LOGÍSTICA Y CALIDAD -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-left:4px solid #3498DB; border-radius:8px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-truck-moving" style="color:#3498DB; margin-right:6px;"></i> Operaciones, Logística &amp; HSEQ
+                </h5>
+                <span style="font-size:0.7rem; font-weight:700; color:#0369A1; background:#E0F2FE; padding:2px 6px; border-radius:4px;">Productiva</span>
+            </div>
+            <p style="font-size:0.78rem; color:#6B6B6B; margin:0 0 8px;">
+                <strong>Asignaturas Clave:</strong> Gestión de Operaciones, Logística y Cadena de Suministro, Sistemas Integrados HSEQ, Gerencia de la Calidad.
+            </p>
+            <div style="background:#F0F9FF; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#0369A1;">
+                <i class="fas fa-user-check" style="color:#3498DB; margin-right:4px;"></i>
+                <strong>Aporte al Perfil de Egreso:</strong> Eficiencia en cadenas de suministro globales y regionales, aseguramiento de estándares de calidad internacional y optimización de productividad física y digital.
+            </div>
+        </div>
+
+        <!-- COMPONENTE 5: MERCADEO E INTERNACIONALIZACIÓN -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-left:4px solid #9B59B6; border-radius:8px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-globe-americas" style="color:#9B59B6; margin-right:6px;"></i> Mercadeo &amp; Negocios Internacionales
+                </h5>
+                <span style="font-size:0.7rem; font-weight:700; color:#6B21A8; background:#F3E8FF; padding:2px 6px; border-radius:4px;">Comercial</span>
+            </div>
+            <p style="font-size:0.78rem; color:#6B6B6B; margin:0 0 8px;">
+                <strong>Asignaturas Clave:</strong> Marketing Estratégico, Investigación de Mercados, Negocios y Gerencia Internacional, Economía Colombiana e Internacional.
+            </p>
+            <div style="background:#FAF5FF; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#6B21A8;">
+                <i class="fas fa-user-check" style="color:#9B59B6; margin-right:4px;"></i>
+                <strong>Aporte al Perfil de Egreso:</strong> Identificación de nichos de mercado, diseño de propuestas de valor transculturales, posicionamiento de marca y penetración comercial en mercados globales.
+            </div>
+        </div>
+
+        <!-- COMPONENTE 6: EMPRENDIMIENTO, ÉTICA Y TALENTO HUMANO -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-left:4px solid #E67E22; border-radius:8px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    <i class="fas fa-users-cog" style="color:#E67E22; margin-right:6px;"></i> Emprendimiento, Liderazgo &amp; Ética
+                </h5>
+                <span style="font-size:0.7rem; font-weight:700; color:#C2410C; background:#FFEDD5; padding:2px 6px; border-radius:4px;">Humanística</span>
+            </div>
+            <p style="font-size:0.78rem; color:#6B6B6B; margin:0 0 8px;">
+                <strong>Asignaturas Clave:</strong> Modelos de Emprendimiento, Laboratorio de Innovación, Gestión del Talento Humano, Liderazgo Ético, RSE y Sostenibilidad.
+            </p>
+            <div style="background:#FFF9F2; border-radius:6px; padding:8px 10px; font-size:0.76rem; color:#8A5300;">
+                <i class="fas fa-user-check" style="color:#E67E22; margin-right:4px;"></i>
+                <strong>Aporte al Perfil de Egreso:</strong> Incubación de proyectos productivos sostenibles, liderazgo transformador de equipos multidisciplinarios y gobernanza corporativa basada en principios bioéticos.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DECLARACIÓN INTEGRAL DEL PERFIL DEL EGRESADO (SÍNTESIS OFICIAL) -->
+    <div style="background:linear-gradient(135deg, #FFF9F2 0%, #FFFFFF 100%); border:2px solid #FED7AA; border-radius:10px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
+            <div style="background:#F39200; color:#FFFFFF; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.95rem;">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h5 style="font-family:'Montserrat',sans-serif; font-size:1.02rem; font-weight:800; color:#1A1A1B; margin:0;">
+                Perfil de Egreso Consolidado del Administrador(a) de Empresas de la TO
+            </h5>
+        </div>
+        <p style="font-size:0.83rem; color:#4B5563; line-height:1.55; margin:0 0 10px;">
+            El/la egresado(a) de Administración de Empresas de la Corporación Escuela Tecnológica del Oriente (TO) es un(a) profesional integral con visión estratégica, ética y global, facultado(a) para <strong>gerenciar, dirigir, asesorar y transformar organizaciones públicas y privadas</strong> de cualquier tamaño y sector económico. Domina la toma de decisiones basada en datos (Big Data e IA), formula modelos de negocio sostenibles e innovadores, y articula la rentabilidad financiera con la responsabilidad social y ambiental.
+        </p>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:10px; font-size:0.78rem;">
+            <div style="background:#FFFFFF; border:1px solid #E8E8E8; padding:8px 12px; border-radius:6px;">
+                <strong style="color:#F39200;"><i class="fas fa-check-circle"></i> Modalidad Presencial:</strong> Inmersión directa en el tejido empresarial de Santander, liderazgo de equipos en sitio y gestión aplicada en laboratorios institucionales.
+            </div>
+            <div style="background:#FFFFFF; border:1px solid #E8E8E8; padding:8px 12px; border-radius:6px;">
+                <strong style="color:#1A1A1B;"><i class="fas fa-check-circle"></i> Modalidad Virtual:</strong> Autonomía de aprendizaje, gestión de equipos remotos interdepartamentales y liderazgo en plataformas digitales colaborativas globales.
+            </div>
+            <div style="background:#FFFFFF; border:1px solid #E8E8E8; padding:8px 12px; border-radius:6px;">
+                <strong style="color:#2ECC71;"><i class="fas fa-check-circle"></i> Registro Único:</strong> Misma excelencia curricular (144 créditos / 8 semestres), idénticos Resultados de Aprendizaje (RAP) y total flexibilidad y movilidad metodológica.
+            </div>
+        </div>
+    </div>
+
 </div>
 `;
