@@ -481,7 +481,7 @@ window.SECTIONS['c1'] = `
                             <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">Área de Conocimiento</div>
                             <div style="font-size:0.72rem; color:#64748B;">Economía, Administración, Contaduría y afines</div>
                         </div>
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #3498DB; padding:10px 12px; border-radius:6px;">
+                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; padding:10px 12px; border-radius:6px;">
                             <div style="font-size:0.68rem; font-weight:800; color:#6B6B6B; text-transform:uppercase;">Núcleo Básico (NBC)</div>
                             <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">NBC Administración</div>
                             <div style="font-size:0.72rem; color:#64748B;">Código SNIES Oficial SACES: 108524</div>

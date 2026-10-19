@@ -46,10 +46,10 @@ window.SECTIONS['c10'] = `
         <div style="font-size:0.75rem; color:#6B6B6B;">240 Virtuales / 60 Presenciales</div>
     </div>
 
-    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border-top:4px solid #3498DB;">
+    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border-top:4px solid #F39200;">
         <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; color:#6B6B6B;">Duración Optimizada</div>
         <div style="font-family:'Montserrat',sans-serif; font-size:2rem; font-weight:800; color:#1A1A1B; margin:4px 0;">8 Sem.</div>
-        <div style="font-size:0.75rem; color:#3498DB; font-weight:700;"><i class="fas fa-check"></i> 144 Créditos (Decreto 1330)</div>
+        <div style="font-size:0.75rem; color:#F39200; font-weight:700;"><i class="fas fa-check"></i> 144 Créditos (Decreto 1330)</div>
     </div>
 
 </div>
@@ -170,7 +170,7 @@ window.SECTIONS['c10'] = `
             <div style="font-weight:800; font-size:0.85rem; color:#1A1A1B; margin-bottom:4px;">2. Alivios Financieros y Convenios</div>
             <p style="font-size:0.78rem; color:#4B5563; margin:0;">Becas por rendimiento, descuentos familiares y financiación directa sin intermediarios bancarios con tasas de fomento.</p>
         </div>
-        <div style="background:#F8F9FA; border-left:3px solid #3498DB; padding:12px; border-radius:6px;">
+        <div style="background:#F8F9FA; border-left:3px solid #F39200; padding:12px; border-radius:6px;">
             <div style="font-weight:800; font-size:0.85rem; color:#1A1A1B; margin-bottom:4px;">3. Flexibilidad de Registro Único</div>
             <p style="font-size:0.78rem; color:#4B5563; margin:0;">El estudiante que consigue empleo o cambia de residencia puede migrar a la modalidad virtual sin perder materias ni retrasar su graduación.</p>
         </div>

@@ -636,10 +636,10 @@ window.SECTIONS['c2'] = `
             <div style="font-family:'Montserrat',sans-serif; font-size:1.6rem; font-weight:800; color:#1A1A1B; margin:2px 0;">300 Cupos</div>
             <div style="font-size:0.75rem; color:#6B6B6B;">240 Virtuales / 60 Presenciales</div>
         </div>
-        <div style="background:#F8F9FA; border-left:4px solid #3498DB; padding:14px; border-radius:8px;">
+        <div style="background:#F8F9FA; border-left:4px solid #F39200; padding:14px; border-radius:8px;">
             <div style="font-size:0.72rem; font-weight:700; color:#6B6B6B; text-transform:uppercase;">Retención por Cohortes</div>
             <div style="font-family:'Montserrat',sans-serif; font-size:1.6rem; font-weight:800; color:#1A1A1B; margin:2px 0;">SPADIES / MEN</div>
-            <div style="font-size:0.75rem; color:#3498DB; font-weight:700;"><i class="fas fa-check-circle"></i> Trazabilidad Cohorte 2020-2 a 2025-2</div>
+            <div style="font-size:0.75rem; color:#F39200; font-weight:700;"><i class="fas fa-check-circle"></i> Trazabilidad Cohorte 2020-2 a 2025-2</div>
         </div>
     </div>
 
@@ -2641,7 +2641,7 @@ window.filterGoogleMapSearch = function(query) {
                 <strong>${m.nombre.split(' (')[0]}</strong>
                 <span style="display:block; font-size:0.65rem; color:#64748B;">${m.subtitulo.slice(0, 35)}...</span>
             </div>
-            <span style="background:#EFF6FF; color:#1D4ED8; padding:2px 6px; border-radius:10px; font-size:0.65rem; font-weight:800;">
+            <span style="background:#FFF7ED; color:#D97F00; padding:2px 6px; border-radius:10px; font-size:0.65rem; font-weight:800;">
                 ${m.programas.split(' ')[0]} Prog
             </span>
         </div>

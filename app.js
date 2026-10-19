@@ -69,9 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     grid.innerHTML = condInfo.map(c => `
         <div class="cond-card" onclick="openPresentation('${c.id}', '${c.title.replace(/'/g, "\\'")}')">
-            <div class="cond-card-img" style="${c.id === 'inst' ? 'background: linear-gradient(135deg, #0A2540 0%, #1e293b 100%);' : ''}">
+            <div class="cond-card-img" style="${c.id === 'inst' ? 'background: linear-gradient(135deg, #1A1A1B 0%, #1A1A1B 100%);' : ''}">
                 <img src="${c.img}" alt="${c.title}" onerror="this.parentElement.outerHTML='<div class=\\'cond-card-icon-bg\\'><i class=\\'${c.icon}\\'></i></div>';">
-                <div class="cond-card-badge" style="${c.id === 'inst' ? 'background:#0A2540; color:#FFFFFF;' : c.id === 'virtual' ? 'background:#111827; color:#F39200; border:1px solid rgba(243,146,0,0.4);' : ''}">${c.badge || ('Condición ' + c.id.replace('c',''))}</div>
+                <div class="cond-card-badge" style="${c.id === 'inst' ? 'background:#1A1A1B; color:#FFFFFF;' : c.id === 'virtual' ? 'background:#111827; color:#F39200; border:1px solid rgba(243,146,0,0.4);' : ''}">${c.badge || ('Condición ' + c.id.replace('c',''))}</div>
             </div>
             <div class="cond-card-body">
                 <h4 class="cond-card-title">${c.title}</h4>

@@ -10513,7 +10513,7 @@ window.selectMatrixSubject = function(id, type) {
         s.virtual = { mediado: v_med, independiente: v_ind, total: v_tot };
 
         const planTag = type === 'vig' ? '<span class="badge-presencial" style="background:#475569; color:#fff;"><i class="fas fa-history"></i> Plan Vigente SACES (158 cr)</span>' : '<span class="badge-presencial" style="background:#059669; color:#fff;"><i class="fas fa-rocket"></i> Plan Propuesto (144 cr)</span>';
-        const tipoLabel = s.tipo === 'TP' ? '<span style="background:#ECFDF5; color:#047857; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:700;"><i class="fas fa-tools"></i> Teórico-Práctica (TP)</span>' : '<span style="background:#EFF6FF; color:#1D4ED8; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:700;"><i class="fas fa-chalkboard"></i> Teórica (T)</span>';
+        const tipoLabel = s.tipo === 'TP' ? '<span style="background:#ECFDF5; color:#047857; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:700;"><i class="fas fa-tools"></i> Teórico-Práctica (TP)</span>' : '<span style="background:#FFF7ED; color:#D97F00; padding:3px 8px; border-radius:4px; font-size:0.75rem; font-weight:700;"><i class="fas fa-chalkboard"></i> Teórica (T)</span>';
 
         panel.innerHTML = `
             <div style="border-bottom:2px solid var(--orange); padding-bottom:12px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px;">
@@ -10531,8 +10531,8 @@ window.selectMatrixSubject = function(id, type) {
                 </button>
             </div>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
-                <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:10px 14px; border-radius:8px; font-size:0.8rem;">
-                    <strong style="color:#0369A1;"><i class="fas fa-university"></i> Presencial (Relación 1:2 · 16h/cr):</strong> Directa: <strong>${p_dir}h</strong> · Independiente: <strong>${p_ind}h</strong> (Total: ${p_tot}h)
+                <div style="background:#FFFBEB; border:1px solid #FED7AA; padding:10px 14px; border-radius:8px; font-size:0.8rem;">
+                    <strong style="color:#C2410C;"><i class="fas fa-university"></i> Presencial (Relación 1:2 · 16h/cr):</strong> Directa: <strong>${p_dir}h</strong> · Independiente: <strong>${p_ind}h</strong> (Total: ${p_tot}h)
                 </div>
                 <div style="background:#F0FDF4; border:1px solid #BBF7D0; padding:10px 14px; border-radius:8px; font-size:0.8rem;">
                     <strong style="color:#15803D;"><i class="fas fa-laptop"></i> Virtual (Relación 1:3 · 12h/cr):</strong> Mediada: <strong>${v_med}h</strong> · Independiente: <strong>${v_ind}h</strong> (Total: ${v_tot}h)
@@ -10581,17 +10581,17 @@ window.openSubjectModal = function(id, type) {
 
     const tipoBadge = s.tipo === 'TP' ?
         '<span style="background:#ECFDF5; color:#047857; border:1px solid #A7F3D0; padding:4px 10px; border-radius:6px; font-size:0.74rem; font-weight:800; display:inline-flex; align-items:center; gap:5px;"><i class="fas fa-tools"></i> Asignatura Teórico-Práctica (TP)</span>' :
-        '<span style="background:#EFF6FF; color:#1D4ED8; border:1px solid #BFDBFE; padding:4px 10px; border-radius:6px; font-size:0.74rem; font-weight:800; display:inline-flex; align-items:center; gap:5px;"><i class="fas fa-chalkboard"></i> Asignatura Teórica (T)</span>';
+        '<span style="background:#FFF7ED; color:#D97F00; border:1px solid #FED7AA; padding:4px 10px; border-radius:6px; font-size:0.74rem; font-weight:800; display:inline-flex; align-items:center; gap:5px;"><i class="fas fa-chalkboard"></i> Asignatura Teórica (T)</span>';
 
     const tipoExpl = s.tipo === 'TP' ?
         '<span style="color:#047857; font-weight:600;">Articula la fundamentación conceptual con talleres aplicados, simulación empresarial de toma de decisiones, análisis de casos reales (ABP) y laboratorios prácticos.</span>' :
-        '<span style="color:#1D4ED8; font-weight:600;">Enfocada en el rigor conceptual, la modelación analítica y cuantitativa, y la apropiación crítica de teorías organizacionales indispensables para la dirección estratégica.</span>';
+        '<span style="color:#D97F00; font-weight:600;">Enfocada en el rigor conceptual, la modelación analítica y cuantitativa, y la apropiación crítica de teorías organizacionales indispensables para la dirección estratégica.</span>';
 
     // RAs list
     let rasHtml = '';
     if (s.ras && s.ras.length) {
         rasHtml = s.ras.map((ra, idx) => `
-            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:3px solid #059669; padding:8px 12px; border-radius:6px; margin-bottom:6px; font-size:0.8rem; color:#1E293B;">
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:3px solid #059669; padding:8px 12px; border-radius:6px; margin-bottom:6px; font-size:0.8rem; color:#1A1A1B;">
                 <strong style="color:#065F46;"><i class="fas fa-check-circle" style="color:#059669; margin-right:4px;"></i> RA${idx+1}:</strong> ${ra.replace(/^RA\d+:\s*/, '')}
             </div>
         `).join('');
@@ -10610,8 +10610,8 @@ window.openSubjectModal = function(id, type) {
                         ${u.fase} · ${u.porcentaje_fase}
                     </span>
                 </div>
-                <div style="font-size:0.8rem; color:#1E293B; margin-bottom:10px; background:#EFF6FF; padding:8px 12px; border-radius:6px; border-left:3px solid #3B82F6;">
-                    <strong><i class="fas fa-bullseye" style="color:#2563EB;"></i> Resultado de Aprendizaje (RA${u.numero}):</strong> ${u.ra}
+                <div style="font-size:0.8rem; color:#1A1A1B; margin-bottom:10px; background:#FFF7ED; padding:8px 12px; border-radius:6px; border-left:3px solid #F39200;">
+                    <strong><i class="fas fa-bullseye" style="color:#F39200;"></i> Resultado de Aprendizaje (RA${u.numero}):</strong> ${u.ra}
                 </div>
                 <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
                     ${(u.actividades || []).map(a => `
@@ -10643,7 +10643,7 @@ window.openSubjectModal = function(id, type) {
                     <div>
                         <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:6px;">
                             ${planBadge}
-                            <span style="background:#E0F2FE; color:#0369A1; padding:4px 10px; border-radius:6px; font-size:0.74rem; font-weight:800;"><i class="fas fa-graduation-cap"></i> Semestre ${s.semestre}</span>
+                            <span style="background:#FFF3E0; color:#C2410C; padding:4px 10px; border-radius:6px; font-size:0.74rem; font-weight:800;"><i class="fas fa-graduation-cap"></i> Semestre ${s.semestre}</span>
                             <span class="matrix-area-badge area-${(s.area||'').toLowerCase()}"><i class="fas fa-layer-group"></i> ${s.area_name || s.area}</span>
                             ${tipoBadge}
                             <span style="background:var(--orange); color:#fff; padding:4px 10px; border-radius:6px; font-size:0.74rem; font-weight:800;">${s.creditos} Créditos</span>
@@ -10673,9 +10673,9 @@ window.openSubjectModal = function(id, type) {
 
                         <!-- 2 TARJETAS: PERFIL Y RAP -->
                         <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px;">
-                            <div style="background:#FFFFFF; border:1px solid #CBD5E1; border-top:3px solid #2563EB; border-radius:8px; padding:12px;">
-                                <div style="font-weight:800; font-size:0.8rem; color:#1E40AF; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
-                                    <i class="fas fa-user-graduate" style="color:#2563EB;"></i> Competencia del Perfil de Egreso:
+                            <div style="background:#FFFFFF; border:1px solid #CBD5E1; border-top:3px solid #F39200; border-radius:8px; padding:12px;">
+                                <div style="font-weight:800; font-size:0.8rem; color:#D97F00; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                                    <i class="fas fa-user-graduate" style="color:#F39200;"></i> Competencia del Perfil de Egreso:
                                 </div>
                                 <div style="font-size:0.82rem; color:#0F172A; line-height:1.45; font-weight:600;">
                                     ${s.perfil_asociado || 'Competencia profesional del egresado asociada a las áreas sustantivas de la administración y la gestión organizacional.'}
@@ -10714,11 +10714,11 @@ window.openSubjectModal = function(id, type) {
 
                     <!-- DISTRIBUCIÓN DE HORAS SEGÚN DECRETO 1330 Y TABLA 24 -->
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:20px;">
-                        <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:14px; border-radius:8px;">
-                            <strong style="color:#0369A1; font-size:0.86rem; display:flex; align-items:center; gap:6px;">
+                        <div style="background:#FFFBEB; border:1px solid #FED7AA; padding:14px; border-radius:8px;">
+                            <strong style="color:#C2410C; font-size:0.86rem; display:flex; align-items:center; gap:6px;">
                                 <i class="fas fa-university"></i> Modalidad Presencial (Relación 1:2 · Decreto 1330)
                             </strong>
-                            <div style="font-size:0.82rem; margin-top:8px; color:#0C4A6E; line-height:1.6;">
+                            <div style="font-size:0.82rem; margin-top:8px; color:#2D2D2E; line-height:1.6;">
                                 • Docencia Directa (Acompañamiento en Aula): <strong>${p_dir}h</strong> (${pd_cr}h por crédito)<br>
                                 • Trabajo Autónomo e Independiente: <strong>${p_ind}h</strong> (${pi_cr}h por crédito)<br>
                                 • Total Horas Semestre: <strong>${p_tot}h</strong> (48h por crédito académico)
@@ -10784,7 +10784,7 @@ window.openAreaModal = function(areaId, type) {
 
     let areaTitle = '';
     let areaDesc = '';
-    let areaColor = '#2563EB';
+    let areaColor = '#F39200';
     let subList = [];
 
     if (cleanId === 'ALL') {
@@ -10795,7 +10795,7 @@ window.openAreaModal = function(areaId, type) {
     } else if (cleanId === 'TRANSVERSAL') {
         areaTitle = 'Área de Formación Transversal';
         areaDesc = 'Proporciona la fundamentación matemática, cuantitativa, comunicativa, investigativa, ética y ciudadana indispensable para la comprensión integral del entorno socioeconómico y el razonamiento lógico-analítico en la toma de decisiones empresariales.';
-        areaColor = '#2563EB';
+        areaColor = '#F39200';
         subList = allSubs.filter(s => (s.area || '').toUpperCase() === 'TRANSVERSAL');
     } else if (cleanId === 'DISCIPLINAR') {
         areaTitle = 'Área de Formación Disciplinar';
@@ -10810,8 +10810,8 @@ window.openAreaModal = function(areaId, type) {
     } else {
         // Componente específico (por ejemplo en Plan Propuesto)
         const compMapping = {
-            'ciencias_basicas': { name: 'Componente de Ciencias Básicas y Cuantitativas', color: '#2563EB', desc: 'Fundamentación matemática, álgebra, cálculo y estadística descriptiva e inferencial para el modelamiento y análisis cuantitativo de decisiones organizacionales.' },
-            'legislacion_habilidades': { name: 'Componente de Legislación, Investigación y Habilidades', color: '#3B82F6', desc: 'Desarrollo de competencias comunicativas, bilingüismo (Inglés I a III), marco legal laboral y comercial, ética y metodologías de investigación aplicada.' },
+            'ciencias_basicas': { name: 'Componente de Ciencias Básicas y Cuantitativas', color: '#F39200', desc: 'Fundamentación matemática, álgebra, cálculo y estadística descriptiva e inferencial para el modelamiento y análisis cuantitativo de decisiones organizacionales.' },
+            'legislacion_habilidades': { name: 'Componente de Legislación, Investigación y Habilidades', color: '#F39200', desc: 'Desarrollo de competencias comunicativas, bilingüismo (Inglés I a III), marco legal laboral y comercial, ética y metodologías de investigación aplicada.' },
             'admon_gestion': { name: 'Componente de Administración y Gestión', color: '#F39200', desc: 'Eje central de la teoría administrativa, procesos, talento humano, operaciones, calidad (HSEQ), planeación estratégica y juego gerencial.' },
             'economia_finanzas': { name: 'Componente de Economía y Finanzas', color: '#D97706', desc: 'Gestión contable, análisis financiero, microeconomía, macroeconomía, presupuestos y gerencia financiera para la sostenibilidad económica.' },
             'mercadeo_tech': { name: 'Componente de Mercadeo, Tecnología y Emprendimiento', color: '#EA580C', desc: 'Mercadeo digital, analítica de datos, formulación de proyectos, comercio electrónico y modelos de innovación empresarial.' },
@@ -10846,7 +10846,7 @@ window.openAreaModal = function(areaId, type) {
         const isTP = s.tipo === 'TP';
         const tipoBadge = isTP ?
             '<span style="background:#ECFDF5; color:#047857; font-size:0.72rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #A7F3D0;"><i class="fas fa-tools"></i> Teórico-Práctica (TP)</span>' :
-            '<span style="background:#EFF6FF; color:#1D4ED8; font-size:0.72rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #BFDBFE;"><i class="fas fa-chalkboard"></i> Teórica (T)</span>';
+            '<span style="background:#FFF7ED; color:#D97F00; font-size:0.72rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #FED7AA;"><i class="fas fa-chalkboard"></i> Teórica (T)</span>';
         
         const cr = parseInt(s.creditos) || 3;
         const p_dir = cr * 16;
@@ -10856,11 +10856,11 @@ window.openAreaModal = function(areaId, type) {
         
         return `
             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('${s.id}', '${type}')" title="Clic para ver trazabilidad y coherencia con el perfil de egreso">
-                <td style="padding:10px 12px; text-align:center; font-weight:800; color:#0369A1;">S${s.semestre}</td>
+                <td style="padding:10px 12px; text-align:center; font-weight:800; color:#C2410C;">S${s.semestre}</td>
                 <td style="padding:10px 12px; font-weight:700; color:var(--carbon);">${s.nombre}</td>
                 <td style="padding:10px 12px; text-align:center;">${tipoBadge}</td>
                 <td style="padding:10px 12px; text-align:center; font-weight:800; background:#F8FAFC;">${s.creditos} cr</td>
-                <td style="padding:10px 12px; text-align:center; color:#0369A1; font-weight:700; font-size:0.78rem;">${p_dir}h / ${p_ind}h</td>
+                <td style="padding:10px 12px; text-align:center; color:#C2410C; font-weight:700; font-size:0.78rem;">${p_dir}h / ${p_ind}h</td>
                 <td style="padding:10px 12px; text-align:center; color:#15803D; font-weight:700; font-size:0.78rem;">${v_med}h / ${v_ind}h</td>
                 <td style="padding:10px 12px; color:#64748B; font-size:0.78rem;">${s.prerrequisito}</td>
                 <td style="padding:10px 12px; text-align:center;">
@@ -10917,9 +10917,9 @@ window.openAreaModal = function(areaId, type) {
                             <div style="font-size:0.7rem; color:var(--gray-text);">${pctPlan}% del Plan Total</div>
                         </div>
 
-                        <div class="card" style="padding:12px; text-align:center; border-top:3px solid #2563EB; background:#EFF6FF;">
-                            <div style="font-size:1.6rem; font-weight:900; color:#1D4ED8;">${teoSubs.length}</div>
-                            <div style="font-size:0.75rem; font-weight:800; color:#1E40AF; margin-top:2px;">Teóricas (T)</div>
+                        <div class="card" style="padding:12px; text-align:center; border-top:3px solid #F39200; background:#FFF7ED;">
+                            <div style="font-size:1.6rem; font-weight:900; color:#D97F00;">${teoSubs.length}</div>
+                            <div style="font-size:0.75rem; font-weight:800; color:#D97F00; margin-top:2px;">Teóricas (T)</div>
                             <div style="font-size:0.72rem; color:#1E3A8A; font-weight:700;">${teoCr} Créditos (${teoPct}%)</div>
                         </div>
 
@@ -10933,11 +10933,11 @@ window.openAreaModal = function(areaId, type) {
                     <!-- RESUMEN VISUAL DE TEORIA Y PRACTICA -->
                     <div style="background:#FFFFFF; border:1px solid #CBD5E1; padding:12px 16px; border-radius:8px; margin-bottom:20px;">
                         <div style="display:flex; justify-content:space-between; font-size:0.8rem; font-weight:800; margin-bottom:6px;">
-                            <span style="color:#1D4ED8;"><i class="fas fa-chalkboard"></i> Asignaturas Teóricas: ${teoSubs.length} (${teoCr} cr · ${teoPct}%)</span>
+                            <span style="color:#D97F00;"><i class="fas fa-chalkboard"></i> Asignaturas Teóricas: ${teoSubs.length} (${teoCr} cr · ${teoPct}%)</span>
                             <span style="color:#047857;"><i class="fas fa-tools"></i> Asignaturas Teórico-Prácticas: ${tpSubs.length} (${tpCr} cr · ${tpPct}%)</span>
                         </div>
                         <div style="height:10px; width:100%; background:#E2E8F0; border-radius:5px; overflow:hidden; display:flex;">
-                            <div style="width:${teoPct}%; background:#2563EB; height:100%;" title="Teóricas: ${teoPct}%"></div>
+                            <div style="width:${teoPct}%; background:#F39200; height:100%;" title="Teóricas: ${teoPct}%"></div>
                             <div style="width:${tpPct}%; background:#059669; height:100%;" title="Teórico-Prácticas: ${tpPct}%"></div>
                         </div>
                         <div style="font-size:0.72rem; color:#64748B; margin-top:6px;">
@@ -11071,7 +11071,7 @@ window.SECTIONS['c3'] = `
                     <span class="badge-presencial" style="background:#059669; color:#fff; font-size:0.74rem;">
                         <i class="fas fa-university"></i> Presencial (1:2): 16h/cr Directas · 32h/cr Indep.
                     </span>
-                    <span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.74rem;">
+                    <span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.74rem;">
                         <i class="fas fa-laptop"></i> Virtual (1:3): 12h/cr Mediadas · 36h/cr Indep.
                     </span>
                     <span class="badge-presencial" style="background:#475569; color:#fff; font-size:0.74rem;">
@@ -11109,250 +11109,250 @@ window.SECTIONS['c3'] = `
                     </tr>
                 </thead>
                 <tbody><tr>
-            <td class="matrix-comp-header comp-border-area_transversal" style="border-left:4px solid #2563EB; cursor:pointer; transition:background 0.2s;" onclick="openAreaModal('TRANSVERSAL', 'vig')" title="Clic para ver desagregado del área en ventana emergente">
+            <td class="matrix-comp-header comp-border-area_transversal" style="border-left:4px solid #F39200; cursor:pointer; transition:background 0.2s;" onclick="openAreaModal('TRANSVERSAL', 'vig')" title="Clic para ver desagregado del área en ventana emergente">
                 <span class="matrix-area-badge area-transversal">17 Asignaturas · 41 Créditos (25,95%)</span>
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
-                    <i class="fas fa-layer-group" style="color:#2563EB; margin-right:4px;"></i> Área de Formación Transversal
+                    <i class="fas fa-layer-group" style="color:#F39200; margin-right:4px;"></i> Área de Formación Transversal
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_1', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Matemáticas Básicas</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_2', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Constitución y Democracia</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_3', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Expresión Oral y Escrita</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_4', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés I</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_8', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Cálculo</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Matemáticas Básicas</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_9', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Legislación Laboral</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_14', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés II</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés I</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_15', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Estadística Descriptiva</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Cálculo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_16', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Derecho Administrativo</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Constitución y Democracia</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_21', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés III</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés II</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_22', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Estadística Inferencial</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Descriptiva</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_23', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Legislación Tributaria</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_28', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés IV</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés III</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_35', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés V</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés IV</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_36', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Legislación Comercial</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_42', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés VI</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés V</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_transversal" onclick="selectMatrixSubject('vig_43', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos de Administración Pública</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Derecho Administrativo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
@@ -11361,567 +11361,567 @@ window.SECTIONS['c3'] = `
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
                     <i class="fas fa-briefcase" style="color:#F39200; margin-right:4px;"></i> Área de Formación Disciplinar
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_5', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos de Administración</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_6', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos Contables</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_7', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos de Economía</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_10', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Teoría Organizacional</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_11', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Costos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_12', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Metodología de la Investigación</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_13', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Microeconomía</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Economía</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_17', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Administración por Procesos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Teoría Organizacional</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_19', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Cultura Emprendedora</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_20', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Macroeconomía</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Microeconomía</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_25', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Liderazgo</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_26', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Creatividad e Innovación</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Cultura Emprendedora</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_27', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Entorno Económico Colombiano e Internacional</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Macroeconomía</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_29', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Matemática Financiera</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Costos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_30', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Investigación de Operaciones</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_31', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos de Mercadeo</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_32', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Modelos de Desarrollo Económico</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Entorno Económico Colombiano e Internacional</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_33', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Administración de Salarios</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Laboral</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_37', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia de Mercadeo</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_38', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">E-Commerce</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_39', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Tecnología e Innovación</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Creatividad e Innovación</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_40', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Métodos Cuantitativos y Cualitativos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_44', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gestión de la Calidad</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Administración por Procesos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_45', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Presupuesto</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Costos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_46', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia de Talento Humano</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Administración de Salarios</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_47', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Proyecto Empresarial</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Cultura Emprendedora</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_49', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Sistema de Información Gerencial</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Tecnología e Innovación</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_50', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Habilidades Gerenciales</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Liderazgo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_51', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia de Producción</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Investigación de Operaciones</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_52', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Investigación de Mercados</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Mercadeo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_53', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia Financiera</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Matemática Financiera</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_54', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Deontología</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_55', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Proyecto de Grado I</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Metodología de la Investigación</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_56', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S9</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S9</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Planeación y Prospectiva</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Habilidades Gerenciales</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_57', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S9</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S9</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia del Servicio</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Mercadeo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_58', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S9</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S9</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Evaluación de Proyectos de Inversión</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia Financiera</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_59', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S9</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S9</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Responsabilidad Social Empresarial</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Deontología</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_60', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S9</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S9</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gobierno Corporativo</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Comercial</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_61', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S9</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S9</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Distribución Física y Logística</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Producción</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-area_disciplinar" onclick="selectMatrixSubject('vig_62', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S9</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S9</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Proyecto de Grado II</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Proyecto de Grado I</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td></tr><tr>
@@ -11930,77 +11930,77 @@ window.SECTIONS['c3'] = `
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
                     <i class="fas fa-sliders-h" style="color:#D97706; margin-right:4px;"></i> Área de Formación Electiva
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_electiva" onclick="selectMatrixSubject('vig_18', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Profundización I</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_electiva" onclick="selectMatrixSubject('vig_24', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Humanística I</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_electiva" onclick="selectMatrixSubject('vig_34', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Profundización II</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización I</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_electiva" onclick="selectMatrixSubject('vig_41', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Humanística II</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Humanística I</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-area_electiva" onclick="selectMatrixSubject('vig_48', 'vig')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">2cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Profundización III</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profundización II</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 32h / 64h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 24h / 72h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div></div>
@@ -12018,7 +12018,7 @@ window.SECTIONS['c3'] = `
         
     <!-- SUB TAB 2.2: ÁREAS DE FORMACIÓN VIGENTE -->
     <div class="tab-panel" id="c3-v-areas" style="display:none;">
-        <div style="background:linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color:#fff; padding:20px; border-radius:10px; margin-bottom:20px; border-left:6px solid #2563EB;">
+        <div style="background:linear-gradient(135deg, #0F172A 0%, #1A1A1B 100%); color:#fff; padding:20px; border-radius:10px; margin-bottom:20px; border-left:6px solid #F39200;">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
                 <div>
                     <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; color:#38BDF8; font-weight:800;">
@@ -12032,7 +12032,7 @@ window.SECTIONS['c3'] = `
                     </p>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span class="badge-presencial" style="background:#2563EB; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px; font-weight:800;">
+                    <span class="badge-presencial" style="background:#F39200; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px; font-weight:800;">
                         <i class="fas fa-layer-group"></i> 3 Áreas de Formación
                     </span>
                     <span class="badge-presencial" style="background:#059669; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px; font-weight:800;">
@@ -12044,14 +12044,14 @@ window.SECTIONS['c3'] = `
 
         <!-- 4 KPI CARDS TABLA 22 CLICKEABLES -->
         <div class="grid-4" style="margin-bottom:24px;">
-            <div class="card" style="border-top:4px solid #2563EB; text-align:center; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;" onclick="openAreaModal('TRANSVERSAL', 'vig')" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 16px rgba(37,99,235,0.2)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';" title="Clic para desplegar ventana emergente del Área Transversal">
-                <div style="font-size:1.8rem; font-weight:900; color:#2563EB;">41 cr</div>
+            <div class="card" style="border-top:4px solid #F39200; text-align:center; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;" onclick="openAreaModal('TRANSVERSAL', 'vig')" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 16px rgba(243, 146, 0,0.2)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';" title="Clic para desplegar ventana emergente del Área Transversal">
+                <div style="font-size:1.8rem; font-weight:900; color:#F39200;">41 cr</div>
                 <h4 style="font-size:0.92rem; margin-top:4px; margin-bottom:2px; color:var(--carbon);">Área Transversal</h4>
                 <p style="font-size:0.78rem; color:var(--gray-text); margin:0;">17 Asignaturas (<strong>25,95%</strong>)</p>
-                <div style="margin-top:8px; font-size:0.74rem; font-weight:700; color:#1D4ED8; background:#EFF6FF; padding:4px 8px; border-radius:5px;">
+                <div style="margin-top:8px; font-size:0.74rem; font-weight:700; color:#D97F00; background:#FFF7ED; padding:4px 8px; border-radius:5px;">
                     <i class="fas fa-chalkboard"></i> 17 Teóricas (41 cr) · 0 Prácticas
                 </div>
-                <div style="margin-top:8px; font-size:0.72rem; color:#0284C7; font-weight:800;">
+                <div style="margin-top:8px; font-size:0.72rem; color:#EA580C; font-weight:800;">
                     <i class="fas fa-external-link-alt"></i> Clic para ver ventana emergente
                 </div>
             </div>
@@ -12094,10 +12094,10 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- CARD TABLA 22: RESUMEN DE ÁREAS -->
-        <div class="card" style="margin-bottom:24px; border-top:4px solid #0284C7;">
+        <div class="card" style="margin-bottom:24px; border-top:4px solid #EA580C;">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
                 <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin:0;">
-                    <i class="fas fa-chart-pie" style="color:#0284C7; margin-right:6px;"></i> Tabla 22. Áreas de formación del programa vigente
+                    <i class="fas fa-chart-pie" style="color:#EA580C; margin-right:6px;"></i> Tabla 22. Áreas de formación del programa vigente
                 </h4>
                 <span style="font-size:0.75rem; color:#475569; background:#F1F5F9; padding:3px 8px; border-radius:4px;">
                     Fuente: [Anexo 2. Documento Maestro], pág. 122
@@ -12116,10 +12116,10 @@ window.SECTIONS['c3'] = `
                     </thead>
                     <tbody>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('TRANSVERSAL', 'vig')" title="Clic para ver desagregado">
-                            <td style="padding:8px 12px; font-weight:700; color:#0369A1;">Área de Formación Transversal</td>
+                            <td style="padding:8px 12px; font-weight:700; color:#C2410C;">Área de Formación Transversal</td>
                             <td style="padding:8px 12px; text-align:center; font-weight:700;">17</td>
-                            <td style="padding:8px 12px; text-align:center;"><span style="background:#EFF6FF; color:#1D4ED8; font-size:0.72rem; font-weight:700; padding:2px 8px; border-radius:4px;">17 Teóricas</span></td>
-                            <td style="padding:8px 12px; text-align:center; font-weight:800; color:#0369A1;">41</td>
+                            <td style="padding:8px 12px; text-align:center;"><span style="background:#FFF7ED; color:#D97F00; font-size:0.72rem; font-weight:700; padding:2px 8px; border-radius:4px;">17 Teóricas</span></td>
+                            <td style="padding:8px 12px; text-align:center; font-weight:800; color:#C2410C;">41</td>
                             <td style="padding:8px 12px; text-align:center; font-weight:800; color:#059669;">25,95%</td>
                         </tr>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('DISCIPLINAR', 'vig')" title="Clic para ver desagregado">
@@ -12182,11 +12182,11 @@ window.SECTIONS['c3'] = `
                     </thead>
                     <tbody>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_1', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Matemáticas Básicas</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12197,11 +12197,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_2', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Constitución y Democracia</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12212,11 +12212,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_3', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Expresión Oral y Escrita</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12227,11 +12227,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_4', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés I</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12242,11 +12242,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_8', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Cálculo</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12257,11 +12257,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_9', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Laboral</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12272,11 +12272,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_14', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés II</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12287,11 +12287,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_15', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Estadística Descriptiva</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12302,11 +12302,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_16', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Derecho Administrativo</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12317,11 +12317,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_21', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés III</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12332,11 +12332,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_22', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Estadística Inferencial</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12347,11 +12347,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_23', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Tributaria</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12362,11 +12362,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_28', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés IV</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12377,11 +12377,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_35', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés V</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12392,11 +12392,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_36', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Comercial</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12407,11 +12407,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_42', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés VI</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12422,11 +12422,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_43', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">TRANSVERSAL</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">TRANSVERSAL</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Administración Pública</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12438,19 +12438,19 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
             <td colspan="4" style="padding:8px 10px; text-align:right; color:var(--carbon);">SUBTOTAL TRANSVERSAL (17 Asignaturas):</td>
-            <td style="padding:8px 10px; text-align:center; color:#0284C7;">17</td>
+            <td style="padding:8px 10px; text-align:center; color:#EA580C;">17</td>
             <td style="padding:8px 10px; text-align:center; color:#D97706;">0</td>
             <td style="padding:8px 10px; text-align:center; color:var(--carbon); font-size:0.9rem;">41</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">656</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">1312</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">656</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">1312</td>
             <td></td>
         </tr>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_5', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Administración</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12461,11 +12461,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_6', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos Contables</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12476,11 +12476,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_7', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Economía</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12491,11 +12491,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_10', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Teoría Organizacional</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12506,11 +12506,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_11', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Costos</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12521,11 +12521,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_12', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Metodología de la Investigación</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12536,11 +12536,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_13', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Microeconomía</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12551,11 +12551,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_17', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Administración por Procesos</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12566,11 +12566,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_19', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Cultura Emprendedora</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12581,11 +12581,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_20', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Macroeconomía</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12596,11 +12596,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_25', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Liderazgo</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12611,11 +12611,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_26', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Creatividad e Innovación</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12626,11 +12626,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_27', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Entorno Económico Colombiano e Internacional</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12641,11 +12641,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_29', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Matemática Financiera</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12656,11 +12656,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_30', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Investigación de Operaciones</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12671,11 +12671,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_31', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Mercadeo</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12686,11 +12686,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_32', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Modelos de Desarrollo Económico</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12701,11 +12701,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_33', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Administración de Salarios</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12716,11 +12716,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_37', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gerencia de Mercadeo</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12731,11 +12731,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_38', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">E-Commerce</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12746,11 +12746,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_39', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Tecnología e Innovación</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12761,11 +12761,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_40', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Métodos Cuantitativos y Cualitativos</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12776,11 +12776,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_44', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gestión de la Calidad</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12791,11 +12791,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_45', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Presupuesto</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12806,11 +12806,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_46', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gerencia de Talento Humano</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12821,11 +12821,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_47', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Proyecto Empresarial</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12836,11 +12836,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_49', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Sistema de Información Gerencial</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12851,11 +12851,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_50', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Habilidades Gerenciales</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12866,11 +12866,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_51', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gerencia de Producción</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12881,11 +12881,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_52', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Investigación de Mercados</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12896,11 +12896,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_53', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gerencia Financiera</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12911,11 +12911,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_54', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Deontología</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12926,11 +12926,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_55', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Proyecto de Grado I</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -12941,11 +12941,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_56', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S9</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Planeación y Prospectiva</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12956,11 +12956,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_57', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S9</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gerencia del Servicio</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12971,11 +12971,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_58', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S9</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Evaluación de Proyectos de Inversión</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -12986,11 +12986,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_59', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S9</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Responsabilidad Social Empresarial</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13001,11 +13001,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_60', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S9</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gobierno Corporativo</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13016,11 +13016,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_61', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S9</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Distribución Física y Logística</td>
                 <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
@@ -13031,11 +13031,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_62', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">DISCIPLINAR</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S9</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">DISCIPLINAR</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Proyecto de Grado II</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13047,19 +13047,19 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
             <td colspan="4" style="padding:8px 10px; text-align:right; color:var(--carbon);">SUBTOTAL DISCIPLINAR (40 Asignaturas):</td>
-            <td style="padding:8px 10px; text-align:center; color:#0284C7;">40</td>
+            <td style="padding:8px 10px; text-align:center; color:#EA580C;">40</td>
             <td style="padding:8px 10px; text-align:center; color:#D97706;">0</td>
             <td style="padding:8px 10px; text-align:center; color:var(--carbon); font-size:0.9rem;">107</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">1712</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">3424</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">1712</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">3424</td>
             <td></td>
         </tr>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_18', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">ELECTIVO</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">ELECTIVO</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Profundización I</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13070,11 +13070,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_24', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">ELECTIVO</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">ELECTIVO</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Humanística I</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13085,11 +13085,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_34', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">ELECTIVO</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">ELECTIVO</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Profundización II</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13100,11 +13100,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_41', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">ELECTIVO</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">ELECTIVO</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Humanística II</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13115,11 +13115,11 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_48', 'vig')" title="Clic para ver ficha completa">
-                <td style="padding:6px 10px; font-weight:700; color:#1E293B;">ELECTIVO</td>
-                <td style="padding:6px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:6px 10px; font-weight:700; color:#1A1A1B;">ELECTIVO</td>
+                <td style="padding:6px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Profundización III</td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
@@ -13131,11 +13131,11 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
             <td colspan="4" style="padding:8px 10px; text-align:right; color:var(--carbon);">SUBTOTAL ELECTIVO (5 Asignaturas):</td>
-            <td style="padding:8px 10px; text-align:center; color:#0284C7;">0</td>
+            <td style="padding:8px 10px; text-align:center; color:#EA580C;">0</td>
             <td style="padding:8px 10px; text-align:center; color:#D97706;">5</td>
             <td style="padding:8px 10px; text-align:center; color:var(--carbon); font-size:0.9rem;">10</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">160</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">320</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">160</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">320</td>
             <td></td>
         </tr>
                         <tr style="background:#0F172A; color:#fff; font-weight:900; font-size:0.9rem;">
@@ -13164,7 +13164,7 @@ window.SECTIONS['c3'] = `
                     </p>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="background:#EFF6FF; color:#0369A1; font-size:0.75rem; font-weight:700; padding:3px 8px; border-radius:4px; border:1px solid #BFDBFE;">54 Teóricas (T)</span>
+                    <span style="background:#FFF7ED; color:#C2410C; font-size:0.75rem; font-weight:700; padding:3px 8px; border-radius:4px; border:1px solid #FED7AA;">54 Teóricas (T)</span>
                     <span style="background:#FEF3C7; color:#B45309; font-size:0.75rem; font-weight:700; padding:3px 8px; border-radius:4px; border:1px solid #FDE68A;">8 Teórico-Prácticas (TP)</span>
                 </div>
             </div>
@@ -13185,9 +13185,9 @@ window.SECTIONS['c3'] = `
                     </thead>
                     <tbody>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_1', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 1</td>
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Matemáticas Básicas <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 1</td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Matemáticas Básicas <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13199,8 +13199,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_2', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Constitución y Democracia <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Constitución y Democracia <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13212,8 +13212,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_3', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Expresión Oral y Escrita <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Expresión Oral y Escrita <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13225,8 +13225,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_4', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés I <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés I <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13239,7 +13239,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_5', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Administración <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13252,7 +13252,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_6', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos Contables <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13265,7 +13265,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_7', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Economía <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13276,17 +13276,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 1 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 1 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">18</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">18</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">288</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">576</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">864</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">864</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_8', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 2</td>
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Cálculo <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 2</td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Cálculo <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13298,8 +13298,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_9', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Laboral <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Laboral <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13312,7 +13312,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_10', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Teoría Organizacional <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13325,7 +13325,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_11', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Costos <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13338,7 +13338,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_12', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Metodología de la Investigación <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13351,7 +13351,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_13', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Microeconomía <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13363,8 +13363,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_14', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés II <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés II <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13375,17 +13375,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 2 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 2 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">17</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">17</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">272</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">544</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">816</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">816</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_15', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 3</td>
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Estadística Descriptiva <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 3</td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Estadística Descriptiva <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13397,8 +13397,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_16', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Derecho Administrativo <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Derecho Administrativo <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13411,7 +13411,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_17', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Administración por Procesos <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13424,7 +13424,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_18', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Profundización I <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FEF3C7; color:#B45309;">ELECTIVA</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13437,7 +13437,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_19', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Cultura Emprendedora <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13450,7 +13450,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_20', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Macroeconomía <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13462,8 +13462,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_21', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés III <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés III <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13474,17 +13474,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 3 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 3 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">17</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">17</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">272</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">544</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">816</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">816</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_22', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 4</td>
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Estadística Inferencial <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 4</td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Estadística Inferencial <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13496,8 +13496,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_23', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Tributaria <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Tributaria <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13510,7 +13510,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_24', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Humanística I <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FEF3C7; color:#B45309;">ELECTIVA</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13523,7 +13523,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_25', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Liderazgo <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13536,7 +13536,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_26', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Creatividad e Innovación <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13549,7 +13549,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_27', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Entorno Económico Colombiano e Internacional <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13561,8 +13561,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_28', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés IV <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés IV <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13573,17 +13573,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 4 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 4 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">18</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">18</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">288</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">576</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">864</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">864</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_29', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 5</td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 5</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Matemática Financiera <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13609,7 +13609,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_31', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Mercadeo <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13622,7 +13622,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_32', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Modelos de Desarrollo Económico <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13635,7 +13635,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_33', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Administración de Salarios <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13648,7 +13648,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_34', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Profundización II <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FEF3C7; color:#B45309;">ELECTIVA</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13660,8 +13660,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_35', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés V <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés V <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13672,17 +13672,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 5 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 5 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">18</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">18</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">288</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">576</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">864</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">864</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_36', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 6</td>
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Comercial <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 6</td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Legislación Comercial <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13708,7 +13708,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_38', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">E-Commerce <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13721,7 +13721,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_39', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Tecnología e Innovación <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13734,7 +13734,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_40', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Métodos Cuantitativos y Cualitativos <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13747,7 +13747,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_41', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Humanística II <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FEF3C7; color:#B45309;">ELECTIVA</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13759,8 +13759,8 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_42', 'vig')" title="Clic para ver ficha completa">
                 
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés VI <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Inglés VI <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13771,17 +13771,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 6 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 6 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">18</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">18</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">288</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">576</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">864</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">864</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_43', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 7</td>
-                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Administración Pública <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#E0F2FE; color:#0369A1;">TRANSVERSAL</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 7</td>
+                <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Fundamentos de Administración Pública <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFF3E0; color:#C2410C;">TRANSVERSAL</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13807,7 +13807,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_45', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Presupuesto <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13833,7 +13833,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_47', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Proyecto Empresarial <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13846,7 +13846,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_48', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Electiva Profundización III <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FEF3C7; color:#B45309;">ELECTIVA</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13859,7 +13859,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_49', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Sistema de Información Gerencial <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13870,17 +13870,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 7 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 7 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">18</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">18</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">288</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">576</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">864</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">864</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_50', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="6" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 8</td>
+                <td rowspan="6" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 8</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Habilidades Gerenciales <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13906,7 +13906,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_52', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Investigación de Mercados <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13932,7 +13932,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_54', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Deontología <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13945,7 +13945,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_55', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Proyecto de Grado I <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -13956,17 +13956,17 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 8 (6 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 8 (6 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">16</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">16</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">256</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">512</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">768</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">768</td>
             <td></td>
         </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_56', 'vig')" title="Clic para ver ficha completa">
-                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#0369A1;">Semestre 9</td>
+                <td rowspan="7" style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC; border-right:1px solid #E2E8F0; vertical-align:middle; font-size:0.95rem; color:#C2410C;">Semestre 9</td>
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Planeación y Prospectiva <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -13992,7 +13992,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_58', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Evaluación de Proyectos de Inversión <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">48</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">96</td>
@@ -14005,7 +14005,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_59', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Responsabilidad Social Empresarial <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -14018,7 +14018,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_60', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Gobierno Corporativo <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -14044,7 +14044,7 @@ window.SECTIONS['c3'] = `
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('vig_62', 'vig')" title="Clic para ver ficha completa">
                 
                 <td style="padding:6px 10px; font-weight:600; color:var(--carbon);">Proyecto de Grado II <span style="font-size:0.68rem; font-weight:700; padding:1px 6px; border-radius:4px; margin-left:6px; background:#FFEDD5; color:#C2410C;">DISCIPLINAR</span></td>
-                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
+                <td style="padding:6px 10px; text-align:center;"><span style="font-size:0.7rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
                 <td style="padding:6px 10px; text-align:center; font-weight:800; background:#F8FAFC;">2</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">32</td>
                 <td style="padding:6px 10px; text-align:center; color:#475569;">64</td>
@@ -14055,12 +14055,12 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
-            <td colspan="2" style="padding:6px 10px; text-align:right; color:#0369A1;">Subtotal Semestre 9 (7 Asignaturas):</td>
+            <td colspan="2" style="padding:6px 10px; text-align:right; color:#C2410C;">Subtotal Semestre 9 (7 Asignaturas):</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">—</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">18</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">18</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">288</td>
             <td style="padding:6px 10px; text-align:center; color:#475569;">576</td>
-            <td style="padding:6px 10px; text-align:center; color:#0369A1; font-size:0.9rem;">864</td>
+            <td style="padding:6px 10px; text-align:center; color:#C2410C; font-size:0.9rem;">864</td>
             <td></td>
         </tr>
                         <tr style="background:#0F172A; color:#fff; font-weight:900; font-size:0.9rem;">
@@ -14083,9 +14083,9 @@ window.SECTIONS['c3'] = `
  Perfil del Egresado y Resultados de Aprendizaje del Plan Vigente (Anexo 1 / RAPs 1 a 4)
  </h3>
 
- <div class="card" style="margin-bottom:24px; border-left:6px solid #0284C7;">
+ <div class="card" style="margin-bottom:24px; border-left:6px solid #EA580C;">
  <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin-bottom:8px;">
- <i class="fas fa-user-tie" style="color:#0284C7;"></i> Perfil Profesional del Egresado (Plan Vigente 158 cr)
+ <i class="fas fa-user-tie" style="color:#EA580C;"></i> Perfil Profesional del Egresado (Plan Vigente 158 cr)
  </h4>
  <p style="font-size:0.86rem; color:var(--gray-text); line-height:1.5;">
  El egresado del Plan Vigente de Administración de Empresas posee competencias orientadas a la gestión estratégica de organizaciones, operabilidad administrativa, toma de decisiones financieras, gestión de procesos y desarrollo operacional tradicional del administrador de empresas SACES.
@@ -14096,8 +14096,8 @@ window.SECTIONS['c3'] = `
  <i class="fas fa-bullseye" style="color:#475569;"></i> Resultados de Aprendizaje del Programa (Plan Vigente SACES)
  </h4>
  <div class="grid-2" style="margin-bottom:28px;">
- <div class="card" style="border-top:4px solid #0284C7;">
- <span class="badge-presencial" style="background:#0284C7; color:#fff; font-weight:800;">RAP 1 - Gestión & Administración</span>
+ <div class="card" style="border-top:4px solid #EA580C;">
+ <span class="badge-presencial" style="background:#EA580C; color:#fff; font-weight:800;">RAP 1 - Gestión & Administración</span>
  <p style="font-size:0.84rem; color:var(--carbon); margin-top:8px; font-weight:600;">Diseña y aplica modelos de gestión administrativa y operabilidad organizativa.</p>
  <div style="font-size:0.78rem; color:var(--gray-text); margin-top:6px;"><strong>Asignaturas Clave:</strong> Fundamentos de Administración, Teoría Organizacional, Procesos Administrativos.</div>
  </div>
@@ -14129,7 +14129,7 @@ window.SECTIONS['c3'] = `
          ========================================================= -->
     <div class="tab-panel" id="c3-v-flex" style="display:none;">
         <!-- BANNER DE ENCABEZADO -->
-        <div style="background:linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color:#fff; padding:22px; border-radius:10px; margin-bottom:24px; border-left:6px solid #F39200; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+        <div style="background:linear-gradient(135deg, #0F172A 0%, #1A1A1B 100%); color:#fff; padding:22px; border-radius:10px; margin-bottom:24px; border-left:6px solid #F39200; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
                 <div>
                     <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1.5px; color:#FBBF24; font-weight:800;">
@@ -14146,7 +14146,7 @@ window.SECTIONS['c3'] = `
                     <span class="badge-presencial" style="background:#F39200; color:#fff; font-size:0.76rem; font-weight:800; padding:4px 12px; border-radius:20px;">
                         <i class="fas fa-sliders-h"></i> 4 Dimensiones Institucionales
                     </span>
-                    <span class="badge-presencial" style="background:#0284C7; color:#fff; font-size:0.76rem; font-weight:800; padding:4px 12px; border-radius:20px;">
+                    <span class="badge-presencial" style="background:#EA580C; color:#fff; font-size:0.76rem; font-weight:800; padding:4px 12px; border-radius:20px;">
                         <i class="fas fa-layer-group"></i> 7 Estrategias Operativas
                     </span>
                     <span class="badge-presencial" style="background:#059669; color:#fff; font-size:0.76rem; font-weight:800; padding:4px 12px; border-radius:20px;">
@@ -14157,9 +14157,9 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- 1. CONTEXTO Y CONCEPCIÓN DEL CURRÍCULO FLEXIBLE -->
-        <div class="card" style="margin-bottom:24px; border-top:4px solid #2563EB;">
+        <div class="card" style="margin-bottom:24px; border-top:4px solid #F39200;">
             <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">
-                <i class="fas fa-compass" style="color:#2563EB; margin-right:8px;"></i> 1. Concepción de la Flexibilidad en el Enfoque Pedagógico Institucional
+                <i class="fas fa-compass" style="color:#F39200; margin-right:8px;"></i> 1. Concepción de la Flexibilidad en el Enfoque Pedagógico Institucional
             </h4>
             <div style="font-size:0.85rem; color:#334155; line-height:1.65; margin-bottom:14px;">
                 <p style="margin-bottom:10px;">
@@ -14188,11 +14188,11 @@ window.SECTIONS['c3'] = `
                 </div>
 
                 <!-- b) Flexibilidad en la Enseñanza -->
-                <div style="background:#EFF6FF; border:1px solid #BFDBFE; border-left:5px solid #2563EB; border-radius:8px; padding:16px;">
+                <div style="background:#FFF7ED; border:1px solid #FED7AA; border-left:5px solid #F39200; border-radius:8px; padding:16px;">
                     <div style="font-weight:800; color:#1E3A8A; font-size:0.95rem; margin-bottom:6px;">
-                        <i class="fas fa-chalkboard-teacher" style="color:#2563EB; margin-right:6px;"></i> b) Flexibilidad en la Enseñanza
+                        <i class="fas fa-chalkboard-teacher" style="color:#F39200; margin-right:6px;"></i> b) Flexibilidad en la Enseñanza
                     </div>
-                    <p style="font-size:0.83rem; color:#1E40AF; line-height:1.55; margin:0;">
+                    <p style="font-size:0.83rem; color:#D97F00; line-height:1.55; margin:0;">
                         Los docentes apoyan y acompañan a los estudiantes mediante estrategias de formación activa que favorecen su participación protagónica, en especial aquellas relacionadas con la <strong>aplicación o transferencia del conocimiento</strong> a problemas organizacionales auténticos.
                     </p>
                 </div>
@@ -14289,7 +14289,7 @@ window.SECTIONS['c3'] = `
                 <!-- 2. Oferta de Asignaturas Electivas -->
                 <div style="background:#fff; border:1px solid #E2E8F0; border-radius:8px; padding:14px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
                     <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-                        <span style="background:#E0F2FE; color:#0369A1; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:0.8rem;">2</span>
+                        <span style="background:#FFF3E0; color:#C2410C; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:0.8rem;">2</span>
                         <strong style="color:var(--carbon); font-size:0.88rem;">Oferta de Asignaturas Electivas</strong>
                     </div>
                     <p style="font-size:0.8rem; color:var(--gray-text); line-height:1.5; margin:0;">
@@ -14382,7 +14382,7 @@ window.SECTIONS['c3'] = `
          ========================================================= -->
     <div class="tab-panel" id="c3-v-eval" style="display:none;">
         <!-- BANNER DE ENCABEZADO -->
-        <div style="background:linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color:#fff; padding:22px; border-radius:10px; margin-bottom:24px; border-left:6px solid #0284C7; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
+        <div style="background:linear-gradient(135deg, #0F172A 0%, #1A1A1B 100%); color:#fff; padding:22px; border-radius:10px; margin-bottom:24px; border-left:6px solid #EA580C; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1);">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
                 <div>
                     <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1.5px; color:#38BDF8; font-weight:800;">
@@ -14396,7 +14396,7 @@ window.SECTIONS['c3'] = `
                     </p>
                 </div>
                 <div style="display:flex; gap:8px; flex-wrap:wrap;">
-                    <span class="badge-presencial" style="background:#0284C7; color:#fff; font-size:0.76rem; font-weight:800; padding:4px 12px; border-radius:20px;">
+                    <span class="badge-presencial" style="background:#EA580C; color:#fff; font-size:0.76rem; font-weight:800; padding:4px 12px; border-radius:20px;">
                         <i class="fas fa-bullseye"></i> 3 Valores Agregados RA
                     </span>
                     <span class="badge-presencial" style="background:#7C3AED; color:#fff; font-size:0.76rem; font-weight:800; padding:4px 12px; border-radius:20px;">
@@ -14410,12 +14410,12 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- SECCIÓN 1: NUMERAL 3.7.1 - EVALUACIÓN DE RESULTADOS DE APRENDIZAJE -->
-        <div class="card" style="margin-bottom:24px; border-top:4px solid #0284C7;">
+        <div class="card" style="margin-bottom:24px; border-top:4px solid #EA580C;">
             <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
                 <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--carbon); margin:0;">
-                    <i class="fas fa-bullseye" style="color:#0284C7; margin-right:8px;"></i> 1. Numeral 3.7.1. Evaluación de Resultados de Aprendizaje
+                    <i class="fas fa-bullseye" style="color:#EA580C; margin-right:8px;"></i> 1. Numeral 3.7.1. Evaluación de Resultados de Aprendizaje
                 </h4>
-                <span style="font-size:0.75rem; color:#0369A1; background:#E0F2FE; font-weight:800; padding:3px 10px; border-radius:12px;">
+                <span style="font-size:0.75rem; color:#C2410C; background:#FFF3E0; font-weight:800; padding:3px 10px; border-radius:12px;">
                     Fuente: Documento Maestro [Anexo 5], págs. 130 a 133
                 </span>
             </div>
@@ -14426,12 +14426,12 @@ window.SECTIONS['c3'] = `
 
             <!-- 3 VALORES AGREGADOS -->
             <div class="grid-3" style="margin-bottom:18px; gap:14px;">
-                <div style="background:#F0F9FF; border:1px solid #BAE6FD; border-radius:8px; padding:14px;">
-                    <div style="font-size:1.1rem; color:#0284C7; font-weight:900; margin-bottom:4px;">
+                <div style="background:#FFFBEB; border:1px solid #FED7AA; border-radius:8px; padding:14px;">
+                    <div style="font-size:1.1rem; color:#EA580C; font-weight:900; margin-bottom:4px;">
                         <i class="fas fa-check-double"></i> Valor Agregado 1
                     </div>
-                    <strong style="color:#0369A1; font-size:0.86rem; display:block; margin-bottom:6px;">Demostración a Corto Plazo</strong>
-                    <p style="font-size:0.8rem; color:#0C4A6E; line-height:1.5; margin:0;">
+                    <strong style="color:#C2410C; font-size:0.86rem; display:block; margin-bottom:6px;">Demostración a Corto Plazo</strong>
+                    <p style="font-size:0.8rem; color:#2D2D2E; line-height:1.5; margin:0;">
                         Permite demostrar en el corto plazo si los estudiantes logran alcanzar los resultados de aprendizaje esperados mediante evidencias tangibles, horizontes epistemológicos y actividades evaluativas contextualizadas.
                     </p>
                 </div>
@@ -14467,7 +14467,7 @@ window.SECTIONS['c3'] = `
                 </p>
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px; font-size:0.8rem;">
                     <div style="background:#fff; border:1px solid #CBD5E1; padding:8px 12px; border-radius:6px;">
-                        <strong style="color:#0284C7;"><i class="fas fa-book"></i> Saber (Cognitivo):</strong> Dominio teórico y conceptual de las disciplinas administrativas.
+                        <strong style="color:#EA580C;"><i class="fas fa-book"></i> Saber (Cognitivo):</strong> Dominio teórico y conceptual de las disciplinas administrativas.
                     </div>
                     <div style="background:#fff; border:1px solid #CBD5E1; padding:8px 12px; border-radius:6px;">
                         <strong style="color:#16A34A;"><i class="fas fa-hands-helping"></i> Ser (Actitudinal y Ético):</strong> Responsabilidad social, ética profesional y liderazgo.
@@ -14618,7 +14618,7 @@ window.SECTIONS['c3'] = `
                         <tr style="background:#F8FAFC;">
                             <th style="width:40px; text-align:center;">#</th>
                             <th style="width:280px;">Resultado de Aprendizaje del Programa (RAP)</th>
-                            <th style="width:220px; color:#0369A1;">Asignaturas Articuladas (Plan Vigente 158 cr)</th>
+                            <th style="width:220px; color:#C2410C;">Asignaturas Articuladas (Plan Vigente 158 cr)</th>
                             <th style="color:#15803D;">Instrumentos de Medición y Evidencias Evaluativas</th>
                         </tr>
                     </thead>
@@ -14626,10 +14626,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 1 -->
                         <tr style="border-bottom:1px solid #E2E8F0;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">1</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Resuelve problemas empresariales mediante el pensamiento numérico, algebraico y variacional, utilizando métodos cualitativos y cuantitativos para optimizar la toma de decisiones, la gestión de procesos y el diseño de estrategias de eficiencia.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Matemáticas Básicas (Sem 1)<br>
                                 • Expresión Oral y Escrita (Sem 1)<br>
                                 • Cálculo (Sem 2)<br>
@@ -14647,10 +14647,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 2 -->
                         <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">2</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Diseña estrategias innovadoras que integren los principios del derecho administrativo, la legislación laboral, comercial y los fundamentos de la administración pública, con el fin de optimizar productos, servicios y procesos organizacionales.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Constitución y Democracia (Sem 1)<br>
                                 • Legislación Laboral (Sem 2)<br>
                                 • Derecho Administrativo (Sem 3)<br>
@@ -14669,10 +14669,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 3 -->
                         <tr style="border-bottom:1px solid #E2E8F0;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">3</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Propone mejoras al proceso organizacional, identificando oportunidades de crecimiento y sostenibilidad, fundamentadas en estrategias de gestión, teoría organizacional y planeación prospectiva para implementar innovación en productos y procesos.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Fundamentos de Administración (Sem 1)<br>
                                 • Teoría Organizacional (Sem 2)<br>
                                 • Administración por Procesos (Sem 3)<br>
@@ -14691,10 +14691,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 4 -->
                         <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">4</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Desarrolla procedimientos operacionales para optimizar costos y aumentar utilidades en la organización, utilizando herramientas de investigación de operaciones, gestión de la calidad, gerencia de producción y logística de distribución.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Investigación de Operaciones (Sem 5)<br>
                                 • Gestión de la Calidad (Sem 7)<br>
                                 • Gerencia de Producción (Sem 8)<br>
@@ -14711,10 +14711,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 5 -->
                         <tr style="border-bottom:1px solid #E2E8F0;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">5</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Desarrolla estrategias de marketing innovadoras basadas en el análisis del contexto para mejorar la competitividad y productividad organizacional, adaptando productos, servicios y procesos a las demandas del mercado globalizado.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Fundamentos de Mercadeo (Sem 5)<br>
                                 • E-Commerce (Sem 6)<br>
                                 • Investigación de Mercados (Sem 8)<br>
@@ -14731,10 +14731,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 6 -->
                         <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">6</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Determina la viabilidad de un proyecto de inversión mediante análisis económico y financiero detallado, evaluando costos, beneficios, implicaciones macro y microeconómicas y aplicando modelos de evaluación financiera y flujos de caja.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Fundamentos Contables (Sem 1)<br>
                                 • Fundamentos de Economía (Sem 1)<br>
                                 • Costos (Sem 2)<br>
@@ -14760,10 +14760,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 7 -->
                         <tr style="border-bottom:1px solid #E2E8F0;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">7</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Diseña estrategias de gestión del talento humano enfocadas en la permanencia de los trabajadores, basadas en análisis de cargos, roles y responsabilidades, integrando enfoques innovadores en liderazgo, compensación salarial y bienestar integral.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Administración de Salarios (Sem 5)<br>
                                 • Gerencia de Talento Humano (Sem 7)<br>
                                 • Habilidades Gerenciales (Sem 8)
@@ -14779,10 +14779,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 8 -->
                         <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">8</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Diseña estrategias de innovación tecnológica y sistemas de información gerencial que optimicen la productividad y competitividad de la organización, alineando las soluciones con la planeación estratégica y la sostenibilidad.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Tecnología e Innovación (Sem 6)<br>
                                 • Sistema de Información Gerencial (Sem 8)
                             </td>
@@ -14797,10 +14797,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 9 -->
                         <tr style="border-bottom:1px solid #E2E8F0;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">9</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Demuestra a través de textos escritos y relatos orales que puede comunicarse en segunda lengua (inglés) en nivel B1 acorde con los estándares del Marco Común Europeo de Referencia (MCER).
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Inglés I (Sem 1)<br>
                                 • Inglés II (Sem 2)<br>
                                 • Inglés III (Sem 3)<br>
@@ -14819,10 +14819,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 10 -->
                         <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">10</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Ejecuta proyectos emprendedores innovadores mediante la identificación de oportunidades de negocio, creatividad en modelos de ingresos y desarrollo de planes estratégicos que optimicen los recursos disponibles.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Cultura Emprendedora (Sem 3)<br>
                                 • Creatividad e Innovación (Sem 4)<br>
                                 • Proyecto Empresarial (Sem 7)
@@ -14838,10 +14838,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 11 -->
                         <tr style="border-bottom:1px solid #E2E8F0;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">11</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Demuestra transparencia, responsabilidad e imparcialidad en la dirección del proceso administrativo, aplicando principios éticos, responsabilidad social empresarial (RSE) y directrices de gobierno corporativo.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Liderazgo (Sem 4)<br>
                                 • Electiva Humanística I (Sem 4)<br>
                                 • Electiva Humanística II (Sem 6)<br>
@@ -14861,10 +14861,10 @@ window.SECTIONS['c3'] = `
                         <!-- RAP 12 -->
                         <tr style="border-bottom:2px solid #CBD5E1; background:#F8FAFC;">
                             <td style="text-align:center; font-weight:800; color:var(--carbon);">12</td>
-                            <td style="padding:10px; font-weight:700; color:#1E293B; line-height:1.45;">
+                            <td style="padding:10px; font-weight:700; color:#1A1A1B; line-height:1.45;">
                                 Formula y ejecuta proyectos de investigación formativa utilizando metodologías cualitativas y cuantitativas para abordar y resolver problemas específicos del contexto empresarial y social de acuerdo a su nivel formativo.
                             </td>
-                            <td style="padding:10px; color:#0369A1; line-height:1.5;">
+                            <td style="padding:10px; color:#C2410C; line-height:1.5;">
                                 • Metodología de la Investigación (Sem 2)<br>
                                 • Métodos Cualitativos y Cuantitativos (Sem 6)<br>
                                 • Proyecto de Grado I (Sem 8)<br>
@@ -14891,8 +14891,8 @@ window.SECTIONS['c3'] = `
         
     <div class="tab-panel" id="c3-v-rutas" style="display:none;">
         <!-- BANNER DE ENCABEZADO -->
-        <div style="background:linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; border-left:6px solid #3B82F6; box-shadow:0 8px 20px rgba(0,0,0,0.12);">
-            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1.5px; color:#93C5FD; font-weight:800; margin-bottom:6px;">
+        <div style="background:linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%); color:#fff; padding:24px; border-radius:12px; margin-bottom:24px; border-left:6px solid #F39200; box-shadow:0 8px 20px rgba(0,0,0,0.12);">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1.5px; color:#FED7AA; font-weight:800; margin-bottom:6px;">
                 <i class="fas fa-route"></i> Numeral 3.6.5 · Documento Maestro Inicial (Anexo 5)
             </div>
             <h3 style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:#fff; margin-bottom:8px;">
@@ -14919,9 +14919,9 @@ window.SECTIONS['c3'] = `
 
         <!-- 3 PILARES DE LA TRAYECTORIA FORMATIVA -->
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:24px;">
-            <div class="card" style="border-top:4px solid #2563EB;">
+            <div class="card" style="border-top:4px solid #F39200;">
                 <h5 style="font-size:0.92rem; font-weight:800; color:#1E3A8A; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                    <i class="fas fa-brain" style="color:#2563EB;"></i> 1. Autoconstrucción y Aprendizaje Progresivo
+                    <i class="fas fa-brain" style="color:#F39200;"></i> 1. Autoconstrucción y Aprendizaje Progresivo
                 </h5>
                 <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
                     La trayectoria no es una simple serie de requisitos rígidos, sino una estrategia para desarrollar progresivamente habilidades, competencias y valores. Guía al estudiante en la autoconstrucción del conocimiento para sustentar el perfil de egreso.
@@ -14949,39 +14949,39 @@ window.SECTIONS['c3'] = `
         <div class="card" style="margin-bottom:24px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:8px;">
                 <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin:0;">
-                    <i class="fas fa-th-list" style="color:#2563EB;"></i> Despliegue de la Ruta Modular por Semestres (I al IX)
+                    <i class="fas fa-th-list" style="color:#F39200;"></i> Despliegue de la Ruta Modular por Semestres (I al IX)
                 </h4>
                 <div style="font-size:0.75rem; color:var(--gray-text);">
                     Distribuido en <strong>Bloque A (Sem. 1-8)</strong> y <strong>Bloque B (Sem. 9-16)</strong>
                 </div>
             </div>
             
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE I</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 1 (7 Asignaturas · 18 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 8 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Matemáticas Básicas</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     3 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Constitución y Democracia</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15005,12 +15005,12 @@ window.SECTIONS['c3'] = `
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés I</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Expresión Oral y Escrita</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     3 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15024,27 +15024,27 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE II</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 2 (7 Asignaturas · 17 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 7 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Cálculo</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     3 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15073,7 +15073,7 @@ window.SECTIONS['c3'] = `
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Metodología de la Investigación</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15083,7 +15083,7 @@ window.SECTIONS['c3'] = `
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés II</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li>
@@ -15092,27 +15092,27 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE III</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 3 (7 Asignaturas · 17 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 7 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Estadística Descriptiva</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     3 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15141,7 +15141,7 @@ window.SECTIONS['c3'] = `
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Cultura Emprendedora</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15151,7 +15151,7 @@ window.SECTIONS['c3'] = `
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés III</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li>
@@ -15160,27 +15160,27 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE IV</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 4 (7 Asignaturas · 17 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 10 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 7 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 10 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Estadística Inferencial</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     3 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15209,7 +15209,7 @@ window.SECTIONS['c3'] = `
                     <ul style="list-style:none; padding:0; margin:0;">
                         <li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Creatividad e Innovación</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15219,7 +15219,7 @@ window.SECTIONS['c3'] = `
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés IV</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li>
@@ -15228,21 +15228,21 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE V</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 5 (7 Asignaturas · 18 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 9 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 9 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
@@ -15282,7 +15282,7 @@ window.SECTIONS['c3'] = `
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés V</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15296,21 +15296,21 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VI</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 6 (7 Asignaturas · 18 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 12 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 12 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 6 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 12 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
@@ -15331,7 +15331,7 @@ window.SECTIONS['c3'] = `
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Métodos Cuantitativos y Cualitativos</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     3 cr · Transversal
                 </span>
             </li>
@@ -15355,7 +15355,7 @@ window.SECTIONS['c3'] = `
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Inglés VI</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li>
@@ -15364,21 +15364,21 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VII</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 7 (7 Asignaturas · 19 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 11 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 11 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 8 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 11 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
@@ -15432,21 +15432,21 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE VIII</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 8 (6 Asignaturas · 17 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 9 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 9 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 8 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (3 asignaturas · 9 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
@@ -15481,7 +15481,7 @@ window.SECTIONS['c3'] = `
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
                 <span style="font-size:0.82rem; font-weight:600; color:var(--carbon);">Deontología</span>
-                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                     2 cr · Transversal
                 </span>
             </li><li style="padding:7px 10px; margin-bottom:6px; background:#fff; border:1px solid #E2E8F0; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
@@ -15495,21 +15495,21 @@ window.SECTIONS['c3'] = `
             </div>
         </div>
         
-        <div class="card" style="margin-bottom:18px; border-left:5px solid #2563EB; background:#FAFAFA;">
+        <div class="card" style="margin-bottom:18px; border-left:5px solid #F39200; background:#FAFAFA;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <span style="background:#1E3A8A; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">SEMESTRE IX</span>
                     <h5 style="margin:0; font-size:0.95rem; font-weight:800; color:var(--carbon);">Semestre 9 (7 Asignaturas · 20 Créditos)</h5>
                 </div>
                 <div style="display:flex; gap:8px;">
-                    <span style="font-size:0.72rem; background:#DBEAFE; color:#1E40AF; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 11 cr</span>
+                    <span style="font-size:0.72rem; background:#FFF3E0; color:#D97F00; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 1: 11 cr</span>
                     <span style="font-size:0.72rem; background:#E0E7FF; color:#3730A3; padding:2px 8px; border-radius:4px; font-weight:700;">Bloque 2: 9 cr</span>
                 </div>
             </div>
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px;">
                 <!-- Bloque 1 -->
-                <div style="background:#F0F7FF; border:1px solid #BFDBFE; border-radius:8px; padding:12px;">
-                    <div style="font-size:0.78rem; font-weight:800; color:#1D4ED8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
+                <div style="background:#F0F7FF; border:1px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#D97F00; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-calendar-check"></i> Semanas 1 a 8 (4 asignaturas · 11 créditos)
                     </div>
                     <ul style="list-style:none; padding:0; margin:0;">
@@ -15569,7 +15569,7 @@ window.SECTIONS['c3'] = `
         <div class="card" style="margin-bottom:24px;">
             <div style="margin-bottom:14px;">
                 <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:var(--carbon); margin-bottom:4px;">
-                    <i class="fas fa-table" style="color:#2563EB;"></i> Tabla 12. Rutas de formación programa académico
+                    <i class="fas fa-table" style="color:#F39200;"></i> Tabla 12. Rutas de formación programa académico
                 </h4>
                 <p style="font-size:0.82rem; color:var(--gray-text); margin:0;">
                     Transcripción exacta y fidedigna de la <strong>Tabla 12 del Documento Maestro Anexo 5 (págs. 118-119)</strong>:
@@ -15807,7 +15807,7 @@ window.SECTIONS['c3'] = `
         <!-- SÍNTESIS PEDAGÓGICA -->
         <div style="background:#F8FAFC; border:1px solid #CBD5E1; border-radius:8px; padding:16px;">
             <h5 style="font-size:0.88rem; font-weight:800; color:var(--carbon); margin-bottom:6px;">
-                <i class="fas fa-info-circle" style="color:#2563EB;"></i> Articulación con el Perfil de Egreso y Competencias
+                <i class="fas fa-info-circle" style="color:#F39200;"></i> Articulación con el Perfil de Egreso y Competencias
             </h5>
             <p style="font-size:0.82rem; color:var(--gray-text); line-height:1.55; margin:0;">
                 Esta trayectoria de aprendizaje implica involucrar la vivencia del estudiante en la síntesis compleja de teoría (saber), práctica (hacer) y ética (ser) con el fin de alcanzar el perfil de egreso de los estudiantes del Programa. Por su parte, el perfil de egreso está dado por las competencias, los aprendizajes, las habilidades, etc., que se desarrollan en los estudiantes en su proceso de formación, es decir, en su trayectoria de aprendizaje (Anexo 5, pág. 119).
@@ -15860,7 +15860,7 @@ window.SECTIONS['c3'] = `
                     <span class="badge-presencial" style="background:#059669; color:#fff; font-size:0.74rem;">
                         <i class="fas fa-university"></i> Presencial (1:2): 16h/cr Directas · 32h/cr Indep. (48h/96h para 3 cr)
                     </span>
-                    <span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.74rem;">
+                    <span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.74rem;">
                         <i class="fas fa-laptop"></i> Virtual (1:3): 12h/cr Mediadas · 36h/cr Indep. (36h/108h para 3 cr)
                     </span>
                 </div>
@@ -15895,217 +15895,217 @@ window.SECTIONS['c3'] = `
                     </tr>
                 </thead>
                 <tbody><tr>
-            <td class="matrix-comp-header comp-border-ciencias_basicas" style="border-left:4px solid #2563EB; cursor:pointer; transition:background 0.2s;" onclick="openAreaModal('ciencias_basicas', 'prop')" title="Clic para ver desagregado del área en ventana emergente">
+            <td class="matrix-comp-header comp-border-ciencias_basicas" style="border-left:4px solid #F39200; cursor:pointer; transition:background 0.2s;" onclick="openAreaModal('ciencias_basicas', 'prop')" title="Clic para ver desagregado del área en ventana emergente">
                 <span class="matrix-area-badge area-transversal">Área Transversal</span>
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
-                    <i class="fas fa-calculator" style="color:#2563EB; margin-right:4px;"></i> Ciencias Básicas y Cuantitativas
+                    <i class="fas fa-calculator" style="color:#F39200; margin-right:4px;"></i> Ciencias Básicas y Cuantitativas
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_1', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Álgebra Lineal</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_7', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Cálculo Diferencial</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Álgebra Lineal</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_8', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Estadística Descriptiva</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Álgebra Lineal</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_13', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Estadística Inferencial</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Descriptiva</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_31', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Big Data y Analítica de Datos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Estadística Inferencial</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-ciencias_basicas" onclick="selectMatrixSubject('prop_32', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Métodos Cualitativos y Cuantitativos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Competencias Investigativas</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
-            <td class="matrix-comp-header comp-border-legislacion_habilidades" style="border-left:4px solid #1D4ED8; cursor:pointer; transition:background 0.2s;" onclick="openAreaModal('legislacion_habilidades', 'prop')" title="Clic para ver desagregado del área en ventana emergente">
+            <td class="matrix-comp-header comp-border-legislacion_habilidades" style="border-left:4px solid #D97F00; cursor:pointer; transition:background 0.2s;" onclick="openAreaModal('legislacion_habilidades', 'prop')" title="Clic para ver desagregado del área en ventana emergente">
                 <span class="matrix-area-badge area-transversal">Área Transversal</span>
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
-                    <i class="fas fa-balance-scale" style="color:#1D4ED8; margin-right:4px;"></i> Legislación, Investigación y Habilidades
+                    <i class="fas fa-balance-scale" style="color:#D97F00; margin-right:4px;"></i> Legislación, Investigación y Habilidades
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_2', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Comunicación Oral y Escrita</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_3', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Cátedra de la Paz y Resolución de Conflictos</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_9', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés I</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_11', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Legislación Comercial</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_14', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés II</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés I</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_19', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Competencias Investigativas</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Comunicación Oral y Escrita</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_20', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inglés III</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Inglés II</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-legislacion_habilidades" onclick="selectMatrixSubject('prop_24', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Derecho Laboral y Seguridad Social</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Legislación Comercial</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
@@ -16114,175 +16114,175 @@ window.SECTIONS['c3'] = `
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
                     <i class="fas fa-briefcase" style="color:#F39200; margin-right:4px;"></i> Administración y Gestión
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_4', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos de Administración</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_17', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Procesos Administrativos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_18', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Teoría Organizacional</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Administración</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_25', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia del Talento Humano</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Teoría Organizacional</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_27', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gestión de Operaciones</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Procesos Administrativos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_28', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Sistemas Integrados de Gestión (HSEQ)</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Procesos Administrativos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_37', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Pensamiento Estratégico y Prospectivo</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia del Talento Humano</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_40', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia de Producción</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gestión de Operaciones</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_45', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Juego Gerencial (Simulación de Negocios)</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Pensamiento Estratégico y Prospectivo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_46', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Habilidades Gerenciales y Liderazgo</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia del Talento Humano</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_47', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia de la Calidad</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Sistemas Integrados de Gestión (HSEQ)</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-admon_gestion" onclick="selectMatrixSubject('prop_48', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Proyecto de Grado</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Métodos Cualitativos y Cuantitativos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td></tr><tr>
@@ -16291,133 +16291,133 @@ window.SECTIONS['c3'] = `
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
                     <i class="fas fa-chart-pie" style="color:#D97706; margin-right:4px;"></i> Economía y Finanzas
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_5', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos Contables y Financieros</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_10', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Microeconomía</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_12', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S2</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S2</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Costos y Presupuestos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos Contables y Financieros</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_15', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Macroeconomía</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Microeconomía</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_16', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S3</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S3</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Análisis Financiero</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Costos y Presupuestos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_22', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Matemática Financiera</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Cálculo Diferencial</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_23', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Economía Colombiana e Internacional</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Macroeconomía</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_26', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Administración Financiera</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Análisis Financiero</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-economia_finanzas" onclick="selectMatrixSubject('prop_34', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Legislación Tributaria</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Derecho Laboral y Seguridad Social</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr><tr>
@@ -16426,147 +16426,147 @@ window.SECTIONS['c3'] = `
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
                     <i class="fas fa-lightbulb" style="color:#EA580C; margin-right:4px;"></i> Mercadeo, Tecnología y Emprendimiento
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_6', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S1</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S1</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Fundamentos de Mercadeo</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_21', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S4</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S4</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Investigación de Mercados</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Fundamentos de Mercadeo</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_29', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Negocios y Gerencia Internacional</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Economía Colombiana e Internacional</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_33', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia de Marketing</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Investigación de Mercados</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_35', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Modelos de Emprendimiento</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_38', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Formulación y Evaluación de Proyectos</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Administración Financiera</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_39', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Gerencia de Ventas y Canales de Distribución</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Marketing</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_41', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">E-Commerce</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Gerencia de Marketing</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_43', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Inteligencia Artificial</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Big Data y Analítica de Datos</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div><div class="malla-matrix-subject-card comp-border-mercadeo_tech" onclick="selectMatrixSubject('prop_44', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S8</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S8</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">TP</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Laboratorio de Innovación y Emprendimiento</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Modelos de Emprendimiento</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td></tr><tr>
@@ -16575,49 +16575,49 @@ window.SECTIONS['c3'] = `
                 <div class="matrix-comp-title" style="color:var(--carbon); font-weight:800; font-size:0.75rem; margin-top:3px;">
                     <i class="fas fa-sliders-h" style="color:#475569; margin-right:4px;"></i> Electivas Profesionales
                 </div>
-                <div style="font-size:0.62rem; color:#0284C7; font-weight:700; margin-top:4px;">
+                <div style="font-size:0.62rem; color:#EA580C; font-weight:700; margin-top:4px;">
                     <i class="fas fa-external-link-alt"></i> Ver Desagregado
                 </div>
             </td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_30', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S5</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S5</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Profesional I</div>
                         
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_36', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S6</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S6</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Profesional II</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profesional I</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div class="malla-matrix-subject-card comp-border-electivo" onclick="selectMatrixSubject('prop_42', 'prop')" title="Clic para ver ficha completa en ventana emergente">
                         <div style="display:flex; justify-content:space-between; align-items:center; gap:2px; margin-bottom:2px;">
-                            <span style="font-size:0.58rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:1px 3px; border-radius:3px;">S7</span>
+                            <span style="font-size:0.58rem; font-weight:800; color:#C2410C; background:#FFF3E0; padding:1px 3px; border-radius:3px;">S7</span>
                             <div>
                                 <span style="font-size:0.58rem; font-weight:800; color:#475569; background:#F1F5F9; padding:1px 3px; border-radius:3px;">3cr</span>
-                                <span style="font-size:0.55rem; font-weight:800; color:#1E293B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
+                                <span style="font-size:0.55rem; font-weight:800; color:#1A1A1B; background:#E2E8F0; padding:1px 3px; border-radius:3px; margin-left:2px;">T</span>
                             </div>
                         </div>
                         <div class="subject-card-title">Electiva Profesional III</div>
                         <div class="matrix-card-prereq"><i class="fas fa-link" style="color:var(--orange);"></i> Electiva Profesional II</div>
                         <div style="font-size:0.53rem; margin-top:3px; display:flex; flex-direction:column; gap:1px; line-height:1.2;">
-                            <span style="color:#0369A1; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
+                            <span style="color:#C2410C; font-weight:700;"><i class="fas fa-university"></i> P (1:2): 48h / 96h</span>
                             <span style="color:#15803D; font-weight:700;"><i class="fas fa-laptop"></i> V (1:3): 36h / 108h</span>
                         </div>
                     </div></td><td class="matrix-cell"><div style="height:100%; min-height:48px; background:#F8FAFC; border:1px dashed #E2E8F0; border-radius:6px;"></div></td></tr></tbody></table></div></div>
@@ -16663,14 +16663,14 @@ window.SECTIONS['c3'] = `
         <!-- 4 KPI CARDS CLICKEABLES CON RESUMEN DE TEÓRICAS Y PRÁCTICAS -->
         <div class="grid-4" style="margin-bottom:24px;">
             <!-- ÁREA TRANSVERSAL -->
-            <div class="card" style="border-top:4px solid #2563EB; text-align:center; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;" onclick="openAreaModal('TRANSVERSAL', 'prop')" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 16px rgba(37,99,235,0.2)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';" title="Clic para desplegar ventana emergente del Área Transversal">
-                <div style="font-size:1.8rem; font-weight:900; color:#2563EB;">42 cr</div>
+            <div class="card" style="border-top:4px solid #F39200; text-align:center; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;" onclick="openAreaModal('TRANSVERSAL', 'prop')" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 16px rgba(243, 146, 0,0.2)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';" title="Clic para desplegar ventana emergente del Área Transversal">
+                <div style="font-size:1.8rem; font-weight:900; color:#F39200;">42 cr</div>
                 <h4 style="font-size:0.95rem; margin-top:4px; margin-bottom:2px; color:var(--carbon);">Área Transversal</h4>
                 <p style="font-size:0.78rem; color:var(--gray-text); margin:0;">14 Asignaturas (<strong>29,17%</strong>)</p>
-                <div style="margin-top:8px; font-size:0.74rem; font-weight:700; color:#1D4ED8; background:#EFF6FF; padding:4px 8px; border-radius:5px;">
+                <div style="margin-top:8px; font-size:0.74rem; font-weight:700; color:#D97F00; background:#FFF7ED; padding:4px 8px; border-radius:5px;">
                     <i class="fas fa-chalkboard-teacher"></i> 10 Teóricas (30 cr) · 4 Teórico-Prácticas (12 cr)
                 </div>
-                <div style="margin-top:8px; font-size:0.72rem; color:#0284C7; font-weight:800;">
+                <div style="margin-top:8px; font-size:0.72rem; color:#EA580C; font-weight:800;">
                     <i class="fas fa-external-link-alt"></i> Clic para ver ventana emergente
                 </div>
             </div>
@@ -16718,10 +16718,10 @@ window.SECTIONS['c3'] = `
         <!-- TABLA 15 Y TABLA 16 EN DUAL GRID -->
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(420px, 1fr)); gap:20px; margin-bottom:24px;">
             <!-- TABLA 15: RELACIÓN ÁREA CON COMPONENTES -->
-            <div class="card" style="border-top:4px solid #0284C7;">
+            <div class="card" style="border-top:4px solid #EA580C;">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
                     <h4 style="font-family:var(--font-heading); font-size:1rem; font-weight:800; color:var(--carbon); margin:0;">
-                        <i class="fas fa-sitemap" style="color:#0284C7; margin-right:6px;"></i> Tabla 15. Relación de área de formación con componentes del programa
+                        <i class="fas fa-sitemap" style="color:#EA580C; margin-right:6px;"></i> Tabla 15. Relación de área de formación con componentes del programa
                     </h4>
                     <span style="font-size:0.72rem; color:#475569; background:#F1F5F9; padding:2px 8px; border-radius:4px;">
                         Doc. Maestro, págs. 108–109
@@ -16738,15 +16738,15 @@ window.SECTIONS['c3'] = `
                         </thead>
                         <tbody>
                             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('TRANSVERSAL', 'prop')">
-                                <td rowspan="2" style="font-weight:700; color:#0369A1; vertical-align:middle; background:#F0F9FF;">
+                                <td rowspan="2" style="font-weight:700; color:#C2410C; vertical-align:middle; background:#FFFBEB;">
                                     Transversal<br><span style="font-size:0.7rem; color:#64748B;">(14 asig · 42 cr)</span>
                                 </td>
                                 <td style="padding:7px 10px; font-weight:600;">Ciencias Básicas y Cuantitativas</td>
-                                <td style="padding:7px 10px; text-align:center; font-weight:700; color:#0369A1;">6 asig (18 cr) · 12,5%</td>
+                                <td style="padding:7px 10px; text-align:center; font-weight:700; color:#C2410C;">6 asig (18 cr) · 12,5%</td>
                             </tr>
                             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('TRANSVERSAL', 'prop')">
                                 <td style="padding:7px 10px; font-weight:600;">Legislación, Investigación y Habilidades</td>
-                                <td style="padding:7px 10px; text-align:center; font-weight:700; color:#0369A1;">8 asig (24 cr) · 16,7%</td>
+                                <td style="padding:7px 10px; text-align:center; font-weight:700; color:#C2410C;">8 asig (24 cr) · 16,7%</td>
                             </tr>
                             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('DISCIPLINAR', 'prop')">
                                 <td rowspan="3" style="font-weight:700; color:#C2410C; vertical-align:middle; background:#FFF7ED;">
@@ -16803,9 +16803,9 @@ window.SECTIONS['c3'] = `
                                 <td style="padding:7px 10px; text-align:center; font-weight:700; color:#059669;">25,0%</td>
                             </tr>
                             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('ciencias_basicas', 'prop')">
-                                <td style="padding:7px 10px; font-weight:700; color:#0369A1;"><i class="fas fa-calculator"></i> Ciencias Básicas y Cuantitativas</td>
+                                <td style="padding:7px 10px; font-weight:700; color:#C2410C;"><i class="fas fa-calculator"></i> Ciencias Básicas y Cuantitativas</td>
                                 <td style="padding:7px 10px; text-align:center; font-weight:700;">6</td>
-                                <td style="padding:7px 10px; text-align:center; font-weight:800; color:#0369A1;">18</td>
+                                <td style="padding:7px 10px; text-align:center; font-weight:800; color:#C2410C;">18</td>
                                 <td style="padding:7px 10px; text-align:center; font-weight:700; color:#059669;">12,5%</td>
                             </tr>
                             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('economia_finanzas', 'prop')">
@@ -16815,9 +16815,9 @@ window.SECTIONS['c3'] = `
                                 <td style="padding:7px 10px; text-align:center; font-weight:700; color:#059669;">18,8%</td>
                             </tr>
                             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('legislacion_habilidades', 'prop')">
-                                <td style="padding:7px 10px; font-weight:700; color:#0369A1;"><i class="fas fa-balance-scale"></i> Legislación, Inv. y Habilidades</td>
+                                <td style="padding:7px 10px; font-weight:700; color:#C2410C;"><i class="fas fa-balance-scale"></i> Legislación, Inv. y Habilidades</td>
                                 <td style="padding:7px 10px; text-align:center; font-weight:700;">8</td>
-                                <td style="padding:7px 10px; text-align:center; font-weight:800; color:#0369A1;">24</td>
+                                <td style="padding:7px 10px; text-align:center; font-weight:800; color:#C2410C;">24</td>
                                 <td style="padding:7px 10px; text-align:center; font-weight:700; color:#059669;">16,7%</td>
                             </tr>
                             <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openAreaModal('mercadeo_tech', 'prop')">
@@ -16859,7 +16859,7 @@ window.SECTIONS['c3'] = `
                     <span class="badge-presencial" style="background:#059669; color:#fff; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">
                         Presencial: 48h Directas / 96h Indep.
                     </span>
-                    <span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">
+                    <span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:12px;">
                         Virtual: 36h Mediadas / 108h Indep.
                     </span>
                 </div>
@@ -16884,14 +16884,14 @@ window.SECTIONS['c3'] = `
                     </thead>
                     <tbody>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_1', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Álgebra Lineal
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Ciencias Básicas y Cuantitativas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -16903,14 +16903,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_2', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Comunicación Oral y Escrita
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -16922,14 +16922,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_3', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Cátedra de la Paz y Resolución de Conflictos
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -16941,14 +16941,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_7', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Cálculo Diferencial
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Ciencias Básicas y Cuantitativas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -16960,14 +16960,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_8', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Estadística Descriptiva
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Ciencias Básicas y Cuantitativas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -16979,14 +16979,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_9', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Inglés I
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -16998,14 +16998,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_11', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Legislación Comercial
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17017,14 +17017,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_13', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Estadística Inferencial
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Ciencias Básicas y Cuantitativas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17036,14 +17036,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_14', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Inglés II
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17055,14 +17055,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_19', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Competencias Investigativas
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17074,14 +17074,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_20', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Inglés III
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17093,14 +17093,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_24', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Derecho Laboral y Seguridad Social
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Legislación, Investigación y Habilidades</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17112,14 +17112,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_31', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Big Data y Analítica de Datos
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Ciencias Básicas y Cuantitativas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17131,14 +17131,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_32', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Transversal</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Transversal</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Métodos Cualitativos y Cuantitativos
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Ciencias Básicas y Cuantitativas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17151,22 +17151,22 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
             <td colspan="4" style="padding:8px 10px; text-align:right; color:var(--carbon);">SUBTOTAL Área Transversal (14 Asignaturas):</td>
-            <td style="padding:8px 10px; text-align:center; color:#0284C7;">14</td>
+            <td style="padding:8px 10px; text-align:center; color:#EA580C;">14</td>
             <td style="padding:8px 10px; text-align:center; color:#D97706;">0</td>
             <td style="padding:8px 10px; text-align:center; color:var(--carbon); font-size:0.9rem;">42</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">672h</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">1344h</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">672h</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">1344h</td>
             <td colspan="2"></td>
         </tr>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_4', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Fundamentos de Administración
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17178,14 +17178,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_5', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Fundamentos Contables y Financieros
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17197,14 +17197,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_6', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S1</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S1</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Fundamentos de Mercadeo
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17216,14 +17216,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_10', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Microeconomía
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17235,14 +17235,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_12', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S2</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S2</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Costos y Presupuestos
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17254,14 +17254,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_15', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Macroeconomía
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17273,14 +17273,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_16', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Análisis Financiero
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17292,14 +17292,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_17', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Procesos Administrativos
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17311,14 +17311,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_18', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S3</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S3</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Teoría Organizacional
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17330,14 +17330,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_21', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Investigación de Mercados
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17349,14 +17349,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_22', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Matemática Financiera
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17368,14 +17368,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_23', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S4</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S4</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Economía Colombiana e Internacional
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17387,14 +17387,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_25', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Gerencia del Talento Humano
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17406,14 +17406,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_26', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Administración Financiera
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17425,14 +17425,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_27', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Gestión de Operaciones
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17444,14 +17444,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_28', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Sistemas Integrados de Gestión (HSEQ)
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17463,14 +17463,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_29', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Negocios y Gerencia Internacional
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17482,14 +17482,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_33', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Gerencia de Marketing
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17501,14 +17501,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_34', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Legislación Tributaria
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Economía y Finanzas</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17520,14 +17520,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_35', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Modelos de Emprendimiento
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17539,14 +17539,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_37', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Pensamiento Estratégico y Prospectivo
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17558,14 +17558,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_38', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Formulación y Evaluación de Proyectos
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17577,14 +17577,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_39', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Gerencia de Ventas y Canales de Distribución
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17596,14 +17596,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_40', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Gerencia de Producción
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17615,14 +17615,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_41', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     E-Commerce
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17634,14 +17634,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_43', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Inteligencia Artificial
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17653,14 +17653,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_44', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Laboratorio de Innovación y Emprendimiento
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Mercadeo, Tecnología y Emprendimiento</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17672,14 +17672,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_45', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Juego Gerencial (Simulación de Negocios)
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17691,14 +17691,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_46', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Habilidades Gerenciales y Liderazgo
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17710,14 +17710,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_47', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Gerencia de la Calidad
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
                 <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#ECFDF5; color:#047857;">Teórico-Práctica (TP)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17729,14 +17729,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_48', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Disciplinar</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S8</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Disciplinar</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S8</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Proyecto de Grado
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Administración y Gestión</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;">X</td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17749,22 +17749,22 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
             <td colspan="4" style="padding:8px 10px; text-align:right; color:var(--carbon);">SUBTOTAL Área Disciplinar (31 Asignaturas):</td>
-            <td style="padding:8px 10px; text-align:center; color:#0284C7;">31</td>
+            <td style="padding:8px 10px; text-align:center; color:#EA580C;">31</td>
             <td style="padding:8px 10px; text-align:center; color:#D97706;">0</td>
             <td style="padding:8px 10px; text-align:center; color:var(--carbon); font-size:0.9rem;">93</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">1488h</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">2976h</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">1488h</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">2976h</td>
             <td colspan="2"></td>
         </tr>
                         <tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_30', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Electiva</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S5</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Electiva</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S5</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Electiva Profesional I
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Electivas Profesionales</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17776,14 +17776,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_36', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Electiva</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S6</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Electiva</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S6</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Electiva Profesional II
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Electivas Profesionales</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17795,14 +17795,14 @@ window.SECTIONS['c3'] = `
                     </button>
                 </td>
             </tr><tr style="border-bottom:1px solid #E2E8F0; cursor:pointer;" onclick="openSubjectModal('prop_42', 'prop')" title="Clic para ver ficha completa">
-                <td style="padding:8px 10px; font-weight:700; color:#1E293B;">Área Electiva</td>
-                <td style="padding:8px 10px; font-weight:800; color:#0369A1; text-align:center;">S7</td>
+                <td style="padding:8px 10px; font-weight:700; color:#1A1A1B;">Área Electiva</td>
+                <td style="padding:8px 10px; font-weight:800; color:#C2410C; text-align:center;">S7</td>
                 <td style="padding:8px 10px; font-weight:700; color:var(--carbon);">
                     Electiva Profesional III
                     <div style="font-size:0.7rem; color:#64748B; font-weight:500;">Comp: Electivas Profesionales</div>
                 </td>
-                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">Teórica (T)</span></td>
-                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#0284C7;"></td>
+                <td style="padding:8px 10px; text-align:center;"><span style="font-size:0.72rem; font-weight:800; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">Teórica (T)</span></td>
+                <td style="padding:8px 10px; text-align:center; font-weight:700; color:#EA580C;"></td>
                 <td style="padding:8px 10px; text-align:center; font-weight:700; color:#D97706;">X</td>
                 <td style="padding:8px 10px; text-align:center; font-weight:800; background:#F8FAFC;">3</td>
                 <td style="padding:8px 10px; text-align:center; color:#475569;">48h</td>
@@ -17815,11 +17815,11 @@ window.SECTIONS['c3'] = `
                 </td>
             </tr><tr style="background:#F1F5F9; font-weight:800; border-bottom:2px solid #CBD5E1;">
             <td colspan="4" style="padding:8px 10px; text-align:right; color:var(--carbon);">SUBTOTAL Área Electiva (3 Asignaturas):</td>
-            <td style="padding:8px 10px; text-align:center; color:#0284C7;">0</td>
+            <td style="padding:8px 10px; text-align:center; color:#EA580C;">0</td>
             <td style="padding:8px 10px; text-align:center; color:#D97706;">3</td>
             <td style="padding:8px 10px; text-align:center; color:var(--carbon); font-size:0.9rem;">9</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">144h</td>
-            <td style="padding:8px 10px; text-align:center; color:#0369A1;">288h</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">144h</td>
+            <td style="padding:8px 10px; text-align:center; color:#C2410C;">288h</td>
             <td colspan="2"></td>
         </tr>
                     </tbody>
@@ -17850,8 +17850,8 @@ window.SECTIONS['c3'] = `
  <i class="fas fa-bullseye" style="color:var(--orange);"></i> Los 10 Resultados de Aprendizaje del Programa (RAPs Oficiales)
  </h4>
  <div class="grid-2" style="margin-bottom:28px;">
- <div class="card" style="border-top:4px solid #0284C7;">
- <span class="badge-presencial" style="background:#0284C7; color:#fff; font-weight:800;">RAP 1 - Gestión Estratégica</span>
+ <div class="card" style="border-top:4px solid #EA580C;">
+ <span class="badge-presencial" style="background:#EA580C; color:#fff; font-weight:800;">RAP 1 - Gestión Estratégica</span>
  <p style="font-size:0.84rem; color:var(--carbon); margin-top:8px; font-weight:600;">Diseña y aplica modelos de gestión estratégica para optimizar la toma de decisiones organizacionales.</p>
  <div style="font-size:0.78rem; color:var(--gray-text); margin-top:6px;"><strong>Asignaturas Clave:</strong> Teoría Organizacional, Gerencia Estratégica, Planeación y Prospectiva.</div>
  </div>
@@ -17890,8 +17890,8 @@ window.SECTIONS['c3'] = `
  <p style="font-size:0.84rem; color:var(--carbon); margin-top:8px; font-weight:600;">Desarrolla proyectos de investigación aplicada orientados a solucionar problemáticas empresariales.</p>
  <div style="font-size:0.78rem; color:var(--gray-text); margin-top:6px;"><strong>Asignaturas Clave:</strong> Metodología de Investigación, Proyecto de Grado I, Proyecto de Grado II.</div>
  </div>
- <div class="card" style="border-top:4px solid #2563EB;">
- <span class="badge-presencial" style="background:#2563EB; color:#fff; font-weight:800;">RAP 9 - Mercado Global & E-Commerce</span>
+ <div class="card" style="border-top:4px solid #F39200;">
+ <span class="badge-presencial" style="background:#F39200; color:#fff; font-weight:800;">RAP 9 - Mercado Global & E-Commerce</span>
  <p style="font-size:0.84rem; color:var(--carbon); margin-top:8px; font-weight:600;">Diseña estrategias de comunicación digital, internacionalización y marketing electrónico.</p>
  <div style="font-size:0.78rem; color:var(--gray-text); margin-top:6px;"><strong>Asignaturas Clave:</strong> Fundamentos de Mercadeo, E-Commerce y Marketing Digital, Negocios Internacionales.</div>
  </div>
@@ -17910,8 +17910,8 @@ window.SECTIONS['c3'] = `
  Lineamientos de Flexibilidad Curricular en 4 Dimensiones (Plan Propuesto)
  </h3>
  <div class="grid-2" style="margin-bottom:24px;">
- <div class="card" style="border-top:4px solid #0284C7;">
- <h4><i class="fas fa-sliders-h" style="color:#0284C7;"></i> 1. Dimensión de Electividad (12 Créditos)</h4>
+ <div class="card" style="border-top:4px solid #EA580C;">
+ <h4><i class="fas fa-sliders-h" style="color:#EA580C;"></i> 1. Dimensión de Electividad (12 Créditos)</h4>
  <p style="font-size:0.84rem; color:var(--gray-text);">4 asignaturas electivas profesionales (Electivas I a IV) distribuídas en los semestres 5, 6, 7 y 8, permitiendo rutas de profundización en Big Data, Finanzas Digitales, Sostenibilidad o E-Commerce.</p>
  </div>
  <div class="card" style="border-top:4px solid #16A34A;">
@@ -17956,17 +17956,17 @@ window.SECTIONS['c3'] = `
     </div>
 
     <!-- 1. RUTA DE COHERENCIA CURRICULAR -->
-    <div class="card" style="margin-bottom:24px; border-top:4px solid #0284C7;">
+    <div class="card" style="margin-bottom:24px; border-top:4px solid #EA580C;">
         <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">
-            <i class="fas fa-route" style="color:#0284C7;"></i> 1. Ruta de Coherencia Curricular Institucional
+            <i class="fas fa-route" style="color:#EA580C;"></i> 1. Ruta de Coherencia Curricular Institucional
         </h4>
         <p style="font-size:0.85rem; color:var(--gray-text); margin-bottom:16px;">
             Flujo metodológico descendente que asegura la articulación entre el perfil profesional y el aula de clase:
         </p>
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px; text-align:center;">
-            <div style="background:#F0F9FF; border:1px solid #BAE6FD; padding:12px; border-radius:8px;">
-                <div style="font-size:1.2rem; color:#0284C7; margin-bottom:6px;"><i class="fas fa-id-card"></i></div>
-                <div style="font-size:0.75rem; font-weight:800; color:#0369A1;">PASO 1</div>
+            <div style="background:#FFFBEB; border:1px solid #FED7AA; padding:12px; border-radius:8px;">
+                <div style="font-size:1.2rem; color:#EA580C; margin-bottom:6px;"><i class="fas fa-id-card"></i></div>
+                <div style="font-size:0.75rem; font-weight:800; color:#C2410C;">PASO 1</div>
                 <div style="font-size:0.82rem; font-weight:700; color:var(--carbon);">Perfil de Egreso</div>
                 <div style="font-size:0.72rem; color:var(--gray-text); margin-top:4px;">Competencias esperadas en el graduado</div>
             </div>
@@ -18033,25 +18033,25 @@ window.SECTIONS['c3'] = `
 
         <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
             <!-- FASE 1 -->
-            <div style="background:#F8FAFC; border:2px solid #3B82F6; border-radius:10px; padding:16px;">
+            <div style="background:#F8FAFC; border:2px solid #F39200; border-radius:10px; padding:16px;">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-                    <span style="background:#3B82F6; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">
+                    <span style="background:#F39200; color:#fff; font-size:0.75rem; font-weight:800; padding:3px 10px; border-radius:12px;">
                         SEMANAS 1 - 2
                     </span>
-                    <span style="font-size:1.1rem; font-weight:900; color:#3B82F6;">20%</span>
+                    <span style="font-size:1.1rem; font-weight:900; color:#F39200;">20%</span>
                 </div>
                 <h5 style="font-size:0.92rem; font-weight:800; color:var(--carbon); margin-bottom:6px;">Unidad 1: Fundamentación</h5>
                 <p style="font-size:0.78rem; color:var(--gray-text); margin-bottom:12px;">
                     <i class="fas fa-bullseye" style="color:var(--orange);"></i> <strong>Alineada a: RA1</strong><br>
                     Diagnóstico inicial, fundamentación teórica y nivelación conceptual.
                 </p>
-                <div style="background:#EFF6FF; border:1px solid #BFDBFE; padding:8px 10px; border-radius:6px; margin-bottom:6px; font-size:0.78rem; display:flex; justify-content:space-between;">
+                <div style="background:#FFF7ED; border:1px solid #FED7AA; padding:8px 10px; border-radius:6px; margin-bottom:6px; font-size:0.78rem; display:flex; justify-content:space-between;">
                     <span><strong>Actividad 1.1:</strong> Tarea 1 (Taller Aplicativo)</span>
-                    <strong style="color:#1D4ED8;">15%</strong>
+                    <strong style="color:#D97F00;">15%</strong>
                 </div>
-                <div style="background:#EFF6FF; border:1px solid #BFDBFE; padding:8px 10px; border-radius:6px; font-size:0.78rem; display:flex; justify-content:space-between;">
+                <div style="background:#FFF7ED; border:1px solid #FED7AA; padding:8px 10px; border-radius:6px; font-size:0.78rem; display:flex; justify-content:space-between;">
                     <span><strong>Actividad 1.2:</strong> Quiz 1 (Control de Lectura)</span>
-                    <strong style="color:#1D4ED8;">5%</strong>
+                    <strong style="color:#D97F00;">5%</strong>
                 </div>
             </div>
 
@@ -18125,10 +18125,10 @@ window.SECTIONS['c3'] = `
             <tbody>
                 <tr class="row-accent">
                     <td class="lb">
-                        <strong style="color:#3B82F6;"><i class="fas fa-cogs"></i> Criterio Disciplinar</strong><br>
+                        <strong style="color:#F39200;"><i class="fas fa-cogs"></i> Criterio Disciplinar</strong><br>
                         <span style="font-size:0.75rem; color:var(--gray-text);">Dominio técnico, metodológico y conceptual del saber específico.</span>
                     </td>
-                    <td style="text-align:center; font-weight:900; color:#3B82F6; font-size:1.1rem;">60%</td>
+                    <td style="text-align:center; font-weight:900; color:#F39200; font-size:1.1rem;">60%</td>
                     <td style="font-size:0.8rem;">Demuestra dominio exhaustivo de conceptos, rigor metodológico y aplicación innovadora a situaciones empresariales complejas.</td>
                     <td style="font-size:0.8rem;">Aplica adecuadamente los conceptos y metodologías con errores menores no estructurales en el análisis.</td>
                     <td style="font-size:0.8rem;">Aplica conceptos mínimos requeridos pero con debilidades en la profundización o rigor procedimental.</td>
@@ -18221,9 +18221,9 @@ window.SECTIONS['c3'] = `
                     Cada bloque de 8 semanas permite un seguimiento minucioso del avance en los Resultados de Aprendizaje del Programa (RAPs), con 3 unidades temáticas y una evaluación final de sustentación del 35%.
                 </p>
             </div>
-            <div class="card" style="border-top:4px solid #2563EB;">
+            <div class="card" style="border-top:4px solid #F39200;">
                 <h5 style="font-size:0.92rem; font-weight:800; color:#1E3A8A; margin-bottom:8px; display:flex; align-items:center; gap:8px;">
-                    <i class="fas fa-sync-alt" style="color:#2563EB;"></i> 3. Continuidad Pedagógica y Ética
+                    <i class="fas fa-sync-alt" style="color:#F39200;"></i> 3. Continuidad Pedagógica y Ética
                 </h5>
                 <p style="font-size:0.81rem; color:var(--gray-text); line-height:1.55; margin:0;">
                     Sintetiza de manera integral el saber (teoría gerencial y analítica), el hacer (simulaciones, ABP y laboratorios) y el ser (ética profesional, liderazgo y responsabilidad social), orientado a las demandas actuales del sector productivo.
@@ -18266,7 +18266,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
@@ -18277,7 +18277,7 @@ window.SECTIONS['c3'] = `
                     <div style="font-size:0.71rem; color:#64748B;">(Comunicación Oral y Escrita en Malla)</div>
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18308,7 +18308,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18365,7 +18365,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
@@ -18376,7 +18376,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18407,7 +18407,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
@@ -18429,7 +18429,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18464,7 +18464,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
@@ -18528,7 +18528,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18605,7 +18605,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18616,7 +18616,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18627,7 +18627,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18761,7 +18761,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -18783,7 +18783,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
@@ -18803,7 +18803,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Ciencias Básicas y Cuantitativas</div>
@@ -19023,7 +19023,7 @@ window.SECTIONS['c3'] = `
                     
                 </div>
                 <div style="text-align:right;">
-                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#EFF6FF; color:#1D4ED8;">
+                    <span style="font-size:0.72rem; font-weight:700; padding:2px 6px; border-radius:4px; background:#FFF7ED; color:#D97F00;">
                         3 cr · Transversal
                     </span>
                     <div style="font-size:0.69rem; color:#94A3B8; margin-top:2px;">Legislación, Inv. y Habilidades</div>
@@ -19236,17 +19236,17 @@ window.SECTIONS['c3'] = `
  </p>
 
     <!-- TABLA 26: COMPARATIVO ENTRE LAS DOS MALLAS CURRICULARES (DOCUMENTO MAESTRO PÁGS. 132-135) -->
-    <div class="card" style="margin-bottom:28px; border-top:4px solid #2563EB;">
+    <div class="card" style="margin-bottom:28px; border-top:4px solid #F39200;">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
             <div>
                 <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin:0;">
-                    <i class="fas fa-table" style="color:#2563EB; margin-right:6px;"></i> Tabla 26. Comparativo entre las dos mallas curriculares
+                    <i class="fas fa-table" style="color:#F39200; margin-right:6px;"></i> Tabla 26. Comparativo entre las dos mallas curriculares
                 </h4>
                 <p style="font-size:0.83rem; color:var(--gray-text); margin-top:2px; margin-bottom:0;">
                     Texto íntegro oficial de la Tabla 26 del Documento Maestro [Anexo 2], págs. 132 a 135.
                 </p>
             </div>
-            <span class="badge-presencial" style="background:#2563EB; color:#fff; font-size:0.75rem; font-weight:800; padding:4px 10px; border-radius:20px;">
+            <span class="badge-presencial" style="background:#F39200; color:#fff; font-size:0.75rem; font-weight:800; padding:4px 10px; border-radius:20px;">
                 <i class="fas fa-balance-scale"></i> Análisis Estructural
             </span>
         </div>
@@ -19257,7 +19257,7 @@ window.SECTIONS['c3'] = `
                     <tr style="background:#F8FAFC;">
                         <th style="width:160px;">Aspecto</th>
                         <th style="width:230px; color:#059669;">Malla propuesta (144 cr)</th>
-                        <th style="width:230px; color:#0284C7;">Malla Vigente (158 cr)</th>
+                        <th style="width:230px; color:#EA580C;">Malla Vigente (158 cr)</th>
                         <th style="width:160px;">Modificación realizada</th>
                         <th>Justificación académica y curricular</th>
                     </tr>
@@ -19266,84 +19266,84 @@ window.SECTIONS['c3'] = `
                     <tr style="border-bottom:1px solid #E2E8F0;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Duración del programa</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">8 semestres – 144 créditos</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">9 semestres – 158 créditos</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">9 semestres – 158 créditos</td>
                         <td style="padding:10px; font-weight:600;">Reducción a 8 semestres</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Ajuste para cumplir estándares de eficiencia académica y coherencia con programas nacionales. Permite optimizar recursos y mantener la carga académica sin afectar la formación integral.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Enfoque formativo</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Gerencial, estratégico, tecnológico e innovador</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Tradicional, centrado en la administración funcional</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Tradicional, centrado en la administración funcional</td>
                         <td style="padding:10px; font-weight:600;">Actualización del enfoque</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se adopta un enfoque moderno que integra gestión, innovación, sostenibilidad y transformación digital.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Asignaturas de tecnología y digitalización</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Big Data y Analítica de Datos, Inteligencia Artificial, E-commerce, Sistemas Integrados de Gestión (HSEQ)</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Tecnología e Innovación, Sistema de Información Gerencial, E-commerce (aislada)</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Tecnología e Innovación, Sistema de Información Gerencial, E-commerce (aislada)</td>
                         <td style="padding:10px; font-weight:600;">Inclusión y fortalecimiento de competencias digitales</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se amplía la formación en herramientas digitales, datos e inteligencia artificial, respondiendo a la transformación tecnológica del entorno empresarial.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Asignaturas de innovación y emprendimiento</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Modelos de Emprendimiento, Laboratorio de Innovación y Emprendimiento, Juego Gerencial</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Cultura Emprendedora, Proyecto Empresarial</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Cultura Emprendedora, Proyecto Empresarial</td>
                         <td style="padding:10px; font-weight:600;">Enfoque práctico e integrador</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se moderniza la línea de emprendimiento, con metodologías de simulación, prototipado y desarrollo de modelos de negocio innovadores.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Línea financiera y económica</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Fundamentos Contables y Financieros, Costos y Presupuestos, Administración Financiera, Análisis Financiero, Matemática Financiera</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Fundamentos Contables, Costos, Presupuesto, Gerencia Financiera</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Fundamentos Contables, Costos, Presupuesto, Gerencia Financiera</td>
                         <td style="padding:10px; font-weight:600;">Actualización conceptual y metodológica</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se integran finanzas corporativas, análisis financiero y gestión presupuestal con herramientas modernas de decisión.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Línea de gestión organizacional</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Fundamentos de Administración, Procesos Administrativos, Teoría Organizacional, Gerencia de Talento Humano, Pensamiento Estratégico y Prospectivo</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Fundamentos de Administración, Teoría Organizacional, Liderazgo, Administración de Salarios</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Fundamentos de Administración, Teoría Organizacional, Liderazgo, Administración de Salarios</td>
                         <td style="padding:10px; font-weight:600;">Reestructuración y profundización</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se refuerzan competencias de liderazgo estratégico, planeación prospectiva y desarrollo organizacional.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Línea de mercadeo y negocios internacionales</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Fundamentos de Mercadeo, Gerencia de Marketing, Investigación de Mercados, Negocios y Gerencia Internacional</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Fundamentos de Mercadeo, Gerencia de Mercadeo, Gerencia del Servicio</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Fundamentos de Mercadeo, Gerencia de Mercadeo, Gerencia del Servicio</td>
                         <td style="padding:10px; font-weight:600;">Ampliación del enfoque global</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se fortalecen competencias de marketing estratégico, comercio digital y negocios internacionales.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Componente investigativo</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Competencias Investigativas, Métodos Cualitativos y Cuantitativos, Proyecto de Grado</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Metodología de la Investigación, Proyecto Empresarial, Proyecto de Grado I y II</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Metodología de la Investigación, Proyecto Empresarial, Proyecto de Grado I y II</td>
                         <td style="padding:10px; font-weight:600;">Integración y articulación de la investigación</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se consolida la formación investigativa en tres momentos (bases, métodos y aplicación), mejor articulada con el proyecto final.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Asignaturas de calidad y sostenibilidad</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Sistemas Integrados de Gestión (HSEQ), Gerencia de la Calidad</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Gestión de la Calidad, Responsabilidad Social Empresarial</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Gestión de la Calidad, Responsabilidad Social Empresarial</td>
                         <td style="padding:10px; font-weight:600;">Ampliación temática</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se orienta la formación hacia la sostenibilidad, las normas ISO y la mejora continua.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0; background:#F8FAFC;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Componente humanista y ético</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Cátedra de la Paz y Resolución de Conflictos, Comunicación Oral y Escrita, Inglés I–III</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Deontología, Constitución y Democracia, Expresión Oral y Escrita, Inglés I–VI</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Deontología, Constitución y Democracia, Expresión Oral y Escrita, Inglés I–VI</td>
                         <td style="padding:10px; font-weight:600;">Enfoque ético y ciudadano moderno</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Se prioriza la educación para la paz, la comunicación efectiva y la ética profesional, articuladas con la formación integral.</td>
                     </tr>
                     <tr style="border-bottom:1px solid #E2E8F0;">
                         <td style="padding:10px; font-weight:800; color:var(--carbon);">Electivas</td>
                         <td style="padding:10px; font-weight:700; color:#059669;">Cuatro asignaturas orientadas a profundización profesional</td>
-                        <td style="padding:10px; font-weight:700; color:#0284C7;">Tres electivas de profundización y dos humanísticas (5 total)</td>
+                        <td style="padding:10px; font-weight:700; color:#EA580C;">Tres electivas de profundización y dos humanísticas (5 total)</td>
                         <td style="padding:10px; font-weight:600;">Conserva número, amplía temática</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">Las electivas se orientan a temas actuales: analítica, sostenibilidad, innovación, liderazgo o finanzas.</td>
                     </tr>
                     <tr style="border-bottom:2px solid #CBD5E1; background:#F1F5F9; font-weight:800;">
                         <td style="padding:10px; color:var(--carbon);">Carga académica total</td>
                         <td style="padding:10px; color:#059669; font-size:0.9rem;">144 créditos – 6.912 horas totales</td>
-                        <td style="padding:10px; color:#0284C7; font-size:0.9rem;">158 créditos – 7.584 horas totales</td>
+                        <td style="padding:10px; color:#EA580C; font-size:0.9rem;">158 créditos – 7.584 horas totales</td>
                         <td style="padding:10px; color:#C2410C;">Reducción de 14 créditos y 672 horas</td>
                         <td style="padding:10px; color:#475569; line-height:1.5;">El rediseño mejora la eficiencia curricular y la pertinencia frente a estándares nacionales e internacionales.</td>
                     </tr>
@@ -19395,14 +19395,14 @@ window.SECTIONS['c3'] = `
  <tr class="row-accent">
  <td class="lb">Transformación Digital e IA</td>
  <td>Básica / Tradicional</td>
- <td><strong style="color:#0284C7;">Big Data, IA, E-Commerce, Lab. Innovación</strong></td>
+ <td><strong style="color:#EA580C;">Big Data, IA, E-Commerce, Lab. Innovación</strong></td>
  <td>Incorporación de 15 asignaturas de vanguardia tecnológica en los semestres 5, 6, 7 y 8.</td>
  </tr>
  <tr>
  <td class="lb">Ratio Presencial (Acompañamiento)</td>
  <td>36h Directas / 108h Indep.</td>
  <td><strong style="color:#059669;">48h Directas / 96h Indep. (1:2)</strong></td>
- <td><span style="color:#0284C7; font-weight:700;">Cumplimiento estricto MEN:</span> 1 hora acompañada por 2 horas independientes.</td>
+ <td><span style="color:#EA580C; font-weight:700;">Cumplimiento estricto MEN:</span> 1 hora acompañada por 2 horas independientes.</td>
  </tr>
  <tr class="row-accent">
  <td class="lb">Ratio Virtual (Mediación)</td>
@@ -19475,17 +19475,17 @@ window.SECTIONS['c3'] = `
  </div>
 
  <!-- SECCIÓN 3: TABLA 28 - ASIGNATURAS NUEVAS EN LA MALLA PROPUESTA -->
- <div class="card" style="margin-bottom:28px; border-top:4px solid #0284C7;">
+ <div class="card" style="margin-bottom:28px; border-top:4px solid #EA580C;">
  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
  <div>
  <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--carbon); margin:0;">
- <i class="fas fa-plus-circle" style="color:#0284C7; margin-right:8px;"></i> 3. Tabla 28. Asignaturas Nuevas en la Malla Propuesta (15 Asignaturas)
+ <i class="fas fa-plus-circle" style="color:#EA580C; margin-right:8px;"></i> 3. Tabla 28. Asignaturas Nuevas en la Malla Propuesta (15 Asignaturas)
  </h4>
  <p style="font-size:0.83rem; color:var(--gray-text); margin-top:2px; margin-bottom:0;">
  Tabla 28 oficial del Documento Maestro: Asignaturas incorporadas en el rediseño curricular con su código, créditos, horas por modalidad, prerrequisitos y justificación.
  </p>
  </div>
- <span style="background:#E0F2FE; color:#0369A1; padding:4px 12px; border-radius:20px; font-weight:800; font-size:0.78rem;">
+ <span style="background:#FFF3E0; color:#C2410C; padding:4px 12px; border-radius:20px; font-weight:800; font-size:0.78rem;">
  15 Nuevas Asignaturas (+31.25% Innovación)
  </span>
  </div>
@@ -19506,7 +19506,7 @@ window.SECTIONS['c3'] = `
  <tr class="row-accent">
  <td class="lb">Álgebra Lineal</td>
  <td style="text-align:center; font-weight:700;">1</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Ninguno</td>
  <td>Desarrolla el pensamiento lógico-matemático y modelos cuantitativos para la toma de decisiones.</td>
@@ -19514,7 +19514,7 @@ window.SECTIONS['c3'] = `
  <tr>
  <td class="lb">Costos y Presupuestos</td>
  <td style="text-align:center; font-weight:700;">2</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Fundamentos Contables</td>
  <td>Unifica el análisis de costeo y planeación presupuestal en una sola estructura analítica más eficiente.</td>
@@ -19522,7 +19522,7 @@ window.SECTIONS['c3'] = `
  <tr class="row-accent">
  <td class="lb">Análisis Financiero</td>
  <td style="text-align:center; font-weight:700;">3</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Fundamentos Contables</td>
  <td>Proporciona diagnóstico cualitativo y cuantitativo de estados financieros para la toma de decisiones.</td>
@@ -19530,7 +19530,7 @@ window.SECTIONS['c3'] = `
  <tr>
  <td class="lb">Procesos Administrativos</td>
  <td style="text-align:center; font-weight:700;">3</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Fundamentos de Admón.</td>
  <td>Estructura la planeación, organización, dirección y control operativo de las organizaciones.</td>
@@ -19538,7 +19538,7 @@ window.SECTIONS['c3'] = `
  <tr class="row-accent">
  <td class="lb">Competencias Investigativas</td>
  <td style="text-align:center; font-weight:700;">4</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Ninguno</td>
  <td>Fundamenta la metodología de investigación aplicada a la solución de problemas gerenciales.</td>
@@ -19546,7 +19546,7 @@ window.SECTIONS['c3'] = `
  <tr>
  <td class="lb">Derecho Laboral y Seguridad Social</td>
  <td style="text-align:center; font-weight:700;">4</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Ninguno</td>
  <td>Actualiza el marco normativo de relaciones de trabajo, contratación y sistema general de seguridad social.</td>
@@ -19554,7 +19554,7 @@ window.SECTIONS['c3'] = `
  <tr class="row-accent">
  <td class="lb">Administración Financiera</td>
  <td style="text-align:center; font-weight:700;">5</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Análisis Financiero</td>
  <td>Fortalece la toma de decisiones en estructura de capital, fuentes de financiamiento e inversiones de largo plazo.</td>
@@ -19562,7 +19562,7 @@ window.SECTIONS['c3'] = `
  <tr>
  <td class="lb">Negocios y Gerencia Internacional</td>
  <td style="text-align:center; font-weight:700;">5</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Economía Colombiana</td>
  <td>Prepara al estudiante para la internacionalización de mercados, acuerdos comerciales y operaciones transfronterizas.</td>
@@ -19570,21 +19570,21 @@ window.SECTIONS['c3'] = `
  <tr class="row-accent">
  <td class="lb">Sistemas Integrados de Gestión (HSEQ)</td>
  <td style="text-align:center; font-weight:700;">5</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Ninguno</td>
  <td>Especializa al administrador en normas ISO (9001, 14001, 45001), sostenibilidad y auditoría de procesos.</td>
  </tr>
- <tr style="background:#EFF6FF;">
- <td class="lb" style="color:#1D4ED8;"><i class="fas fa-microchip" style="color:var(--orange);"></i> Big Data y Analítica de Datos</td>
+ <tr style="background:#FFF7ED;">
+ <td class="lb" style="color:#D97F00;"><i class="fas fa-microchip" style="color:var(--orange);"></i> Big Data y Analítica de Datos</td>
  <td style="text-align:center; font-weight:700;">6</td>
  <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Estadística Inferencial</td>
  <td><strong>Asignatura de Vanguardia:</strong> Aplica inteligencia de negocios, minería de datos y visualización analítica.</td>
  </tr>
- <tr class="row-accent" style="background:#EFF6FF;">
- <td class="lb" style="color:#1D4ED8;"><i class="fas fa-shopping-cart" style="color:var(--orange);"></i> E-Commerce</td>
+ <tr class="row-accent" style="background:#FFF7ED;">
+ <td class="lb" style="color:#D97F00;"><i class="fas fa-shopping-cart" style="color:var(--orange);"></i> E-Commerce</td>
  <td style="text-align:center; font-weight:700;">7</td>
  <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
@@ -19594,7 +19594,7 @@ window.SECTIONS['c3'] = `
  <tr>
  <td class="lb">Pensamiento Estratégico y Prospectivo</td>
  <td style="text-align:center; font-weight:700;">7</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Procesos Administrativos</td>
  <td>Capacita en construcción de escenarios de futuro, planeación estratégica y gestión del cambio organizacional.</td>
@@ -19602,21 +19602,21 @@ window.SECTIONS['c3'] = `
  <tr class="row-accent">
  <td class="lb">Gerencia de Calidad</td>
  <td style="text-align:center; font-weight:700;">8</td>
- <td style="text-align:center; font-weight:700; color:#0284C7;">3</td>
+ <td style="text-align:center; font-weight:700; color:#EA580C;">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Sistemas Integrados HSEQ</td>
  <td>Implementa estrategias de gestión de calidad total, Six Sigma y mejora continua en organizaciones modernas.</td>
  </tr>
- <tr style="background:#EFF6FF;">
- <td class="lb" style="color:#1D4ED8;"><i class="fas fa-robot" style="color:var(--orange);"></i> Inteligencia Artificial</td>
+ <tr style="background:#FFF7ED;">
+ <td class="lb" style="color:#D97F00;"><i class="fas fa-robot" style="color:var(--orange);"></i> Inteligencia Artificial</td>
  <td style="text-align:center; font-weight:700;">8</td>
  <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
  <td style="font-size:0.78rem;">Big Data y Analítica</td>
  <td><strong>Asignatura Disruptiva:</strong> Aplica IA generativa, automatización de procesos y machine learning gerencial.</td>
  </tr>
- <tr class="row-accent" style="background:#EFF6FF;">
- <td class="lb" style="color:#1D4ED8;"><i class="fas fa-flask" style="color:var(--orange);"></i> Lab. de Innovación y Emprendimiento</td>
+ <tr class="row-accent" style="background:#FFF7ED;">
+ <td class="lb" style="color:#D97F00;"><i class="fas fa-flask" style="color:var(--orange);"></i> Lab. de Innovación y Emprendimiento</td>
  <td style="text-align:center; font-weight:700;">8</td>
  <td style="text-align:center; font-weight:700; color:var(--orange);">3</td>
  <td style="font-size:0.78rem;">48h Dir / 96h Indep (P)<br>36h Med / 108h Ind (V)</td>
@@ -19656,44 +19656,44 @@ window.SECTIONS['c3'] = `
  </tr>
  </thead>
  <tbody>
- <tr class="row-accent"><td class="lb">Expresión Oral y Escrita</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Comunicación Oral y Escrita</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Inglés I</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Inglés I</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Fundamentos Contables</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Fundamentos Contables y Financieros</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Fundamentos de Economía</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
- <tr><td class="lb">Teoría Organizacional</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#0284C7; font-weight:700;">Teoría Organizacional</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Metodología de la Investigación</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#0284C7; font-weight:700;">Cátedra de la Paz y Resolución de Conflictos</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
- <tr><td class="lb">Inglés II</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#0284C7; font-weight:700;">Inglés II</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Estadística Descriptiva</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#0284C7; font-weight:700;">Estadística Descriptiva</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Electiva Profundización I</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional I</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Inglés III</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#0284C7; font-weight:700;">Inglés III</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Estadística Inferencial</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Estadística Inferencial</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Legislación Tributaria</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Legislación Tributaria</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Electiva Humanística I</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional I</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
- <tr class="row-accent"><td class="lb">Entorno Económico Colombiano</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#0284C7; font-weight:700;">Economía Colombiana e Internacional</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Matemática Financiera</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Matemática Financiera</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Investigación de Operaciones</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
- <tr><td class="lb">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Modelos de Desarrollo Económico</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Modelos de Emprendimiento</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
- <tr><td class="lb">Administración de Salarios</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#D97706; color:#fff; font-size:0.7rem;">Fusión Conceptual</span></td></tr>
- <tr class="row-accent"><td class="lb">Electiva Profundización II</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional II</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Legislación Comercial</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Legislación Comercial</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Gerencia de Mercadeo</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
- <tr><td class="lb">Métodos Cuantitativos y Cualitativos</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Métodos Cualitativos y Cuantitativos</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Electiva Humanística II</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional II</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
- <tr><td class="lb">Fundamentos de Admón. Pública</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#D97706; color:#fff; font-size:0.7rem;">Fusión Conceptual</span></td></tr>
- <tr class="row-accent"><td class="lb">Gestión de la Calidad</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Cátedra de la Paz y Res. Conflictos</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Fusión en HSEQ / Calidad</span></td></tr>
- <tr><td class="lb">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Electiva Profundización III</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Electiva Profesional III</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Sistema de Información Gerencial</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#0284C7; font-weight:700;">Juego Gerencial (Simulación)</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Homologación por Aplicación</span></td></tr>
- <tr class="row-accent"><td class="lb">Habilidades Gerenciales</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Habilidades Gerenciales y Liderazgo</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Gerencia de Producción</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Gerencia de Producción</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr><td class="lb">Proyecto de Grado I</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#0284C7; font-weight:700;">Proyecto de Grado</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Unificación de Proyecto</span></td></tr>
- <tr class="row-accent"><td class="lb">Gerencia del Servicio</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
- <tr><td class="lb">Evaluación de Proyectos de Inversión</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Formulación y Evaluación de Proyectos</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
- <tr class="row-accent"><td class="lb">Distribución Física y Logística</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Gerencia de Ventas y Canales</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
- <tr><td class="lb">Proyecto de Grado II</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#0284C7; font-weight:700;">Proyecto de Grado</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#0284C7; color:#fff; font-size:0.7rem;">Unificación de Proyecto</span></td></tr>
+ <tr class="row-accent"><td class="lb">Expresión Oral y Escrita</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#EA580C; font-weight:700;">Comunicación Oral y Escrita</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Inglés I</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#EA580C; font-weight:700;">Inglés I</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#EA580C; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Fundamentos Contables</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#EA580C; font-weight:700;">Fundamentos Contables y Financieros</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Fundamentos de Economía</td><td style="text-align:center; font-weight:700;">1</td><td style="color:#EA580C; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
+ <tr><td class="lb">Teoría Organizacional</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#EA580C; font-weight:700;">Teoría Organizacional</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Metodología de la Investigación</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#EA580C; font-weight:700;">Cátedra de la Paz y Resolución de Conflictos</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
+ <tr><td class="lb">Inglés II</td><td style="text-align:center; font-weight:700;">2</td><td style="color:#EA580C; font-weight:700;">Inglés II</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Estadística Descriptiva</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#EA580C; font-weight:700;">Estadística Descriptiva</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Electiva Profundización I</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#EA580C; font-weight:700;">Electiva Profesional I</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Inglés III</td><td style="text-align:center; font-weight:700;">3</td><td style="color:#EA580C; font-weight:700;">Inglés III</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Estadística Inferencial</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#EA580C; font-weight:700;">Estadística Inferencial</td><td style="text-align:center; font-weight:700;">3</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Legislación Tributaria</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#EA580C; font-weight:700;">Legislación Tributaria</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Electiva Humanística I</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#EA580C; font-weight:700;">Electiva Profesional I</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
+ <tr class="row-accent"><td class="lb">Entorno Económico Colombiano</td><td style="text-align:center; font-weight:700;">4</td><td style="color:#EA580C; font-weight:700;">Economía Colombiana e Internacional</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Matemática Financiera</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#EA580C; font-weight:700;">Matemática Financiera</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Investigación de Operaciones</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#EA580C; font-weight:700;">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
+ <tr><td class="lb">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#EA580C; font-weight:700;">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Modelos de Desarrollo Económico</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#EA580C; font-weight:700;">Modelos de Emprendimiento</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
+ <tr><td class="lb">Administración de Salarios</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#EA580C; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#D97706; color:#fff; font-size:0.7rem;">Fusión Conceptual</span></td></tr>
+ <tr class="row-accent"><td class="lb">Electiva Profundización II</td><td style="text-align:center; font-weight:700;">5</td><td style="color:#EA580C; font-weight:700;">Electiva Profesional II</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Legislación Comercial</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#EA580C; font-weight:700;">Legislación Comercial</td><td style="text-align:center; font-weight:700;">2</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Gerencia de Mercadeo</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#EA580C; font-weight:700;">Fundamentos de Mercadeo</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Homologación por Contenido</span></td></tr>
+ <tr><td class="lb">Métodos Cuantitativos y Cualitativos</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#EA580C; font-weight:700;">Métodos Cualitativos y Cuantitativos</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Electiva Humanística II</td><td style="text-align:center; font-weight:700;">6</td><td style="color:#EA580C; font-weight:700;">Electiva Profesional II</td><td style="text-align:center; font-weight:700;">6</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Homologación por Créditos</span></td></tr>
+ <tr><td class="lb">Fundamentos de Admón. Pública</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#EA580C; font-weight:700;">Fundamentos de Administración</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#D97706; color:#fff; font-size:0.7rem;">Fusión Conceptual</span></td></tr>
+ <tr class="row-accent"><td class="lb">Gestión de la Calidad</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#EA580C; font-weight:700;">Cátedra de la Paz y Res. Conflictos</td><td style="text-align:center; font-weight:700;">1</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Fusión en HSEQ / Calidad</span></td></tr>
+ <tr><td class="lb">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#EA580C; font-weight:700;">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Electiva Profundización III</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#EA580C; font-weight:700;">Electiva Profesional III</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Sistema de Información Gerencial</td><td style="text-align:center; font-weight:700;">7</td><td style="color:#EA580C; font-weight:700;">Juego Gerencial (Simulación)</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Homologación por Aplicación</span></td></tr>
+ <tr class="row-accent"><td class="lb">Habilidades Gerenciales</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#EA580C; font-weight:700;">Habilidades Gerenciales y Liderazgo</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Gerencia de Producción</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#EA580C; font-weight:700;">Gerencia de Producción</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#EA580C; font-weight:700;">Investigación de Mercados</td><td style="text-align:center; font-weight:700;">4</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr><td class="lb">Proyecto de Grado I</td><td style="text-align:center; font-weight:700;">8</td><td style="color:#EA580C; font-weight:700;">Proyecto de Grado</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Unificación de Proyecto</span></td></tr>
+ <tr class="row-accent"><td class="lb">Gerencia del Servicio</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#EA580C; font-weight:700;">Gerencia del Talento Humano</td><td style="text-align:center; font-weight:700;">5</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
+ <tr><td class="lb">Evaluación de Proyectos de Inversión</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#EA580C; font-weight:700;">Formulación y Evaluación de Proyectos</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-presencial" style="background:#16A34A; color:#fff; font-size:0.7rem;">Homologación Directa 1:1</span></td></tr>
+ <tr class="row-accent"><td class="lb">Distribución Física y Logística</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#EA580C; font-weight:700;">Gerencia de Ventas y Canales</td><td style="text-align:center; font-weight:700;">7</td><td><span class="badge-virtual" style="background:#7C3AED; color:#fff; font-size:0.7rem;">Homologación por Área</span></td></tr>
+ <tr><td class="lb">Proyecto de Grado II</td><td style="text-align:center; font-weight:700;">9</td><td style="color:#EA580C; font-weight:700;">Proyecto de Grado</td><td style="text-align:center; font-weight:700;">8</td><td><span class="badge-virtual" style="background:#EA580C; color:#fff; font-size:0.7rem;">Unificación de Proyecto</span></td></tr>
  </tbody>
  </table>
  </div>

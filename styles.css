@@ -20,7 +20,7 @@
     --orange-glow: rgba(243, 146, 0, 0.15);
     --green: #2ECC71;
     --red: #E74C3C;
-    --blue-info: #3498DB;
+    --blue-info: #F39200;
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 16px;
@@ -991,9 +991,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .badge-presencial {
-    background: #E0F2FE;
-    color: #0369A1;
-    border: 1px solid #BAE6FD;
+    background: #FFF3E0;
+    color: #C2410C;
+    border: 1px solid #FED7AA;
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.7rem;
@@ -1001,7 +1001,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .badge-virtual {
-    background: #E0F2FE;
+    background: #FFF3E0;
     color: #00897B;
     border: 1px solid #B2DFDB;
     padding: 3px 8px;
@@ -1192,7 +1192,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     margin-bottom: 6px;
 }
 
-.area-transversal { background: #E0F2FE; color: #0284C7; border: 1px solid #BAE6FD; }
+.area-transversal { background: #FFF3E0; color: #EA580C; border: 1px solid #FED7AA; }
 .area-disciplinar { background: #FFEDD5; color: #C2410C; border: 1px solid #FED7AA; }
 .area-electiva { background: #DCFCE7; color: #15803D; border: 1px solid #BBF7D0; }
 
@@ -1511,9 +1511,9 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .matrix-area-badge.area-transversal {
-    background: #DBEAFE !important;
-    color: #1E40AF !important;
-    border-color: #93C5FD !important;
+    background: #FFF3E0 !important;
+    color: #D97F00 !important;
+    border-color: #FED7AA !important;
 }
 
 .matrix-area-badge.area-disciplinar {
@@ -1619,7 +1619,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Component Row Accent Border Colors */
 /* Plan Propuesto */
-.comp-border-ciencias_basicas        { border-left-color: #2563EB !important; }
+.comp-border-ciencias_basicas        { border-left-color: #F39200 !important; }
 .comp-border-legislacion_habilidades { border-left-color: #0EA5E9 !important; }
 .comp-border-admon_gestion           { border-left-color: #EA580C !important; }
 .comp-border-economia_finanzas       { border-left-color: #F59E0B !important; }
@@ -1627,10 +1627,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .comp-border-electivo                { border-left-color: #7C3AED !important; }
 
 /* Plan Vigente */
-.comp-border-area_transversal        { border-left: 4px solid #2563EB !important; }
+.comp-border-area_transversal        { border-left: 4px solid #F39200 !important; }
 .comp-border-area_disciplinar        { border-left: 4px solid #F39200 !important; }
 .comp-border-area_electiva           { border-left: 4px solid #D97706 !important; }
-.comp-border-v_ciencias_basicas      { border-left-color: #2563EB !important; }
+.comp-border-v_ciencias_basicas      { border-left-color: #F39200 !important; }
 .comp-border-v_socio_humanistica     { border-left-color: #0EA5E9 !important; }
 .comp-border-v_admon_procesos        { border-left-color: #EA580C !important; }
 .comp-border-v_finanzas_contabilidad { border-left-color: #F59E0B !important; }
