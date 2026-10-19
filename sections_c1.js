@@ -1,7 +1,7 @@
 /* =========================================================
    CONDICIÓN 1 – DENOMINACIÓN DEL PROGRAMA
    Administración de Empresas · Registro Calificado Único (Presencial & Virtual) · TO
-   1. Ficha Técnica Oficial de las Dos Modalidades
+   1. Fichas Técnicas Oficiales en Paralelo: Vigente vs. Propuesto (Registro Único)
    2. Mapa Conceptual Sistémico de Pertinencia de la Denominación
    3. Módulo de Profundización en Ventana Emergente (Modal)
    ========================================================= */
@@ -17,7 +17,7 @@ window.SECTIONS['c1'] = `
                 <i class="fas fa-id-badge" style="color:#F39200;"></i> Condición 1 · Denominación del Programa
             </h4>
             <p style="color:#D1D1D1; font-size:0.86rem; margin:0;">
-                Sustentación técnica, curricular y normativa del <strong>Registro Calificado Único (Presencial y Virtual)</strong> · 144 créditos · 8 semestres · Corporación Escuela Tecnológica del Oriente (TO).
+                Ficha técnica oficial en paralelo: <strong>Registro Único Vigente SACES</strong> vs. <strong>Registro Único Propuesto en Renovación</strong>. Coherencia jurídica, académica e inclusión según el Decreto 1330 de 2019.
             </p>
         </div>
         <div style="display:flex; gap:8px; align-items:center;">
@@ -39,8 +39,8 @@ window.SECTIONS['c1'] = `
         <i class="fas fa-compass" style="color:#F39200;"></i> Ejes de Sustentación Condición 1:
     </span>
     <div style="display:flex; flex-wrap:wrap; gap:6px;" id="c1-subtabs-bar">
-        <a href="#c1-ficha-dual" style="background:#FFF9F2; color:#C2410C; border:1px solid #FED7AA; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-            <i class="fas fa-id-card" style="color:#F39200;"></i> Ficha Técnica Dual
+        <a href="#c1-fichas-paralelo" style="background:#FFF9F2; color:#C2410C; border:1px solid #FED7AA; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-columns" style="color:#F39200;"></i> Fichas en Paralelo (Vigente vs. Propuesto)
         </a>
         <a href="#c1-mapa-conceptual" style="background:#F0FDF4; color:#166534; border:1px solid #BBF7D0; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
             <i class="fas fa-project-diagram" style="color:#2ECC71;"></i> Mapa Conceptual Sistémico
@@ -58,184 +58,161 @@ window.SECTIONS['c1'] = `
 </div>
 
 <!-- ========================================================================= -->
-<!-- 3. FICHA TÉCNICA OFICIAL DE LAS DOS MODALIDADES (APERTURA VISUAL COMPLETA)-->
+<!-- 3. FICHAS TÉCNICAS OFICIALES EN PARALELO (VIGENTE VS. PROPUESTO)          -->
 <!-- ========================================================================= -->
-<div id="c1-ficha-dual" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #F39200; border-radius:12px; padding:20px; margin-bottom:24px; box-shadow:0 4px 14px rgba(0,0,0,0.04);">
+<div id="c1-fichas-paralelo" style="margin-bottom:28px;">
     
-    <!-- ENCABEZADO DE LA FICHA TÉCNICA -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <div style="display:flex; align-items:center; gap:10px;">
-            <div style="background:#FFF9F2; color:#F39200; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.15rem; border:1px solid #FED7AA;">
-                <i class="fas fa-certificate"></i>
-            </div>
-            <div>
-                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.12rem; font-weight:800; color:#1A1A1B; margin:0 0 2px;">
-                    Ficha Técnica Oficial del Programa · Registro Calificado Único
-                </h4>
-                <span style="font-size:0.75rem; color:#64748B;">
-                    Corporación Escuela Tecnológica del Oriente (TO) · Código SNIES Oficial: <strong>108524</strong> · Acuerdo CS 021 de 2025
-                </span>
-            </div>
-        </div>
-        <div style="display:flex; gap:8px;">
-            <span class="tag-legal" style="background:#F39200; color:#FFFFFF; font-weight:800; font-size:0.72rem; padding:4px 10px; border-radius:4px;">
-                144 Créditos · 8 Semestres
-            </span>
-            <span class="tag-legal" style="background:#1A1A1B; color:#FFFFFF; font-weight:800; font-size:0.72rem; padding:4px 10px; border-radius:4px;">
-                Presencial &amp; Virtual
-            </span>
-        </div>
-    </div>
-
-    <!-- PARÁMETROS GENERALES UNIFICADOS -->
-    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px 16px; margin-bottom:18px;">
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:12px; font-size:0.8rem;">
-            <div>
-                <span style="color:#64748B; font-size:0.7rem; text-transform:uppercase; font-weight:700; display:block;">Denominación Oficial:</span>
-                <strong style="color:#1A1A1B; font-size:0.92rem;">Administración de Empresas</strong>
-            </div>
-            <div>
-                <span style="color:#64748B; font-size:0.7rem; text-transform:uppercase; font-weight:700; display:block;">Título a Otorgar:</span>
-                <strong style="color:#1A1A1B; font-size:0.92rem;">Administrador(a) de Empresas</strong>
-            </div>
-            <div>
-                <span style="color:#64748B; font-size:0.7rem; text-transform:uppercase; font-weight:700; display:block;">Nivel Formativo:</span>
-                <strong style="color:#1A1A1B; font-size:0.92rem;">Profesional Universitario (Pregrado)</strong>
-            </div>
-            <div>
-                <span style="color:#64748B; font-size:0.7rem; text-transform:uppercase; font-weight:700; display:block;">Organización Curricular:</span>
-                <strong style="color:#F39200; font-size:0.92rem;">48 Asignaturas Modulares (6 / sem)</strong>
-            </div>
-        </div>
-    </div>
-
-    <!-- COMPARATIVA DUAL EN PARALELO: PRESENCIAL VS. VIRTUAL -->
-    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:18px;" id="c1-dual-grid">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:22px;">
         
-        <!-- CARD MODALIDAD PRESENCIAL -->
-        <div style="background:#FFFFFF; border:2px solid #FED7AA; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px rgba(243,146,0,0.05); display:flex; flex-direction:column; justify-content:space-between;">
-            <div style="background:#FFF9F2; border-bottom:1.5px solid #FED7AA; padding:12px 16px; display:flex; justify-content:space-between; align-items:center;">
-                <div style="display:flex; align-items:center; gap:8px;">
-                    <div style="background:#F39200; color:#FFFFFF; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.82rem;">
-                        <i class="fas fa-university"></i>
-                    </div>
+        <!-- ======================================= -->
+        <!-- FICHA REGISTRO CALIFICADO VIGENTE       -->
+        <!-- ======================================= -->
+        <div style="background:#FFFFFF; border:1px solid #D1D1D1; border-top:5px solid #1A1A1B; border-radius:12px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.06); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #E8E8E8; padding-bottom:12px; margin-bottom:14px;">
                     <div>
-                        <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#C2410C; margin:0;">
-                            Modalidad Presencial
-                        </h5>
-                        <span style="font-size:0.68rem; color:#7C2D12; font-weight:600;">Sede Principal Bucaramanga (Santander)</span>
+                        <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#6B6B6B; letter-spacing:0.5px;">Norma Base SACES · Acuerdo 011 de 2024</span>
+                        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0;">
+                            Registro Calificado Vigente (Registro Único)
+                        </h4>
                     </div>
+                    <span style="background:#E8E8E8; color:#1A1A1B; font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px;">
+                        <i class="fas fa-history"></i> 158 Créditos · 9 Sem.
+                    </span>
                 </div>
-                <span style="background:#F39200; color:#FFFFFF; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px;">
-                    60 Cupos / Cohorte
-                </span>
-            </div>
-            <div style="padding:14px 16px; font-size:0.78rem; line-height:1.5; color:#374151;">
-                <table style="width:100%; border-collapse:collapse;">
+
+                <table class="tbl" style="width:100%; font-size:0.83rem; margin:0;">
                     <tbody>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600; width:42%;">Lugar de Desarrollo:</td>
-                            <td style="padding:6px 0; font-weight:700; color:#1A1A1B;">Bucaramanga · Sedes A, B y C</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Relación Crédito:</td>
-                            <td style="padding:6px 0; font-weight:700; color:#C2410C;">1 : 2 (48h Directas / 96h Autónomas)</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Mediación Pedagógica:</td>
-                            <td style="padding:6px 0; color:#1A1A1B;">Aulas interactivas, laboratorios de cómputo y centros de simulación física en campus.</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Enfoque y Prácticas:</td>
-                            <td style="padding:6px 0; color:#1A1A1B;">Inmersión en el tejido empresarial de Santander (32.450+ empresas activas en CCB).</td>
+                        <tr>
+                            <td class="lb" style="width:40%; font-weight:700; color:#6B6B6B;">Denominación</td>
+                            <td><strong>Administración de Empresas</strong></td>
                         </tr>
                         <tr>
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Interacción:</td>
-                            <td style="padding:6px 0; color:#1A1A1B;">Encuentros presenciales directos cara a cara docente-estudiante y networking de cohorte.</td>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Código SNIES</td>
+                            <td><span style="font-family:monospace; background:#F4F4F4; padding:2px 6px; border-radius:4px; font-weight:700;">108524 (SACES)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Nivel de Formación</td>
+                            <td>Pregrado · Profesional Universitario</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Título Otorgado</td>
+                            <td>Administrador de Empresas (Masculino genérico histórico)</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Metodología / Modalidad</td>
+                            <td><span class="tag-legal" style="background:#1A1A1B; color:#FFFFFF;">REGISTRO ÚNICO</span> <span class="tag-legal" style="background:#E8E8E8; color:#1A1A1B;">Presencial &amp; Virtual</span></td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Lugar de Desarrollo</td>
+                            <td>Sede Principal Bucaramanga (Presencial) + Cobertura Nacional Digital (Virtual)</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Duración Estimada</td>
+                            <td><strong>9 semestres</strong> (4.5 años)</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Número de Créditos</td>
+                            <td><strong>158 créditos académicos</strong> (62 asignaturas)</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Periodicidad</td>
+                            <td>Semestral</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Cupos Primer Período</td>
+                            <td><strong>300 estudiantes / cohorte</strong> (Oferta dual autorizada institucionalmente)</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Relación de Horas</td>
+                            <td><strong>Presencial:</strong> 1:2 (16h directas / 32h indep.) · <strong>Virtual:</strong> 1:3 (12h mediadas / 36h autónomas)</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div style="background:#FFF9F2; padding:8px 16px; border-top:1px solid #FED7AA; font-size:0.72rem; color:#C2410C; font-weight:700; display:flex; align-items:center; justify-content:space-between;">
-                <span><i class="fas fa-check-circle"></i> Idénticos Resultados de Aprendizaje</span>
-                <span>8 Semestres / 144 Cr</span>
+            
+            <div style="background:#F8F9FA; border-left:3px solid #1A1A1B; padding:10px 14px; border-radius:6px; margin-top:16px; font-size:0.77rem; color:#4B5563;">
+                <i class="fas fa-info-circle" style="color:#1A1A1B; margin-right:4px;"></i>
+                <strong>Origen Normativo:</strong> Aprobado inicialmente mediante <strong>Resolución MEN 011375 de 2019</strong> (presencial), adoptado a <strong>Registro Calificado Único (Presencial y Virtual)</strong> mediante <strong>Acuerdo de Consejo Superior No. 011 de 2024</strong> (base de 158 créditos y 9 semestres en Anexo 5 SACES).
             </div>
         </div>
 
-        <!-- CARD MODALIDAD VIRTUAL -->
-        <div style="background:#FFFFFF; border:2px solid #BAE6FD; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px rgba(3,105,161,0.05); display:flex; flex-direction:column; justify-content:space-between;">
-            <div style="background:#F0F9FF; border-bottom:1.5px solid #BAE6FD; padding:12px 16px; display:flex; justify-content:space-between; align-items:center;">
-                <div style="display:flex; align-items:center; gap:8px;">
-                    <div style="background:#0369A1; color:#FFFFFF; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.82rem;">
-                        <i class="fas fa-laptop-house"></i>
-                    </div>
-                    <div>
-                        <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#0369A1; margin:0;">
-                            Modalidad Virtual
-                        </h5>
-                        <span style="font-size:0.68rem; color:#0C4A6E; font-weight:600;">Cobertura Nacional en los 32 Departamentos</span>
-                    </div>
-                </div>
-                <span style="background:#0369A1; color:#FFFFFF; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px;">
-                    240 Cupos / Cohorte
-                </span>
+        <!-- ======================================= -->
+        <!-- FICHA REGISTRO CALIFICADO PROPUESTO     -->
+        <!-- ======================================= -->
+        <div style="background:#FFFFFF; border:2px solid #F39200; border-top:5px solid #F39200; border-radius:12px; padding:20px; box-shadow:0 8px 24px rgba(243,146,0,0.12); display:flex; flex-direction:column; justify-content:space-between; position:relative;">
+            <div style="position:absolute; top:-12px; right:20px; background:#F39200; color:#FFFFFF; font-size:0.72rem; font-weight:800; padding:2px 10px; border-radius:12px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 2px 6px rgba(243,146,0,0.4);">
+                Propuesta en Evaluación
             </div>
-            <div style="padding:14px 16px; font-size:0.78rem; line-height:1.5; color:#374151;">
-                <table style="width:100%; border-collapse:collapse;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #FFF3E0; padding-bottom:12px; margin-bottom:14px;">
+                    <div>
+                        <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#F39200; letter-spacing:0.5px;">Decreto 1330 · Renovación Curricular</span>
+                        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0;">
+                            Registro Calificado Único (Propuesto)
+                        </h4>
+                    </div>
+                    <span style="background:rgba(243,146,0,0.15); color:#F39200; border:1px solid rgba(243,146,0,0.3); font-size:0.75rem; font-weight:700; padding:4px 10px; border-radius:6px;">
+                        <i class="fas fa-bolt"></i> 144 Créditos · 8 Sem.
+                    </span>
+                </div>
+
+                <table class="tbl" style="width:100%; font-size:0.83rem; margin:0;">
                     <tbody>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600; width:42%;">Lugar de Desarrollo:</td>
-                            <td style="padding:6px 0; font-weight:700; color:#1A1A1B;">Territorio Nacional · Plataforma Digital LMS</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Relación Crédito:</td>
-                            <td style="padding:6px 0; font-weight:700; color:#0369A1;">1 : 3 (36h Telemáticas / 108h Autónomas)</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Mediación Pedagógica:</td>
-                            <td style="padding:6px 0; color:#1A1A1B;">Campus LMS Moodle 24/7, simuladores de negocios en la nube y laboratorios remotos.</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #F1F5F9;">
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Enfoque y Flexibilidad:</td>
-                            <td style="padding:6px 0; color:#1A1A1B;">Inclusión educativa territorial, autogestión del tiempo y co-creación en foros globales.</td>
+                        <tr style="background:#FFF9F2;">
+                            <td class="lb" style="width:40%; font-weight:700; color:#F39200;">Denominación</td>
+                            <td><strong>Administración de Empresas</strong> (Mantenida oficial)</td>
                         </tr>
                         <tr>
-                            <td style="padding:6px 0; color:#64748B; font-weight:600;">Interacción:</td>
-                            <td style="padding:6px 0; color:#1A1A1B;">Sesiones sincrónicas grabadas + acompañamiento asincrónico y retroalimentación permanente.</td>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Código SNIES</td>
+                            <td><span style="font-family:monospace; background:#FFF3E0; color:#D97F00; padding:2px 6px; border-radius:4px; font-weight:700;">108524 (SACES Renovación RU)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Nivel de Formación</td>
+                            <td>Pregrado · Profesional Universitario</td>
+                        </tr>
+                        <tr style="background:#FFF9F2;">
+                            <td class="lb" style="font-weight:700; color:#F39200;">Titulación Inclusiva</td>
+                            <td><strong>Administrador(a) de Empresas</strong><br><span style="font-size:0.75rem; color:#6B6B6B;">(Opción según identidad de género: <em>Administrador de Empresas</em> / <em>Administradora de Empresas</em>)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Metodología / Modalidad</td>
+                            <td><span class="tag-legal" style="background:#F39200; color:#FFFFFF;">REGISTRO ÚNICO</span> <span class="tag-legal" style="background:#1A1A1B; color:#FFFFFF;">Presencial &amp; Virtual</span></td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Lugar de Desarrollo</td>
+                            <td>Sede Principal Bucaramanga (Presencial) + Cobertura Nacional Digital (Virtual)</td>
+                        </tr>
+                        <tr style="background:#FFF9F2;">
+                            <td class="lb" style="font-weight:700; color:#F39200;">Duración Optimizada</td>
+                            <td><strong>8 semestres</strong> (4.0 años) — Compactación y eficiencia formativa</td>
+                        </tr>
+                        <tr style="background:#FFF9F2;">
+                            <td class="lb" style="font-weight:700; color:#F39200;">Número de Créditos</td>
+                            <td><strong>144 créditos académicos</strong> (48 asignaturas modulares)</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Periodicidad</td>
+                            <td>Semestral</td>
+                        </tr>
+                        <tr style="background:#FFF9F2;">
+                            <td class="lb" style="font-weight:700; color:#F39200;">Distribución Cupos</td>
+                            <td><strong>300 estudiantes / cohorte</strong>:<br>• <strong>240 estudiantes</strong> en Modalidad Virtual<br>• <strong>60 estudiantes</strong> en Modalidad Presencial</td>
+                        </tr>
+                        <tr>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Distribución Horas</td>
+                            <td><strong>Presencial:</strong> 48h directa / 96h indep. · <strong>Virtual:</strong> 36h mediada / 108h autónoma (x materia 3 cr)</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div style="background:#F0F9FF; padding:8px 16px; border-top:1px solid #BAE6FD; font-size:0.72rem; color:#0369A1; font-weight:700; display:flex; align-items:center; justify-content:space-between;">
-                <span><i class="fas fa-check-circle"></i> Idénticos Resultados de Aprendizaje</span>
-                <span>8 Semestres / 144 Cr</span>
+
+            <div style="background:#FFF9F2; border-left:3px solid #F39200; padding:10px 14px; border-radius:6px; margin-top:16px; font-size:0.77rem; color:#8A5300;">
+                <i class="fas fa-check-circle" style="color:#F39200; margin-right:4px;"></i>
+                <strong>Transformación Institucional:</strong> Aprobado por el Consejo Superior mediante <strong>Acuerdo 011 de 2024</strong> (adopción de Registro Único) y <strong>Acuerdo 021 de 2025</strong> (plan optimizado a 144 créditos y 8 semestres).
             </div>
         </div>
 
-    </div>
-
-    <!-- TRAZABILIDAD EVOLUTIVA SACES: VIGENTE VS. RENOVACIÓN -->
-    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px 16px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
-            <strong style="color:#1E293B; font-size:0.8rem; display:flex; align-items:center; gap:6px;">
-                <i class="fas fa-history" style="color:#F39200;"></i> Trazabilidad Evolutiva del Registro Calificado en SACES (Decreto 1330)
-            </strong>
-            <span style="font-size:0.7rem; color:#64748B;">Ambos planes operan bajo la figura oficial de Registro Único</span>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:10px; font-size:0.75rem;">
-            <div style="background:#FFFFFF; border:1px solid #CBD5E1; padding:8px 12px; border-radius:6px;">
-                <span style="color:#64748B; display:block; font-size:0.68rem;">Plan Base SACES (Acuerdo CS 011 de 2024):</span>
-                <strong style="color:#1A1A1B;">9 Semestres · 158 Créditos · 62 Materias</strong>
-            </div>
-            <div style="background:#FFFFFF; border:1.5px solid #F39200; padding:8px 12px; border-radius:6px;">
-                <span style="color:#C2410C; display:block; font-size:0.68rem; font-weight:700;">Plan Propuesto Renovación (Acuerdo CS 021 de 2025):</span>
-                <strong style="color:#F39200;">8 Semestres · 144 Créditos · 48 Materias Modulares</strong>
-            </div>
-            <div style="background:#FFFFFF; border:1px solid #CBD5E1; padding:8px 12px; border-radius:6px;">
-                <span style="color:#64748B; display:block; font-size:0.68rem;">Garantía de Movilidad Estudiantil:</span>
-                <strong style="color:#166534;"><i class="fas fa-check"></i> Tránsito entre modalidades sin costo de homologación</strong>
-            </div>
-        </div>
     </div>
 
 </div>
@@ -274,7 +251,7 @@ window.SECTIONS['c1'] = `
             ADMINISTRACIÓN DE EMPRESAS
         </h3>
         <p style="color:#FDBA74; font-size:0.86rem; font-weight:700; margin:0 0 10px;">
-            Título Profesional: Administrador(a) de Empresas · Registro Calificado Único (Presencial y Virtual)
+            Título Profesional: Administrador(a) de Empresas · Registro Calificado Único (Presencial y Virtual) · TO
         </p>
         <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:8px; font-size:0.75rem;">
             <span style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); padding:3px 10px; border-radius:15px; color:#FFFFFF;">
@@ -464,10 +441,7 @@ window.SECTIONS['c1'] = `
 
         <!-- SUBPESTAÑAS DE NAVEGACIÓN DENTRO DEL MODAL -->
         <div style="background:#F8F9FA; padding:8px 16px; border-bottom:1px solid #E8E8E8; display:flex; flex-wrap:wrap; gap:6px;" id="c1-modal-nav-tabs">
-            <button data-c1tab="ficha" onclick="window.switchC1ModalTab('ficha')" class="c1-mtab active" style="background:#FFFFFF; border:1.5px solid #F39200; color:#C2410C; font-weight:800; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
-                <i class="fas fa-id-card" style="color:#F39200;"></i> Ficha Técnica Oficial
-            </button>
-            <button data-c1tab="benchmarking" onclick="window.switchC1ModalTab('benchmarking')" class="c1-mtab" style="background:#FFFFFF; border:1px solid #CBD5E1; color:#475569; font-weight:700; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
+            <button data-c1tab="benchmarking" onclick="window.switchC1ModalTab('benchmarking')" class="c1-mtab active" style="background:#FFFFFF; border:1.5px solid #2ECC71; color:#166534; font-weight:800; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
                 <i class="fas fa-network-wired" style="color:#2ECC71;"></i> Justificación &amp; Benchmarking
             </button>
             <button data-c1tab="coherencia" onclick="window.switchC1ModalTab('coherencia')" class="c1-mtab" style="background:#FFFFFF; border:1px solid #CBD5E1; color:#475569; font-weight:700; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
@@ -484,121 +458,8 @@ window.SECTIONS['c1'] = `
         <!-- CUERPO DEL MODAL (SCROLL INTERNO AUTÓNOMO) -->
         <div style="padding:20px; overflow-y:auto; max-height:calc(90vh - 150px);">
             
-            <!-- PANEL 1: FICHA TÉCNICA OFICIAL -->
-            <div id="c1-panel-ficha" class="c1-modal-panel" style="display:block;">
-                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:18px;">
-                    
-                    <div style="background:#FFFFFF; border:2px solid #F39200; border-radius:10px; padding:16px; box-shadow:0 2px 10px rgba(243,146,0,0.06);">
-                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1.5px solid #FFF3E0; padding-bottom:8px;">
-                            <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0;">
-                                <i class="fas fa-certificate" style="color:#F39200;"></i> Ficha Oficial · Registro Calificado Único
-                            </h5>
-                            <span style="background:#F39200; color:#FFFFFF; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px;">
-                                Acuerdo CS 021 de 2025
-                            </span>
-                        </div>
-
-                        <table class="tbl" style="width:100%; font-size:0.82rem; margin:0;">
-                            <tbody>
-                                <tr style="background:#FFF9F2;">
-                                    <td class="lb" style="width:40%; font-weight:700; color:#F39200;">Denominación</td>
-                                    <td><strong>Administración de Empresas</strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="lb" style="font-weight:700; color:#6B6B6B;">Título a Otorgar</td>
-                                    <td><strong>Administrador(a) de Empresas</strong> <span style="font-size:0.74rem; color:#6B6B6B;">(Titulación Inclusiva)</span></td>
-                                </tr>
-                                <tr style="background:#FFF9F2;">
-                                    <td class="lb" style="font-weight:700; color:#F39200;">Nivel de Formación</td>
-                                    <td><strong>Profesional Universitario</strong> (Pregrado)</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb" style="font-weight:700; color:#6B6B6B;">Número de Créditos</td>
-                                    <td><strong>144 créditos académicos</strong></td>
-                                </tr>
-                                <tr style="background:#FFF9F2;">
-                                    <td class="lb" style="font-weight:700; color:#F39200;">Duración Estimada</td>
-                                    <td><strong>8 semestres</strong> (4.0 años) — Eficiencia formativa</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb" style="font-weight:700; color:#6B6B6B;">Número de Asignaturas</td>
-                                    <td><strong>48 asignaturas modulares</strong> (6 por semestre)</td>
-                                </tr>
-                                <tr style="background:#FFF9F2;">
-                                    <td class="lb" style="font-weight:700; color:#F39200;">Modalidades Ofertadas</td>
-                                    <td><span class="tag-legal" style="background:#F39200; color:#FFFFFF;">REGISTRO ÚNICO</span> <span class="tag-legal" style="background:#1A1A1B; color:#FFFFFF;">Presencial &amp; Virtual</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="lb" style="font-weight:700; color:#6B6B6B;">Distribución de Cupos</td>
-                                    <td><strong>300 cupos / cohorte:</strong> 240 Virtuales / 60 Presenciales</td>
-                                </tr>
-                                <tr>
-                                    <td class="lb" style="font-weight:700; color:#6B6B6B;">Lugar de Desarrollo</td>
-                                    <td>Sede Principal Bucaramanga (Presencial) + Cobertura Nacional Digital (Virtual)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div style="background:#F8F9FA; border:1px solid #CBD5E1; border-radius:10px; padding:16px; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1.5px solid #E2E8F0; padding-bottom:8px;">
-                                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0;">
-                                    <i class="fas fa-history" style="color:#64748B;"></i> Evolución Curricular SACES
-                                </h5>
-                                <span style="background:#E2E8F0; color:#1E293B; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:4px;">
-                                    Trazabilidad Normativa
-                                </span>
-                            </div>
-
-                            <table class="tbl" style="width:100%; font-size:0.8rem; margin:0;">
-                                <thead style="background:#1A1A1B; color:#FFFFFF;">
-                                    <tr>
-                                        <th style="text-align:left;">Parámetro</th>
-                                        <th>Vigente SACES</th>
-                                        <th style="background:#F39200;">Propuesto Renovación</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td style="font-weight:700;">Duración</td>
-                                        <td style="text-align:center;">9 semestres</td>
-                                        <td style="text-align:center; font-weight:800; color:#F39200; background:#FFF9F2;">8 semestres</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight:700;">Créditos</td>
-                                        <td style="text-align:center;">158 créditos</td>
-                                        <td style="text-align:center; font-weight:800; color:#F39200; background:#FFF9F2;">144 créditos</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight:700;">Asignaturas</td>
-                                        <td style="text-align:center;">62 materias</td>
-                                        <td style="text-align:center; font-weight:800; color:#F39200; background:#FFF9F2;">48 materias</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight:700;">Modalidad</td>
-                                        <td style="text-align:center; font-size:0.72rem;">Registro Único (Dual)</td>
-                                        <td style="text-align:center; font-size:0.72rem; font-weight:800; color:#F39200; background:#FFF9F2;">Registro Único (Dual)</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-weight:700;">Titulación</td>
-                                        <td style="text-align:center; font-size:0.72rem;">Masc. Genérico</td>
-                                        <td style="text-align:center; font-size:0.72rem; font-weight:800; color:#F39200; background:#FFF9F2;">Administrador(a)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div style="background:#FFFFFF; border-left:3px solid #F39200; padding:10px 12px; border-radius:6px; margin-top:12px; font-size:0.75rem; color:#4B5563;">
-                            <strong>Alineación Jurídica:</strong> Ambos planes se encuentran formalizados institucionalmente como <strong>Registro Único</strong> ante SACES (Acuerdos CS 011 de 2024 y 021 de 2025). La renovación a 144 créditos optimiza la permanencia y graduación sin reducir el rigor científico.
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- PANEL 2: JUSTIFICACIÓN & BENCHMARKING -->
-            <div id="c1-panel-benchmarking" class="c1-modal-panel" style="display:none;">
+            <!-- PANEL 1: JUSTIFICACIÓN & BENCHMARKING -->
+            <div id="c1-panel-benchmarking" class="c1-modal-panel" style="display:block;">
                 <div style="background:#F8F9FA; border-radius:10px; padding:14px; margin-bottom:16px; border:1px solid #E2E8F0;">
                     <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
                         <i class="fas fa-sitemap" style="color:#2ECC71;"></i> Alineación Taxonómica Internacional y Nacional
@@ -690,7 +551,7 @@ window.SECTIONS['c1'] = `
                 </div>
             </div>
 
-            <!-- PANEL 3: COHERENCIA CURRICULAR (48 ASIGNATURAS) -->
+            <!-- PANEL 2: COHERENCIA CURRICULAR (48 ASIGNATURAS) -->
             <div id="c1-panel-coherencia" class="c1-modal-panel" style="display:none;">
                 <p style="font-size:0.82rem; color:#4B5563; margin:0 0 14px; line-height:1.45;">
                     La denominación <strong>"Administración de Empresas"</strong> se fundamenta en un plan de estudios estructurado en <strong>5 pilares disciplinares</strong> que cubren rigurosamente todas las áreas funcionales de la organización:
@@ -773,7 +634,7 @@ window.SECTIONS['c1'] = `
                 </div>
             </div>
 
-            <!-- PANEL 4: REGISTRO ÚNICO & MODALIDADES -->
+            <!-- PANEL 3: REGISTRO ÚNICO & MODALIDADES -->
             <div id="c1-panel-modalidades" class="c1-modal-panel" style="display:none;">
                 <div style="display:grid; grid-template-columns: 1fr 1.15fr 1fr; gap:12px; align-items:stretch;">
                     <div style="background:#FFF9F2; border:1.5px solid #FED7AA; border-radius:8px; padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
@@ -851,7 +712,7 @@ window.SECTIONS['c1'] = `
                 </div>
             </div>
 
-            <!-- PANEL 5: PERTINENCIA & IMPACTO SOCIAL -->
+            <!-- PANEL 4: PERTINENCIA & IMPACTO SOCIAL -->
             <div id="c1-panel-impacto" class="c1-modal-panel" style="display:none;">
                 <div style="background:#F8F9FA; border-radius:8px; padding:14px; margin-bottom:14px; border:1px solid #E2E8F0;">
                     <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
@@ -936,11 +797,6 @@ window.SECTIONS['c1'] = `
     color: #C2410C !important;
     font-weight: 800 !important;
 }
-@media (max-width: 768px) {
-    #c1-dual-grid {
-        grid-template-columns: 1fr !important;
-    }
-}
 </style>
 `;
 
@@ -948,21 +804,20 @@ window.SECTIONS['c1'] = `
    CONTROLADORES JS DE LA VENTANA EMERGENTE (MODAL C1)
    ========================================================= */
 (function() {
-    const tabOrder = ['ficha', 'benchmarking', 'coherencia', 'modalidades', 'impacto'];
+    const tabOrder = ['benchmarking', 'coherencia', 'modalidades', 'impacto'];
     const tabMeta = {
-        'ficha': { title: 'Ficha Técnica Oficial del Programa', icon: 'fas fa-id-card', color: '#F39200' },
         'benchmarking': { title: 'Justificación, Clasificación CINE y Benchmarking', icon: 'fas fa-network-wired', color: '#2ECC71' },
         'coherencia': { title: 'Coherencia Curricular y Áreas Funcionales (48 Asignaturas)', icon: 'fas fa-sitemap', color: '#0369A1' },
         'modalidades': { title: 'Equivalencia de Modalidades en el Registro Único', icon: 'fas fa-balance-scale-right', color: '#6B21A8' },
         'impacto': { title: 'Pertinencia Social, Egresados y Resultados de Aprendizaje', icon: 'fas fa-chart-line', color: '#BE123C' }
     };
-    let currentTab = 'ficha';
+    let currentTab = 'benchmarking';
 
     window.openC1Modal = function(tabKey) {
         const overlay = document.getElementById('c1-modal-overlay');
         if (!overlay) return;
         overlay.style.display = 'flex';
-        window.switchC1ModalTab(tabKey || 'ficha');
+        window.switchC1ModalTab(tabKey || 'benchmarking');
     };
 
     window.closeC1Modal = function() {
@@ -971,7 +826,7 @@ window.SECTIONS['c1'] = `
     };
 
     window.switchC1ModalTab = function(tabKey) {
-        if (!tabOrder.includes(tabKey)) tabKey = 'ficha';
+        if (!tabOrder.includes(tabKey)) tabKey = 'benchmarking';
         currentTab = tabKey;
 
         // Ocultar todos los paneles y mostrar el activo
