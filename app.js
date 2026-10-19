@@ -7,6 +7,24 @@ const PWD_HASH = "TO2026";
 
 // ---- Conditions Info ----
 const condInfo = [
+    {
+        id: 'inst',
+        title: 'Presentación Institucional',
+        icon: 'fas fa-university',
+        badge: 'INSTITUCIONAL',
+        slideLabel: 'Identidad TO · 8 Secciones',
+        desc: 'Identidad corporativa, PEI, evolución histórica, convenios, oferta académica, bienestar e infraestructura física.',
+        img: 'assets/sedes_institucionales.png'
+    },
+    {
+        id: 'virtual',
+        title: 'Sistema de Educación Virtual',
+        icon: 'fas fa-laptop-code',
+        badge: 'VIRTUAL',
+        slideLabel: 'Ecosistema & Modelo Pedagógico',
+        desc: 'Modelo pedagógico Formación en Contextos de Aplicación, 4 dimensiones y Campus Virtual TO.',
+        img: 'assets/virtual_card_cover.png'
+    },
     { id: 'c1', title: '1. Denominación del Programa', icon: 'fas fa-id-badge', desc: 'Denominación académica, título otorgado, NBC y clasificación CINE.', img: 'assets/sedes_institucionales.png' },
     { id: 'c2', title: '2. Justificación del Programa', icon: 'fas fa-chart-line', desc: 'Pertinencia, estudios de contexto, necesidades del sector y análisis de oferta.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80' },
     { id: 'c3', title: '3. Aspectos Curriculares', icon: 'fas fa-sitemap', desc: 'Malla curricular, competencias, RAP, flexibilidad y plan de estudios unificado.', img: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80' },
@@ -51,14 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     grid.innerHTML = condInfo.map(c => `
         <div class="cond-card" onclick="openPresentation('${c.id}', '${c.title.replace(/'/g, "\\'")}')">
-            <div class="cond-card-img">
+            <div class="cond-card-img" style="${c.id === 'inst' ? 'background: linear-gradient(135deg, #0A2540 0%, #1e293b 100%);' : ''}">
                 <img src="${c.img}" alt="${c.title}" onerror="this.parentElement.outerHTML='<div class=\\'cond-card-icon-bg\\'><i class=\\'${c.icon}\\'></i></div>';">
-                <div class="cond-card-badge">Condición ${c.id.replace('c','')}</div>
+                <div class="cond-card-badge" style="${c.id === 'inst' ? 'background:#0A2540; color:#FFFFFF;' : c.id === 'virtual' ? 'background:#111827; color:#F39200; border:1px solid rgba(243,146,0,0.4);' : ''}">${c.badge || ('Condición ' + c.id.replace('c',''))}</div>
             </div>
             <div class="cond-card-body">
                 <h4 class="cond-card-title">${c.title}</h4>
                 <p class="cond-card-desc">${c.desc}</p>
-                <div class="cond-card-action"><i class="${c.icon}"></i> Ver Sustentación</div>
+                <div class="cond-card-action" style="${(c.id === 'inst' || c.id === 'virtual') ? 'color:#C8102E; font-weight:800;' : ''}"><i class="${c.icon}"></i> ${c.slideLabel || 'Ver Sustentación'}</div>
             </div>
         </div>
     `).join('');
@@ -73,7 +91,14 @@ function openPresentation(id, title) {
     const cond = condInfo.find(c => c.id === id);
 
     document.getElementById('viewerTitle').innerText = title || cond?.title || id;
-    document.getElementById('slideCategory').innerText = `CONDICIÓN ${id.replace('c','')} · RENOVACIÓN REGISTRO CALIFICADO`;
+    
+    if (id === 'inst') {
+        document.getElementById('slideCategory').innerText = `IDENTIDAD Y GOBERNANZA · CORPORACIÓN ESCUELA TECNOLÓGICA DEL ORIENTE`;
+    } else if (id === 'virtual') {
+        document.getElementById('slideCategory').innerText = `ECOSISTEMA DIGITAL · SISTEMA DE EDUCACIÓN VIRTUAL TO`;
+    } else {
+        document.getElementById('slideCategory').innerText = `CONDICIÓN ${id.replace('c','')} · RENOVACIÓN REGISTRO CALIFICADO`;
+    }
     document.getElementById('slideTitle').innerText = cond?.title || title;
 
     // Update counter
@@ -127,6 +152,8 @@ function closePresentation() {
 function runSlideScripts(id) {
     [100, 300, 600, 1000].forEach(delay => {
         setTimeout(() => {
+            if (id === 'inst' && window.instInit) window.instInit();
+            if (id === 'virtual' && window.virtualInit) window.virtualInit();
             if (id === 'c2' && window.c2Init) window.c2Init();
             if (id === 'c3' && window.c3Init) window.c3Init();
             if (id === 'c4' && window.c4Init) window.c4Init();
