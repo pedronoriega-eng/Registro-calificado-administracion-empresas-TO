@@ -643,20 +643,39 @@ window.SECTIONS['c2'] = `
         </div>
     </div>
 
-    <!-- TABLAS RESUMEN DE MATRÍCULA Y PERMANENCIA (TABLAS 12 Y 13) -->
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap:18px;">
+    <!-- TABLAS RESUMEN Y GRÁFICAS DE TENDENCIA (TABLAS 12 Y 13) -->
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap:20px; margin-bottom:16px;">
         
-        <!-- RESUMEN TABLA 12: MATRÍCULA HISTÓRICA -->
-        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:14px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <h6 style="font-family:'Montserrat',sans-serif; font-size:0.85rem; font-weight:800; color:#1A1A1B; margin:0;">
-                    <i class="fas fa-users" style="color:#F39200; margin-right:4px;"></i> Tabla 12. Evolución de Matrícula (2020-2 a 2025-2)
-                </h6>
-                <span class="tag-legal" style="background:#FFF3E0; color:#F39200; font-size:0.68rem; font-weight:700;">Fuente DM</span>
+        <!-- RESUMEN TABLA 12: MATRÍCULA HISTÓRICA Y TENDENCIA -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:16px; box-shadow:0 3px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px; gap:8px; flex-wrap:wrap;">
+                <div>
+                    <h6 style="font-family:'Montserrat',sans-serif; font-size:0.88rem; font-weight:800; color:#1A1A1B; margin:0 0 4px 0; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-users" style="color:#F39200;"></i> Tabla 12. Evolución y Tendencia de Matrícula (2020-2 a 2025-2)
+                    </h6>
+                    <div style="font-size:0.7rem; color:#6B6B6B;">
+                        <span style="font-weight:700; color:#F39200;"><i class="fas fa-arrow-trend-up"></i> +776% Crecimiento</span> &bull; Apertura: 13 &bull; Cierre: 114 Matriculados
+                    </div>
+                </div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span class="tag-legal" style="background:#FFF3E0; color:#F39200; font-size:0.68rem; font-weight:700; padding:3px 8px; border-radius:4px;">Fuente DM</span>
+                    <div style="display:inline-flex; background:#F3F4F6; padding:2px; border-radius:6px; border:1px solid #E5E7EB;">
+                        <button id="btnT12Chart" onclick="switchT12View('chart')" title="Ver solo gráfica" style="border:none; background:#F3F4F6; color:#4B5563; padding:3px 8px; border-radius:4px; font-size:0.68rem; font-weight:700; cursor:pointer; transition:all 0.2s;"><i class="fas fa-chart-line"></i> Gráfica</button>
+                        <button id="btnT12Table" onclick="switchT12View('table')" title="Ver solo tabla" style="border:none; background:#F3F4F6; color:#4B5563; padding:3px 8px; border-radius:4px; font-size:0.68rem; font-weight:700; cursor:pointer; transition:all 0.2s;"><i class="fas fa-table"></i> Tabla</button>
+                        <button id="btnT12Both" onclick="switchT12View('both')" title="Ver gráfica y tabla" style="border:none; background:#F39200; color:#FFFFFF; padding:3px 8px; border-radius:4px; font-size:0.68rem; font-weight:700; cursor:pointer; transition:all 0.2s;"><i class="fas fa-columns"></i> Ambas</button>
+                    </div>
+                </div>
             </div>
-            <div style="max-height:200px; overflow-y:auto; border:1px solid #E8E8E8; border-radius:4px;">
+
+            <!-- CONTENEDOR GRÁFICA T12 -->
+            <div id="t12ChartWrap" style="position:relative; height:200px; width:100%; margin-bottom:12px; background:#FAFAFA; border-radius:8px; padding:8px 8px 4px 8px; border:1px solid #F0F0F0;">
+                <canvas id="chartC2Matricula"></canvas>
+            </div>
+
+            <!-- CONTENEDOR TABLA T12 -->
+            <div id="t12TableWrap" style="max-height:175px; overflow-y:auto; border:1px solid #E8E8E8; border-radius:6px;">
                 <table class="tbl" style="width:100%; font-size:0.75rem; margin:0;">
-                    <thead style="position:sticky; top:0; background:#1A1A1B; color:#FFFFFF;">
+                    <thead style="position:sticky; top:0; background:#1A1A1B; color:#FFFFFF; z-index:2;">
                         <tr><th>Período</th><th>Inscritos</th><th>Admitidos</th><th>Matriculados</th></tr>
                     </thead>
                     <tbody>
@@ -674,19 +693,44 @@ window.SECTIONS['c2'] = `
                     </tbody>
                 </table>
             </div>
+
+            <!-- PIE DE TARJETA T12 -->
+            <div style="margin-top:10px; font-size:0.72rem; color:#4B5563; background:#FFF8F0; border-left:3px solid #F39200; padding:6px 10px; border-radius:4px; display:flex; align-items:center; justify-content:space-between; gap:6px;">
+                <span><i class="fas fa-check-circle" style="color:#F39200; margin-right:4px;"></i> <strong>Tendencia:</strong> Crecimiento sostenido con pico de 127 aspirantes inscritos y 114 matriculados en 2025-2.</span>
+                <span style="font-weight:700; color:#F39200; white-space:nowrap;">Demanda Activa</span>
+            </div>
         </div>
 
-        <!-- RESUMEN TABLA 13: PERMANENCIA SEMESTRAL -->
-        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:8px; padding:14px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <h6 style="font-family:'Montserrat',sans-serif; font-size:0.85rem; font-weight:800; color:#1A1A1B; margin:0;">
-                    <i class="fas fa-shield-alt" style="color:#2ECC71; margin-right:4px;"></i> Tabla 13. Tasa de Permanencia Semestral (%)
-                </h6>
-                <span class="tag-legal" style="background:#DCFCE7; color:#166534; font-size:0.68rem; font-weight:700;">Consolidación SAT</span>
+        <!-- RESUMEN TABLA 13: PERMANENCIA SEMESTRAL Y TENDENCIA -->
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:16px; box-shadow:0 3px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px; gap:8px; flex-wrap:wrap;">
+                <div>
+                    <h6 style="font-family:'Montserrat',sans-serif; font-size:0.88rem; font-weight:800; color:#1A1A1B; margin:0 0 4px 0; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-shield-alt" style="color:#2ECC71;"></i> Tabla 13. Tasa de Permanencia Semestral (%)
+                    </h6>
+                    <div style="font-size:0.7rem; color:#6B6B6B;">
+                        <span style="font-weight:700; color:#166534;"><i class="fas fa-chart-line"></i> Consolidación SAT > 90%</span> &bull; 2025-1: 94.4% vs Meta: 80.0%
+                    </div>
+                </div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span class="tag-legal" style="background:#DCFCE7; color:#166534; font-size:0.68rem; font-weight:700; padding:3px 8px; border-radius:4px;">Consolidación SAT</span>
+                    <div style="display:inline-flex; background:#F3F4F6; padding:2px; border-radius:6px; border:1px solid #E5E7EB;">
+                        <button id="btnT13Chart" onclick="switchT13View('chart')" title="Ver solo gráfica" style="border:none; background:#F3F4F6; color:#4B5563; padding:3px 8px; border-radius:4px; font-size:0.68rem; font-weight:700; cursor:pointer; transition:all 0.2s;"><i class="fas fa-chart-line"></i> Gráfica</button>
+                        <button id="btnT13Table" onclick="switchT13View('table')" title="Ver solo tabla" style="border:none; background:#F3F4F6; color:#4B5563; padding:3px 8px; border-radius:4px; font-size:0.68rem; font-weight:700; cursor:pointer; transition:all 0.2s;"><i class="fas fa-table"></i> Tabla</button>
+                        <button id="btnT13Both" onclick="switchT13View('both')" title="Ver gráfica y tabla" style="border:none; background:#2ECC71; color:#FFFFFF; padding:3px 8px; border-radius:4px; font-size:0.68rem; font-weight:700; cursor:pointer; transition:all 0.2s;"><i class="fas fa-columns"></i> Ambas</button>
+                    </div>
+                </div>
             </div>
-            <div style="max-height:200px; overflow-y:auto; border:1px solid #E8E8E8; border-radius:4px;">
+
+            <!-- CONTENEDOR GRÁFICA T13 -->
+            <div id="t13ChartWrap" style="position:relative; height:200px; width:100%; margin-bottom:12px; background:#FAFAFA; border-radius:8px; padding:8px 8px 4px 8px; border:1px solid #F0F0F0;">
+                <canvas id="chartC2Permanencia"></canvas>
+            </div>
+
+            <!-- CONTENEDOR TABLA T13 -->
+            <div id="t13TableWrap" style="max-height:175px; overflow-y:auto; border:1px solid #E8E8E8; border-radius:6px;">
                 <table class="tbl" style="width:100%; font-size:0.75rem; margin:0;">
-                    <thead style="position:sticky; top:0; background:#1A1A1B; color:#FFFFFF;">
+                    <thead style="position:sticky; top:0; background:#1A1A1B; color:#FFFFFF; z-index:2;">
                         <tr><th>Período</th><th>Inicial</th><th>Final</th><th>Permanencia (%)</th><th>Estado SAT</th></tr>
                     </thead>
                     <tbody>
@@ -698,11 +742,17 @@ window.SECTIONS['c2'] = `
                         <tr><td>2023-1</td><td style="text-align:center;">59</td><td style="text-align:center;">45</td><td style="text-align:center; font-weight:700;">76.3%</td><td><span class="badge" style="background:#FFF3CD; color:#856404; font-size:0.65rem;">En seguimiento</span></td></tr>
                         <tr><td>2023-2</td><td style="text-align:center;">48</td><td style="text-align:center;">39</td><td style="text-align:center; font-weight:700;">81.3%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Superada</span></td></tr>
                         <tr style="background:#F0FDF4; font-weight:700;"><td>2024-1</td><td style="text-align:center;">42</td><td style="text-align:center;">39</td><td style="text-align:center; font-weight:800; color:#166534;">92.9%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Excelente</span></td></tr>
-                        <tr style="background:#F0FDF4; font-weight:700;"><td>2024-2</td><td style="text-align:center;">38</td><td style="text-align:center;">35</td><td style="text-align:center; font-weight:800; color:#166534;">92.1%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Excelente</span></td></tr>
+                        <tr style="background:#F0FDF4; font-weight:700;"><td>2024-2</td><td style="text-align:center;">38</td><td style="text-align:center; font-weight:800; color:#166534;">92.1%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Excelente</span></td></tr>
                         <tr style="background:#F0FDF4; font-weight:800;"><td>2025-1</td><td style="text-align:center;">72</td><td style="text-align:center;">68</td><td style="text-align:center; font-weight:800; color:#166534;">94.4%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Récord SAT</span></td></tr>
                         <tr style="font-weight:700;"><td>2025-2</td><td style="text-align:center;">114</td><td style="text-align:center;">98</td><td style="text-align:center; font-weight:800; color:#166534;">86.0%</td><td><span class="badge" style="background:#D4EDDA; color:#155724; font-size:0.65rem;">Superada</span></td></tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!-- PIE DE TARJETA T13 -->
+            <div style="margin-top:10px; font-size:0.72rem; color:#166534; background:#F0FDF4; border-left:3px solid #2ECC71; padding:6px 10px; border-radius:4px; display:flex; align-items:center; justify-content:space-between; gap:6px;">
+                <span><i class="fas fa-shield-halved" style="color:#2ECC71; margin-right:4px;"></i> <strong>Eficacia SAT:</strong> Permanencia semestral estabilizada por encima del 92% (14.4 puntos sobre la meta institucional del 80%).</span>
+                <span style="font-weight:700; color:#166534; white-space:nowrap;">Retención Exitosa</span>
             </div>
         </div>
 
@@ -2228,6 +2278,11 @@ window.c2Init = function() {
     // Panel lateral inicial limpio
     window.renderInitialSidePanel(window._currentGeoMode);
 
+    // Inicializar gráficas de tendencia Condición 2 (Tablas 12 y 13)
+    if (window.initC2Charts) {
+        window.initC2Charts();
+    }
+
     [80, 250, 500, 1000].forEach(delay => {
         setTimeout(() => {
             if (window._leafletMapInstance) {
@@ -2869,18 +2924,269 @@ window.resetGeoSelection = function(mode) {
 };
 
 
-(function initGeoAutoWatcher() {
+
+// ==========================================
+// GRÁFICAS DE TENDENCIA CONDICIÓN 2 (TABLAS 12 Y 13)
+// ==========================================
+window.initC2Charts = function() {
+    // 1. Gráfico de Matrícula (Tabla 12)
+    const ctxMat = document.getElementById('chartC2Matricula');
+    if (ctxMat && typeof Chart !== 'undefined') {
+        if (window._chartC2MatInstance) {
+            try { window._chartC2MatInstance.destroy(); } catch(e) {}
+            window._chartC2MatInstance = null;
+        }
+
+        window._chartC2MatInstance = new Chart(ctxMat, {
+            data: {
+                labels: ['2020-2', '2021-1', '2021-2', '2022-1', '2022-2', '2023-1', '2023-2', '2024-1', '2024-2', '2025-1', '2025-2'],
+                datasets: [
+                    {
+                        label: 'Matriculados (Tendencia)',
+                        type: 'line',
+                        data: [13, 28, 46, 54, 62, 59, 48, 42, 38, 72, 114],
+                        borderColor: '#F39200',
+                        backgroundColor: 'rgba(243, 146, 0, 0.16)',
+                        borderWidth: 3.5,
+                        pointBackgroundColor: '#FFFFFF',
+                        pointBorderColor: '#F39200',
+                        pointBorderWidth: 2.5,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        fill: true,
+                        tension: 0.35,
+                        order: 1
+                    },
+                    {
+                        label: 'Admitidos',
+                        type: 'bar',
+                        data: [20, 32, 52, 61, 69, 65, 50, 48, 45, 80, 120],
+                        backgroundColor: 'rgba(52, 152, 219, 0.55)',
+                        hoverBackgroundColor: 'rgba(52, 152, 219, 0.8)',
+                        borderRadius: 4,
+                        barPercentage: 0.65,
+                        order: 2
+                    },
+                    {
+                        label: 'Inscritos',
+                        type: 'bar',
+                        data: [25, 37, 60, 74, 78, 75, 55, 56, 65, 88, 127],
+                        backgroundColor: 'rgba(26, 26, 27, 0.25)',
+                        hoverBackgroundColor: 'rgba(26, 26, 27, 0.45)',
+                        borderRadius: 4,
+                        barPercentage: 0.65,
+                        order: 3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { boxWidth: 12, font: { family: 'Montserrat', size: 10, weight: '700' } }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(26, 26, 27, 0.92)',
+                        titleFont: { family: 'Montserrat', size: 11, weight: '700' },
+                        bodyFont: { family: 'Montserrat', size: 10 },
+                        padding: 8,
+                        callbacks: {
+                            label: function(ctx) {
+                                return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y + ' est.';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#F3F4F6' },
+                        ticks: { font: { family: 'Montserrat', size: 9 } }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { font: { family: 'Montserrat', size: 9, weight: '600' } }
+                    }
+                }
+            }
+        });
+    }
+
+    // 2. Gráfico de Permanencia (Tabla 13)
+    const ctxPerm = document.getElementById('chartC2Permanencia');
+    if (ctxPerm && typeof Chart !== 'undefined') {
+        if (window._chartC2PermInstance) {
+            try { window._chartC2PermInstance.destroy(); } catch(e) {}
+            window._chartC2PermInstance = null;
+        }
+
+        window._chartC2PermInstance = new Chart(ctxPerm, {
+            type: 'line',
+            data: {
+                labels: ['2020-2', '2021-1', '2021-2', '2022-1', '2022-2', '2023-1', '2023-2', '2024-1', '2024-2', '2025-1', '2025-2'],
+                datasets: [
+                    {
+                        label: 'Permanencia Semestral (%)',
+                        data: [61.5, 82.1, 63.0, 61.1, 85.5, 76.3, 81.3, 92.9, 92.1, 94.4, 86.0],
+                        borderColor: '#2ECC71',
+                        backgroundColor: 'rgba(46, 204, 113, 0.16)',
+                        borderWidth: 3.5,
+                        pointBackgroundColor: '#2ECC71',
+                        pointBorderColor: '#FFFFFF',
+                        pointBorderWidth: 2,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        fill: true,
+                        tension: 0.35
+                    },
+                    {
+                        label: 'Meta Institucional SAT (80.0%)',
+                        data: [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80],
+                        borderColor: '#E74C3C',
+                        borderWidth: 2,
+                        borderDash: [6, 4],
+                        pointRadius: 0,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { boxWidth: 12, font: { family: 'Montserrat', size: 10, weight: '700' } }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(26, 26, 27, 0.92)',
+                        titleFont: { family: 'Montserrat', size: 11, weight: '700' },
+                        bodyFont: { family: 'Montserrat', size: 10 },
+                        padding: 8,
+                        callbacks: {
+                            label: function(ctx) {
+                                return ' ' + ctx.dataset.label + ': ' + ctx.parsed.y + '%';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        min: 50,
+                        max: 100,
+                        grid: { color: '#F3F4F6' },
+                        ticks: {
+                            stepSize: 10,
+                            callback: function(v) { return v + '%'; },
+                            font: { family: 'Montserrat', size: 9 }
+                        }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { font: { family: 'Montserrat', size: 9, weight: '600' } }
+                    }
+                }
+            }
+        });
+    }
+};
+
+window.switchT12View = function(view) {
+    const chartWrap = document.getElementById('t12ChartWrap');
+    const tableWrap = document.getElementById('t12TableWrap');
+    const btnChart = document.getElementById('btnT12Chart');
+    const btnTable = document.getElementById('btnT12Table');
+    const btnBoth = document.getElementById('btnT12Both');
+    if (!chartWrap || !tableWrap) return;
+
+    [btnChart, btnTable, btnBoth].forEach(b => {
+        if (b) {
+            b.style.background = '#F3F4F6';
+            b.style.color = '#4B5563';
+        }
+    });
+
+    if (view === 'chart') {
+        chartWrap.style.display = 'block';
+        chartWrap.style.height = '310px';
+        tableWrap.style.display = 'none';
+        if (btnChart) { btnChart.style.background = '#F39200'; btnChart.style.color = '#FFFFFF'; }
+    } else if (view === 'table') {
+        chartWrap.style.display = 'none';
+        tableWrap.style.display = 'block';
+        tableWrap.style.maxHeight = '310px';
+        if (btnTable) { btnTable.style.background = '#F39200'; btnTable.style.color = '#FFFFFF'; }
+    } else { // both
+        chartWrap.style.display = 'block';
+        chartWrap.style.height = '200px';
+        tableWrap.style.display = 'block';
+        tableWrap.style.maxHeight = '175px';
+        if (btnBoth) { btnBoth.style.background = '#F39200'; btnBoth.style.color = '#FFFFFF'; }
+    }
+
+    if (window._chartC2MatInstance) {
+        window._chartC2MatInstance.resize();
+    }
+};
+
+window.switchT13View = function(view) {
+    const chartWrap = document.getElementById('t13ChartWrap');
+    const tableWrap = document.getElementById('t13TableWrap');
+    const btnChart = document.getElementById('btnT13Chart');
+    const btnTable = document.getElementById('btnT13Table');
+    const btnBoth = document.getElementById('btnT13Both');
+    if (!chartWrap || !tableWrap) return;
+
+    [btnChart, btnTable, btnBoth].forEach(b => {
+        if (b) {
+            b.style.background = '#F3F4F6';
+            b.style.color = '#4B5563';
+        }
+    });
+
+    if (view === 'chart') {
+        chartWrap.style.display = 'block';
+        chartWrap.style.height = '310px';
+        tableWrap.style.display = 'none';
+        if (btnChart) { btnChart.style.background = '#2ECC71'; btnChart.style.color = '#FFFFFF'; }
+    } else if (view === 'table') {
+        chartWrap.style.display = 'none';
+        tableWrap.style.display = 'block';
+        tableWrap.style.maxHeight = '310px';
+        if (btnTable) { btnTable.style.background = '#2ECC71'; btnTable.style.color = '#FFFFFF'; }
+    } else { // both
+        chartWrap.style.display = 'block';
+        chartWrap.style.height = '200px';
+        tableWrap.style.display = 'block';
+        tableWrap.style.maxHeight = '175px';
+        if (btnBoth) { btnBoth.style.background = '#2ECC71'; btnBoth.style.color = '#FFFFFF'; }
+    }
+
+    if (window._chartC2PermInstance) {
+        window._chartC2PermInstance.resize();
+    }
+};
+
+(function initC2AutoWatcher() {
     let attempts = 0;
     const watcher = setInterval(() => {
         attempts++;
         const mapEl = document.getElementById('toGeoMap');
         if (mapEl && mapEl.offsetParent !== null) {
-            // El elemento existe y es visible en pantalla
             if (!window._leafletMapInstance && window.c2Init) {
                 window.c2Init();
             }
         }
-        if (attempts > 80) clearInterval(watcher);
-    }, 200);
+        const chartEl = document.getElementById('chartC2Matricula');
+        if (chartEl && chartEl.offsetParent !== null) {
+            if (!window._chartC2MatInstance && window.initC2Charts) {
+                window.initC2Charts();
+            }
+        }
+        if (attempts > 100) clearInterval(watcher);
+    }, 250);
 })();
-
