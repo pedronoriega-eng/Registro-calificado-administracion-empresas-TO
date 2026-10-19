@@ -65,7 +65,7 @@ window.SECTIONS.inst = `
         </div>
         <div style="background:white; border:2px solid #e5e7eb; border-radius:12px; padding:20px; text-align:center; transition:transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(10,37,64,0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
             <div style="width:55px; height:55px; background:linear-gradient(135deg, #7c3aed, #8b5cf6); border-radius:50%; margin:0 auto 10px; display:flex; align-items:center; justify-content:center;"><i class="fas fa-wifi" style="color:white; font-size:1.3rem;"></i></div>
-            <div style="font-size:2.5rem; font-weight:800; color:#0A2540; font-family:'Montserrat';">5</div>
+            <div style="font-size:2.5rem; font-weight:800; color:#0A2540; font-family:'Montserrat';">4</div>
             <div style="font-size:0.78rem; font-weight:700; color:#6b7280; text-transform:uppercase; letter-spacing:0.5px;">Posgrado Virtual</div>
         </div>
     </div>
@@ -306,127 +306,809 @@ window.SECTIONS.inst = `
 
 <!-- ==================== TAB: OFERTA ==================== -->
 <div id="instTab_oferta" class="inst-tab-content" style="display:none;">
-    <div style="background:white; border:2px solid #e5e7eb; border-radius:12px; padding:30px; margin-bottom:25px;">
-        <h3 style="color:#0A2540; font-weight:800; font-size:1.5rem; margin-bottom:20px;"><i class="fas fa-graduation-cap mr-2" style="color:#C8102E;"></i>Oferta Académica Vigente</h3>
+    <!-- Encabezado Oficial -->
+    <div style="background:linear-gradient(135deg, #0A2540 0%, #173A66 100%); color:white; border-radius:14px; padding:25px 30px; margin-bottom:22px; box-shadow:0 8px 25px rgba(10,37,64,0.15);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;">
+            <div>
+                <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(200,16,46,0.25); border:1px solid #C8102E; border-radius:20px; padding:4px 12px; margin-bottom:10px;">
+                    <i class="fas fa-check-circle" style="color:#ef4444; font-size:0.85rem;"></i>
+                    <span style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">Información Oficial y Verificable</span>
+                </div>
+                <h3 style="font-weight:800; font-size:1.6rem; margin:0 0 6px 0; font-family:'Montserrat',sans-serif;">
+                    <i class="fas fa-graduation-cap mr-2" style="color:#C8102E;"></i>Oferta Académica Vigente Institucional
+                </h3>
+                <p style="color:#cbd5e1; margin:0; font-size:0.92rem; max-width:850px; line-height:1.5;">
+                    Programas académicos activos con Registro Calificado otorgado por el Ministerio de Educación Nacional (MEN). Datos sincronizados y actualizados directamente con el portal web oficial: <a href="https://tecnologicadeloriente.edu.co/oferta-academica/" target="_blank" rel="noopener noreferrer" style="color:#60a5fa; text-decoration:underline; font-weight:700;">tecnologicadeloriente.edu.co/oferta-academica/</a>.
+                </p>
+            </div>
+            <div>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:8px; background:#C8102E; color:white; font-size:0.85rem; font-weight:700; padding:10px 18px; border-radius:8px; text-decoration:none; box-shadow:0 4px 15px rgba(200,16,46,0.4); transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''">
+                    <i class="fas fa-globe"></i> Portal Institucional TO ↗
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Indicadores Numéricos Consolidados -->
+    <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:12px; margin-bottom:22px;">
+        <div style="background:white; border:2px solid #e5e7eb; border-radius:10px; padding:14px; text-align:center;">
+            <div style="font-size:1.8rem; font-weight:800; color:#0A2540; font-family:'Montserrat';">17</div>
+            <div style="font-size:0.72rem; font-weight:700; color:#6b7280; text-transform:uppercase;">Total Programas</div>
+        </div>
+        <div style="background:white; border:2px solid #C8102E; border-radius:10px; padding:14px; text-align:center;">
+            <div style="font-size:1.8rem; font-weight:800; color:#C8102E; font-family:'Montserrat';">4</div>
+            <div style="font-size:0.72rem; font-weight:700; color:#6b7280; text-transform:uppercase;">Pregrados Presenciales</div>
+        </div>
+        <div style="background:white; border:2px solid #0A2540; border-radius:10px; padding:14px; text-align:center;">
+            <div style="font-size:1.8rem; font-weight:800; color:#0A2540; font-family:'Montserrat';">6</div>
+            <div style="font-size:0.72rem; font-weight:700; color:#6b7280; text-transform:uppercase;">Pregrados Virtuales</div>
+        </div>
+        <div style="background:white; border:2px solid #d97706; border-radius:10px; padding:14px; text-align:center;">
+            <div style="font-size:1.8rem; font-weight:800; color:#d97706; font-family:'Montserrat';">3</div>
+            <div style="font-size:0.72rem; font-weight:700; color:#6b7280; text-transform:uppercase;">Posgrados Presenciales</div>
+        </div>
+        <div style="background:white; border:2px solid #7c3aed; border-radius:10px; padding:14px; text-align:center;">
+            <div style="font-size:1.8rem; font-weight:800; color:#7c3aed; font-family:'Montserrat';">4</div>
+            <div style="font-size:0.72rem; font-weight:700; color:#6b7280; text-transform:uppercase;">Posgrados Virtuales</div>
+        </div>
+    </div>
+
+    <!-- Barra de Filtros Interactivos -->
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:10px 15px; align-items:center;">
+        <span style="font-size:0.8rem; font-weight:800; color:#0A2540; text-transform:uppercase; margin-right:5px;">
+            <i class="fas fa-filter mr-1" style="color:#C8102E;"></i>Filtrar por:
+        </span>
+        <button onclick="window.filterInstOferta('all')" id="btnOferta_all" class="inst-oferta-btn active" style="background:#0A2540; color:white; border:none; border-radius:6px; padding:7px 14px; font-size:0.78rem; font-weight:700; cursor:pointer; transition:all 0.2s;">
+            Todos los Programas (17)
+        </button>
+        <button onclick="window.filterInstOferta('pregrado-presencial')" id="btnOferta_pregrado_pres" class="inst-oferta-btn" style="background:white; color:#374151; border:1px solid #cbd5e1; border-radius:6px; padding:7px 14px; font-size:0.78rem; font-weight:700; cursor:pointer; transition:all 0.2s;">
+            Pregrado Presencial (4)
+        </button>
+        <button onclick="window.filterInstOferta('pregrado-virtual')" id="btnOferta_pregrado_virt" class="inst-oferta-btn" style="background:white; color:#374151; border:1px solid #cbd5e1; border-radius:6px; padding:7px 14px; font-size:0.78rem; font-weight:700; cursor:pointer; transition:all 0.2s;">
+            Pregrado Virtual (6)
+        </button>
+        <button onclick="window.filterInstOferta('posgrado-presencial')" id="btnOferta_posgrado_pres" class="inst-oferta-btn" style="background:white; color:#374151; border:1px solid #cbd5e1; border-radius:6px; padding:7px 14px; font-size:0.78rem; font-weight:700; cursor:pointer; transition:all 0.2s;">
+            Posgrado Presencial (3)
+        </button>
+        <button onclick="window.filterInstOferta('posgrado-virtual')" id="btnOferta_posgrado_virt" class="inst-oferta-btn" style="background:white; color:#374151; border:1px solid #cbd5e1; border-radius:6px; padding:7px 14px; font-size:0.78rem; font-weight:700; cursor:pointer; transition:all 0.2s;">
+            Posgrado Virtual (4)
+        </button>
+    </div>
+
+    <!-- Grid de Tarjetas de Programas -->
+    <div id="instOfertaGrid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(350px, 1fr)); gap:18px; margin-bottom:25px;">
+
+        <div class="inst-prog-card" data-cat="pregrado-presencial" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #C8102E; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#C8102E; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-briefcase mr-1"></i>Presencial
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Administración de Empresas
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>108445</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>9 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma líderes empresariales con visión estratégica, capaces de gestionar organizaciones con innovación, responsabilidad social y competitividad en mercados locales e internacionales.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>⭐ Proceso de Renovación de Registro Único (Presencial y Virtual) — Propuesta curricular consolidada en 8 semestres y 144 créditos académicos.
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/administracion-de-empresas/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
         
-        <!-- Pregrado Presencial -->
-        <h4 style="color:#0A2540; font-weight:700; font-size:1.15rem; margin-bottom:12px; padding-bottom:8px; border-bottom:2px solid #e5e7eb;"><i class="fas fa-school mr-2" style="color:#C8102E;"></i>Pregrado Presencial<span style="float:right; font-size:0.78rem; color:#6b7280; font-weight:400;">📍 Campus Bucaramanga</span></h4>
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; margin-bottom:25px;">
-            <div style="background:#eff6ff; border-left:4px solid #0A2540; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.95rem;">💼 Administración de Empresas</div>
-                <div style="font-size:0.82rem; color:#6b7280; margin-top:4px;">9 Semestres · SNIES: 108445 · 145 Cr.</div>
-                <span style="display:inline-block; background:#0A2540; color:white; font-size:0.65rem; font-weight:700; padding:2px 8px; border-radius:4px; margin-top:5px;">👑 PREMIUM</span>
-            </div>
-            <div style="background:#f0fdf4; border-left:4px solid #16a34a; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.95rem;">👶 Licenciatura en Educación Infantil</div>
-                <div style="font-size:0.82rem; color:#6b7280; margin-top:4px;">9 Semestres · SNIES: 116357 · 158 Cr.</div>
-                <span style="display:inline-block; background:#16a34a; color:white; font-size:0.65rem; font-weight:700; padding:2px 8px; border-radius:4px; margin-top:5px;">💝 VOCACIÓN</span>
-            </div>
-            <div style="background:#fef3c7; border-left:4px solid #d97706; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.95rem;">🛡️ Seguridad y Salud en el Trabajo</div>
-                <div style="font-size:0.82rem; color:#6b7280; margin-top:4px;">9 Semestres · SNIES: 106177 · 155 Cr.</div>
-                <span style="display:inline-block; background:#d97706; color:white; font-size:0.65rem; font-weight:700; padding:2px 8px; border-radius:4px; margin-top:5px;">💼 LIDERAZGO</span>
-            </div>
-            <div style="background:#fef2f2; border-left:4px solid #C8102E; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.95rem;">🏭 Técnica Profesional en Higiene y Seguridad en el Trabajo</div>
-                <div style="font-size:0.82rem; color:#6b7280; margin-top:4px;">4 Semestres · SNIES: 103527 · 62 Cr.</div>
-                <span style="display:inline-block; background:#C8102E; color:white; font-size:0.65rem; font-weight:700; padding:2px 8px; border-radius:4px; margin-top:5px;">🔥 ALTA DEMANDA</span>
-            </div>
-        </div>
 
-        <!-- Pregrado Virtual -->
-        <h4 style="color:#0A2540; font-weight:700; font-size:1.15rem; margin-bottom:12px; padding-bottom:8px; border-bottom:2px solid #e5e7eb;"><i class="fas fa-laptop mr-2" style="color:#C8102E;"></i>Pregrado Virtual<span style="float:right; font-size:0.78rem; color:#6b7280; font-weight:400;">🌐 Cobertura Nacional</span></h4>
-        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-bottom:25px;">
-            <div style="background:#f9fafb; border:2px solid #C8102E; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.9rem;">🏭 Ingeniería Industrial Virtual</div>
-                <div style="font-size:0.78rem; color:#6b7280; margin-top:4px;">8 Semestres · Programa Aprobado</div>
-                <span style="display:inline-block; background:#C8102E; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:5px;">VIRTUAL · APROBADO</span>
-            </div>
-            <div style="background:#f9fafb; border:2px solid #3b82f6; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.9rem;">💼 Administración de Empresas Virtual</div>
-                <div style="font-size:0.78rem; color:#6b7280; margin-top:4px;">9 Semestres · SNIES: 108445 · 145 Cr.</div>
-                <span style="display:inline-block; background:#3b82f6; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:5px;">VIRTUAL</span>
-            </div>
-            <div style="background:#f9fafb; border:2px solid #7c3aed; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.9rem;">⚖️ Derecho Virtual</div>
-                <div style="font-size:0.78rem; color:#6b7280; margin-top:4px;">9 Semestres · Regist. Resol. N° 010686 · 159 Cr.</div>
-                <span style="display:inline-block; background:#7c3aed; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:5px;">VIRTUAL</span>
-            </div>
-            <div style="background:#f9fafb; border:2px solid #C8102E; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.9rem;">💻 Ingeniería en Desarrollo de Software</div>
-                <div style="font-size:0.78rem; color:#6b7280; margin-top:4px;">8 Semestres · SNIES: 118074 · 144 Cr.</div>
-                <span style="display:inline-block; background:#C8102E; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:5px;">VIRTUAL</span>
-            </div>
-            <div style="background:#f9fafb; border:2px solid #3b82f6; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.9rem;">👶 Licenciatura en Educación Infantil Virtual</div>
-                <div style="font-size:0.78rem; color:#6b7280; margin-top:4px;">9 Semestres · SNIES: 116357 · 158 Cr.</div>
-                <span style="display:inline-block; background:#3b82f6; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:5px;">VIRTUAL</span>
-            </div>
-            <div style="background:#f9fafb; border:2px solid #16a34a; border-radius:8px; padding:15px; transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform=''">
-                <div style="font-weight:700; color:#0A2540; font-size:0.9rem;">🛡️ Seguridad y Salud en el Trabajo Virtual</div>
-                <div style="font-size:0.78rem; color:#6b7280; margin-top:4px;">9 Semestres · SNIES: 106177 · 155 Cr.</div>
-                <span style="display:inline-block; background:#16a34a; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:5px;">VIRTUAL</span>
-            </div>
-        </div>
-
-        <!-- Posgrados -->
-        <h4 style="color:#0A2540; font-weight:700; font-size:1.15rem; margin-bottom:12px; padding-bottom:8px; border-bottom:2px solid #e5e7eb;"><i class="fas fa-award mr-2" style="color:#C8102E;"></i>Posgrados</h4>
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; margin-bottom:25px;">
+        <div class="inst-prog-card" data-cat="pregrado-presencial" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #2563eb; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
             <div>
-                <div style="color:#6b7280; font-weight:700; font-size:0.8rem; text-transform:uppercase; margin-bottom:8px;">Presenciales · Sábados</div>
-                <div style="display:grid; gap:8px;">
-                    <div style="background:#0A2540; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #C8102E;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Gerencia Integral de Riesgo, Seguridad y Salud en el Trabajo</div>
-                        <div style="font-size:0.75rem; color:#94a3b8;">3 Cuatrimestres · SNIES: 110536 · 30 Cr.</div>
-                    </div>
-                    <div style="background:#0A2540; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #C8102E;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Gerencia de Proyectos</div>
-                        <div style="font-size:0.75rem; color:#94a3b8;">2 Semestres · SNIES: 103745 · 28 Cr.</div>
-                    </div>
-                    <div style="background:#0A2540; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #C8102E;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Pedagogía y Didácticas Específicas</div>
-                        <div style="font-size:0.75rem; color:#94a3b8;">4 Trimestres · SNIES: 101639 · 35 Cr.</div>
-                    </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#2563eb; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-child mr-1"></i>Presencial
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
                 </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Licenciatura en Educación Infantil
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>116357</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>9 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma profesionales de la educación con alta calidad pedagógica y humanista, preparados para liderar procesos formativos integrales en la primera infancia y transformar entornos educativos.
+                </p>
+                
             </div>
-            <div>
-                <div style="color:#6b7280; font-weight:700; font-size:0.8rem; text-transform:uppercase; margin-bottom:8px;">Virtuales & Registro Único</div>
-                <div style="display:grid; gap:8px;">
-                    <div style="background:#173A66; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #fbbf24;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Diseño Didáctico e Innovación en el Aprendizaje</div>
-                        <div style="font-size:0.75rem; color:#fef08a; font-weight:600;">2 Semestres · Registro Único</div>
-                        <span style="display:inline-block; background:#fbbf24; color:#0A2540; font-size:0.6rem; font-weight:800; padding:2px 6px; border-radius:3px; margin-top:4px;">REGISTRO ÚNICO</span>
-                    </div>
-                    <div style="background:#173A66; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #3b82f6;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Gestión de la Seguridad y Salud en el Trabajo Virtual</div>
-                        <div style="font-size:0.75rem; color:#cbd5e1;">2 Semestres · SNIES: 118070 · 24 Cr.</div>
-                        <span style="display:inline-block; background:#3b82f6; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:4px;">VIRTUAL</span>
-                    </div>
-                    <div style="background:#173A66; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #3b82f6;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Inteligencia de Negocios y Analítica de Datos Virtual</div>
-                        <div style="font-size:0.75rem; color:#cbd5e1;">2 Semestres · Resol. N° 005278 · 24 Cr.</div>
-                        <span style="display:inline-block; background:#3b82f6; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:4px;">VIRTUAL</span>
-                    </div>
-                    <div style="background:#173A66; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #3b82f6;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Gerencia de Proyectos Virtual</div>
-                        <div style="font-size:0.75rem; color:#cbd5e1;">2 Semestres · Resol. N° 010313 · 28 Cr.</div>
-                        <span style="display:inline-block; background:#3b82f6; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:4px;">VIRTUAL</span>
-                    </div>
-                    <div style="background:#173A66; color:white; border-radius:8px; padding:12px; border-bottom:3px solid #3b82f6;">
-                        <div style="font-weight:700; font-size:0.88rem;">Esp. Innovación Educativa en Entornos Virtuales de Aprendizaje Virtual</div>
-                        <div style="font-size:0.75rem; color:#cbd5e1;">2 Semestres · Resol. N° 011264 · 24 Cr.</div>
-                        <span style="display:inline-block; background:#3b82f6; color:white; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:3px; margin-top:4px;">VIRTUAL</span>
-                    </div>
-                </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/licenciatura-en-educacion-infantil/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
             </div>
         </div>
+        
 
-        <!-- Próximamente -->
-        <div style="background:linear-gradient(135deg, #fef3c7, #fffbeb); border:2px dashed #d97706; border-radius:10px; padding:18px;">
-            <h4 style="color:#92400e; font-weight:700; font-size:1rem; margin-bottom:10px;"><i class="fas fa-rocket mr-2"></i>Próximamente</h4>
-            <div style="display:flex; flex-wrap:wrap; gap:8px;">
-                <span style="background:white; border:1px solid #d97706; border-radius:5px; padding:6px 14px; font-size:0.88rem; font-weight:700; color:#0A2540;">🤝 Trabajo Social</span>
-                <span style="background:white; border:1px solid #d97706; border-radius:5px; padding:6px 14px; font-size:0.88rem; font-weight:700; color:#0A2540;">📱 Marketing Digital</span>
+        <div class="inst-prog-card" data-cat="pregrado-presencial" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #16a34a; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#16a34a; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-shield-alt mr-1"></i>Presencial
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Seguridad y Salud en el Trabajo
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>106177</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>9 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma profesionales competentes para diseñar, coordinar y optimizar sistemas de gestión de SST, mitigando factores de riesgo y protegiendo el bienestar integral de la fuerza laboral.
+                </p>
+                
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/seguridad-y-salud-en-el-trabajo/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="pregrado-presencial" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #0284c7; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#0284c7; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-hard-hat mr-1"></i>Presencial
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Técnico Profesional
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Técnica Profesional en Higiene y Seguridad en el Trabajo
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>103527</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>4 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Capacita técnicos idóneos para la inspección en campo, apoyo técnico y control operacional de condiciones higiénicas y de seguridad en centros productivos.
+                </p>
+                
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/tecnica-profesional-en-higiene-y-seguridad-en-el-trabajo/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="pregrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #C8102E; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#0A2540; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-chart-line mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Administración de Empresas Virtual
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>115833</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>9 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Desarrolla competencias gerenciales, financieras y estratégicas en modalidad 100% virtual mediante LMS interactivo, brindando flexibilidad y cobertura nacional.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>⭐ Registro Único articulado con modalidad presencial (Propuesta a defender: 8 semestres / 144 créditos / malla unificada).
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/administracion-de-empresas-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="pregrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #0A2540; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#0A2540; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-balance-scale mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Derecho Virtual
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>119385</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>10 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma juristas con sólidas competencias jurídicas, éticas y humanistas en modalidad virtual, aptos para litigar, asesorar y ejercer la función pública en defensa de los derechos ciudadanos.
+                </p>
+                
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/derecho-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="pregrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #7c3aed; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#7c3aed; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-code mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Ingeniería en Desarrollo de Software
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>118074</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>8 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma ingenieros con dominio de las tecnologías más demandadas para diseñar, construir y mantener soluciones de software innovadoras, arquitecturas cloud y plataformas escalables.
+                </p>
+                
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/ingenieria-de-software-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="pregrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #2563eb; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#2563eb; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-shapes mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Licenciatura en Educación Infantil Virtual
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>115854</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>9 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Modalidad virtual con acompañamiento docente permanente para formar licenciados con sólidas competencias pedagógicas orientadas al desarrollo integral de la primera infancia.
+                </p>
+                
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/licenciatura-en-educacion-infantil-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="pregrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #16a34a; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#16a34a; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-user-shield mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Seguridad y Salud en el Trabajo Virtual
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>118713</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>9 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma profesionales capaces de identificar, evaluar y controlar riesgos laborales desde donde estés, promoviendo entornos de trabajo seguros y el bienestar integral de los trabajadores.
+                </p>
+                
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/seguridad-y-salud-en-el-trabajo-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="pregrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #ea580c; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#ea580c; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-industry mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Profesional Universitario
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Ingeniería Industrial Virtual
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>Registro Calificado MEN</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>8 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Diseña, gestiona y optimiza procesos operativos e industriales para transformar la productividad, eficiencia en cadenas de suministro y competitividad de las organizaciones.
+                </p>
+                
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/ingenieria-industrial-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="posgrado-presencial" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #d97706; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#d97706; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-notes-medical mr-1"></i>Presencial
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Especialización
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Especialización en Gerencia Integral de Riesgo, Seguridad y Salud en el Trabajo
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>110536</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>3 cuatrimestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Profundiza en la gestión estratégica de riesgos laborales, preparando especialistas para liderar el SG-SST en organizaciones de alto impacto y estricto cumplimiento normativo vigente.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>Modalidad Sábados (Sede Bucaramanga)
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/especializacion-en-gerencia-integral-del-riesgo-seguridad-y-salud-en-el-trabajo/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="posgrado-presencial" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #d97706; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#d97706; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-tasks mr-1"></i>Presencial
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Especialización
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Especialización en Gerencia de Proyectos
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>103745</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>2 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Desarrolla competencias avanzadas en planeación, ejecución y control de proyectos bajo estándares internacionales (PMI, marcos ágiles) para dirigir iniciativas de alto impacto.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>Modalidad Sábados (Sede Bucaramanga)
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/especializacion-en-gerencia-de-proyectos/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="posgrado-presencial" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #d97706; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#d97706; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-chalkboard-teacher mr-1"></i>Presencial
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Especialización
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Especialización en Pedagogía y Didácticas Específicas
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>101639</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>4 trimestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Potencia la práctica docente con metodologías innovadoras y enfoques pedagógicos contemporáneos que fortalecen los procesos formativos y de investigación en el aula.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>Modalidad Sábados (Sede Bucaramanga)
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/especializacion-en-pedagogia-y-didacticas-especificas/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="posgrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #8b5cf6; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#8b5cf6; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-brain mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Especialización
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Especialización en Inteligencia de Negocios y Analítica de Datos
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>118755</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>2 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma especialistas capaces de transformar datos masivos en decisiones estratégicas, dominando herramientas de analítica avanzada, visualización interactiva y Business Intelligence.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>100% Virtual — Campus LMS 24/7
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/especializacion-en-inteligencia-de-negocios-y-analitica-de-datos/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="posgrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #8b5cf6; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#8b5cf6; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-laptop-code mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Especialización
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Especialización en Innovación Educativa en Entornos Virtuales de Aprendizaje
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>Res. 011264</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>2 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma especialistas líderes en la transformación educativa integrando tecnologías emergentes, inteligencia artificial, analítica de aprendizaje y metodologías activas en entornos virtuales.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>100% Virtual — Enfoque en IA y EdTech
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/especializacion-en-innovacion-educativa-en-entornos-virtuales-de-aprendizaje-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="posgrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #8b5cf6; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#8b5cf6; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-project-diagram mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Especialización
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Especialización en Gerencia de Proyectos Virtual
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>118858</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>2 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Forma especialistas con visión global para planificar, formular, gestionar y liderar proyectos corporativos y sociales con metodologías ágiles y estándares PMI.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>100% Virtual — Certificaciones de proyectos
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/especializacion-en-gerencia-de-proyectos-virtual/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+
+        <div class="inst-prog-card" data-cat="posgrado-virtual" style="background:white; border:2px solid #e5e7eb; border-left:5px solid #8b5cf6; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:space-between; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(10,37,64,0.1)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                    <span style="background:#8b5cf6; color:white; font-size:0.68rem; font-weight:800; padding:3px 9px; border-radius:20px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <i class="fas fa-shield-virus mr-1"></i>Virtual
+                    </span>
+                    <span style="background:#f1f5f9; color:#475569; font-size:0.72rem; font-weight:700; padding:3px 8px; border-radius:6px;">
+                        Especialización
+                    </span>
+                </div>
+                
+                <h4 style="color:#0A2540; font-weight:800; font-size:1.05rem; line-height:1.35; margin:0 0 8px 0; font-family:'Montserrat',sans-serif;">
+                    Especialización en Gestión de la SST Virtual
+                </h4>
+                
+                <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; font-size:0.75rem;">
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="fas fa-id-card mr-1" style="color:#64748b;"></i>SNIES: <strong>118070</strong>
+                    </span>
+                    <span style="background:#f8fafc; border:1px solid #cbd5e1; color:#334155; padding:2px 7px; border-radius:4px; font-weight:600;">
+                        <i class="far fa-calendar-alt mr-1" style="color:#64748b;"></i>2 semestres
+                    </span>
+                </div>
+                
+                <p style="font-size:0.82rem; line-height:1.55; color:#4b5563; margin:0; text-align:justify;">
+                    Especialización virtual de alto nivel para profesionales que dirigen sistemas de gestión de SST, con enfoque normativo práctico alineado con la legislación colombiana y estándares OHS.
+                </p>
+                
+            <div style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:6px 10px; margin-top:10px; font-size:0.75rem; color:#92400e; font-weight:700;">
+                <i class="fas fa-certificate mr-1 text-amber-600"></i>100% Virtual — Impacto multisectorial
+            </div>
+            </div>
+            
+            <div style="margin-top:16px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; color:#94a3b8; font-weight:600;">
+                    <i class="fas fa-university mr-1"></i>Tecnológica del Oriente
+                </span>
+                <a href="https://tecnologicadeloriente.edu.co/oferta-academica/especializacion-en-gestion-de-la-seguridad-y-salud-en-el-trabajo/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0A2540; color:white; font-size:0.75rem; font-weight:700; padding:6px 12px; border-radius:6px; text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#C8102E'" onmouseout="this.style.background='#0A2540'">
+                    Ver en Portal <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Nota Aclaratoria sobre Registro Único -->
+    <div style="background:linear-gradient(135deg, #f0fdf4, #dcfce7); border:2px solid #86efac; border-radius:10px; padding:16px 20px;">
+        <div style="display:flex; align-items:flex-start; gap:12px;">
+            <i class="fas fa-info-circle" style="color:#16a34a; font-size:1.3rem; margin-top:2px;"></i>
+            <div style="font-size:0.85rem; color:#166534; line-height:1.5;">
+                <strong>Garantía de Calidad y Registro Único Institucional:</strong> La Tecnológica del Oriente oferta 17 programas académicos legalmente autorizados por el MEN en Bucaramanga y a nivel nacional en modalidad virtual. Para el programa de <strong>Administración de Empresas</strong>, la institución defiende la Renovación y Modificación hacia <strong>Registro Único (Presencial y Virtual)</strong>, garantizando igualdad en Resultados de Aprendizaje (RAP), 144 créditos académicos y 8 semestres de duración.
             </div>
         </div>
     </div>
@@ -702,9 +1384,9 @@ window._initInstCharts = function(tabId) {
             window._instCharts.oferta = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Pregrado Presencial', 'Pregrado Virtual', 'Posgrado Presencial', 'Posgrado Virtual'],
+                    labels: ['Pregrado Presencial (4)', 'Pregrado Virtual (6)', 'Posgrado Presencial (3)', 'Posgrado Virtual (4)'],
                     datasets: [{
-                        data: [4, 6, 3, 5],
+                        data: [4, 6, 3, 4],
                         backgroundColor: ['#C8102E', '#0A2540', '#d97706', '#7c3aed'],
                         borderWidth: 3,
                         borderColor: '#fff'
