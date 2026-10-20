@@ -4619,7 +4619,8 @@ window.C3_SUBJECTS = [
     }
   }
 ];
-window.C3_SUBJECTS_VIGENTE = [
+window.C3_VIGENTE_SUBJECTS = [
+
   {
     "id": "vig_1",
     "semestre": 1,
@@ -10513,8 +10514,17 @@ window.C3_SUBJECTS_VIGENTE = [
 ];
 
 
+window.C3_SUBJECTS_VIGENTE = window.C3_VIGENTE_SUBJECTS;
+window.C3_PROPUESTO_SUBJECTS = window.C3_SUBJECTS;
+window.C3_SUBJECTS_PROPUESTO = window.C3_SUBJECTS;
+
 window.selectMatrixSubject = function(id, type) {
-    let s = type === 'vig' ? (window.C3_VIGENTE_SUBJECTS || []).find(i => i.id === id) : (window.C3_SUBJECTS || []).find(i => i.id === id);
+    if (!type) {
+        type = (id && String(id).startsWith('vig_')) ? 'vig' : 'prop';
+    }
+    let s = type === 'vig' 
+        ? ((window.C3_VIGENTE_SUBJECTS || window.C3_SUBJECTS_VIGENTE || []).find(i => i.id === id) || (window.C3_SUBJECTS || []).find(i => i.id === id))
+        : ((window.C3_SUBJECTS || []).find(i => i.id === id) || (window.C3_VIGENTE_SUBJECTS || window.C3_SUBJECTS_VIGENTE || []).find(i => i.id === id));
     if (!s) return;
 
     // Resaltar tarjeta seleccionada en la matriz
@@ -10578,7 +10588,12 @@ window.selectMatrixSubject = function(id, type) {
 };
 
 window.openSubjectModal = function(id, type) {
-    let s = type === 'vig' ? (window.C3_VIGENTE_SUBJECTS || []).find(item => item.id === id) : (window.C3_SUBJECTS || []).find(item => item.id === id);
+    if (!type) {
+        type = (id && String(id).startsWith('vig_')) ? 'vig' : 'prop';
+    }
+    let s = type === 'vig' 
+        ? ((window.C3_VIGENTE_SUBJECTS || window.C3_SUBJECTS_VIGENTE || []).find(item => item.id === id) || (window.C3_SUBJECTS || []).find(item => item.id === id))
+        : ((window.C3_SUBJECTS || []).find(item => item.id === id) || (window.C3_VIGENTE_SUBJECTS || window.C3_SUBJECTS_VIGENTE || []).find(item => item.id === id));
     if (!s) return;
 
     let existing = document.getElementById('c3SubjectModalOverlay');
@@ -10800,11 +10815,14 @@ window.closeSubjectModal = function(e) {
 };
 
 window.openAreaModal = function(areaId, type) {
+    if (!type) {
+        type = (areaId && String(areaId).startsWith('vig_')) ? 'vig' : 'prop';
+    }
     let existing = document.getElementById('c3AreaModalOverlay');
     if (existing) existing.remove();
 
     const isVig = type === 'vig';
-    const allSubs = isVig ? (window.C3_VIGENTE_SUBJECTS || []) : (window.C3_SUBJECTS || []);
+    const allSubs = isVig ? (window.C3_VIGENTE_SUBJECTS || window.C3_SUBJECTS_VIGENTE || []) : (window.C3_SUBJECTS || []);
     const cleanId = (areaId || '').replace(/^area_/, '').toUpperCase();
 
     let areaTitle = '';
@@ -11032,6 +11050,8 @@ if (!window._c3EscapeListenerAdded) {
         }
     });
     window._c3EscapeListenerAdded = true;
+window.showSubjectModal = window.openSubjectModal;
+window.openC3SubjectModal = window.openSubjectModal;
 }
 
 
