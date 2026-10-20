@@ -102,9 +102,24 @@ Todos los siguientes elementos están formalmente aprobados, implementados en c�
   - Razón jurídica y procedimental: Por tratarse de un registro calificado apenas propuesto y en trámite de radicación/renovación ante el Ministerio de Educación Nacional (MEN), no puede ostentar código SNIES ni acto administrativo de resolución ministerial hasta tanto culmine el proceso de evaluación de salas CONACES y emisión de la resolución correspondiente.
   - En su lugar, el campo oficial refleja con rigor: `Estado SNIES / Resolución: En trámite ante el MEN (Sin código SNIES ni resolución por tratarse de una propuesta en radicación)`.
   - El Registro Calificado Vigente (158 créditos) conserva intactos sus históricos SACES y SNIES (Presencial: 108445 / Virtual: 115833, Resolución MEN 011375 de 2019).
-- **Depuración Normativa Integral — Derogación de la Resolución 2265 de 2023:**
-  - Se suprimió de manera absoluta toda mención de la **Resolución 2265 de 2023** en la presentación interactiva del aplicativo (subtítulo de cabecera y cuerpo de Condición 1), en estricta coherencia con su pérdida de vigencia/derogación dentro del ordenamiento jurídico del sector educativo colombiano.
-  - Cero ocurrencias activas en los módulos ejecutables del sitio web.
+- **Condición 2 — Navegación Exclusiva por Ejes en Primer Plano (`sections_c2_google.js`):**
+  - Implementación de la barra de navegación superior interactiva con 9 ejes de sustentación (`c2-subtabs-bar`):
+    1. *1. Internacional* (Benchmarking Global)
+    2. *2. Nacional & SNIES* (Políticas Públicas y PND)
+    3. *3. Observatorio Geoespacial* (Google Maps Relieve con mapa de Colombia, Santander y buscador municipal)
+    4. *4. Regional & Local* (Tejido empresarial y CCB)
+    5. *5. Demanda & OLE* (Tendencias y observatorio laboral)
+    6. *6. Registro Único (Modalidades)* (Presencial Bucaramanga y Virtual Cobertura Nacional)
+    7. *7. Factores Diferenciadores* (Bento Grid institucional)
+    8. *8. SPADIES & Permanencia* (Matrícula y retención histórica)
+    9. *9. Estudio de Egresados* (Estudio censal oficial 940 / 44 con 93.2% ocupación y 85.4% pertinencia)
+  - Al dar clic en cualquiera de los 9 ejes se proyecta de manera exclusiva en primer plano (`display: block` y los demás `display: none`) con scroll automático superior y redimensionamiento dinámico de mapas y gráficas (`invalidateSize()` y `resize()`).
+- **Corrección de Dirección Institucional Oficial:**
+  - Se erradicó cualquier mención incorrecta a "Calle 35 # 21-42".
+  - Se fijó de forma unificada la dirección canónica extraída del portal oficial de la institución ([tecnologicadeloriente.edu.co](https://tecnologicadeloriente.edu.co/contactenos/)): **Sede Principal: Calle 41 # 10 - 30 Centro, Bucaramanga - Santander, Colombia**.
+- **Erradicación del Término 'Dual' — Adopción Estricta de 'Registro Único':**
+  - Se eliminó totalmente el equívoco término "Registro Único Dual", ya que en el marco del Decreto 1330 de 2019 la modalidad "dual" corresponde a formación en alternancia empresa-aula.
+  - La figura jurídica del programa corresponde estrictamente a **Registro Calificado Único** (en modalidades Presencial y Virtual). Todos los textos, encabezados y tablas fueron homologados a esta denominación legal oficial.
 
 ---
 

@@ -265,7 +265,7 @@ window.SECTIONS['c1'] = `
     <div style="background:#F8FAFC; border-left:4px solid #F39200; border-radius:6px; padding:10px 14px; font-size:0.78rem; color:#334155; margin-top:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
         <div>
             <i class="fas fa-info-circle" style="color:#F39200; margin-right:4px;"></i>
-            <strong>Certeza Jurídica SACES:</strong> Esta línea de tiempo evidencia el tránsito continuo, planificado e institucionalmente avalado del programa desde su creación en 2018, la adopción del Registro Único dual, hasta su optimización a 144 créditos y 8 semestres.
+            <strong>Certeza Jurídica SACES:</strong> Esta línea de tiempo evidencia el tránsito continuo, planificado e institucionalmente avalado del programa desde su creación en 2018, la adopción del Registro Calificado Único, hasta su optimización a 144 créditos y 8 semestres.
         </div>
         <a href="#c1-fichas-paralelo" style="background:#1A1A1B; color:#FFFFFF; text-decoration:none; font-size:0.72rem; font-weight:700; padding:4px 10px; border-radius:4px; display:inline-flex; align-items:center; gap:4px;">
             Ver Fichas en Paralelo <i class="fas fa-arrow-down"></i>
@@ -348,7 +348,7 @@ window.SECTIONS['c1'] = `
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Cupos Primer Período</td>
-                            <td><strong>300 estudiantes / cohorte</strong> (Oferta dual autorizada)</td>
+                            <td><strong>300 estudiantes / cohorte</strong> (Oferta Registro Único autorizada)</td>
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Relación de Horas</td>
@@ -810,7 +810,7 @@ window.SECTIONS['c1'] = `
                     <div style="background:#7C3AED; color:#FFFFFF; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
                         <i class="fas fa-random"></i>
                     </div>
-                    <span style="background:#FFFFFF; color:#6B21A8; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #E9D5FF;">Dual Presencial &amp; Virtual</span>
+                    <span style="background:#FFFFFF; color:#6B21A8; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #E9D5FF;">Registro Único (Presencial &amp; Virtual)</span>
                 </div>
                 <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0 0 6px;">
                     4. Registro Único &amp; Movilidad Fluida
@@ -1013,7 +1013,7 @@ window.SECTIONS['c1'] = `
                 </div>
             </div>
             <button onclick="window.openC1Modal('modalidades')" style="margin-top:12px; background:#FAF5FF; border:1px solid #E9D5FF; color:#6B21A8; font-size:0.72rem; font-weight:700; padding:5px 10px; border-radius:4px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
-                Ver Esquema Dual <i class="fas fa-external-link-alt"></i>
+                Ver Registro Único <i class="fas fa-external-link-alt"></i>
             </button>
         </div>
 
@@ -1146,7 +1146,7 @@ window.SECTIONS['c1'] = `
                                 <td style="text-align:center;">Local / Nal.</td>
                                 <td style="text-align:center; color:#C2410C;">8 semestres</td>
                                 <td style="text-align:center; color:#C2410C;">144 cr</td>
-                                <td style="font-size:0.75rem;">Registro Único (Dual), Big Data, IA, Sostenibilidad, 48 asignaturas modulares.</td>
+                                <td style="font-size:0.75rem;">Registro Calificado Único, Big Data, IA, Sostenibilidad, 48 asignaturas modulares.</td>
                                 <td style="text-align:center;"><span class="badge" style="background:#FFEDD5; color:#C2410C; font-size:0.65rem;">Renovación RU</span></td>
                             </tr>
                             <tr>

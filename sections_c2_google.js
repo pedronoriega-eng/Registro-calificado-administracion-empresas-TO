@@ -24,9 +24,53 @@ window.SECTIONS['c2'] = `
 </div>
 
 <!-- ========================================================================= -->
+<!-- BARRA DE NAVEGACION RAPIDA POR EJES DE PERTINENCIA (PRIMER PLANO EXCLUSIVO)-->
+<!-- ========================================================================= -->
+<div id="c2-subtabs-bar" style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:12px 14px; margin-bottom:22px; box-shadow:0 3px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column; gap:10px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <span style="font-size:0.78rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:8px;">
+            <i class="fas fa-compass" style="color:#F39200;"></i> Ejes de Justificación y Pertinencia (Primer Plano):
+        </span>
+        <span style="font-size:0.72rem; color:#6B7280; font-weight:600;">
+            Haga clic en cada eje para proyectarlo en vista exclusiva
+        </span>
+    </div>
+    
+    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-1" onclick="window.showC2Section('c2-eje-1')" style="background:#1A1A1B; color:#FFFFFF; border:1.5px solid #F39200; font-size:0.76rem; font-weight:800; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 8px rgba(243,146,0,0.25); transition:all 0.2s;">
+            <i class="fas fa-globe" style="color:#F39200;"></i> 1. Internacional
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-2" onclick="window.showC2Section('c2-eje-2')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-flag" style="color:#F39200;"></i> 2. Nacional &amp; SNIES
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-3" onclick="window.showC2Section('c2-eje-3')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-map-marked-alt" style="color:#F39200;"></i> 3. Observatorio Geoespacial
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-4" onclick="window.showC2Section('c2-eje-4')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-city" style="color:#F39200;"></i> 4. Regional &amp; Local
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-5" onclick="window.showC2Section('c2-eje-5')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-chart-line" style="color:#F39200;"></i> 5. Demanda &amp; OLE
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-6" onclick="window.showC2Section('c2-eje-6')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-layer-group" style="color:#F39200;"></i> 6. Registro Único (Modalidades)
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-7" onclick="window.showC2Section('c2-eje-7')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-medal" style="color:#F39200;"></i> 7. Factores Diferenciadores
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-8" onclick="window.showC2Section('c2-eje-8')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-chart-bar" style="color:#F39200;"></i> 8. SPADIES &amp; Permanencia
+        </button>
+        <button class="c2-subtab-btn" data-c2-target="c2-eje-9" onclick="window.showC2Section('c2-eje-9')" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; font-size:0.76rem; font-weight:700; padding:8px 13px; border-radius:8px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-user-graduate" style="color:#F39200;"></i> 9. Estudio de Egresados (940/44)
+        </button>
+    </div>
+</div>
+
+<!-- ========================================================================= -->
 <!-- 1. PERTINENCIA EN EL PLANO INTERNACIONAL (GLOBAL BENCHMARKING & TENDENCIAS) -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
+<div id="c2-eje-1" class="c2-eje-panel" style="display:block; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid #E8E8E8; padding-bottom:12px;">
         <div>
             <span style="font-size:0.75rem; font-weight:800; color:#F39200; text-transform:uppercase; letter-spacing:0.5px;">Eje 1 · Visión Global</span>
@@ -107,9 +151,9 @@ window.SECTIONS['c2'] = `
                 <tr style="background:#FFF9F2;">
                     <td style="font-weight:700; color:#F39200;">México<br><span style="font-size:0.72rem; color:#6B6B6B;">UNAM (Modalidad Abierta y a Distancia)</span></td>
                     <td>Licenciatura en Administración</td>
-                    <td style="text-align:center; font-weight:700;">8 semestres (Dual)</td>
+                    <td style="text-align:center; font-weight:700;">8 semestres (Registro Único)</td>
                     <td style="font-size:0.76rem;">Modalidad presencial y a distancia con plataforma virtual de aprendizaje continuo y gestión pública/privada.</td>
-                    <td style="font-size:0.76rem; color:#166534;"><i class="fas fa-check"></i> Modelo de <strong>Registro Único</strong> dual (Presencial y Virtual) con misma malla.</td>
+                    <td style="font-size:0.76rem; color:#166534;"><i class="fas fa-check"></i> Modelo de <strong>Registro Calificado Único</strong> (Presencial y Virtual) con misma malla.</td>
                 </tr>
                 <tr>
                     <td style="font-weight:700;">Argentina<br><span style="font-size:0.72rem; color:#6B6B6B;">Universidad de Buenos Aires (UBA)</span></td>
@@ -129,7 +173,7 @@ window.SECTIONS['c2'] = `
 <!-- ========================================================================= -->
 <!-- 2. PERTINENCIA EN EL PLANO NACIONAL (POLÍTICAS PÚBLICAS & ECOSISTEMA SNIES) -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
+<div id="c2-eje-2" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid #E8E8E8; padding-bottom:12px;">
         <div>
             <span style="font-size:0.75rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; letter-spacing:0.5px;">Eje 2 · Cobertura y Políticas de País</span>
@@ -207,7 +251,7 @@ window.SECTIONS['c2'] = `
 <!-- ========================================================================= -->
 <!-- 3. OBSERVATORIO GEOESPACIAL DE DEMANDA Y OFERTA (GOOGLE MAPS RELIEVE)     -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:20px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
+<div id="c2-eje-3" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:20px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
     
     <!-- HEADER DEL MAPA Y CONMUTADOR DE MODALIDAD -->
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px; border-bottom:1px solid #E8E8E8; padding-bottom:14px;">
@@ -337,7 +381,7 @@ window.SECTIONS['c2'] = `
 <!-- ========================================================================= -->
 <!-- 4. PERTINENCIA EN EL PLANO REGIONAL Y LOCAL (SANTANDER Y BUCARAMANGA)     -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
+<div id="c2-eje-4" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid #E8E8E8; padding-bottom:12px;">
         <div>
             <span style="font-size:0.75rem; font-weight:800; color:#F39200; text-transform:uppercase; letter-spacing:0.5px;">Eje 4 · Impacto Territorial y Productivo</span>
@@ -405,7 +449,7 @@ window.SECTIONS['c2'] = `
 <!-- ========================================================================= -->
 <!-- 5. DEMANDA DE MERCADO, GOOGLE TRENDS Y OBSERVATORIO LABORAL (OLE)        -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
+<div id="c2-eje-5" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid #E8E8E8; padding-bottom:12px;">
         <div>
             <span style="font-size:0.75rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; letter-spacing:0.5px;">Eje 5 · Evidencia Verificable y Empleabilidad</span>
@@ -482,12 +526,12 @@ window.SECTIONS['c2'] = `
 </div>
 
 <!-- ========================================================================= -->
-<!-- 6. DEMOSTRACIÓN DE PERTINENCIA DUAL: REGISTRO ÚNICO (PRESENCIAL Y VIRTUAL) -->
+<!-- 6. DEMOSTRACIÓN DE PERTINENCIA: REGISTRO CALIFICADO ÚNICO (PRESENCIAL Y VIRTUAL) -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
+<div id="c2-eje-6" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px; margin-bottom:28px; box-shadow:0 4px 14px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px; border-bottom:1px solid #E8E8E8; padding-bottom:12px;">
         <div>
-            <span style="font-size:0.75rem; font-weight:800; color:#F39200; text-transform:uppercase; letter-spacing:0.5px;">Eje 6 · Sinergia y Dualidad Metodológica</span>
+            <span style="font-size:0.75rem; font-weight:800; color:#F39200; text-transform:uppercase; letter-spacing:0.5px;">Eje 6 · Articulación y Pertinencia de las Modalidades (Registro Único)</span>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:2px 0 0; display:flex; align-items:center; gap:8px;">
                 <i class="fas fa-layer-group" style="color:#F39200;"></i> Demostración de Pertinencia para las Dos Modalidades (Registro Único)
             </h4>
@@ -511,7 +555,7 @@ window.SECTIONS['c2'] = `
                 <strong>Justificación Técnica y Pertinencia Local:</strong>
             </p>
             <ul style="font-size:0.78rem; color:#431407; margin:0; padding-left:18px; line-height:1.5;">
-                <li><strong>Campus Central Bucaramanga:</strong> Sedes A (Calle 35 # 21-42), B y C dotadas de aulas multimedia, laboratorios de cómputo especializados y salas de simulación.</li>
+                <li><strong>Campus Central Bucaramanga:</strong> Sede Principal (Calle 41 # 10-30 Centro, Bucaramanga), dotada de aulas multimedia, laboratorios de cómputo especializados y salas de simulación.</li>
                 <li><strong>Interacción Vivencial:</strong> Talleres prácticos presenciales (Juego Gerencial, Costos y Presupuestos) y desarrollo de habilidades socioemocionales de liderazgo directo.</li>
                 <li><strong>Conexión con el Ecosistema Productivo:</strong> Prácticas empresariales y pasantías directas en diferentes sectores económicos del ámbito regional y nacional.</li>
                 <li><strong>Relación Crédito:</strong> 1:2 (48 horas directas con acompañamiento docente y 96 horas de trabajo independiente por asignatura de 3 créditos).</li>
@@ -541,7 +585,7 @@ window.SECTIONS['c2'] = `
 
     <!-- VALOR ESTRATÉGICO DE LA FIGURA DE REGISTRO ÚNICO -->
     <div style="background:#F8F9FA; border-left:4px solid #1A1A1B; border-radius:8px; padding:14px 18px; font-size:0.82rem; color:#374151; line-height:1.5;">
-        <strong style="color:#1A1A1B;"><i class="fas fa-link" style="color:#F39200;"></i> Beneficios de la Integración en Registro Único Dual:</strong>
+        <strong style="color:#1A1A1B;"><i class="fas fa-link" style="color:#F39200;"></i> Beneficios de la Integración en Registro Calificado Único:</strong>
         Ambas modalidades comparten la misma malla curricular (144 créditos / 8 semestres), idénticos Resultados de Aprendizaje del Programa (RAP), los mismos criterios de evaluación institucional y el mismo cuerpo docente calificado. El estudiante goza de <strong>movilidad horizontal</strong> entre la modalidad presencial y virtual según cambie su situación laboral o territorial, garantizando cero reprocesos administrativos o demoras en su graduación oportuna.
     </div>
 </div>
@@ -549,7 +593,7 @@ window.SECTIONS['c2'] = `
 <!-- ========================================== -->
 <!-- 7. FACTORES DIFERENCIADORES BENTO GRID     -->
 <!-- ========================================== -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:22px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+<div id="c2-eje-7" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:22px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
             <i class="fas fa-medal" style="color:#F39200;"></i> Factores Diferenciadores de Administración de Empresas (TO)
@@ -632,7 +676,7 @@ window.SECTIONS['c2'] = `
 <!-- ========================================== -->
 <!-- 8. DATOS ESTADÍSTICOS Y PERMANENCIA SPADIES-->
 <!-- ========================================== -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:22px; margin-top:28px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+<div id="c2-eje-8" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:22px; margin-top:28px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #E8E8E8; padding-bottom:14px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
@@ -803,7 +847,7 @@ window.SECTIONS['c2'] = `
 <!-- ESTUDIO DE PERTINENCIA E INSERCIÓN LABORAL DE GRADUADOS (ENCUESTA OFICIAL) -->
 <!-- Fuente: ENCUESTA DE SEGUIMIENTO A EGRESADOS (940 Institucional · 44 Admon)  -->
 <!-- ========================================================================= -->
-<div id="c2-estudio-egresados" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; margin-top:28px; margin-bottom:28px; box-shadow:0 4px 18px rgba(0,0,0,0.06); position:relative;">
+<div id="c2-eje-9" class="c2-eje-panel" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; margin-top:28px; margin-bottom:28px; box-shadow:0 4px 18px rgba(0,0,0,0.06); position:relative;">
     
     <!-- ENCABEZADO DEL ESTUDIO -->
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:22px; border-bottom:1px solid #F1F5F9; padding-bottom:16px;">
@@ -1208,7 +1252,7 @@ window._geoNodesPresencial = [
         "empresas": "32.450 empresas activas registradas en CCB 2024.",
         "demanda": "Alta absorción en directores comerciales, analistas de datos, gerentes de operaciones y líderes de innovación.",
         "densidad": "Concentra el 68% de las MiPyMes del Área Metropolitana y el 65% del PIB departamental.",
-        "to_ventaja": "Sedes A (Calle 35 # 21-42), Sede B y Sede C con aulas multimedia, laboratorios de cómputo y auditorios. Única oferta a 144 créditos y 8 semestres con titulación inclusiva Administrador(a) de Empresas."
+        "to_ventaja": "Sede Principal (Calle 41 # 10-30 Centro, Bucaramanga), dotada de aulas multimedia, laboratorios de cómputo y auditorios. Única oferta a 144 créditos y 8 semestres con titulación inclusiva Administrador(a) de Empresas."
     },
     {
         "id": "florida",
@@ -2628,7 +2672,73 @@ window.createGooglePinIcon = function(isSantander, progCount) {
     });
 };
 
+
+// ==========================================
+// CONTROL DE SUBSECCIONES EN PRIMER PLANO (CONDICION 2)
+// ==========================================
+window.showC2Section = function(sectionId) {
+    window._c2ActiveSection = sectionId;
+    const sectionIds = [
+        'c2-eje-1',
+        'c2-eje-2',
+        'c2-eje-3',
+        'c2-eje-4',
+        'c2-eje-5',
+        'c2-eje-6',
+        'c2-eje-7',
+        'c2-eje-8',
+        'c2-eje-9'
+    ];
+    sectionIds.forEach(function(id) {
+        const el = document.getElementById(id);
+        if (el) {
+            el.style.display = (id === sectionId) ? 'block' : 'none';
+        }
+    });
+
+    const bar = document.getElementById('c2-subtabs-bar');
+    if (bar) {
+        const btns = bar.querySelectorAll('.c2-subtab-btn');
+        btns.forEach(function(btn) {
+            const target = btn.getAttribute('data-c2-target');
+            if (target === sectionId) {
+                btn.style.background = '#1A1A1B';
+                btn.style.color = '#FFFFFF';
+                btn.style.border = '1.5px solid #F39200';
+                btn.style.fontWeight = '800';
+                btn.style.boxShadow = '0 2px 8px rgba(243,146,0,0.25)';
+            } else {
+                btn.style.background = '#F8FAFC';
+                btn.style.color = '#334155';
+                btn.style.border = '1px solid #CBD5E1';
+                btn.style.fontWeight = '700';
+                btn.style.boxShadow = 'none';
+            }
+        });
+
+        try {
+            bar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch(e) {}
+    }
+
+    if (sectionId === 'c2-eje-3') {
+        setTimeout(function() {
+            if (window._leafletMapInstance) {
+                window._leafletMapInstance.invalidateSize();
+            }
+        }, 150);
+    }
+    if (sectionId === 'c2-eje-8') {
+        setTimeout(function() {
+            if (window._chartC2MatInstance) window._chartC2MatInstance.resize();
+            if (window._chartC2PermInstance) window._chartC2PermInstance.resize();
+        }, 150);
+    }
+};
+
 window.c2Init = function() {
+    if (!window._c2ActiveSection) window._c2ActiveSection = "c2-eje-1";
+    window.showC2Section(window._c2ActiveSection);
     const mapEl = document.getElementById('toGeoMap') || document.getElementById('mapaColombia');
     if (!mapEl) return;
 
@@ -3171,7 +3281,7 @@ window.renderInitialSidePanel = function(mode) {
             <div style="background:#F8FAFC; border-left:3.5px solid #F39200; padding:10px 12px; border-radius:4px;">
                 <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#0F172A;">Corporación Escuela Tecnológica del Oriente (TO):</span>
                 <p style="margin:4px 0 0; font-size:0.75rem; color:#475569; line-height:1.45;">
-                    Sede Principal Bucaramanga (Calle 35 # 21-42). Única oferta estructurada a 144 créditos y 8 semestres con titulación profesional inclusiva Administrador(a) de Empresas y articulación directa entre modalidades presencial y virtual.
+                    Sede Principal Bucaramanga (Calle 41 # 10-30 Centro). Única oferta estructurada a 144 créditos y 8 semestres con titulación profesional inclusiva Administrador(a) de Empresas y articulación directa entre modalidades presencial y virtual.
                 </p>
             </div>
         `;
@@ -3318,7 +3428,7 @@ window.updateSidePanel = function(node, mode) {
 
     if (footerEl) {
         if (node.tipo === 'municipio_santander') {
-            footerEl.innerHTML = `<strong>Santander (18 programas &bull; 7,35% del país):</strong> La propuesta de la <strong>TO</strong> es la única con articulación dual directa a 144 créditos y 8 semestres con titulación inclusiva.`;
+            footerEl.innerHTML = `<strong>Santander (18 programas &bull; 7,35% del país):</strong> La propuesta de la <strong>TO</strong> es la única con articulación directa a 144 créditos y 8 semestres en Registro Calificado Único con titulación inclusiva.`;
         } else {
             footerEl.innerHTML = `<strong>Cobertura Nacional SNIES (245 programas presenciales &bull; 44 virtuales):</strong> Bajo el Registro Único, la <strong>TO</strong> amplía cobertura a 32 departamentos con unicidad curricular y estándares de alta calidad.`;
         }
