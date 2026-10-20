@@ -66,216 +66,192 @@ window.SECTIONS['c1'] = `
 <!-- ========================================================================= -->
 <!-- 3. LÍNEA DE TIEMPO NORMATIVA E HISTÓRICA (DE PRIMERO - ESTILO SERPENTINA)  -->
 <!-- ========================================================================= -->
-<div id="c1-linea-tiempo" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05); position:relative; overflow:hidden;">
+<div id="c1-linea-tiempo" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:18px 20px; margin-bottom:24px; box-shadow:0 4px 16px rgba(0,0,0,0.05); position:relative;">
     
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:22px; border-bottom:1px solid #F1F5F9; padding-bottom:14px;">
-        <div style="display:flex; align-items:center; gap:12px;">
-            <div style="background:#FFF9F2; color:#F39200; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; border:1.5px solid #FED7AA; box-shadow:0 2px 6px rgba(243,146,0,0.15);">
+    <!-- ENCABEZADO COMPACTO DE LA LÍNEA DE TIEMPO -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid #F1F5F9; padding-bottom:10px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+            <div style="background:#FFF9F2; color:#F39200; width:36px; height:36px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.15rem; border:1.5px solid #FED7AA;">
                 <i class="fas fa-history"></i>
             </div>
             <div>
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#C2410C; letter-spacing:0.5px;">Evolución Jurídica y Curricular del Programa</span>
-                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#1A1A1B; margin:0;">
+                <span style="font-size:0.68rem; text-transform:uppercase; font-weight:800; color:#C2410C; letter-spacing:0.5px;">Evolución Jurídica y Curricular (2018 - 2025)</span>
+                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0;">
                     Línea de Tiempo Normativa: De la Creación a la Renovación del Registro Único
                 </h4>
             </div>
         </div>
-        <div style="display:flex; gap:8px;">
-            <span style="background:#F8FAFC; border:1px solid #E2E8F0; color:#475569; font-size:0.74rem; font-weight:700; padding:4px 10px; border-radius:20px; display:inline-flex; align-items:center; gap:5px;">
-                <i class="fas fa-file-signature" style="color:#F39200;"></i> 5 Hitos Sustentatorios SACES
+        <div style="display:flex; align-items:center; gap:8px;">
+            <span style="background:#F8FAFC; border:1px solid #E2E8F0; color:#475569; font-size:0.72rem; font-weight:700; padding:4px 10px; border-radius:20px; display:inline-flex; align-items:center; gap:5px;">
+                <i class="fas fa-file-signature" style="color:#F39200;"></i> 5 Hitos SACES
             </span>
+            <button onclick="window.showC1Section('c1-fichas-paralelo')" style="background:#1A1A1B; color:#FFFFFF; border:none; font-size:0.72rem; font-weight:700; padding:5px 12px; border-radius:4px; display:inline-flex; align-items:center; gap:5px; cursor:pointer;">
+                Ver Fichas en Paralelo <i class="fas fa-arrow-right"></i>
+            </button>
         </div>
     </div>
 
-    <!-- CONTENEDOR VISUAL ESTILO SERPENTINA (CURVED RIBBON TIMELINE) -->
-    <div style="position:relative; padding:10px 0 20px;">
+    <!-- PIPELINE HORIZONTAL COMPACTO DE 5 HITOS (1 SOLA FILA ÁGIL) -->
+    <div style="position:relative; margin-bottom:16px;">
+        <!-- LÍNEA CONECTORA CONTINUA -->
+        <div style="position:absolute; top:20px; left:8%; right:8%; height:3px; background:linear-gradient(90deg, #7C3AED 0%, #C8102E 25%, #F39200 50%, #D97706 75%, #059669 100%); z-index:1;"></div>
+
+        <!-- GRID DE 5 COLUMNAS -->
+        <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap:10px; position:relative; z-index:2;">
+            
+            <!-- HITO 1: 2018 -->
+            <div style="background:#FFFFFF; border:1px solid #E9D5FF; border-top:3px solid #7C3AED; border-radius:8px; padding:10px 11px; box-shadow:0 2px 6px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                        <span style="background:#7C3AED; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; padding:2px 8px; border-radius:12px;">2018</span>
+                        <div style="width:24px; height:24px; border-radius:50%; background:#FAF5FF; border:1.5px solid #7C3AED; color:#7C3AED; display:flex; align-items:center; justify-content:center; font-size:0.68rem;">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                    </div>
+                    <span style="font-size:0.64rem; font-weight:800; color:#6B21A8; text-transform:uppercase; display:block; margin-bottom:2px;">Acuerdo CS 05 (29/05/18)</span>
+                    <strong style="font-size:0.78rem; color:#1A1A1B; display:block; margin-bottom:4px; line-height:1.25;">Creación Institucional</strong>
+                    <p style="font-size:0.7rem; color:#4B5563; margin:0 0 6px; line-height:1.35;">
+                        Aprobación formal del programa por el Consejo Superior de la TO en modalidad presencial.
+                    </p>
+                </div>
+                <div style="background:#FAF5FF; border:1px solid #E9D5FF; border-radius:4px; padding:3px 6px; font-size:0.67rem; color:#6B21A8; font-weight:700; text-align:center;">
+                    <i class="fas fa-university"></i> Presencial Bucaramanga
+                </div>
+            </div>
+
+            <!-- HITO 2: 2019 -->
+            <div style="background:#FFFFFF; border:1px solid #FECDD3; border-top:3px solid #C8102E; border-radius:8px; padding:10px 11px; box-shadow:0 2px 6px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                        <span style="background:#C8102E; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; padding:2px 8px; border-radius:12px;">2019</span>
+                        <div style="width:24px; height:24px; border-radius:50%; background:#FFF1F2; border:1.5px solid #C8102E; color:#C8102E; display:flex; align-items:center; justify-content:center; font-size:0.68rem;">
+                            <i class="fas fa-award"></i>
+                        </div>
+                    </div>
+                    <span style="font-size:0.64rem; font-weight:800; color:#9F1239; text-transform:uppercase; display:block; margin-bottom:2px;">Res. MEN 011375 (07/11/19)</span>
+                    <strong style="font-size:0.78rem; color:#1A1A1B; display:block; margin-bottom:4px; line-height:1.25;">Registro Inicial &amp; SNIES</strong>
+                    <p style="font-size:0.7rem; color:#4B5563; margin:0 0 6px; line-height:1.35;">
+                        MEN otorga Registro Calificado por 7 años. Código <strong>SNIES Presencial: 108445</strong>.
+                    </p>
+                </div>
+                <div style="background:#FFF1F2; border:1px solid #FECDD3; border-radius:4px; padding:3px 6px; font-size:0.67rem; color:#9F1239; font-weight:700; text-align:center;">
+                    <i class="fas fa-layer-group"></i> 158 Cr · 9 Sem · 62 Asig
+                </div>
+            </div>
+
+            <!-- HITO 3: 2024 -->
+            <div style="background:#FFFFFF; border:1px solid #FED7AA; border-top:3px solid #F39200; border-radius:8px; padding:10px 11px; box-shadow:0 2px 6px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                        <span style="background:#F39200; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; padding:2px 8px; border-radius:12px;">2024</span>
+                        <div style="width:24px; height:24px; border-radius:50%; background:#FFF9F2; border:1.5px solid #F39200; color:#F39200; display:flex; align-items:center; justify-content:center; font-size:0.68rem;">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                    </div>
+                    <span style="font-size:0.64rem; font-weight:800; color:#C2410C; text-transform:uppercase; display:block; margin-bottom:2px;">Acuerdo CS 011 (03/12/24)</span>
+                    <strong style="font-size:0.78rem; color:#1A1A1B; display:block; margin-bottom:4px; line-height:1.25;">Solicitud Registro Único</strong>
+                    <p style="font-size:0.7rem; color:#4B5563; margin:0 0 6px; line-height:1.35;">
+                        CS aprueba solicitud formal ante MEN para articular Presencial y Virtual (Exp. SACES 108524).
+                    </p>
+                </div>
+                <div style="background:#FFF9F2; border:1px solid #FED7AA; border-radius:4px; padding:3px 6px; font-size:0.67rem; color:#C2410C; font-weight:700; text-align:center;">
+                    <i class="fas fa-network-wired"></i> Tránsito Dual SACES
+                </div>
+            </div>
+
+            <!-- HITO 4: 2024-2025 -->
+            <div style="background:#FFFFFF; border:1px solid #FDE68A; border-top:3px solid #D97706; border-radius:8px; padding:10px 11px; box-shadow:0 2px 6px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                        <span style="background:#D97706; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; padding:2px 8px; border-radius:12px;">2024-25</span>
+                        <div style="width:24px; height:24px; border-radius:50%; background:#FEF3C7; border:1.5px solid #D97706; color:#D97706; display:flex; align-items:center; justify-content:center; font-size:0.68rem;">
+                            <i class="fas fa-file-check"></i>
+                        </div>
+                    </div>
+                    <span style="font-size:0.64rem; font-weight:800; color:#B45309; text-transform:uppercase; display:block; margin-bottom:2px;">Aprobación MEN · Ampliación</span>
+                    <strong style="font-size:0.78rem; color:#1A1A1B; display:block; margin-bottom:4px; line-height:1.25;">SNIES Virtual Asignado</strong>
+                    <p style="font-size:0.7rem; color:#4B5563; margin:0 0 6px; line-height:1.35;">
+                        MEN aprueba modalidad virtual articulada a presencial. <strong>SNIES Virtual: 115833</strong>.
+                    </p>
+                </div>
+                <div style="background:#FEF3C7; border:1px solid #FDE68A; border-radius:4px; padding:3px 6px; font-size:0.67rem; color:#B45309; font-weight:700; text-align:center;">
+                    <i class="fas fa-check-circle"></i> SNIES: 108445 + 115833
+                </div>
+            </div>
+
+            <!-- HITO 5: 2025 -->
+            <div style="background:#F0FDF4; border:1.5px solid #86EFAC; border-top:3px solid #059669; border-radius:8px; padding:10px 11px; box-shadow:0 3px 8px rgba(5,150,105,0.06); display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                        <span style="background:#059669; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; padding:2px 8px; border-radius:12px;">2025</span>
+                        <span style="background:#DCFCE7; color:#166534; font-size:0.62rem; font-weight:800; padding:1px 5px; border-radius:4px;">RENOVACIÓN</span>
+                    </div>
+                    <span style="font-size:0.64rem; font-weight:800; color:#166534; text-transform:uppercase; display:block; margin-bottom:2px;">Acuerdo CS 021 (25/07/25)</span>
+                    <strong style="font-size:0.78rem; color:#064E3B; display:block; margin-bottom:4px; line-height:1.25;">Modificación Curricular</strong>
+                    <p style="font-size:0.7rem; color:#14532D; margin:0 0 6px; line-height:1.35;">
+                        Modernización a 8 semestres y titulación inclusiva <em>Administrador(a) de Empresas</em>.
+                    </p>
+                </div>
+                <div style="background:#FFFFFF; border:1px solid #86EFAC; border-radius:4px; padding:3px 6px; font-size:0.67rem; color:#166534; font-weight:800; text-align:center;">
+                    <i class="fas fa-star" style="color:#059669;"></i> 144 Cr · 8 Sem · 48 Asig
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TABLERO VISUAL DE EVOLUCIÓN Y CAMBIOS DEL PROGRAMA (SÍNTESIS COMPARATIVA DE ALTO IMPACTO) -->
+    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:10px 14px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; flex-wrap:wrap; gap:6px;">
+            <span style="font-size:0.72rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px;">
+                <i class="fas fa-exchange-alt" style="color:#F39200;"></i> Cuadro Comparativo de Evolución Curricular (Cambios Concretos en el Programa):
+            </span>
+            <span style="font-size:0.68rem; color:#64748B;">Evidencia directa para evaluación MEN / CONACES</span>
+        </div>
         
-        <!-- ========================================== -->
-        <!-- FILA 1: HITOS 1, 2 Y 3 (IZQUIERDA A DERECHA) -->
-        <!-- ========================================== -->
-        <div style="position:relative; margin-bottom:30px;">
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px;">
             
-            <!-- CINTA DE FONDO SUPERIOR -->
-            <div style="height:14px; background:linear-gradient(90deg, #7C3AED 0%, #C8102E 35%, #F39200 70%, #EA580C 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.15);"></div>
-            
-            <!-- CONECTOR CURVO SERPENTINA HACIA FILA 2 (A LA DERECHA) -->
-            <div style="position:absolute; right:10px; top:46px; width:70px; height:185px; border-right:14px solid #EA580C; border-top:14px solid #EA580C; border-bottom:14px solid #D97706; border-top-right-radius:50px; border-bottom-right-radius:50px; z-index:1; pointer-events:none; box-sizing:border-box;"></div>
-
-            <!-- GRID DE HITOS FILA 1 -->
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; position:relative; z-index:2;">
-                
-                <!-- HITO 1: 2018 (CREACIÓN) -->
-                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-                    <!-- PIN SUPERIOR -->
-                    <div style="width:36px; height:36px; border-radius:50%; background:#7C3AED; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(124,58,237,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-scroll" style="font-size:0.9rem;"></i>
-                    </div>
-                    <!-- BADGE DE AÑO -->
-                    <div style="background:#7C3AED; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
-                        2018
-                    </div>
-                    <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #E9D5FF; border-top:3px solid #7C3AED; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
-                        <span style="font-size:0.68rem; font-weight:800; color:#6B21A8; text-transform:uppercase; display:block; margin-bottom:3px;">
-                            Acuerdo CS No. 05 · 29 Mayo 2018
-                        </span>
-                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                            Creación Institucional del Programa
-                        </strong>
-                        <p style="font-size:0.75rem; color:#4B5563; margin:0; line-height:1.45;">
-                            El Consejo Superior de la Corporación Escuela Tecnológica del Oriente crea y aprueba formalmente el programa de <strong>Administración de Empresas</strong> en modalidad presencial, fundamentando su diseño curricular y pertinencia regional en Santander.
-                        </p>
-                    </div>
+            <!-- ESTADO INICIAL 2019 -->
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:3px solid #64748B; border-radius:6px; padding:8px 10px;">
+                <span style="font-size:0.66rem; font-weight:800; color:#64748B; text-transform:uppercase; display:block;">1. Estado Inicial (2019)</span>
+                <strong style="font-size:0.76rem; color:#1E293B; display:block; margin:2px 0;">Solo Presencial · 9 Semestres</strong>
+                <div style="font-size:0.7rem; color:#475569; line-height:1.35;">
+                    • <strong>158 Créditos</strong> · 62 Asignaturas<br>
+                    • Código SNIES: <strong>108445</strong><br>
+                    • Cobertura: Bucaramanga (Presencial)
                 </div>
-
-                <!-- HITO 2: 2019 (REGISTRO CALIFICADO Y SNIES INICIAL) -->
-                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-                    <!-- PIN SUPERIOR -->
-                    <div style="width:36px; height:36px; border-radius:50%; background:#C8102E; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(200,16,46,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-award" style="font-size:0.9rem;"></i>
-                    </div>
-                    <!-- BADGE DE AÑO -->
-                    <div style="background:#C8102E; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
-                        2019
-                    </div>
-                    <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #FECDD3; border-top:3px solid #C8102E; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
-                        <span style="font-size:0.68rem; font-weight:800; color:#9F1239; text-transform:uppercase; display:block; margin-bottom:3px;">
-                            Resolución MEN 011375 · 07 Nov 2019
-                        </span>
-                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                            Registro Calificado &amp; SNIES Presencial: 108445
-                        </strong>
-                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
-                            El Ministerio de Educación Nacional otorga el Registro Calificado inicial por 7 años y asigna el <strong>Código SNIES 108445</strong>, aperturando oficialmente el programa de forma presencial en Bucaramanga.
-                        </p>
-                        <div style="background:#FFF1F2; border:1px solid #FECDD3; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#9F1239; font-weight:700;">
-                            <i class="fas fa-layer-group"></i> 158 Créditos · 9 Semestres · 62 Asignaturas
-                        </div>
-                    </div>
-                </div>
-
-                <!-- HITO 3: 2024 (ACUERDO SOLICITUD REGISTRO ÚNICO) -->
-                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-                    <!-- PIN SUPERIOR -->
-                    <div style="width:36px; height:36px; border-radius:50%; background:#F39200; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(243,146,0,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-check-double" style="font-size:0.9rem;"></i>
-                    </div>
-                    <!-- BADGE DE AÑO -->
-                    <div style="background:#F39200; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
-                        2024
-                    </div>
-                    <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #FED7AA; border-top:3px solid #F39200; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
-                        <span style="font-size:0.68rem; font-weight:800; color:#C2410C; text-transform:uppercase; display:block; margin-bottom:3px;">
-                            Acuerdo CS No. 011 · 03 Dic 2024
-                        </span>
-                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                            Aprobación para Solicitar Registro Calificado Único
-                        </strong>
-                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
-                            El Consejo Superior aprueba la solicitud formal ante el MEN para modificar la oferta hacia <strong>Registro Calificado Único (Presencial y Virtual)</strong>, radicada en SACES mediante el Anexo 5, asegurando cobertura nacional incluyente.
-                        </p>
-                        <div style="background:#FFF9F2; border:1px solid #FED7AA; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#C2410C; font-weight:700;">
-                            <i class="fas fa-shield-alt"></i> Exp. SACES 108524 · Dualidad Académica
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
 
-        <!-- ========================================== -->
-        <!-- FILA 2: HITOS 4 Y 5 (DERECHA A IZQUIERDA / CIERRE) -->
-        <!-- ========================================== -->
-        <div style="position:relative; margin-top:20px;">
-            
-            <!-- CINTA DE FONDO INFERIOR -->
-            <div style="height:14px; background:linear-gradient(270deg, #D97706 0%, #059669 60%, #1A1A1B 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.15);"></div>
-
-            <!-- GRID DE HITOS FILA 2 -->
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:30px; position:relative; z-index:2; max-width:850px; margin:0 auto;">
-                
-                <!-- HITO 4: 2024-2025 (APROBACIÓN MEN Y CAMBIO / ASIGNACIÓN SNIES) -->
-                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-                    <!-- PIN SUPERIOR -->
-                    <div style="width:36px; height:36px; border-radius:50%; background:#D97706; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(217,119,6,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-file-check" style="font-size:0.9rem;"></i>
-                    </div>
-                    <!-- BADGE DE AÑO -->
-                    <div style="background:#D97706; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
-                        2024 - 2025
-                    </div>
-                    <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #FDE68A; border-top:3px solid #D97706; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
-                        <span style="font-size:0.68rem; font-weight:800; color:#B45309; text-transform:uppercase; display:block; margin-bottom:3px;">
-                            Aprobación MEN · Asignación SNIES Virtual
-                        </span>
-                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                            Aprobación MEN &amp; SNIES Virtual: 115833
-                        </strong>
-                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
-                            El Ministerio de Educación Nacional aprueba la ampliación de modalidad a virtual en el marco del <strong>Registro Único</strong>, asignando el código <strong>SNIES Virtual 115833</strong> articulado al presencial, operando inicialmente bajo la base de:
-                        </p>
-                        <div style="background:#FEF3C7; border:1px solid #FDE68A; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#B45309; font-weight:700;">
-                            <i class="fas fa-check-circle"></i> 158 Créditos Académicos · 62 Asignaturas
-                        </div>
-                    </div>
+            <!-- ESTADO INTERMEDIO 2024-2025 -->
+            <div style="background:#FFFFFF; border:1px solid #FED7AA; border-left:3px solid #F39200; border-radius:6px; padding:8px 10px;">
+                <span style="font-size:0.66rem; font-weight:800; color:#C2410C; text-transform:uppercase; display:block;">2. Adopción Registro Único (2024-2025)</span>
+                <strong style="font-size:0.76rem; color:#1E293B; display:block; margin:2px 0;">Presencial + Virtual · 9 Semestres</strong>
+                <div style="font-size:0.7rem; color:#475569; line-height:1.35;">
+                    • <strong>158 Créditos</strong> · 62 Asignaturas<br>
+                    • SNIES Presencial: <strong>108445</strong> | Virtual: <strong>115833</strong><br>
+                    • Ampliación a Cobertura Nacional
                 </div>
-
-                <!-- HITO 5: 2025 (RENOVACIÓN Y OPTIMIZACIÓN A 8 SEMESTRES / 144 CRÉDITOS / 48 MATERIAS) -->
-                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-                    <!-- PIN SUPERIOR -->
-                    <div style="width:36px; height:36px; border-radius:50%; background:#059669; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(5,150,105,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-flag-checkered" style="font-size:0.9rem;"></i>
-                    </div>
-                    <!-- BADGE DE AÑO -->
-                    <div style="background:#059669; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
-                        2025 (Sustentación Actual)
-                    </div>
-                    <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#F0FDF4; border:2px solid #86EFAC; border-top:3px solid #059669; border-radius:10px; padding:14px; box-shadow:0 6px 16px rgba(5,150,105,0.08); width:100%; box-sizing:border-box; text-align:left;">
-                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
-                            <span style="font-size:0.68rem; font-weight:800; color:#166534; text-transform:uppercase;">
-                                Acuerdo CS No. 021 · 25 Julio 2025
-                            </span>
-                            <span style="background:#DCFCE7; color:#166534; font-size:0.65rem; font-weight:800; padding:1px 6px; border-radius:10px;">
-                                EN EVALUACIÓN MEN
-                            </span>
-                        </div>
-                        <strong style="font-size:0.88rem; color:#064E3B; display:block; margin-bottom:6px; line-height:1.3;">
-                            Renovación y Modificación Curricular del Registro Único
-                        </strong>
-                        <p style="font-size:0.75rem; color:#14532D; margin:0 0 8px; line-height:1.45;">
-                            El Consejo Superior aprueba y sustenta ante el MEN la <strong>Renovación con Modificación Curricular</strong> (Anexo 2 SACES), modernizando la duración a <strong>8 semestres, 144 créditos y 48 asignaturas modulares</strong>, con titulación inclusiva <em>Administrador(a) de Empresas</em>.
-                        </p>
-                        <div style="background:#FFFFFF; border:1.5px solid #86EFAC; border-radius:6px; padding:6px 10px; font-size:0.74rem; color:#166534; font-weight:800; display:flex; justify-content:space-between; align-items:center;">
-                            <span><i class="fas fa-check-double" style="color:#059669;"></i> 8 Semestres · 144 Créditos · 48 Asignaturas</span>
-                            <span>300 Cupos (240V / 60P)</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
 
-    </div>
+            <!-- ESTADO RENOVACIÓN 2025 (PROPUESTO) -->
+            <div style="background:#F0FDF4; border:1.5px solid #86EFAC; border-left:3px solid #059669; border-radius:6px; padding:8px 10px;">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <span style="font-size:0.66rem; font-weight:800; color:#166534; text-transform:uppercase;">3. Propuesta de Renovación (2025)</span>
+                    <span style="background:#059669; color:#FFFFFF; font-size:0.6rem; font-weight:800; padding:1px 5px; border-radius:3px;">OPTIMIZADO</span>
+                </div>
+                <strong style="font-size:0.76rem; color:#064E3B; display:block; margin:2px 0;">Registro Único (P+V) · 8 Semestres</strong>
+                <div style="font-size:0.7rem; color:#14532D; line-height:1.35;">
+                    • <strong>144 Créditos</strong> <span style="color:#059669; font-weight:800;">(-14 cr eficiencia)</span><br>
+                    • <strong>48 Asignaturas</strong> <span style="color:#059669; font-weight:800;">(-14 modulares)</span><br>
+                    • <strong>300 Cupos</strong> (240 Virtual / 60 Presencial)
+                </div>
+            </div>
 
-    <!-- NOTA DE CIERRE DE LA LÍNEA DE TIEMPO -->
-    <div style="background:#F8FAFC; border-left:4px solid #F39200; border-radius:6px; padding:10px 14px; font-size:0.78rem; color:#334155; margin-top:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-        <div>
-            <i class="fas fa-info-circle" style="color:#F39200; margin-right:4px;"></i>
-            <strong>Certeza Jurídica SACES:</strong> Esta línea de tiempo evidencia el tránsito continuo, planificado e institucionalmente avalado del programa desde su creación en 2018, la adopción del Registro Único dual, hasta su optimización a 144 créditos y 8 semestres.
         </div>
-        <button onclick="window.showC1Section('c1-fichas-paralelo')" style="background:#1A1A1B; color:#FFFFFF; border:none; font-size:0.72rem; font-weight:700; padding:5px 12px; border-radius:4px; display:inline-flex; align-items:center; gap:5px; cursor:pointer;">
-            Ver Fichas en Paralelo <i class="fas fa-arrow-right"></i>
-        </button>
     </div>
 
 </div>
 
-<!-- ========================================================================= -->
-<!-- 4. FICHAS TÉCNICAS OFICIALES EN PARALELO (VIGENTE VS. PROPUESTO)          -->
 <!-- ========================================================================= -->
 <div id="c1-fichas-paralelo" style="margin-bottom:28px; display:none;">
     
