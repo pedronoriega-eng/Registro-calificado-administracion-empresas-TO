@@ -96,12 +96,22 @@ Todos los siguientes elementos están formalmente aprobados, implementados en c�
 - Erradicación absoluta de tonalidades azules.
 - Paleta canónica: Carbón (`#1A1A1B`), Naranja Institucional (`#F39200`), Rojo TO (`#C8102E`), Terracota (`#EA580C`) y Dorado (`#D97706`).
 
+### G. Ajustes Normativos y de Rigor Técnico (Corte 20 de Octubre de 2026)
+- **Ficha Técnica del Registro Calificado Único Propuesto (`sections_c1.js`):**
+  - Se eliminaron formalmente los códigos SNIES y números de resolución ministerial del bloque de propuesta curricular (144 créditos / 8 semestres).
+  - Razón jurídica y procedimental: Por tratarse de un registro calificado apenas propuesto y en trámite de radicación/renovación ante el Ministerio de Educación Nacional (MEN), no puede ostentar código SNIES ni acto administrativo de resolución ministerial hasta tanto culmine el proceso de evaluación de salas CONACES y emisión de la resolución correspondiente.
+  - En su lugar, el campo oficial refleja con rigor: `Estado SNIES / Resolución: En trámite ante el MEN (Sin código SNIES ni resolución por tratarse de una propuesta en radicación)`.
+  - El Registro Calificado Vigente (158 créditos) conserva intactos sus históricos SACES y SNIES (Presencial: 108445 / Virtual: 115833, Resolución MEN 011375 de 2019).
+- **Depuración Normativa Integral — Derogación de la Resolución 2265 de 2023:**
+  - Se suprimió de manera absoluta toda mención de la **Resolución 2265 de 2023** en la presentación interactiva del aplicativo (subtítulo de cabecera y cuerpo de Condición 1), en estricta coherencia con su pérdida de vigencia/derogación dentro del ordenamiento jurídico del sector educativo colombiano.
+  - Cero ocurrencias activas en los módulos ejecutables del sitio web.
+
 ---
 
 ## 2. Verificación y Pruebas Técnicas
 - **Validación de Sintaxis:** Todos los scripts JS pasaron `node -c` con 0 errores (`app.js`, `sections_c1.js`, `sections_c2.js`, `sections_c2_google.js`, `sections_c3.js`, `sections_c4.js`, `sections_c5.js`, `sections_inst.js`, `sections_virtual.js`).
-- **Pruebas en Navegador (Subagente Web):**
+- **Pruebas en Navegador (Subagente Web & Playwright):**
   - Autenticación con contraseña `TO2026`.
-  - Condición 1: Navegación de subsecciones en primer plano validada; serpentina simétrica comprobada.
+  - Condición 1: Navegación de subsecciones en primer plano validada; serpentina simétrica comprobada; Ficha Técnica del registro propuesto verificada sin SNIES ni resolución (en trámite ante MEN); cabecera verificada libre de la derogada Resolución 2265 de 2023.
   - Condición 2: Despliegue de los 4 KPI cards de la encuesta a egresados, barras de sectores económicos y vitrina de empresas empleadoras verificado.
-  - Condición 5: Despliegue de las 30 diapositivas, cambio por píldoras 1 a 30, visualización de imágenes CONPES 4069, organigrama, fotos de GESTNOVA, certificados RedCOLSI, caso MYB con 6 empleos y tablas de producción científica comprobado.
+  - Condición 5: Despliegue de las 30 diapositivas, cambio por píldoras 1 a 30 con enfoque automático y scroll al primer plano en viewport superior garantizado, visualización de imágenes CONPES 4069, organigrama, fotos de GESTNOVA, certificados RedCOLSI, caso MYB con 6 empleos y tablas de producción científica comprobado.
