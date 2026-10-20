@@ -34,137 +34,122 @@ window.SECTIONS['c1'] = `
     </div>
 </div>
 
-
-
 <!-- ========================================================================= -->
-<!-- BARRA DE NAVEGACIÓN POR SUBSECCIONES (SUBTABS EN PRIMER PLANO EXCLUSIVO)   -->
+<!-- 2. BARRA DE NAVEGACIÓN RÁPIDA POR SUBSECCIONES (ACCESO INMEDIATO)         -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:10px 14px; margin-bottom:24px; box-shadow:0 3px 12px rgba(0,0,0,0.04); position:sticky; top:0; z-index:90; backdrop-filter:blur(8px);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-        <span style="font-size:0.75rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-compass" style="color:#F39200;"></i> Subsecciones de Sustentación Condición 1:
-        </span>
-        <div style="display:flex; flex-wrap:wrap; gap:6px;" id="c1-subtabs-bar">
-            <button onclick="switchC1Subtab('linea')" data-c1-tab="linea" class="c1-subtab-btn active" style="background:#1A1A1B; color:#FFFFFF; border:1.5px solid #F39200; box-shadow:0 3px 8px rgba(243,146,0,0.25); padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-                <i class="fas fa-route" style="color:#F39200;"></i> 1. Línea de Tiempo
-            </button>
-            <button onclick="switchC1Subtab('fichas')" data-c1-tab="fichas" class="c1-subtab-btn" style="background:#FFFFFF; color:#4A4A4A; border:1px solid #E2E8F0; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-                <i class="fas fa-columns" style="color:#1A1A1B;"></i> 2. Fichas Vigente vs. Propuesto
-            </button>
-            <button onclick="switchC1Subtab('perfil')" data-c1-tab="perfil" class="c1-subtab-btn" style="background:#FFFFFF; color:#4A4A4A; border:1px solid #E2E8F0; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-                <i class="fas fa-user-graduate" style="color:#10B981;"></i> 3. Perfil &amp; Competencias (Tabla 35)
-            </button>
-            <button onclick="switchC1Subtab('componentes')" data-c1-tab="componentes" class="c1-subtab-btn" style="background:#FFFFFF; color:#4A4A4A; border:1px solid #E2E8F0; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-                <i class="fas fa-cubes" style="color:#EA580C;"></i> 4. Componentes Curriculares (Tabla 16)
-            </button>
-            <button onclick="switchC1Subtab('diferenciadores')" data-c1-tab="diferenciadores" class="c1-subtab-btn" style="background:#FFFFFF; color:#4A4A4A; border:1px solid #E2E8F0; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-                <i class="fas fa-medal" style="color:#7C3AED;"></i> 5. Factores Diferenciadores
-            </button>
-            <button onclick="switchC1Subtab('mapa')" data-c1-tab="mapa" class="c1-subtab-btn" style="background:#FFFFFF; color:#4A4A4A; border:1px solid #E2E8F0; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-                <i class="fas fa-project-diagram" style="color:#3B82F6;"></i> 6. Mapa Sistémico
-            </button>
-            <button onclick="switchC1Subtab('benchmarking')" data-c1-tab="benchmarking" class="c1-subtab-btn" style="background:#FFFFFF; color:#4A4A4A; border:1px solid #E2E8F0; padding:6px 14px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-                <i class="fas fa-chart-pie" style="color:#2563EB;"></i> 7. Benchmarking &amp; CINE
-            </button>
-        </div>
+<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:10px 14px; margin-bottom:22px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+    <span style="font-size:0.76rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px;">
+        <i class="fas fa-compass" style="color:#F39200;"></i> Ejes de Sustentación Condición 1:
+    </span>
+    <div style="display:flex; flex-wrap:wrap; gap:6px;" id="c1-subtabs-bar">
+        <button onclick="window.showC1Section('c1-linea-tiempo')" data-c1-target="c1-linea-tiempo" class="c1-subtab-btn" style="background:#1A1A1B; color:#FFFFFF; border:1.5px solid #F39200; padding:6px 13px; border-radius:20px; font-size:0.75rem; font-weight:800; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s; box-shadow:0 2px 8px rgba(243,146,0,0.25);">
+            <i class="fas fa-route" style="color:#F39200;"></i> 1. Línea de Tiempo Normativa
+        </button>
+        <button onclick="window.showC1Section('c1-fichas-paralelo')" data-c1-target="c1-fichas-paralelo" class="c1-subtab-btn" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; padding:6px 13px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-columns" style="color:#1A1A1B;"></i> 2. Fichas Vigente vs. Propuesto
+        </button>
+        <button onclick="window.showC1Section('c1-perfil-competencias')" data-c1-target="c1-perfil-competencias" class="c1-subtab-btn" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; padding:6px 13px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-user-graduate" style="color:#10B981;"></i> 3. Perfil &amp; Competencias (Tabla 35)
+        </button>
+        <button onclick="window.showC1Section('c1-componentes-maestro')" data-c1-target="c1-componentes-maestro" class="c1-subtab-btn" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; padding:6px 13px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-cubes" style="color:#EA580C;"></i> 4. Componentes Curriculares (Tabla 16)
+        </button>
+        <button onclick="window.showC1Section('c1-factores-diferenciadores')" data-c1-target="c1-factores-diferenciadores" class="c1-subtab-btn" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; padding:6px 13px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-medal" style="color:#7C3AED;"></i> 5. Factores Diferenciadores (Interactivos)
+        </button>
+        <button onclick="window.showC1Section('c1-mapa-conceptual')" data-c1-target="c1-mapa-conceptual" class="c1-subtab-btn" style="background:#F8FAFC; color:#334155; border:1px solid #CBD5E1; padding:6px 13px; border-radius:20px; font-size:0.75rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
+            <i class="fas fa-project-diagram" style="color:#3B82F6;"></i> 6. Mapa Sistémico
+        </button>
     </div>
 </div>
 
-<div id="c1-panels-container">
-
-<div id="c1-tab-panel-linea" class="c1-tab-panel active" style="display:block;">
+<!-- ========================================================================= -->
+<!-- 3. LÍNEA DE TIEMPO NORMATIVA E HISTÓRICA (DE PRIMERO - ESTILO SERPENTINA)  -->
+<!-- ========================================================================= -->
+<div id="c1-linea-tiempo" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05); position:relative; overflow:hidden;">
     
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05); position:relative; overflow:hidden;">
-    
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:26px; border-bottom:1px solid #F1F5F9; padding-bottom:14px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:22px; border-bottom:1px solid #F1F5F9; padding-bottom:14px;">
         <div style="display:flex; align-items:center; gap:12px;">
-            <div style="background:#FFF9F2; color:#F39200; width:46px; height:46px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; border:1.5px solid #FED7AA; box-shadow:0 2px 8px rgba(243,146,0,0.15);">
-                <i class="fas fa-route"></i>
+            <div style="background:#FFF9F2; color:#F39200; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; border:1.5px solid #FED7AA; box-shadow:0 2px 6px rgba(243,146,0,0.15);">
+                <i class="fas fa-history"></i>
             </div>
             <div>
                 <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#C2410C; letter-spacing:0.5px;">Evolución Jurídica y Curricular del Programa</span>
-                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.24rem; font-weight:800; color:#1A1A1B; margin:0;">
+                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#1A1A1B; margin:0;">
                     Línea de Tiempo Normativa: De la Creación a la Renovación del Registro Único
                 </h4>
             </div>
         </div>
         <div style="display:flex; gap:8px;">
-            <span style="background:#F8FAFC; border:1px solid #E2E8F0; color:#475569; font-size:0.75rem; font-weight:700; padding:5px 12px; border-radius:20px; display:inline-flex; align-items:center; gap:6px;">
-                <i class="fas fa-check-circle" style="color:#10B981;"></i> 5 Hitos Sustentatorios SACES
+            <span style="background:#F8FAFC; border:1px solid #E2E8F0; color:#475569; font-size:0.74rem; font-weight:700; padding:4px 10px; border-radius:20px; display:inline-flex; align-items:center; gap:5px;">
+                <i class="fas fa-file-signature" style="color:#F39200;"></i> 5 Hitos Sustentatorios SACES
             </span>
         </div>
     </div>
 
     <!-- CONTENEDOR VISUAL ESTILO SERPENTINA (CURVED RIBBON TIMELINE) -->
-    <div style="position:relative; padding:10px 10px 20px;">
+    <div style="position:relative; padding:10px 0 20px;">
         
         <!-- ========================================== -->
         <!-- FILA 1: HITOS 1, 2 Y 3 (IZQUIERDA A DERECHA) -->
         <!-- ========================================== -->
-        <div style="position:relative; margin-bottom:38px;">
+        <div style="position:relative; margin-bottom:30px;">
             
             <!-- CINTA DE FONDO SUPERIOR -->
-            <div style="height:12px; background:linear-gradient(90deg, #7C3AED 0%, #C8102E 40%, #F39200 85%, #EA580C 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.12);"></div>
+            <div style="height:14px; background:linear-gradient(90deg, #7C3AED 0%, #C8102E 35%, #F39200 70%, #EA580C 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.15);"></div>
             
             <!-- CONECTOR CURVO SERPENTINA HACIA FILA 2 (A LA DERECHA) -->
-            <div style="position:absolute; right:10px; top:46px; width:70px; height:200px; border-right:12px solid #EA580C; border-top:12px solid #EA580C; border-bottom:12px solid #D97706; border-top-right-radius:45px; border-bottom-right-radius:45px; z-index:1; pointer-events:none; box-sizing:border-box;"></div>
+            <div style="position:absolute; right:10px; top:46px; width:70px; height:185px; border-right:14px solid #EA580C; border-top:14px solid #EA580C; border-bottom:14px solid #D97706; border-top-right-radius:50px; border-bottom-right-radius:50px; z-index:1; pointer-events:none; box-sizing:border-box;"></div>
 
             <!-- GRID DE HITOS FILA 1 -->
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:22px; position:relative; z-index:2;">
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; position:relative; z-index:2;">
                 
                 <!-- HITO 1: 2018 (CREACIÓN) -->
                 <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
                     <!-- PIN SUPERIOR -->
-                    <div style="width:38px; height:38px; border-radius:50%; background:#7C3AED; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(124,58,237,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-scroll" style="font-size:0.95rem;"></i>
+                    <div style="width:36px; height:36px; border-radius:50%; background:#7C3AED; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(124,58,237,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-scroll" style="font-size:0.9rem;"></i>
                     </div>
                     <!-- BADGE DE AÑO -->
                     <div style="background:#7C3AED; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
                         2018
                     </div>
                     <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #E9D5FF; border-top:3px solid #7C3AED; border-radius:10px; padding:14px 16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left; min-height:190px; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <span style="font-size:0.68rem; font-weight:800; color:#7C3AED; text-transform:uppercase; display:block; margin-bottom:3px;">
-                                Acuerdo CS No. 05 · 29 Mayo 2018
-                            </span>
-                            <strong style="font-size:0.88rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                                Creación Institucional del Programa
-                            </strong>
-                            <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px; line-height:1.45;">
-                                El Consejo Superior de la Corporación Escuela Tecnológica del Oriente crea y aprueba formalmente el programa de <strong>Administración de Empresas</strong> en modalidad presencial, fundamentando su diseño curricular y pertinencia regional en Santander.
-                            </p>
-                        </div>
-                        <div style="border-top:1px dashed #E9D5FF; padding-top:6px; font-size:0.7rem; color:#7C3AED; font-weight:700; display:flex; align-items:center; gap:5px;">
-                            <i class="fas fa-university"></i> Origen Institucional Corporativo
-                        </div>
+                    <div style="background:#FFFFFF; border:1.5px solid #E9D5FF; border-top:3px solid #7C3AED; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#6B21A8; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Acuerdo CS No. 05 · 29 Mayo 2018
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Creación Institucional del Programa
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0; line-height:1.45;">
+                            El Consejo Superior de la Corporación Escuela Tecnológica del Oriente crea y aprueba formalmente el programa de <strong>Administración de Empresas</strong> en modalidad presencial, fundamentando su diseño curricular y pertinencia regional en Santander.
+                        </p>
                     </div>
                 </div>
 
                 <!-- HITO 2: 2019 (REGISTRO CALIFICADO Y SNIES INICIAL) -->
                 <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
                     <!-- PIN SUPERIOR -->
-                    <div style="width:38px; height:38px; border-radius:50%; background:#C8102E; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(200,16,46,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-award" style="font-size:0.95rem;"></i>
+                    <div style="width:36px; height:36px; border-radius:50%; background:#C8102E; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(200,16,46,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-award" style="font-size:0.9rem;"></i>
                     </div>
                     <!-- BADGE DE AÑO -->
                     <div style="background:#C8102E; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
                         2019
                     </div>
                     <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #FECDD3; border-top:3px solid #C8102E; border-radius:10px; padding:14px 16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left; min-height:190px; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <span style="font-size:0.68rem; font-weight:800; color:#C8102E; text-transform:uppercase; display:block; margin-bottom:3px;">
-                                Resolución MEN 011375 · 07 Nov 2019
-                            </span>
-                            <strong style="font-size:0.88rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                                Registro Calificado &amp; SNIES Presencial: 108445
-                            </strong>
-                            <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px; line-height:1.45;">
-                                El Ministerio de Educación Nacional otorga el Registro Calificado inicial por 7 años y asigna el <strong>Código SNIES 108445</strong>, aperturando oficialmente el programa de forma presencial en Bucaramanga.
-                            </p>
-                        </div>
-                        <div style="border-top:1px dashed #FECDD3; padding-top:6px; font-size:0.7rem; color:#C8102E; font-weight:700; display:flex; align-items:center; gap:5px;">
+                    <div style="background:#FFFFFF; border:1.5px solid #FECDD3; border-top:3px solid #C8102E; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#9F1239; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Resolución MEN 011375 · 07 Nov 2019
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Registro Calificado &amp; SNIES Presencial: 108445
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
+                            El Ministerio de Educación Nacional otorga el Registro Calificado inicial por 7 años y asigna el <strong>Código SNIES 108445</strong>, aperturando oficialmente el programa de forma presencial en Bucaramanga.
+                        </p>
+                        <div style="background:#FFF1F2; border:1px solid #FECDD3; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#9F1239; font-weight:700;">
                             <i class="fas fa-layer-group"></i> 158 Créditos · 9 Semestres · 62 Asignaturas
                         </div>
                     </div>
@@ -173,27 +158,25 @@ window.SECTIONS['c1'] = `
                 <!-- HITO 3: 2024 (ACUERDO SOLICITUD REGISTRO ÚNICO) -->
                 <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
                     <!-- PIN SUPERIOR -->
-                    <div style="width:38px; height:38px; border-radius:50%; background:#F39200; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(243,146,0,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-file-contract" style="font-size:0.95rem;"></i>
+                    <div style="width:36px; height:36px; border-radius:50%; background:#F39200; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(243,146,0,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-check-double" style="font-size:0.9rem;"></i>
                     </div>
                     <!-- BADGE DE AÑO -->
                     <div style="background:#F39200; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
                         2024
                     </div>
                     <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #FED7AA; border-top:3px solid #F39200; border-radius:10px; padding:14px 16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left; min-height:190px; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <span style="font-size:0.68rem; font-weight:800; color:#C2410C; text-transform:uppercase; display:block; margin-bottom:3px;">
-                                Acuerdo CS No. 011 · 03 Dic 2024
-                            </span>
-                            <strong style="font-size:0.88rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                                Aprobación para Solicitar Registro Calificado Único
-                            </strong>
-                            <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px; line-height:1.45;">
-                                El Consejo Superior aprueba la solicitud formal ante el MEN para modificar la oferta hacia <strong>Registro Calificado Único (Presencial y Virtual)</strong>, radicada en SACES mediante el Anexo 5, asegurando cobertura nacional incluyente.
-                            </p>
-                        </div>
-                        <div style="border-top:1px dashed #FED7AA; padding-top:6px; font-size:0.7rem; color:#C2410C; font-weight:700; display:flex; align-items:center; gap:5px;">
+                    <div style="background:#FFFFFF; border:1.5px solid #FED7AA; border-top:3px solid #F39200; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#C2410C; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Acuerdo CS No. 011 · 03 Dic 2024
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Aprobación para Solicitar Registro Calificado Único
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
+                            El Consejo Superior aprueba la solicitud formal ante el MEN para modificar la oferta hacia <strong>Registro Calificado Único (Presencial y Virtual)</strong>, radicada en SACES mediante el Anexo 5, asegurando cobertura nacional incluyente.
+                        </p>
+                        <div style="background:#FFF9F2; border:1px solid #FED7AA; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#C2410C; font-weight:700;">
                             <i class="fas fa-shield-alt"></i> Exp. SACES 108524 · Dualidad Académica
                         </div>
                     </div>
@@ -203,104 +186,71 @@ window.SECTIONS['c1'] = `
         </div>
 
         <!-- ========================================== -->
-        <!-- FILA 2: HITOS 4 Y 5 (ALINEADOS PERFECTAMENTE CON FILA 1) -->
+        <!-- FILA 2: HITOS 4 Y 5 (DERECHA A IZQUIERDA / CIERRE) -->
         <!-- ========================================== -->
         <div style="position:relative; margin-top:20px;">
             
             <!-- CINTA DE FONDO INFERIOR -->
-            <div style="height:12px; background:linear-gradient(90deg, #1A1A1B 0%, #10B981 35%, #D97706 75%, #EA580C 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.12);"></div>
+            <div style="height:14px; background:linear-gradient(270deg, #D97706 0%, #059669 60%, #1A1A1B 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.15);"></div>
 
-            <!-- GRID DE HITOS FILA 2: 3 COLUMNAS UNIFORMES -->
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:22px; position:relative; z-index:2;">
+            <!-- GRID DE HITOS FILA 2 -->
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:30px; position:relative; z-index:2; max-width:850px; margin:0 auto;">
                 
-                <!-- COLUMNA 1: INDICADOR DE CONTINUIDAD / TRAYECTORIA ACADÉMICA -->
+                <!-- HITO 4: 2024-2025 (APROBACIÓN MEN Y CAMBIO / ASIGNACIÓN SNIES) -->
                 <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
                     <!-- PIN SUPERIOR -->
-                    <div style="width:38px; height:38px; border-radius:50%; background:#1A1A1B; color:#F39200; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(0,0,0,0.3); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-sync-alt fa-spin" style="font-size:0.95rem;"></i>
-                    </div>
-                    <!-- BADGE -->
-                    <div style="background:#1A1A1B; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.85rem; font-weight:800; padding:5px 18px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
-                        TRANSICIÓN &amp; CONSOLIDACIÓN
-                    </div>
-                    <!-- TARJETA EXPLICATIVA DE ENLACE -->
-                    <div style="background:#F9FAFB; border:1.5px solid #E5E7EB; border-top:3px solid #1A1A1B; border-radius:10px; padding:14px 16px; box-shadow:0 4px 12px rgba(0,0,0,0.03); width:100%; box-sizing:border-box; text-align:left; min-height:190px; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <span style="font-size:0.68rem; font-weight:800; color:#4B5563; text-transform:uppercase; display:block; margin-bottom:3px;">
-                                Marco de Armonización Institucional
-                            </span>
-                            <strong style="font-size:0.88rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                                Evolución hacia la Flexibilidad y la Modalidad Única
-                            </strong>
-                            <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px; line-height:1.45;">
-                                El programa consolida su trayectoria presencial en Santander e impulsa la convergencia hacia el Registro Calificado Único, garantizando equivalencia de propósitos formativos y resultados de aprendizaje (RAP) en ambas modalidades.
-                            </p>
-                        </div>
-                        <div style="border-top:1px dashed #D1D5DB; padding-top:6px; font-size:0.7rem; color:#1A1A1B; font-weight:700; display:flex; align-items:center; gap:5px;">
-                            <i class="fas fa-check-double" style="color:#F39200;"></i> Convergencia Pedagógica CETO
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COLUMNA 2: HITO 4 (2024-2025: APROBACIÓN MEN Y CAMBIO / ASIGNACIÓN SNIES) -->
-                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
-                    <!-- PIN SUPERIOR -->
-                    <div style="width:38px; height:38px; border-radius:50%; background:#D97706; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(217,119,6,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-laptop-code" style="font-size:0.95rem;"></i>
+                    <div style="width:36px; height:36px; border-radius:50%; background:#D97706; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(217,119,6,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-file-check" style="font-size:0.9rem;"></i>
                     </div>
                     <!-- BADGE DE AÑO -->
                     <div style="background:#D97706; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
                         2024 - 2025
                     </div>
                     <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:1.5px solid #FDE68A; border-top:3px solid #D97706; border-radius:10px; padding:14px 16px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left; min-height:190px; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <span style="font-size:0.68rem; font-weight:800; color:#B45309; text-transform:uppercase; display:block; margin-bottom:3px;">
-                                Aprobación MEN · Asignación SNIES Virtual
-                            </span>
-                            <strong style="font-size:0.88rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                                Aprobación MEN &amp; SNIES Virtual: 115833
-                            </strong>
-                            <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px; line-height:1.45;">
-                                El Ministerio de Educación Nacional aprueba la ampliación de modalidad a virtual en el marco del <strong>Registro Único</strong>, asignando el código <strong>SNIES Virtual 115833</strong> articulado al presencial, operando inicialmente bajo la base de:
-                            </p>
-                        </div>
-                        <div style="border-top:1px dashed #FDE68A; padding-top:6px; font-size:0.7rem; color:#B45309; font-weight:700; display:flex; align-items:center; gap:5px;">
+                    <div style="background:#FFFFFF; border:1.5px solid #FDE68A; border-top:3px solid #D97706; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#B45309; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Aprobación MEN · Asignación SNIES Virtual
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Aprobación MEN &amp; SNIES Virtual: 115833
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
+                            El Ministerio de Educación Nacional aprueba la ampliación de modalidad a virtual en el marco del <strong>Registro Único</strong>, asignando el código <strong>SNIES Virtual 115833</strong> articulado al presencial, operando inicialmente bajo la base de:
+                        </p>
+                        <div style="background:#FEF3C7; border:1px solid #FDE68A; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#B45309; font-weight:700;">
                             <i class="fas fa-check-circle"></i> 158 Créditos Académicos · 62 Asignaturas
                         </div>
                     </div>
                 </div>
 
-                <!-- COLUMNA 3: HITO 5 (2025: SUSTENTACIÓN ACTUAL RENOVACIÓN Y MODIFICACIÓN A 8 SEMESTRES) -->
+                <!-- HITO 5: 2025 (RENOVACIÓN Y OPTIMIZACIÓN A 8 SEMESTRES / 144 CRÉDITOS / 48 MATERIAS) -->
                 <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
                     <!-- PIN SUPERIOR -->
-                    <div style="width:38px; height:38px; border-radius:50%; background:#059669; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(5,150,105,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
-                        <i class="fas fa-flag-checkered" style="font-size:0.95rem;"></i>
+                    <div style="width:36px; height:36px; border-radius:50%; background:#059669; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(5,150,105,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-flag-checkered" style="font-size:0.9rem;"></i>
                     </div>
                     <!-- BADGE DE AÑO -->
                     <div style="background:#059669; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
                         2025 (Sustentación Actual)
                     </div>
                     <!-- TARJETA DESCRIPTIVA -->
-                    <div style="background:#FFFFFF; border:2px solid #A7F3D0; border-top:4px solid #059669; border-radius:10px; padding:14px 16px; box-shadow:0 6px 16px rgba(5,150,105,0.1); width:100%; box-sizing:border-box; text-align:left; min-height:190px; display:flex; flex-direction:column; justify-content:space-between;">
-                        <div>
-                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
-                                <span style="font-size:0.68rem; font-weight:800; color:#047857; text-transform:uppercase;">
-                                    Acuerdo CS No. 021 · 25 Julio 2025
-                                </span>
-                                <span style="background:#ECFDF5; color:#059669; font-size:0.62rem; font-weight:800; padding:2px 6px; border-radius:10px; border:1px solid #A7F3D0;">
-                                    EN EVALUACIÓN MEN
-                                </span>
-                            </div>
-                            <strong style="font-size:0.88rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
-                                Renovación y Modificación Curricular del Registro Único
-                            </strong>
-                            <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px; line-height:1.45;">
-                                El Consejo Superior aprueba y sustenta ante el MEN la <strong>Renovación con Modificación Curricular (Anexo 2 SACES)</strong>, modernizando la duración a <strong>8 semestres, 144 créditos y 48 asignaturas</strong> modulares, con titulación inclusiva <em>Administrador(a) de Empresas</em>.
-                            </p>
+                    <div style="background:#F0FDF4; border:2px solid #86EFAC; border-top:3px solid #059669; border-radius:10px; padding:14px; box-shadow:0 6px 16px rgba(5,150,105,0.08); width:100%; box-sizing:border-box; text-align:left;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
+                            <span style="font-size:0.68rem; font-weight:800; color:#166534; text-transform:uppercase;">
+                                Acuerdo CS No. 021 · 25 Julio 2025
+                            </span>
+                            <span style="background:#DCFCE7; color:#166534; font-size:0.65rem; font-weight:800; padding:1px 6px; border-radius:10px;">
+                                EN EVALUACIÓN MEN
+                            </span>
                         </div>
-                        <div style="border-top:1px dashed #A7F3D0; padding-top:6px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px; font-size:0.7rem; color:#065F46; font-weight:800;">
-                            <span><i class="fas fa-check-double"></i> 8 Semestres · 144 Créditos · 48 Asignaturas</span>
+                        <strong style="font-size:0.88rem; color:#064E3B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Renovación y Modificación Curricular del Registro Único
+                        </strong>
+                        <p style="font-size:0.75rem; color:#14532D; margin:0 0 8px; line-height:1.45;">
+                            El Consejo Superior aprueba y sustenta ante el MEN la <strong>Renovación con Modificación Curricular</strong> (Anexo 2 SACES), modernizando la duración a <strong>8 semestres, 144 créditos y 48 asignaturas modulares</strong>, con titulación inclusiva <em>Administrador(a) de Empresas</em>.
+                        </p>
+                        <div style="background:#FFFFFF; border:1.5px solid #86EFAC; border-radius:6px; padding:6px 10px; font-size:0.74rem; color:#166534; font-weight:800; display:flex; justify-content:space-between; align-items:center;">
+                            <span><i class="fas fa-check-double" style="color:#059669;"></i> 8 Semestres · 144 Créditos · 48 Asignaturas</span>
                             <span>300 Cupos (240V / 60P)</span>
                         </div>
                     </div>
@@ -311,24 +261,23 @@ window.SECTIONS['c1'] = `
 
     </div>
 
-</div>
-
-    
-    <!-- NAVEGACIÓN INFERIOR DE SUBSECCIÓN -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #E5E7EB;">
-        <div></div>
-        <div style="font-size:0.8rem; font-weight:800; color:#6B7280; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-bookmark" style="color:#F39200;"></i> Subsección 1 de 7 · <span style="color:#1A1A1B;">Línea de Tiempo Normativa</span>
+    <!-- NOTA DE CIERRE DE LA LÍNEA DE TIEMPO -->
+    <div style="background:#F8FAFC; border-left:4px solid #F39200; border-radius:6px; padding:10px 14px; font-size:0.78rem; color:#334155; margin-top:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <div>
+            <i class="fas fa-info-circle" style="color:#F39200; margin-right:4px;"></i>
+            <strong>Certeza Jurídica SACES:</strong> Esta línea de tiempo evidencia el tránsito continuo, planificado e institucionalmente avalado del programa desde su creación en 2018, la adopción del Registro Único dual, hasta su optimización a 144 créditos y 8 semestres.
         </div>
-        <button onclick="switchC1Subtab('next')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 6px rgba(243,146,0,0.2); transition:all 0.2s;" onmouseover="this.style.background='#F39200'" onmouseout="this.style.background='#1A1A1B'">
-        Siguiente <i class="fas fa-arrow-right"></i>
-    </button>
+        <button onclick="window.showC1Section('c1-fichas-paralelo')" style="background:#1A1A1B; color:#FFFFFF; border:none; font-size:0.72rem; font-weight:700; padding:5px 12px; border-radius:4px; display:inline-flex; align-items:center; gap:5px; cursor:pointer;">
+            Ver Fichas en Paralelo <i class="fas fa-arrow-right"></i>
+        </button>
     </div>
-    
+
 </div>
 
-<div id="c1-tab-panel-fichas" class="c1-tab-panel" style="display:none;">
-    id="c1-fichas-paralelo" style="margin-bottom:28px;">
+<!-- ========================================================================= -->
+<!-- 4. FICHAS TÉCNICAS OFICIALES EN PARALELO (VIGENTE VS. PROPUESTO)          -->
+<!-- ========================================================================= -->
+<div id="c1-fichas-paralelo" style="margin-bottom:28px; display:none;">
     
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
@@ -501,25 +450,7 @@ window.SECTIONS['c1'] = `
 <!-- ========================================================================= -->
 <!-- 5. PERFIL DE EGRESO Y COMPETENCIAS DEL EGRESADO (TABLA 35 DEL DOC. MAESTRO)-->
 <!-- ========================================================================= -->
-<div 
-    
-    <!-- NAVEGACIÓN INFERIOR DE SUBSECCIÓN -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #E5E7EB;">
-        <button onclick="switchC1Subtab('prev')" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;" onmouseover="this.style.background='#E5E7EB'" onmouseout="this.style.background='#F3F4F6'">
-        <i class="fas fa-arrow-left"></i> Anterior
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#6B7280; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-bookmark" style="color:#F39200;"></i> Subsección 2 de 7 · <span style="color:#1A1A1B;">Fichas Técnicas Oficiales</span>
-        </div>
-        <button onclick="switchC1Subtab('next')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 6px rgba(243,146,0,0.2); transition:all 0.2s;" onmouseover="this.style.background='#F39200'" onmouseout="this.style.background='#1A1A1B'">
-        Siguiente <i class="fas fa-arrow-right"></i>
-    </button>
-    </div>
-    
-</div>
-
-<div id="c1-tab-panel-perfil" class="c1-tab-panel" style="display:none;">
-    id="c1-perfil-competencias" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+<div id="c1-perfil-competencias" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div style="display:flex; align-items:center; gap:12px;">
@@ -629,25 +560,7 @@ window.SECTIONS['c1'] = `
 <!-- ========================================================================= -->
 <!-- 6. COMPONENTES CURRICULARES OFICIALES DEL DOCUMENTO MAESTRO (TABLA 16)     -->
 <!-- ========================================================================= -->
-<div 
-    
-    <!-- NAVEGACIÓN INFERIOR DE SUBSECCIÓN -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #E5E7EB;">
-        <button onclick="switchC1Subtab('prev')" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;" onmouseover="this.style.background='#E5E7EB'" onmouseout="this.style.background='#F3F4F6'">
-        <i class="fas fa-arrow-left"></i> Anterior
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#6B7280; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-bookmark" style="color:#F39200;"></i> Subsección 3 de 7 · <span style="color:#1A1A1B;">Perfil de Egreso & Competencias (Tabla 35)</span>
-        </div>
-        <button onclick="switchC1Subtab('next')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 6px rgba(243,146,0,0.2); transition:all 0.2s;" onmouseover="this.style.background='#F39200'" onmouseout="this.style.background='#1A1A1B'">
-        Siguiente <i class="fas fa-arrow-right"></i>
-    </button>
-    </div>
-    
-</div>
-
-<div id="c1-tab-panel-componentes" class="c1-tab-panel" style="display:none;">
-    id="c1-componentes-maestro" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #EA580C; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+<div id="c1-componentes-maestro" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #EA580C; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div style="display:flex; align-items:center; gap:12px;">
@@ -797,25 +710,7 @@ window.SECTIONS['c1'] = `
 <!-- ========================================================================= -->
 <!-- 7. FACTORES DIFERENCIADORES DEL PROGRAMA (INTERACTIVOS CON SOLIDEZ)        -->
 <!-- ========================================================================= -->
-<div 
-    
-    <!-- NAVEGACIÓN INFERIOR DE SUBSECCIÓN -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #E5E7EB;">
-        <button onclick="switchC1Subtab('prev')" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;" onmouseover="this.style.background='#E5E7EB'" onmouseout="this.style.background='#F3F4F6'">
-        <i class="fas fa-arrow-left"></i> Anterior
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#6B7280; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-bookmark" style="color:#F39200;"></i> Subsección 4 de 7 · <span style="color:#1A1A1B;">Componentes Curriculares (Tabla 16)</span>
-        </div>
-        <button onclick="switchC1Subtab('next')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 6px rgba(243,146,0,0.2); transition:all 0.2s;" onmouseover="this.style.background='#F39200'" onmouseout="this.style.background='#1A1A1B'">
-        Siguiente <i class="fas fa-arrow-right"></i>
-    </button>
-    </div>
-    
-</div>
-
-<div id="c1-tab-panel-diferenciadores" class="c1-tab-panel" style="display:none;">
-    id="c1-factores-diferenciadores" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #7C3AED; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+<div id="c1-factores-diferenciadores" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #7C3AED; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div style="display:flex; align-items:center; gap:12px;">
@@ -958,25 +853,7 @@ window.SECTIONS['c1'] = `
 <!-- ========================================================================= -->
 <!-- 8. MAPA CONCEPTUAL SISTÉMICO: PERTINENCIA INTEGRAL DE LA DENOMINACIÓN     -->
 <!-- ========================================================================= -->
-<div 
-    
-    <!-- NAVEGACIÓN INFERIOR DE SUBSECCIÓN -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #E5E7EB;">
-        <button onclick="switchC1Subtab('prev')" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;" onmouseover="this.style.background='#E5E7EB'" onmouseout="this.style.background='#F3F4F6'">
-        <i class="fas fa-arrow-left"></i> Anterior
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#6B7280; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-bookmark" style="color:#F39200;"></i> Subsección 5 de 7 · <span style="color:#1A1A1B;">Factores Diferenciadores</span>
-        </div>
-        <button onclick="switchC1Subtab('next')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 6px rgba(243,146,0,0.2); transition:all 0.2s;" onmouseover="this.style.background='#F39200'" onmouseout="this.style.background='#1A1A1B'">
-        Siguiente <i class="fas fa-arrow-right"></i>
-    </button>
-    </div>
-    
-</div>
-
-<div id="c1-tab-panel-mapa" class="c1-tab-panel" style="display:none;">
-    id="c1-mapa-conceptual" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #10B981; border-radius:12px; padding:22px; margin-bottom:24px; box-shadow:0 4px 14px rgba(0,0,0,0.04);">
+<div id="c1-mapa-conceptual" style="display:none; background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #10B981; border-radius:12px; padding:22px; margin-bottom:24px; box-shadow:0 4px 14px rgba(0,0,0,0.04);">
     
     <!-- ENCABEZADO DEL MAPA CONCEPTUAL -->
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:20px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
@@ -1173,156 +1050,7 @@ window.SECTIONS['c1'] = `
 <!-- ========================================================================= -->
 <!-- 9. VENTANA EMERGENTE MODAL (PROFUNDIZACIÓN TEMÁTICA EN SEGUNDO PLANO)     -->
 <!-- ========================================================================= -->
-<div 
-    
-    <!-- NAVEGACIÓN INFERIOR DE SUBSECCIÓN -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #E5E7EB;">
-        <button onclick="switchC1Subtab('prev')" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;" onmouseover="this.style.background='#E5E7EB'" onmouseout="this.style.background='#F3F4F6'">
-        <i class="fas fa-arrow-left"></i> Anterior
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#6B7280; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-bookmark" style="color:#F39200;"></i> Subsección 6 de 7 · <span style="color:#1A1A1B;">Mapa Conceptual Sistémico</span>
-        </div>
-        <button onclick="switchC1Subtab('next')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; box-shadow:0 2px 6px rgba(243,146,0,0.2); transition:all 0.2s;" onmouseover="this.style.background='#F39200'" onmouseout="this.style.background='#1A1A1B'">
-        Siguiente <i class="fas fa-arrow-right"></i>
-    </button>
-    </div>
-    
-</div>
-
-<div id="c1-tab-panel-benchmarking" class="c1-tab-panel" style="display:none;">
-    
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:22px 24px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:20px; border-bottom:1px solid #F1F5F9; padding-bottom:14px;">
-        <div style="display:flex; align-items:center; gap:12px;">
-            <div style="background:#EFF6FF; color:#2563EB; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; border:1.5px solid #BFDBFE;">
-                <i class="fas fa-chart-pie"></i>
-            </div>
-            <div>
-                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#1E40AF; letter-spacing:0.5px;">Referenciación Comparativa y Clasificación Oficial</span>
-                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#1A1A1B; margin:0;">
-                    Benchmarking Curricular Nacional e Internacional &amp; Taxonomía CINE-F 2013
-                </h4>
-            </div>
-        </div>
-        <div style="display:flex; gap:8px;">
-            <span style="background:#F8FAFC; border:1px solid #E2E8F0; color:#475569; font-size:0.74rem; font-weight:700; padding:4px 10px; border-radius:20px; display:inline-flex; align-items:center; gap:5px;">
-                <i class="fas fa-globe-americas" style="color:#2563EB;"></i> 8 Semestres / 144 Créditos · CINE 0413
-            </span>
-        </div>
-    </div>
-    <div id="c1-panel-benchmarking" class="c1-modal-panel" style="display:block;">
-                <div style="background:#F8F9FA; border-radius:10px; padding:14px; margin-bottom:16px; border:1px solid #E2E8F0;">
-                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
-                        <i class="fas fa-sitemap" style="color:#10B981;"></i> Alineación Taxonómica Internacional y Nacional
-                    </h5>
-                    
-                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:10px;">
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #1A1A1B; padding:10px 12px; border-radius:6px;">
-                            <div style="font-size:0.68rem; font-weight:800; color:#6B6B6B; text-transform:uppercase;">UNESCO CINE-F 2013</div>
-                            <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">Campo Amplio 04</div>
-                            <div style="font-size:0.72rem; color:#64748B;">Administración de Empresas y Derecho</div>
-                        </div>
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; padding:10px 12px; border-radius:6px;">
-                            <div style="font-size:0.68rem; font-weight:800; color:#6B6B6B; text-transform:uppercase;">CINE Específico &amp; Detallado</div>
-                            <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">0413 · Gestión y Administración</div>
-                            <div style="font-size:0.72rem; color:#64748B;">Dirección estratégica de organizaciones</div>
-                        </div>
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; padding:10px 12px; border-radius:6px;">
-                            <div style="font-size:0.68rem; font-weight:800; color:#6B6B6B; text-transform:uppercase;">SNIES / MEN Colombia</div>
-                            <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">Área de Conocimiento</div>
-                            <div style="font-size:0.72rem; color:#64748B;">Economía, Administración, Contaduría y afines</div>
-                        </div>
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; padding:10px 12px; border-radius:6px;">
-                            <div style="font-size:0.68rem; font-weight:800; color:#6B6B6B; text-transform:uppercase;">Núcleo Básico (NBC)</div>
-                            <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">NBC Administración</div>
-                            <div style="font-size:0.72rem; color:#64748B;">SNIES Presencial 108445 · Virtual 115833</div>
-                        </div>
-                    </div>
-                </div>
-
-                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
-                    <i class="fas fa-balance-scale" style="color:#10B981;"></i> Benchmarking con IES Nacionales e Internacionales Acreditadas (Estándar 8 Semestres)
-                </h5>
-                
-                <div style="overflow-x:auto; border:1px solid #E8E8E8; border-radius:8px;">
-                    <table class="tbl" style="width:100%; font-size:0.8rem; margin:0;">
-                        <thead style="background:#1A1A1B; color:#FFFFFF;">
-                            <tr>
-                                <th style="text-align:left;">Institución de Referencia</th>
-                                <th>Ámbito</th>
-                                <th>Duración</th>
-                                <th>Créditos</th>
-                                <th style="text-align:left;">Modelo y Enfoque Formativo</th>
-                                <th>Acreditación</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="background:#FFF9F2; font-weight:700;">
-                                <td style="color:#C2410C;"><i class="fas fa-check-circle" style="color:#F39200;"></i> Tecnológica del Oriente (TO)</td>
-                                <td style="text-align:center;">Local / Nal.</td>
-                                <td style="text-align:center; color:#C2410C;">8 semestres</td>
-                                <td style="text-align:center; color:#C2410C;">144 cr</td>
-                                <td style="font-size:0.75rem;">Registro Único (Dual), Big Data, IA, Sostenibilidad, 48 asignaturas modulares.</td>
-                                <td style="text-align:center;"><span class="badge" style="background:#FFEDD5; color:#C2410C; font-size:0.65rem;">Renovación RU</span></td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:700;">Tecnológico de Monterrey</td>
-                                <td style="text-align:center;">Internacional (México)</td>
-                                <td style="text-align:center;">8 semestres</td>
-                                <td style="text-align:center;">144 equiv.</td>
-                                <td style="font-size:0.75rem;">Modelo Tec21 por retos, analítica empresarial y emprendimiento ágil.</td>
-                                <td style="text-align:center;"><span class="badge" style="background:#DCFCE7; color:#166534; font-size:0.65rem;">AACSB / SACS</span></td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:700;">Universidad del Rosario</td>
-                                <td style="text-align:center;">Nacional (Bogotá)</td>
-                                <td style="text-align:center;">8 semestres</td>
-                                <td style="text-align:center;">140 cr</td>
-                                <td style="font-size:0.75rem;">Optimización curricular, estrategia corporativa y formación ejecutiva global.</td>
-                                <td style="text-align:center;"><span class="badge" style="background:#DCFCE7; color:#166534; font-size:0.65rem;">Alta Calidad MEN</span></td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:700;">Universidad EAN</td>
-                                <td style="text-align:center;">Nacional (Bogotá)</td>
-                                <td style="text-align:center;">8 semestres</td>
-                                <td style="text-align:center;">142 cr</td>
-                                <td style="font-size:0.75rem;">Modalidad presencial y virtual, sostenibilidad y modelos de negocio digitales.</td>
-                                <td style="text-align:center;"><span class="badge" style="background:#DCFCE7; color:#166534; font-size:0.65rem;">Alta Calidad MEN</span></td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:700;">Pontificia Universidad Católica de Chile</td>
-                                <td style="text-align:center;">Internacional (Chile)</td>
-                                <td style="text-align:center;">8 semestres</td>
-                                <td style="text-align:center;">144 equiv.</td>
-                                <td style="font-size:0.75rem;">Finanzas aplicadas, economía de empresas y gestión directiva estratégica.</td>
-                                <td style="text-align:center;"><span class="badge" style="background:#DCFCE7; color:#166534; font-size:0.65rem;">EQUIS / AACSB</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- PANEL 2: COHERENCIA CURRICULAR SEGÚN TABLA 16 DEL DOCUMENTO MAESTRO -->
-            
-</div>
-
-    
-    <!-- NAVEGACIÓN INFERIOR DE SUBSECCIÓN -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #E5E7EB;">
-        <button onclick="switchC1Subtab('prev')" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;" onmouseover="this.style.background='#E5E7EB'" onmouseout="this.style.background='#F3F4F6'">
-        <i class="fas fa-arrow-left"></i> Anterior
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#6B7280; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:6px;">
-            <i class="fas fa-bookmark" style="color:#F39200;"></i> Subsección 7 de 7 · <span style="color:#1A1A1B;">Benchmarking & Taxonomía CINE</span>
-        </div>
-        <div></div>
-    </div>
-    
-</div>
-
-</div>
-id="c1-modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15, 23, 42, 0.78); backdrop-filter:blur(5px); z-index:999999; align-items:center; justify-content:center; padding:16px; box-sizing:border-box;">
+<div id="c1-modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15, 23, 42, 0.78); backdrop-filter:blur(5px); z-index:999999; align-items:center; justify-content:center; padding:16px; box-sizing:border-box;">
     
     <!-- CONTENEDOR MODAL -->
     <div style="background:#FFFFFF; width:100%; max-width:1050px; max-height:90vh; border-radius:14px; box-shadow:0 25px 50px -12px rgba(0,0,0,0.45); display:flex; flex-direction:column; overflow:hidden; border:1px solid rgba(255,255,255,0.2); animation:c1ModalFadeIn 0.25s ease-out;">
@@ -1781,6 +1509,50 @@ id="c1-modal-overlay" style="display:none; position:fixed; top:0; left:0; width:
     };
     let currentTab = 'benchmarking';
 
+    
+    // CONTROL DE SUBSECCIONES EN PRIMER PLANO (EXCLUSIVAS)
+    window.showC1Section = function(sectionId) {
+        const sectionIds = [
+            'c1-linea-tiempo',
+            'c1-fichas-paralelo',
+            'c1-perfil-competencias',
+            'c1-componentes-maestro',
+            'c1-factores-diferenciadores',
+            'c1-mapa-conceptual'
+        ];
+        sectionIds.forEach(function(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.style.display = (id === sectionId) ? 'block' : 'none';
+            }
+        });
+
+        const bar = document.getElementById('c1-subtabs-bar');
+        if (bar) {
+            const btns = bar.querySelectorAll('.c1-subtab-btn');
+            btns.forEach(function(btn) {
+                const target = btn.getAttribute('data-c1-target');
+                if (target === sectionId) {
+                    btn.style.background = '#1A1A1B';
+                    btn.style.color = '#FFFFFF';
+                    btn.style.border = '1.5px solid #F39200';
+                    btn.style.fontWeight = '800';
+                    btn.style.boxShadow = '0 2px 8px rgba(243,146,0,0.25)';
+                } else {
+                    btn.style.background = '#F8FAFC';
+                    btn.style.color = '#334155';
+                    btn.style.border = '1px solid #CBD5E1';
+                    btn.style.fontWeight = '700';
+                    btn.style.boxShadow = 'none';
+                }
+            });
+        }
+    };
+
+    window.c1Init = function() {
+        window.showC1Section('c1-linea-tiempo');
+    };
+
     window.openC1Modal = function(tabKey) {
         const overlay = document.getElementById('c1-modal-overlay');
         if (!overlay) return;
@@ -2140,90 +1912,3 @@ id="c1-modal-overlay" style="display:none; position:fixed; top:0; left:0; width:
         }
     });
 })();
-
-
-
-(function() {
-    const tabOrder = ['linea', 'fichas', 'perfil', 'componentes', 'diferenciadores', 'mapa', 'benchmarking'];
-    const tabNames = {
-        'linea': 'Línea de Tiempo Normativa',
-        'fichas': 'Fichas Técnicas Oficiales',
-        'perfil': 'Perfil de Egreso & Competencias (Tabla 35)',
-        'componentes': 'Componentes Curriculares (Tabla 16)',
-        'diferenciadores': 'Factores Diferenciadores',
-        'mapa': 'Mapa Conceptual Sistémico',
-        'benchmarking': 'Benchmarking & Taxonomía CINE'
-    };
-
-    window.switchC1Subtab = function(targetKey) {
-        let currentActiveKey = 'linea';
-        document.querySelectorAll('.c1-subtab-btn').forEach(btn => {
-            if (btn.classList.contains('active')) {
-                currentActiveKey = btn.getAttribute('data-c1-tab');
-            }
-        });
-
-        let nextKey = targetKey;
-        if (targetKey === 'next') {
-            const idx = tabOrder.indexOf(currentActiveKey);
-            if (idx >= 0 && idx < tabOrder.length - 1) {
-                nextKey = tabOrder[idx + 1];
-            } else {
-                return;
-            }
-        } else if (targetKey === 'prev') {
-            const idx = tabOrder.indexOf(currentActiveKey);
-            if (idx > 0) {
-                nextKey = tabOrder[idx - 1];
-            } else {
-                return;
-            }
-        }
-
-        // 1. Update button states
-        document.querySelectorAll('.c1-subtab-btn').forEach(btn => {
-            const k = btn.getAttribute('data-c1-tab');
-            if (k === nextKey) {
-                btn.classList.add('active');
-                btn.style.background = '#1A1A1B';
-                btn.style.color = '#FFFFFF';
-                btn.style.border = '1.5px solid #F39200';
-                btn.style.boxShadow = '0 3px 8px rgba(243,146,0,0.25)';
-            } else {
-                btn.classList.remove('active');
-                btn.style.background = '#FFFFFF';
-                btn.style.color = '#4A4A4A';
-                btn.style.border = '1px solid #E2E8F0';
-                btn.style.boxShadow = 'none';
-            }
-        });
-
-        // 2. Hide all tab panels, show target
-        document.querySelectorAll('.c1-tab-panel').forEach(panel => {
-            panel.classList.remove('active');
-            panel.style.display = 'none';
-        });
-
-        const targetPanel = document.getElementById('c1-tab-panel-' + nextKey);
-        if (targetPanel) {
-            targetPanel.classList.add('active');
-            targetPanel.style.display = 'block';
-        }
-
-        // 3. Scroll to top of presentation viewer content
-        const scroller = document.getElementById('scrollContainer') || document.querySelector('.presentation-viewer-content') || window;
-        if (scroller.scrollTo) {
-            scroller.scrollTo({ top: 0, behavior: 'smooth' });
-        } else if (scroller.scrollTop !== undefined) {
-            scroller.scrollTop = 0;
-        }
-    };
-})();
-
-
-
-window.c1Init = function() {
-    if (window.switchC1Subtab) {
-        window.switchC1Subtab('linea');
-    }
-};
