@@ -76,7 +76,7 @@ window.SECTIONS['c5'] = `
 
 
 <!-- VISOR DE DIAPOSITIVAS SECUENCIAL (1 A 30) -->
-<div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:10px; padding:8px 12px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+<div id="c5-visor-nav" style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:10px; padding:8px 12px; margin-bottom:20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
     <div style="display:flex; align-items:center; gap:8px;">
         <span style="font-size:0.72rem; font-weight:800; color:#1E293B; text-transform:uppercase;">
             <i class="fas fa-images" style="color:#F39200;"></i> Diapositiva:
@@ -1555,7 +1555,7 @@ window.SECTIONS['c5'] = `
         7: [27, 28, 29, 30]
     };
 
-    window.goToC5Slide = function(slideNum) {
+    window.goToC5Slide = function(slideNum, shouldScroll = true) {
         if (slideNum < 1 || slideNum > totalSlides) return;
         currentSlide = slideNum;
 
@@ -1610,36 +1610,57 @@ window.SECTIONS['c5'] = `
             targetPanel.style.display = 'block';
         }
 
-        // 4. Scroll smoothly to top
-        const scroller = document.getElementById('scrollContainer') || document.querySelector('.presentation-viewer-content') || window;
-        if (scroller.scrollTo) {
-            scroller.scrollTo({ top: 0, behavior: 'smooth' });
-        } else if (scroller.scrollTop !== undefined) {
-            scroller.scrollTop = 0;
+        // 4. Desplazar en primer plano la diapositiva a proyectar
+        if (shouldScroll) {
+            const scroller = document.getElementById('scrollContainer') || document.querySelector('.presentation-viewer-content') || window;
+            const visorNav = document.getElementById('c5-visor-nav');
+
+            if (scroller && visorNav && scroller.getBoundingClientRect) {
+                const scrollerRect = scroller.getBoundingClientRect();
+                const visorRect = visorNav.getBoundingClientRect();
+                const targetScrollTop = scroller.scrollTop + (visorRect.top - scrollerRect.top) - 10;
+
+                scroller.scrollTo({
+                    top: Math.max(0, targetScrollTop),
+                    behavior: 'smooth'
+                });
+
+                // Respaldo de sincronización tras reflujo y cambio de display
+                setTimeout(() => {
+                    const vRect = visorNav.getBoundingClientRect();
+                    const sRect = scroller.getBoundingClientRect();
+                    const diff = vRect.top - sRect.top - 10;
+                    if (Math.abs(diff) > 15) {
+                        scroller.scrollTop = Math.max(0, scroller.scrollTop + diff);
+                    }
+                }, 120);
+            } else if (targetPanel && targetPanel.scrollIntoView) {
+                targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
     };
 
     window.nextC5Slide = function() {
         if (currentSlide < totalSlides) {
-            window.goToC5Slide(currentSlide + 1);
+            window.goToC5Slide(currentSlide + 1, true);
         }
     };
 
     window.prevC5Slide = function() {
         if (currentSlide > 1) {
-            window.goToC5Slide(currentSlide - 1);
+            window.goToC5Slide(currentSlide - 1, true);
         }
     };
 
     window.switchC5Eje = function(ejeId) {
         const slideList = ejeMapping[ejeId];
         if (slideList && slideList.length > 0) {
-            window.goToC5Slide(slideList[0]);
+            window.goToC5Slide(slideList[0], true);
         }
     };
 
     window.c5Init = function() {
-        window.goToC5Slide(1);
+        window.goToC5Slide(1, false);
     };
 })();
 
