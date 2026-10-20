@@ -73,12 +73,16 @@ Todos los siguientes elementos están formalmente aprobados, implementados en c�
     6. *Eje 6: Opciones de Grado & Tecnologías TI (Slides 24–26):* Diagrama del reglamento de grados (`c5_slide24_img6.png`), tabla de 11 opciones de grado sustentadas (2021–2026), y recursos TIC / IA en investigación (`c5_slide26_img5.png`).
     7. *Eje 7: Aportes Productivos & Proyección (Slides 27–30):* Tablas de aportes a sectores productivos de Santander, resultados verificables y transferencia tecnológica, plan quinquenal 2026–2031 hacia Categoría B de Minciencias, y diapositiva formal de cierre.
 
-### D. Condición 3 — Aspectos Curriculares
-- **Pestaña 1 (Predeterminada al abrir):** `Plan Vigente SACES (158 Créditos - 9 Semestres)`.
-- **Pestaña 2:** `Plan Propuesto (144 Créditos - 8 Semestres)`.
-- **Pestaña 3:** `Comparación y Justificación Curricular` (Tableros analíticos de 28 reestructuradas, 15 nuevas y 38 homologables).
-- **Subpestañas Oficiales:** 2. Áreas de Formación, 5. Inducción Docente Académico, 6. Rutas de Formación.
-- **Diseño Fit-to-Screen:** 100% responsive, ancho proporcional exacto, sin barra de desplazamiento horizontal.
+### D. Condición 3 — Aspectos Curriculares (Decreto 1330 de 2019 · Art. 2.5.3.2.3.2.4)
+- **Alineación Normativa Estricta:** Reestructuración de la condición en 3 Pestañas Principales y **5 Subpestañas Canónicas Oficiales** en primer plano para evitar equivocaciones durante la sustentación ante los pares académicos del MEN:
+  1. *a) Componentes Formativos:* Plan general de estudios, mallas curriculares en matriz global (158 cr Vigente / 144 cr Propuesto), áreas y componentes (Tablas 15, 16 y 24), perfiles de egreso, Resultados de Aprendizaje Proyectados (RAPs), estrategias de flexibilización curricular (créditos, homologación, interdisciplinariedad) y rutas formativas.
+  2. *b) Componentes Pedagógicos:* Lineamientos e innovación pedagógica y didáctica adoptados por la institución según modalidad (Presencial y Virtual), modelo pedagógico constructivista y socioformativo ("Formación en contextos de aplicación"), referentes Benjamin Bloom (taxonomía de 6 niveles) y Sergio Tobón, activación de la tríada Saber-Ser-Hacer, metodologías activas (ABP, casos Harvard, proyectos integradores) y simuladores de negocios con analítica Big Data.
+  3. *c) Componentes de Interacción:* Articulación con contextos locales, regionales y globales (CUEES, CIDRE, Cámara de Comercio, sectores productivos), habilidades de interrelación docente-estudiante y entre pares, internacionalización del currículo (clases espejo, invitados internacionales, proyectos COIL, redes ASCOLFA, RedCOLSI, RedesLA, CLADEA) y formación en segunda lengua (Inglés I a IV según MCER).
+  4. *d) Conceptualización Teórica y Epistemológica del Programa:* Naturaleza del objeto de estudio (la organización como sistema social, económico y técnico integral; en el propuesto: organizaciones inteligentes, ágiles y sostenibles) y las 6 corrientes teóricas oficiales (Administración y Gestión Estratégica, Recursos Humanos y Liderazgo, Marketing e Innovación, Emprendimiento e Innovación Social, RSE y Sostenibilidad, Pedagogía Virtual y Aprendizaje Autónomo).
+  5. *e) Mecanismos de Evaluación:* Instrumentos de medición y seguimiento para toma de decisiones oportunas, evaluación diagnóstica, formativa y sumativa, autoevaluación, coevaluación y heteroevaluación, rúbricas analíticas de 5 niveles (Tabla 44), matriz canónica de medición de los 10 RAPs (Tabla 45), matrices de percepción y estrategias de aprendizaje (Tablas 38 y 39), enlace interactivo a la Inducción Docente y Sistema de Alertas Tempranas (SAT).
+- **Despliegue Bimodal Completo:** Estructura disponible de manera idéntica y especializada tanto para el **Registro Único Actual SACES (158 créditos - 9 semestres)** como para el **Registro Único Propuesto (144 créditos - 8 semestres)**.
+- **Pestaña 3: Comparación y Justificación Curricular:** Matriz comparativa canónica que confronta punto por punto los 5 literales normativos (a, b, c, d, e) entre ambos planes, complementada por los tableros de 28 asignaturas reestructuradas, 15 nuevas y 38 homologables.
+- **Diseño Fit-to-Screen & Cero Desplazamientos Forzados:** Subpestañas distribuidas con flexbox uniforme y píldoras secundarias limpias para navegación sin pérdida de contexto.
 
 ### E. Presentación Institucional y Sistema de Educación Virtual
 - **Presentación Institucional (`sections_inst.js`):** 8 secciones completas.
