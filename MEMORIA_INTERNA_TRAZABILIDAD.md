@@ -5,89 +5,95 @@
 **Fecha de corte:** 19 de Octubre de 2026  
 **Repositorio GitHub:** [`pedronoriega-eng/Registro-calificado-administracion-empresas-TO`](https://github.com/pedronoriega-eng/Registro-calificado-administracion-empresas-TO)  
 **URL Pública (GitHub Pages):** [Plataforma de Evidencias TO](https://pedronoriega-eng.github.io/Registro-calificado-administracion-empresas-TO/)  
-**Último Commit en `main`:** `a2783b3` (`fix(oferta-convenios-palette): integrar 15 logos oficiales de convenios web TO, selectores interactivos con modal sintético y unificar paleta oficial de Administración de Empresas (0 azul)`)  
 **Clave de Acceso Institucional:** `TO2026` (o `TO`)
 
 ---
 
 ## 1. Lo Aprobado y Construido (Ground Truth Oficial)
 
-Todos los siguientes elementos están formalmente aprobados, implementados en código, validados visualmente y desplegados en el repositorio:
+Todos los siguientes elementos están formalmente aprobados, implementados en código, validados visualmente en navegador y desplegados en el aplicativo:
 
-### A. Condición 1 — Denominación y Ficha Técnica Dual de Registro Único
-- **Ficha Registro Calificado Vigente (158 créditos - 9 semestres):**
-  - **Norma Base:** Aprobado inicialmente mediante Resolución MEN 011375 de 2019 (presencial), adoptado formalmente a **Registro Calificado Único (Presencial y Virtual)** mediante **Acuerdo de Consejo Superior No. 011 de 2024** (Anexo 5 SACES).
-  - **Modalidad:** `REGISTRO ÚNICO` | `Presencial & Virtual`.
-  - **Lugar de Desarrollo:** Sede Principal Bucaramanga (Presencial) + Cobertura Nacional Digital (Virtual).
-  - **Cupos:** 300 estudiantes / cohorte (Capacidad institucional autorizada en ambas modalidades).
-  - **Relación de Horas:** Presencial 1:2 (16h directas / 32h indep.) y Virtual 1:3 (12h mediadas / 36h autónomas).
-  - **Título:** Administrador de Empresas (Masculino genérico histórico).
-- **Ficha Registro Calificado Propuesto (144 créditos - 8 semestres):**
-  - **Norma Base:** Renovación y compactación curricular aprobada mediante **Acuerdo de Consejo Superior No. 021 de 2025** (Anexo 2 SACES).
-  - **Modalidad:** `REGISTRO ÚNICO` | `Presencial & Virtual`.
-  - **Titulación Inclusiva:** Administrador(a) de Empresas (según identidad de género).
-  - **Cupos:** 300 estudiantes / cohorte desglosados en: 240 Virtuales y 60 Presenciales.
-  - **Horas Estándar (3 cr):** Presencial 48h directa / 96h indep. · Virtual 36h mediada / 108h autónoma.
-- **Fichas Técnicas Abiertas y Visibles:** Desplegadas en paralelo inmediatamente tras las subsecciones.
-- **Mapa Conceptual Sistémico de Pertinencia:** Resumen de la pertinencia de la denominación a través de 5 ramas rectoras integradas.
-- **Modales en Segundo Plano:** Profundización por dimensiones curriculares en ventanas emergentes sin generar scroll vertical.
-- **Limpieza de Protocolo:** Cero notas de orador, cero prefijos de «Diapositiva», lenguaje 100% formal para pares evaluadores.
+### A. Condición 1 — Denominación, Subsecciones en Primer Plano y Línea de Tiempo Normativa
+- **Navegación Equilibrada y Uniforme por Subsecciones:**
+  - Rediseño modular para eliminar desplazamientos verticales caóticos o páginas sobrecargadas.
+  - La barra superior contiene **7 Subsecciones Oficiales** que al dar clic se muestran en **primer plano (vista exclusiva)**:
+    1. *1. Línea de Tiempo Normativa:* Serpentina balanceada y homogénea de 5 hitos sustentatorios SACES con tarjetas de altura idéntica y conectores suaves.
+    2. *2. Fichas Técnicas Oficiales:* Comparativa en paralelo del Registro Calificado Vigente (158 créditos / 9 semestres / 62 materias) frente al Registro Calificado Propuesto (144 créditos / 8 semestres / 48 materias).
+    3. *3. Perfil de Egreso & Competencias (Tabla 35):* Matriz canónica que alinea 1 a 1 las 10 competencias específicas y transversales con los 10 RAP y las asignaturas tributarias.
+    4. *4. Componentes Curriculares (Tabla 16):* Áreas de formación y fundamentación epistemológica oficial del Documento Maestro.
+    5. *5. Factores Diferenciadores:* 5 tarjetas interactivas con modales en segundo plano para evidencias autorizadas.
+    6. *6. Mapa Conceptual Sistémico:* Articulador pedagógico de pertinencia en 5 dimensiones.
+    7. *7. Benchmarking & Taxonomía CINE:* Referenciación comparativa nacional (8 semestres) y CINE-F 2013 (0413).
+  - Cada panel incorpora navegación inferior fluida (`← Anterior` / `Siguiente →`) e indicador de subsección activa.
+- **Línea de Tiempo Normativa (Serpentina de 5 Hitos):**
+  - **Hito 1 (2018):** Acuerdo CS No. 05 del 29 de mayo de 2018 (Creación Institucional).
+  - **Hito 2 (2019):** Resolución MEN 011375 del 07 de noviembre de 2019 (Registro Calificado & SNIES Presencial: 108445 · 158 Créditos · 9 Semestres · 62 Asignaturas).
+  - **Hito 3 (2024):** Acuerdo CS No. 011 del 03 de diciembre de 2024 (Aprobación para Solicitar Registro Calificado Único · Exp. SACES 108524).
+  - **Hito 4 (2024-2025):** Aprobación MEN & Asignación SNIES Virtual: 115833 (Registro Único inicial de 158 créditos).
+  - **Hito 5 (2025 Sustentación Actual):** Acuerdo CS No. 021 del 25 de julio de 2025 (Renovación y Modificación Curricular del Registro Único a 8 semestres, 144 créditos y 48 asignaturas · 300 cupos: 240V / 60P).
 
-### B. Condición 2 — Observatorio Geoespacial y Estudio de Demanda
-- Motor Google Maps Relieve (`lyrs=p`) 100% nativo sin marcas de agua.
-- Conmutador a Calles y Satélite.
-- GeoJSON vectorial de 33 entidades territoriales con interacción completa.
-- Base oficial del SNIES del MEN (245 programas presenciales, 44 virtuales).
-- Santander municipal: 18 programas formales en Bucaramanga (11), Floridablanca (3), Barrancabermeja (3) y San Gil/Socorro (1). Girón y Piedecuesta filtrados por tener 0 programas.
-- Gráficas de tendencia interactivas (Chart.js) para matrícula histórica y permanencia institucional (Tablas 12 y 13).
+### B. Condición 2 — Justificación y Análisis Integral de la Encuesta a Egresados
+- **Observatorio Geoespacial y Estudio de Oferta (Tablas 5, 6 y 7):**
+  - Motor Google Maps Relieve (`lyrs=p`) 100% nativo sin marcas de agua.
+  - GeoJSON vectorial de 33 entidades territoriales con interacción completa.
+  - Base oficial del SNIES del MEN (245 programas presenciales, 44 virtuales).
+  - Santander municipal: 18 programas formales en Bucaramanga (11), Floridablanca (3), Barrancabermeja (3) y San Gil/Socorro (1). Girón y Piedecuesta filtrados por tener 0 programas.
+  - Gráficas de tendencia interactivas (Chart.js) para matrícula histórica y permanencia institucional (Tablas 12 y 13).
+- **Estudio de Pertinencia e Inserción Laboral (`ENCUESTA DE SEGUIMIENTO A EGRESADOS(1-940)(1).xlsx`):**
+  - Análisis exhaustivo de 43 variables sobre 940 egresados globales y 44 egresados de Administración de Empresas.
+  - **Tasa de Ocupación Efectiva del 93.2%:** 41 de 44 graduados activos (70.5% empleados vinculados + 18.2% independientes + 4.5% empresarios con empresa constituida; solo 6.8% en búsqueda activa). Supera en +13.7% la media institucional (79.5%).
+  - **Coherencia con el Perfil de Egreso del 85.4%:** 35 de 41 ocupados certifican que su cargo corresponde directamente al perfil formativo.
+  - **Rápida Colocación Laboral:** Más del 75% ubicados en menos de 6 meses tras la graduación.
+  - **Alta Calidad Percibida:** 95.5% califica con 4 o 5 sobre 5 la formación recibida, 95.5% recomienda la institución y 93.2% afirma que el programa mejoró su proyecto de vida.
+  - **Diversidad de Sectores Económicos:** Demostración empírica de pasantías e inserción en múltiples sectores:
+    - Banca, Seguros y Servicios Financieros: 13.6% (BBVA, Mi Banco, Aprogresar Seguros, AML Seguros, Gestiona Seguros).
+    - Comercio al por Mayor y al Detal: 11.4% (Supermercados Más Por Menos, JB Company).
+    - Transporte y Logística: 11.4% (DHL Express Colombia SAS, Consorcio AS Santander).
+    - Alimentos, Gastronomía y Agroindustria: 11.4% (Incubadora Santander - Huevos Kikes, TamSantandereano, Drey SAS).
+    - Salud y Sector Farmacéutico: 9.1% (Colsanitas, HIC, Lab. Bussié, Zambon, Magnofarma).
+    - Manufactura, Textil, Automotriz y Energía: 9.1% (MYB Automotrices, Imporinox, Pioneer Group).
+    - Educación y Formación Técnica: 9.1% (SENA, colegios).
+    - Sector Público y Servicios Domiciliarios: 4.5% (Gobernación de Santander, Empas SA).
+    - Consultoría y Servicios Empresariales: 20.4% (Strategy, RDHH, Doral Group).
+  - **Vitrina de Empresas Empleadoras Reales:** Despliegue interactivo con 18 organizaciones líderes que contratan a nuestros graduados.
 
-### C. Condición 3 — Aspectos Curriculares
+### C. Condición 5 — Investigación, Innovación y Creación Artística (Actualización 100% PPT)
+- **Estructura Oficial Actualizada (`ppt condicion 5 RENOVACIÓN ADMON.pptx` - 30 Diapositivas):**
+  - Adaptación 1 a 1 de la presentación oficial del programa con visor dual: navegación por **7 Ejes Temáticos** y visor secuencial de **Diapositivas 1 a 30** mediante selectores rápidos.
+  - **71 Imágenes Idénticas Extraídas:** Ubicadas en `sitio_web/assets/c5/` garantizando coincidencia fotográfica y gráfica absoluta con el archivo PowerPoint original.
+  - **Ejes de Sustentación Integrados:**
+    1. *Eje 1: Sistema & Organización (Slides 1–6):* Articulación con CONPES 4069 / DNP (`c5_slide4_img3.png`), organigrama del sistema (`c5_slide5_img4.png`), y 5 pilares de cultura investigativa.
+    2. *Eje 2: Líneas & Coherencia Teórica (Slides 7–13):* Gráfica de evolución del compromiso docente (`c5_slide7_img5.png`), infografía de líneas transversales y específicas L1 y L2 (`c5_slide8_img5.png`), Investigación 4.0 (`c5_slide9_img5.png`), avance del conocimiento (`c5_slide10_img4.png`), tabla comparativa de referentes clásicos (Taylor/Fayol) vs. contemporáneos (Schumpeter/Porter/Elkington/Brynjolfsson), matriz Presencial vs. Virtual con 4 criterios de calidad comunes, y tabla evolutiva de líneas de investigación.
+    3. *Eje 3: Estrategias & Minciencias (Slides 14–15):* Diagrama de estrategias institucionales (`c5_slide14_img3.png`) y avances en Convocatorias 894 de 2021 y 957 de 2024 (`c5_slide15_img3.png`).
+    4. *Eje 4: Semillero GESTNOVA & COLLEGIUM (Slides 16–20):* Ficha de GESTNOVA con galería fotográfica real de semilleristas y eventos (`c5_slide16_img4.png` a `img14.jpg`), certificados y ponencias RedCOLSI (`c5_slide17_img4.png` a `img12.png`), categorización del Grupo COLLEGIUM (`c5_slide18_img5.png`), tabla completa de 10 productos científicos verificados en SCIENTI (libros McGraw-Hill, capítulos, artículos con DOI), y vitrina de logos oficiales de redes académicas (ASCOLFA, RedCOLSI, RedesLA, etc., `c5_slide20_img3.png` a `img12.png`).
+    5. *Eje 5: Investigación Formativa & Caso MYB (Slides 21–23):* Comparativa curricular de la ruta investigativa (2019: 5 asignaturas vs. Renovación 8 semestres: IV, VI y VIII semestres), tabla de 11 proyectos de aula aplicados (2023–2026), y **Caso de Éxito Emblemático de Spin-off MYB Soluciones e Inversiones Automotrices S.A.S.** (NIT 901604941-7, 6 empleos formales en Bucaramanga, proyecto originado en el aula por la graduada Sonia Ximena Villamizar Peña, con fotografía real del taller `c5_slide23_img4.jpg`).
+    6. *Eje 6: Opciones de Grado & Tecnologías TI (Slides 24–26):* Diagrama del reglamento de grados (`c5_slide24_img6.png`), tabla de 11 opciones de grado sustentadas (2021–2026), y recursos TIC / IA en investigación (`c5_slide26_img5.png`).
+    7. *Eje 7: Aportes Productivos & Proyección (Slides 27–30):* Tablas de aportes a sectores productivos de Santander, resultados verificables y transferencia tecnológica, plan quinquenal 2026–2031 hacia Categoría B de Minciencias, y diapositiva formal de cierre.
+
+### D. Condición 3 — Aspectos Curriculares
 - **Pestaña 1 (Predeterminada al abrir):** `Plan Vigente SACES (158 Créditos - 9 Semestres)`.
 - **Pestaña 2:** `Plan Propuesto (144 Créditos - 8 Semestres)`.
 - **Pestaña 3:** `Comparación y Justificación Curricular` (Tableros analíticos de 28 reestructuradas, 15 nuevas y 38 homologables).
 - **Subpestañas Oficiales:** 2. Áreas de Formación, 5. Inducción Docente Académico, 6. Rutas de Formación.
 - **Diseño Fit-to-Screen:** 100% responsive, ancho proporcional exacto, sin barra de desplazamiento horizontal.
-- **Paleta de Colores:** 100% unificada a Carbón / Naranja / Rojo (0 azul).
 
-### D. Presentación Institucional y Sistema de Educación Virtual
+### E. Presentación Institucional y Sistema de Educación Virtual
 - **Presentación Institucional (`sections_inst.js`):** 8 secciones completas.
-  - **Convenios:** 15 logos oficiales de aliados en `assets/convenios/` (BIT Institute, Strategy Minds, IBERO, UPEL, Positiva, Universidad Católica, Unigermana, UMECIT, Prevent Group, Policía Nacional, Personería Bucaramanga, Gobernación Santander, Cajasan, Alcaldía Lebrija, Alcaldía Bucaramanga).
+  - **Convenios:** 15 logos oficiales de aliados en `assets/convenios/`.
   - **Oferta Académica Vigente:** Catálogo oficial del MEN con los 17 programas académicos activos en el portal TO.
   - **Selectores y Modal Sintético:** 4 paneles de selectores compactos por nivel y modalidad, con ventana emergente que muestra exclusivamente Nombre, Nivel, Modalidad, Duración, Créditos y SNIES.
 - **Sistema de Educación Virtual (`sections_virtual.js`):** 5 dimensiones (Pedagógica, Tecnológica, Organizacional, Diseño Curricular, Calidad).
 
-### E. Paleta de Colores Oficial de Administración de Empresas (Zero Azul)
-- **Erradicación del Azul:** Todo el código fue limpiado de azul (`#0A2540`, `#173A66`, `#2563EB`, `#3B82F6`, etc.), el cual pertenecía a Ingeniería Industrial.
-- **Paleta Oficial Aplicada:**
-  - Carbón Institucional: `#1A1A1B`, `#2D2D2E`
-  - Naranja TO Oficial: `#F39200`, `#D97F00`
-  - Rojo Institucional TO: `#C8102E`
-  - Terracota / Dorado: `#EA580C`, `#D97706`
-  - Neutros / Cremas: `#FFFFFF`, `#FAFAFA`, `#F4F4F4`, `#FFF7ED`, `#FFF3E0`
+### F. Paleta de Colores Oficial de Administración de Empresas (Zero Azul)
+- Erradicación absoluta de tonalidades azules.
+- Paleta canónica: Carbón (`#1A1A1B`), Naranja Institucional (`#F39200`), Rojo TO (`#C8102E`), Terracota (`#EA580C`) y Dorado (`#D97706`).
 
 ---
 
-## 2. Historial de Decisiones y Trazabilidad de Sesiones
-
-| Fecha | Commit | Descripción del Hito |
-|---|---|---|
-| **19-Oct-2026** | `[current]` | Condición 1 actualizada: Línea de tiempo normativa estilo serpentina de primero (5 hitos SACES), corrección de encuentros sincrónicos y pasantías (diferentes sectores económicos), matriz de competencias y RAP (Tabla 35), componentes curriculares oficiales (Tabla 16) y factores diferenciadores interactivos con solidez y evidencias. |
-| **19-Oct-2026** | `a2783b3` | Integrar 15 logos oficiales de convenios de la web TO, selectores interactivos con modal sintético de oferta académica y unificar paleta oficial de Administración de Empresas (0 azul en todo el código). |
-| **19-Oct-2026** | `bfc302b` | Solucionar imágenes de PEI y Convenios (`media__*.png`, 0 rotas) y sincronizar los 17 programas de la Oferta Académica del portal web institucional. |
-| **19-Oct-2026** | `42f584b` | Integrar secciones completas de Presentación Institucional (8 pestañas) y Sistema de Educación Virtual (5 dimensiones). |
-| **19-Oct-2026** | `134a534` | Integrar gráficas de tendencia interactivas Chart.js en Condición 2 para Tablas 12 y 13 (matrícula y permanencia). |
-| **19-Oct-2026** | `e7d2f2f` | Reestructurar Condición 1: Ficha técnica dual en paralelo abierta (Acuerdo 011/2024 vs Acuerdo 021/2025) y Mapa Conceptual de pertinencia. |
-| **16-Oct-2026** | `082dcf0` | Ajustar ficha técnica del Registro Calificado Vigente a Registro Único (Presencial y Virtual) según Acuerdo 011 de 2024 y Anexo 5 SACES. |
-| **16-Oct-2026** | `8fb2c4e` | Corrección canónica del Anexo 5 y Acuerdo 011 de 2024 en ficha vigente. |
-| **16-Oct-2026** | `c3a1b2d` | Creación de memoria técnica de continuidad y trazabilidad institucional. |
-
----
-
-## 3. Estado de Ejecución para Reapertura de Sesión
-
-1. Servidor local en puerto 8085:
-   `python -m http.server 8085 --directory "sitio_web"`
-2. URL local: `http://localhost:8085/`
-3. Clave de acceso institucional: `TO2026`
-4. URL en GitHub Pages: `https://pedronoriega-eng.github.io/Registro-calificado-administracion-empresas-TO/`
-5. Rama remota sincronizada: `origin/main` (commit `a2783b3`).
+## 2. Verificación y Pruebas Técnicas
+- **Validación de Sintaxis:** Todos los scripts JS pasaron `node -c` con 0 errores (`app.js`, `sections_c1.js`, `sections_c2.js`, `sections_c2_google.js`, `sections_c3.js`, `sections_c4.js`, `sections_c5.js`, `sections_inst.js`, `sections_virtual.js`).
+- **Pruebas en Navegador (Subagente Web):**
+  - Autenticación con contraseña `TO2026`.
+  - Condición 1: Navegación de subsecciones en primer plano validada; serpentina simétrica comprobada.
+  - Condición 2: Despliegue de los 4 KPI cards de la encuesta a egresados, barras de sectores económicos y vitrina de empresas empleadoras verificado.
+  - Condición 5: Despliegue de las 30 diapositivas, cambio por píldoras 1 a 30, visualización de imágenes CONPES 4069, organigrama, fotos de GESTNOVA, certificados RedCOLSI, caso MYB con 6 empleos y tablas de producción científica comprobado.

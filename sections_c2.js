@@ -797,6 +797,393 @@ window.SECTIONS['c2'] = `
         </button>
     </div>
 </div>
+
+
+<!-- ========================================================================= -->
+<!-- ESTUDIO DE PERTINENCIA E INSERCIÓN LABORAL DE GRADUADOS (ENCUESTA OFICIAL) -->
+<!-- Fuente: ENCUESTA DE SEGUIMIENTO A EGRESADOS (940 Institucional · 44 Admon)  -->
+<!-- ========================================================================= -->
+<div id="c2-estudio-egresados" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; margin-top:28px; margin-bottom:28px; box-shadow:0 4px 18px rgba(0,0,0,0.06); position:relative;">
+    
+    <!-- ENCABEZADO DEL ESTUDIO -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:22px; border-bottom:1px solid #F1F5F9; padding-bottom:16px;">
+        <div style="display:flex; align-items:center; gap:14px;">
+            <div style="background:#ECFDF5; color:#059669; width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.45rem; border:1.5px solid #A7F3D0; box-shadow:0 2px 8px rgba(16,185,129,0.15);">
+                <i class="fas fa-user-check"></i>
+            </div>
+            <div>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:3px;">
+                    <span style="background:#10B981; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px;">
+                        Evidencia Empírica de Pertinencia
+                    </span>
+                    <span style="color:#64748B; font-size:0.75rem;">Estudio Censal Institucional · 43 Variables Analizadas</span>
+                </div>
+                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.24rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    Estudio de Seguimiento a Graduados e Inserción Laboral · Administración de Empresas
+                </h4>
+            </div>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <span style="background:#F8FAFC; border:1px solid #E2E8F0; color:#0F172A; font-size:0.74rem; font-weight:700; padding:5px 12px; border-radius:20px; display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-database" style="color:#10B981;"></i> 940 Egresados Globales · 44 Administración
+            </span>
+            <span style="background:#ECFDF5; border:1px solid #A7F3D0; color:#065F46; font-size:0.74rem; font-weight:700; padding:5px 12px; border-radius:20px; display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-certificate" style="color:#10B981;"></i> Tasa de Ocupación: 93.2%
+            </span>
+        </div>
+    </div>
+
+    <!-- TARJETAS DE INDICADORES HERO (4 KPIS PRINCIPALES) -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:16px; margin-bottom:26px;">
+        
+        <!-- KPI 1: TASA DE OCUPACIÓN -->
+        <div style="background:linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%); border:1.5px solid #86EFAC; border-radius:10px; padding:18px; box-shadow:0 3px 10px rgba(16,185,129,0.08);">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;">
+                <span style="font-size:0.72rem; font-weight:800; color:#15803D; text-transform:uppercase; letter-spacing:0.5px;">Tasa de Inserción / Ocupación</span>
+                <span style="background:#16A34A; color:#FFFFFF; width:30px; height:30px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                    <i class="fas fa-briefcase"></i>
+                </span>
+            </div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:2.1rem; font-weight:900; color:#14532D; line-height:1; margin-bottom:6px;">
+                93.2%
+            </div>
+            <p style="font-size:0.76rem; color:#166534; margin:0 0 8px; line-height:1.4;">
+                <strong>41 de 44 graduados activos</strong> en el mercado productivo formal (70.5% empleados vinculados + 18.2% independientes + 4.5% empresarios constituidos).
+            </p>
+            <div style="font-size:0.68rem; color:#15803D; font-weight:700; border-top:1px dashed #86EFAC; padding-top:6px;">
+                <i class="fas fa-chart-line"></i> +13.7% sobre la media institucional (79.5%)
+            </div>
+        </div>
+
+        <!-- KPI 2: COHERENCIA CON PERFIL -->
+        <div style="background:linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%); border:1.5px solid #FDE68A; border-radius:10px; padding:18px; box-shadow:0 3px 10px rgba(245,158,11,0.08);">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;">
+                <span style="font-size:0.72rem; font-weight:800; color:#B45309; text-transform:uppercase; letter-spacing:0.5px;">Coherencia con el Perfil</span>
+                <span style="background:#D97706; color:#FFFFFF; width:30px; height:30px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                    <i class="fas fa-user-graduate"></i>
+                </span>
+            </div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:2.1rem; font-weight:900; color:#78350F; line-height:1; margin-bottom:6px;">
+                85.4%
+            </div>
+            <p style="font-size:0.76rem; color:#92400E; margin:0 0 8px; line-height:1.4;">
+                <strong>35 de 41 ocupados</strong> certifican que su cargo y responsabilidades laborales corresponden directamente al perfil del Administrador de Empresas TO.
+            </p>
+            <div style="font-size:0.68rem; color:#B45309; font-weight:700; border-top:1px dashed #FDE68A; padding-top:6px;">
+                <i class="fas fa-check-circle"></i> Alta alineación competencias - mercado laboral
+            </div>
+        </div>
+
+        <!-- KPI 3: TIEMPO DE UBICACIÓN -->
+        <div style="background:linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%); border:1.5px solid #FED7AA; border-radius:10px; padding:18px; box-shadow:0 3px 10px rgba(234,88,12,0.08);">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;">
+                <span style="font-size:0.72rem; font-weight:800; color:#C2410C; text-transform:uppercase; letter-spacing:0.5px;">Rapidez de Colocación</span>
+                <span style="background:#EA580C; color:#FFFFFF; width:30px; height:30px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                    <i class="fas fa-stopwatch"></i>
+                </span>
+            </div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:2.1rem; font-weight:900; color:#7C2D12; line-height:1; margin-bottom:6px;">
+                &lt; 6 Meses
+            </div>
+            <p style="font-size:0.76rem; color:#9A3412; margin:0 0 8px; line-height:1.4;">
+                <strong>Más del 75%</strong> de los egresados que buscaron empleo se colocaron en el mercado laboral formal en menos de 6 meses tras su graduación.
+            </p>
+            <div style="font-size:0.68rem; color:#C2410C; font-weight:700; border-top:1px dashed #FED7AA; padding-top:6px;">
+                <i class="fas fa-bolt"></i> Rápida absorción por el ecosistema empresarial
+            </div>
+        </div>
+
+        <!-- KPI 4: SATISFACCIÓN Y PROYECTO DE VIDA -->
+        <div style="background:linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%); border:1.5px solid #CBD5E1; border-radius:10px; padding:18px; box-shadow:0 3px 10px rgba(15,23,42,0.06);">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;">
+                <span style="font-size:0.72rem; font-weight:800; color:#334155; text-transform:uppercase; letter-spacing:0.5px;">Satisfacción &amp; Vida</span>
+                <span style="background:#1A1A1B; color:#F39200; width:30px; height:30px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                    <i class="fas fa-heart"></i>
+                </span>
+            </div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:2.1rem; font-weight:900; color:#0F172A; line-height:1; margin-bottom:6px;">
+                95.5%
+            </div>
+            <p style="font-size:0.76rem; color:#475569; margin:0 0 8px; line-height:1.4;">
+                <strong>42 de 44 graduados</strong> califican con 4 o 5 (sobre 5) la calidad recibida, y el <strong>93.2%</strong> afirma que mejoró su proyecto de vida.
+            </p>
+            <div style="font-size:0.68rem; color:#1E293B; font-weight:700; border-top:1px dashed #CBD5E1; padding-top:6px;">
+                <i class="fas fa-thumbs-up"></i> 95.5% Recomienda a la Institución
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SECCIÓN DE SECTORES ECONÓMICOS DE INSERCIÓN Y EMPRESAS REALES -->
+    <div style="display:grid; grid-template-columns:1.15fr 0.85fr; gap:22px; margin-bottom:24px;">
+        
+        <!-- COLUMNA IZQUIERDA: SECTORES ECONÓMICOS DE INSERCIÓN -->
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:10px;">
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-chart-pie" style="color:#F39200;"></i> Sectores Económicos de Inserción Laboral
+                </h5>
+                <span style="font-size:0.7rem; font-weight:700; color:#64748B;">Distribución de Graduados Ocupados</span>
+            </div>
+
+            <p style="font-size:0.76rem; color:#4B5563; margin:0 0 14px; line-height:1.4;">
+                Los graduados de Administración de Empresas se desempeñan activamente en <strong>diferentes sectores económicos</strong> del departamento de Santander y del territorio nacional, demostrando la versatilidad y pertinencia del diseño curricular:
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:10px;">
+                
+                <!-- SECTOR 1: BANCA Y SERVICIOS FINANCIEROS -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-university" style="color:#D97706; width:16px;"></i> Banca, Seguros y Servicios Financieros</span>
+                        <span style="color:#D97706;">13.6% (6 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:13.6%; height:100%; background:#D97706; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 2: COMERCIO AL POR MAYOR Y DETAL -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-store" style="color:#EA580C; width:16px;"></i> Comercio al por Mayor y al Detal (Retail)</span>
+                        <span style="color:#EA580C;">11.4% (5 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:11.4%; height:100%; background:#EA580C; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 3: TRANSPORTE Y LOGÍSTICA -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-truck-moving" style="color:#2563EB; width:16px;"></i> Transporte, Envíos y Logística de Carga</span>
+                        <span style="color:#2563EB;">11.4% (5 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:11.4%; height:100%; background:#2563EB; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 4: ALIMENTOS Y AGROINDUSTRIA -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-utensils" style="color:#10B981; width:16px;"></i> Alimentos, Gastronomía y Agroindustria</span>
+                        <span style="color:#10B981;">11.4% (5 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:11.4%; height:100%; background:#10B981; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 5: SALUD Y FARMACÉUTICO -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-heartbeat" style="color:#C8102E; width:16px;"></i> Salud, Clínicas y Sector Farmacéutico</span>
+                        <span style="color:#C8102E;">9.1% (4 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:9.1%; height:100%; background:#C8102E; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 6: INDUSTRIA, AUTOMOTRIZ Y ENERGÍA -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-car" style="color:#7C3AED; width:16px;"></i> Manufactura, Textil, Automotriz y Gas/Petróleo</span>
+                        <span style="color:#7C3AED;">9.1% (4 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:9.1%; height:100%; background:#7C3AED; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 7: EDUCACIÓN Y FORMACIÓN -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-graduation-cap" style="color:#0284C7; width:16px;"></i> Educación Superior y Formación para el Trabajo</span>
+                        <span style="color:#0284C7;">9.1% (4 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:9.1%; height:100%; background:#0284C7; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 8: PÚBLICO Y SERVICIOS PÚBLICOS -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-landmark" style="color:#475569; width:16px;"></i> Sector Público y Servicios Públicos Domiciliarios</span>
+                        <span style="color:#475569;">4.5% (2 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:4.5%; height:100%; background:#475569; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+                <!-- SECTOR 9: CONSULTORÍA Y SERVICIOS EMPRESARIALES -->
+                <div>
+                    <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:3px;">
+                        <span style="color:#1E293B;"><i class="fas fa-users-cog" style="color:#1A1A1B; width:16px;"></i> Consultoría, Gestión Humana y Otros Servicios</span>
+                        <span style="color:#1A1A1B;">20.4% (9 egresados)</span>
+                    </div>
+                    <div style="height:7px; background:#F1F5F9; border-radius:4px; overflow:hidden;">
+                        <div style="width:20.4%; height:100%; background:#1A1A1B; border-radius:4px;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: NIVEL DE CARGO Y RANGO SALARIAL -->
+        <div style="display:flex; flex-direction:column; gap:16px;">
+            
+            <!-- NIVEL DE CARGOS -->
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,0.03);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid #F1F5F9; padding-bottom:8px;">
+                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-id-badge" style="color:#10B981;"></i> Nivel de Cargo Desempeñado
+                    </h5>
+                    <span style="font-size:0.68rem; font-weight:700; color:#16A34A;">Ascenso Profesional</span>
+                </div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+                    <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:10px; text-align:center;">
+                        <div style="font-size:1.3rem; font-weight:900; color:#166534;">22.7%</div>
+                        <div style="font-size:0.7rem; font-weight:800; color:#15803D; text-transform:uppercase;">Directivo / Gerencial</div>
+                        <div style="font-size:0.65rem; color:#4B5563;">Directores, Coordinadores, Jefaturas</div>
+                    </div>
+                    <div style="background:#EFF6FF; border:1px solid #BFDBFE; border-radius:8px; padding:10px; text-align:center;">
+                        <div style="font-size:1.3rem; font-weight:900; color:#1E40AF;">18.2%</div>
+                        <div style="font-size:0.7rem; font-weight:800; color:#1D4ED8; text-transform:uppercase;">Profesional / Docente</div>
+                        <div style="font-size:0.65rem; color:#4B5563;">Asesores y Profesionales Especializados</div>
+                    </div>
+                    <div style="background:#FFF7ED; border:1px solid #FED7AA; border-radius:8px; padding:10px; text-align:center;">
+                        <div style="font-size:1.3rem; font-weight:900; color:#C2410C;">40.9%</div>
+                        <div style="font-size:0.7rem; font-weight:800; color:#EA580C; text-transform:uppercase;">Asistente / Analista</div>
+                        <div style="font-size:0.65rem; color:#4B5563;">Gestión Administrativa y Financiera</div>
+                    </div>
+                    <div style="background:#F8FAFC; border:1px solid #CBD5E1; border-radius:8px; padding:10px; text-align:center;">
+                        <div style="font-size:1.3rem; font-weight:900; color:#0F172A;">18.2%</div>
+                        <div style="font-size:0.7rem; font-weight:800; color:#334155; text-transform:uppercase;">Empresario / Indep.</div>
+                        <div style="font-size:0.65rem; color:#4B5563;">Emprendimiento y Operaciones</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RANGO SALARIAL -->
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:18px; box-shadow:0 2px 8px rgba(0,0,0,0.03);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid #F1F5F9; padding-bottom:8px;">
+                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-dollar-sign" style="color:#F39200;"></i> Rango Salarial Percibido
+                    </h5>
+                    <span style="font-size:0.68rem; font-weight:700; color:#B45309;">Retorno de Inversión</span>
+                </div>
+                <p style="font-size:0.75rem; color:#4B5563; margin:0 0 10px; line-height:1.4;">
+                    El <strong>56.8%</strong> de los egresados percibe ingresos superiores a 1.5 SMMLV, alcanzando hasta 4 SMMLV en cargos directivos y de coordinación:
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                    <span style="background:#F1F5F9; border:1px solid #E2E8F0; padding:4px 10px; border-radius:15px; font-size:0.72rem; color:#334155; font-weight:700;">
+                        1 a 1.5 MM: <strong>34.1%</strong>
+                    </span>
+                    <span style="background:#FEF3C7; border:1px solid #FDE68A; padding:4px 10px; border-radius:15px; font-size:0.72rem; color:#92400E; font-weight:700;">
+                        1.5 a 2 MM: <strong>27.3%</strong>
+                    </span>
+                    <span style="background:#DCFCE7; border:1px solid #86EFAC; padding:4px 10px; border-radius:15px; font-size:0.72rem; color:#166534; font-weight:700;">
+                        2 a 2.5 MM: <strong>15.9%</strong>
+                    </span>
+                    <span style="background:#EFF6FF; border:1px solid #BFDBFE; padding:4px 10px; border-radius:15px; font-size:0.72rem; color:#1E40AF; font-weight:700;">
+                        2.5 a 4 MM: <strong>13.6%</strong>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- VITRINA DE EMPRESAS EMPLEADORAS REALES REPORTADAS POR LOS GRADUADOS -->
+    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:10px; padding:18px 22px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:10px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-building" style="color:#F39200; font-size:1.1rem;"></i>
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.92rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    Empresas e Instituciones Empleadoras de los Graduados del Programa
+                </h5>
+            </div>
+            <span style="font-size:0.7rem; color:#64748B; font-weight:700;">Evidencias Verificables en Santander y Colombia</span>
+        </div>
+        
+        <p style="font-size:0.76rem; color:#475569; margin:0 0 12px; line-height:1.45;">
+            Los graduados encuestados certifican su vinculación laboral, directiva o empresarial en destacadas organizaciones de los sectores agroindustrial, financiero, logístico, salud, comercio y gubernamental:
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-egg" style="color:#F59E0B;"></i> Incubadora Santander (Huevos Kikes)
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-shipping-fast" style="color:#DC2626;"></i> DHL Express Colombia S.A.S.
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-notes-medical" style="color:#0284C7;"></i> Colsanitas Medicina Prepagada
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-hospital" style="color:#059669;"></i> Hospital Internacional de Colombia (HIC)
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-university" style="color:#2563EB;"></i> Banco BBVA Colombia
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-hand-holding-usd" style="color:#16A34A;"></i> Mi Banco
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-shield-alt" style="color:#D97706;"></i> Aprogresar Seguros
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-file-invoice-dollar" style="color:#7C3AED;"></i> AML Seguros &amp; Servicios Ltda.
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-landmark" style="color:#475569;"></i> Gobernación de Santander
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-graduation-cap" style="color:#EA580C;"></i> SENA (Servicio Nacional de Aprendizaje)
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-car" style="color:#10B981;"></i> MYB Soluciones e Inversiones Automotrices S.A.S.
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-pills" style="color:#C8102E;"></i> Laboratorios Bussié S.A.
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-flask" style="color:#0284C7;"></i> Zambon Colombia
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-capsules" style="color:#059669;"></i> Laboratorio Magnofarma SAS
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-cogs" style="color:#64748B;"></i> Pioneer Group S.A.S.
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-tint" style="color:#0284C7;"></i> Empas S.A. (Alcantarillado Santander)
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-shopping-basket" style="color:#EA580C;"></i> Supermercados Más Por Menos
+            </span>
+            <span style="background:#FFFFFF; border:1px solid #CBD5E1; color:#0F172A; padding:5px 12px; border-radius:6px; font-size:0.75rem; font-weight:700; box-shadow:0 1px 3px rgba(0,0,0,0.05); display:inline-flex; align-items:center; gap:6px;">
+                <i class="fas fa-lightbulb" style="color:#D97706;"></i> Strategy Consultoría Estratégica
+            </span>
+        </div>
+    </div>
+
+    <!-- SÍNTESIS DE PERTINENCIA INSTITUCIONAL PARA LA RENOVACIÓN -->
+    <div style="background:#FFF9F2; border:1.5px solid #FED7AA; border-left:4px solid #F39200; border-radius:8px; padding:14px 18px; margin-top:20px; display:flex; align-items:flex-start; gap:12px;">
+        <i class="fas fa-balance-scale" style="color:#F39200; font-size:1.3rem; margin-top:2px;"></i>
+        <div style="font-size:0.78rem; color:#431407; line-height:1.5;">
+            <strong>Conclusión del Estudio para la Renovación del Registro Único:</strong> La combinación de una <strong>tasa de ocupación del 93.2%</strong>, coherencia profesional del <strong>85.4%</strong>, rápida inserción laboral (&lt;6 meses) y amplia presencia en los sectores financieros, logísticos, productivos, de salud y agroindustriales de Santander demuestra que el programa de <strong>Administración de Empresas</strong> cuenta con una pertinencia contrastada en el sector productivo real, justificando plenamente la renovación de su Registro Calificado y su optimización a <strong>8 semestres y 144 créditos</strong> bajo la modalidad de <strong>Registro Único (Presencial y Virtual)</strong>.
+        </div>
+    </div>
+
+</div>
+
 `;
 
 // ==========================================

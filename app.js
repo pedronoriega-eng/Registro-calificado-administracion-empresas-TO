@@ -154,6 +154,7 @@ function runSlideScripts(id) {
         setTimeout(() => {
             if (id === 'inst' && window.instInit) window.instInit();
             if (id === 'virtual' && window.virtualInit) window.virtualInit();
+            if (id === 'c1' && window.c1Init) window.c1Init();
             if (id === 'c2' && window.c2Init) window.c2Init();
             if (id === 'c3' && window.c3Init) window.c3Init();
             if (id === 'c4' && window.c4Init) window.c4Init();
