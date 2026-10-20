@@ -71,6 +71,7 @@ Todos los siguientes elementos están formalmente aprobados, implementados en c�
 
 | Fecha | Commit | Descripción del Hito |
 |---|---|---|
+| **19-Oct-2026** | `[current]` | Condición 1 actualizada: Línea de tiempo normativa estilo serpentina de primero (5 hitos SACES), corrección de encuentros sincrónicos y pasantías (diferentes sectores económicos), matriz de competencias y RAP (Tabla 35), componentes curriculares oficiales (Tabla 16) y factores diferenciadores interactivos con solidez y evidencias. |
 | **19-Oct-2026** | `a2783b3` | Integrar 15 logos oficiales de convenios de la web TO, selectores interactivos con modal sintético de oferta académica y unificar paleta oficial de Administración de Empresas (0 azul en todo el código). |
 | **19-Oct-2026** | `bfc302b` | Solucionar imágenes de PEI y Convenios (`media__*.png`, 0 rotas) y sincronizar los 17 programas de la Oferta Académica del portal web institucional. |
 | **19-Oct-2026** | `42f584b` | Integrar secciones completas de Presentación Institucional (8 pestañas) y Sistema de Educación Virtual (5 dimensiones). |

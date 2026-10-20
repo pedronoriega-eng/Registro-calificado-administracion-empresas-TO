@@ -513,7 +513,7 @@ window.SECTIONS['c2'] = `
             <ul style="font-size:0.78rem; color:#431407; margin:0; padding-left:18px; line-height:1.5;">
                 <li><strong>Campus Central Bucaramanga:</strong> Sedes A (Calle 35 # 21-42), B y C dotadas de aulas multimedia, laboratorios de cómputo especializados y salas de simulación.</li>
                 <li><strong>Interacción Vivencial:</strong> Talleres prácticos presenciales (Juego Gerencial, Costos y Presupuestos) y desarrollo de habilidades socioemocionales de liderazgo directo.</li>
-                <li><strong>Conexión con el Ecosistema Local:</strong> Prácticas empresariales directas en las más de 32.450 empresas de Bucaramanga y su Área Metropolitana.</li>
+                <li><strong>Conexión con el Ecosistema Productivo:</strong> Prácticas empresariales y pasantías directas en diferentes sectores económicos del ámbito regional y nacional.</li>
                 <li><strong>Relación Crédito:</strong> 1:2 (48 horas directas con acompañamiento docente y 96 horas de trabajo independiente por asignatura de 3 créditos).</li>
             </ul>
         </div>
@@ -550,49 +550,79 @@ window.SECTIONS['c2'] = `
 <!-- 7. FACTORES DIFERENCIADORES BENTO GRID     -->
 <!-- ========================================== -->
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:22px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-    <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin-bottom:16px; display:flex; align-items:center; gap:8px;">
-        <i class="fas fa-medal" style="color:#F39200;"></i> Factores Diferenciadores de Administración de Empresas (TO)
-    </h4>
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+            <i class="fas fa-medal" style="color:#F39200;"></i> Factores Diferenciadores de Administración de Empresas (TO)
+        </h4>
+        <span style="font-size:0.75rem; color:#6B21A8; font-weight:700; background:#FAF5FF; border:1px solid #E9D5FF; padding:3px 10px; border-radius:20px;">
+            <i class="fas fa-mouse-pointer"></i> Clic en cada factor para desplegar evidencias y solidez
+        </span>
+    </div>
 
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px;">
         
-        <div style="background:#F8F9FA; border:1px solid #E8E8E8; border-top:4px solid #F39200; border-radius:10px; padding:18px;">
-            <div style="font-size:1.8rem; color:#F39200; margin-bottom:8px;"><i class="fas fa-brain"></i></div>
+        <div onclick="window.openDiferenciadorModal('digital_ia')" style="background:#FFF9F2; border:1.5px solid #FED7AA; border-top:4px solid #F39200; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='none';">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <div style="font-size:1.6rem; color:#F39200;"><i class="fas fa-brain"></i></div>
+                <span style="font-size:0.68rem; font-weight:800; color:#C2410C; background:#FFFFFF; padding:2px 6px; border-radius:4px; border:1px solid #FED7AA;"><i class="fas fa-search-plus"></i> Ver Solidez</span>
+            </div>
             <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin-bottom:6px;">
                 1. Transformación Digital, IA &amp; Analítica
             </h5>
-            <p style="font-size:0.8rem; color:#4B5563; line-height:1.45; margin:0;">
-                Malla curricular con asignaturas de vanguardia: <strong>Big Data y Analítica de Datos</strong> (Semestre 6) e <strong>Inteligencia Artificial en los Negocios</strong> (Semestre 7), formando directivos con toma de decisiones guiada por datos (<em>Data-Driven Decision Making</em>).
+            <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0;">
+                Malla curricular con asignaturas de vanguardia: <strong>Big Data y Analítica de Datos</strong> (Semestre 6) e <strong>Inteligencia Artificial en los Negocios</strong> (Semestre 8), formando directivos con toma de decisiones guiada por datos (<em>Data-Driven Decision Making</em>).
             </p>
         </div>
 
-        <div style="background:#F8F9FA; border:1px solid #E8E8E8; border-top:4px solid #1A1A1B; border-radius:10px; padding:18px;">
-            <div style="font-size:1.8rem; color:#1A1A1B; margin-bottom:8px;"><i class="fas fa-recycle"></i></div>
+        <div onclick="window.openDiferenciadorModal('sostenibilidad')" style="background:#F0FDF4; border:1.5px solid #BBF7D0; border-top:4px solid #10B981; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='none';">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <div style="font-size:1.6rem; color:#10B981;"><i class="fas fa-recycle"></i></div>
+                <span style="font-size:0.68rem; font-weight:800; color:#166534; background:#FFFFFF; padding:2px 6px; border-radius:4px; border:1px solid #BBF7D0;"><i class="fas fa-search-plus"></i> Ver Solidez</span>
+            </div>
             <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin-bottom:6px;">
                 2. Sostenibilidad &amp; Economía Circular
             </h5>
-            <p style="font-size:0.8rem; color:#4B5563; line-height:1.45; margin:0;">
-                Articulación a los ODS (Objetivos de Desarrollo Sostenible) y sistemas integrados de gestión (<strong>Sistemas Integrados HSEQ</strong> y <strong>Gerencia de la Calidad</strong>) orientados a la descarbonización, eficiencia energética y modelos de negocio regenerativos en la región.
+            <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0;">
+                Articulación a los ODS y sistemas integrados de gestión (<strong>Sistemas Integrados HSEQ</strong> y <strong>Gerencia de la Calidad</strong>) orientados a la descarbonización, eficiencia energética y modelos regenerativos en la región.
             </p>
         </div>
 
-        <div style="background:#F8F9FA; border:1px solid #E8E8E8; border-top:4px solid #F39200; border-radius:10px; padding:18px;">
-            <div style="font-size:1.8rem; color:#F39200; margin-bottom:8px;"><i class="fas fa-chess"></i></div>
+        <div onclick="window.openDiferenciadorModal('emprendimiento')" style="background:#FFF1F2; border:1.5px solid #FECDD3; border-top:4px solid #C8102E; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='none';">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <div style="font-size:1.6rem; color:#C8102E;"><i class="fas fa-chess"></i></div>
+                <span style="font-size:0.68rem; font-weight:800; color:#9F1239; background:#FFFFFF; padding:2px 6px; border-radius:4px; border:1px solid #FECDD3;"><i class="fas fa-search-plus"></i> Ver Solidez</span>
+            </div>
             <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin-bottom:6px;">
                 3. Ruta Emprendedora &amp; Simuladores
             </h5>
-            <p style="font-size:0.8rem; color:#4B5563; line-height:1.45; margin:0;">
-                Línea continua de formación práctica: <strong>Modelos de Emprendimiento</strong> (Sem 5) → <strong>Laboratorio de Innovación</strong> (Sem 6) → <strong>Juego Gerencial de Negocios</strong> (Sem 7) con simuladores en tiempo real y articulación al Fondo Emprender e IMEBÚ.
+            <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0;">
+                Línea continua de formación práctica: <strong>Modelos de Emprendimiento</strong> (Sem 6) → <strong>Laboratorio de Innovación</strong> (Sem 8) → <strong>Juego Gerencial de Negocios</strong> (Sem 8) con simuladores en tiempo real.
             </p>
         </div>
 
-        <div style="background:#F8F9FA; border:1px solid #E8E8E8; border-top:4px solid #1A1A1B; border-radius:10px; padding:18px;">
-            <div style="font-size:1.8rem; color:#1A1A1B; margin-bottom:8px;"><i class="fas fa-random"></i></div>
+        <div onclick="window.openDiferenciadorModal('registro_unico')" style="background:#FAF5FF; border:1.5px solid #E9D5FF; border-top:4px solid #7C3AED; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='none';">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <div style="font-size:1.6rem; color:#7C3AED;"><i class="fas fa-random"></i></div>
+                <span style="font-size:0.68rem; font-weight:800; color:#6B21A8; background:#FFFFFF; padding:2px 6px; border-radius:4px; border:1px solid #E9D5FF;"><i class="fas fa-search-plus"></i> Ver Solidez</span>
+            </div>
             <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin-bottom:6px;">
                 4. Flexibilidad de Registro Único
             </h5>
-            <p style="font-size:0.8rem; color:#4B5563; line-height:1.45; margin:0;">
-                Unicidad del plan de estudios que permite al estudiante transferirse o cursar asignaturas entre la modalidad Presencial y Virtual sin traumatismos de homologación, respondiendo a la dinámica laboral y cambios de residencia del estudiante.
+            <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0;">
+                Unicidad del plan de estudios que permite al estudiante transferirse o cursar asignaturas entre la modalidad Presencial y Virtual sin costos de homologación, respondiendo a su dinámica laboral.
+            </p>
+        </div>
+
+        <div onclick="window.openDiferenciadorModal('empleabilidad')" style="background:#F8FAFC; border:1.5px solid #CBD5E1; border-top:4px solid #1A1A1B; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease;" onmouseover="this.style.transform='translateY(-4px)';" onmouseout="this.style.transform='none';">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <div style="font-size:1.6rem; color:#1A1A1B;"><i class="fas fa-briefcase"></i></div>
+                <span style="font-size:0.68rem; font-weight:800; color:#1E293B; background:#FFFFFF; padding:2px 6px; border-radius:4px; border:1px solid #CBD5E1;"><i class="fas fa-search-plus"></i> Ver Solidez</span>
+            </div>
+            <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin-bottom:6px;">
+                5. Contextos de Aplicación &amp; Empleabilidad
+            </h5>
+            <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0;">
+                Pasantías en diferentes sectores económicos, inserción laboral rápida del <strong>71.0% en menos de 6 meses (OLE)</strong> y 94.4% de permanencia semestral consolidada con SAT TO.
             </p>
         </div>
 

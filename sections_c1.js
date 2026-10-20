@@ -1,67 +1,291 @@
 /* =========================================================
    CONDICIÓN 1 – DENOMINACIÓN DEL PROGRAMA
    Administración de Empresas · Registro Calificado Único (Presencial & Virtual) · TO
-   1. Fichas Técnicas Oficiales en Paralelo: Vigente vs. Propuesto (Registro Único)
-   2. Mapa Conceptual Sistémico de Pertinencia de la Denominación
-   3. Módulo de Profundización en Ventana Emergente (Modal)
    ========================================================= */
 window.SECTIONS = window.SECTIONS || {};
 window.SECTIONS['c1'] = `
 <!-- ========================================================================= -->
 <!-- 1. BANNER INSTITUCIONAL DE CABECERA                                       -->
 <!-- ========================================================================= -->
-<div class="info-banner" style="background:linear-gradient(135deg, #1A1A1B 0%, #2D2D2E 100%); color:#FFFFFF; border-left:5px solid #F39200; padding:16px 20px; border-radius:10px; margin-bottom:18px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+<div class="info-banner" style="background:linear-gradient(135deg, #1A1A1B 0%, #2D2D2E 100%); color:#FFFFFF; border-left:5px solid #F39200; padding:18px 22px; border-radius:12px; margin-bottom:20px; box-shadow:0 4px 18px rgba(0,0,0,0.12);">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
         <div>
-            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#FFFFFF; margin-bottom:3px; display:flex; align-items:center; gap:8px;">
-                <i class="fas fa-id-badge" style="color:#F39200;"></i> Condición 1 · Denominación del Programa
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span style="background:#F39200; color:#FFFFFF; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px;">
+                    Condición de Programa 1
+                </span>
+                <span style="color:#D1D1D1; font-size:0.75rem;">Normatividad Decreto 1330 de 2019 · Resolución MEN 2265 de 2023</span>
+            </div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.26rem; font-weight:800; color:#FFFFFF; margin:0 0 4px; display:flex; align-items:center; gap:10px;">
+                <i class="fas fa-id-badge" style="color:#F39200;"></i> Denominación del Programa: Administración de Empresas
             </h4>
-            <p style="color:#D1D1D1; font-size:0.86rem; margin:0;">
-                Ficha técnica oficial en paralelo: <strong>Registro Único Vigente SACES</strong> vs. <strong>Registro Único Propuesto en Renovación</strong>. Coherencia jurídica, académica e inclusión según el Decreto 1330 de 2019.
+            <p style="color:#D1D1D1; font-size:0.86rem; margin:0; line-height:1.45;">
+                Trazabilidad evolutiva normativa, fichas técnicas oficiales del <strong>Registro Calificado Único (Presencial y Virtual)</strong>, matriz de coherencia entre perfil de egreso y resultados de aprendizaje (RAP), y componentes curriculares oficiales del Documento Maestro.
             </p>
         </div>
-        <div style="display:flex; gap:8px; align-items:center;">
-            <span class="tag-legal" style="background:rgba(243,146,0,0.25); color:#F39200; border:1px solid #F39200; font-weight:700; padding:5px 12px; border-radius:20px; font-size:0.78rem;">
-                <i class="fas fa-shield-alt"></i> Decreto 1330 de 2019
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+            <span class="tag-legal" style="background:rgba(243,146,0,0.22); color:#F39200; border:1px solid #F39200; font-weight:700; padding:5px 12px; border-radius:20px; font-size:0.76rem;">
+                <i class="fas fa-check-double"></i> Registro Calificado Único
             </span>
-            <span class="tag-legal" style="background:rgba(255,255,255,0.1); color:#FFFFFF; border:1px solid rgba(255,255,255,0.3); font-weight:700; padding:5px 12px; border-radius:20px; font-size:0.78rem;">
-                Código SNIES: 108524
+            <span class="tag-legal" style="background:rgba(255,255,255,0.1); color:#FFFFFF; border:1px solid rgba(255,255,255,0.3); font-weight:700; padding:5px 12px; border-radius:20px; font-size:0.76rem;">
+                SNIES Presencial: 108445 · Virtual: 115833
             </span>
         </div>
     </div>
 </div>
 
 <!-- ========================================================================= -->
-<!-- 2. BARRA DE SUBSECCIONES Y NAVEGACIÓN RÁPIDA                              -->
+<!-- 2. BARRA DE NAVEGACIÓN RÁPIDA POR SUBSECCIONES (ACCESO INMEDIATO)         -->
 <!-- ========================================================================= -->
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:10px 14px; margin-bottom:20px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:10px 14px; margin-bottom:22px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
     <span style="font-size:0.76rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px;">
         <i class="fas fa-compass" style="color:#F39200;"></i> Ejes de Sustentación Condición 1:
     </span>
     <div style="display:flex; flex-wrap:wrap; gap:6px;" id="c1-subtabs-bar">
-        <a href="#c1-fichas-paralelo" style="background:#FFF9F2; color:#C2410C; border:1px solid #FED7AA; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-            <i class="fas fa-columns" style="color:#F39200;"></i> Fichas en Paralelo (Vigente vs. Propuesto)
+        <a href="#c1-linea-tiempo" style="background:#FFF9F2; color:#C2410C; border:1px solid #FED7AA; padding:6px 12px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s;">
+            <i class="fas fa-route" style="color:#F39200;"></i> 1. Línea de Tiempo Normativa
         </a>
-        <a href="#c1-mapa-conceptual" style="background:#F0FDF4; color:#166534; border:1px solid #BBF7D0; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-            <i class="fas fa-project-diagram" style="color:#2ECC71;"></i> Mapa Conceptual Sistémico
+        <a href="#c1-fichas-paralelo" style="background:#F8FAFC; color:#1E293B; border:1px solid #CBD5E1; padding:6px 12px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s;">
+            <i class="fas fa-columns" style="color:#1A1A1B;"></i> 2. Fichas Vigente vs. Propuesto
         </a>
-        <button onclick="window.openC1Modal('benchmarking')" style="background:#F0F9FF; color:#0369A1; border:1px solid #BAE6FD; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-            <i class="fas fa-balance-scale" style="color:#0369A1;"></i> Benchmarking (8 Sem)
-        </button>
-        <button onclick="window.openC1Modal('coherencia')" style="background:#FAF5FF; color:#6B21A8; border:1px solid #E9D5FF; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-            <i class="fas fa-sitemap" style="color:#6B21A8;"></i> Coherencia (48 Asignaturas)
-        </button>
-        <button onclick="window.openC1Modal('impacto')" style="background:#FFF1F2; color:#BE123C; border:1px solid #FECDD3; padding:6px 14px; border-radius:20px; font-size:0.76rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; transition:all 0.2s;">
-            <i class="fas fa-chart-line" style="color:#BE123C;"></i> Pertinencia &amp; RAP
-        </button>
+        <a href="#c1-perfil-competencias" style="background:#F0FDF4; color:#166534; border:1px solid #BBF7D0; padding:6px 12px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s;">
+            <i class="fas fa-user-graduate" style="color:#10B981;"></i> 3. Perfil &amp; Competencias (Tabla 35)
+        </a>
+        <a href="#c1-componentes-maestro" style="background:#FFF7ED; color:#9A3412; border:1px solid #FFEDD5; padding:6px 12px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s;">
+            <i class="fas fa-cubes" style="color:#EA580C;"></i> 4. Componentes Curriculares (Tabla 16)
+        </a>
+        <a href="#c1-factores-diferenciadores" style="background:#FAF5FF; color:#6B21A8; border:1px solid #E9D5FF; padding:6px 12px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s;">
+            <i class="fas fa-medal" style="color:#7C3AED;"></i> 5. Factores Diferenciadores (Interactivos)
+        </a>
+        <a href="#c1-mapa-conceptual" style="background:#EFF6FF; color:#1E40AF; border:1px solid #DBEAFE; padding:6px 12px; border-radius:20px; font-size:0.75rem; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:5px; transition:all 0.2s;">
+            <i class="fas fa-project-diagram" style="color:#3B82F6;"></i> 6. Mapa Sistémico
+        </a>
     </div>
 </div>
 
 <!-- ========================================================================= -->
-<!-- 3. FICHAS TÉCNICAS OFICIALES EN PARALELO (VIGENTE VS. PROPUESTO)          -->
+<!-- 3. LÍNEA DE TIEMPO NORMATIVA E HISTÓRICA (DE PRIMERO - ESTILO SERPENTINA)  -->
+<!-- ========================================================================= -->
+<div id="c1-linea-tiempo" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05); position:relative; overflow:hidden;">
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:22px; border-bottom:1px solid #F1F5F9; padding-bottom:14px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <div style="background:#FFF9F2; color:#F39200; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; border:1.5px solid #FED7AA; box-shadow:0 2px 6px rgba(243,146,0,0.15);">
+                <i class="fas fa-history"></i>
+            </div>
+            <div>
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#C2410C; letter-spacing:0.5px;">Evolución Jurídica y Curricular del Programa</span>
+                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    Línea de Tiempo Normativa: De la Creación a la Renovación del Registro Único
+                </h4>
+            </div>
+        </div>
+        <div style="display:flex; gap:8px;">
+            <span style="background:#F8FAFC; border:1px solid #E2E8F0; color:#475569; font-size:0.74rem; font-weight:700; padding:4px 10px; border-radius:20px; display:inline-flex; align-items:center; gap:5px;">
+                <i class="fas fa-file-signature" style="color:#F39200;"></i> 5 Hitos Sustentatorios SACES
+            </span>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR VISUAL ESTILO SERPENTINA (CURVED RIBBON TIMELINE) -->
+    <div style="position:relative; padding:10px 0 20px;">
+        
+        <!-- ========================================== -->
+        <!-- FILA 1: HITOS 1, 2 Y 3 (IZQUIERDA A DERECHA) -->
+        <!-- ========================================== -->
+        <div style="position:relative; margin-bottom:30px;">
+            
+            <!-- CINTA DE FONDO SUPERIOR -->
+            <div style="height:14px; background:linear-gradient(90deg, #7C3AED 0%, #C8102E 35%, #F39200 70%, #EA580C 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.15);"></div>
+            
+            <!-- CONECTOR CURVO SERPENTINA HACIA FILA 2 (A LA DERECHA) -->
+            <div style="position:absolute; right:10px; top:46px; width:70px; height:185px; border-right:14px solid #EA580C; border-top:14px solid #EA580C; border-bottom:14px solid #D97706; border-top-right-radius:50px; border-bottom-right-radius:50px; z-index:1; pointer-events:none; box-sizing:border-box;"></div>
+
+            <!-- GRID DE HITOS FILA 1 -->
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; position:relative; z-index:2;">
+                
+                <!-- HITO 1: 2018 (CREACIÓN) -->
+                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                    <!-- PIN SUPERIOR -->
+                    <div style="width:36px; height:36px; border-radius:50%; background:#7C3AED; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(124,58,237,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-scroll" style="font-size:0.9rem;"></i>
+                    </div>
+                    <!-- BADGE DE AÑO -->
+                    <div style="background:#7C3AED; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
+                        2018
+                    </div>
+                    <!-- TARJETA DESCRIPTIVA -->
+                    <div style="background:#FFFFFF; border:1.5px solid #E9D5FF; border-top:3px solid #7C3AED; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#6B21A8; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Acuerdo CS No. 05 · 29 Mayo 2018
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Creación Institucional del Programa
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0; line-height:1.45;">
+                            El Consejo Superior de la Corporación Escuela Tecnológica del Oriente crea y aprueba formalmente el programa de <strong>Administración de Empresas</strong> en modalidad presencial, fundamentando su diseño curricular y pertinencia regional en Santander.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HITO 2: 2019 (REGISTRO CALIFICADO Y SNIES INICIAL) -->
+                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                    <!-- PIN SUPERIOR -->
+                    <div style="width:36px; height:36px; border-radius:50%; background:#C8102E; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(200,16,46,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-award" style="font-size:0.9rem;"></i>
+                    </div>
+                    <!-- BADGE DE AÑO -->
+                    <div style="background:#C8102E; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
+                        2019
+                    </div>
+                    <!-- TARJETA DESCRIPTIVA -->
+                    <div style="background:#FFFFFF; border:1.5px solid #FECDD3; border-top:3px solid #C8102E; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#9F1239; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Resolución MEN 011375 · 07 Nov 2019
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Registro Calificado &amp; SNIES Presencial: 108445
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
+                            El Ministerio de Educación Nacional otorga el Registro Calificado inicial por 7 años y asigna el <strong>Código SNIES 108445</strong>, aperturando oficialmente el programa de forma presencial en Bucaramanga.
+                        </p>
+                        <div style="background:#FFF1F2; border:1px solid #FECDD3; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#9F1239; font-weight:700;">
+                            <i class="fas fa-layer-group"></i> 158 Créditos · 9 Semestres · 62 Asignaturas
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HITO 3: 2024 (ACUERDO SOLICITUD REGISTRO ÚNICO) -->
+                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                    <!-- PIN SUPERIOR -->
+                    <div style="width:36px; height:36px; border-radius:50%; background:#F39200; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(243,146,0,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-check-double" style="font-size:0.9rem;"></i>
+                    </div>
+                    <!-- BADGE DE AÑO -->
+                    <div style="background:#F39200; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
+                        2024
+                    </div>
+                    <!-- TARJETA DESCRIPTIVA -->
+                    <div style="background:#FFFFFF; border:1.5px solid #FED7AA; border-top:3px solid #F39200; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#C2410C; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Acuerdo CS No. 011 · 03 Dic 2024
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Aprobación para Solicitar Registro Calificado Único
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
+                            El Consejo Superior aprueba la solicitud formal ante el MEN para modificar la oferta hacia <strong>Registro Calificado Único (Presencial y Virtual)</strong>, radicada en SACES mediante el Anexo 5, asegurando cobertura nacional incluyente.
+                        </p>
+                        <div style="background:#FFF9F2; border:1px solid #FED7AA; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#C2410C; font-weight:700;">
+                            <i class="fas fa-shield-alt"></i> Exp. SACES 108524 · Dualidad Académica
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- FILA 2: HITOS 4 Y 5 (DERECHA A IZQUIERDA / CIERRE) -->
+        <!-- ========================================== -->
+        <div style="position:relative; margin-top:20px;">
+            
+            <!-- CINTA DE FONDO INFERIOR -->
+            <div style="height:14px; background:linear-gradient(270deg, #D97706 0%, #059669 60%, #1A1A1B 100%); border-radius:10px; position:absolute; top:46px; left:40px; right:40px; z-index:1; box-shadow:0 3px 8px rgba(0,0,0,0.15);"></div>
+
+            <!-- GRID DE HITOS FILA 2 -->
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:30px; position:relative; z-index:2; max-width:850px; margin:0 auto;">
+                
+                <!-- HITO 4: 2024-2025 (APROBACIÓN MEN Y CAMBIO / ASIGNACIÓN SNIES) -->
+                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                    <!-- PIN SUPERIOR -->
+                    <div style="width:36px; height:36px; border-radius:50%; background:#D97706; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(217,119,6,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-file-check" style="font-size:0.9rem;"></i>
+                    </div>
+                    <!-- BADGE DE AÑO -->
+                    <div style="background:#D97706; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
+                        2024 - 2025
+                    </div>
+                    <!-- TARJETA DESCRIPTIVA -->
+                    <div style="background:#FFFFFF; border:1.5px solid #FDE68A; border-top:3px solid #D97706; border-radius:10px; padding:14px; box-shadow:0 4px 12px rgba(0,0,0,0.04); width:100%; box-sizing:border-box; text-align:left;">
+                        <span style="font-size:0.68rem; font-weight:800; color:#B45309; text-transform:uppercase; display:block; margin-bottom:3px;">
+                            Aprobación MEN · Asignación SNIES Virtual
+                        </span>
+                        <strong style="font-size:0.86rem; color:#1A1A1B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Aprobación MEN &amp; SNIES Virtual: 115833
+                        </strong>
+                        <p style="font-size:0.75rem; color:#4B5563; margin:0 0 6px; line-height:1.45;">
+                            El Ministerio de Educación Nacional aprueba la ampliación de modalidad a virtual en el marco del <strong>Registro Único</strong>, asignando el código <strong>SNIES Virtual 115833</strong> articulado al presencial, operando inicialmente bajo la base de:
+                        </p>
+                        <div style="background:#FEF3C7; border:1px solid #FDE68A; border-radius:6px; padding:4px 8px; font-size:0.72rem; color:#B45309; font-weight:700;">
+                            <i class="fas fa-check-circle"></i> 158 Créditos Académicos · 62 Asignaturas
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HITO 5: 2025 (RENOVACIÓN Y OPTIMIZACIÓN A 8 SEMESTRES / 144 CRÉDITOS / 48 MATERIAS) -->
+                <div style="display:flex; flex-direction:column; align-items:center; text-align:center;">
+                    <!-- PIN SUPERIOR -->
+                    <div style="width:36px; height:36px; border-radius:50%; background:#059669; color:#FFFFFF; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(5,150,105,0.4); border:3px solid #FFFFFF; margin-bottom:6px; z-index:3;">
+                        <i class="fas fa-flag-checkered" style="font-size:0.9rem;"></i>
+                    </div>
+                    <!-- BADGE DE AÑO -->
+                    <div style="background:#059669; color:#FFFFFF; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; padding:5px 22px; border-radius:20px; box-shadow:0 3px 8px rgba(0,0,0,0.18); margin-bottom:14px; border:2px solid #FFFFFF;">
+                        2025 (Sustentación Actual)
+                    </div>
+                    <!-- TARJETA DESCRIPTIVA -->
+                    <div style="background:#F0FDF4; border:2px solid #86EFAC; border-top:3px solid #059669; border-radius:10px; padding:14px; box-shadow:0 6px 16px rgba(5,150,105,0.08); width:100%; box-sizing:border-box; text-align:left;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
+                            <span style="font-size:0.68rem; font-weight:800; color:#166534; text-transform:uppercase;">
+                                Acuerdo CS No. 021 · 25 Julio 2025
+                            </span>
+                            <span style="background:#DCFCE7; color:#166534; font-size:0.65rem; font-weight:800; padding:1px 6px; border-radius:10px;">
+                                EN EVALUACIÓN MEN
+                            </span>
+                        </div>
+                        <strong style="font-size:0.88rem; color:#064E3B; display:block; margin-bottom:6px; line-height:1.3;">
+                            Renovación y Modificación Curricular del Registro Único
+                        </strong>
+                        <p style="font-size:0.75rem; color:#14532D; margin:0 0 8px; line-height:1.45;">
+                            El Consejo Superior aprueba y sustenta ante el MEN la <strong>Renovación con Modificación Curricular</strong> (Anexo 2 SACES), modernizando la duración a <strong>8 semestres, 144 créditos y 48 asignaturas modulares</strong>, con titulación inclusiva <em>Administrador(a) de Empresas</em>.
+                        </p>
+                        <div style="background:#FFFFFF; border:1.5px solid #86EFAC; border-radius:6px; padding:6px 10px; font-size:0.74rem; color:#166534; font-weight:800; display:flex; justify-content:space-between; align-items:center;">
+                            <span><i class="fas fa-check-double" style="color:#059669;"></i> 8 Semestres · 144 Créditos · 48 Asignaturas</span>
+                            <span>300 Cupos (240V / 60P)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- NOTA DE CIERRE DE LA LÍNEA DE TIEMPO -->
+    <div style="background:#F8FAFC; border-left:4px solid #F39200; border-radius:6px; padding:10px 14px; font-size:0.78rem; color:#334155; margin-top:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+        <div>
+            <i class="fas fa-info-circle" style="color:#F39200; margin-right:4px;"></i>
+            <strong>Certeza Jurídica SACES:</strong> Esta línea de tiempo evidencia el tránsito continuo, planificado e institucionalmente avalado del programa desde su creación en 2018, la adopción del Registro Único dual, hasta su optimización a 144 créditos y 8 semestres.
+        </div>
+        <a href="#c1-fichas-paralelo" style="background:#1A1A1B; color:#FFFFFF; text-decoration:none; font-size:0.72rem; font-weight:700; padding:4px 10px; border-radius:4px; display:inline-flex; align-items:center; gap:4px;">
+            Ver Fichas en Paralelo <i class="fas fa-arrow-down"></i>
+        </a>
+    </div>
+
+</div>
+
+<!-- ========================================================================= -->
+<!-- 4. FICHAS TÉCNICAS OFICIALES EN PARALELO (VIGENTE VS. PROPUESTO)          -->
 <!-- ========================================================================= -->
 <div id="c1-fichas-paralelo" style="margin-bottom:28px;">
     
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
+        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+            <i class="fas fa-columns" style="color:#F39200;"></i> Comparativo Técnico Oficial: Registro Único Vigente vs. Propuesto
+        </h4>
+        <span style="font-size:0.75rem; color:#64748B;">Evidencia de evolución curricular y eficiencia formativa</span>
+    </div>
+
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:22px;">
         
         <!-- ======================================= -->
@@ -88,12 +312,15 @@ window.SECTIONS['c1'] = `
                             <td><strong>Administración de Empresas</strong></td>
                         </tr>
                         <tr>
-                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Código SNIES</td>
-                            <td><span style="font-family:monospace; background:#F4F4F4; padding:2px 6px; border-radius:4px; font-weight:700;">108524 (SACES)</span></td>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Códigos SNIES</td>
+                            <td>
+                                <span style="font-family:monospace; background:#F4F4F4; padding:2px 6px; border-radius:4px; font-weight:700; margin-right:4px;">Presencial: 108445</span>
+                                <span style="font-family:monospace; background:#F4F4F4; padding:2px 6px; border-radius:4px; font-weight:700;">Virtual: 115833</span>
+                            </td>
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Nivel de Formación</td>
-                            <td>Pregrado · Profesional Universitario</td>
+                            <td>Pregrado · Profesional Universitario (Nivel 7 MNC)</td>
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Título Otorgado</td>
@@ -121,11 +348,11 @@ window.SECTIONS['c1'] = `
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Cupos Primer Período</td>
-                            <td><strong>300 estudiantes / cohorte</strong> (Oferta dual autorizada institucionalmente)</td>
+                            <td><strong>300 estudiantes / cohorte</strong> (Oferta dual autorizada)</td>
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Relación de Horas</td>
-                            <td><strong>Presencial:</strong> 1:2 (16h directas / 32h indep.) · <strong>Virtual:</strong> 1:3 (12h mediadas / 36h autónomas)</td>
+                            <td><strong>Presencial:</strong> 1:2 (48h directas / 96h indep.) · <strong>Virtual:</strong> 1:3 (36h mediadas / 108h autónomas)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -133,7 +360,7 @@ window.SECTIONS['c1'] = `
             
             <div style="background:#F8F9FA; border-left:3px solid #1A1A1B; padding:10px 14px; border-radius:6px; margin-top:16px; font-size:0.77rem; color:#4B5563;">
                 <i class="fas fa-info-circle" style="color:#1A1A1B; margin-right:4px;"></i>
-                <strong>Origen Normativo:</strong> Aprobado inicialmente mediante <strong>Resolución MEN 011375 de 2019</strong> (presencial), adoptado a <strong>Registro Calificado Único (Presencial y Virtual)</strong> mediante <strong>Acuerdo de Consejo Superior No. 011 de 2024</strong> (base de 158 créditos y 9 semestres en Anexo 5 SACES).
+                <strong>Origen Normativo:</strong> Aprobado inicialmente mediante <strong>Resolución MEN 011375 de 2019</strong> (presencial), formalizado a <strong>Registro Calificado Único (Presencial y Virtual)</strong> mediante <strong>Acuerdo CS No. 011 de 2024</strong> (base de 158 créditos y 9 semestres en Anexo 5 SACES).
             </div>
         </div>
 
@@ -142,12 +369,12 @@ window.SECTIONS['c1'] = `
         <!-- ======================================= -->
         <div style="background:#FFFFFF; border:2px solid #F39200; border-top:5px solid #F39200; border-radius:12px; padding:20px; box-shadow:0 8px 24px rgba(243,146,0,0.12); display:flex; flex-direction:column; justify-content:space-between; position:relative;">
             <div style="position:absolute; top:-12px; right:20px; background:#F39200; color:#FFFFFF; font-size:0.72rem; font-weight:800; padding:2px 10px; border-radius:12px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 2px 6px rgba(243,146,0,0.4);">
-                Propuesta en Evaluación
+                Propuesta en Renovación
             </div>
             <div>
                 <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #FFF3E0; padding-bottom:12px; margin-bottom:14px;">
                     <div>
-                        <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#F39200; letter-spacing:0.5px;">Decreto 1330 · Renovación Curricular</span>
+                        <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#F39200; letter-spacing:0.5px;">Decreto 1330 · Renovación Curricular SACES</span>
                         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0;">
                             Registro Calificado Único (Propuesto)
                         </h4>
@@ -161,19 +388,22 @@ window.SECTIONS['c1'] = `
                     <tbody>
                         <tr style="background:#FFF9F2;">
                             <td class="lb" style="width:40%; font-weight:700; color:#F39200;">Denominación</td>
-                            <td><strong>Administración de Empresas</strong> (Mantenida oficial)</td>
+                            <td><strong>Administración de Empresas</strong> (Mantenida oficial por tradición y pertinencia)</td>
                         </tr>
                         <tr>
-                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Código SNIES</td>
-                            <td><span style="font-family:monospace; background:#FFF3E0; color:#D97F00; padding:2px 6px; border-radius:4px; font-weight:700;">108524 (SACES Renovación RU)</span></td>
+                            <td class="lb" style="font-weight:700; color:#6B6B6B;">Códigos SNIES</td>
+                            <td>
+                                <span style="font-family:monospace; background:#FFF3E0; color:#D97F00; padding:2px 6px; border-radius:4px; font-weight:700; margin-right:4px;">Presencial: 108445</span>
+                                <span style="font-family:monospace; background:#FFF3E0; color:#D97F00; padding:2px 6px; border-radius:4px; font-weight:700;">Virtual: 115833</span>
+                            </td>
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Nivel de Formación</td>
-                            <td>Pregrado · Profesional Universitario</td>
+                            <td>Pregrado · Profesional Universitario (Nivel 7 MNC)</td>
                         </tr>
                         <tr style="background:#FFF9F2;">
                             <td class="lb" style="font-weight:700; color:#F39200;">Titulación Inclusiva</td>
-                            <td><strong>Administrador(a) de Empresas</strong><br><span style="font-size:0.75rem; color:#6B6B6B;">(Opción según identidad de género: <em>Administrador de Empresas</em> / <em>Administradora de Empresas</em>)</span></td>
+                            <td><strong>Administrador(a) de Empresas</strong><br><span style="font-size:0.74rem; color:#6B6B6B;">(Expedición con equidad de género: <em>Administrador de Empresas</em> / <em>Administradora de Empresas</em>)</span></td>
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Metodología / Modalidad</td>
@@ -185,7 +415,7 @@ window.SECTIONS['c1'] = `
                         </tr>
                         <tr style="background:#FFF9F2;">
                             <td class="lb" style="font-weight:700; color:#F39200;">Duración Optimizada</td>
-                            <td><strong>8 semestres</strong> (4.0 años) — Compactación y eficiencia formativa</td>
+                            <td><strong>8 semestres</strong> (4.0 años) — Compactación y alineación con estándares internacionales</td>
                         </tr>
                         <tr style="background:#FFF9F2;">
                             <td class="lb" style="font-weight:700; color:#F39200;">Número de Créditos</td>
@@ -197,11 +427,11 @@ window.SECTIONS['c1'] = `
                         </tr>
                         <tr style="background:#FFF9F2;">
                             <td class="lb" style="font-weight:700; color:#F39200;">Distribución Cupos</td>
-                            <td><strong>300 estudiantes / cohorte</strong>:<br>• <strong>240 estudiantes</strong> en Modalidad Virtual<br>• <strong>60 estudiantes</strong> en Modalidad Presencial</td>
+                            <td><strong>300 estudiantes / cohorte</strong>:<br>• <strong>240 estudiantes</strong> en Modalidad Virtual (Nacional)<br>• <strong>60 estudiantes</strong> en Modalidad Presencial (Bucaramanga)</td>
                         </tr>
                         <tr>
                             <td class="lb" style="font-weight:700; color:#6B6B6B;">Distribución Horas</td>
-                            <td><strong>Presencial:</strong> 48h directa / 96h indep. · <strong>Virtual:</strong> 36h mediada / 108h autónoma (x materia 3 cr)</td>
+                            <td><strong>Presencial:</strong> 48h directas / 96h indep. · <strong>Virtual:</strong> 36h mediadas / 108h autónomas (x materia 3 cr)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -209,7 +439,7 @@ window.SECTIONS['c1'] = `
 
             <div style="background:#FFF9F2; border-left:3px solid #F39200; padding:10px 14px; border-radius:6px; margin-top:16px; font-size:0.77rem; color:#8A5300;">
                 <i class="fas fa-check-circle" style="color:#F39200; margin-right:4px;"></i>
-                <strong>Transformación Institucional:</strong> Aprobado por el Consejo Superior mediante <strong>Acuerdo 011 de 2024</strong> (adopción de Registro Único) y <strong>Acuerdo 021 de 2025</strong> (plan optimizado a 144 créditos y 8 semestres).
+                <strong>Transformación Institucional Aprobada:</strong> Adoptado por el Consejo Superior mediante <strong>Acuerdo CS No. 011 de 2024</strong> (adopción Registro Único) y <strong>Acuerdo CS No. 021 de 2025</strong> (plan optimizado a 144 créditos, 8 semestres y 48 asignaturas en Anexo 2 SACES).
             </div>
         </div>
 
@@ -218,14 +448,417 @@ window.SECTIONS['c1'] = `
 </div>
 
 <!-- ========================================================================= -->
-<!-- 4. MAPA CONCEPTUAL SISTÉMICO: PERTINENCIA INTEGRAL DE LA DENOMINACIÓN     -->
+<!-- 5. PERFIL DE EGRESO Y COMPETENCIAS DEL EGRESADO (TABLA 35 DEL DOC. MAESTRO)-->
 <!-- ========================================================================= -->
-<div id="c1-mapa-conceptual" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #2ECC71; border-radius:12px; padding:22px; margin-bottom:24px; box-shadow:0 4px 14px rgba(0,0,0,0.04);">
+<div id="c1-perfil-competencias" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <div style="background:#ECFDF5; color:#10B981; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; border:1.5px solid #A7F3D0;">
+                <i class="fas fa-user-graduate"></i>
+            </div>
+            <div>
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#065F46; letter-spacing:0.5px;">Alineación Curricular Directa</span>
+                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    Perfil de Egreso &amp; Matriz de Competencias vs. Resultados de Aprendizaje (RAP)
+                </h4>
+            </div>
+        </div>
+        <span style="background:#ECFDF5; color:#065F46; border:1px solid #A7F3D0; font-weight:800; font-size:0.75rem; padding:4px 12px; border-radius:20px;">
+            Tabla 35 Oficial · Doc. Maestro (Pág. 165-167)
+        </span>
+    </div>
+
+    <!-- DECLARACIÓN OFICIAL DEL PERFIL DE EGRESO (PEP / DOC MAESTRO PÁG 241) -->
+    <div style="background:linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%); border:1.5px solid #E2E8F0; border-left:5px solid #10B981; border-radius:10px; padding:16px 20px; margin-bottom:20px;">
+        <span style="font-size:0.7rem; font-weight:800; text-transform:uppercase; color:#047857; letter-spacing:0.5px; display:block; margin-bottom:4px;">
+            <i class="fas fa-quote-left"></i> Perfil de Egreso Oficial del Programa (Documento Maestro, Cap. 4.3.5)
+        </span>
+        <p style="font-size:0.86rem; color:#1E293B; margin:0; line-height:1.55; font-style:italic;">
+            "El egresado del programa de <strong>Administración de Empresas</strong> de la Corporación Escuela Tecnológica del Oriente es un profesional con <strong>competencias gerenciales, estratégicas y tecnológicas</strong> que le permiten gestionar organizaciones de manera integral, innovadora y sostenible, en concordancia con las demandas del entorno productivo y social, liderando con visión ética y capacidad analítica de decisiones."
+        </p>
+    </div>
+
+    <!-- TABLA DE ALINEACIÓN: 10 COMPETENCIAS VS 10 RAP VS ASIGNATURAS -->
+    <div style="overflow-x:auto; border:1px solid #E2E8F0; border-radius:10px;">
+        <table class="tbl" style="width:100%; font-size:0.8rem; margin:0; border-collapse:collapse;">
+            <thead style="background:#1A1A1B; color:#FFFFFF;">
+                <tr>
+                    <th style="width:5%; text-align:center;">#</th>
+                    <th style="width:32%; text-align:left;">Competencia del Egresado / Graduado</th>
+                    <th style="width:33%; text-align:left;">Resultado de Aprendizaje del Programa (RAP)</th>
+                    <th style="width:30%; text-align:left;">Asignaturas Asociadas (Plan 144 cr)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background:#FFFFFF;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">1</td>
+                    <td><strong>Gestión Estratégica y Ética:</strong> Gestiona estratégica y éticamente las organizaciones, articulando los recursos humanos, financieros y tecnológicos para el logro de los objetivos institucionales.</td>
+                    <td><strong style="color:#047857;">RAP 1:</strong> Diseña e implementa estrategias organizacionales que optimizan los recursos y fortalecen la competitividad empresarial.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Fundamentos de Administración · Procesos Administrativos · Teoría Organizacional · Pensamiento Estratégico y Prospectivo · Juego Gerencial · Proyecto de Grado</td>
+                </tr>
+                <tr style="background:#F8FAFC;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">2</td>
+                    <td><strong>Toma de Decisiones Financieras:</strong> Analiza información financiera, económica y contable para la toma de decisiones en contextos locales y globales.</td>
+                    <td><strong style="color:#047857;">RAP 2:</strong> Interpreta estados financieros, evalúa indicadores de desempeño y propone estrategias financieras sostenibles.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Fundamentos Contables y Financieros · Análisis Financiero · Administración Financiera · Costos y Presupuestos · Matemática Financiera · Legislación Tributaria</td>
+                </tr>
+                <tr style="background:#FFFFFF;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">3</td>
+                    <td><strong>Liderazgo y Talento Humano:</strong> Dirige el talento humano con liderazgo participativo, promoviendo la innovación, la cultura organizacional y el bienestar laboral.</td>
+                    <td><strong style="color:#047857;">RAP 3:</strong> Diseña políticas y estrategias de gestión humana que potencian la productividad y el desarrollo del personal.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Gerencia del Talento Humano · Habilidades Gerenciales y Liderazgo · Cátedra de la Paz y Resolución de Conflictos · Comunicación Oral y Escrita</td>
+                </tr>
+                <tr style="background:#F8FAFC;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">4</td>
+                    <td><strong>Emprendimiento y Proyectos:</strong> Formula y gestiona proyectos empresariales innovadores, sostenibles y socialmente responsables.</td>
+                    <td><strong style="color:#047857;">RAP 4:</strong> Evalúa y ejecuta proyectos de emprendimiento y sostenibilidad que generen impacto económico y social.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Modelos de Emprendimiento · Laboratorio de Innovación y Emprendimiento · Formulación y Evaluación de Proyectos · Economía Colombiana e Internacional · Proyecto de Grado</td>
+                </tr>
+                <tr style="background:#FFFFFF;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">5</td>
+                    <td><strong>Marketing Estratégico y Sostenible:</strong> Desarrolla estrategias de marketing y comunicación enfocadas en la satisfacción del cliente, la competitividad y la sostenibilidad.</td>
+                    <td><strong style="color:#047857;">RAP 5:</strong> Diseña e implementa planes de mercadeo innovadores con enfoque digital y sostenible.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Fundamentos de Mercadeo · Gerencia de Marketing · Investigación de Mercados · Gerencia de Ventas y Canales de Distribución · E-commerce · Marketing Verde (Electiva)</td>
+                </tr>
+                <tr style="background:#F8FAFC;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">6</td>
+                    <td><strong>Tecnología, Big Data e IA:</strong> Aplica herramientas tecnológicas, digitales y analíticas para la optimización de procesos y la toma de decisiones estratégicas.</td>
+                    <td><strong style="color:#047857;">RAP 6:</strong> Integra tecnologías de información, analítica de datos e inteligencia artificial en la gestión administrativa.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Big Data y Analítica de Datos · Inteligencia Artificial · Sistemas Integrados de Gestión (HSEQ) · Transformación Digital (Electiva)</td>
+                </tr>
+                <tr style="background:#FFFFFF;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">7</td>
+                    <td><strong>Sostenibilidad y RSE:</strong> Promueve la sostenibilidad y la responsabilidad social como ejes de la gestión empresarial.</td>
+                    <td><strong style="color:#047857;">RAP 7:</strong> Implementa prácticas de sostenibilidad, economía circular y responsabilidad social en la organización.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Desarrollo Sostenible y Economía Circular (Electiva) · Gerencia de la Calidad · Ética y Gobernanza Corporativa (Electiva) · Finanzas Sostenibles (Electiva)</td>
+                </tr>
+                <tr style="background:#F8FAFC;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">8</td>
+                    <td><strong>Operaciones y Calidad:</strong> Gestiona procesos operativos y de calidad con enfoque de mejora continua y eficiencia organizacional.</td>
+                    <td><strong style="color:#047857;">RAP 8:</strong> Diseña e implementa sistemas integrados de gestión orientados a la calidad, productividad y sostenibilidad.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Gestión de Operaciones · Gerencia de Producción · Sistemas Integrados de Gestión (HSEQ) · Gerencia de la Calidad</td>
+                </tr>
+                <tr style="background:#FFFFFF;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">9</td>
+                    <td><strong>Investigación y Solución de Problemas:</strong> Aplica la investigación y el análisis crítico para la solución de problemas organizacionales y el mejoramiento continuo.</td>
+                    <td><strong style="color:#047857;">RAP 9:</strong> Diseña e implementa proyectos de investigación aplicada que aporten a la innovación y competitividad empresarial.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Competencias Investigativas · Métodos Cualitativos y Cuantitativos · Proyecto de Grado</td>
+                </tr>
+                <tr style="background:#F8FAFC;">
+                    <td style="text-align:center; font-weight:800; color:#F39200;">10</td>
+                    <td><strong>Ética y Compromiso Ciudadano:</strong> Actúa con ética, responsabilidad y compromiso social en el ejercicio profesional.</td>
+                    <td><strong style="color:#047857;">RAP 10:</strong> Toma decisiones con base en principios éticos, legales y de responsabilidad social empresarial.</td>
+                    <td style="font-size:0.75rem; color:#475569;">Cátedra de la Paz y Resolución de Conflictos · Legislación Comercial · Derecho Laboral y Seguridad Social · Electiva de Diversidad e Inclusión</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<!-- ========================================================================= -->
+<!-- 6. COMPONENTES CURRICULARES OFICIALES DEL DOCUMENTO MAESTRO (TABLA 16)     -->
+<!-- ========================================================================= -->
+<div id="c1-componentes-maestro" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #EA580C; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <div style="background:#FFF7ED; color:#EA580C; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; border:1.5px solid #FFEDD5;">
+                <i class="fas fa-cubes"></i>
+            </div>
+            <div>
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#9A3412; letter-spacing:0.5px;">Estructura Curricular Autorizada</span>
+                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    Componentes de Formación del Documento Maestro (Tabla 16 Oficial)
+                </h4>
+            </div>
+        </div>
+        <span style="background:#FFF7ED; color:#9A3412; border:1px solid #FFEDD5; font-weight:800; font-size:0.75rem; padding:4px 12px; border-radius:20px;">
+            Tabla 16 · Pág. 109-110 · 48 Asignaturas / 144 Créditos
+        </span>
+    </div>
+
+    <p style="font-size:0.83rem; color:#475569; margin:0 0 16px; line-height:1.45;">
+        De acuerdo con el Documento Maestro radicado ante el Ministerio de Educación Nacional, el plan de estudios optimizado a 144 créditos y 8 semestres se distribuye en los siguientes <strong>componentes formativos fidedignos</strong>:
+    </p>
+
+    <!-- GRID DE LOS COMPONENTES OFICIALES DE TABLA 16 -->
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:18px;">
+        
+        <!-- COMPONENTE 1: ADMINISTRACIÓN Y GESTIÓN -->
+        <div style="background:#FFFFFF; border:1.5px solid #FED7AA; border-top:4px solid #F39200; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <strong style="font-size:0.88rem; color:#1A1A1B;"><i class="fas fa-sitemap" style="color:#F39200; margin-right:6px;"></i> 1. Administración y Gestión</strong>
+                <span style="background:#FFF9F2; color:#C2410C; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #FED7AA;">11 Asig · 23%</span>
+            </div>
+            <div style="font-size:0.74rem; color:#475569; background:#F8FAFC; border-radius:6px; padding:10px; line-height:1.45;">
+                • Fundamentos de Administración<br>
+                • Procesos Administrativos<br>
+                • Teoría Organizacional<br>
+                • Pensamiento Estratégico y Prospectivo<br>
+                • Gestión de Operaciones<br>
+                • Gerencia de Producción<br>
+                • Gerencia de la Calidad<br>
+                • Sistemas Integrados de Gestión (HSEQ)<br>
+                • Negocios y Gerencia Internacional<br>
+                • <strong>Juego Gerencial (Simulación de Negocios)</strong><br>
+                • Proyecto de Grado
+            </div>
+        </div>
+
+        <!-- COMPONENTE 2: CIENCIAS BÁSICAS Y CUANTITATIVAS -->
+        <div style="background:#FFFFFF; border:1.5px solid #E2E8F0; border-top:4px solid #1A1A1B; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <strong style="font-size:0.88rem; color:#1A1A1B;"><i class="fas fa-calculator" style="color:#1A1A1B; margin-right:6px;"></i> 2. Ciencias Básicas y Cuantitativas</strong>
+                <span style="background:#F1F5F9; color:#1E293B; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #CBD5E1;">5 Asig · 10%</span>
+            </div>
+            <div style="font-size:0.74rem; color:#475569; background:#F8FAFC; border-radius:6px; padding:10px; line-height:1.45;">
+                • Álgebra Lineal<br>
+                • Cálculo Diferencial<br>
+                • Estadística Descriptiva<br>
+                • Estadística Inferencial<br>
+                • Métodos Cualitativos y Cuantitativos
+            </div>
+        </div>
+
+        <!-- COMPONENTE 3: ECONOMÍA Y FINANZAS -->
+        <div style="background:#FFFFFF; border:1.5px solid #BBF7D0; border-top:4px solid #10B981; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <strong style="font-size:0.88rem; color:#1A1A1B;"><i class="fas fa-coins" style="color:#10B981; margin-right:6px;"></i> 3. Economía y Finanzas</strong>
+                <span style="background:#F0FDF4; color:#166534; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #BBF7D0;">8 Asig · 16%</span>
+            </div>
+            <div style="font-size:0.74rem; color:#475569; background:#F8FAFC; border-radius:6px; padding:10px; line-height:1.45;">
+                • Fundamentos Contables y Financieros<br>
+                • Análisis Financiero<br>
+                • Administración Financiera<br>
+                • Costos y Presupuestos<br>
+                • Matemática Financiera<br>
+                • Legislación Tributaria<br>
+                • Microeconomía<br>
+                • Macroeconomía
+            </div>
+        </div>
+
+        <!-- COMPONENTE 4: LEGISLACIÓN, INVESTIGACIÓN Y HABILIDADES -->
+        <div style="background:#FFFFFF; border:1.5px solid #E9D5FF; border-top:4px solid #7C3AED; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <strong style="font-size:0.88rem; color:#1A1A1B;"><i class="fas fa-balance-scale" style="color:#7C3AED; margin-right:6px;"></i> 4. Legislación, Investigación &amp; Hab.</strong>
+                <span style="background:#FAF5FF; color:#6B21A8; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #E9D5FF;">12 Asig · 25%</span>
+            </div>
+            <div style="font-size:0.74rem; color:#475569; background:#F8FAFC; border-radius:6px; padding:10px; line-height:1.45;">
+                • Legislación Comercial<br>
+                • Derecho Laboral y Seguridad Social<br>
+                • Comunicación Oral y Escrita<br>
+                • Cátedra de la Paz y Resolución de Conflictos<br>
+                • Habilidades Gerenciales y Liderazgo<br>
+                • Gerencia del Talento Humano<br>
+                • Competencias Investigativas<br>
+                • Inglés I, Inglés II, Inglés III (Formación bilingüe)
+            </div>
+        </div>
+
+        <!-- COMPONENTE 5: MERCADEO, TECNOLOGÍA Y EMPRENDIMIENTO -->
+        <div style="background:#FFFFFF; border:1.5px solid #FECDD3; border-top:4px solid #C8102E; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <strong style="font-size:0.88rem; color:#1A1A1B;"><i class="fas fa-rocket" style="color:#C8102E; margin-right:6px;"></i> 5. Mercadeo, Tec. &amp; Emprendimiento</strong>
+                <span style="background:#FFF1F2; color:#9F1239; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #FECDD3;">9 Asig · 18%</span>
+            </div>
+            <div style="font-size:0.74rem; color:#475569; background:#F8FAFC; border-radius:6px; padding:10px; line-height:1.45;">
+                • Fundamentos de Mercadeo<br>
+                • Gerencia de Marketing<br>
+                • Investigación de Mercados<br>
+                • Gerencia de Ventas y Canales de Distribución<br>
+                • E-commerce<br>
+                • <strong>Big Data y Analítica de Datos</strong> (Sem 6)<br>
+                • <strong>Inteligencia Artificial</strong> (Sem 8)<br>
+                • Modelos de Emprendimiento<br>
+                • <strong>Laboratorio de Innovación y Emprendimiento</strong>
+            </div>
+        </div>
+
+        <!-- COMPONENTE 6: ÁREA ELECTIVA PROFESIONAL -->
+        <div style="background:#FFFFFF; border:1.5px solid #FDE68A; border-top:4px solid #D97706; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <strong style="font-size:0.88rem; color:#1A1A1B;"><i class="fas fa-sliders-h" style="color:#D97706; margin-right:6px;"></i> 6. Área Electiva Flexible</strong>
+                <span style="background:#FEF3C7; color:#92400E; font-size:0.7rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #FDE68A;">3 Asig · 8%</span>
+            </div>
+            <div style="font-size:0.74rem; color:#475569; background:#F8FAFC; border-radius:6px; padding:10px; line-height:1.45;">
+                • Electiva Profesional I (Semestre 5)<br>
+                • Electiva Profesional II (Semestre 6)<br>
+                • Electiva Profesional III (Semestre 7)<br>
+                <em>Rutas de profundización:</em> Desarrollo Sostenible y Economía Circular, Marketing Verde, Gobernanza Corporativa, Finanzas Sostenibles, Transformación Digital.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RESUMEN OFICIAL CONVERGENTE -->
+    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div style="font-size:0.78rem; color:#334155;">
+            <strong>Consolidado Total de la Malla Oficial:</strong> 48 Asignaturas · 144 Créditos Académicos (100% de la carga curricular).
+        </div>
+        <div style="display:flex; gap:12px; font-size:0.75rem; font-weight:700;">
+            <span style="color:#F39200;"><i class="fas fa-check"></i> Transversal: 14 Asig (29%)</span>
+            <span style="color:#10B981;"><i class="fas fa-check"></i> Disciplinar: 31 Asig (64%)</span>
+            <span style="color:#7C3AED;"><i class="fas fa-check"></i> Electiva: 3 Asig (7%)</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- ========================================================================= -->
+<!-- 7. FACTORES DIFERENCIADORES DEL PROGRAMA (INTERACTIVOS CON SOLIDEZ)        -->
+<!-- ========================================================================= -->
+<div id="c1-factores-diferenciadores" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #7C3AED; border-radius:12px; padding:22px 24px; margin-bottom:28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <div style="background:#FAF5FF; color:#7C3AED; width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.35rem; border:1.5px solid #E9D5FF;">
+                <i class="fas fa-medal"></i>
+            </div>
+            <div>
+                <span style="font-size:0.72rem; text-transform:uppercase; font-weight:800; color:#5B21B6; letter-spacing:0.5px;">Propuesta de Valor Institucional</span>
+                <h4 style="font-family:'Montserrat',sans-serif; font-size:1.22rem; font-weight:800; color:#1A1A1B; margin:0;">
+                    Factores Diferenciadores de Administración de Empresas (TO)
+                </h4>
+            </div>
+        </div>
+        <span style="background:#FAF5FF; color:#5B21B6; border:1px solid #E9D5FF; font-weight:800; font-size:0.75rem; padding:4px 12px; border-radius:20px;">
+            <i class="fas fa-mouse-pointer"></i> Haga clic en cada tarjeta para ver su solidez
+        </span>
+    </div>
+
+    <p style="font-size:0.83rem; color:#475569; margin:0 0 16px; line-height:1.45;">
+        El programa de Administración de Empresas se distingue en la región y el país por cinco pilares estratégicos respaldados en el Documento Maestro. <strong>Seleccione cualquier factor para desplegar los elementos que evidencian su solidez académica, metodológica y operativa:</strong>
+    </p>
+
+    <!-- GRID DE 5 FACTORES DIFERENCIADORES CON EVENTO ONCLICK -->
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+        
+        <!-- FACTOR 1: TRANSFORMACIÓN DIGITAL, IA Y ANALÍTICA -->
+        <div onclick="window.openDiferenciadorModal('digital_ia')" style="background:#FFF9F2; border:1.5px solid #FED7AA; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease; position:relative; display:flex; flex-direction:column; justify-content:space-between;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(243,146,0,0.15)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <div style="background:#F39200; color:#FFFFFF; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span style="background:#FFFFFF; color:#C2410C; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #FED7AA;">Semestres 6 y 8</span>
+                </div>
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0 0 6px;">
+                    1. Transformación Digital, IA &amp; Big Data
+                </h5>
+                <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0 0 10px;">
+                    Integración curricular de vanguardia con <strong>Big Data y Analítica de Datos</strong> e <strong>Inteligencia Artificial</strong>, preparando administradores para la toma de decisiones basada en datos (<em>Data-Driven Management</em>).
+                </p>
+            </div>
+            <div style="border-top:1px dashed #FED7AA; padding-top:8px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; font-weight:800; color:#C2410C;"><i class="fas fa-search-plus"></i> Ver Solidez y Evidencias</span>
+                <i class="fas fa-arrow-right" style="color:#F39200; font-size:0.75rem;"></i>
+            </div>
+        </div>
+
+        <!-- FACTOR 2: SOSTENIBILIDAD Y ECONOMÍA CIRCULAR -->
+        <div onclick="window.openDiferenciadorModal('sostenibilidad')" style="background:#F0FDF4; border:1.5px solid #BBF7D0; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease; position:relative; display:flex; flex-direction:column; justify-content:space-between;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(16,185,129,0.15)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <div style="background:#10B981; color:#FFFFFF; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span style="background:#FFFFFF; color:#166534; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #BBF7D0;">Triple Impacto ODS</span>
+                </div>
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0 0 6px;">
+                    2. Sostenibilidad &amp; Economía Circular
+                </h5>
+                <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0 0 10px;">
+                    Articulación a la Agenda 2030 con asignaturas como <strong>Sistemas Integrados HSEQ</strong>, <strong>Gerencia de la Calidad</strong> y electivas de <strong>Economía Circular</strong> y Finanzas Sostenibles.
+                </p>
+            </div>
+            <div style="border-top:1px dashed #BBF7D0; padding-top:8px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; font-weight:800; color:#166534;"><i class="fas fa-search-plus"></i> Ver Solidez y Evidencias</span>
+                <i class="fas fa-arrow-right" style="color:#10B981; font-size:0.75rem;"></i>
+            </div>
+        </div>
+
+        <!-- FACTOR 3: RUTA EMPRENDEDORA Y SIMULADORES -->
+        <div onclick="window.openDiferenciadorModal('emprendimiento')" style="background:#FFF1F2; border:1.5px solid #FECDD3; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease; position:relative; display:flex; flex-direction:column; justify-content:space-between;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(200,16,46,0.15)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <div style="background:#C8102E; color:#FFFFFF; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <span style="background:#FFFFFF; color:#9F1239; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #FECDD3;">Secuencial Sem 6 a 8</span>
+                </div>
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0 0 6px;">
+                    3. Ruta Emprendedora &amp; Simuladores
+                </h5>
+                <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0 0 10px;">
+                    Cadena formativa aplicada: <strong>Modelos de Emprendimiento</strong> → <strong>Formulación de Proyectos</strong> → <strong>Laboratorio de Innovación</strong> → <strong>Juego Gerencial de Negocios</strong> en tiempo real.
+                </p>
+            </div>
+            <div style="border-top:1px dashed #FECDD3; padding-top:8px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; font-weight:800; color:#9F1239;"><i class="fas fa-search-plus"></i> Ver Solidez y Evidencias</span>
+                <i class="fas fa-arrow-right" style="color:#C8102E; font-size:0.75rem;"></i>
+            </div>
+        </div>
+
+        <!-- FACTOR 4: REGISTRO ÚNICO Y MOVILIDAD HORIZONTAL -->
+        <div onclick="window.openDiferenciadorModal('registro_unico')" style="background:#FAF5FF; border:1.5px solid #E9D5FF; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease; position:relative; display:flex; flex-direction:column; justify-content:space-between;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(124,58,237,0.15)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <div style="background:#7C3AED; color:#FFFFFF; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <span style="background:#FFFFFF; color:#6B21A8; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #E9D5FF;">Dual Presencial &amp; Virtual</span>
+                </div>
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0 0 6px;">
+                    4. Registro Único &amp; Movilidad Fluida
+                </h5>
+                <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0 0 10px;">
+                    Idéntica promesa de formación, mismas 48 asignaturas y 144 RAP. Permite transferencia directa entre presencial y virtual según la dinámica laboral del estudiante sin costos de homologación.
+                </p>
+            </div>
+            <div style="border-top:1px dashed #E9D5FF; padding-top:8px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; font-weight:800; color:#6B21A8;"><i class="fas fa-search-plus"></i> Ver Solidez y Evidencias</span>
+                <i class="fas fa-arrow-right" style="color:#7C3AED; font-size:0.75rem;"></i>
+            </div>
+        </div>
+
+        <!-- FACTOR 5: FORMACIÓN EN CONTEXTOS DE APLICACIÓN Y EMPLEABILIDAD -->
+        <div onclick="window.openDiferenciadorModal('empleabilidad')" style="background:#F8FAFC; border:1.5px solid #CBD5E1; border-radius:10px; padding:18px; cursor:pointer; transition:all 0.25s ease; position:relative; display:flex; flex-direction:column; justify-content:space-between;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 20px rgba(30,41,59,0.15)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                    <div style="background:#1A1A1B; color:#FFFFFF; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <span style="background:#FFFFFF; color:#1E293B; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:4px; border:1px solid #CBD5E1;">71% OLE · 94.4% SAT</span>
+                </div>
+                <h5 style="font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; color:#1A1A1B; margin:0 0 6px;">
+                    5. Contextos de Aplicación &amp; Empleabilidad
+                </h5>
+                <p style="font-size:0.78rem; color:#4B5563; line-height:1.45; margin:0 0 10px;">
+                    Modelo institucional de transferencia a problemas reales. <strong>Pasantías en diferentes sectores económicos</strong>, inserción laboral rápida (71% en menos de 6 meses) y 94.4% de retención semestral.
+                </p>
+            </div>
+            <div style="border-top:1px dashed #CBD5E1; padding-top:8px; display:flex; justify-content:space-between; align-items:center;">
+                <span style="font-size:0.72rem; font-weight:800; color:#1E293B;"><i class="fas fa-search-plus"></i> Ver Solidez y Evidencias</span>
+                <i class="fas fa-arrow-right" style="color:#1A1A1B; font-size:0.75rem;"></i>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ========================================================================= -->
+<!-- 8. MAPA CONCEPTUAL SISTÉMICO: PERTINENCIA INTEGRAL DE LA DENOMINACIÓN     -->
+<!-- ========================================================================= -->
+<div id="c1-mapa-conceptual" style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #10B981; border-radius:12px; padding:22px; margin-bottom:24px; box-shadow:0 4px 14px rgba(0,0,0,0.04);">
     
     <!-- ENCABEZADO DEL MAPA CONCEPTUAL -->
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:20px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div style="display:flex; align-items:center; gap:10px;">
-            <div style="background:#F0FDF4; color:#2ECC71; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; border:1px solid #BBF7D0;">
+            <div style="background:#F0FDF4; color:#10B981; width:38px; height:38px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; border:1px solid #BBF7D0;">
                 <i class="fas fa-project-diagram"></i>
             </div>
             <div>
@@ -233,7 +866,7 @@ window.SECTIONS['c1'] = `
                     Mapa Conceptual: Pertinencia Sistémica de la Denominación
                 </h4>
                 <span style="font-size:0.75rem; color:#64748B;">
-                    Articulación integral entre denominación, taxonomía CINE, benchmarking, malla de 48 asignaturas, Registro Único e impacto social
+                    Articulación integral entre denominación, taxonomía CINE, benchmarking, componentes de Tabla 16, Registro Único e impacto social
                 </span>
             </div>
         </div>
@@ -258,7 +891,7 @@ window.SECTIONS['c1'] = `
                 <i class="fas fa-clock" style="color:#F39200;"></i> 8 Semestres (4 Años)
             </span>
             <span style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); padding:3px 10px; border-radius:15px; color:#FFFFFF;">
-                <i class="fas fa-layer-group" style="color:#2ECC71;"></i> 144 Créditos Académicos
+                <i class="fas fa-layer-group" style="color:#10B981;"></i> 144 Créditos Académicos
             </span>
             <span style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); padding:3px 10px; border-radius:15px; color:#FFFFFF;">
                 <i class="fas fa-book" style="color:#38BDF8;"></i> 48 Asignaturas Modulares
@@ -267,7 +900,7 @@ window.SECTIONS['c1'] = `
                 <i class="fas fa-users" style="color:#C084FC;"></i> 300 Cupos (240 Virt / 60 Pres)
             </span>
             <span style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); padding:3px 10px; border-radius:15px; color:#FFFFFF;">
-                <i class="fas fa-fingerprint" style="color:#FB7185;"></i> SNIES: 108524
+                <i class="fas fa-fingerprint" style="color:#FB7185;"></i> SNIES 108445 / 115833
             </span>
         </div>
     </div>
@@ -283,7 +916,7 @@ window.SECTIONS['c1'] = `
                         <div style="background:#F1F5F9; color:#1E293B; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
                             <i class="fas fa-balance-scale"></i>
                         </div>
-                        <strong style="font-size:0.88rem; color:#1A1A1B;">1. Marco Taxonómico &amp; Normativo</strong>
+                        <strong style="font-size:0.88rem; color:#1A1A1B;">1. Marco Taxonómico &amp; Legal</strong>
                     </div>
                     <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:4px;">Taxonomía</span>
                 </div>
@@ -293,7 +926,7 @@ window.SECTIONS['c1'] = `
                 <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px; padding:10px; font-size:0.74rem; line-height:1.45; color:#334155;">
                     • <strong>UNESCO CINE-F 2013:</strong> Campo Amplio 04 (Administración y Derecho) · Detallado 0413 (Gestión y Administración).<br>
                     • <strong>SNIES / MEN:</strong> Área de Economía, Administración y afines · Núcleo Básico (NBC) Administración.<br>
-                    • <strong>Sustento Legal:</strong> Decreto 1330 de 2019 y Resolución 2767 de 2003 para programas de Administración.
+                    • <strong>Sustento Legal:</strong> Decreto 1330 de 2019, Ley 30 de 1992 y Resolución 2767 de 2003.
                 </div>
             </div>
             <button onclick="window.openC1Modal('benchmarking')" style="margin-top:12px; background:#F8FAFC; border:1px solid #CBD5E1; color:#1E293B; font-size:0.72rem; font-weight:700; padding:5px 10px; border-radius:4px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
@@ -302,11 +935,11 @@ window.SECTIONS['c1'] = `
         </div>
 
         <!-- RAMA 2: BENCHMARKING DE ALTA CALIDAD -->
-        <div style="background:#FFFFFF; border:1.5px solid #BBF7D0; border-top:4px solid #2ECC71; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
+        <div style="background:#FFFFFF; border:1.5px solid #BBF7D0; border-top:4px solid #10B981; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
             <div>
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                     <div style="display:flex; align-items:center; gap:8px;">
-                        <div style="background:#F0FDF4; color:#2ECC71; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                        <div style="background:#F0FDF4; color:#10B981; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
                             <i class="fas fa-globe-americas"></i>
                         </div>
                         <strong style="font-size:0.88rem; color:#1A1A1B;">2. Benchmarking Internacional</strong>
@@ -328,40 +961,41 @@ window.SECTIONS['c1'] = `
             </button>
         </div>
 
-        <!-- RAMA 3: COHERENCIA DE LAS 48 MATERIAS EN 5 PILARES -->
-        <div style="background:#FFFFFF; border:1.5px solid #BAE6FD; border-top:4px solid #0369A1; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
+        <!-- RAMA 3: COMPONENTES CURRICULARES (TABLA 16) -->
+        <div style="background:#FFFFFF; border:1.5px solid #FED7AA; border-top:4px solid #F39200; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
             <div>
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                     <div style="display:flex; align-items:center; gap:8px;">
-                        <div style="background:#F0F9FF; color:#0369A1; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                        <div style="background:#FFF9F2; color:#F39200; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
                             <i class="fas fa-cubes"></i>
                         </div>
-                        <strong style="font-size:0.88rem; color:#1A1A1B;">3. Coherencia Curricular (48 Asignaturas)</strong>
+                        <strong style="font-size:0.88rem; color:#1A1A1B;">3. Componentes Curriculares</strong>
                     </div>
-                    <span style="background:#E0F2FE; color:#0369A1; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:4px;">5 Pilares</span>
+                    <span style="background:#FFEDD5; color:#C2410C; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:4px;">Tabla 16 Oficial</span>
                 </div>
                 <p style="font-size:0.75rem; color:#64748B; margin:0 0 10px; line-height:1.4;">
-                    El término 'Empresas' se sustenta en el equilibrio integral de todas las áreas funcionales:
+                    Estructura formal de 48 asignaturas basada en los componentes del Documento Maestro:
                 </p>
-                <div style="background:#F0F9FF; border:1px solid #BAE6FD; border-radius:6px; padding:10px; font-size:0.74rem; line-height:1.45; color:#0369A1;">
-                    • <strong>Estratégico:</strong> 10 materias (Dirección, Simulación de Negocios).<br>
-                    • <strong>Financiero:</strong> 11 materias (Finanzas corporativas, Costos, Proyectos).<br>
-                    • <strong>Operaciones &amp; Mercadeo:</strong> 10 materias (SCM, Calidad, HSEQ, Marketing).<br>
-                    • <strong>Talento Humano:</strong> 8 materias (Liderazgo, Clima, RSE y Bioética).<br>
-                    • <strong>Sello 4.0 TO:</strong> 9 materias (Big Data, Inteligencia Artificial, Innovación).
+                <div style="background:#FFF9F2; border:1px solid #FED7AA; border-radius:6px; padding:10px; font-size:0.74rem; line-height:1.45; color:#9A3412;">
+                    • <strong>Administración y Gestión:</strong> 11 materias (23%).<br>
+                    • <strong>Ciencias Básicas y Cuantitativas:</strong> 5 materias (10%).<br>
+                    • <strong>Economía y Finanzas:</strong> 8 materias (16%).<br>
+                    • <strong>Legislación, Investigación &amp; Hab.:</strong> 12 materias (25%).<br>
+                    • <strong>Mercadeo, Tecnología &amp; Emprendimiento:</strong> 9 materias (18%).<br>
+                    • <strong>Área Electiva Flexible:</strong> 3 materias (8%).
                 </div>
             </div>
-            <button onclick="window.openC1Modal('coherencia')" style="margin-top:12px; background:#F0F9FF; border:1px solid #BAE6FD; color:#0369A1; font-size:0.72rem; font-weight:700; padding:5px 10px; border-radius:4px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
-                Ver Malla por Pilares <i class="fas fa-external-link-alt"></i>
+            <button onclick="window.openC1Modal('coherencia')" style="margin-top:12px; background:#FFF9F2; border:1px solid #FED7AA; color:#9A3412; font-size:0.72rem; font-weight:700; padding:5px 10px; border-radius:4px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
+                Ver Malla por Componentes <i class="fas fa-external-link-alt"></i>
             </button>
         </div>
 
-        <!-- RAMA 4: EQUIVALENCIA DUAL EN REGISTRO ÚNICO -->
-        <div style="background:#FFFFFF; border:1.5px solid #E9D5FF; border-top:4px solid #6B21A8; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
+        <!-- RAMA 4: ARMONIZACIÓN EN REGISTRO ÚNICO (PRESENCIAL Y VIRTUAL) -->
+        <div style="background:#FFFFFF; border:1.5px solid #E9D5FF; border-top:4px solid #7C3AED; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
             <div>
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                     <div style="display:flex; align-items:center; gap:8px;">
-                        <div style="background:#FAF5FF; color:#6B21A8; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                        <div style="background:#FAF5FF; color:#7C3AED; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
                             <i class="fas fa-balance-scale-right"></i>
                         </div>
                         <strong style="font-size:0.88rem; color:#1A1A1B;">4. Armonización en Registro Único</strong>
@@ -372,8 +1006,8 @@ window.SECTIONS['c1'] = `
                     Dos mediaciones pedagógicas convergentes que garantizan idéntica calidad y resultados:
                 </p>
                 <div style="background:#FAF5FF; border:1px solid #E9D5FF; border-radius:6px; padding:10px; font-size:0.74rem; line-height:1.45; color:#6B21A8;">
-                    • <strong>Presencial (Bucaramanga):</strong> Campus físico, talleres directos, relación 1:2.<br>
-                    • <strong>Virtual (Nacional):</strong> Campus LMS Moodle 24/7, simuladores nube, relación 1:3.<br>
+                    • <strong>Presencial (Bucaramanga):</strong> Campus físico, clases directas en aula y laboratorios, relación 1:2 (48h/96h).<br>
+                    • <strong>Virtual (Nacional):</strong> Campus LMS Moodle 24/7, simuladores en la nube, relación 1:3 (36h/108h).<br>
                     • <strong>Identidad Común:</strong> Mismo título, mismas 48 asignaturas, idénticos 144 RAP, rúbrica de evaluación y libre movilidad.
                 </div>
             </div>
@@ -382,29 +1016,29 @@ window.SECTIONS['c1'] = `
             </button>
         </div>
 
-        <!-- RAMA 5: PERTINENCIA SOCIAL, RAP & EGRESADOS -->
-        <div style="background:#FFFFFF; border:1.5px solid #FECDD3; border-top:4px solid #BE123C; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
+        <!-- RAMA 5: PERTINENCIA SOCIAL, RAP & EGRESADOS (TABLA 35) -->
+        <div style="background:#FFFFFF; border:1.5px solid #FECDD3; border-top:4px solid #C8102E; border-radius:10px; padding:16px; box-shadow:0 2px 6px rgba(0,0,0,0.02); display:flex; flex-direction:column; justify-content:space-between;">
             <div>
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
                     <div style="display:flex; align-items:center; gap:8px;">
-                        <div style="background:#FFF1F2; color:#BE123C; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
+                        <div style="background:#FFF1F2; color:#C8102E; width:30px; height:30px; border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:0.85rem;">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <strong style="font-size:0.88rem; color:#1A1A1B;">5. Pertinencia Social &amp; Egresados</strong>
                     </div>
-                    <span style="background:#FFE4E6; color:#BE123C; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:4px;">Impacto</span>
+                    <span style="background:#FFE4E6; color:#9F1239; font-size:0.68rem; font-weight:800; padding:2px 6px; border-radius:4px;">Impacto OLE</span>
                 </div>
                 <p style="font-size:0.75rem; color:#64748B; margin:0 0 10px; line-height:1.4;">
                     Validación de la denominación en el desempeño laboral e impacto en el sector empresarial:
                 </p>
                 <div style="background:#FFF1F2; border:1px solid #FECDD3; border-radius:6px; padding:10px; font-size:0.74rem; line-height:1.45; color:#9F1239;">
-                    • <strong>RAP 1, 2 y 3:</strong> Dirección Estratégica, Toma de Decisiones 4.0 con IA y Sostenibilidad.<br>
+                    • <strong>Competencias &amp; RAP:</strong> 10 competencias alineadas 1 a 1 en Tabla 35 oficial.<br>
                     • <strong>Inserción Laboral Rápida:</strong> 71.0% empleados en menos de 6 meses (OLE).<br>
                     • <strong>Cotización Formal:</strong> 78.5% aportantes al sistema pensional y salud.<br>
                     • <strong>Permanencia:</strong> 94.4% de retención semestral consolidada (SAT TO).
                 </div>
             </div>
-            <button onclick="window.openC1Modal('impacto')" style="margin-top:12px; background:#FFF1F2; border:1px solid #FECDD3; color:#BE123C; font-size:0.72rem; font-weight:700; padding:5px 10px; border-radius:4px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
+            <button onclick="window.openC1Modal('impacto')" style="margin-top:12px; background:#FFF1F2; border:1px solid #FECDD3; color:#9F1239; font-size:0.72rem; font-weight:700; padding:5px 10px; border-radius:4px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px;">
                 Ver Indicadores OLE <i class="fas fa-external-link-alt"></i>
             </button>
         </div>
@@ -414,7 +1048,7 @@ window.SECTIONS['c1'] = `
 </div>
 
 <!-- ========================================================================= -->
-<!-- 5. VENTANA EMERGENTE MODAL EN SEGUNDO PLANO (PROFUNDIZACIÓN TEMÁTICA)     -->
+<!-- 9. VENTANA EMERGENTE MODAL (PROFUNDIZACIÓN TEMÁTICA EN SEGUNDO PLANO)     -->
 <!-- ========================================================================= -->
 <div id="c1-modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15, 23, 42, 0.78); backdrop-filter:blur(5px); z-index:999999; align-items:center; justify-content:center; padding:16px; box-sizing:border-box;">
     
@@ -441,17 +1075,17 @@ window.SECTIONS['c1'] = `
 
         <!-- SUBPESTAÑAS DE NAVEGACIÓN DENTRO DEL MODAL -->
         <div style="background:#F8F9FA; padding:8px 16px; border-bottom:1px solid #E8E8E8; display:flex; flex-wrap:wrap; gap:6px;" id="c1-modal-nav-tabs">
-            <button data-c1tab="benchmarking" onclick="window.switchC1ModalTab('benchmarking')" class="c1-mtab active" style="background:#FFFFFF; border:1.5px solid #2ECC71; color:#166534; font-weight:800; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
-                <i class="fas fa-network-wired" style="color:#2ECC71;"></i> Justificación &amp; Benchmarking
+            <button data-c1tab="benchmarking" onclick="window.switchC1ModalTab('benchmarking')" class="c1-mtab active" style="background:#FFFFFF; border:1.5px solid #10B981; color:#065F46; font-weight:800; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
+                <i class="fas fa-network-wired" style="color:#10B981;"></i> Justificación &amp; Benchmarking
             </button>
             <button data-c1tab="coherencia" onclick="window.switchC1ModalTab('coherencia')" class="c1-mtab" style="background:#FFFFFF; border:1px solid #CBD5E1; color:#475569; font-weight:700; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
-                <i class="fas fa-sitemap" style="color:#0369A1;"></i> Coherencia Curricular (48 Asignaturas)
+                <i class="fas fa-cubes" style="color:#EA580C;"></i> Componentes Curriculares (Tabla 16)
             </button>
             <button data-c1tab="modalidades" onclick="window.switchC1ModalTab('modalidades')" class="c1-mtab" style="background:#FFFFFF; border:1px solid #CBD5E1; color:#475569; font-weight:700; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
-                <i class="fas fa-balance-scale-right" style="color:#6B21A8;"></i> Registro Único &amp; Modalidades
+                <i class="fas fa-balance-scale-right" style="color:#7C3AED;"></i> Registro Único &amp; Modalidades
             </button>
             <button data-c1tab="impacto" onclick="window.switchC1ModalTab('impacto')" class="c1-mtab" style="background:#FFFFFF; border:1px solid #CBD5E1; color:#475569; font-weight:700; font-size:0.75rem; padding:6px 12px; border-radius:6px; cursor:pointer;">
-                <i class="fas fa-chart-line" style="color:#BE123C;"></i> Pertinencia &amp; Impacto Social
+                <i class="fas fa-chart-line" style="color:#C8102E;"></i> Pertinencia, OLE &amp; RAP
             </button>
         </div>
 
@@ -462,7 +1096,7 @@ window.SECTIONS['c1'] = `
             <div id="c1-panel-benchmarking" class="c1-modal-panel" style="display:block;">
                 <div style="background:#F8F9FA; border-radius:10px; padding:14px; margin-bottom:16px; border:1px solid #E2E8F0;">
                     <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
-                        <i class="fas fa-sitemap" style="color:#2ECC71;"></i> Alineación Taxonómica Internacional y Nacional
+                        <i class="fas fa-sitemap" style="color:#10B981;"></i> Alineación Taxonómica Internacional y Nacional
                     </h5>
                     
                     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap:10px;">
@@ -476,7 +1110,7 @@ window.SECTIONS['c1'] = `
                             <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">0413 · Gestión y Administración</div>
                             <div style="font-size:0.72rem; color:#64748B;">Dirección estratégica de organizaciones</div>
                         </div>
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #2ECC71; padding:10px 12px; border-radius:6px;">
+                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; padding:10px 12px; border-radius:6px;">
                             <div style="font-size:0.68rem; font-weight:800; color:#6B6B6B; text-transform:uppercase;">SNIES / MEN Colombia</div>
                             <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">Área de Conocimiento</div>
                             <div style="font-size:0.72rem; color:#64748B;">Economía, Administración, Contaduría y afines</div>
@@ -484,13 +1118,13 @@ window.SECTIONS['c1'] = `
                         <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; padding:10px 12px; border-radius:6px;">
                             <div style="font-size:0.68rem; font-weight:800; color:#6B6B6B; text-transform:uppercase;">Núcleo Básico (NBC)</div>
                             <div style="font-weight:800; font-size:0.86rem; color:#1A1A1B; margin:2px 0;">NBC Administración</div>
-                            <div style="font-size:0.72rem; color:#64748B;">Código SNIES Oficial SACES: 108524</div>
+                            <div style="font-size:0.72rem; color:#64748B;">SNIES Presencial 108445 · Virtual 115833</div>
                         </div>
                     </div>
                 </div>
 
                 <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
-                    <i class="fas fa-balance-scale" style="color:#2ECC71;"></i> Benchmarking con IES Nacionales e Internacionales Acreditadas (Estándar 8 Semestres)
+                    <i class="fas fa-balance-scale" style="color:#10B981;"></i> Benchmarking con IES Nacionales e Internacionales Acreditadas (Estándar 8 Semestres)
                 </h5>
                 
                 <div style="overflow-x:auto; border:1px solid #E8E8E8; border-radius:8px;">
@@ -551,84 +1185,109 @@ window.SECTIONS['c1'] = `
                 </div>
             </div>
 
-            <!-- PANEL 2: COHERENCIA CURRICULAR (48 ASIGNATURAS) -->
+            <!-- PANEL 2: COHERENCIA CURRICULAR SEGÚN TABLA 16 DEL DOCUMENTO MAESTRO -->
             <div id="c1-panel-coherencia" class="c1-modal-panel" style="display:none;">
                 <p style="font-size:0.82rem; color:#4B5563; margin:0 0 14px; line-height:1.45;">
-                    La denominación <strong>"Administración de Empresas"</strong> se fundamenta en un plan de estudios estructurado en <strong>5 pilares disciplinares</strong> que cubren rigurosamente todas las áreas funcionales de la organización:
+                    La denominación <strong>"Administración de Empresas"</strong> se fundamenta en un plan de estudios estructurado en los <strong>componentes formativos fidedignos definidos en la Tabla 16 (págs. 109-110) del Documento Maestro oficial</strong>:
                 </p>
 
                 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px;">
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #1A1A1B; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
+                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #F39200; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
                         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-sitemap" style="color:#F39200;"></i> 1. Estratégico y Organizacional</strong>
-                            <span style="font-size:0.66rem; font-weight:800; color:#1A1A1B; background:#E8E8E8; padding:2px 5px; border-radius:4px;">10 Materias</span>
+                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-sitemap" style="color:#F39200;"></i> 1. Administración y Gestión</strong>
+                            <span style="font-size:0.66rem; font-weight:800; color:#C2410C; background:#FFEDD5; padding:2px 5px; border-radius:4px;">11 Materias (23%)</span>
                         </div>
                         <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
                             • Fundamentos de Administración<br>
-                            • Teorías Organizacionales<br>
-                            • Planeación Estratégica<br>
-                            • Dirección y Gobierno Corporativo<br>
-                            • <strong>Simulación Gerencial (Juego de Negocios)</strong><br>
-                            • Gestión Pública y Empresarial
-                        </div>
-                    </div>
-
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #2ECC71; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
-                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-coins" style="color:#2ECC71;"></i> 2. Financiero y Económico</strong>
-                            <span style="font-size:0.66rem; font-weight:800; color:#166534; background:#DCFCE7; padding:2px 5px; border-radius:4px;">11 Materias</span>
-                        </div>
-                        <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
-                            • Matemáticas Financieras<br>
-                            • Contabilidad Financiera y Gerencial<br>
-                            • Costos y Presupuestos Empresariales<br>
-                            • Microeconomía y Macroeconomía<br>
-                            • Finanzas Corporativas y Mercado de Capitales<br>
-                            • Evaluación Financiera de Proyectos
-                        </div>
-                    </div>
-
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #F39200; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
-                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-truck-moving" style="color:#F39200;"></i> 3. Operaciones &amp; Mercadeo</strong>
-                            <span style="font-size:0.66rem; font-weight:800; color:#C2410C; background:#FFEDD5; padding:2px 5px; border-radius:4px;">10 Materias</span>
-                        </div>
-                        <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
-                            • Gestión de Operaciones y Procesos<br>
-                            • Logística y Cadena de Suministro (SCM)<br>
+                            • Procesos Administrativos<br>
+                            • Teoría Organizacional<br>
+                            • Pensamiento Estratégico y Prospectivo<br>
+                            • Gestión de Operaciones<br>
+                            • Gerencia de Producción<br>
+                            • Gerencia de la Calidad<br>
                             • Sistemas Integrados de Gestión (HSEQ)<br>
-                            • Gerencia de la Calidad y Productividad<br>
-                            • Marketing Estratégico y E-commerce<br>
-                            • Negocios y Gerencia Internacional
+                            • Negocios y Gerencia Internacional<br>
+                            • <strong>Juego Gerencial (Simulación de Negocios)</strong><br>
+                            • Proyecto de Grado
                         </div>
                     </div>
 
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #9B59B6; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
+                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #1A1A1B; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
                         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-users-cog" style="color:#9B59B6;"></i> 4. Talento Humano y Ética</strong>
-                            <span style="font-size:0.66rem; font-weight:800; color:#6B21A8; background:#F3E8FF; padding:2px 5px; border-radius:4px;">8 Materias</span>
+                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-calculator" style="color:#1A1A1B;"></i> 2. Ciencias Básicas &amp; Cuantitativas</strong>
+                            <span style="font-size:0.66rem; font-weight:800; color:#1E293B; background:#F1F5F9; padding:2px 5px; border-radius:4px;">5 Materias (10%)</span>
                         </div>
                         <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
-                            • Gestión del Talento Humano<br>
-                            • Comportamiento Organizacional y Clima<br>
-                            • Habilidades Gerenciales y Liderazgo Ético<br>
-                            • Legislación Laboral y Comercial<br>
-                            • Responsabilidad Social Empresarial (RSE)<br>
-                            • Cátedra Institucional TO y Ética
+                            • Álgebra Lineal<br>
+                            • Cálculo Diferencial<br>
+                            • Estadística Descriptiva<br>
+                            • Estadística Inferencial<br>
+                            • Métodos Cualitativos y Cuantitativos
                         </div>
                     </div>
 
-                    <div style="background:#FFF9F2; border:2px solid #FED7AA; border-radius:8px; padding:12px;">
+                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #10B981; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
                         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                            <strong style="font-size:0.84rem; color:#C2410C;"><i class="fas fa-robot" style="color:#F39200;"></i> 5. Sello Diferenciador 4.0</strong>
-                            <span style="font-size:0.66rem; font-weight:800; color:#FFFFFF; background:#F39200; padding:2px 5px; border-radius:4px;">Vanguardia TO</span>
+                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-coins" style="color:#10B981;"></i> 3. Economía y Finanzas</strong>
+                            <span style="font-size:0.66rem; font-weight:800; color:#166534; background:#DCFCE7; padding:2px 5px; border-radius:4px;">8 Materias (16%)</span>
                         </div>
-                        <div style="font-size:0.73rem; color:#431407; background:#FFFFFF; padding:8px; border-radius:4px; line-height:1.4; border:1px solid #FED7AA;">
+                        <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
+                            • Fundamentos Contables y Financieros<br>
+                            • Análisis Financiero<br>
+                            • Administración Financiera<br>
+                            • Costos y Presupuestos<br>
+                            • Matemática Financiera<br>
+                            • Legislación Tributaria<br>
+                            • Microeconomía<br>
+                            • Macroeconomía
+                        </div>
+                    </div>
+
+                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #7C3AED; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-balance-scale" style="color:#7C3AED;"></i> 4. Legislación, Investigación &amp; Hab.</strong>
+                            <span style="font-size:0.66rem; font-weight:800; color:#6B21A8; background:#F3E8FF; padding:2px 5px; border-radius:4px;">12 Materias (25%)</span>
+                        </div>
+                        <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
+                            • Legislación Comercial<br>
+                            • Derecho Laboral y Seguridad Social<br>
+                            • Comunicación Oral y Escrita<br>
+                            • Cátedra de la Paz y Resolución de Conflictos<br>
+                            • Habilidades Gerenciales y Liderazgo<br>
+                            • Gerencia del Talento Humano<br>
+                            • Competencias Investigativas<br>
+                            • Formación bilingüe: Inglés I, II, III
+                        </div>
+                    </div>
+
+                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #C8102E; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-rocket" style="color:#C8102E;"></i> 5. Mercadeo, Tec. &amp; Emprendimiento</strong>
+                            <span style="font-size:0.66rem; font-weight:800; color:#9F1239; background:#FFE4E6; padding:2px 5px; border-radius:4px;">9 Materias (18%)</span>
+                        </div>
+                        <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
+                            • Fundamentos de Mercadeo<br>
+                            • Gerencia de Marketing<br>
+                            • Investigación de Mercados<br>
+                            • Gerencia de Ventas y Canales de Distribución<br>
+                            • E-commerce<br>
                             • <strong>Big Data y Analítica de Datos</strong> (Sem 6)<br>
-                            • <strong>Inteligencia Artificial en los Negocios</strong> (Sem 7)<br>
-                            • Modelos de Emprendimiento Sostenible (Sem 5)<br>
-                            • <strong>Laboratorio de Innovación Empresarial</strong> (Sem 6)<br>
-                            • Transformación Digital Organizacional
+                            • <strong>Inteligencia Artificial</strong> (Sem 8)<br>
+                            • Modelos de Emprendimiento<br>
+                            • <strong>Laboratorio de Innovación y Emprendimiento</strong>
+                        </div>
+                    </div>
+
+                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:4px solid #D97706; border-radius:8px; padding:12px; box-shadow:0 2px 5px rgba(0,0,0,0.02);">
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                            <strong style="font-size:0.84rem; color:#1A1A1B;"><i class="fas fa-sliders-h" style="color:#D97706;"></i> 6. Área Electiva Profesional</strong>
+                            <span style="font-size:0.66rem; font-weight:800; color:#92400E; background:#FEF3C7; padding:2px 5px; border-radius:4px;">3 Materias (8%)</span>
+                        </div>
+                        <div style="font-size:0.73rem; color:#374151; background:#F8F9FA; padding:8px; border-radius:4px; line-height:1.4;">
+                            • Electiva Profesional I (Semestre 5)<br>
+                            • Electiva Profesional II (Semestre 6)<br>
+                            • Electiva Profesional III (Semestre 7)<br>
+                            <em>Profundizaciones:</em> Economía Circular, Marketing Verde, Gobernanza Corporativa, Finanzas Sostenibles y Transformación Digital.
                         </div>
                     </div>
                 </div>
@@ -637,6 +1296,8 @@ window.SECTIONS['c1'] = `
             <!-- PANEL 3: REGISTRO ÚNICO & MODALIDADES -->
             <div id="c1-panel-modalidades" class="c1-modal-panel" style="display:none;">
                 <div style="display:grid; grid-template-columns: 1fr 1.15fr 1fr; gap:12px; align-items:stretch;">
+                    
+                    <!-- MODALIDAD PRESENCIAL (CORREGIDA: CERO ENCUENTROS SINCRÓNICOS, PASANTÍAS EN DIFERENTES SECTORES) -->
                     <div style="background:#FFF9F2; border:1.5px solid #FED7AA; border-radius:8px; padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
                         <div>
                             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
@@ -645,22 +1306,23 @@ window.SECTIONS['c1'] = `
                                 </div>
                                 <div>
                                     <strong style="color:#C2410C; font-size:0.84rem; display:block;">Modalidad Presencial</strong>
-                                    <span style="font-size:0.66rem; color:#7C2D12;">Sede Principal Bucaramanga (60 cupos)</span>
+                                    <span style="font-size:0.66rem; color:#7C2D12;">Sede Bucaramanga (SNIES 108445 · 60 cupos)</span>
                                 </div>
                             </div>
-                            <ul style="font-size:0.73rem; color:#431407; margin:0; padding-left:14px; line-height:1.4;">
-                                <li><strong>Mediación Física:</strong> Aulas interactivas en Sedes A, B y C de la TO.</li>
-                                <li><strong>Laboratorios:</strong> Salas de cómputo y centros de simulación física.</li>
-                                <li><strong>Interacción Directa:</strong> Encuentros sincrónicos en campus.</li>
-                                <li><strong>Relación Crédito 1:2:</strong> 48h acompañamiento / 96h independiente.</li>
-                                <li><strong>Networking Local:</strong> Pasantías en 32.450 empresas de Santander.</li>
+                            <ul style="font-size:0.73rem; color:#431407; margin:0; padding-left:14px; line-height:1.45;">
+                                <li><strong>Mediación Física:</strong> Clases presenciales en aulas interactivas en Sedes A, B y C de la TO.</li>
+                                <li><strong>Infraestructura:</strong> Salas de cómputo especializadas y centros de simulación física.</li>
+                                <li><strong>Interacción Directa:</strong> Clases presenciales directas en aula y tutoría docente directa en campus.</li>
+                                <li><strong>Relación Crédito 1:2:</strong> 48h acompañamiento directo / 96h trabajo independiente.</li>
+                                <li><strong>Networking Empresarial:</strong> Pasantías en diferentes sectores económicos del ámbito regional y nacional.</li>
                             </ul>
                         </div>
                         <div style="background:#FFFFFF; padding:5px 8px; border-radius:4px; font-size:0.7rem; color:#C2410C; font-weight:700; text-align:center; margin-top:8px; border:1px solid #FED7AA;">
-                            <i class="fas fa-arrow-right"></i> Converge en los mismos RAP
+                            <i class="fas fa-arrow-right"></i> Converge en los mismos 144 RAP
                         </div>
                     </div>
 
+                    <!-- NÚCLEO COMÚN SACES REGISTRO ÚNICO -->
                     <div style="background:linear-gradient(135deg, #1A1A1B 0%, #2D2D2E 100%); color:#FFFFFF; border:2px solid #F39200; border-radius:10px; padding:14px; text-align:center; display:flex; flex-direction:column; justify-content:space-between;">
                         <div>
                             <div style="background:#F39200; color:#FFFFFF; display:inline-block; font-size:0.66rem; font-weight:800; padding:2px 8px; border-radius:20px; text-transform:uppercase; margin-bottom:8px;">
@@ -672,13 +1334,13 @@ window.SECTIONS['c1'] = `
                             <p style="font-size:0.74rem; color:#D1D1D1; margin:0 0 10px;">
                                 Idéntica promesa de formación y perfil:
                             </p>
-                            <div style="background:rgba(255,255,255,0.08); border-radius:6px; padding:8px 10px; font-size:0.72rem; color:#FFFFFF; text-align:left; line-height:1.4;">
-                                <i class="fas fa-check" style="color:#2ECC71;"></i> <strong>Mismo Título:</strong> Administrador(a) de Empresas.<br>
-                                <i class="fas fa-check" style="color:#2ECC71;"></i> <strong>Misma Duración:</strong> 144 créditos en 8 semestres.<br>
-                                <i class="fas fa-check" style="color:#2ECC71;"></i> <strong>Mismas 48 Asignaturas:</strong> Sílabos idénticos.<br>
-                                <i class="fas fa-check" style="color:#2ECC71;"></i> <strong>Mismos RAP:</strong> 3 RA por materia (144 totales).<br>
-                                <i class="fas fa-check" style="color:#2ECC71;"></i> <strong>Rúbrica Institucional:</strong> 60% Saber, 30% Pro, 10% Ser.<br>
-                                <i class="fas fa-check" style="color:#2ECC71;"></i> <strong>Movilidad Fluida:</strong> Sin costos de homologación.
+                            <div style="background:rgba(255,255,255,0.08); border-radius:6px; padding:8px 10px; font-size:0.72rem; color:#FFFFFF; text-align:left; line-height:1.45;">
+                                <i class="fas fa-check" style="color:#10B981;"></i> <strong>Mismo Título:</strong> Administrador(a) de Empresas.<br>
+                                <i class="fas fa-check" style="color:#10B981;"></i> <strong>Misma Duración:</strong> 144 créditos en 8 semestres.<br>
+                                <i class="fas fa-check" style="color:#10B981;"></i> <strong>Mismas 48 Asignaturas:</strong> Sílabos idénticos.<br>
+                                <i class="fas fa-check" style="color:#10B981;"></i> <strong>Mismos RAP:</strong> 10 RAP y 144 específicos.<br>
+                                <i class="fas fa-check" style="color:#10B981;"></i> <strong>Rúbrica Institucional:</strong> 60% Saber, 30% Pro, 10% Ser.<br>
+                                <i class="fas fa-check" style="color:#10B981;"></i> <strong>Movilidad Horizontal:</strong> Libre y sin costos de homologación.
                             </div>
                         </div>
                         <div style="font-size:0.7rem; color:#F39200; font-weight:700; margin-top:6px;">
@@ -686,82 +1348,72 @@ window.SECTIONS['c1'] = `
                         </div>
                     </div>
 
-                    <div style="background:#F0F9FF; border:1.5px solid #BAE6FD; border-radius:8px; padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
+                    <!-- MODALIDAD VIRTUAL -->
+                    <div style="background:#FAF5FF; border:1.5px solid #E9D5FF; border-radius:8px; padding:14px; display:flex; flex-direction:column; justify-content:space-between;">
                         <div>
                             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-                                <div style="background:#0369A1; color:#FFFFFF; width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">
+                                <div style="background:#7C3AED; color:#FFFFFF; width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">
                                     <i class="fas fa-wifi"></i>
                                 </div>
                                 <div>
-                                    <strong style="color:#0369A1; font-size:0.84rem; display:block;">Modalidad Virtual</strong>
-                                    <span style="font-size:0.66rem; color:#0C4A6E;">Cobertura 32 Dptos. (240 cupos)</span>
+                                    <strong style="color:#6B21A8; font-size:0.84rem; display:block;">Modalidad Virtual</strong>
+                                    <span style="font-size:0.66rem; color:#581C87;">Cobertura Nacional (SNIES 115833 · 240 cupos)</span>
                                 </div>
                             </div>
-                            <ul style="font-size:0.73rem; color:#082F49; margin:0; padding-left:14px; line-height:1.4;">
-                                <li><strong>Mediación Digital:</strong> Campus LMS Moodle activo 24/7.</li>
-                                <li><strong>Simuladores en Nube:</strong> Software analítico y juego gerencial.</li>
-                                <li><strong>Tutorías Híbridas:</strong> Sesiones sincrónicas y asincrónicas.</li>
-                                <li><strong>Relación Crédito 1:3:</strong> 36h telemáticas / 108h autónomas.</li>
-                                <li><strong>Cobertura Total:</strong> Acceso nacional incluyente.</li>
+                            <ul style="font-size:0.73rem; color:#3B0764; margin:0; padding-left:14px; line-height:1.45;">
+                                <li><strong>Mediación Digital:</strong> Campus LMS Moodle activo 24/7 y plataforma Cloud.</li>
+                                <li><strong>Simuladores en Nube:</strong> Laboratorios virtuales y juego gerencial en línea.</li>
+                                <li><strong>Tutorías Telemáticas:</strong> Sesiones sincrónicas de profundización y foros asincrónicos.</li>
+                                <li><strong>Relación Crédito 1:3:</strong> 36h acompañamiento mediado / 108h trabajo autónomo.</li>
+                                <li><strong>Cobertura Total:</strong> Acceso nacional incluyente en 32 departamentos.</li>
                             </ul>
                         </div>
-                        <div style="background:#FFFFFF; padding:5px 8px; border-radius:4px; font-size:0.7rem; color:#0369A1; font-weight:700; text-align:center; margin-top:8px; border:1px solid #BAE6FD;">
-                            <i class="fas fa-arrow-left"></i> Converge en los mismos RAP
+                        <div style="background:#FFFFFF; padding:5px 8px; border-radius:4px; font-size:0.7rem; color:#6B21A8; font-weight:700; text-align:center; margin-top:8px; border:1px solid #E9D5FF;">
+                            <i class="fas fa-arrow-left"></i> Converge en los mismos 144 RAP
                         </div>
                     </div>
+
                 </div>
             </div>
 
-            <!-- PANEL 4: PERTINENCIA & IMPACTO SOCIAL -->
+            <!-- PANEL 4: PERTINENCIA, OLE & RAP -->
             <div id="c1-panel-impacto" class="c1-modal-panel" style="display:none;">
                 <div style="background:#F8F9FA; border-radius:8px; padding:14px; margin-bottom:14px; border:1px solid #E2E8F0;">
                     <h5 style="font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; color:#1A1A1B; margin-bottom:10px; display:flex; align-items:center; gap:6px;">
-                        <i class="fas fa-graduation-cap" style="color:#BE123C;"></i> Resultados de Aprendizaje del Programa (RAP Institucionales)
+                        <i class="fas fa-chart-line" style="color:#C8102E;"></i> Pertinencia del Perfil en el Mercado Laboral (Fuente OLE / SPADIES)
                     </h5>
                     
-                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:10px;">
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; padding:10px 12px; border-radius:6px;">
-                            <strong style="font-size:0.78rem; color:#1A1A1B; display:block; margin-bottom:3px;">RAP 1: Dirección Estratégica</strong>
-                            <p style="font-size:0.72rem; color:#4B5563; margin:0; line-height:1.4;">
-                                Formula y ejecuta planes de direccionamiento estratégico alineados a la competitividad, la gestión del cambio y la generación de valor sostenible.
-                            </p>
+                    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:10px;">
+                        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #C8102E; border-radius:6px; padding:12px; text-align:center;">
+                            <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Inserción Laboral Rápida</div>
+                            <div style="font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; color:#C8102E; margin:2px 0;">71.0%</div>
+                            <div style="font-size:0.7rem; color:#4B5563;">Empleados en menos de 6 meses tras graduarse (OLE).</div>
                         </div>
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #1A1A1B; padding:10px 12px; border-radius:6px;">
-                            <strong style="font-size:0.78rem; color:#1A1A1B; display:block; margin-bottom:3px;">RAP 2: Toma de Decisiones 4.0</strong>
-                            <p style="font-size:0.72rem; color:#4B5563; margin:0; line-height:1.4;">
-                                Aplica herramientas analíticas, Big Data e inteligencia artificial para optimizar recursos financieros y mitigar riesgos organizacionales.
-                            </p>
+                        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #F39200; border-radius:6px; padding:12px; text-align:center;">
+                            <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Tasa de Cotización Formal</div>
+                            <div style="font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; color:#F39200; margin:2px 0;">78.5%</div>
+                            <div style="font-size:0.7rem; color:#4B5563;">Aportantes activos al sistema pensional y salud.</div>
                         </div>
-                        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #2ECC71; padding:10px 12px; border-radius:6px;">
-                            <strong style="font-size:0.78rem; color:#1A1A1B; display:block; margin-bottom:3px;">RAP 3: Liderazgo y Sostenibilidad</strong>
-                            <p style="font-size:0.72rem; color:#4B5563; margin:0; line-height:1.4;">
-                                Lidera equipos multidisciplinarios con visión bioética, articulando sistemas integrados HSEQ y responsabilidad social corporativa.
-                            </p>
+                        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #10B981; border-radius:6px; padding:12px; text-align:center;">
+                            <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Permanencia Semestral TO</div>
+                            <div style="font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; color:#10B981; margin:2px 0;">94.4%</div>
+                            <div style="font-size:0.7rem; color:#4B5563;">Consolidación mediante Alertas Tempranas SAT.</div>
+                        </div>
+                        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #1A1A1B; border-radius:6px; padding:12px; text-align:center;">
+                            <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Emprendedores Formales</div>
+                            <div style="font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:800; color:#1A1A1B; margin:2px 0;">27.0%</div>
+                            <div style="font-size:0.7rem; color:#4B5563;">Egresados independientes y creadores de empresa.</div>
                         </div>
                     </div>
                 </div>
 
-                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:10px;">
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #BE123C; border-radius:6px; padding:10px; text-align:center;">
-                        <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Inserción Laboral Rápida</div>
-                        <div style="font-family:'Montserrat',sans-serif; font-size:1.45rem; font-weight:800; color:#BE123C; margin:2px 0;">71.0%</div>
-                        <div style="font-size:0.7rem; color:#4B5563;">Empleados en menos de 6 meses (Fuente OLE).</div>
-                    </div>
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #F39200; border-radius:6px; padding:10px; text-align:center;">
-                        <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Tasa de Cotización Formal</div>
-                        <div style="font-family:'Montserrat',sans-serif; font-size:1.45rem; font-weight:800; color:#F39200; margin:2px 0;">78.5%</div>
-                        <div style="font-size:0.7rem; color:#4B5563;">Aportantes activos a seguridad social.</div>
-                    </div>
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #2ECC71; border-radius:6px; padding:10px; text-align:center;">
-                        <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Permanencia Semestral TO</div>
-                        <div style="font-family:'Montserrat',sans-serif; font-size:1.45rem; font-weight:800; color:#2ECC71; margin:2px 0;">94.4%</div>
-                        <div style="font-size:0.7rem; color:#4B5563;">Consolidación mediante Alertas SAT.</div>
-                    </div>
-                    <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:3px solid #1A1A1B; border-radius:6px; padding:10px; text-align:center;">
-                        <div style="font-size:0.68rem; color:#6B6B6B; font-weight:700; text-transform:uppercase;">Emprendedores Formales</div>
-                        <div style="font-family:'Montserrat',sans-serif; font-size:1.45rem; font-weight:800; color:#1A1A1B; margin:2px 0;">27.0%</div>
-                        <div style="font-size:0.7rem; color:#4B5563;">Egresados independientes y creadores de empresa.</div>
-                    </div>
+                <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px 16px;">
+                    <strong style="font-size:0.8rem; color:#1A1A1B; display:block; margin-bottom:4px;">
+                        <i class="fas fa-check-circle" style="color:#10B981;"></i> Coherencia de los Resultados de Aprendizaje:
+                    </strong>
+                    <p style="font-size:0.75rem; color:#475569; margin:0; line-height:1.45;">
+                        Los 10 Resultados de Aprendizaje del Programa (RAP) de la Tabla 35 aseguran que el graduado responda a los requerimientos de la productividad regional (Santander) y el despliegue nacional digital, integrando analítica de datos, sostenibilidad ambiental, gestión estratégica y bioética corporativa.
+                    </p>
                 </div>
             </div>
 
@@ -786,6 +1438,49 @@ window.SECTIONS['c1'] = `
 
 </div>
 
+<!-- ========================================================================= -->
+<!-- 10. VENTANA EMERGENTE DE FACTORES DIFERENCIADORES (SOLIDEZ Y EVIDENCIAS)   -->
+<!-- ========================================================================= -->
+<div id="c1-modal-diferenciador" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15, 23, 42, 0.82); backdrop-filter:blur(6px); z-index:9999999; align-items:center; justify-content:center; padding:16px; box-sizing:border-box;">
+    
+    <div style="background:#FFFFFF; width:100%; max-width:850px; max-height:88vh; border-radius:14px; box-shadow:0 25px 50px -12px rgba(0,0,0,0.5); display:flex; flex-direction:column; overflow:hidden; border:1px solid rgba(255,255,255,0.25); animation:c1ModalFadeIn 0.25s ease-out;">
+        
+        <!-- CABECERA -->
+        <div id="c1-dif-modal-header" style="background:#1A1A1B; color:#FFFFFF; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid #F39200;">
+            <div style="display:flex; align-items:center; gap:10px;">
+                <div id="c1-dif-icon-box" style="background:#F39200; color:#FFFFFF; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
+                    <i class="fas fa-medal" id="c1-dif-icon"></i>
+                </div>
+                <div>
+                    <h4 id="c1-dif-title" style="font-family:'Montserrat',sans-serif; font-size:1.06rem; font-weight:800; color:#FFFFFF; margin:0;">
+                        Factor Diferenciador
+                    </h4>
+                    <span id="c1-dif-subtitle" style="font-size:0.72rem; color:#D1D1D1;">
+                        Solidez y Evidencias Autorizadas del Documento Maestro
+                    </span>
+                </div>
+            </div>
+            <button onclick="window.closeDiferenciadorModal()" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25); color:#FFFFFF; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.95rem; cursor:pointer;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- CUERPO CONTEXTUAL AUTÓNOMO -->
+        <div id="c1-dif-body" style="padding:22px 24px; overflow-y:auto; max-height:calc(88vh - 120px);">
+            <!-- Dinámico inyectado por JS -->
+        </div>
+
+        <!-- PIE -->
+        <div style="background:#F8F9FA; padding:10px 20px; border-top:1px solid #E8E8E8; display:flex; justify-content:flex-end;">
+            <button onclick="window.closeDiferenciadorModal()" style="background:#1A1A1B; color:#FFFFFF; border:none; font-weight:700; font-size:0.78rem; padding:7px 18px; border-radius:6px; cursor:pointer;">
+                Entendido / Cerrar
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
 <style>
 @keyframes c1ModalFadeIn {
     from { opacity: 0; transform: scale(0.96); }
@@ -801,15 +1496,16 @@ window.SECTIONS['c1'] = `
 `;
 
 /* =========================================================
-   CONTROLADORES JS DE LA VENTANA EMERGENTE (MODAL C1)
+   CONTROLADORES JS DE LAS VENTANAS EMERGENTES (MODALES C1)
    ========================================================= */
 (function() {
+    // 1. MODAL GENERAL DE PROFUNDIZACIÓN
     const tabOrder = ['benchmarking', 'coherencia', 'modalidades', 'impacto'];
     const tabMeta = {
-        'benchmarking': { title: 'Justificación, Clasificación CINE y Benchmarking', icon: 'fas fa-network-wired', color: '#2ECC71' },
-        'coherencia': { title: 'Coherencia Curricular y Áreas Funcionales (48 Asignaturas)', icon: 'fas fa-sitemap', color: '#0369A1' },
-        'modalidades': { title: 'Equivalencia de Modalidades en el Registro Único', icon: 'fas fa-balance-scale-right', color: '#6B21A8' },
-        'impacto': { title: 'Pertinencia Social, Egresados y Resultados de Aprendizaje', icon: 'fas fa-chart-line', color: '#BE123C' }
+        'benchmarking': { title: 'Justificación, Clasificación CINE y Benchmarking', icon: 'fas fa-network-wired', color: '#10B981' },
+        'coherencia': { title: 'Componentes Curriculares Oficiales (Tabla 16 - 48 Asignaturas)', icon: 'fas fa-cubes', color: '#EA580C' },
+        'modalidades': { title: 'Equivalencia de Modalidades en el Registro Único', icon: 'fas fa-balance-scale-right', color: '#7C3AED' },
+        'impacto': { title: 'Pertinencia Social, Egresados, OLE y Resultados de Aprendizaje', icon: 'fas fa-chart-line', color: '#C8102E' }
     };
     let currentTab = 'benchmarking';
 
@@ -829,13 +1525,11 @@ window.SECTIONS['c1'] = `
         if (!tabOrder.includes(tabKey)) tabKey = 'benchmarking';
         currentTab = tabKey;
 
-        // Ocultar todos los paneles y mostrar el activo
         tabOrder.forEach(key => {
             const panel = document.getElementById('c1-panel-' + key);
             if (panel) panel.style.display = (key === tabKey) ? 'block' : 'none';
         });
 
-        // Actualizar tabs en el modal
         const buttons = document.querySelectorAll('#c1-modal-nav-tabs .c1-mtab');
         buttons.forEach(btn => {
             const isTarget = btn.getAttribute('data-c1tab') === tabKey;
@@ -846,7 +1540,6 @@ window.SECTIONS['c1'] = `
             }
         });
 
-        // Actualizar título e icono
         const meta = tabMeta[tabKey];
         if (meta) {
             const titleElem = document.getElementById('c1-modal-title');
@@ -866,19 +1559,309 @@ window.SECTIONS['c1'] = `
         window.switchC1ModalTab(tabOrder[nextIdx]);
     };
 
+    // 2. MODAL DEDICADO DE FACTORES DIFERENCIADORES CON SOLIDEZ Y EVIDENCIAS
+    const diferenciadoresData = {
+        'digital_ia': {
+            title: 'Transformación Digital, Big Data & Inteligencia Artificial',
+            subtitle: 'Enfoque Data-Driven Management en los Negocios 4.0',
+            icon: 'fas fa-brain',
+            color: '#F39200',
+            content: `
+                <div style="background:#FFF9F2; border-left:4px solid #F39200; padding:12px 16px; border-radius:6px; margin-bottom:16px;">
+                    <strong style="color:#C2410C; font-size:0.86rem; display:block; margin-bottom:4px;">Fundamento en Documento Maestro (Págs. 80, 107 y 166):</strong>
+                    <p style="font-size:0.77rem; color:#431407; margin:0; line-height:1.45;">
+                        "La inclusión de espacios como Big Data y Analítica de Datos, Inteligencia Artificial y E-commerce refuerza la capacidad del futuro profesional para tomar decisiones basadas en datos y adaptarse a la digitalización empresarial, diferenciando el programa frente a la oferta tradicional."
+                    </p>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#F39200; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-book-open"></i> Asignaturas Obligatorias en la Malla
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Big Data y Analítica de Datos:</strong> Semestre 6 (3 Créditos, 144 horas).</li>
+                            <li><strong>Inteligencia Artificial en Negocios:</strong> Semestre 8 (3 Créditos, 144 horas).</li>
+                            <li><strong>E-commerce &amp; Canales Digitales:</strong> Semestre 7 (3 Créditos).</li>
+                            <li><strong>Electiva en Transformación Digital:</strong> Semestre 6/7.</li>
+                        </ul>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#10B981; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-laptop-code"></i> Evidencias de Solidez Operativa
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Software y Herramientas:</strong> Power BI, Python para analítica, librerías de Machine Learning y dashboards en la nube.</li>
+                            <li><strong>Laboratorios Virtuales:</strong> Servidores dedicados para minería de datos y analítica predictiva.</li>
+                            <li><strong>RAP Asociado:</strong> RAP 6 (Integración de tecnologías analíticas e IA en la toma de decisiones).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                    <strong style="font-size:0.8rem; color:#1E293B; display:block; margin-bottom:4px;">Impacto Comprobado en la Formación:</strong>
+                    <p style="font-size:0.74rem; color:#64748B; margin:0; line-height:1.45;">
+                        Los administradores graduados no son usuarios pasivos de tecnología; diseñan modelos de automatización de procesos, tableros de control gerencial predictivo y arquitecturas de negocio digital adaptables al entorno regional y global.
+                    </p>
+                </div>
+            `
+        },
+        'sostenibilidad': {
+            title: 'Sostenibilidad, Economía Circular & Sistemas HSEQ',
+            subtitle: 'Compromiso Ético y Gestión de Triple Impacto (ODS 2030)',
+            icon: 'fas fa-leaf',
+            color: '#10B981',
+            content: `
+                <div style="background:#F0FDF4; border-left:4px solid #10B981; padding:12px 16px; border-radius:6px; margin-bottom:16px;">
+                    <strong style="color:#065F46; font-size:0.86rem; display:block; margin-bottom:4px;">Fundamento en Documento Maestro (Págs. 104-105 y 166):</strong>
+                    <p style="font-size:0.77rem; color:#064E3B; margin:0; line-height:1.45;">
+                        "La teoría de la Responsabilidad Social y Sostenibilidad integra las propuestas de Carroll y Elkington (Triple Bottom Line), articulando la sostenibilidad y la bioética corporativa en la toma de decisiones organizacionales y la preservación ambiental."
+                    </p>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#10B981; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-book-open"></i> Asignaturas Obligatorias y Electivas
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Sistemas Integrados de Gestión (HSEQ):</strong> Semestre 5 (ISO 9001, ISO 14001, ISO 45001).</li>
+                            <li><strong>Gerencia de la Calidad &amp; Productividad:</strong> Semestre 8.</li>
+                            <li><strong>Electiva en Desarrollo Sostenible &amp; Economía Circular:</strong> Semestre 5/6.</li>
+                            <li><strong>Finanzas Sostenibles &amp; Gobernanza Corporativa:</strong> Semestre 7.</li>
+                        </ul>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#F39200; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-shield-alt"></i> Solidez y Articulación Externa
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Convenios Regionales:</strong> Proyectos aplicados con el sector productivo de Santander para descarbonización y gestión de residuos.</li>
+                            <li><strong>RAP Asociados:</strong> RAP 7 (Prácticas de sostenibilidad y economía circular) y RAP 8 (Sistemas integrados de calidad).</li>
+                            <li><strong>Enfoque ODS:</strong> Articulación directa a los ODS 8 (Trabajo Decente), 9 (Industria e Innovación) y 12 (Producción Responsable).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                    <strong style="font-size:0.8rem; color:#1E293B; display:block; margin-bottom:4px;">Solidez en el Perfil de Egreso:</strong>
+                    <p style="font-size:0.74rem; color:#64748B; margin:0; line-height:1.45;">
+                        Capacita a los egresados para auditar procesos organizacionales bajo normas internacionales, liderar la transición ecológica de pymes y optimizar costos mediante modelos circulares regenerativos.
+                    </p>
+                </div>
+            `
+        },
+        'emprendimiento': {
+            title: 'Ruta Progresiva de Emprendimiento & Simuladores Gerenciales',
+            subtitle: 'Formación Experiencial desde la Ideación hasta el Juego de Negocios',
+            icon: 'fas fa-rocket',
+            color: '#C8102E',
+            content: `
+                <div style="background:#FFF1F2; border-left:4px solid #C8102E; padding:12px 16px; border-radius:6px; margin-bottom:16px;">
+                    <strong style="color:#9F1239; font-size:0.86rem; display:block; margin-bottom:4px;">Fundamento en Documento Maestro (Págs. 104, 116 y 166):</strong>
+                    <p style="font-size:0.77rem; color:#881337; margin:0; line-height:1.45;">
+                        "El enfoque emprendedor se sustenta en las teorías de Shane y Drucker, organizando una secuencia modular práctica que traslada al estudiante desde el diseño del modelo de negocio hasta la simulación gerencial de alta complejidad."
+                    </p>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#C8102E; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-layer-group"></i> Ruta Secuencial en 4 Fases
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Fase 1 (Sem 6):</strong> Modelos de Emprendimiento (Lean Startup, Canvas, Pitch).</li>
+                            <li><strong>Fase 2 (Sem 7):</strong> Formulación y Evaluación de Proyectos (Viabilidad financiera y de mercado).</li>
+                            <li><strong>Fase 3 (Sem 8):</strong> Laboratorio de Innovación y Emprendimiento (Prototipado ágil y validación).</li>
+                            <li><strong>Fase 4 (Sem 8):</strong> Juego Gerencial (Simulador de Negocios en entornos competitivos).</li>
+                        </ul>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#10B981; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-chart-pie"></i> Evidencias Cuantitativas
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>27.0% de Egresados Emprendedores:</strong> Tasa institucional de egresados que han fundado o dirigen su propia empresa formal.</li>
+                            <li><strong>Ecosistema Institucional:</strong> Vinculación activa con Fondo Emprender SENA, IMEBÚ y Cámara de Comercio de Bucaramanga.</li>
+                            <li><strong>RAP Asociado:</strong> RAP 4 (Evaluación y ejecución de proyectos de emprendimiento sostenible).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                    <strong style="font-size:0.8rem; color:#1E293B; display:block; margin-bottom:4px;">Solidez del Simulador en Tiempo Real:</strong>
+                    <p style="font-size:0.74rem; color:#64748B; margin:0; line-height:1.45;">
+                        En el Juego Gerencial, los estudiantes administran empresas virtuales compitiendo entre sí por cuota de mercado, precios, liquidez y talento humano, experimentando las consecuencias directas de sus decisiones estratégicas antes de graduarse.
+                    </p>
+                </div>
+            `
+        },
+        'registro_unico': {
+            title: 'Registro Único, Flexibilidad & Libre Movilidad Horizontal',
+            subtitle: 'Unicidad Curricular con Equivalencia Absoluta entre Presencial y Virtual',
+            icon: 'fas fa-random',
+            color: '#7C3AED',
+            content: `
+                <div style="background:#FAF5FF; border-left:4px solid #7C3AED; padding:12px 16px; border-radius:6px; margin-bottom:16px;">
+                    <strong style="color:#5B21B6; font-size:0.86rem; display:block; margin-bottom:4px;">Fundamento en Documento Maestro (Págs. 14, 16, 107 y 122):</strong>
+                    <p style="font-size:0.77rem; color:#4C1D95; margin:0; line-height:1.45;">
+                        "El Registro Calificado Único asegura que ambas modalidades (Presencial y Virtual) comparten la misma denominación, idéntico plan de estudios de 144 créditos, las mismas 48 asignaturas y los mismos Resultados de Aprendizaje, permitiendo la libre movilidad estudiantil."
+                    </p>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#7C3AED; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-check-circle"></i> Garantías Institucionales de Unicidad
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Mismo Título Otorgado:</strong> Administrador(a) de Empresas sin distinciones de modalidad en el diploma.</li>
+                            <li><strong>Idénticos Microcurrículos:</strong> Mismos sílabos, rúbricas de evaluación institucional (60% Saber, 30% Saber Pro, 10% Ser).</li>
+                            <li><strong>Mismos RAP Institucionales:</strong> 10 RAP del programa y 144 específicos por asignatura.</li>
+                        </ul>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#F39200; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-sync-alt"></i> Beneficios de la Movilidad Horizontal
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Sin Costos de Homologación:</strong> Paso transparente de presencial a virtual (o viceversa) si el estudiante cambia de empleo o ciudad.</li>
+                            <li><strong>Cero Pérdida de Créditos:</strong> Continuidad inmediata sin retrasar el tiempo de graduación oportuna.</li>
+                            <li><strong>Inclusión Geográfica:</strong> 240 cupos virtuales para cobertura en 32 departamentos y 60 presenciales en Bucaramanga.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                    <strong style="font-size:0.8rem; color:#1E293B; display:block; margin-bottom:4px;">Diferenciación Metodológica Rigurosa:</strong>
+                    <p style="font-size:0.74rem; color:#64748B; margin:0; line-height:1.45;">
+                        Mientras la modalidad presencial se apoya en interacción directa en campus con relación 1:2 (48h directas / 96h independientes), la modalidad virtual utiliza mediación telemática en plataforma Moodle 24/7 con relación 1:3 (36h mediadas / 108h autónomas).
+                    </p>
+                </div>
+            `
+        },
+        'empleabilidad': {
+            title: 'Contextos de Aplicación, Alta Empleabilidad & Retención',
+            subtitle: 'Modelo Pedagógico Institucional con Impacto Laboral Comprobado (OLE)',
+            icon: 'fas fa-briefcase',
+            color: '#1A1A1B',
+            content: `
+                <div style="background:#F8FAFC; border-left:4px solid #1A1A1B; padding:12px 16px; border-radius:6px; margin-bottom:16px;">
+                    <strong style="color:#1E293B; font-size:0.86rem; display:block; margin-bottom:4px;">Fundamento en Documento Maestro (Págs. 14, 20 y 241):</strong>
+                    <p style="font-size:0.77rem; color:#334155; margin:0; line-height:1.45;">
+                        "El modelo pedagógico institucional de Formación en Contextos de Aplicación traslada la teoría a la solución directa de problemas reales del sector productivo, sustentando los altos indicadores de enganche laboral verificados por el Observatorio Laboral para la Educación (OLE)."
+                    </p>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px;">
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-chart-line"></i> Indicadores Oficiales OLE &amp; SPADIES
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>71.0% de Inserción Laboral:</strong> Graduados vinculados activamente al mercado en menos de 6 meses (fuente OLE del MEN).</li>
+                            <li><strong>78.5% de Cotización Formal:</strong> Aportantes efectivos al sistema de seguridad social y pensiones.</li>
+                            <li><strong>94.4% de Permanencia Semestral:</strong> Retención estudiantil apoyada en el Sistema de Alertas Tempranas (SAT TO).</li>
+                        </ul>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                        <span style="font-size:0.7rem; font-weight:800; color:#F39200; text-transform:uppercase; display:block; margin-bottom:4px;">
+                            <i class="fas fa-handshake"></i> Prácticas y Pasantías Empresariales
+                        </span>
+                        <ul style="font-size:0.75rem; color:#334155; margin:0; padding-left:14px; line-height:1.4;">
+                            <li><strong>Diversos Sectores Económicos:</strong> Pasantías en manufactura, comercio, servicios financieros, salud, agroindustria y tecnología.</li>
+                            <li><strong>15 Convenios Institucionales:</strong> Alianzas formales con gremios, empresas líderes y entidades públicas regionales.</li>
+                            <li><strong>Opciones de Grado Diversificadas:</strong> Práctica empresarial, diplomado de posgrado, proyecto de investigación o plan de negocio.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                    <strong style="font-size:0.8rem; color:#1E293B; display:block; margin-bottom:4px;">Solidez de la Propuesta Formativa:</strong>
+                    <p style="font-size:0.74rem; color:#64748B; margin:0; line-height:1.45;">
+                        Los empleadores reconocen en el egresado de la TO a un profesional versátil, con capacidad inmediata para incorporarse a las dinámicas operativas de la organización, manejar herramientas de gestión de la calidad y proponer mejoras en la productividad.
+                    </p>
+                </div>
+            `
+        }
+    };
+
+    window.openDiferenciadorModal = function(difKey) {
+        const data = diferenciadoresData[difKey];
+        if (!data) return;
+        let overlay = document.getElementById('c1-modal-diferenciador');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'c1-modal-diferenciador';
+            overlay.style.cssText = 'display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(15, 23, 42, 0.82); backdrop-filter:blur(6px); z-index:9999999; align-items:center; justify-content:center; padding:16px; box-sizing:border-box;';
+            overlay.innerHTML = `
+                <div style="background:#FFFFFF; width:100%; max-width:850px; max-height:88vh; border-radius:14px; box-shadow:0 25px 50px -12px rgba(0,0,0,0.5); display:flex; flex-direction:column; overflow:hidden; border:1px solid rgba(255,255,255,0.25); animation:c1ModalFadeIn 0.25s ease-out;">
+                    <div id="c1-dif-modal-header" style="background:#1A1A1B; color:#FFFFFF; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:3px solid #F39200;">
+                        <div style="display:flex; align-items:center; gap:10px;">
+                            <div id="c1-dif-icon-box" style="background:#F39200; color:#FFFFFF; width:34px; height:34px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem;">
+                                <i class="fas fa-medal" id="c1-dif-icon"></i>
+                            </div>
+                            <div>
+                                <h4 id="c1-dif-title" style="font-family:'Montserrat',sans-serif; font-size:1.06rem; font-weight:800; color:#FFFFFF; margin:0;">Factor Diferenciador</h4>
+                                <span id="c1-dif-subtitle" style="font-size:0.72rem; color:#D1D1D1;">Solidez y Evidencias Autorizadas del Documento Maestro</span>
+                            </div>
+                        </div>
+                        <button onclick="window.closeDiferenciadorModal()" style="background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25); color:#FFFFFF; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.95rem; cursor:pointer;"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div id="c1-dif-body" style="padding:22px 24px; overflow-y:auto; max-height:calc(88vh - 120px);"></div>
+                    <div style="background:#F8F9FA; padding:10px 20px; border-top:1px solid #E8E8E8; display:flex; justify-content:flex-end;">
+                        <button onclick="window.closeDiferenciadorModal()" style="background:#1A1A1B; color:#FFFFFF; border:none; font-weight:700; font-size:0.78rem; padding:7px 18px; border-radius:6px; cursor:pointer;">Entendido / Cerrar</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        }
+
+        const titleElem = document.getElementById('c1-dif-title');
+        const subtitleElem = document.getElementById('c1-dif-subtitle');
+        const iconElem = document.getElementById('c1-dif-icon');
+        const iconBox = document.getElementById('c1-dif-icon-box');
+        const header = document.getElementById('c1-dif-modal-header');
+        const bodyElem = document.getElementById('c1-dif-body');
+
+        if (titleElem) titleElem.innerText = data.title;
+        if (subtitleElem) subtitleElem.innerText = data.subtitle;
+        if (iconElem) iconElem.className = data.icon;
+        if (iconBox) iconBox.style.background = data.color;
+        if (header) header.style.borderBottomColor = data.color;
+        if (bodyElem) bodyElem.innerHTML = data.content;
+
+        overlay.style.display = 'flex';
+    };
+
+    window.closeDiferenciadorModal = function() {
+        const overlay = document.getElementById('c1-modal-diferenciador');
+        if (overlay) overlay.style.display = 'none';
+    };
+
     // Cerrar al hacer clic en el backdrop
     document.addEventListener('click', function(e) {
-        const overlay = document.getElementById('c1-modal-overlay');
-        if (overlay && e.target === overlay) {
+        const overlay1 = document.getElementById('c1-modal-overlay');
+        if (overlay1 && e.target === overlay1) {
             window.closeC1Modal();
+        }
+        const overlay2 = document.getElementById('c1-modal-diferenciador');
+        if (overlay2 && e.target === overlay2) {
+            window.closeDiferenciadorModal();
         }
     });
 
     // Cerrar con Escape
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
-            const overlay = document.getElementById('c1-modal-overlay');
-            if (overlay && overlay.style.display === 'flex') {
+            const overlay2 = document.getElementById('c1-modal-diferenciador');
+            if (overlay2 && overlay2.style.display === 'flex') {
+                window.closeDiferenciadorModal();
+                e.stopPropagation();
+                return;
+            }
+            const overlay1 = document.getElementById('c1-modal-overlay');
+            if (overlay1 && overlay1.style.display === 'flex') {
                 window.closeC1Modal();
                 e.stopPropagation();
             }
