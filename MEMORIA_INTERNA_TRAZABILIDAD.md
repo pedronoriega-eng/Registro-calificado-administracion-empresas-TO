@@ -14,23 +14,26 @@
 Todos los siguientes elementos están formalmente aprobados, implementados en código, validados visualmente en navegador y desplegados en el aplicativo:
 
 ### A. Condición 1 — Denominación, Subsecciones en Primer Plano y Línea de Tiempo Normativa
-- **Navegación Equilibrada y Uniforme por Subsecciones:**
+- **Navegación Equilibrada y Uniforme por Subsecciones (Primer Plano):**
   - Rediseño modular para eliminar desplazamientos verticales caóticos o páginas sobrecargadas.
-  - La barra superior contiene **7 Subsecciones Oficiales** que al dar clic se muestran en **primer plano (vista exclusiva)**:
-    1. *1. Línea de Tiempo Normativa:* Serpentina balanceada y homogénea de 5 hitos sustentatorios SACES con tarjetas de altura idéntica y conectores suaves.
+  - La barra superior contiene **6 Ejes de Sustentación Oficiales** que al dar clic se muestran en **primer plano (vista exclusiva)**:
+    1. *1. Línea de Tiempo Normativa:* Pipeline horizontal compacto de 5 hitos en un solo nivel con línea conectora continua y tablero comparativo de evolución curricular.
     2. *2. Fichas Técnicas Oficiales:* Comparativa en paralelo del Registro Calificado Vigente (158 créditos / 9 semestres / 62 materias) frente al Registro Calificado Propuesto (144 créditos / 8 semestres / 48 materias).
     3. *3. Perfil de Egreso & Competencias (Tabla 35):* Matriz canónica que alinea 1 a 1 las 10 competencias específicas y transversales con los 10 RAP y las asignaturas tributarias.
     4. *4. Componentes Curriculares (Tabla 16):* Áreas de formación y fundamentación epistemológica oficial del Documento Maestro.
-    5. *5. Factores Diferenciadores:* 5 tarjetas interactivas con modales en segundo plano para evidencias autorizadas.
+    5. *5. Factores Diferenciadores:* 5 tarjetas interactivas con modales en segundo plano para evidencias autorizadas (Transformación Digital, Emprendimiento, Registro Único, Empleabilidad OLE, Metodologías Activas).
     6. *6. Mapa Conceptual Sistémico:* Articulador pedagógico de pertinencia en 5 dimensiones.
-    7. *7. Benchmarking & Taxonomía CINE:* Referenciación comparativa nacional (8 semestres) y CINE-F 2013 (0413).
-  - Cada panel incorpora navegación inferior fluida (`← Anterior` / `Siguiente →`) e indicador de subsección activa.
-- **Línea de Tiempo Normativa (Serpentina de 5 Hitos):**
-  - **Hito 1 (2018):** Acuerdo CS No. 05 del 29 de mayo de 2018 (Creación Institucional).
+  - Cero barras inferiores artificiales o botones redundantes. Control directo y limpio desde la barra superior de subpestañas.
+- **Línea de Tiempo Normativa Compacta (1 Nivel Horizontal + Cuadro de Evolución):**
+  - **Hito 1 (2018):** Acuerdo CS No. 05 del 29 de mayo de 2018 (Creación Institucional Presencial Bucaramanga).
   - **Hito 2 (2019):** Resolución MEN 011375 del 07 de noviembre de 2019 (Registro Calificado & SNIES Presencial: 108445 · 158 Créditos · 9 Semestres · 62 Asignaturas).
-  - **Hito 3 (2024):** Acuerdo CS No. 011 del 03 de diciembre de 2024 (Aprobación para Solicitar Registro Calificado Único · Exp. SACES 108524).
-  - **Hito 4 (2024-2025):** Aprobación MEN & Asignación SNIES Virtual: 115833 (Registro Único inicial de 158 créditos).
-  - **Hito 5 (2025 Sustentación Actual):** Acuerdo CS No. 021 del 25 de julio de 2025 (Renovación y Modificación Curricular del Registro Único a 8 semestres, 144 créditos y 48 asignaturas · 300 cupos: 240V / 60P).
+  - **Hito 3 (2024):** Acuerdo CS No. 011 del 03 de diciembre de 2024 (Aprobación para Solicitar Registro Calificado Único Presencial y Virtual · Exp. SACES 108524).
+  - **Hito 4 (2024-2025):** Aprobación MEN & Asignación SNIES Virtual: 115833 (Registro Único inicial de 158 créditos articulado al presencial).
+  - **Hito 5 (2025 Sustentación Actual):** Acuerdo CS No. 021 del 25 de julio de 2025 (Renovación y Modificación Curricular del Registro Único a 8 semestres, 144 créditos y 48 asignaturas · 300 cupos: 240V / 60P · Titulación: *Administrador(a) de Empresas*).
+  - **Cuadro Comparativo de Evolución Curricular:** Síntesis visual directa de alto impacto:
+    - *Estado Inicial 2019:* Solo Presencial · 9 semestres · 158 créditos · 62 asignaturas · SNIES 108445.
+    - *Adopción Registro Único 2024-2025:* Presencial + Virtual · 9 semestres · 158 créditos · 62 asignaturas · SNIES 108445 (P) + 115833 (V) · Cobertura Nacional.
+    - *Propuesta Renovación 2025:* Registro Único (P+V) · 8 semestres (-1) · 144 créditos (-14) · 48 asignaturas modulares (-14) · 300 cupos (240V / 60P).
 
 ### B. Condición 2 — Justificación y Análisis Integral de la Encuesta a Egresados
 - **Observatorio Geoespacial y Estudio de Oferta (Tablas 5, 6 y 7):**
