@@ -227,6 +227,138 @@ window.SECTIONS['c4'] = `
 
     <!-- ===== TAB: ESTRATEGIAS DIDÁCTICAS ===== -->
     <div class="tab-panel" id="c4-estrategias">
+
+        <!-- MODELO INSTITUCIONAL DE INTERACCIÓN Y PROCESO FORMATIVO (ACLARACIÓN OFICIAL CONACES) -->
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-top:4px solid #059669; border-radius:10px; padding:18px 20px; margin-bottom:22px; box-shadow:0 3px 12px rgba(0,0,0,0.04);">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+                <div>
+                    <span style="background:#ECFDF5; color:#059669; font-size:0.72rem; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px;">
+                        Lineamiento de Educación Virtual · Acuerdo Institucional
+                    </span>
+                    <h4 style="font-family:var(--font-heading); font-size:1.08rem; font-weight:800; color:#1A1A1B; margin:4px 0 0; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-network-wired" style="color:#059669;"></i> Modelo de Interacción Pedagógica, Estrategias Didácticas y Gestión en Plataforma LMS
+                    </h4>
+                </div>
+                <span style="font-size:0.75rem; color:#64748B; font-weight:700;">
+                    <i class="fas fa-shield-alt" style="color:#059669;"></i> Anexos 1, 2 y 3 Oficiales
+                </span>
+            </div>
+            <p style="font-size:0.8rem; color:#475569; line-height:1.5; margin-bottom:14px;">
+                En coherencia con el modelo pedagógico socioformativo institucional y la relación <strong>1:3 de créditos académicos</strong> en modalidad virtual (12h de mediación docente y 36h de trabajo autónomo e independiente), la institución despliega una interacción activa y multidimensional soportada en 4 dimensiones estratégicas y 8 actividades formativas integradas en el Syllabus de cada asignatura:
+            </p>
+
+            <!-- 1. LAS 4 DIMENSIONES DE LA EDUCACIÓN VIRTUAL -->
+            <div style="margin-bottom:16px;">
+                <div style="font-size:0.78rem; font-weight:800; color:#1E293B; text-transform:uppercase; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-cubes" style="color:#F39200;"></i> Cuatro Dimensiones del Lineamiento de Educación Virtual (Anexo 2):
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:10px;">
+                    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-top:3px solid #2563EB; border-radius:6px; padding:10px;">
+                        <strong style="font-size:0.76rem; color:#1E3A8A; display:block; margin-bottom:3px;"><i class="fas fa-brain"></i> 1. Dimensión Pedagógica</strong>
+                        <p style="font-size:0.71rem; color:#475569; margin:0; line-height:1.35;">
+                            Aprendizaje activo, formación en contextos reales de aplicación, desarrollo de competencias prácticas y reflexivas, autonomía y autorregulación del estudiante.
+                        </p>
+                    </div>
+                    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-top:3px solid #059669; border-radius:6px; padding:10px;">
+                        <strong style="font-size:0.76rem; color:#065F46; display:block; margin-bottom:3px;"><i class="fas fa-comments"></i> 2. Dimensión Comunicativa</strong>
+                        <p style="font-size:0.71rem; color:#475569; margin:0; line-height:1.35;">
+                            Acompañamiento continuo sincrónico y asincrónico, foros de debate guiados, tutorías de refuerzo y canales dialógicos multidireccionales docente-estudiante y entre pares.
+                        </p>
+                    </div>
+                    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-top:3px solid #7C3AED; border-radius:6px; padding:10px;">
+                        <strong style="font-size:0.76rem; color:#5B21B6; display:block; margin-bottom:3px;"><i class="fas fa-server"></i> 3. Dimensión Tecnológica</strong>
+                        <p style="font-size:0.71rem; color:#475569; margin:0; line-height:1.35;">
+                            Campus Virtual LMS Moodle sobre arquitectura en la nube AWS elástica (disponibilidad 99.9%), Teams/Meet para sesiones en vivo y motor de originalidad académica.
+                        </p>
+                    </div>
+                    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-top:3px solid #D97706; border-radius:6px; padding:10px;">
+                        <strong style="font-size:0.76rem; color:#92400E; display:block; margin-bottom:3px;"><i class="fas fa-sitemap"></i> 4. Dimensión Organizacional</strong>
+                        <p style="font-size:0.71rem; color:#475569; margin:0; line-height:1.35;">
+                            Mesa de ayuda TI con Matriz de Tiempos de Respuesta a Requerimientos, gobernanza académica, aseguramiento de permanencia y gestión curricular ágil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. LAS 8 ESTRATEGIAS PEDAGÓGICAS Y DIDÁCTICAS ACTIVAS -->
+            <div style="margin-bottom:16px;">
+                <div style="font-size:0.78rem; font-weight:800; color:#1E293B; text-transform:uppercase; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-chalkboard-teacher" style="color:#059669;"></i> Ocho Estrategias Didácticas de Interacción en el Syllabus de Cada Asignatura:
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:10px;">
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-video" style="color:#2563EB;"></i> 1. Clases Sincrónicas</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Sesiones en vivo programadas en Moodle (Teams/Meet), participativas, grabadas y de <strong>consulta 24/7</strong> permanente.</p>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-photo-video" style="color:#F39200;"></i> 2. Recursos Asincrónicos (RED)</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Videos explicativos, lecturas, infografías, podcasts, bases de datos y bancos de preguntas de navegación autónoma.</p>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-comments" style="color:#059669;"></i> 3. Foros de Debate</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Análisis de casos prácticos a partir de preguntas orientadoras con argumentación y retroalimentación entre pares.</p>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-headset" style="color:#7C3AED;"></i> 4. Mesa de Ayuda TI</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Soporte técnico y administrativo oportuno regido por la <strong>Matriz de Tiempos de Respuesta</strong> institucional.</p>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-tasks" style="color:#EA580C;"></i> 5. Aprendizaje Activo</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Actividades cooperativas y colaborativas centradas en la resolución de problemas reales para alcanzar los RAPs.</p>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-clipboard-check" style="color:#16A34A;"></i> 6. Evaluación Formativa</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Pruebas diagnósticas, cuestionarios interactivos, autoevaluación por unidad y rúbricas de evaluación significativa.</p>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-users" style="color:#0284C7;"></i> 7. Trabajo Colaborativo</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Dinámicas grupales mediadas por herramientas digitales para potenciar negociación y resolución de conflictos.</p>
+                    </div>
+                    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:9px 10px;">
+                        <span style="font-size:0.72rem; font-weight:800; color:#1E293B; display:block; margin-bottom:2px;"><i class="fas fa-user-friends" style="color:#DC2626;"></i> 8. Tutorías Virtuales</span>
+                        <p style="font-size:0.7rem; color:#475569; margin:0; line-height:1.3;">Sesiones de atención individual y grupal agendadas directamente por el docente en Moodle para refuerzo continuo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. ESTRUCTURA DEL AULA VIRTUAL (5 APARTADOS) Y DISTRIBUCIÓN HORARIA DOCENTE -->
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                <!-- ESTRUCTURA DEL AULA -->
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px 14px;">
+                    <div style="font-size:0.76rem; font-weight:800; color:#1E3A8A; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-layer-group"></i> Estructura Estándar de las Aulas Virtuales en Moodle (5 Ejes):
+                    </div>
+                    <ul style="font-size:0.72rem; color:#475569; margin:0; padding-left:18px; line-height:1.45;">
+                        <li><strong>1. Gestión del Aprendizaje:</strong> Guía de aprendizaje, ruta formativa, syllabus y cronograma.</li>
+                        <li><strong>2. Comunicación y Colaboración:</strong> Foros de dudas, foros temáticos y mensajería directa.</li>
+                        <li><strong>3. Evaluación y Seguimiento:</strong> Entregables con motor de similitud, rúbricas y libro de calificaciones.</li>
+                        <li><strong>4. Recursos y Soporte TI:</strong> Enlaces a biblioteca E-Libro, simuladores y mesa de ayuda.</li>
+                        <li><strong>5. Competencias Digitales:</strong> Guías interactivas y videos instructivos de uso de la plataforma.</li>
+                    </ul>
+                </div>
+
+                <!-- DISTRIBUCIÓN PORCENTUAL DEL TIEMPO DOCENTE -->
+                <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:8px; padding:12px 14px;">
+                    <div style="font-size:0.76rem; font-weight:800; color:#92400E; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-clock"></i> Distribución Porcentual del Tiempo de Dedicación Docente:
+                    </div>
+                    <div style="font-size:0.72rem; color:#78350F; line-height:1.45;">
+                        • <strong>50% Docencia:</strong> 30% Espacios sincrónicos (Teams/Meet) · 5% Tutorías académicas · 5% Foros de debate · 10% Revisión y retroalimentación de entregables.<br>
+                        • <strong>15% Investigación:</strong> Semillero GESTNOVA, Grupo COLLEGIUM y dirección de proyectos.<br>
+                        • <strong>10% Proyección Social:</strong> Seguimiento de prácticas, internacionalización y extensión.<br>
+                        • <strong>10% Gestión y Permanencia:</strong> Preparación de clases, seguimiento a permanencia y cualificación.<br>
+                        • <em>Aplica armónicamente para profesores de Tiempo Completo (TC - 40h) y Medio Tiempo (MT - 22h).</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODELO DE PRODUCCIÓN DE RECURSOS DIGITALES -->
+            <div style="margin-top:10px; background:#F0FDF4; border:1px solid #BBF7D0; border-radius:6px; padding:8px 12px; font-size:0.72rem; color:#14532D; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+                <span><i class="fas fa-check-circle" style="color:#059669; margin-right:4px;"></i> <strong>Modelo de Producción de Recursos Digitales (Anexo 3):</strong> Criterios de accesibilidad, interactividad, multimedia, adaptabilidad, actualización periódica y articulación curricular.</span>
+                <span style="font-weight:800; color:#065F46;">Aprobado por Consejo Académico</span>
+            </div>
+        </div>
+
         <h3 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--carbon); margin-bottom:16px;">
             Metodologías Activas de Enseñanza-Aprendizaje
         </h3>
