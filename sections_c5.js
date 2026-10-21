@@ -1156,6 +1156,24 @@ window.SECTIONS['c5'] = `
     <div style="background:#FFFFFF; border:1px dashed #CBD5E1; border-radius:8px; padding:10px; text-align:center; font-size:0.72rem; color:#475569;">
         <strong>Ciclo de Acompañamiento a Opciones de Grado:</strong> Convocatoria y Elección &rarr; Asignación de Director &rarr; Desarrollo y Seguimiento en Syllabus &rarr; Sustentación y Evaluación por Rúbrica Institucional.
     </div>
+
+    <!-- EVIDENCIA FOTOGRÁFICA Y EVENTOS: RUTA FORMATIVA DEL PROGRAMA (CONGRESOS 2023 - 2026) -->
+    <div style="margin-top:18px; background:#F8FAFC; border:1.5px solid #FED7AA; border-radius:10px; padding:16px; text-align:center;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px; border-bottom:1px solid #E2E8F0; padding-bottom:8px;">
+            <div style="font-size:0.86rem; font-weight:800; color:#C2410C; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-route" style="color:#F39200;"></i> Ruta Formativa del Programa (Congresos y Divulgación Científica 2023 – 2026)
+            </div>
+            <span style="background:#FFF7ED; color:#EA580C; border:1px solid #FDBA74; font-size:0.7rem; font-weight:800; padding:2px 10px; border-radius:12px;">
+                <i class="fas fa-calendar-alt"></i> Trayectoria 2023 · 2024 · 2025 · 2026
+            </span>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:10px; box-shadow:0 4px 14px rgba(0,0,0,0.06); display:inline-block; width:100%; box-sizing:border-box;">
+            <img src="assets/c5/c5_ruta_formativa_congresos.png" alt="Ruta Formativa del Programa - Congresos de Investigación 2023-2026" style="width:100%; max-width:960px; height:auto; border-radius:6px; display:block; margin:0 auto; cursor:pointer;" onclick="window.open(this.src, '_blank')" title="Clic para ampliar imagen en alta resolución">
+        </div>
+        <div style="font-size:0.73rem; color:#64748B; margin-top:8px; line-height:1.4;">
+            <strong>Secuencia Histórica de Congresos:</strong> I Congreso Multidisciplinario (2023) &bull; 2.º Congreso de Investigación Aplicada (2024) &bull; III Congreso de Innovación e Investigación Multidisciplinar (2025) &bull; IV Congreso Internacional de Investigación e Innovación Multidisciplinar (2026).
+        </div>
+    </div>
 </div>
 
         
