@@ -10,20 +10,6 @@ window.SECTIONS['c4'] = `
 </div>
 
 
-
-<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
-<div class="completitud-trigger-card" onclick="openCompletitudModal('c4')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
-    <div class="completitud-trigger-left">
-        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
-        <div class="completitud-trigger-text">
-            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
-            <h4>Respuesta Oficial a la Sala de Evaluación (Observaciones 5 y 11)</h4>
-            <p>Equivalencia formativa en presencial y virtual, distribución de horas HAD vs HTI y organización de estudiantes por grupo (20 a 30 estudiantes).</p>
-        </div>
-    </div>
-    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
-</div>
-
 <!-- TABS -->
 <div class="tabs-container" id="c4TabGroup">
     <div class="tabs-nav">
@@ -161,6 +147,81 @@ window.SECTIONS['c4'] = `
             <div class="metric-card"><div class="metric-val">6.912</div><div class="metric-lbl">Horas Totales Programa</div></div>
             <div class="metric-card"><div class="metric-val">2.304</div><div class="metric-lbl">Horas Docencia (Presencial)</div></div>
             <div class="metric-card"><div class="metric-val">1.728</div><div class="metric-lbl">Horas Mediadas (Virtual)</div></div>
+        </div>
+
+        <!-- TABLA COMPARATIVA OFICIAL DE DISTRIBUCIÓN DE HORAS POR CRÉDITO Y TOTALES -->
+        <div style="margin-top:24px; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:16px;">
+            <h4 style="font-family:var(--font-heading); font-size:0.95rem; font-weight:800; color:#1A1A1B; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-balance-scale" style="color:#F39200;"></i> Comparativo Técnico de Horas por Modalidad (Decreto 1330 de 2019)
+            </h4>
+            <div style="overflow-x:auto;">
+                <table style="width:100%; border-collapse:collapse; font-size:0.78rem;">
+                    <thead>
+                        <tr style="background:#1A1A1B; color:#FFFFFF;">
+                            <th style="padding:9px 12px; text-align:left; border:1px solid #334155;">Tipo de Asignatura / Créditos</th>
+                            <th style="padding:9px 12px; text-align:center; border:1px solid #334155;">Horas Totales (48h/cr)</th>
+                            <th style="padding:9px 12px; text-align:center; border:1px solid #334155; background:#1E3A8A;">Presencial: HAD (1:2)</th>
+                            <th style="padding:9px 12px; text-align:center; border:1px solid #334155; background:#1E3A8A;">Presencial: HTI</th>
+                            <th style="padding:9px 12px; text-align:center; border:1px solid #334155; background:#065F46;">Virtual: HAD Mediadas (1:3)</th>
+                            <th style="padding:9px 12px; text-align:center; border:1px solid #334155; background:#065F46;">Virtual: HTI Autónomo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; font-weight:700;">Asignatura de 2 Créditos</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center; font-weight:700;">96 h</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center; color:#1D4ED8; font-weight:700;">32 h (Docencia direct.)</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center;">64 h</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center; color:#059669; font-weight:700;">24 h (Sincr./Asincr.)</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center;">72 h</td>
+                        </tr>
+                        <tr style="background:#F8FAFC;">
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; font-weight:700;">Asignatura de 3 Créditos</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center; font-weight:700;">144 h</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center; color:#1D4ED8; font-weight:700;">48 h (Docencia direct.)</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center;">96 h</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center; color:#059669; font-weight:700;">36 h (Sincr./Asincr.)</td>
+                            <td style="padding:8px 12px; border:1px solid #E2E8F0; text-align:center;">108 h</td>
+                        </tr>
+                        <tr style="background:#FFFBEB; font-weight:800;">
+                            <td style="padding:9px 12px; border:1px solid #FCD34D; color:#92400E;">TOTAL PROGRAMA (144 Créditos)</td>
+                            <td style="padding:9px 12px; border:1px solid #FCD34D; text-align:center; color:#92400E;">6.912 Horas</td>
+                            <td style="padding:9px 12px; border:1px solid #FCD34D; text-align:center; color:#1D4ED8;">2.304 h (33.3%)</td>
+                            <td style="padding:9px 12px; border:1px solid #FCD34D; text-align:center;">4.608 h (66.7%)</td>
+                            <td style="padding:9px 12px; border:1px solid #FCD34D; text-align:center; color:#059669;">1.728 h (25.0%)</td>
+                            <td style="padding:9px 12px; border:1px solid #FCD34D; text-align:center;">5.184 h (75.0%)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- POLÍTICA INSTITUCIONAL DE ORGANIZACIÓN DE ESTUDIANTES POR GRUPO -->
+        <div style="margin-top:20px; background:#F8FAFC; border:1px solid #CBD5E1; border-left:4px solid #F39200; border-radius:8px; padding:14px 16px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+                <h4 style="font-family:var(--font-heading); font-size:0.92rem; font-weight:800; color:#1E293B; margin:0; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-users" style="color:#F39200;"></i> Política y Organización de Estudiantes por Grupo (Ratios Pedagógicos)
+                </h4>
+                <span style="background:#E2E8F0; color:#334155; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:12px;">Criterio Pedagógico Institucional</span>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:10px;">
+                <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:10px 12px;">
+                    <div style="font-size:0.75rem; font-weight:800; color:#1E3A8A; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-university"></i> Modalidad Presencial: 20 a 30 Estudiantes por Grupo
+                    </div>
+                    <p style="font-size:0.73rem; color:#475569; margin:0; line-height:1.4;">
+                        Los grupos teóricos y prácticos se configuran con un rango de <strong>20 a 30 estudiantes</strong>. Esta escala garantiza una interacción directa y personalizada con el docente, dinamizando talleres de casos empresariales, debates y el uso eficaz de los laboratorios y salas de cómputo en las Sedes A y B de Bucaramanga.
+                    </p>
+                </div>
+                <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:6px; padding:10px 12px;">
+                    <div style="font-size:0.75rem; font-weight:800; color:#065F46; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-laptop"></i> Modalidad Virtual: 25 a 35 Estudiantes por Aula / Tutor
+                    </div>
+                    <p style="font-size:0.73rem; color:#475569; margin:0; line-height:1.4;">
+                        En los entornos virtuales (Moodle AWS), cada curso se gestiona con un límite de <strong>25 a 35 estudiantes por aula</strong>, asegurando una retroalimentación cualitativa oportuna en foros, calificación formativa en menos de 48 horas y sesiones sincrónicas participativas con acompañamiento docente efectivo.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 

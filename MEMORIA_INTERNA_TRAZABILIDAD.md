@@ -203,18 +203,24 @@ Todos los siguientes elementos están formalmente aprobados, implementados en c�
     * **Condición 7:** Observaciones 8, 9, 10 y 11 (Planta docente completa, cualificación para modalidad virtual, distribución horaria y organización de estudiantes por grupo).
     * **Condición 8:** Observación 12 (Medios educativos físicos y digitales, plataformas LMS, actualización y reposición, y protocolo Decreto 1421/2017).
     * **Condición 9:** Observación 13 (Infraestructura física y tecnológica asignada en Sedes A y B, CIDRE, salas de informática y garantía de disponibilidad a 7 años).
-  - Despliegue estricto en **PRIMER PLANO (z-index: 100000)** al hacer clic en las tarjetas de activación `completitud-trigger-card` en cada condición o desde el botón general de cabecera `Respuestas a la Sala (Completitud CONACES)`.
-  - Navegación por pestañas entre observaciones de cada condición, visualización de la observación oficial entrecomillada, fundamentación en el Decreto 1330 de 2019 y tablas ejecutivas formateadas.
-- **Cachebuster Actualizado:** `sections_c5.js?v=20261021_c5_slide8_redesign_v2`, `sections_c1.js?v=20261021_completitud_v1`, `completitud_data.js?v=20261021_v1`.
+  - **Integración Orgánica de Sustentación (Sin Cajas Burocráticas ni Modales Literales):**
+    Por instrucción expresa de la dirección del programa, **NO se muestran tarjetas de aviso taxativas de "Respuesta a la Sala" ni modales burocráticos**, sino que **el contenido mismo de la presentación y sus subsecciones en primer plano incorporan de forma natural, técnica y contundente toda la evidencia y respuestas dadas a la Sala**, permitiendo una sustentación académica impecable ante los pares evaluadores del MEN / CONACES:
+    * **Condición 1 (Denominación):** Titulación inclusiva oficial *Administrador(a) de Empresas* (Acuerdo CS 010 de 2021 de Inclusión), nivel profesional universitario directo (sin ciclos propedéuticos) y Registro Único (Presencial SNIES 108445 y Virtual SNIES 115833).
+    * **Condición 2 (Justificación):** Diferenciación clara de Presencial (enclave productivo Bucaramanga/Santander) y Virtual (cobertura nacional 33 deptos.), sincretismo normativo Decreto 1330 y datos de egresados (93.2% ocupabilidad).
+    * **Condición 3 (Aspectos Curriculares):** Formación integral, flexibilidad e interdisciplinariedad en ambas modalidades; resultados cuantitativos de interacción (semilleros, 8 tutorías presenciales/semestre, 96 sesiones sincrónicas virtuales, 85% acceso regular LMS); y Plan de Transición Curricular (158 cr a 144 cr, homologación 1:1, cero sobrecosto y protección de cohortes).
+    * **Condición 4 (Organización de Actividades Académicas):** Tabla oficial de horas HAD vs HTI por crédito (16/32 presencial vs 12/36 virtual mediada) y Política Institucional de Organización de Grupos (20 a 30 estudiantes en presencial; máximo 35 en virtual).
+    * **Condición 5 (Investigación):** Rediseño ejecutivo sin desperdicio visual de Slide 8 (Líneas de Investigación); Grupo COLLEGIUM Minciencias, Semillero GESTNOVA, Spin-off MYB S.A.S. y Ruta Formativa oficial.
+    * **Condición 6 (Sector Externo):** 4 subsecciones interactivas en primer plano: Convenios activos con evidencia (AMB, Bomberos Floridablanca, Cajasan, Municipio de Girón, Fenalco), Consultorio CIDRE, Alianza CUEES y Metas a 7 años.
+    * **Condición 7 (Profesores):** 4 subsecciones en primer plano: Planta docente completa con posgrados, Competencias Digitales Docentes (DigComp 2.2 / Moodle AWS), Distribución Horaria Docente (TC 40h / MT 22h) y Ratios estudiante/docente (1:15 a 1:20).
+    * **Condición 8 (Medios Educativos):** 4 subsecciones en primer plano: Biblioteca física Bucaramanga y digital E-Libro (98k títulos), Campus Virtual LMS Moodle AWS 24/7 y motor de similitud, Software especializado y Protocolo de Inclusión / Ajustes Razonables (Decreto 1421).
+    * **Condición 9 (Infraestructura Física y Tecnológica):** 4 subsecciones en primer plano: Sedes oficiales en Bucaramanga (Sede A Calle 41 # 10-30 y Sede B Calle 48 # 27-64), Capacidad Instalada (6 aulas 180 puestos, 2 laboratorios 60 puestos), Espacios CIDRE y Semilleros, y Contratos de Arrendamiento a 7 años.
+- **Cachebuster Actualizado:** `sections_c1.js?v=20261021_v2`, `sections_c2_google.js?v=20261021_v2`, `sections_c3.js?v=20261021_v2`, `sections_c4.js?v=20261021_v2`, `sections_c5.js?v=20261021_c5_slide8_redesign_v2`, `sections_c6.js?v=20261021_v2`, `sections_c7.js?v=20261021_v2`, `sections_c8.js?v=20261021_v2`, `sections_c9.js?v=20261021_v2`.
 
 ---
 
 ## 2. Verificación y Pruebas Técnicas
-- **Validación de Sintaxis:** Todos los scripts JS pasaron `node -c` con 0 errores (`app.js`, `sections_c1.js`, `sections_c2.js`, `sections_c2_google.js`, `sections_c3.js`, `sections_c4.js`, `sections_c5.js`, `sections_c6.js`, `sections_c7.js`, `sections_c8.js`, `sections_c9.js`, `completitud_data.js`).
-- **Pruebas en Navegador:**
-  - Rediseño de Slide 8 verificado con infografía ejecutiva de 3 líneas transversales y 2 específicas.
-  - Botón de cabecera "Respuestas a la Sala (Completitud CONACES)" verificado para acceso rápido a las 13 observaciones.
-  - Tarjetas de activación `completitud-trigger-card` verificadas en todas las condiciones para despliegue en primer plano.
-
-
-
+- **Validación de Sintaxis:** Todos los scripts JS pasaron `node -c` con 0 errores (`app.js`, `sections_c1.js`, `sections_c2_google.js`, `sections_c3.js`, `sections_c4.js`, `sections_c5.js`, `sections_c6.js`, `sections_c7.js`, `sections_c8.js`, `sections_c9.js`).
+- **Pruebas de Presentación:**
+  - Cero elementos burocráticos o tarjetas de advertencia de "Respuesta a la Sala".
+  - Flujo natural de sustentación de alto impacto visual con subsecciones en primer plano.
+  - Toda la información y evidencia del documento oficial de completitud está incorporada como parte constitutiva del discurso del programa.

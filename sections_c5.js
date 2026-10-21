@@ -34,22 +34,7 @@ window.SECTIONS['c5'] = `
 </div>
 
 
-<!-- BARRA DE EJES TEMÁTICOS
-
-<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
-<div class="completitud-trigger-card" onclick="openCompletitudModal('c5')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
-    <div class="completitud-trigger-left">
-        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
-        <div class="completitud-trigger-text">
-            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
-            <h4>Respuesta Oficial a la Sala de Evaluación (Observación 6)</h4>
-            <p>Diferenciación y articulación de investigación formativa y aplicada, Grupo COLLEGIUM (Minciencias), Semillero GESTNOVA y Spin-off MYB S.A.S.</p>
-        </div>
-    </div>
-    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
-</div>
-
- (SUBSECCIONES C5) -->
+<!-- BARRA DE EJES TEMÁTICOS (SUBSECCIONES C5) -->
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:10px 14px; margin-bottom:14px; box-shadow:0 3px 12px rgba(0,0,0,0.04); position:sticky; top:0; z-index:90; backdrop-filter:blur(8px);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
         <span style="font-size:0.74rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px;">

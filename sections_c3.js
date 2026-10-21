@@ -11062,20 +11062,6 @@ window.SECTIONS['c3'] = `
 </div>
 
 
-
-<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
-<div class="completitud-trigger-card" onclick="openCompletitudModal('c3')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
-    <div class="completitud-trigger-left">
-        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
-        <div class="completitud-trigger-text">
-            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
-            <h4>Respuesta Oficial a la Sala de Evaluación (Observaciones 3 y 4)</h4>
-            <p>Componente formativo, áreas de formación y Plan de Transición Curricular (158 cr a 144 cr, homologación y garantías de permanencia para estudiantes).</p>
-        </div>
-    </div>
-    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
-</div>
-
 <!-- LEVEL 1 MAIN TABS (PLAN VIGENTE FIRST AND DEFAULT ACTIVE) -->
 <div class="c3-main-tabs" id="c3MainTabsGroup">
     <button class="c3-main-tab-btn active" data-tab="c3-main-vigente" onclick="switchTab('c3MainTabsGroup','c3-main-vigente')">
@@ -19693,6 +19679,52 @@ window.SECTIONS['c3'] = `
         </div>
 
         <!-- 1. ARTICULACIÓN CON EL ENTORNO PRODUCTIVO -->
+        
+        <!-- RESULTADOS E INDICADORES DE INTERACCIÓN DURANTE LA VIGENCIA (DECRETO 1330) -->
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-top:4px solid #F39200; border-radius:10px; padding:18px 20px; margin-bottom:22px; box-shadow:0 3px 10px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+                <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-chart-line" style="color:#F39200;"></i> Resultados Cuantitativos del Componente de Interacción en la Vigencia
+                </h4>
+                <span style="background:#FEF3C7; color:#B45309; font-size:0.72rem; font-weight:800; padding:3px 10px; border-radius:12px;">
+                    Trazabilidad Oficial · Presencial y Virtual
+                </span>
+            </div>
+            
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:12px;">
+                <!-- INTERACCIÓN PRESENCIAL -->
+                <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px 14px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#1E3A8A; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-university"></i> Modalidad Presencial (Campus Bucaramanga)
+                    </div>
+                    <ul style="font-size:0.75rem; color:#475569; margin:0; padding-left:18px; line-height:1.6;">
+                        <li><strong>8 estudiantes por periodo</strong> vinculados activamente a semilleros de investigación (GESTNOVA).</li>
+                        <li><strong>3 proyectos aplicados anuales</strong> articulando teoría y solución de problemas empresariales en Santander.</li>
+                        <li><strong>70% de participación estudiantil</strong> en eventos, congresos y simposios disciplinares.</li>
+                        <li><strong>Promedio de 8 sesiones de tutoría</strong> de acompañamiento académico y retroalimentación personalizada por estudiante.</li>
+                    </ul>
+                </div>
+
+                <!-- INTERACCIÓN VIRTUAL -->
+                <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:12px 14px;">
+                    <div style="font-size:0.78rem; font-weight:800; color:#065F46; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+                        <i class="fas fa-laptop"></i> Modalidad Virtual (LMS Moodle AWS)
+                    </div>
+                    <ul style="font-size:0.75rem; color:#166534; margin:0; padding-left:18px; line-height:1.6;">
+                        <li><strong>96 sesiones sincrónicas por periodo</strong> asegurando interacción directa en tiempo real docente-estudiantes.</li>
+                        <li><strong>5 actividades colaborativas por curso</strong> fomentando el trabajo en equipo y la construcción colectiva de conocimiento.</li>
+                        <li><strong>50%+ de participación activa</strong> sostenida en foros temáticos guiados por docentes tutores.</li>
+                        <li><strong>85% de acceso regular continuo</strong> a las aulas virtuales y recursos digitales especializados.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- INTERACCIÓN CON EL ENTORNO -->
+            <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:6px; padding:10px 14px; font-size:0.74rem; color:#92400E; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <span><i class="fas fa-handshake" style="color:#D97706; margin-right:6px;"></i> <strong>Interacción con el Entorno:</strong> 5 actividades anuales con empresas de Santander y gremios productivos.</span>
+                <span><i class="fas fa-chalkboard-teacher" style="color:#D97706; margin-right:6px;"></i> <strong>Expertos Externos:</strong> 3 eventos académicos anuales con ponentes y líderes empresariales invitados.</span>
+            </div>
+        </div>
         <div class="card" style="margin-bottom:22px; border-top:4px solid #EA580C;">
             <h4 style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--carbon); margin-bottom:12px;">
                 <i class="fas fa-city" style="color:#EA580C; margin-right:8px;"></i> 1. Articulación del Programa con Contextos Locales, Regionales y Globales (3.9.1)
@@ -20458,6 +20490,61 @@ window.SECTIONS['c3'] = `
  </table>
  </div>
  </div>
+    <!-- PLAN DE TRANSICIÓN CURRICULAR Y GARANTÍAS DE PERMANENCIA (RÉGIMEN DE TRANSICIÓN 158 CR A 144 CR) -->
+    <div class="card" style="margin-top:24px; margin-bottom:28px; border-top:4px solid #10B981; background:#FFFFFF;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+            <div>
+                <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:#1A1A1B; margin:0; display:flex; align-items:center; gap:8px;">
+                    <i class="fas fa-shield-alt" style="color:#10B981;"></i> Plan de Transición Curricular y Garantías de Permanencia Estudiantil
+                </h4>
+                <p style="font-size:0.83rem; color:#64748B; margin-top:2px; margin-bottom:0;">
+                    Lineamientos oficiales aprobados por Consejo Académico para el tránsito armónico de 158 a 144 créditos
+                </p>
+            </div>
+            <span style="background:#ECFDF5; color:#059669; font-weight:800; font-size:0.75rem; padding:4px 12px; border-radius:20px; border:1px solid #A7F3D0;">
+                <i class="fas fa-user-shield"></i> Cohortes Protegidas
+            </span>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin-bottom:16px;">
+            <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                <div style="font-size:0.75rem; font-weight:800; color:#1E293B; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-random" style="color:#2563EB;"></i> 1. Homologación Directa
+                </div>
+                <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.4;">
+                    Aplicación automática de la tabla oficial de equivalencias aprobada. Las materias cursadas y aprobadas en el plan de 158 cr se homologan 1:1 o por unificación modular en el plan de 144 cr.
+                </p>
+            </div>
+
+            <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                <div style="font-size:0.75rem; font-weight:800; color:#1E293B; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-hand-holding-usd" style="color:#16A34A;"></i> 2. Cero Costo Financiero
+                </div>
+                <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.4;">
+                    Ningún estudiante asume pagos extraordinarios ni cobros administrativos por procesos de homologación de asignaturas resultantes de la actualización curricular.
+                </p>
+            </div>
+
+            <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                <div style="font-size:0.75rem; font-weight:800; color:#1E293B; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-balance-scale" style="color:#D97706;"></i> 3. Régimen de Opción
+                </div>
+                <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.4;">
+                    Los estudiantes activos tienen plena libertad de acogerse voluntariamente al nuevo plan optimizado de 144 créditos (8 semestres) o culminar su formación bajo el plan de 158 créditos.
+                </p>
+            </div>
+
+            <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
+                <div style="font-size:0.75rem; font-weight:800; color:#1E293B; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-user-check" style="color:#7C3AED;"></i> 4. Acompañamiento
+                </div>
+                <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.4;">
+                    Ruta curricular personalizada elaborada conjuntamente por la Coordinación del Programa y Registro Académico para asegurar graduación oportuna sin dilaciones.
+                </p>
+            </div>
+        </div>
+    </div>
+    
 
  <!-- SECCIÓN 3: TABLA 28 - ASIGNATURAS NUEVAS EN LA MALLA PROPUESTA -->
  <div class="card" style="margin-bottom:28px; border-top:4px solid #0284C7;">

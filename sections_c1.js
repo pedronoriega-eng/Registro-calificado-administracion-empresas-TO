@@ -35,22 +35,7 @@ window.SECTIONS['c1'] = `
 </div>
 
 <!-- ========================================================================= -->
-<!-- 2. BARRA DE NAVEGACIÓN RÁPIDA
-
-<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
-<div class="completitud-trigger-card" onclick="openCompletitudModal('c1')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
-    <div class="completitud-trigger-left">
-        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
-        <div class="completitud-trigger-text">
-            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
-            <h4>Respuesta Oficial a la Sala de Evaluación (Observaciones 1 y 2)</h4>
-            <p>Sustentación del título de Administrador de Empresas (código SNIES único), ausencia de ciclos propedéuticos y justificación técnica del Registro Calificado Único en dos modalidades (Presencial y Virtual).</p>
-        </div>
-    </div>
-    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
-</div>
-
- POR SUBSECCIONES (ACCESO INMEDIATO)         -->
+<!-- 2. BARRA DE NAVEGACIÓN RÁPIDA POR SUBSECCIONES (ACCESO INMEDIATO)         -->
 <!-- ========================================================================= -->
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:10px; padding:10px 14px; margin-bottom:22px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
     <span style="font-size:0.76rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px;">
