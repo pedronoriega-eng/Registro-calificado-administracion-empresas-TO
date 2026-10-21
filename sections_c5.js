@@ -758,21 +758,125 @@ window.SECTIONS['c5'] = `
     <div id="c5-slide-panel-13" class="c5-slide-panel " style="display:none;">
         
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-random" style="color:#F39200;"></i> Evolución del Conocimiento y las Líneas de Investigación
+            <i class="fas fa-random" style="color:#F39200;"></i> Evolución del Conocimiento y Líneas de Investigación
         </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Comparativa 2019 vs. Renovación</span>
+        <span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.72rem; font-weight:800; padding:3px 12px; border-radius:12px;">
+            Comparativa 2019 vs. Renovación 2025
+        </span>
     </div>
-    <div style="overflow-x:auto; margin-top:14px; border-radius:8px; border:1px solid #E2E8F0;">
-        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; text-align:left;">
-            <thead>
-                <tr style="background:#1A1A1B; color:#FFFFFF;">
-    <th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Tendencia del conocimiento', 'Ejemplos de aplicación durante la vigencia del registro', 'Énfasis y líneas propuestas']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Emprendimiento e innovación', 'Planes de negocio, estudios de mercado y diseño de aplicación financiera', 'Viabilidad, innovación y modelos de negocio · L1 / L2']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Sostenibilidad y responsabilidad social', 'Registros sobre costos y SG-SST; proyectos sostenibles', 'Gestión financiera y competitividad sostenible · L1']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Liderazgo y talento humano', 'Selección de personal, brechas de habilidades y capacitación basada en evaluación y certificación de competencias Laborales.', 'Gestión del talento y del cambio · L1 / L2']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Transformación digital y tecnología', 'Competencias digitales, inteligencia competitiva y posicionamiento en redes', 'Analítica, digitalización y economía digital · L1 / L2']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Globalización y nuevos modelos de negocio', 'Estudios de microempresas y espacios de intercambio académico', 'Competitividad, comercio electrónico e innovación colaborativa · L1 / L2']</th></tr></thead><tbody></tbody></table></div>
-    <div style="background:#FFF9F2; border-left:4px solid #F39200; padding:12px 16px; border-radius:0 8px 8px 0; margin-top:16px; font-size:0.76rem; color:#431407;">
-        <strong>Consolidación Temática:</strong> En 2019 se previeron 3 líneas iniciales dispersas. Para la Renovación se optimizan en 2 líneas estratégicas robustas: <em>L1. Gestión Estratégica y Competitividad Empresarial</em> y <em>L2. Transformación Digital y Gestión de la Innovación</em>.
+    <p style="font-size:0.76rem; color:#4B5563; margin:0 0 16px; line-height:1.5;">
+        Articulación entre las 5 tendencias contemporáneas de la administración, las evidencias formativas ejecutadas en la vigencia y las dos líneas de investigación consolidadas:
+    </p>
+
+    <!-- MATRIZ DE TENDENCIAS EN FORMATO CARDS EXECUTIVE (CERO OVERFLOW) -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(310px, 1fr)); gap:14px; margin-bottom:16px;">
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <div style="font-size:0.86rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-rocket" style="color:#F39200; font-size:0.95rem;"></i> Emprendimiento e Innovación
+                    </div>
+                    <div><span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 1</span> <span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 2</span></div>
+                </div>
+                <div style="margin-bottom:8px;">
+                    <span style="font-size:0.66rem; font-weight:800; color:#64748B; text-transform:uppercase; letter-spacing:0.5px;">Aplicación en la Vigencia:</span>
+                    <p style="font-size:0.75rem; color:#334155; margin:3px 0 0; line-height:1.4;">Planes de negocio, estudios de mercado aplicados a unidades productivas y diseño de aplicación financiera para evaluación de emprendimientos.</p>
+                </div>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:6px 10px; border:1px dashed #CBD5E1; margin-top:6px;">
+                <span style="font-size:0.66rem; font-weight:800; color:#0F172A; text-transform:uppercase;">Énfasis Propuesto:</span>
+                <div style="font-size:0.73rem; color:#475569; font-weight:600; margin-top:2px;">Viabilidad, innovación y modelos de negocio</div>
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <div style="font-size:0.86rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-leaf" style="color:#10B981; font-size:0.95rem;"></i> Sostenibilidad y Responsabilidad Social
+                    </div>
+                    <div><span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 1</span></div>
+                </div>
+                <div style="margin-bottom:8px;">
+                    <span style="font-size:0.66rem; font-weight:800; color:#64748B; text-transform:uppercase; letter-spacing:0.5px;">Aplicación en la Vigencia:</span>
+                    <p style="font-size:0.75rem; color:#334155; margin:3px 0 0; line-height:1.4;">Registros de costos ambientales, gestión del SG-SST en empresas manufactureras y proyectos de empaques biodegradables (hoja de plátano).</p>
+                </div>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:6px 10px; border:1px dashed #CBD5E1; margin-top:6px;">
+                <span style="font-size:0.66rem; font-weight:800; color:#0F172A; text-transform:uppercase;">Énfasis Propuesto:</span>
+                <div style="font-size:0.73rem; color:#475569; font-weight:600; margin-top:2px;">Gestión financiera y competitividad sostenible</div>
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #6366F1; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <div style="font-size:0.86rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-users-cog" style="color:#6366F1; font-size:0.95rem;"></i> Liderazgo y Talento Humano
+                    </div>
+                    <div><span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 1</span> <span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 2</span></div>
+                </div>
+                <div style="margin-bottom:8px;">
+                    <span style="font-size:0.66rem; font-weight:800; color:#64748B; text-transform:uppercase; letter-spacing:0.5px;">Aplicación en la Vigencia:</span>
+                    <p style="font-size:0.75rem; color:#334155; margin:3px 0 0; line-height:1.4;">Optimización de selección de personal mediante psicotecnia, diagnóstico de brechas de habilidades y planes de capacitación basados en ECCL en salud.</p>
+                </div>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:6px 10px; border:1px dashed #CBD5E1; margin-top:6px;">
+                <span style="font-size:0.66rem; font-weight:800; color:#0F172A; text-transform:uppercase;">Énfasis Propuesto:</span>
+                <div style="font-size:0.73rem; color:#475569; font-weight:600; margin-top:2px;">Gestión del talento, liderazgo y gestión del cambio</div>
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #0284C7; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <div style="font-size:0.86rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-laptop-code" style="color:#0284C7; font-size:0.95rem;"></i> Transformación Digital y Tecnología
+                    </div>
+                    <div><span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 1</span> <span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 2</span></div>
+                </div>
+                <div style="margin-bottom:8px;">
+                    <span style="font-size:0.66rem; font-weight:800; color:#64748B; text-transform:uppercase; letter-spacing:0.5px;">Aplicación en la Vigencia:</span>
+                    <p style="font-size:0.75rem; color:#334155; margin:3px 0 0; line-height:1.4;">Desarrollo de competencias digitales en estudiantes, instrumentos de inteligencia competitiva y estrategias de posicionamiento en redes para MIPYMES.</p>
+                </div>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:6px 10px; border:1px dashed #CBD5E1; margin-top:6px;">
+                <span style="font-size:0.66rem; font-weight:800; color:#0F172A; text-transform:uppercase;">Énfasis Propuesto:</span>
+                <div style="font-size:0.73rem; color:#475569; font-weight:600; margin-top:2px;">Analítica de datos, digitalización y economía digital</div>
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #D97706; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <div style="font-size:0.86rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-globe-americas" style="color:#D97706; font-size:0.95rem;"></i> Globalización y Nuevos Modelos de Negocio
+                    </div>
+                    <div><span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 1</span> <span style="background:#FFF7ED; color:#C2410C; border:1px solid #FDBA74; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">Línea 2</span></div>
+                </div>
+                <div style="margin-bottom:8px;">
+                    <span style="font-size:0.66rem; font-weight:800; color:#64748B; text-transform:uppercase; letter-spacing:0.5px;">Aplicación en la Vigencia:</span>
+                    <p style="font-size:0.75rem; color:#334155; margin:3px 0 0; line-height:1.4;">Estudios empíricos sobre microempresas en Santander y participación activa en redes académicas internacionales (RedesLA, RELEP, RELAYN).</p>
+                </div>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:6px 10px; border:1px dashed #CBD5E1; margin-top:6px;">
+                <span style="font-size:0.66rem; font-weight:800; color:#0F172A; text-transform:uppercase;">Énfasis Propuesto:</span>
+                <div style="font-size:0.73rem; color:#475569; font-weight:600; margin-top:2px;">Competitividad, comercio electrónico e innovación colaborativa</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BANNER DE CONSOLIDACIÓN ESTRATÉGICA -->
+    <div style="background:#FFF9F2; border-left:4px solid #F39200; padding:12px 16px; border-radius:0 8px 8px 0; font-size:0.75rem; color:#431407; line-height:1.45;">
+        <strong>Consolidación Temática:</strong> En 2019 se previeron 3 líneas iniciales dispersas. Para la Renovación de Registro Único se optimizan en <strong>2 líneas estratégicas robustas</strong>: <em>L1. Gestión Estratégica y Competitividad Empresarial</em> y <em>L2. Transformación Digital y Gestión de la Innovación</em>, garantizando sinergia y pertinencia territorial.
     </div>
 </div>
+        
+    
 
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
@@ -1019,21 +1123,303 @@ window.SECTIONS['c5'] = `
     <div id="c5-slide-panel-19" class="c5-slide-panel " style="display:none;">
         
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-book-reader" style="color:#F39200;"></i> Producción Científica del Grupo COLLEGIUM
-        </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Plataforma SCIENTI de Minciencias</span>
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
+                <i class="fas fa-book-reader" style="color:#F39200;"></i> Producción Científica del Grupo COLLEGIUM
+            </h4>
+            <div style="font-size:0.72rem; color:#64748B; font-weight:600;">
+                Libros con sellos editoriales de prestigio (McGraw-Hill, RedesLA, iQuatro Editores), capítulos y artículos indexados con DOI activo
+            </div>
+        </div>
+        <span style="background:#FFF7ED; color:#EA580C; border:1px solid #FDBA74; font-size:0.72rem; font-weight:800; padding:4px 12px; border-radius:12px;">
+            <i class="fas fa-award"></i> Minciencias · SCIENTI
+        </span>
     </div>
-    <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px;">
-        Libros impresos con sellos editoriales de prestigio (McGraw-Hill, RedesLA, iQuatro Editores), capítulos con ISBN y artículos indexados con DOI activo generados por los docentes vinculados al programa:
-    </p>
-    <div style="overflow-x:auto; margin-top:14px; border-radius:8px; border:1px solid #E2E8F0;">
-        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; text-align:left;">
-            <thead>
-                <tr style="background:#1A1A1B; color:#FFFFFF;">
-    <th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Tipología Min ciencias', 'ISBN / ISSN', 'DOI/ URL', 'Año']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Productos Generación de Nuevo Conocimiento', 'Creación y validación de una herramienta para identificar conocimientos, actitudes y prácticas de Inteligencia Competitiva en Microempresarios', 'https://doi.org/10.35992/pdm.v6i2.2397', '2024']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Artículo Q3: Competitive Intelligence Methodology for the Promotion of Business Survival. Case: Microenterprises Department of Santander, Colombia.', '10.14704/nq.2022.20.8.NQ44312', '2022']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Productos resultados de actividades de Apropiación Social del Conocimiento y Divulgación Pública de la Ciencia', 'Intervention model for exposure and control of biological risk. Study of universal precautions in nursing staff- ISSN 2695-9933', 'https://doi.org/10.37467/revtechno.v13.4963', '2023']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Chemical and microbiological risk prevention and control in surgery rooms\xa0\x0bA case of healthcare providers in Santander, Colombia ISBN 978-84-09-43242-4, pág. 1264', 'https://dialnet.unirioja.es/servlet/articulo?codigo=8876842', '2022']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', '– Artículo en ingles Scopus -Resilience and digital competences in higher education students ISSN 2695-9623', 'https://doi.org/10.37467/revhuman.v11.4158', '2022']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Digital skills, resilience and perception of academic inclusion in students of higher education ISBN 978-84-09-43242-4, pág. 707', 'https://dialnet.unirioja.es/servlet/articulo?codigo=8867548', '2022']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Capítulo de libro impreso - Editorial McGraw-Hill -Libro: "Diferencia entre las estrategias de gestión en directores y directoras de la mype de Latinoamérica." ISBN 978-607-15-1915-3\xa0\x0bCapítulo de libro: Diferencia en las estrategias de gestión entre hombres y mujeres directivas de micro y pequeñas empresas de Bucaramanga, Colombia. ISBN 978-607-15-1917-7', 'https://relayn.redesla.la/biblioteca/LibrosImpreso.html?_ga=2.167465334.993346950.1680543013-273013537.1673570938&_gl=1*1u4pzg7*_ga*MjczMDEzNTM3LjE2NzM1NzA5Mzg.*_ga_RJ2Y4BSYGL*MTY4MDU1MzAxNi4yMC4wLjE2ODA1NTMwMTYuMC4wLjA.', '2022']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Capítulo de libro :\xa0 “ Capacitación y desarrollo de habilidades de los directores de las mypes de Bucaramanga, Colombia, Colombia\xa0 “editorial iQuatro Editores con el sello editorial INVEPY Y ASOCIADOS S.C\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ISBN: OBRA COMPLETA: 978-607-99978-4-7\xa0 TOMO II: 978-607-99978-6-1', 'https://doi.org/10.46990/iQuatro.2022.11.8.0', '2022']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'libro impreso - Editorial McGraw-Hill\xa0 Libro: “Resiliencia y competencias digitales de jóvenes universitarios"\xa0\x0bCapítulo de libro : Resiliencia y competencias digitales en jóvenes universitarios, caso estudiantes de la Corporación Escuela Tecnológica del Oriente\xa0\xa0 ISBN 978-607-15-1899-6', 'https://relep.redesla.la/biblioteca/Libroimpreso.html?_ga=2.44574628.1444316783.1676505181-273013537.1673570938', '2021-2022']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Percepción de estudiantes de educación superior sobre la inclusión en las prácticas docentes editorial iQuatro Editores con el sello editorial INVEPY Y ASOCIADOS S.C\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ISBN: 978-607-99978-1-6', 'https://doi.org/10.46990/iQuatro.2022.12.2.0', '2021-2022']</th></tr></thead><tbody></tbody></table></div>
+
+    <!-- STRIP DE MÉTRICAS EJECUTIVAS -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px; margin-bottom:16px;">
+        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:10px 14px; text-align:center;">
+            <div style="font-size:1.25rem; font-weight:900; color:#1A1A1B;">10</div>
+            <div style="font-size:0.68rem; font-weight:700; color:#64748B; text-transform:uppercase;">Productos Registrados</div>
+        </div>
+        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:10px 14px; text-align:center;">
+            <div style="font-size:1.25rem; font-weight:900; color:#C2410C;">4 Sellos</div>
+            <div style="font-size:0.68rem; font-weight:700; color:#64748B; text-transform:uppercase;">McGraw-Hill · iQuatro · RedesLA</div>
+        </div>
+        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:10px 14px; text-align:center;">
+            <div style="font-size:1.25rem; font-weight:900; color:#047857;">Scopus Q3</div>
+            <div style="font-size:0.68rem; font-weight:700; color:#64748B; text-transform:uppercase;">Indexación Internacional</div>
+        </div>
+        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:10px 14px; text-align:center;">
+            <div style="font-size:1.25rem; font-weight:900; color:#2563EB;">100% Verificable</div>
+            <div style="font-size:0.68rem; font-weight:700; color:#64748B; text-transform:uppercase;">DOI · ISBN · Dialnet Activos</div>
+        </div>
+    </div>
+
+    <!-- BOTONES DE FILTRADO DINÁMICO -->
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <button onclick="filterC5Collegium('all', this)" class="c5-btn-collegium active" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #1A1A1B; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Todos los Productos (10)
+        </button>
+        <button onclick="filterC5Collegium('gnc', this)" class="c5-btn-collegium" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Nuevo Conocimiento - GNC (2)
+        </button>
+        <button onclick="filterC5Collegium('libros', this)" class="c5-btn-collegium" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Libros McGraw-Hill & iQuatro (4)
+        </button>
+        <button onclick="filterC5Collegium('scopus', this)" class="c5-btn-collegium" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Artículos Scopus & Dialnet (4)
+        </button>
+    </div>
+
+    <!-- GRID DE TARJETAS (CERO SCROLLBAR HORIZONTAL) -->
+    <div id="c5-collegium-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px;">
+        
+        <div class="c5-collegium-card" data-cat="gnc" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #C2410C33; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        GNC · Artículo Indexado
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2024
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Creación y validación de una herramienta para identificar conocimientos, actitudes y prácticas de Inteligencia Competitiva en Microempresarios
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">Tipo Minciencias:</strong> Productos de Generación de Nuevo Conocimiento (GNC)
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://doi.org/10.35992/pdm.v6i2.2397" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver DOI: 10.35992/pdm.v6i2.2397
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="gnc scopus" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#FEF3C7; color:#B45309; border:1px solid #B4530933; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        GNC · Scopus Q3
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Competitive Intelligence Methodology for the Promotion of Business Survival. Case: Microenterprises Department of Santander, Colombia
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">Indexación:</strong> Artículo Q3 Scopus / Minciencias GNC · NeuroQuantology
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://doi.org/10.14704/nq.2022.20.8.NQ44312" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver DOI: 10.14704/nq.2022.20.8.NQ44312
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="asc" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#ECFDF5; color:#047857; border:1px solid #04785733; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        ASC · Revista Científica
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2023
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Intervention model for exposure and control of biological risk. Study of universal precautions in nursing staff
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">ISSN / Index:</strong> ISSN 2695-9933 · Revista Techno Review
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://doi.org/10.37467/revtechno.v13.4963" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver DOI: 10.37467/revtechno.v13.4963
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="asc" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#EFF6FF; color:#1D4ED8; border:1px solid #1D4ED833; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        ASC · Dialnet / España
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Chemical and microbiological risk prevention and control in surgery rooms: A case of healthcare providers in Santander, Colombia
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">ISBN / Registro:</strong> ISBN 978-84-09-43242-4, Pág. 1264
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=8876842" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver Dialnet (Código 8876842)
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="asc scopus" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#F5F3FF; color:#6D28D9; border:1px solid #6D28D933; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        ASC · Scopus
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Resilience and digital competences in higher education students (Artículo en inglés)
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">ISSN / Index:</strong> ISSN 2695-9623 · Revista Human Review (Scopus)
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://doi.org/10.37467/revhuman.v11.4158" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver DOI: 10.37467/revhuman.v11.4158
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="asc" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#EFF6FF; color:#1D4ED8; border:1px solid #1D4ED833; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        ASC · Dialnet / España
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Digital skills, resilience and perception of academic inclusion in students of higher education
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">ISBN / Registro:</strong> ISBN 978-84-09-43242-4, Pág. 707
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=8867548" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver Dialnet (Código 8867548)
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="libros" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#FFF1F2; color:#BE123C; border:1px solid #BE123C33; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Libro McGraw-Hill
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Capítulo: Diferencia en las estrategias de gestión entre hombres y mujeres directivas de micro y pequeñas empresas de Bucaramanga, Colombia
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">Editorial / ISBN:</strong> Editorial McGraw-Hill · Libro: ISBN 978-607-15-1915-3 / Cap: ISBN 978-607-15-1917-7
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://relayn.redesla.la/biblioteca/LibrosImpreso.html" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver Registro RedesLA / McGraw-Hill
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="libros" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#EEF2FF; color:#4338CA; border:1px solid #4338CA33; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Capítulo iQuatro Editores
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Capítulo: Capacitación y desarrollo de habilidades de los directores de las mypes de Bucaramanga, Colombia
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">Editorial / ISBN:</strong> Editorial iQuatro Editores / Sello INVEPY · Obra: ISBN 978-607-99978-4-7 · Tomo II
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://doi.org/10.46990/iQuatro.2022.11.8.0" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver DOI: 10.46990/iQuatro.2022.11.8.0
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="libros" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#FFF1F2; color:#BE123C; border:1px solid #BE123C33; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Libro McGraw-Hill
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2021-2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Capítulo: Resiliencia y competencias digitales en jóvenes universitarios, caso estudiantes de la Corporación Escuela Tecnológica del Oriente
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">Editorial / ISBN:</strong> Editorial McGraw-Hill / RELEP · Libro Impreso: ISBN 978-607-15-1899-6
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://relep.redesla.la/biblioteca/Libroimpreso.html" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver Registro RELEP / McGraw-Hill
+                </a>
+            </div>
+        </div>
+        
+        <div class="c5-collegium-card" data-cat="libros" style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between; transition:all 0.2s;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                    <span style="background:#EEF2FF; color:#4338CA; border:1px solid #4338CA33; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Capítulo iQuatro Editores
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        <i class="far fa-calendar-alt"></i> 2021-2022
+                    </span>
+                </div>
+                <h5 style="font-size:0.82rem; font-weight:800; color:#0F172A; margin:0 0 8px; line-height:1.4;">
+                    Capítulo: Percepción de estudiantes de educación superior sobre la inclusión en las prácticas docentes
+                </h5>
+                <div style="font-size:0.71rem; color:#64748B; margin-bottom:12px; line-height:1.35;">
+                    <strong style="color:#334155;">Editorial / ISBN:</strong> Editorial iQuatro Editores / Sello INVEPY · ISBN 978-607-99978-1-6
+                </div>
+            </div>
+            <div style="border-top:1px solid #F1F5F9; padding-top:8px;">
+                <a href="https://doi.org/10.46990/iQuatro.2022.12.2.0" target="_blank" style="background:#1A1A1B; color:#F39200; font-size:0.7rem; font-weight:800; padding:6px 12px; border-radius:6px; text-decoration:none; display:inline-flex; align-items:center; gap:6px; border:1px solid #334155; transition:background 0.2s;">
+                    <i class="fas fa-external-link-alt" style="font-size:0.65rem;"></i> Ver DOI: 10.46990/iQuatro.2022.12.2.0
+                </a>
+            </div>
+        </div>
+        
+    </div>
 </div>
+        
+    
 
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
@@ -1195,21 +1581,255 @@ window.SECTIONS['c5'] = `
     <div id="c5-slide-panel-22" class="c5-slide-panel " style="display:none;">
         
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-tasks" style="color:#10B981;"></i> Proyectos de Investigación Generados en el Aula (2023–2026)
-        </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Coordinación del Programa</span>
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
+                <i class="fas fa-tasks" style="color:#10B981;"></i> Proyectos de Investigación Generados en el Aula (2023–2026)
+            </h4>
+            <div style="font-size:0.72rem; color:#64748B; font-weight:600;">
+                Casos de estudio, planes de negocio y proyectos aplicados en Santander desarrollados por estudiantes con tutoría docente
+            </div>
+        </div>
+        <span style="background:#ECFDF5; color:#047857; border:1px solid #A7F3D0; font-size:0.72rem; font-weight:800; padding:4px 12px; border-radius:12px;">
+            <i class="fas fa-folder-open"></i> 11 Proyectos Registrados
+        </span>
     </div>
-    <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px;">
-        Proyectos formulados y ejecutados por estudiantes con acompañamiento docente en Santander:
-    </p>
-    <div style="overflow-x:auto; margin-top:14px; border-radius:8px; border:1px solid #E2E8F0;">
-        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; text-align:left;">
-            <thead>
-                <tr style="background:#1A1A1B; color:#FFFFFF;">
-    <th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Proyecto de Investigación Formativa', 'Estudiantes', 'Periodo']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Gerencia de planeación estratégica en proyectos de vivienda de interés social (vis) desde el enfoque de constructibilidad', 'María Alejandra Ramírez Ordoñez', '2023']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Metodología six sigma aplicada en empresas de producción', 'Yurley Andrea zapata Ardila', '2023']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Fallas en el proceso de selección de personal a través de las pruebas psicotécnicas de una empresa mediana del sector industrial de Bucaramanga.', 'Laura Patricia Leal Niño y Yadira Inés Rueda León', '2023']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Industria 4.0” el camino a seguir en la innovación industrial del sector de alimentos en Colombia', 'Sonia Mayerly Carreño barrera, Ricardo Esteban Celinz Carreño y Omar Andrés Escobar', '2023']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Creación de muebles en una ebanistería tradicional: plan de negocios', 'Julye Stephanie Lizarazo Torres, Mayerly Andrea Beltran Vera', '2024']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Comercializadora de jugos ubicada en la ciudad de Bucaramanga aragü fruit: plan de negocios', 'Víctor Fabian Reyes Mantilla, Duván Carvajal Tolosa', '2024']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Centro de ocio egeo: plan de negocios', 'Jefferson Rosales Contreras', '2024']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Creación de una serviteca automotriz de alta gama en la ciudad de Bucaramanga: plan de negocios', 'Sonia Ximena Villamizar Peña', '2024']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Plan estratégico de capacitación del talento humano basado en la Evaluación y Certificación de Competencias Laborales (ECCL) en empresas del sector salud de Bucaramanga.', 'Johana Lucía Malaver Méndez', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Barreras a las que se enfrentan los estudiantes universitarios en la ciudad de Bucaramanga para manejar sus finanzas personales', 'Julian Andres Marquez Sanchez', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Diseño de una aplicación financiera de carácter estratégico para la evaluación de viabilidad y perfilamiento de emprendimientos en etapa de concepción en Bucaramanga y su área metropolitana. (REDCOLSI)', 'Jordán Yesid Restrepo Gómez, Jefferson Edwin Arguello Torres', '2026']</th></tr></thead><tbody></tbody></table></div>
+
+    <!-- FILTRADO POR PERIODO -->
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <button onclick="filterC5Classroom('all', this)" class="c5-btn-classroom active" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #1A1A1B; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Todos los Periodos (11)
+        </button>
+        <button onclick="filterC5Classroom('2023', this)" class="c5-btn-classroom" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            2023 (4)
+        </button>
+        <button onclick="filterC5Classroom('2024', this)" class="c5-btn-classroom" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            2024 (4)
+        </button>
+        <button onclick="filterC5Classroom('2025', this)" class="c5-btn-classroom" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            2025 (2)
+        </button>
+        <button onclick="filterC5Classroom('2026', this)" class="c5-btn-classroom" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            2026 REDCOLSI (1)
+        </button>
+    </div>
+
+    <!-- GRID DE TARJETAS (CERO SCROLLBAR HORIZONTAL) -->
+    <div id="c5-classroom-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px;">
+        
+        <div class="c5-classroom-card" data-year="2023" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #6366F1; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2023
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Construcción & Vivienda
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Gerencia de planeación estratégica en proyectos de vivienda de interés social (VIS) desde el enfoque de constructibilidad
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#6366F1; margin-right:4px;"></i> <strong>Estudiantes:</strong> María Alejandra Ramírez Ordoñez
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2023" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #6366F1; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2023
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Optimización Productiva
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Metodología Six Sigma aplicada en empresas de producción
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#6366F1; margin-right:4px;"></i> <strong>Estudiantes:</strong> Yurley Andrea Zapata Ardila
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2023" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #6366F1; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2023
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Talento Humano & Psicotecnia
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Fallas en el proceso de selección de personal a través de las pruebas psicotécnicas de una empresa mediana del sector industrial de Bucaramanga
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#6366F1; margin-right:4px;"></i> <strong>Estudiantes:</strong> Laura Patricia Leal Niño y Yadira Inés Rueda León
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2023" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #6366F1; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2023
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Industria 4.0 & Alimentos
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Industria 4.0: el camino a seguir en la innovación industrial del sector de alimentos en Colombia
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#6366F1; margin-right:4px;"></i> <strong>Estudiantes:</strong> Sonia Mayerly Carreño Barrera, Ricardo Esteban Celinz Carreño y Omar Andrés Escobar
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2024" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2024
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Manufactura & Muebles
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Creación de muebles en una ebanistería tradicional: plan de negocios
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Julye Stephanie Lizarazo Torres, Mayerly Andrea Beltrán Vera
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2024" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2024
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Agroindustria & Bebidas
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Comercializadora de jugos ubicada en la ciudad de Bucaramanga Aragü Fruit: plan de negocios
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Víctor Fabián Reyes Mantilla, Duván Carvajal Tolosa
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2024" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2024
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Entretenimiento & Servicios
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Centro de ocio EGEO: plan de negocios
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Jefferson Rosales Contreras
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2024" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2024
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Sector Automotriz
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Creación de una serviteca automotriz de alta gama en la ciudad de Bucaramanga: plan de negocios
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Sonia Ximena Villamizar Peña
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2025" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2025
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Sector Salud & Competencias
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Plan estratégico de capacitación del talento humano basado en la Evaluación y Certificación de Competencias Laborales (ECCL) en empresas del sector salud de Bucaramanga
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#10B981; margin-right:4px;"></i> <strong>Estudiantes:</strong> Johana Lucía Malaver Méndez
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2025" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2025
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Finanzas Universitarias
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Barreras a las que se enfrentan los estudiantes universitarios en la ciudad de Bucaramanga para manejar sus finanzas personales
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#10B981; margin-right:4px;"></i> <strong>Estudiantes:</strong> Julián Andrés Márquez Sánchez
+            </div>
+        </div>
+        
+        <div class="c5-classroom-card" data-year="2026" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #C8102E; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#1A1A1B; color:#FFFFFF; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:6px;">
+                        Periodo 2026
+                    </span>
+                    <span style="background:#F8FAFC; color:#64748B; border:1px solid #E2E8F0; font-size:0.68rem; font-weight:700; padding:2px 8px; border-radius:6px;">
+                        Fintech & Emprendimiento (REDCOLSI)
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Diseño de una aplicación financiera de carácter estratégico para la evaluación de viabilidad y perfilamiento de emprendimientos en etapa de concepción en Bucaramanga y su área metropolitana (REDCOLSI)
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#C8102E; margin-right:4px;"></i> <strong>Estudiantes:</strong> Jordán Yesid Restrepo Gómez, Jefferson Edwin Argüello Torres
+            </div>
+        </div>
+        
+    </div>
 </div>
+        
+    
 
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
@@ -1331,21 +1951,249 @@ window.SECTIONS['c5'] = `
     <div id="c5-slide-panel-25" class="c5-slide-panel " style="display:none;">
         
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-clipboard-list" style="color:#F39200;"></i> Principales Opciones de Grado Desarrolladas en el Programa
-        </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Registro y Control Académico CETO</span>
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
+                <i class="fas fa-user-check" style="color:#F39200;"></i> Opciones de Grado y Semilleros Desarrollados en el Programa
+            </h4>
+            <div style="font-size:0.72rem; color:#64748B; font-weight:600;">
+                Proyectos de Grado aplicados y trabajos de investigación formativa en el Semillero GESTNOVA vinculados a REDCOLSI
+            </div>
+        </div>
+        <span style="background:#FFF7ED; color:#EA580C; border:1px solid #FDBA74; font-size:0.72rem; font-weight:800; padding:4px 12px; border-radius:12px;">
+            <i class="fas fa-check-circle"></i> 11 Trabajos Sustentados
+        </span>
     </div>
-    <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px;">
-        Proyectos de grado sustentados bajo modalidades de semillero y monografía aplicada (2021–2026):
-    </p>
-    <div style="overflow-x:auto; margin-top:14px; border-radius:8px; border:1px solid #E2E8F0;">
-        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; text-align:left;">
-            <thead>
-                <tr style="background:#1A1A1B; color:#FFFFFF;">
-    <th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Opción de grado', 'Titulo', 'Estudiantes', 'Año']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Semillero', 'Estrategias de marketing digital para fortalecer la competitividad de las microempresas de Bucaramanga. (REDCOLSI)', 'Mayra Alejandra Rueda Lozano', '2021']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Proyecto de Grado', 'Propuesta de organización por procesos de la carpintería maju ubicada en la ciudad de Floridablanca.', 'Julye Stephanie Lizarazo Torres, Mayerly Andrea Beltrán Vera', '2024']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Proyecto de Grado', 'Estudio de mercado para la creación de un centro de ocio en Bucaramanga, Santander para adolescentes', 'Jefferson Rosales Contreras', '2024']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Proyecto de Grado', 'Material Sostenible como Alternativa Biodegradable para la Envoltura De Alimentos: Hoja De Plátano', 'Angie Karolina Pimiento Alfonso\x0bCarol Viviana Alvarado Rincón', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Proyecto de Grado', 'Análisis de la Brecha de Habilidades del Mantenimiento Automotriz en Santander', 'Sonia Ximena Villamizar Peña, Roso Castillo Cuenca', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Semillero', 'Implementación de Estrategias de Posicionamiento en Redes Sociales para las MIPYMES en Bucaramanga y el Área Metropolitana', 'Edwin Andres Murallas Meza', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Semillero', 'Desarrollo de un Instrumento Estratégico de Gestión de Riesgos para el Fortalecimiento y Sostenibilidad de los Emprendimientos en Bucaramanga, Santander', 'Lizeth Mayerly Garcia Parra', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Semillero', 'Estudio de avance de la Política de Transición Energética en Colombia para los años 2021 al 2025', 'Luz Ayda Urrego Grajales', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Semillero', 'Plan estratégico de capacitación del talento humano basado en la Evaluación y Certificación de Competencias Laborales (ECCL) en empresas del sector salud de Bucaramanga.', 'Johana Lucía Malaver Méndez', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Semillero', 'Barreras a las que se enfrentan los estudiantes universitarios en la ciudad de Bucaramanga para manejar sus finanzas personales', 'Julian Andres Marquez Sanchez', '2025']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Seemillero', 'Diseño de una aplicación financiera de carácter estratégico para la evaluación de viabilidad y perfilamiento de emprendimientos en etapa de concepción en Bucaramanga y su área metropolitana. (REDCOLSI)', 'Jordán Yesid Restrepo Gómez, Jefferson Edwin Arguello Torres', '2026']</th></tr></thead><tbody></tbody></table></div>
+
+    <!-- FILTRADO POR MODALIDAD -->
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+        <button onclick="filterC5Degree('all', this)" class="c5-btn-degree active" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #1A1A1B; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Todas las Modalidades (11)
+        </button>
+        <button onclick="filterC5Degree('grado', this)" class="c5-btn-degree" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Proyectos de Grado (4)
+        </button>
+        <button onclick="filterC5Degree('semillero', this)" class="c5-btn-degree" style="background:#FFFFFF; color:#64748B; border:1px solid #CBD5E1; padding:5px 14px; border-radius:20px; font-size:0.72rem; font-weight:700; cursor:pointer;">
+            Semillero GESTNOVA / REDCOLSI (7)
+        </button>
+    </div>
+
+    <!-- GRID DE TARJETAS (CERO SCROLLBAR HORIZONTAL) -->
+    <div id="c5-degree-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px;">
+        
+        <div class="c5-degree-card" data-modality="semillero" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #F3920044; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Semillero GESTNOVA / REDCOLSI
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2021
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Estrategias de marketing digital para fortalecer la competitividad de las microempresas de Bucaramanga. (REDCOLSI)
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Mayra Alejandra Rueda Lozano
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="grado" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#ECFDF5; color:#047857; border:1px solid #10B98144; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Proyecto de Grado
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2024
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Propuesta de organización por procesos de la carpintería MAJU ubicada en la ciudad de Floridablanca.
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#10B981; margin-right:4px;"></i> <strong>Estudiantes:</strong> Julye Stephanie Lizarazo Torres, Mayerly Andrea Beltrán Vera
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="grado" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#ECFDF5; color:#047857; border:1px solid #10B98144; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Proyecto de Grado
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2024
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Estudio de mercado para la creación de un centro de ocio en Bucaramanga, Santander para adolescentes
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#10B981; margin-right:4px;"></i> <strong>Estudiantes:</strong> Jefferson Rosales Contreras
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="grado" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#ECFDF5; color:#047857; border:1px solid #10B98144; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Proyecto de Grado
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2025
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Material Sostenible como Alternativa Biodegradable para la Envoltura De Alimentos: Hoja De Plátano
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#10B981; margin-right:4px;"></i> <strong>Estudiantes:</strong> Angie Karolina Pimiento Alfonso, Carol Viviana Alvarado Rincón
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="grado" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #10B981; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#ECFDF5; color:#047857; border:1px solid #10B98144; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Proyecto de Grado
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2025
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Análisis de la Brecha de Habilidades del Mantenimiento Automotriz en Santander
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#10B981; margin-right:4px;"></i> <strong>Estudiantes:</strong> Sonia Ximena Villamizar Peña, Roso Castillo Cuenca
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="semillero" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #F3920044; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Semillero GESTNOVA / REDCOLSI
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2025
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Implementación de Estrategias de Posicionamiento en Redes Sociales para las MIPYMES en Bucaramanga y el Área Metropolitana
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Edwin Andrés Murallas Meza
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="semillero" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #F3920044; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Semillero GESTNOVA / REDCOLSI
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2025
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Desarrollo de un Instrumento Estratégico de Gestión de Riesgos para el Fortalecimiento y Sostenibilidad de los Emprendimientos en Bucaramanga, Santander
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Lizeth Mayerly García Parra
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="semillero" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #F3920044; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Semillero GESTNOVA / REDCOLSI
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2025
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Estudio de avance de la Política de Transición Energética en Colombia para los años 2021 al 2025
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Luz Ayda Urrego Grajales
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="semillero" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #F3920044; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Semillero GESTNOVA / REDCOLSI
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2025
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Plan estratégico de capacitación del talento humano basado en la Evaluación y Certificación de Competencias Laborales (ECCL) en empresas del sector salud de Bucaramanga.
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Johana Lucía Malaver Méndez
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="semillero" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #F3920044; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Semillero GESTNOVA / REDCOLSI
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2025
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Barreras a las que se enfrentan los estudiantes universitarios en la ciudad de Bucaramanga para manejar sus finanzas personales
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Julián Andrés Márquez Sánchez
+            </div>
+        </div>
+        
+        <div class="c5-degree-card" data-modality="semillero" style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:4px solid #F39200; border-radius:10px; padding:15px; box-shadow:0 2px 8px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #F3920044; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Semillero GESTNOVA / REDCOLSI
+                    </span>
+                    <span style="background:#F1F5F9; color:#475569; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">
+                        Año 2026
+                    </span>
+                </div>
+                <h5 style="font-size:0.8rem; font-weight:800; color:#0F172A; margin:0 0 10px; line-height:1.4;">
+                    Diseño de una aplicación financiera de carácter estratégico para la evaluación de viabilidad y perfilamiento de emprendimientos en etapa de concepción en Bucaramanga y su área metropolitana. (REDCOLSI)
+                </h5>
+            </div>
+            <div style="background:#F8FAFC; border-radius:6px; padding:8px 10px; border:1px dashed #CBD5E1; font-size:0.71rem; color:#334155;">
+                <i class="fas fa-user-graduate" style="color:#F39200; margin-right:4px;"></i> <strong>Estudiantes:</strong> Jordán Yesid Restrepo Gómez, Jefferson Edwin Argüello Torres
+            </div>
+        </div>
+        
+    </div>
 </div>
+        
+    
 
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
@@ -1403,22 +2251,104 @@ window.SECTIONS['c5'] = `
 
     <div id="c5-slide-panel-27" class="c5-slide-panel " style="display:none;">
         
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-industry" style="color:#10B981;"></i> Aportes de la Investigación a los Sectores Productivos y de Servicios
-        </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Articulación con Tejido Empresarial</span>
+<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
+                <i class="fas fa-building" style="color:#2563EB;"></i> Aportes a Sectores Productivos y de Servicios de Santander
+            </h4>
+            <div style="font-size:0.72rem; color:#64748B; font-weight:600;">
+                Articulación directa entre las dos líneas de investigación del programa y las problemáticas de las empresas regionales
+            </div>
+        </div>
+        <span style="background:#EFF6FF; color:#1D4ED8; border:1px solid #BFDBFE; font-size:0.72rem; font-weight:800; padding:4px 12px; border-radius:12px;">
+            <i class="fas fa-map-marker-alt"></i> Impacto Departamental
+        </span>
     </div>
-    <p style="font-size:0.76rem; color:#4B5563; margin:0 0 10px;">
-        Alineación de las líneas propuestas con las necesidades reales de los sectores de Santander:
-    </p>
-    <div style="overflow-x:auto; margin-top:14px; border-radius:8px; border:1px solid #E2E8F0;">
-        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; text-align:left;">
-            <thead>
-                <tr style="background:#1A1A1B; color:#FFFFFF;">
-    <th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Línea de investigación propuesta', 'Aporte relacionado en los registros de la vigencia', 'Sector relacionado']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Gestión Estratégica y Competitividad Empresarial', 'Métodos e instrumentos de inteligencia competitiva para apoyar decisiones y supervivencia empresarial.', 'Microempresas de Santander']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Propuesta de organización por procesos para Carpintería MAJU, en Floridablanca.', 'Manufactura de madera y servicios de carpintería']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Estudio de la hoja de plátano como alternativa biodegradable para la envoltura de alimentos.', 'Alimentos y alternativas de empaque sostenible']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Diagnóstico de brechas de habilidades en mantenimiento automotriz y plan de capacitación basado en ECCL en salud.', 'Servicios automotrices y sector salud']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Plan de negocios de serviteca de alta gama; el documento maestro reporta la experiencia empresarial MYB.', 'Servicios de mantenimiento automotriz']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Transformación Digital y Gestión de la Innovación', 'Proyecto de estrategias de posicionamiento en redes sociales para MIPYMES de Bucaramanga y su área metropolitana.', 'MIPYMES de comercio y servicios']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Publicación sobre diseño de software de información financiera para decisiones administrativas y gestión del SG-SST.', 'Sector del calzado']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['', 'Diseño de aplicación financiera para evaluar viabilidad y perfilar emprendimientos en etapa de concepción (2026).', 'Emprendimientos de Bucaramanga y su área metropolitana']</th></tr></thead><tbody></tbody></table></div>
+
+    <!-- DOS COLUMNAS ESTRATÉGICAS (CERO SCROLLBAR) -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:18px;">
+        <!-- LÍNEA 1 -->
+        <div style="background:#FFF9F2; border:1.5px solid #FED7AA; border-radius:10px; padding:16px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding-bottom:8px; border-bottom:1.5px solid #FED7AA;">
+                <div style="font-size:0.85rem; font-weight:800; color:#C2410C;">
+                    <i class="fas fa-chess" style="color:#F39200;"></i> Línea 1: Gestión Estratégica y Competitividad
+                </div>
+                <span style="background:#FFF7ED; color:#EA580C; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">5 Sectores</span>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-store" style="color:#F39200;"></i> Microempresas de Santander
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Métodos e instrumentos de inteligencia competitiva para apoyar decisiones y supervivencia empresarial.</div>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-couch" style="color:#F39200;"></i> Manufactura de Madera y Carpintería
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Propuesta de organización por procesos para Carpintería MAJU, en Floridablanca.</div>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-leaf" style="color:#F39200;"></i> Alimentos y Empaques Sostenibles
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Estudio de la hoja de plátano como alternativa biodegradable para la envoltura de alimentos.</div>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-tools" style="color:#F39200;"></i> Servicios Automotrices y Sector Salud
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Diagnóstico de brechas de habilidades en mantenimiento automotriz y plan de capacitación basado en ECCL en salud.</div>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-car" style="color:#F39200;"></i> Servicios de Mantenimiento Automotriz
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Plan de negocios de serviteca de alta gama; consolidación de la experiencia empresarial MYB.</div>
+            </div>
+            
+        </div>
+
+        <!-- LÍNEA 2 -->
+        <div style="background:#F0F9FF; border:1.5px solid #BAE6FD; border-radius:10px; padding:16px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; padding-bottom:8px; border-bottom:1.5px solid #BAE6FD;">
+                <div style="font-size:0.85rem; font-weight:800; color:#0369A1;">
+                    <i class="fas fa-microchip" style="color:#0284C7;"></i> Línea 2: Transformación Digital e Innovación
+                </div>
+                <span style="background:#E0F2FE; color:#0284C7; font-size:0.68rem; font-weight:800; padding:2px 8px; border-radius:10px;">3 Sectores</span>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-share-alt" style="color:#0284C7;"></i> MIPYMES de Comercio y Servicios
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Proyecto de estrategias de posicionamiento en redes sociales para MIPYMES de Bucaramanga y su área metropolitana.</div>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-shoe-prints" style="color:#0284C7;"></i> Sector del Calzado de Bucaramanga
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Publicación sobre diseño de software de información financiera para decisiones administrativas y gestión del SG-SST.</div>
+            </div>
+            
+            <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:8px; padding:12px; margin-bottom:10px; box-shadow:0 1px 4px rgba(0,0,0,0.02);">
+                <div style="font-size:0.78rem; font-weight:800; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                    <i class="fas fa-chart-line" style="color:#0284C7;"></i> Emprendimientos del AMB (REDCOLSI)
+                </div>
+                <div style="font-size:0.73rem; color:#475569; line-height:1.4;">Diseño de aplicación financiera para evaluar viabilidad y perfilar emprendimientos en etapa de concepción (2026).</div>
+            </div>
+            
+        </div>
+    </div>
 </div>
+        
+    
 
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
@@ -1438,19 +2368,103 @@ window.SECTIONS['c5'] = `
 
     <div id="c5-slide-panel-28" class="c5-slide-panel " style="display:none;">
         
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #C8102E; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-check-double" style="color:#C8102E;"></i> Resultados Verificables e Impacto en el Entorno Regional
-        </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Evidencias Concretas</span>
+<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
+                <i class="fas fa-check-double" style="color:#10B981;"></i> Resultados Verificables e Impacto en el Entorno
+            </h4>
+            <div style="font-size:0.72rem; color:#64748B; font-weight:600;">
+                Logros tangibles del programa en transferencia empresarial, proyección internacional y articulación regional
+            </div>
+        </div>
+        <span style="background:#ECFDF5; color:#047857; border:1px solid #A7F3D0; font-size:0.72rem; font-weight:800; padding:4px 12px; border-radius:12px;">
+            <i class="fas fa-shield-alt"></i> Impacto Demostrado
+        </span>
     </div>
-    <div style="overflow-x:auto; margin-top:14px; border-radius:8px; border:1px solid #E2E8F0;">
-        <table style="width:100%; border-collapse:collapse; font-size:0.78rem; text-align:left;">
-            <thead>
-                <tr style="background:#1A1A1B; color:#FFFFFF;">
-    <th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Aporte', 'Evidencia concreta del programa', 'Resultado verificable']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Transferencia de conocimiento a empresas reales', 'Proyectos de grado aplicados, planes de negocio, diagnóstico organizacional, investigación aplicada en procesos productivos.', 'Creación de spin-off empresarial MYB Soluciones e Inversiones Automotrices S.A.S., con generación de empleo.']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Solución de problemas del entorno', 'Trabajos de investigación como plan de negocios, mejora de procesos, innovación productiva, industria 4.0.', 'Impacto en decisiones reales de inversión/emprendimiento.']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Desarrollo de capacidades en entidades públicas y privadas', 'Convenios con AMB, Bomberos, Girón, Cajasan, U. Cuenca, UMECIT.', 'Proyectos de formación, consultoría, investigación colaborativa, transferencia tecnológica.']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Proyección internacional', 'Convenios internacionales con UCUENCA y UMECIT.', 'Movilidad académica, proyectos de investigación conjunta.']</th><th style="padding:10px 14px; border:1px solid #334155; font-weight:800; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.5px;">['Fortalecimiento del ecosistema de investigación territorial', 'Participación en Semilleros (GESTNOVA), REDCOLSI y eventos propios (Semana Tecnológica / Congreso Multidisciplinario).', 'Divulgación de resultados de investigación en escenarios nacionales y regionales.']</th></tr></thead><tbody></tbody></table></div>
+
+    <!-- LISTADO DE TARJETAS DE IMPACTO (CERO SCROLLBAR) -->
+    <div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:5px solid #F39200; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
+            <div style="font-size:0.88rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                <i class="fas fa-industry" style="color:#F39200; font-size:1rem;"></i> Transferencia de Conocimiento a Empresas Reales
+            </div>
+            <div style="font-size:0.74rem; color:#475569; margin-bottom:10px; line-height:1.45;">
+                <strong style="color:#1E293B;">Evidencia del Programa:</strong> Proyectos de grado aplicados, formulación de planes de negocio, diagnóstico organizacional e investigación aplicada en procesos productivos.
+            </div>
+            <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:6px; padding:10px 14px; font-size:0.74rem; color:#166534; line-height:1.45;">
+                <strong style="display:flex; align-items:center; gap:6px; color:#15803D; margin-bottom:3px; font-size:0.75rem;">
+                    <i class="fas fa-check-circle" style="color:#10B981;"></i> Resultado Verificable:
+                </strong>
+                Creación y operación real de la spin-off empresarial MYB Soluciones e Inversiones Automotrices S.A.S. (NIT 901604941-7), generando empleo directo y facturación comercial en Bucaramanga.
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:5px solid #10B981; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
+            <div style="font-size:0.88rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                <i class="fas fa-lightbulb" style="color:#10B981; font-size:1rem;"></i> Solución de Problemas del Entorno Empresarial
+            </div>
+            <div style="font-size:0.74rem; color:#475569; margin-bottom:10px; line-height:1.45;">
+                <strong style="color:#1E293B;">Evidencia del Programa:</strong> Trabajos de investigación orientados a planes de negocio, optimización de manufactura, alternativas biodegradables (hoja de plátano) e Industria 4.0 en alimentos.
+            </div>
+            <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:6px; padding:10px 14px; font-size:0.74rem; color:#166534; line-height:1.45;">
+                <strong style="display:flex; align-items:center; gap:6px; color:#15803D; margin-bottom:3px; font-size:0.75rem;">
+                    <i class="fas fa-check-circle" style="color:#10B981;"></i> Resultado Verificable:
+                </strong>
+                Impacto cuantificable en decisiones reales de inversión, formalización empresarial y competitividad para microempresas de Bucaramanga y Floridablanca.
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:5px solid #6366F1; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
+            <div style="font-size:0.88rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                <i class="fas fa-handshake" style="color:#6366F1; font-size:1rem;"></i> Desarrollo de Capacidades en Entidades Públicas y Privadas
+            </div>
+            <div style="font-size:0.74rem; color:#475569; margin-bottom:10px; line-height:1.45;">
+                <strong style="color:#1E293B;">Evidencia del Programa:</strong> Convenios marco y de cooperación con AMB, Cuerpo de Bomberos de Bucaramanga, Alcaldía de Girón, Cajasan, Universidad de Cuenca y UMECIT.
+            </div>
+            <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:6px; padding:10px 14px; font-size:0.74rem; color:#166534; line-height:1.45;">
+                <strong style="display:flex; align-items:center; gap:6px; color:#15803D; margin-bottom:3px; font-size:0.75rem;">
+                    <i class="fas fa-check-circle" style="color:#10B981;"></i> Resultado Verificable:
+                </strong>
+                Ejecución de programas de formación a la medida, consultoría administrativa, investigación colaborativa y transferencia tecnológica multisectorial.
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:5px solid #0284C7; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
+            <div style="font-size:0.88rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                <i class="fas fa-globe-americas" style="color:#0284C7; font-size:1rem;"></i> Proyección y Alianzas Internacionales
+            </div>
+            <div style="font-size:0.74rem; color:#475569; margin-bottom:10px; line-height:1.45;">
+                <strong style="color:#1E293B;">Evidencia del Programa:</strong> Convenios internacionales formalizados con la Universidad de Cuenca (Ecuador) y la Universidad Metropolitana de Educación, Ciencia y Tecnología - UMECIT (Panamá).
+            </div>
+            <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:6px; padding:10px 14px; font-size:0.74rem; color:#166534; line-height:1.45;">
+                <strong style="display:flex; align-items:center; gap:6px; color:#15803D; margin-bottom:3px; font-size:0.75rem;">
+                    <i class="fas fa-check-circle" style="color:#10B981;"></i> Resultado Verificable:
+                </strong>
+                Movilidad académica de docentes y estudiantes, redes temáticas conjuntas y publicaciones coautoradas en revistas científicas indexadas.
+            </div>
+        </div>
+        
+        <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-left:5px solid #D97706; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
+            <div style="font-size:0.88rem; font-weight:800; color:#1A1A1B; display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                <i class="fas fa-network-wired" style="color:#D97706; font-size:1rem;"></i> Fortalecimiento del Ecosistema de Investigación Territorial
+            </div>
+            <div style="font-size:0.74rem; color:#475569; margin-bottom:10px; line-height:1.45;">
+                <strong style="color:#1E293B;">Evidencia del Programa:</strong> Participación ininterrumpida en el Semillero GESTNOVA, nodo Santander de REDCOLSI y eventos de divulgación científica institucional.
+            </div>
+            <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:6px; padding:10px 14px; font-size:0.74rem; color:#166534; line-height:1.45;">
+                <strong style="display:flex; align-items:center; gap:6px; color:#15803D; margin-bottom:3px; font-size:0.75rem;">
+                    <i class="fas fa-check-circle" style="color:#10B981;"></i> Resultado Verificable:
+                </strong>
+                Ponencias destacadas en encuentros departamentales y nacionales de REDCOLSI, y trayectoria continua de los 4 Congresos de Investigación e Innovación Multidisciplinar (2023–2026).
+            </div>
+        </div>
+        
+    </div>
 </div>
+        
+    
 
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
@@ -1674,6 +2688,91 @@ window.SECTIONS['c5'] = `
         const slideList = ejeMapping[ejeId];
         if (slideList && slideList.length > 0) {
             window.goToC5Slide(slideList[0], true);
+        }
+    };
+
+
+    // =========================================================================
+    // FUNCIONES INTERACTIVAS DE FILTRADO PARA CONDICIÓN 5 (ZERO HORIZONTAL SCROLL)
+    // =========================================================================
+    window.filterC5Collegium = function(cat, btn) {
+        var cards = document.querySelectorAll('.c5-collegium-card');
+        cards.forEach(function(c) {
+            if (cat === 'all') {
+                c.style.display = 'flex';
+            } else {
+                var cardCat = c.getAttribute('data-cat') || '';
+                if (cardCat.indexOf(cat) !== -1) {
+                    c.style.display = 'flex';
+                } else {
+                    c.style.display = 'none';
+                }
+            }
+        });
+        var btns = document.querySelectorAll('.c5-btn-collegium');
+        btns.forEach(function(b) {
+            b.style.background = '#FFFFFF';
+            b.style.color = '#64748B';
+            b.style.borderColor = '#CBD5E1';
+        });
+        if (btn) {
+            btn.style.background = '#1A1A1B';
+            btn.style.color = '#FFFFFF';
+            btn.style.borderColor = '#1A1A1B';
+        }
+    };
+
+    window.filterC5Classroom = function(yr, btn) {
+        var cards = document.querySelectorAll('.c5-classroom-card');
+        cards.forEach(function(c) {
+            if (yr === 'all') {
+                c.style.display = 'flex';
+            } else {
+                var cardYr = c.getAttribute('data-year') || '';
+                if (cardYr === yr) {
+                    c.style.display = 'flex';
+                } else {
+                    c.style.display = 'none';
+                }
+            }
+        });
+        var btns = document.querySelectorAll('.c5-btn-classroom');
+        btns.forEach(function(b) {
+            b.style.background = '#FFFFFF';
+            b.style.color = '#64748B';
+            b.style.borderColor = '#CBD5E1';
+        });
+        if (btn) {
+            btn.style.background = '#1A1A1B';
+            btn.style.color = '#FFFFFF';
+            btn.style.borderColor = '#1A1A1B';
+        }
+    };
+
+    window.filterC5Degree = function(mod, btn) {
+        var cards = document.querySelectorAll('.c5-degree-card');
+        cards.forEach(function(c) {
+            if (mod === 'all') {
+                c.style.display = 'flex';
+            } else {
+                var cardMod = c.getAttribute('data-modality') || '';
+                if (cardMod === mod) {
+                    c.style.display = 'flex';
+                } else {
+                    c.style.display = 'none';
+                }
+            }
+        });
+        var btns = document.querySelectorAll('.c5-btn-degree');
+        btns.forEach(function(b) {
+            b.style.background = '#FFFFFF';
+            b.style.color = '#64748B';
+            b.style.borderColor = '#CBD5E1';
+        });
+        if (btn) {
+            btn.style.background = '#1A1A1B';
+            btn.style.color = '#FFFFFF';
+            btn.style.borderColor = '#1A1A1B';
         }
     };
 
