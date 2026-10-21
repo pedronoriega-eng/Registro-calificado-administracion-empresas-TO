@@ -514,8 +514,8 @@ window.SECTIONS['c4'] = `
                     Trazabilidad de permanencia (>94% en 2025-1), evolución de matrícula y deserción por cohortes SPADIES (Tablas 11, 12 y 13).
                 </p>
             </div>
-            <button onclick="openPresentation('c10', '10. Datos Estadísticos Institucionales y Tendencias de Permanencia')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 16px; border-radius:20px; font-weight:700; font-size:0.8rem; cursor:pointer; display:flex; align-items:center; gap:8px;">
-                <i class="fas fa-chart-pie" style="color:#F39200;"></i> Ver Datos Estadísticos (C10) <i class="fas fa-arrow-right"></i>
+            <button onclick="openPresentation('c2', '2. Justificación del Programa')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 16px; border-radius:20px; font-weight:700; font-size:0.8rem; cursor:pointer; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-chart-pie" style="color:#F39200;"></i> Ver Datos Estadísticos (Condición 2) <i class="fas fa-arrow-right"></i>
             </button>
         </div>
 

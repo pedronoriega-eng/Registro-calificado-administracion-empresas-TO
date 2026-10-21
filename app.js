@@ -33,8 +33,7 @@ const condInfo = [
     { id: 'c6', title: '6. Relación con el Sector Externo', icon: 'fas fa-handshake', desc: 'Convenios, prácticas empresariales, proyección social e internacionalización.', img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80' },
     { id: 'c7', title: '7. Personal Docente', icon: 'fas fa-chalkboard-teacher', desc: 'Perfiles docentes, dedicación, formación posgradual y plan de cualificación.', img: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80' },
     { id: 'c8', title: '8. Medios Educativos', icon: 'fas fa-laptop-code', desc: 'Biblioteca digital, LMS Moodle, software especializado y recursos de aprendizaje.', img: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80' },
-    { id: 'c9', title: '9. Infraestructura Física y Tecnológica', icon: 'fas fa-building', desc: 'Sedes, laboratorios, infraestructura AWS, conectividad y plan de mantenimiento.', img: 'assets/sedes_institucionales.png' },
-    { id: 'c10', title: '10. Datos Estadísticos Institucionales y Tendencias de Permanencia', icon: 'fas fa-chart-line', desc: 'Comportamiento histórico de matrícula (Tabla 12), deserción por cohortes SPADIES (Tabla 11) y tasa de permanencia institucional >94% (Tabla 13).', img: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80' }
+    { id: 'c9', title: '9. Infraestructura Física y Tecnológica', icon: 'fas fa-building', desc: 'Sedes, laboratorios, infraestructura AWS, conectividad y plan de mantenimiento.', img: 'assets/sedes_institucionales.png' }
 ];
 
 // ---- Auth Functions ----
@@ -161,7 +160,6 @@ function runSlideScripts(id) {
             if (id === 'c5' && window.c5Init) window.c5Init();
             if (id === 'c7' && window.c7Init) window.c7Init();
             if (id === 'c9' && window.c9Init) window.c9Init();
-            if (id === 'c10' && window.c10Init) window.c10Init();
         }, delay);
     });
 }

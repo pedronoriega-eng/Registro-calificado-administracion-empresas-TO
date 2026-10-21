@@ -1,7 +1,7 @@
 /* =========================================================
    CONDICIÓN 5 – INVESTIGACIÓN, INNOVACIÓN Y/O CREACIÓN ARTÍSTICA
    Administración de Empresas · Registro Calificado Único (Presencial & Virtual)
-   Fuente Oficial: ppt condicion 5 RENOVACIÓN ADMON.pptx (30 Diapositivas)
+   Fuente Oficial: ppt condicion 5 RENOVACIÓN ADMON.pptx (29 Diapositivas)
    ========================================================= */
 window.SECTIONS = window.SECTIONS || {};
 window.SECTIONS['c5'] = `
@@ -24,7 +24,7 @@ window.SECTIONS['c5'] = `
         </div>
         <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
             <span style="background:rgba(243,146,0,0.22); color:#F39200; border:1px solid #F39200; font-weight:700; padding:5px 12px; border-radius:20px; font-size:0.76rem;">
-                <i class="fas fa-images"></i> 30 Diapositivas PPT Oficiales
+                <i class="fas fa-images"></i> 29 Diapositivas PPT Oficiales
             </span>
             <span style="background:rgba(255,255,255,0.1); color:#FFFFFF; border:1px solid rgba(255,255,255,0.3); font-weight:700; padding:5px 12px; border-radius:20px; font-size:0.76rem;">
                 COLLEGIUM · GESTNOVA
@@ -90,124 +90,92 @@ window.SECTIONS['c5'] = `
     </div>
     <div style="display:flex; flex-wrap:wrap; gap:4px; align-items:center;" id="c5-pills-container">
         
-    <button onclick="goToC5Slide(1)" data-c5-slide-btn="1" class="c5-slide-pill active" style="background:#F39200; color:#FFFFFF; border:1px solid #F39200; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
+        <button onclick="goToC5Slide(1)" data-c5-slide-btn="1" class="c5-slide-pill active" style="background:#F39200; color:#FFFFFF; border:1px solid #F39200; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         1
     </button>
-
     <button onclick="goToC5Slide(2)" data-c5-slide-btn="2" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         2
     </button>
-
     <button onclick="goToC5Slide(3)" data-c5-slide-btn="3" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         3
     </button>
-
     <button onclick="goToC5Slide(4)" data-c5-slide-btn="4" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         4
     </button>
-
     <button onclick="goToC5Slide(5)" data-c5-slide-btn="5" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         5
     </button>
-
     <button onclick="goToC5Slide(6)" data-c5-slide-btn="6" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         6
     </button>
-
     <button onclick="goToC5Slide(7)" data-c5-slide-btn="7" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         7
     </button>
-
     <button onclick="goToC5Slide(8)" data-c5-slide-btn="8" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         8
     </button>
-
     <button onclick="goToC5Slide(9)" data-c5-slide-btn="9" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         9
     </button>
-
     <button onclick="goToC5Slide(10)" data-c5-slide-btn="10" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         10
     </button>
-
     <button onclick="goToC5Slide(11)" data-c5-slide-btn="11" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         11
     </button>
-
     <button onclick="goToC5Slide(12)" data-c5-slide-btn="12" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         12
     </button>
-
     <button onclick="goToC5Slide(13)" data-c5-slide-btn="13" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         13
     </button>
-
     <button onclick="goToC5Slide(14)" data-c5-slide-btn="14" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         14
     </button>
-
     <button onclick="goToC5Slide(15)" data-c5-slide-btn="15" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         15
     </button>
-
     <button onclick="goToC5Slide(16)" data-c5-slide-btn="16" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         16
     </button>
-
     <button onclick="goToC5Slide(17)" data-c5-slide-btn="17" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         17
     </button>
-
     <button onclick="goToC5Slide(18)" data-c5-slide-btn="18" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         18
     </button>
-
     <button onclick="goToC5Slide(19)" data-c5-slide-btn="19" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         19
     </button>
-
     <button onclick="goToC5Slide(20)" data-c5-slide-btn="20" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         20
     </button>
-
     <button onclick="goToC5Slide(21)" data-c5-slide-btn="21" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         21
     </button>
-
     <button onclick="goToC5Slide(22)" data-c5-slide-btn="22" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         22
     </button>
-
     <button onclick="goToC5Slide(23)" data-c5-slide-btn="23" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         23
     </button>
-
     <button onclick="goToC5Slide(24)" data-c5-slide-btn="24" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         24
     </button>
-
     <button onclick="goToC5Slide(25)" data-c5-slide-btn="25" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         25
     </button>
-
     <button onclick="goToC5Slide(26)" data-c5-slide-btn="26" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         26
     </button>
-
     <button onclick="goToC5Slide(27)" data-c5-slide-btn="27" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         27
     </button>
-
     <button onclick="goToC5Slide(28)" data-c5-slide-btn="28" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         28
     </button>
-
     <button onclick="goToC5Slide(29)" data-c5-slide-btn="29" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
         29
-    </button>
-
-    <button onclick="goToC5Slide(30)" data-c5-slide-btn="30" class="c5-slide-pill " style="background:#FFFFFF; color:#334155; border:1px solid #CBD5E1; min-width:30px; height:28px; padding:0 6px; border-radius:6px; font-size:0.72rem; font-weight:800; cursor:pointer; transition:all 0.15s; display:inline-flex; align-items:center; justify-content:center;">
-        30
     </button>
 
     </div>
@@ -215,9 +183,8 @@ window.SECTIONS['c5'] = `
 
 <div id="c5-slides-container">
 
-    <div id="c5-slide-panel-1" class="c5-slide-panel active" style="display:block;">
-        
-<div style="background:linear-gradient(135deg, #1A1A1B 0%, #2D2D2E 100%); color:#FFFFFF; border-radius:12px; padding:45px 35px; text-align:center; box-shadow:0 8px 24px rgba(0,0,0,0.18); border-top:6px solid #F39200;">
+        <div id="c5-slide-panel-1" class="c5-slide-panel active" style="display:block;">
+        <div style="background:linear-gradient(135deg, #1A1A1B 0%, #2D2D2E 100%); color:#FFFFFF; border-radius:12px; padding:45px 35px; text-align:center; box-shadow:0 8px 24px rgba(0,0,0,0.18); border-top:6px solid #F39200;">
     <div style="display:inline-block; background:rgba(243,146,0,0.18); border:1px solid #F39200; color:#F39200; font-size:0.78rem; font-weight:800; padding:5px 16px; border-radius:20px; text-transform:uppercase; letter-spacing:1px; margin-bottom:18px;">
         Condición Institucional y de Programa 5 · SACES MEN
     </div>
@@ -240,12 +207,11 @@ window.SECTIONS['c5'] = `
         </span>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <div></div>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 1 de 30 · <span style="color:#1A1A1B;">Portada Oficial Condición 5 · Investigación</span>
+            Diapositiva 1 de 29 · <span style="color:#1A1A1B;">Portada Oficial Condición 5 · Investigación</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         Siguiente (Diapositiva 2) <i class="fas fa-arrow-right"></i>
@@ -253,46 +219,45 @@ window.SECTIONS['c5'] = `
     </div>
     
     </div>
-    
 
     <div id="c5-slide-panel-2" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-balance-scale" style="color:#F39200;"></i> Marco Normativo y Fundamentación Jurídica
         </h4>
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Decreto 1330 de 2019 &amp; Guía SACES MEN</span>
     </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:center;">
+    <div style="display:grid; grid-template-columns:1fr 1.8fr; gap:24px; align-items:center;">
         <div>
-            <div style="background:#FFF9F2; border-left:4px solid #F39200; padding:14px 16px; border-radius:0 8px 8px 0; margin-bottom:16px;">
-                <h5 style="margin:0 0 6px; font-size:0.88rem; color:#9A3412; font-weight:800;">Decreto 1330 de 2019 (Artículo 2.5.3.2.3.2.5)</h5>
-                <p style="margin:0; font-size:0.78rem; color:#431407; line-height:1.5;">
+            <div style="background:#FFF9F2; border-left:4px solid #F39200; padding:18px 20px; border-radius:0 10px 10px 0; box-shadow:0 2px 10px rgba(243,146,0,0.06);">
+                <span style="display:inline-block; font-size:0.68rem; font-weight:800; color:#F39200; background:rgba(243,146,0,0.12); border:1px solid #FED7AA; padding:3px 8px; border-radius:4px; text-transform:uppercase; margin-bottom:8px;">
+                    Fundamentación Jurídica
+                </span>
+                <h5 style="margin:0 0 10px; font-size:0.96rem; color:#9A3412; font-weight:800; font-family:'Montserrat',sans-serif;">
+                    Decreto 1330 de 2019 (Artículo 2.5.3.2.3.2.5)
+                </h5>
+                <p style="margin:0 0 12px; font-size:0.84rem; color:#431407; line-height:1.6;">
                     Establece que las instituciones deben promover la capacidad de indagación y búsqueda, así como la formación en investigación, innovación o creación artística y cultural, articulada con el nivel de formación y la modalidad ofertada.
                 </p>
-            </div>
-            <div style="background:#F8FAFC; border-left:4px solid #1A1A1B; padding:14px 16px; border-radius:0 8px 8px 0;">
-                <h5 style="margin:0 0 6px; font-size:0.88rem; color:#1E293B; font-weight:800;">Guía para la Elaboración del Documento Maestro (Trámites de Renovación)</h5>
-                <p style="margin:0; font-size:0.78rem; color:#475569; line-height:1.5;">
-                    Orienta la demostración empírica de los avances, la madurez del sistema institucional de investigación, la consolidación de semilleros y la transferencia real de conocimiento al sector productivo durante la vigencia del registro.
-                </p>
+                <div style="font-size:0.74rem; color:#C2410C; font-weight:700; display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-check-circle"></i> Eje transversal en modalidad Presencial y Virtual
+                </div>
             </div>
         </div>
         <div style="text-align:center;">
-            <img src="assets/c5/c5_slide2_img3.png" alt="Marco Normativo" style="max-width:100%; max-height:280px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
-            <div style="font-size:0.7rem; color:#64748B; margin-top:6px; font-style:italic;">Fuente: Decreto 1330 de 2019 del MEN y Guía Oficial SACES</div>
+            <img src="assets/c5/c5_slide2_img3.png" alt="Marco Normativo" style="width:100%; max-height:480px; object-fit:contain; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 18px rgba(0,0,0,0.08); background:#FFFFFF; padding:10px;">
+            <div style="font-size:0.72rem; color:#64748B; margin-top:8px; font-style:italic;">Fuente: Decreto 1330 de 2019 del MEN y Guía Oficial SACES</div>
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 1)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 2 de 30 · <span style="color:#1A1A1B;">Marco Normativo (Decreto 1330 y Guía SACES)</span>
+            Diapositiva 2 de 29 · <span style="color:#1A1A1B;">Marco Normativo (Decreto 1330 y Guía SACES)</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         Siguiente (Diapositiva 3) <i class="fas fa-arrow-right"></i>
@@ -300,63 +265,9 @@ window.SECTIONS['c5'] = `
     </div>
     
     </div>
-    
 
     <div id="c5-slide-panel-3" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #C8102E; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-chart-line" style="color:#C8102E;"></i> Desarrollo y Proyección de la Condición en el Programa
-        </h4>
-        <span style="background:#FFF1F2; color:#BE123C; border:1px solid #FECDD3; font-size:0.72rem; font-weight:800; padding:3px 10px; border-radius:20px;">Trámite SACES Modalidad Único</span>
-    </div>
-    <div style="background:linear-gradient(135deg, #FFF9F2 0%, #FFFFFF 100%); border:1.5px solid #FED7AA; border-radius:10px; padding:20px; margin-bottom:20px;">
-        <h5 style="color:#9A3412; font-family:'Montserrat',sans-serif; font-size:1.02rem; font-weight:800; margin:0 0 10px;">
-            Renovación del Registro Calificado · Administración de Empresas a MODALIDAD ÚNICO
-        </h5>
-        <p style="font-size:0.84rem; color:#374151; line-height:1.6; margin:0;">
-            La Corporación Escuela Tecnológica del Oriente sustenta la renovación del registro calificado bajo la figura de <strong>Registro Calificado Único (Presencial y Virtual)</strong>. En esta transición, la investigación se consolida como el eje articulador transversal que garantiza el rigor epistemológico, la aplicación práctica mediante proyectos formativos y la equivalencia en los resultados de aprendizaje (RAP) para ambas modalidades.
-        </p>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;">
-        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:14px; text-align:center;">
-            <i class="fas fa-layer-group" style="color:#F39200; font-size:1.4rem; margin-bottom:8px;"></i>
-            <div style="font-weight:800; font-size:0.82rem; color:#1A1A1B; margin-bottom:4px;">Madurez Investigativa</div>
-            <p style="font-size:0.74rem; color:#64748B; margin:0;">Evolución de líneas y semilleros hacia problemáticas reales del tejido empresarial santandereano.</p>
-        </div>
-        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:14px; text-align:center;">
-            <i class="fas fa-laptop-code" style="color:#C8102E; font-size:1.4rem; margin-bottom:8px;"></i>
-            <div style="font-weight:800; font-size:0.82rem; color:#1A1A1B; margin-bottom:4px;">Articulación Tecnológica</div>
-            <p style="font-size:0.74rem; color:#64748B; margin:0;">Acompañamiento sincrónico y asincrónico mediado por TIC para semilleros y proyectos de grado virtuales.</p>
-        </div>
-        <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:14px; text-align:center;">
-            <i class="fas fa-handshake" style="color:#10B981; font-size:1.4rem; margin-bottom:8px;"></i>
-            <div style="font-weight:800; font-size:0.82rem; color:#1A1A1B; margin-bottom:4px;">Transferencia Productiva</div>
-            <p style="font-size:0.74rem; color:#64748B; margin:0;">Solución directa a problemáticas organizacionales mediante pasantías y spin-offs empresariales.</p>
-        </div>
-    </div>
-</div>
-
-        
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
-        <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 2)
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 3 de 30 · <span style="color:#1A1A1B;">Desarrollo y Proyección hacia Registro Único</span>
-        </div>
-        <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 4) <i class="fas fa-arrow-right"></i>
-    </button>
-    </div>
-    
-    </div>
-    
-
-    <div id="c5-slide-panel-4" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-sitemap" style="color:#F39200;"></i> Sistema de Investigación, Innovación, Desarrollo Tecnológico y/o Creación Artística y Cultural
@@ -364,32 +275,29 @@ window.SECTIONS['c5'] = `
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">CONPES 4069 · DNP (2022–2031)</span>
     </div>
     <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide4_img3.png" alt="Sistema CONPES 4069" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide4_img3.png" alt="Sistema CONPES 4069" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
     <div style="background:#FFF9F2; border:1px solid #FED7AA; border-radius:8px; padding:12px 16px; font-size:0.76rem; color:#431407; line-height:1.45;">
         <strong>Articulación con Políticas Públicas:</strong> El sistema se alinea con la <em>Política Nacional de Ciencia, Tecnología e Innovación 2022–2031 (CONPES 4069)</em>, integrando la investigación formativa, la apropiación social del conocimiento y la vinculación con sectores estratégicos regionales.
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 3)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 2)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 4 de 30 · <span style="color:#1A1A1B;">Sistema de I+D+i Institucional (CONPES 4069)</span>
+            Diapositiva 3 de 29 · <span style="color:#1A1A1B;">Sistema de I+D+i Institucional (CONPES 4069)</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 5) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 4) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-5" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-4" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-network-wired" style="color:#F39200;"></i> Organización y Gobernanza del Sistema de Investigación CETO
@@ -397,7 +305,7 @@ window.SECTIONS['c5'] = `
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Estructura Orgánica Institucional</span>
     </div>
     <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide5_img4.png" alt="Organización del Sistema" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide5_img4.png" alt="Organización del Sistema" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
     <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; font-size:0.74rem;">
         <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:10px; border-radius:6px; text-align:center;">
@@ -414,26 +322,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 4)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 3)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 5 de 30 · <span style="color:#1A1A1B;">Organización y Gobernanza del Sistema</span>
+            Diapositiva 4 de 29 · <span style="color:#1A1A1B;">Organización y Gobernanza del Sistema</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 6) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 5) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-6" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-5" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-users-cog" style="color:#F39200;"></i> Desarrollar una Cultura de Investigación en el Programa
@@ -463,14 +368,41 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
+        
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
+        <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 4)
+    </button>
+        <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
+            Diapositiva 5 de 29 · <span style="color:#1A1A1B;">Cultura de Investigación (5 Pilares)</span>
+        </div>
+        <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+        Siguiente (Diapositiva 6) <i class="fas fa-arrow-right"></i>
+    </button>
+    </div>
+    
+    </div>
 
+    <div id="c5-slide-panel-6" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #D97706; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
+            <i class="fas fa-history" style="color:#D97706;"></i> Evolución del Compromiso Investigativo
+        </h4>
+        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Coordinación de Investigaciones CETO</span>
+    </div>
+    <div style="text-align:center; padding:10px 0;">
+        <img src="assets/c5/c5_slide7_img5.png" alt="Evolución del Compromiso" style="width:100%; max-height:480px; object-fit:contain; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08); background:#FFFFFF; padding:12px;">
+        <div style="font-size:0.72rem; color:#64748B; margin-top:8px; font-style:italic;">Fuente: Coordinación de Investigaciones CETO · Evolución 2013–2030</div>
+    </div>
+</div>
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 5)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 6 de 30 · <span style="color:#1A1A1B;">Cultura de Investigación (5 Pilares)</span>
+            Diapositiva 6 de 29 · <span style="color:#1A1A1B;">Evolución del Compromiso Investigativo</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         Siguiente (Diapositiva 7) <i class="fas fa-arrow-right"></i>
@@ -478,32 +410,27 @@ window.SECTIONS['c5'] = `
     </div>
     
     </div>
-    
 
     <div id="c5-slide-panel-7" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #D97706; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-history" style="color:#D97706;"></i> Evolución del Compromiso Investigativo
+            <i class="fas fa-sitemap" style="color:#F39200;"></i> Líneas de Investigación Transversales y Específicas del Programa
         </h4>
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Coordinación de Investigaciones CETO</span>
     </div>
-    <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide7_img5.png" alt="Evolución del Compromiso" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
-    </div>
-    <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px 16px; font-size:0.76rem; color:#334155; line-height:1.45;">
-        <strong>Incremento Sostenido:</strong> Se evidencia un aumento progresivo en la asignación de horas de dedicación docente para investigación y el presupuesto asignado para semilleros y participación en eventos científicos como RedCOLSI y congresos internacionales.
+    <div style="text-align:center;">
+        <img src="assets/c5/c5_slide8_ppt_export.png" alt="Líneas de Investigación Transversales y Específicas del Programa" style="width:100%; max-height:560px; object-fit:contain; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 18px rgba(0,0,0,0.08); background:#FFFFFF; padding:6px;">
+        <div style="font-size:0.72rem; color:#64748B; margin-top:8px; font-style:italic;">Fuente: Coordinación de Investigaciones CETO · Condición 5. Investigación e Innovación</div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 6)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 7 de 30 · <span style="color:#1A1A1B;">Evolución del Compromiso Investigativo</span>
+            Diapositiva 7 de 29 · <span style="color:#1A1A1B;">Líneas de Investigación Transversales y Específicas</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         Siguiente (Diapositiva 8) <i class="fas fa-arrow-right"></i>
@@ -511,173 +438,27 @@ window.SECTIONS['c5'] = `
     </div>
     
     </div>
-    
 
     <div id="c5-slide-panel-8" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E2E8F0; border-top:5px solid #F39200; border-radius:12px; padding:22px 26px; box-shadow:0 4px 18px rgba(0,0,0,0.06);">
-    <!-- HEADER -->
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <div>
-            <span style="display:inline-block; font-size:0.68rem; font-weight:800; color:#F39200; background:#FFF7ED; border:1px solid #FFEDD5; padding:3px 10px; border-radius:20px; text-transform:uppercase; margin-bottom:4px;">
-                <i class="fas fa-sitemap"></i> Matriz de Articulación Investigativa
-            </span>
-            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:0;">
-                Líneas de Investigación Transversales Institucionales y Específicas del Programa
-            </h4>
-        </div>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700; background:#F8FAFC; border:1px solid #E2E8F0; padding:4px 12px; border-radius:6px;">
-            <i class="fas fa-university"></i> Institucional TO · Renovación Registro Único
-        </span>
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #7C3AED; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
+            <i class="fas fa-brain" style="color:#7C3AED;"></i> Investigación 4.0 y Tecnologías Inteligentes en Administración
+        </h4>
+        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Meta AI Conceptual</span>
     </div>
-
-    <!-- BLOQUE 1: LÍNEAS TRANSVERSALES INSTITUCIONALES (3 TARJETAS EJECUTIVAS) -->
-    <div style="margin-bottom:16px;">
-        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
-            <span style="font-size:0.75rem; font-weight:800; color:#1E293B; text-transform:uppercase; letter-spacing:0.5px;">
-                <i class="fas fa-layer-group" style="color:#F39200; margin-right:6px;"></i> 1. Líneas Transversales Institucionales (Corporación Escuela Tecnológica del Oriente)
-            </span>
-            <span style="font-size:0.68rem; color:#64748B; font-weight:600;">Marco Estratégico Institucional</span>
-        </div>
-        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
-            <!-- Transversal 1 -->
-            <div style="background:linear-gradient(180deg, #FFFFFF 0%, #FFF7ED 100%); border:1.5px solid #FFEDD5; border-radius:10px; padding:14px; position:relative; display:flex; flex-direction:column; justify-content:space-between;">
-                <div>
-                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-                        <span style="background:#F39200; color:#FFFFFF; font-size:0.75rem; font-weight:800; width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;">1</span>
-                        <i class="fas fa-bullseye" style="font-size:1.1rem; color:#EA580C;"></i>
-                    </div>
-                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:800; color:#1A1A1B; margin:0 0 6px; line-height:1.25; text-transform:uppercase;">
-                        Gestión Social, Participación y Desarrollo Sostenible
-                    </h5>
-                    <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.45;">
-                        Impacto en la calidad de vida de una población participativa, con uso eficiente de recursos en un espacio y tiempo definido.
-                    </p>
-                </div>
-                <div style="margin-top:10px; padding-top:8px; border-top:1px dashed #FED7AA; font-size:0.65rem; color:#C2410C; font-weight:700;">
-                    <i class="fas fa-check-circle"></i> Enfoque Territorial y Comunitario
-                </div>
-            </div>
-            <!-- Transversal 2 -->
-            <div style="background:linear-gradient(180deg, #FFFFFF 0%, #FDF2F8 100%); border:1.5px solid #FCE7F3; border-radius:10px; padding:14px; position:relative; display:flex; flex-direction:column; justify-content:space-between;">
-                <div>
-                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-                        <span style="background:#DB2777; color:#FFFFFF; font-size:0.75rem; font-weight:800; width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;">2</span>
-                        <i class="fas fa-chart-line" style="font-size:1.1rem; color:#BE185D;"></i>
-                    </div>
-                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:800; color:#1A1A1B; margin:0 0 6px; line-height:1.25; text-transform:uppercase;">
-                        Productividad, Innovación y Sostenibilidad
-                    </h5>
-                    <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.45;">
-                        Productividad y competitividad sostenible de las empresas, optimización de modelos productivos y eco-eficiencia organizacional.
-                    </p>
-                </div>
-                <div style="margin-top:10px; padding-top:8px; border-top:1px dashed #FBCFE8; font-size:0.65rem; color:#9D174D; font-weight:700;">
-                    <i class="fas fa-check-circle"></i> Competitividad Empresarial
-                </div>
-            </div>
-            <!-- Transversal 3 -->
-            <div style="background:linear-gradient(180deg, #FFFFFF 0%, #F5F3FF 100%); border:1.5px solid #EDE9FE; border-radius:10px; padding:14px; position:relative; display:flex; flex-direction:column; justify-content:space-between;">
-                <div>
-                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-                        <span style="background:#7C3AED; color:#FFFFFF; font-size:0.75rem; font-weight:800; width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;">3</span>
-                        <i class="fas fa-lightbulb" style="font-size:1.1rem; color:#6D28D9;"></i>
-                    </div>
-                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:800; color:#1A1A1B; margin:0 0 6px; line-height:1.25; text-transform:uppercase;">
-                        Educación, Inclusión Social y Desarrollo Humano
-                    </h5>
-                    <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.45;">
-                        Relación de la academia, la empresa y el Estado (CUEES) que dé respuestas precisas a la realidad económica, política y cultural del entorno.
-                    </p>
-                </div>
-                <div style="margin-top:10px; padding-top:8px; border-top:1px dashed #DDD6FE; font-size:0.65rem; color:#5B21B6; font-weight:700;">
-                    <i class="fas fa-check-circle"></i> Triple Hélice: Academia-Empresa-Estado
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CONECTOR DE ARTICULACIÓN -->
-    <div style="display:flex; align-items:center; justify-content:center; gap:12px; margin:14px 0;">
-        <div style="height:1px; flex:1; background:linear-gradient(90deg, transparent, #CBD5E1);"></div>
-        <div style="background:#1A1A1B; color:#FFFFFF; padding:4px 14px; border-radius:20px; font-size:0.68rem; font-weight:800; letter-spacing:0.5px; display:inline-flex; align-items:center; gap:6px;">
-            <i class="fas fa-arrow-down" style="color:#F39200;"></i> DESPLIEGUE OPERATIVO Y DISCIPLINAR EN EL PROGRAMA
-        </div>
-        <div style="height:1px; flex:1; background:linear-gradient(90deg, #CBD5E1, transparent);"></div>
-    </div>
-
-    <!-- BLOQUE 2: LÍNEAS ESPECÍFICAS DEL PROGRAMA DE ADMINISTRACIÓN DE EMPRESAS (2 TARJETAS PRINCIPALES) -->
-    <div>
-        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
-            <span style="font-size:0.75rem; font-weight:800; color:#1E293B; text-transform:uppercase; letter-spacing:0.5px;">
-                <i class="fas fa-briefcase" style="color:#F39200; margin-right:6px;"></i> 2. Líneas Específicas de Investigación del Programa
-            </span>
-            <span style="font-size:0.68rem; color:#15803D; font-weight:700; background:#DCFCE7; border:1px solid #BBF7D0; padding:2px 8px; border-radius:4px;">
-                <i class="fas fa-check-double"></i> Plan de Estudios Renovación 144 Créditos
-            </span>
-        </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
-            <!-- Específica 1 -->
-            <div style="background:#FFFFFF; border:2px solid #FED7AA; border-radius:10px; padding:16px; box-shadow:0 2px 10px rgba(243,146,0,0.06);">
-                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #FFEDD5; font-size:0.65rem; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase;">
-                        Línea Específica 1 · Disciplinar
-                    </span>
-                    <i class="fas fa-chess-knight" style="color:#F39200; font-size:1.2rem;"></i>
-                </div>
-                <h5 style="margin:0 0 8px; font-size:0.95rem; color:#1A1A1B; font-weight:800; font-family:'Montserrat',sans-serif;">
-                    Gestión Estratégica y Competitividad Empresarial
-                </h5>
-                <p style="margin:0 0 10px; font-size:0.74rem; color:#475569; line-height:1.5;">
-                    Enfocada en diagnóstico organizacional integral, modelos de planeación estratégica, productividad y competitividad en micro, pequeñas y medianas empresas de Santander y el país.
-                </p>
-                <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.68rem;">
-                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#F39200;"></i> Planeación y Dirección</span>
-                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#F39200;"></i> Diagnóstico Mipymes</span>
-                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#F39200;"></i> Consultoría CIDRE</span>
-                </div>
-            </div>
-            <!-- Específica 2 -->
-            <div style="background:#FFFFFF; border:2px solid #BBF7D0; border-radius:10px; padding:16px; box-shadow:0 2px 10px rgba(34,197,94,0.06);">
-                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-                    <span style="background:#F0FDF4; color:#15803D; border:1px solid #DCFCE7; font-size:0.65rem; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase;">
-                        Línea Específica 2 · Innovación & TIC
-                    </span>
-                    <i class="fas fa-laptop-code" style="color:#16A34A; font-size:1.2rem;"></i>
-                </div>
-                <h5 style="margin:0 0 8px; font-size:0.95rem; color:#1A1A1B; font-weight:800; font-family:'Montserrat',sans-serif;">
-                    Transformación Digital y Gestión de la Innovación
-                </h5>
-                <p style="margin:0 0 10px; font-size:0.74rem; color:#475569; line-height:1.5;">
-                    Centrada en adopción de TIC emergentes, analítica de datos gerenciales, comercio electrónico, digitalización de procesos y optimización de modelos de negocio en entornos presenciales y virtuales.
-                </p>
-                <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.68rem;">
-                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#16A34A;"></i> Analítica & Big Data</span>
-                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#16A34A;"></i> Spin-off MYB</span>
-                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#16A34A;"></i> E-Commerce & IA</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ARTICULACIÓN CON EL ECOSISTEMA DE INVESTIGACIÓN -->
-    <div style="margin-top:14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:10px 14px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
-        <div style="font-size:0.72rem; color:#334155;">
-            <strong>Ecosistema Activo:</strong> Grupo <strong>COLLEGIUM</strong> (Minciencias) · Semillero <strong>GESTNOVA</strong> · Spin-off <strong>MYB S.A.S.</strong> · 4 Congresos Multidisciplinarios
-        </div>
-        <div style="font-size:0.68rem; color:#0F766E; font-weight:700; background:#CCFBF1; padding:3px 10px; border-radius:4px;">
-            <i class="fas fa-shield-alt"></i> 100% Coherencia Curricular
-        </div>
+    <div style="text-align:center;">
+        <img src="assets/c5/c5_slide9_ppt_export.png" alt="Investigación 4.0 y Tecnologías Inteligentes" style="width:100%; max-height:560px; object-fit:contain; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 18px rgba(0,0,0,0.08); background:#FFFFFF; padding:6px;">
+        <div style="font-size:0.72rem; color:#64748B; margin-top:8px; font-style:italic;">Fuente: Imagen generada con Meta AI · Condición 5. Investigación e Innovación</div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 7)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 8 de 30 · <span style="color:#1A1A1B;">Líneas de Investigación Transversales y Específicas</span>
+            Diapositiva 8 de 29 · <span style="color:#1A1A1B;">Investigación 4.0 y Analítica de Datos</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
         Siguiente (Diapositiva 9) <i class="fas fa-arrow-right"></i>
@@ -685,56 +466,9 @@ window.SECTIONS['c5'] = `
     </div>
     
     </div>
-    
 
     <div id="c5-slide-panel-9" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #7C3AED; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-brain" style="color:#7C3AED;"></i> Investigación 4.0 y Tecnologías Inteligentes en Administración
-        </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Meta AI Conceptual</span>
-    </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:center;">
-        <div style="text-align:center;">
-            <img src="assets/c5/c5_slide9_img5.png" alt="Investigación 4.0" style="max-width:100%; max-height:300px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 14px rgba(0,0,0,0.08);">
-        </div>
-        <div>
-            <div style="background:#FAF5FF; border:1px solid #E9D5FF; border-radius:10px; padding:18px;">
-                <h5 style="color:#6B21A8; font-family:'Montserrat',sans-serif; font-size:0.95rem; font-weight:800; margin:0 0 10px;">
-                    Integración de Tecnologías Emergentes en la Formación
-                </h5>
-                <p style="font-size:0.78rem; color:#4B5563; line-height:1.55; margin:0 0 10px;">
-                    El programa moderniza su enfoque investigativo incorporando <strong>analítica de datos, inteligencia artificial responsable y simuladores gerenciales</strong> para abordar problemas organizacionales complejos.
-                </p>
-                <div style="font-size:0.72rem; color:#6B21A8; font-weight:700;">
-                    <i class="fas fa-check-circle"></i> Toma de decisiones gerenciales basada en evidencia y big data.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-        
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
-        <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 8)
-    </button>
-        <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 9 de 30 · <span style="color:#1A1A1B;">Investigación 4.0 y Analítica de Datos</span>
-        </div>
-        <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 10) <i class="fas fa-arrow-right"></i>
-    </button>
-    </div>
-    
-    </div>
-    
-
-    <div id="c5-slide-panel-10" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-chart-line" style="color:#10B981;"></i> Avance de la Declaración de Investigación en el Programa
@@ -742,32 +476,29 @@ window.SECTIONS['c5'] = `
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Desarrollo del Conocimiento</span>
     </div>
     <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide10_img4.png" alt="Avance de la Declaración" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide10_img4.png" alt="Avance de la Declaración" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
     <div style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:12px 16px; font-size:0.76rem; color:#14532D; line-height:1.45;">
         <strong>Trayectoria Progresiva:</strong> La maduración institucional pasó de una investigación declarativa en 2019 a una investigación operativa y aplicada en 2025, con semilleristas clasificados a nivel nacional y patentes/modelos empresariales en marcha.
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 9)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 8)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 10 de 30 · <span style="color:#1A1A1B;">Avance de la Declaración de Investigación</span>
+            Diapositiva 9 de 29 · <span style="color:#1A1A1B;">Avance de la Declaración de Investigación</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 11) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 10) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-11" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-10" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-book" style="color:#F39200;"></i> Desarrollo de la Coherencia Teórica del Programa
@@ -803,26 +534,23 @@ window.SECTIONS['c5'] = `
         <i class="fas fa-lightbulb" style="color:#F39200;"></i> Fortalecimos el emprendimiento sostenible y la innovación empresarial, integrando la gestión estratégica, la competitividad y la transformación digital.
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 10)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 9)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 11 de 30 · <span style="color:#1A1A1B;">Coherencia Teórica (Taylor/Fayol vs. Porter/Schumpeter)</span>
+            Diapositiva 10 de 29 · <span style="color:#1A1A1B;">Coherencia Teórica (Taylor/Fayol vs. Porter/Schumpeter)</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 12) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 11) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-12" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-11" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-balance-scale-right" style="color:#2563EB;"></i> Proceso Investigativo por Modalidad (Presencial vs. Virtual)
@@ -870,26 +598,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 11)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 10)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 12 de 30 · <span style="color:#1A1A1B;">Proceso Investigativo por Modalidad (Presencial vs. Virtual)</span>
+            Diapositiva 11 de 29 · <span style="color:#1A1A1B;">Proceso Investigativo por Modalidad (Presencial vs. Virtual)</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 13) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 12) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-13" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-12" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-random" style="color:#F39200;"></i> Evolución del Conocimiento y Líneas de Investigación
@@ -1008,27 +733,22 @@ window.SECTIONS['c5'] = `
     </div>
 </div>
         
-    
-
-        
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 12)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 11)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 13 de 30 · <span style="color:#1A1A1B;">Evolución del Conocimiento y Líneas de Investigación</span>
+            Diapositiva 12 de 29 · <span style="color:#1A1A1B;">Evolución del Conocimiento y Líneas de Investigación</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 14) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 13) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-14" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-13" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-chess" style="color:#F39200;"></i> Estrategias Definidas a Nivel Institucional
@@ -1036,29 +756,26 @@ window.SECTIONS['c5'] = `
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Consolidación del Ecosistema</span>
     </div>
     <div style="text-align:center;">
-        <img src="assets/c5/c5_slide14_img3.png" alt="Estrategias Institucionales" style="max-width:100%; max-height:380px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide14_img3.png" alt="Estrategias Institucionales" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 13)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 12)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 14 de 30 · <span style="color:#1A1A1B;">Estrategias Definidas a Nivel Institucional</span>
+            Diapositiva 13 de 29 · <span style="color:#1A1A1B;">Estrategias Definidas a Nivel Institucional</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 15) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 14) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-15" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #C8102E; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-14" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #C8102E; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-award" style="color:#C8102E;"></i> Convocatorias Minciencias 894 de 2021 &amp; 957 de 2024
@@ -1066,32 +783,29 @@ window.SECTIONS['c5'] = `
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Reconocimiento Científico Nacional</span>
     </div>
     <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide15_img3.png" alt="Convocatorias Minciencias" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide15_img3.png" alt="Convocatorias Minciencias" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
     <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px 16px; font-size:0.76rem; color:#334155;">
         <strong>Avances Generales:</strong> Participación continua en las mediciones oficiales del Sistema Nacional de Ciencia, Tecnología e Innovación (SNCTeI), consolidando redes científicas con ASCOLFA, RedCOLSI y REDESLA.
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 14)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 13)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 15 de 30 · <span style="color:#1A1A1B;">Convocatorias Minciencias 894 y 957 & Redes</span>
+            Diapositiva 14 de 29 · <span style="color:#1A1A1B;">Convocatorias Minciencias 894 y 957 & Redes</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 16) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 15) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-16" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-15" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div style="display:flex; align-items:center; gap:10px;">
             <span style="background:#ECFDF5; color:#059669; width:36px; height:36px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; border:1px solid #A7F3D0;">
@@ -1142,26 +856,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 15)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 14)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 16 de 30 · <span style="color:#1A1A1B;">Semillero de Investigación GESTNOVA</span>
+            Diapositiva 15 de 29 · <span style="color:#1A1A1B;">Semillero de Investigación GESTNOVA</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 17) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 16) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-17" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-16" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-certificate" style="color:#F39200;"></i> Semillero GESTNOVA · Ponencias y Certificados RedCOLSI
@@ -1197,26 +908,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 16)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 15)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 17 de 30 · <span style="color:#1A1A1B;">Proyectos y Ponencias RedCOLSI</span>
+            Diapositiva 16 de 29 · <span style="color:#1A1A1B;">Proyectos y Ponencias RedCOLSI</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 18) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 17) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-18" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-17" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-users" style="color:#F39200;"></i> Grupo de Investigación COLLEGIUM
@@ -1224,7 +932,7 @@ window.SECTIONS['c5'] = `
         <span style="background:#F8FAFC; border:1px solid #CBD5E1; color:#1E293B; font-size:0.72rem; font-weight:800; padding:3px 10px; border-radius:20px;">Código Minciencias COL0132989</span>
     </div>
     <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide18_img5.png" alt="Grupo Collegium" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide18_img5.png" alt="Grupo Collegium" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
         <div style="background:#FFF9F2; border:1px solid #FED7AA; border-radius:8px; padding:12px; font-size:0.75rem; color:#431407;">
@@ -1235,26 +943,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 17)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 16)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 18 de 30 · <span style="color:#1A1A1B;">Grupo de Investigación COLLEGIUM</span>
+            Diapositiva 17 de 29 · <span style="color:#1A1A1B;">Grupo de Investigación COLLEGIUM</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 19) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 18) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-19" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-18" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
@@ -1551,27 +1256,22 @@ window.SECTIONS['c5'] = `
     </div>
 </div>
         
-    
-
-        
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 18)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 17)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 19 de 30 · <span style="color:#1A1A1B;">Producción Científica en Plataforma SCIENTI</span>
+            Diapositiva 18 de 29 · <span style="color:#1A1A1B;">Producción Científica en Plataforma SCIENTI</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 20) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 19) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-20" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-19" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-globe" style="color:#2563EB;"></i> Redes y Actividades de Divulgación Académica y Científica
@@ -1603,26 +1303,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 19)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 18)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 20 de 30 · <span style="color:#1A1A1B;">Redes y Divulgación Académica y Científica</span>
+            Diapositiva 19 de 29 · <span style="color:#1A1A1B;">Redes y Divulgación Académica y Científica</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 21) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 20) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-21" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-20" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-graduation-cap" style="color:#F39200;"></i> Estrategias de Aula y Ruta Formativa en Investigación
@@ -1693,26 +1390,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 20)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 19)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 21 de 30 · <span style="color:#1A1A1B;">Estrategias de Aula y Ruta Formativa</span>
+            Diapositiva 20 de 29 · <span style="color:#1A1A1B;">Estrategias de Aula y Ruta Formativa</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 22) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 21) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-22" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-21" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
@@ -1961,27 +1655,22 @@ window.SECTIONS['c5'] = `
     </div>
 </div>
         
-    
-
-        
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 21)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 20)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 22 de 30 · <span style="color:#1A1A1B;">Proyectos de Investigación Generados en el Aula</span>
+            Diapositiva 21 de 29 · <span style="color:#1A1A1B;">Proyectos de Investigación Generados en el Aula</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 23) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 22) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-23" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #C8102E; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-22" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #C8102E; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-trophy" style="color:#F39200;"></i> Caso de Éxito Emblemático: Spin-Off Empresarial MYB
@@ -2021,31 +1710,28 @@ window.SECTIONS['c5'] = `
         </div>
 
         <div style="text-align:center;">
-            <img src="assets/c5/c5_slide23_img4.jpg" alt="MYB Taller" style="max-width:100%; max-height:300px; border-radius:10px; border:2px solid #E2E8F0; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+            <img src="assets/c5/c5_slide23_img4.jpg" alt="MYB Taller" style="max-width:100%; max-height:480px; border-radius:10px; border:2px solid #E2E8F0; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
             <div style="font-size:0.7rem; color:#64748B; margin-top:6px; font-style:italic;">Instalaciones reales de la Serviteca MYB en Bucaramanga</div>
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 22)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 21)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 23 de 30 · <span style="color:#1A1A1B;">Caso de Éxito Emblemático: Spin-Off MYB S.A.S.</span>
+            Diapositiva 22 de 29 · <span style="color:#1A1A1B;">Caso de Éxito Emblemático: Spin-Off MYB S.A.S.</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 24) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 23) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-24" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-23" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #1A1A1B; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-user-graduate" style="color:#F39200;"></i> Modalidades y Reglamento de Opciones de Grado
@@ -2053,7 +1739,7 @@ window.SECTIONS['c5'] = `
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Reglamento Institucional de Grados</span>
     </div>
     <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide24_img6.png" alt="Opciones de Grado" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide24_img6.png" alt="Opciones de Grado" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
     <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:10px; font-size:0.72rem; text-align:center;">
         <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:8px; border-radius:6px;"><strong>Proyecto de Investigación:</strong> Monografía científica</div>
@@ -2063,26 +1749,23 @@ window.SECTIONS['c5'] = `
         <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:8px; border-radius:6px;"><strong>Diplomado de Posgrado:</strong> Créditos de posgrado</div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 23)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 22)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 24 de 30 · <span style="color:#1A1A1B;">Reglamento y Modalidades de Opciones de Grado</span>
+            Diapositiva 23 de 29 · <span style="color:#1A1A1B;">Reglamento y Modalidades de Opciones de Grado</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 25) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 24) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-25" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-24" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
@@ -2325,27 +2008,22 @@ window.SECTIONS['c5'] = `
     </div>
 </div>
         
-    
-
-        
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 24)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 23)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 25 de 30 · <span style="color:#1A1A1B;">Opciones de Grado Desarrolladas en el Programa</span>
+            Diapositiva 24 de 29 · <span style="color:#1A1A1B;">Opciones de Grado Desarrolladas en el Programa</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 26) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 25) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-26" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-25" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-microchip" style="color:#2563EB;"></i> Uso de Tecnologías de la Información para la Investigación
@@ -2353,7 +2031,7 @@ window.SECTIONS['c5'] = `
         <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Fuente: Gemini AI Infografía</span>
     </div>
     <div style="text-align:center; margin-bottom:16px;">
-        <img src="assets/c5/c5_slide26_img5.png" alt="Uso de TIC" style="max-width:100%; max-height:360px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+        <img src="assets/c5/c5_slide26_img5.png" alt="Uso de TIC" style="max-width:100%; max-height:480px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
     </div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; font-size:0.76rem;">
         <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:12px;">
@@ -2364,26 +2042,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 25)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 24)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 26 de 30 · <span style="color:#1A1A1B;">Uso de Tecnologías de la Información en I+D+i</span>
+            Diapositiva 25 de 29 · <span style="color:#1A1A1B;">Uso de Tecnologías de la Información en I+D+i</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 27) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 26) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-27" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-26" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #2563EB; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
@@ -2480,27 +2155,22 @@ window.SECTIONS['c5'] = `
     </div>
 </div>
         
-    
-
-        
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 26)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 25)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 27 de 30 · <span style="color:#1A1A1B;">Aportes a Sectores Productivos y de Servicios</span>
+            Diapositiva 26 de 29 · <span style="color:#1A1A1B;">Aportes a Sectores Productivos y de Servicios</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 28) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 27) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-28" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-27" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #10B981; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <div>
             <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0 0 4px;">
@@ -2596,27 +2266,22 @@ window.SECTIONS['c5'] = `
     </div>
 </div>
         
-    
-
-        
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 27)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 26)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 28 de 30 · <span style="color:#1A1A1B;">Resultados Verificables e Impacto en el Entorno</span>
+            Diapositiva 27 de 29 · <span style="color:#1A1A1B;">Resultados Verificables e Impacto en el Entorno</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 29) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 28) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-29" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+    <div id="c5-slide-panel-28" class="c5-slide-panel " style="display:none;">
+        <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
         <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
             <i class="fas fa-calendar-alt" style="color:#F39200;"></i> Proyección de la Investigación en el Programa 2026–2031
@@ -2647,26 +2312,23 @@ window.SECTIONS['c5'] = `
         </div>
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 28)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 27)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 29 de 30 · <span style="color:#1A1A1B;">Proyección Quinquenal 2026–2031 (Hacia Categoría B)</span>
+            Diapositiva 28 de 29 · <span style="color:#1A1A1B;">Proyección Quinquenal 2026–2031 (Hacia Categoría B)</span>
         </div>
         <button onclick="nextC5Slide()" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        Siguiente (Diapositiva 30) <i class="fas fa-arrow-right"></i>
+        Siguiente (Diapositiva 29) <i class="fas fa-arrow-right"></i>
     </button>
     </div>
     
     </div>
-    
 
-    <div id="c5-slide-panel-30" class="c5-slide-panel " style="display:none;">
-        
-<div style="background:linear-gradient(135deg, #1A1A1B 0%, #2D2D2E 100%); color:#FFFFFF; border-radius:12px; padding:60px 35px; text-align:center; box-shadow:0 8px 24px rgba(0,0,0,0.18); border-top:6px solid #F39200;">
+    <div id="c5-slide-panel-29" class="c5-slide-panel " style="display:none;">
+        <div style="background:linear-gradient(135deg, #1A1A1B 0%, #2D2D2E 100%); color:#FFFFFF; border-radius:12px; padding:60px 35px; text-align:center; box-shadow:0 8px 24px rgba(0,0,0,0.18); border-top:6px solid #F39200;">
     <div style="display:inline-block; background:rgba(243,146,0,0.18); border:1px solid #F39200; color:#F39200; font-size:0.82rem; font-weight:800; padding:6px 18px; border-radius:20px; text-transform:uppercase; letter-spacing:1px; margin-bottom:20px;">
         Sustentación Oficial de la Condición 5 · Investigación
     </div>
@@ -2684,16 +2346,17 @@ window.SECTIONS['c5'] = `
         <i class="fas fa-check-circle" style="color:#10B981;"></i> Evidencias y Anexos Radicados en SACES
     </div>
 </div>
-
         
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:22px; padding-top:14px; border-top:1px solid #E5E7EB;">
         <button onclick="prevC5Slide()" style="background:#F3F4F6; color:#1F2937; border:1px solid #D1D5DB; padding:8px 16px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
-        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 29)
+        <i class="fas fa-arrow-left"></i> Anterior (Diapositiva 28)
     </button>
         <div style="font-size:0.8rem; font-weight:800; color:#64748B; text-transform:uppercase;">
-            Diapositiva 30 de 30 · <span style="color:#1A1A1B;">¡Gracias! · Dirección y Coordinación de Investigaciones</span>
+            Diapositiva 29 de 29 · <span style="color:#1A1A1B;">¡Gracias! · Dirección y Coordinación de Investigaciones</span>
         </div>
-        <div></div>
+        <button onclick="goToC5Slide(1)" style="background:#10B981; color:#FFFFFF; border:none; padding:8px 18px; border-radius:8px; font-size:0.78rem; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px;">
+        <i class="fas fa-undo"></i> Volver al Inicio (Diapositiva 1)
+    </button>
     </div>
     
     </div>
@@ -2707,16 +2370,16 @@ window.SECTIONS['c5'] = `
    ========================================================= */
 (function() {
     let currentSlide = 1;
-    const totalSlides = 30;
+    const totalSlides = 29;
 
-    const ejeMapping = {
-        1: [1, 2, 3, 4, 5, 6],
-        2: [7, 8, 9, 10, 11, 12, 13],
-        3: [14, 15],
-        4: [16, 17, 18, 19, 20],
-        5: [21, 22, 23],
-        6: [24, 25, 26],
-        7: [27, 28, 29, 30]
+        const ejeMapping = {
+        1: [1, 2, 3, 4, 5],
+        2: [6, 7, 8, 9, 10, 11, 12],
+        3: [13, 14],
+        4: [15, 16, 17, 18, 19],
+        5: [20, 21, 22],
+        6: [23, 24, 25],
+        7: [26, 27, 28, 29]
     };
 
     window.goToC5Slide = function(slideNum, shouldScroll = true) {

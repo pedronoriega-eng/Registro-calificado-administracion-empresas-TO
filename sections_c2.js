@@ -643,9 +643,9 @@ window.SECTIONS['c2'] = `
             </p>
         </div>
         <div>
-            <button onclick="openPresentation('c10', '10. Datos Estadísticos Institucionales y Tendencias de Permanencia')" style="background:#1A1A1B; color:#FFFFFF; border:1px solid #F39200; padding:8px 16px; border-radius:24px; font-family:'Montserrat',sans-serif; font-size:0.8rem; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all 0.3s ease; box-shadow:0 2px 6px rgba(0,0,0,0.15);">
-                <i class="fas fa-chart-bar" style="color:#F39200;"></i> Ver Tablero Completo de Analítica (Condición 10) <i class="fas fa-arrow-right"></i>
-            </button>
+            <span style="background:rgba(243,146,0,0.12); color:#F39200; border:1px solid #F39200; padding:6px 14px; border-radius:20px; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:700; display:flex; align-items:center; gap:6px;">
+                <i class="fas fa-chart-bar" style="color:#F39200;"></i> SPADIES MEN & Tablas 11, 12, 13
+            </span>
         </div>
     </div>
 
@@ -786,15 +786,6 @@ window.SECTIONS['c2'] = `
             </div>
         </div>
 
-    </div>
-
-    <!-- BOTÓN DE ACCIÓN COMPLETO -->
-    <div style="margin-top:16px;">
-        <button onclick="openPresentation('c10', '10. Datos Estadísticos Institucionales y Tendencias de Permanencia')" style="width:100%; padding:14px; background:linear-gradient(135deg, #1A1A1B 0%, #333333 100%); color:#FFFFFF; border:2px solid #F39200; border-radius:8px; font-family:'Montserrat',sans-serif; font-size:0.9rem; font-weight:800; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:12px; transition:all 0.3s ease; box-shadow:0 4px 12px rgba(0,0,0,0.12);">
-            <i class="fas fa-chart-line" style="color:#F39200; font-size:1.15rem;"></i>
-            <span>Ver Tablero Gráfico Interactivo Chart.js · Matrícula, Deserción SPADIES y Cohortes (Condición 10)</span>
-            <i class="fas fa-arrow-right" style="color:#F39200;"></i>
-        </button>
     </div>
 </div>
 
