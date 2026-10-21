@@ -8,6 +8,21 @@ window.SECTIONS['c8'] = `
     <p>Biblioteca digital, plataforma LMS, software especializado, recursos de aprendizaje y mecanismos de integridad académica.</p>
 </div>
 
+
+
+<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
+<div class="completitud-trigger-card" onclick="openCompletitudModal('c8')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
+    <div class="completitud-trigger-left">
+        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="completitud-trigger-text">
+            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
+            <h4>Respuesta Oficial a la Sala de Evaluación (Observación 12)</h4>
+            <p>Recursos bibliográficos físicos y digitales, plataformas LMS, planes de actualización y reposición, y protocolo de barreras de acceso (Decreto 1421/2017).</p>
+        </div>
+    </div>
+    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
+</div>
+
 <div class="metric-row">
     <div class="metric-card"><div class="metric-val">98K+</div><div class="metric-lbl">Títulos E-Libro</div></div>
     <div class="metric-card"><div class="metric-val">LMS</div><div class="metric-lbl">Moodle Campus Virtual</div></div>

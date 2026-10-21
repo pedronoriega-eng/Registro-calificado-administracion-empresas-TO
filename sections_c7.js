@@ -8,6 +8,21 @@ window.SECTIONS['c7'] = `
     <p>Perfiles docentes, nivel de formación, dedicación, experiencia profesional y plan de cualificación del cuerpo profesoral del programa.</p>
 </div>
 
+
+
+<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
+<div class="completitud-trigger-card" onclick="openCompletitudModal('c7')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
+    <div class="completitud-trigger-left">
+        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="completitud-trigger-text">
+            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
+            <h4>Respuesta Oficial a la Sala de Evaluación (Observaciones 8, 9, 10 y 11)</h4>
+            <p>Planta profesoral completa, cualificación para modalidad virtual, distribución de carga horaria (docencia, investigación, extensión) y ratios de estudiantes.</p>
+        </div>
+    </div>
+    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
+</div>
+
 <div class="metric-row">
     <div class="metric-card"><div class="metric-val">100%</div><div class="metric-lbl">Docentes con Posgrado</div></div>
     <div class="metric-card"><div class="metric-val">15+</div><div class="metric-lbl">Años Exp. Promedio</div></div>

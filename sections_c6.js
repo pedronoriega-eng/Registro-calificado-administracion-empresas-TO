@@ -8,6 +8,21 @@ window.SECTIONS['c6'] = `
     <p>Convenios, prácticas empresariales, proyección social, extensión e internacionalización del programa.</p>
 </div>
 
+
+
+<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
+<div class="completitud-trigger-card" onclick="openCompletitudModal('c6')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
+    <div class="completitud-trigger-left">
+        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="completitud-trigger-text">
+            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
+            <h4>Respuesta Oficial a la Sala de Evaluación (Observación 7)</h4>
+            <p>Materialización del relacionamiento con el entorno: convenios activos, consultoría empresarial CIDRE, alianza CUEES y proyectos con empresas.</p>
+        </div>
+    </div>
+    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
+</div>
+
 <div class="grid-3">
     <div class="card-accent">
         <h4><i class="fas fa-briefcase" style="margin-right:6px;"></i> Prácticas Empresariales</h4>

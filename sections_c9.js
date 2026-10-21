@@ -8,6 +8,21 @@ window.SECTIONS['c9'] = `
     <p>Sedes, laboratorios, espacios de bienestar, infraestructura tecnológica y plan de mantenimiento del programa.</p>
 </div>
 
+
+
+<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
+<div class="completitud-trigger-card" onclick="openCompletitudModal('c9')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
+    <div class="completitud-trigger-left">
+        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="completitud-trigger-text">
+            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
+            <h4>Respuesta Oficial a la Sala de Evaluación (Observación 13)</h4>
+            <p>Infraestructura física y tecnológica asignada al programa en Sedes A y B (Bucaramanga), CIDRE, salas de cómputo y garantías de disponibilidad a 7 años.</p>
+        </div>
+    </div>
+    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
+</div>
+
 <div class="metric-row">
     <div class="metric-card"><div class="metric-val">3</div><div class="metric-lbl">Sedes Habilitadas</div></div>
     <div class="metric-card"><div class="metric-val">AWS</div><div class="metric-lbl">Infraestructura Cloud</div></div>

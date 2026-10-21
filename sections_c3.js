@@ -11061,6 +11061,21 @@ window.SECTIONS['c3'] = `
     <p>Estructura curricular, componentes formativos, pedagógicos, de interacción, conceptualización teórico-epistemológica y mecanismos de evaluación del Programa de Administración de Empresas (Registro Único Presencial / Virtual).</p>
 </div>
 
+
+
+<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
+<div class="completitud-trigger-card" onclick="openCompletitudModal('c3')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
+    <div class="completitud-trigger-left">
+        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="completitud-trigger-text">
+            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
+            <h4>Respuesta Oficial a la Sala de Evaluación (Observaciones 3 y 4)</h4>
+            <p>Componente formativo, áreas de formación y Plan de Transición Curricular (158 cr a 144 cr, homologación y garantías de permanencia para estudiantes).</p>
+        </div>
+    </div>
+    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
+</div>
+
 <!-- LEVEL 1 MAIN TABS (PLAN VIGENTE FIRST AND DEFAULT ACTIVE) -->
 <div class="c3-main-tabs" id="c3MainTabsGroup">
     <button class="c3-main-tab-btn active" data-tab="c3-main-vigente" onclick="switchTab('c3MainTabsGroup','c3-main-vigente')">

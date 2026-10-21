@@ -9,6 +9,21 @@ window.SECTIONS['c4'] = `
     <p>Modelo pedagógico, estrategias didácticas, sistema de créditos, mecanismos de interacción y acompañamiento estudiantil. Adaptado del benchmark de sustentación del programa de SST.</p>
 </div>
 
+
+
+<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
+<div class="completitud-trigger-card" onclick="openCompletitudModal('c4')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
+    <div class="completitud-trigger-left">
+        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="completitud-trigger-text">
+            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
+            <h4>Respuesta Oficial a la Sala de Evaluación (Observaciones 5 y 11)</h4>
+            <p>Equivalencia formativa en presencial y virtual, distribución de horas HAD vs HTI y organización de estudiantes por grupo (20 a 30 estudiantes).</p>
+        </div>
+    </div>
+    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
+</div>
+
 <!-- TABS -->
 <div class="tabs-container" id="c4TabGroup">
     <div class="tabs-nav">

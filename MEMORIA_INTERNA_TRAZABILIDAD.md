@@ -121,12 +121,100 @@ Todos los siguientes elementos están formalmente aprobados, implementados en c�
   - Se eliminó totalmente el equívoco término "Registro Único Dual", ya que en el marco del Decreto 1330 de 2019 la modalidad "dual" corresponde a formación en alternancia empresa-aula.
   - La figura jurídica del programa corresponde estrictamente a **Registro Calificado Único** (en modalidades Presencial y Virtual). Todos los textos, encabezados y tablas fueron homologados a esta denominación legal oficial.
 
+### H. Infografía Ejecutiva de Defensa C1 y C2 (Entrega Independiente y Local)
+- **Archivos Locales Aparte (Sin control de versiones en GitHub):**
+  - HTML Imprimible / Póster: [`INFOGRAFIA_RUTA_DEFENSA_C1_C2.html`](file:///c:/Users/Estudiante%2008/Documents/Pedro_Noriega/Acreditación_Alta%20Calidad/Visitas_programas/Administración%20de%20empresas_Renovación%20RU/INFOGRAFIA_RUTA_DEFENSA_C1_C2.html)
+  - Documento Markdown: [`INFOGRAFIA_RUTA_DEFENSA_C1_C2.md`](file:///c:/Users/Estudiante%2008/Documents/Pedro_Noriega/Acreditación_Alta%20Calidad/Visitas_programas/Administración%20de%20empresas_Renovación%20RU/INFOGRAFIA_RUTA_DEFENSA_C1_C2.md)
+- **Estado en Repositorio GitHub:** Completamente desvinculada de la plataforma web institucional y fuera del repositorio Git.
+
+### J. Restauración Integral de Ventanas Emergentes (Modales) de Asignaturas en Condición 3 (Corte 20 de Octubre de 2026 - Noche)
+- **Diagnóstico Raíz del Fallo de Despliegue:**
+  - Al reestructurar la Condición 3 bajo los 5 literales canónicos (a-e), la colección de 62 asignaturas del Plan Vigente (158 créditos - 9 semestres) fue declarada en el archivo `sections_c3.js` bajo el identificador `window.C3_SUBJECTS_VIGENTE`, mientras que todas las funciones interactivas del sistema (`selectMatrixSubject`, `openSubjectModal`, `openAreaModal`) realizaban la búsqueda sobre `window.C3_VIGENTE_SUBJECTS`.
+  - Esta transposición de nombre provocaba que `window.C3_VIGENTE_SUBJECTS` se evaluara como `undefined`, abortando silenciosamente la ejecución (`if (!s) return;`) al hacer clic sobre cualquiera de las 62 tarjetas de asignaturas de la Malla Curricular Vigente y en las tablas por área de formación.
+- **Solución Canónica e Inmune a Regresiones:**
+  - **Sincronización de Identificadores Globales:** Se unificaron y expusieron recíprocamente en el scope global (`window`) todas las variantes canónicas: `window.C3_VIGENTE_SUBJECTS = window.C3_SUBJECTS_VIGENTE;`, `window.C3_PROPUESTO_SUBJECTS = window.C3_SUBJECTS;` y `window.C3_SUBJECTS_PROPUESTO = window.C3_SUBJECTS;`.
+  - **Detección Automática por Prefijo (`vig_` / `prop_`):** Las funciones `openSubjectModal(id, type)`, `selectMatrixSubject(id, type)` y `openAreaModal(areaId, type)` ahora detectan de forma automática e inmediata si el parámetro `type` no fue suministrado, inspeccionando si el `id` inicia por `vig_` o `prop_`, y aplicando búsqueda de reserva cruzada para garantizar que NUNCA retorne `undefined`.
+  - **Exportación de Métodos de Ventana Emergente:** Se fijaron explícitamente `window.showSubjectModal = window.openSubjectModal;` y `window.openC3SubjectModal = window.openSubjectModal;`.
+  - **Actualización de Cachebuster:** Se actualizó la referencia en `index.html` a `sections_c3.js?v=20261020_c3_modal_definitivo_v1` para forzar la recarga inmediata en el navegador sin caché residual.
+  - **Commit y Despliegue en GitHub:** Commit `f210028` sincronizado con la rama `main`.
+
+### K. Incorporación de Evidencia Gráfica Oficial en Condición 5 — Ruta Formativa del Programa (Congresos 2023–2026)
+- **Ubicación Estratégica:**
+  - Archivo fuente: `sitio_web/sections_c5.js` y plantilla de respaldo `build_slides_templates.py`.
+  - Diapositiva: **Diapositiva 21** (`c5-slide-panel-21`), correspondiente al **Eje 5: Investigación en Aula & Caso MYB**, titulada *"Estrategias de Aula y Ruta Formativa en Investigación"*.
+  - Posicionamiento: Inmediatamente posterior al bloque de *"Ruta de Asignaturas Investigativas"* y al *"Ciclo de Acompañamiento a Opciones de Grado"*.
+- **Asset Integrado:**
+  - Imagen en alta resolución: `assets/c5/c5_ruta_formativa_congresos.png` (591.377 bytes).
+  - Título del contenedor: *"Ruta Formativa del Programa (Congresos y Divulgación Científica 2023 – 2026)"* con etiqueta institucional de vigencia temporal *"Trayectoria 2023 · 2024 · 2025 · 2026"*.
+  - Secuencia de Congresos exhibida:
+    1. *2023:* I Congreso Multidisciplinario de Investigación, Educación, Ciencia, Tecnología e Innovación (Habilidades gerenciales, desarrollo organizacional, innovación y emprendimiento).
+    2. *2024:* 2.º Congreso de Investigación Aplicada (Aplicación al entorno laboral: SST, IA y transformación digital).
+    3. *2025:* III Congreso de Innovación e Investigación Multidisciplinar (Liderazgo y estrategia en la era digital).
+    4. *2026:* IV Congreso Internacional de Investigación e Innovación Multidisciplinar (Innovación e internacionalización de negocios y desarrollo empresarial territorial).
+- **Interactividad y Experiencia Visual:**
+  - Contenedor con borde tenue, fondo contrastado, tarjeta de sombra sutil y cursor interactivo con soporte de apertura en pestaña completa a resolución original (`onclick="window.open(this.src, '_blank')"`).
+- **Cachebuster Actualizado:**
+  - En `sitio_web/index.html` se actualizó la versión de script a `sections_c5.js?v=20261020_c5_ruta_formativa_congresos_v1`.
+- **Commit y Despliegue en GitHub:**
+  - Commit `f857a84` (`feat(c5): incorporar imagen oficial de la Ruta Formativa del Programa (Congresos 2023-2026) en Diapositiva 21`) sincronizado con la rama `main` en GitHub.
+
+### L. Transformación de Tablas con Scrollbar a Vitrinas Ejecutivas Interactivas en Condición 5 (Corte 21 de Octubre de 2026)
+- **Diagnóstico y Problemática Resuelta:**
+  - En las diapositivas 13, 19, 22, 25, 27 y 28 de la Condición 5, la información tabulada original del PPT se había exportado en una sola fila horizontal `<th>['Col1', 'Col2', ...]</th>` dentro de contenedores con `overflow-x: auto`, generando una barra de desplazamiento horizontal antiestética y textos crudos con corchetes de Python.
+- **Rediseño Integral a Nivel Directivo (Zero Horizontal Scroll):**
+  - **Diapositiva 13 (Evolución del Conocimiento y Líneas de Investigación):** Reemplazo de tabla por una **Matriz Ejecutiva de 5 Tendencias** (Emprendimiento, Sostenibilidad, Liderazgo, Transformación Digital, Globalización) con badges de línea (`L1 / L2`), aplicación empírica en Santander y banner de consolidación estratégica.
+  - **Diapositiva 19 (Producción Científica del Grupo COLLEGIUM - Minciencias):**
+    - **Strip de 4 KPIs:** 10 Productos Registrados, 4 Sellos (McGraw-Hill, RedesLA, iQuatro, INVEPY), Scopus Q3 y 100% Verificable.
+    - **Pestañas de Filtrado Dinámico:** `Todos (10)` · `Nuevo Conocimiento - GNC (2)` · `Libros McGraw-Hill & iQuatro (4)` · `Artículos Scopus & Dialnet (4)`.
+    - **Tarjetas de Publicación Científica:** Tarjetas ejecutivas con metadatos de ISBN/ISSN y botones de acceso directo al DOI / enlace científico.
+  - **Diapositiva 22 (Proyectos de Investigación en el Aula 2023–2026):**
+    - Segmentación interactiva por periodo: `Todos (11)` · `2023 (4)` · `2024 (4)` · `2025 (2)` · `2026 REDCOLSI (1)`.
+    - Tarjetas con etiqueta temática de sector, título completo y nombres de estudiantes graduados/autores.
+  - **Diapositiva 25 (Opciones de Grado y Semilleros Desarrollados):**
+    - Filtro por modalidad: `Todas (11)` · `Proyectos de Grado (4)` · `Semillero GESTNOVA / REDCOLSI (7)`.
+    - Tarjetas diferenciadas con insignias de color (verde para proyectos de grado y naranja para semilleros).
+  - **Diapositiva 27 (Aportes a Sectores Productivos y de Servicios):**
+    - Distribución en 2 paneles comparativos en paralelo: *Línea 1: Gestión Estratégica* (5 sectores) y *Línea 2: Transformación Digital* (3 sectores), vinculando el problema regional con el aporte del programa.
+  - **Diapositiva 28 (Resultados Verificables e Impacto en el Entorno):**
+    - 5 tarjetas de impacto con evidencias concretas del programa y recuadros destacados de **Resultado Verificable** (Spin-off MYB, convenios AMB/Bomberos/Cajasan, alianzas internacionales UCUENCA/UMECIT y REDCOLSI).
+- **Scripts y Funciones Globales Inyectadas:**
+  - `window.filterC5Collegium(category, btn)`, `window.filterC5Classroom(year, btn)` y `window.filterC5Degree(modality, btn)`.
+- **Cachebuster Actualizado:** `sections_c5.js?v=20261021_c5_executive_showcase_v1`.
+- **Commit y Despliegue en GitHub:** Commit `6da2b81` sincronizado con la rama `main`.
+
+### M. Rediseño Ejecutivo de Slide 8 (Líneas de Investigación) e Integración Total de Respuestas a la Sala de CONACES (Completitud) en Primer Plano
+- **Rediseño Visual de Slide 8 (Condición 5):**
+  - Eliminación total de la imagen desproporcionada de Canva (`c5_slide8_img5.png`) que contenía amplios espacios vacíos y marca de agua externa.
+  - Implementación de una vitrina visual ejecutiva responsiva en HTML/CSS corporativo:
+    * *Nivel 1: Las 3 Líneas Transversales Institucionales:* 1. Gestión Social, Participación y Desarrollo Sostenible; 2. Productividad, Innovación y Sostenibilidad; 3. Educación, Inclusión Social y Desarrollo Humano.
+    * *Conector Dinámico de Despliegue Operativo y Curricular.*
+    * *Nivel 2: Las 2 Líneas Específicas del Programa:* L1: Gestión Estratégica y Competitividad Empresarial; L2: Transformación Digital y Gestión de la Innovación.
+    * *Ecosistema Activo:* Grupo COLLEGIUM (Minciencias), Semillero GESTNOVA, Spin-off MYB S.A.S. y los 4 Congresos Multidisciplinarios continuos 2023–2026.
+  - Cero desperdicio de espacio, 100% responsivo y sin marcas externas.
+- **Módulo Integral de Respuestas Oficiales a la Sala de CONACES (`completitud_data.js` & `completitud.css`):**
+  - Extracción e incorporación de las **13 Observaciones Oficiales de la Sala de Evaluación de CONACES** y sus **32 tablas institucionales/numéricas** del documento maestro `Respuesa a Completitud.docx`.
+  - Mapeo por condición:
+    * **Condición 1:** Observaciones 1 y 2 (Título de Administrador de Empresas, ausencia de ciclos y registro calificado único).
+    * **Condición 2:** Observación 2 (Justificación y pertinencia en dos modalidades).
+    * **Condición 3:** Observaciones 3 y 4 (Componente formativo y Plan de Transición Curricular 158 cr a 144 cr con homologación y garantías).
+    * **Condición 4:** Observaciones 5 y 11 (Equivalencia formativa presencial/virtual, horas HAD/HTI y ratios por grupo 20-30).
+    * **Condición 5:** Observación 6 (Articulación de investigación formativa y aplicada, COLLEGIUM, GESTNOVA y spin-off MYB).
+    * **Condición 6:** Observación 7 (Relación con sector externo, convenios activos, CIDRE y CUEES).
+    * **Condición 7:** Observaciones 8, 9, 10 y 11 (Planta docente completa, cualificación para modalidad virtual, distribución horaria y organización de estudiantes por grupo).
+    * **Condición 8:** Observación 12 (Medios educativos físicos y digitales, plataformas LMS, actualización y reposición, y protocolo Decreto 1421/2017).
+    * **Condición 9:** Observación 13 (Infraestructura física y tecnológica asignada en Sedes A y B, CIDRE, salas de informática y garantía de disponibilidad a 7 años).
+  - Despliegue estricto en **PRIMER PLANO (z-index: 100000)** al hacer clic en las tarjetas de activación `completitud-trigger-card` en cada condición o desde el botón general de cabecera `Respuestas a la Sala (Completitud CONACES)`.
+  - Navegación por pestañas entre observaciones de cada condición, visualización de la observación oficial entrecomillada, fundamentación en el Decreto 1330 de 2019 y tablas ejecutivas formateadas.
+- **Cachebuster Actualizado:** `sections_c5.js?v=20261021_c5_slide8_redesign_v2`, `sections_c1.js?v=20261021_completitud_v1`, `completitud_data.js?v=20261021_v1`.
+
 ---
 
 ## 2. Verificación y Pruebas Técnicas
-- **Validación de Sintaxis:** Todos los scripts JS pasaron `node -c` con 0 errores (`app.js`, `sections_c1.js`, `sections_c2.js`, `sections_c2_google.js`, `sections_c3.js`, `sections_c4.js`, `sections_c5.js`, `sections_inst.js`, `sections_virtual.js`).
-- **Pruebas en Navegador (Subagente Web & Playwright):**
-  - Autenticación con contraseña `TO2026`.
-  - Condición 1: Navegación de subsecciones en primer plano validada; serpentina simétrica comprobada; Ficha Técnica del registro propuesto verificada sin SNIES ni resolución (en trámite ante MEN); cabecera verificada libre de la derogada Resolución 2265 de 2023.
-  - Condición 2: Despliegue de los 4 KPI cards de la encuesta a egresados, barras de sectores económicos y vitrina de empresas empleadoras verificado.
-  - Condición 5: Despliegue de las 30 diapositivas, cambio por píldoras 1 a 30 con enfoque automático y scroll al primer plano en viewport superior garantizado, visualización de imágenes CONPES 4069, organigrama, fotos de GESTNOVA, certificados RedCOLSI, caso MYB con 6 empleos y tablas de producción científica comprobado.
+- **Validación de Sintaxis:** Todos los scripts JS pasaron `node -c` con 0 errores (`app.js`, `sections_c1.js`, `sections_c2.js`, `sections_c2_google.js`, `sections_c3.js`, `sections_c4.js`, `sections_c5.js`, `sections_c6.js`, `sections_c7.js`, `sections_c8.js`, `sections_c9.js`, `completitud_data.js`).
+- **Pruebas en Navegador:**
+  - Rediseño de Slide 8 verificado con infografía ejecutiva de 3 líneas transversales y 2 específicas.
+  - Botón de cabecera "Respuestas a la Sala (Completitud CONACES)" verificado para acceso rápido a las 13 observaciones.
+  - Tarjetas de activación `completitud-trigger-card` verificadas en todas las condiciones para despliegue en primer plano.
+
+
+

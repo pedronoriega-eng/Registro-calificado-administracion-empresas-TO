@@ -34,7 +34,22 @@ window.SECTIONS['c5'] = `
 </div>
 
 
-<!-- BARRA DE EJES TEMÁTICOS (SUBSECCIONES C5) -->
+<!-- BARRA DE EJES TEMÁTICOS
+
+<!-- TRIGGER CARD RESPUESTA OFICIAL SALA CONACES (PRIMER PLANO) -->
+<div class="completitud-trigger-card" onclick="openCompletitudModal('c5')" title="Clic para proyectar en primer plano la respuesta oficial radicada ante la Sala CONACES">
+    <div class="completitud-trigger-left">
+        <div class="completitud-trigger-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="completitud-trigger-text">
+            <span class="tag"><i class="fas fa-shield-alt"></i> CONACES · Respuesta a Completitud Radicada</span>
+            <h4>Respuesta Oficial a la Sala de Evaluación (Observación 6)</h4>
+            <p>Diferenciación y articulación de investigación formativa y aplicada, Grupo COLLEGIUM (Minciencias), Semillero GESTNOVA y Spin-off MYB S.A.S.</p>
+        </div>
+    </div>
+    <button class="completitud-trigger-btn"><i class="fas fa-expand"></i> Ver en Primer Plano</button>
+</div>
+
+ (SUBSECCIONES C5) -->
 <div style="background:#FFFFFF; border:1px solid #E8E8E8; border-radius:12px; padding:10px 14px; margin-bottom:14px; box-shadow:0 3px 12px rgba(0,0,0,0.04); position:sticky; top:0; z-index:90; backdrop-filter:blur(8px);">
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
         <span style="font-size:0.74rem; font-weight:800; color:#1A1A1B; text-transform:uppercase; display:flex; align-items:center; gap:6px;">
@@ -515,26 +530,158 @@ window.SECTIONS['c5'] = `
 
     <div id="c5-slide-panel-8" class="c5-slide-panel " style="display:none;">
         
-<div style="background:#FFFFFF; border:1px solid #E8E8E8; border-top:5px solid #F39200; border-radius:12px; padding:24px 28px; box-shadow:0 4px 16px rgba(0,0,0,0.05);">
-    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
-        <h4 style="font-family:'Montserrat',sans-serif; font-size:1.18rem; font-weight:800; color:#1A1A1B; margin:0;">
-            <i class="fas fa-stream" style="color:#F39200;"></i> Líneas de Investigación Transversales y Específicas
-        </h4>
-        <span style="font-size:0.72rem; color:#64748B; font-weight:700;">Estructura Curricular del Programa</span>
-    </div>
-    <div style="text-align:center; margin-bottom:18px;">
-        <img src="assets/c5/c5_slide8_img5.png" alt="Líneas de Investigación" style="max-width:100%; max-height:340px; border-radius:10px; border:1px solid #E2E8F0; box-shadow:0 4px 16px rgba(0,0,0,0.08);">
-    </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-        <div style="background:#FFF9F2; border:1.5px solid #FED7AA; border-radius:8px; padding:14px;">
-            <span style="font-size:0.68rem; font-weight:800; color:#C2410C; text-transform:uppercase;">Línea Específica 1</span>
-            <h5 style="margin:4px 0 6px; font-size:0.88rem; color:#1A1A1B; font-weight:800;">Gestión Estratégica y Competitividad Empresarial</h5>
-            <p style="margin:0; font-size:0.74rem; color:#4B5563; line-height:1.4;">Enfocada en diagnóstico organizacional, modelos de planeación, productividad y competitividad en micro y medianas empresas de Santander.</p>
+<div style="background:#FFFFFF; border:1px solid #E2E8F0; border-top:5px solid #F39200; border-radius:12px; padding:22px 26px; box-shadow:0 4px 18px rgba(0,0,0,0.06);">
+    <!-- HEADER -->
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px; border-bottom:1px solid #F1F5F9; padding-bottom:12px;">
+        <div>
+            <span style="display:inline-block; font-size:0.68rem; font-weight:800; color:#F39200; background:#FFF7ED; border:1px solid #FFEDD5; padding:3px 10px; border-radius:20px; text-transform:uppercase; margin-bottom:4px;">
+                <i class="fas fa-sitemap"></i> Matriz de Articulación Investigativa
+            </span>
+            <h4 style="font-family:'Montserrat',sans-serif; font-size:1.15rem; font-weight:800; color:#1A1A1B; margin:0;">
+                Líneas de Investigación Transversales Institucionales y Específicas del Programa
+            </h4>
         </div>
-        <div style="background:#F0FDF4; border:1.5px solid #BBF7D0; border-radius:8px; padding:14px;">
-            <span style="font-size:0.68rem; font-weight:800; color:#15803D; text-transform:uppercase;">Línea Específica 2</span>
-            <h5 style="margin:4px 0 6px; font-size:0.88rem; color:#1A1A1B; font-weight:800;">Transformación Digital y Gestión de la Innovación</h5>
-            <p style="margin:0; font-size:0.74rem; color:#4B5563; line-height:1.4;">Centrada en adopción de TIC, analítica de datos, comercio electrónico, digitalización de procesos y optimización de modelos de negocio.</p>
+        <span style="font-size:0.72rem; color:#64748B; font-weight:700; background:#F8FAFC; border:1px solid #E2E8F0; padding:4px 12px; border-radius:6px;">
+            <i class="fas fa-university"></i> Institucional TO · Renovación Registro Único
+        </span>
+    </div>
+
+    <!-- BLOQUE 1: LÍNEAS TRANSVERSALES INSTITUCIONALES (3 TARJETAS EJECUTIVAS) -->
+    <div style="margin-bottom:16px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span style="font-size:0.75rem; font-weight:800; color:#1E293B; text-transform:uppercase; letter-spacing:0.5px;">
+                <i class="fas fa-layer-group" style="color:#F39200; margin-right:6px;"></i> 1. Líneas Transversales Institucionales (Corporación Escuela Tecnológica del Oriente)
+            </span>
+            <span style="font-size:0.68rem; color:#64748B; font-weight:600;">Marco Estratégico Institucional</span>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px;">
+            <!-- Transversal 1 -->
+            <div style="background:linear-gradient(180deg, #FFFFFF 0%, #FFF7ED 100%); border:1.5px solid #FFEDD5; border-radius:10px; padding:14px; position:relative; display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+                        <span style="background:#F39200; color:#FFFFFF; font-size:0.75rem; font-weight:800; width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;">1</span>
+                        <i class="fas fa-bullseye" style="font-size:1.1rem; color:#EA580C;"></i>
+                    </div>
+                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:800; color:#1A1A1B; margin:0 0 6px; line-height:1.25; text-transform:uppercase;">
+                        Gestión Social, Participación y Desarrollo Sostenible
+                    </h5>
+                    <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.45;">
+                        Impacto en la calidad de vida de una población participativa, con uso eficiente de recursos en un espacio y tiempo definido.
+                    </p>
+                </div>
+                <div style="margin-top:10px; padding-top:8px; border-top:1px dashed #FED7AA; font-size:0.65rem; color:#C2410C; font-weight:700;">
+                    <i class="fas fa-check-circle"></i> Enfoque Territorial y Comunitario
+                </div>
+            </div>
+            <!-- Transversal 2 -->
+            <div style="background:linear-gradient(180deg, #FFFFFF 0%, #FDF2F8 100%); border:1.5px solid #FCE7F3; border-radius:10px; padding:14px; position:relative; display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+                        <span style="background:#DB2777; color:#FFFFFF; font-size:0.75rem; font-weight:800; width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;">2</span>
+                        <i class="fas fa-chart-line" style="font-size:1.1rem; color:#BE185D;"></i>
+                    </div>
+                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:800; color:#1A1A1B; margin:0 0 6px; line-height:1.25; text-transform:uppercase;">
+                        Productividad, Innovación y Sostenibilidad
+                    </h5>
+                    <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.45;">
+                        Productividad y competitividad sostenible de las empresas, optimización de modelos productivos y eco-eficiencia organizacional.
+                    </p>
+                </div>
+                <div style="margin-top:10px; padding-top:8px; border-top:1px dashed #FBCFE8; font-size:0.65rem; color:#9D174D; font-weight:700;">
+                    <i class="fas fa-check-circle"></i> Competitividad Empresarial
+                </div>
+            </div>
+            <!-- Transversal 3 -->
+            <div style="background:linear-gradient(180deg, #FFFFFF 0%, #F5F3FF 100%); border:1.5px solid #EDE9FE; border-radius:10px; padding:14px; position:relative; display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+                        <span style="background:#7C3AED; color:#FFFFFF; font-size:0.75rem; font-weight:800; width:26px; height:26px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center;">3</span>
+                        <i class="fas fa-lightbulb" style="font-size:1.1rem; color:#6D28D9;"></i>
+                    </div>
+                    <h5 style="font-family:'Montserrat',sans-serif; font-size:0.82rem; font-weight:800; color:#1A1A1B; margin:0 0 6px; line-height:1.25; text-transform:uppercase;">
+                        Educación, Inclusión Social y Desarrollo Humano
+                    </h5>
+                    <p style="font-size:0.72rem; color:#475569; margin:0; line-height:1.45;">
+                        Relación de la academia, la empresa y el Estado (CUEES) que dé respuestas precisas a la realidad económica, política y cultural del entorno.
+                    </p>
+                </div>
+                <div style="margin-top:10px; padding-top:8px; border-top:1px dashed #DDD6FE; font-size:0.65rem; color:#5B21B6; font-weight:700;">
+                    <i class="fas fa-check-circle"></i> Triple Hélice: Academia-Empresa-Estado
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONECTOR DE ARTICULACIÓN -->
+    <div style="display:flex; align-items:center; justify-content:center; gap:12px; margin:14px 0;">
+        <div style="height:1px; flex:1; background:linear-gradient(90deg, transparent, #CBD5E1);"></div>
+        <div style="background:#1A1A1B; color:#FFFFFF; padding:4px 14px; border-radius:20px; font-size:0.68rem; font-weight:800; letter-spacing:0.5px; display:inline-flex; align-items:center; gap:6px;">
+            <i class="fas fa-arrow-down" style="color:#F39200;"></i> DESPLIEGUE OPERATIVO Y DISCIPLINAR EN EL PROGRAMA
+        </div>
+        <div style="height:1px; flex:1; background:linear-gradient(90deg, #CBD5E1, transparent);"></div>
+    </div>
+
+    <!-- BLOQUE 2: LÍNEAS ESPECÍFICAS DEL PROGRAMA DE ADMINISTRACIÓN DE EMPRESAS (2 TARJETAS PRINCIPALES) -->
+    <div>
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+            <span style="font-size:0.75rem; font-weight:800; color:#1E293B; text-transform:uppercase; letter-spacing:0.5px;">
+                <i class="fas fa-briefcase" style="color:#F39200; margin-right:6px;"></i> 2. Líneas Específicas de Investigación del Programa
+            </span>
+            <span style="font-size:0.68rem; color:#15803D; font-weight:700; background:#DCFCE7; border:1px solid #BBF7D0; padding:2px 8px; border-radius:4px;">
+                <i class="fas fa-check-double"></i> Plan de Estudios Renovación 144 Créditos
+            </span>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+            <!-- Específica 1 -->
+            <div style="background:#FFFFFF; border:2px solid #FED7AA; border-radius:10px; padding:16px; box-shadow:0 2px 10px rgba(243,146,0,0.06);">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+                    <span style="background:#FFF7ED; color:#C2410C; border:1px solid #FFEDD5; font-size:0.65rem; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase;">
+                        Línea Específica 1 · Disciplinar
+                    </span>
+                    <i class="fas fa-chess-knight" style="color:#F39200; font-size:1.2rem;"></i>
+                </div>
+                <h5 style="margin:0 0 8px; font-size:0.95rem; color:#1A1A1B; font-weight:800; font-family:'Montserrat',sans-serif;">
+                    Gestión Estratégica y Competitividad Empresarial
+                </h5>
+                <p style="margin:0 0 10px; font-size:0.74rem; color:#475569; line-height:1.5;">
+                    Enfocada en diagnóstico organizacional integral, modelos de planeación estratégica, productividad y competitividad en micro, pequeñas y medianas empresas de Santander y el país.
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.68rem;">
+                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#F39200;"></i> Planeación y Dirección</span>
+                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#F39200;"></i> Diagnóstico Mipymes</span>
+                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#F39200;"></i> Consultoría CIDRE</span>
+                </div>
+            </div>
+            <!-- Específica 2 -->
+            <div style="background:#FFFFFF; border:2px solid #BBF7D0; border-radius:10px; padding:16px; box-shadow:0 2px 10px rgba(34,197,94,0.06);">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+                    <span style="background:#F0FDF4; color:#15803D; border:1px solid #DCFCE7; font-size:0.65rem; font-weight:800; padding:2px 8px; border-radius:4px; text-transform:uppercase;">
+                        Línea Específica 2 · Innovación & TIC
+                    </span>
+                    <i class="fas fa-laptop-code" style="color:#16A34A; font-size:1.2rem;"></i>
+                </div>
+                <h5 style="margin:0 0 8px; font-size:0.95rem; color:#1A1A1B; font-weight:800; font-family:'Montserrat',sans-serif;">
+                    Transformación Digital y Gestión de la Innovación
+                </h5>
+                <p style="margin:0 0 10px; font-size:0.74rem; color:#475569; line-height:1.5;">
+                    Centrada en adopción de TIC emergentes, analítica de datos gerenciales, comercio electrónico, digitalización de procesos y optimización de modelos de negocio en entornos presenciales y virtuales.
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.68rem;">
+                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#16A34A;"></i> Analítica & Big Data</span>
+                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#16A34A;"></i> Spin-off MYB</span>
+                    <span style="background:#F1F5F9; color:#334155; padding:3px 8px; border-radius:4px; font-weight:600;"><i class="fas fa-tag" style="color:#16A34A;"></i> E-Commerce & IA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARTICULACIÓN CON EL ECOSISTEMA DE INVESTIGACIÓN -->
+    <div style="margin-top:14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; padding:10px 14px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+        <div style="font-size:0.72rem; color:#334155;">
+            <strong>Ecosistema Activo:</strong> Grupo <strong>COLLEGIUM</strong> (Minciencias) · Semillero <strong>GESTNOVA</strong> · Spin-off <strong>MYB S.A.S.</strong> · 4 Congresos Multidisciplinarios
+        </div>
+        <div style="font-size:0.68rem; color:#0F766E; font-weight:700; background:#CCFBF1; padding:3px 10px; border-radius:4px;">
+            <i class="fas fa-shield-alt"></i> 100% Coherencia Curricular
         </div>
     </div>
 </div>
